@@ -360,6 +360,44 @@
         "min": 11,
         "diff": 3
       }
+    ],
+    "graph": [
+      {
+        "id": "graph-1",
+        "ready": true,
+        "sim": "graphing-lines",
+        "title": "Putting a number on \"steep\"",
+        "hook": "Can \"that hill is steep\" become a single number?",
+        "min": 14,
+        "diff": 1
+      },
+      {
+        "id": "graph-2",
+        "ready": true,
+        "sim": "graphing-slope-intercept",
+        "title": "Two numbers decide the line",
+        "hook": "In y = mx + b, what happens to the line if you change only b?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "graph-3",
+        "ready": true,
+        "sim": "graphing-quadratics",
+        "title": "Minus, yet it moves right",
+        "hook": "Why is the vertex of y = (x − 3)² at 3 and not at −3?",
+        "min": 15,
+        "diff": 3
+      },
+      {
+        "id": "graph-4",
+        "ready": true,
+        "sim": "calculus-grapher",
+        "title": "Slope becomes a graph too",
+        "hook": "If the slope changes from place to place, what shape do those slopes make?",
+        "min": 13,
+        "diff": 3
+      }
     ]
   }
 }

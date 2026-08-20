@@ -359,6 +359,44 @@
         "min": 11,
         "diff": 3
       }
+    ],
+    "graph": [
+      {
+        "id": "graph-1",
+        "ready": true,
+        "sim": "graphing-lines",
+        "title": "가파르다는 말을 숫자로",
+        "hook": "\"이 언덕 가파르네\"를 수 하나로 바꿀 수 있을까?",
+        "min": 14,
+        "diff": 1
+      },
+      {
+        "id": "graph-2",
+        "ready": true,
+        "sim": "graphing-slope-intercept",
+        "title": "숫자 두 개가 선을 정한다",
+        "hook": "y = mx + b 에서 b만 바꾸면 선은 어떻게 움직일까?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "graph-3",
+        "ready": true,
+        "sim": "graphing-quadratics",
+        "title": "빼기인데 오른쪽으로 간다",
+        "hook": "y = (x − 3)² 의 꼭짓점은 왜 −3이 아니라 3일까?",
+        "min": 15,
+        "diff": 3
+      },
+      {
+        "id": "graph-4",
+        "ready": true,
+        "sim": "calculus-grapher",
+        "title": "기울기도 그래프가 된다",
+        "hook": "자리마다 기울기가 다르면, 그 기울기들을 모아 그리면?",
+        "min": 13,
+        "diff": 3
+      }
     ]
   }
 }

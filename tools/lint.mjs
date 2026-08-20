@@ -134,6 +134,33 @@ console.log( '\n[7] 본문 조판' );
   const LOOSE_JOSA = new RegExp( `(?<![.!?])</b>[  ]+(${ JOSA })(?![가-힣])` );
   const LABEL_COLON = /:\s*<\/b>/;
 
+  /* 붙여넣기 사고로 들어오는 폭 없는 공백·방향 표시 문자. 눈에 안 보여 찾기 어렵습니다. */
+  const ZERO_WIDTH = /[​-‏‪-‮﻿]/;
+
+  /* 본문에 쓰기로 한 태그만 허용하고, 열고 닫힌 짝이 맞는지 셉니다. */
+  const ALLOWED = [ 'b', 'strong', 'em', 'i', 'p', 'ul', 'ol', 'li', 'br', 'span', 'sup', 'sub' ];
+  const checkTags = str => {
+    if ( !str.includes( '<' ) ) { return null; }
+    const open = {};
+    const re = /<(\/?)([a-zA-Z][a-zA-Z0-9]*)([^>]*)>/g;
+    let m, seen = 0;
+    while ( ( m = re.exec( str ) ) !== null ) {
+      seen++;
+      const [ , slash, name, rest ] = m;
+      if ( !ALLOWED.includes( name.toLowerCase() ) ) { return `허용하지 않는 태그 <${ name }>`; }
+      if ( name.toLowerCase() === 'br' ) { continue; }
+      if ( slash && rest.trim() ) { return `닫는 태그에 군더더기: ${ m[ 0 ] }`; }
+      open[ name ] = ( open[ name ] || 0 ) + ( slash ? -1 : 1 );
+      if ( open[ name ] < 0 ) { return `짝 없이 닫힌 </${ name }>`; }
+    }
+    /* '<' 는 있는데 태그로 안 읽혔다면 깨진 태그입니다. */
+    const angles = ( str.match( /</g ) || [] ).length;
+    if ( angles !== seen ) { return '깨진 태그가 있음' ; }
+    const left = Object.entries( open ).find( ( [ , n ] ) => n !== 0 );
+    if ( left ) { return `닫히지 않은 <${ left[ 0 ] }>` ; }
+    return null;
+  };
+
   let typo = 0;
   const scan = ( node, path, plainFields ) => {
     if ( Array.isArray( node ) ) {
@@ -149,6 +176,9 @@ console.log( '\n[7] 본문 조판' );
         }
         if ( LOOSE_JOSA.test( v ) ) { warn( `${ here }: 굵은 글씨와 조사 사이가 떠 있음` ); typo++; }
         if ( LABEL_COLON.test( v ) ) { warn( `${ here }: 굵은 글씨가 콜론으로 끝남` ); typo++; }
+        if ( ZERO_WIDTH.test( v ) ) { err( `${ here }: 보이지 않는 문자가 섞여 있음` ); }
+        const tagErr = checkTags( v );
+        if ( tagErr ) { err( `${ here }: ${ tagErr }` ); }
       }
       else { scan( v, here, plainFields ); }
     }
@@ -160,7 +190,7 @@ console.log( '\n[7] 본문 조판' );
     const c = read( `content/${ L }/courses.json` );
     if ( c ) { scan( c, `courses(${ L })`, PLAIN.courses ); }
   }
-  if ( !typo ) { ok( '조사 띄어쓰기 · 레이블 콜론 이상 없음' ); }
+  if ( !typo ) { ok( '태그 · 조사 띄어쓰기 · 레이블 콜론 이상 없음' ); }
 }
 
 console.log( `\n오류 ${ errors } · 경고 ${ warns }\n` );
