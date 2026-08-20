@@ -121,5 +121,47 @@ else {
   ok( `${ sims.length }종 모두 등재 — 번역 보유: ${ per }` );
 }
 
+/* ── 7. 본문 조판 ── */
+console.log( '\n[7] 본문 조판' );
+{
+  /* lesson.html / course.html 이 평문으로 그리는 자리. 여기에 태그를 넣으면
+     글자 그대로 보입니다. title 은 <title> 과 OG 에도 들어갑니다. */
+  const PLAIN = { lessons: [ 'title' ], courses: [ 'title', 'hook', 'lead' ] };
+
+  /* 한국어 조사는 앞말에 붙습니다. 굵은 글씨 뒤에 띄고 조사가 오면 어색합니다.
+     앞이 문장 끝이면 뒤의 '이/그/저'는 관형사이므로 뺍니다. */
+  const JOSA = '을|를|이|가|은|는|와|과|의|로|으로|만|도|부터|까지|에서|에게|보다|입니다|이고|이라|라고';
+  const LOOSE_JOSA = new RegExp( `(?<![.!?])</b>[  ]+(${ JOSA })(?![가-힣])` );
+  const LABEL_COLON = /:\s*<\/b>/;
+
+  let typo = 0;
+  const scan = ( node, path, plainFields ) => {
+    if ( Array.isArray( node ) ) {
+      node.forEach( ( v, i ) => scan( v, `${ path }[${ i }]`, plainFields ) );
+      return;
+    }
+    if ( !node || typeof node !== 'object' ) { return; }
+    for ( const [ k, v ] of Object.entries( node ) ) {
+      const here = `${ path }/${ k }`;
+      if ( typeof v === 'string' ) {
+        if ( plainFields.includes( k ) && v.includes( '<' ) ) {
+          err( `${ here }: 평문으로 그려지는 자리에 태그가 있음` );
+        }
+        if ( LOOSE_JOSA.test( v ) ) { warn( `${ here }: 굵은 글씨와 조사 사이가 떠 있음` ); typo++; }
+        if ( LABEL_COLON.test( v ) ) { warn( `${ here }: 굵은 글씨가 콜론으로 끝남` ); typo++; }
+      }
+      else { scan( v, here, plainFields ); }
+    }
+  };
+
+  scan( read( `content/${ BASE }/lessons.json` ) || {}, 'lessons', PLAIN.lessons );
+  scan( read( `content/${ BASE }/guides.json` ) || {}, 'guides', [] );
+  for ( const L of LANGS ) {
+    const c = read( `content/${ L }/courses.json` );
+    if ( c ) { scan( c, `courses(${ L })`, PLAIN.courses ); }
+  }
+  if ( !typo ) { ok( '조사 띄어쓰기 · 레이블 콜론 이상 없음' ); }
+}
+
 console.log( `\n오류 ${ errors } · 경고 ${ warns }\n` );
 process.exit( errors ? 1 : 0 );

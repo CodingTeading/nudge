@@ -182,7 +182,7 @@ txt( '#tocourse', t( 'lesson.toCourse' ) );
 
 txt( '#crumb', t( 'lesson.crumb', { course: course.no + ' ' + course.title, i: idx + 1, n: siblings.length } ) );
 txt( '#title', L.title );
-txt( '#lead', L.lead );
+html( '#lead', L.lead );
 
 applySeo( {
   lang, path: 'lesson.html?l=' + lid,
@@ -210,9 +210,9 @@ const V = L.mode === 'solve' ? '.solve' : '';
   t( 'lesson.block' + n + ( ( n === 2 || n === 5 ) ? V : '' ) ) ) );
 html( '#hook', L.hook );
 txt( '#mintro', t( 'lesson.missionIntro' ) );
-txt( '#rq', L.record );
+html( '#rq', L.record );
 $( '#rec' ).placeholder = t( 'lesson.recordPlaceholder' );
-txt( '#real', L.real );
+html( '#real', L.real );
 html( '#pnote', t( 'lesson.predictNote' + V ) );
 
 /* ─────────── ② 예상 → ⑤ 대조 ─────────── */
@@ -438,7 +438,7 @@ else {
     guide.appendChild( el( 'h3', { textContent: t( 'guide.screens' ) } ) );
     g.screens.forEach( s => {
       const d = el( 'div', { className: 'scr' } );
-      d.appendChild( el( 'span', { className: 'n', textContent: s.name } ) );
+      d.appendChild( el( 'span', { className: 'n', innerHTML: s.name } ) );
       d.appendChild( el( 'span', { className: 'w', innerHTML: s.what } ) );
       guide.appendChild( d );
     } );
