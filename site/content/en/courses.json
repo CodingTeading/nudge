@@ -595,6 +595,44 @@
         "min": 14,
         "diff": 3
       }
+    ],
+    "wave": [
+      {
+        "id": "wave-1",
+        "ready": true,
+        "sim": "hookes-law",
+        "title": "Twice the stretch, four times the energy",
+        "hook": "The force doubles — so why does the energy quadruple?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "wave-2",
+        "ready": true,
+        "sim": "masses-and-springs",
+        "title": "A bigger swing takes the same time",
+        "hook": "A wider swing travels farther — shouldn't it take longer?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "wave-3",
+        "ready": true,
+        "sim": "wave-on-a-string",
+        "title": "The wave moves, the rope doesn't",
+        "hook": "In a stadium wave, where does each person actually go?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "wave-4",
+        "ready": true,
+        "sim": "fourier-making-waves",
+        "title": "Every wave is a sum of sine waves",
+        "hook": "Can you build a square wave out of nothing but round sine waves?",
+        "min": 14,
+        "diff": 3
+      }
     ]
   }
 }

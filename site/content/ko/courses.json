@@ -594,6 +594,44 @@
         "min": 14,
         "diff": 3
       }
+    ],
+    "wave": [
+      {
+        "id": "wave-1",
+        "ready": true,
+        "sim": "hookes-law",
+        "title": "두 배 당기면 에너지는 네 배",
+        "hook": "힘은 두 배인데 에너지는 왜 네 배일까?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "wave-2",
+        "ready": true,
+        "sim": "masses-and-springs",
+        "title": "많이 당겨도 왕복 시간은 같다",
+        "hook": "크게 흔들리면 더 오래 걸려야 하지 않을까?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "wave-3",
+        "ready": true,
+        "sim": "wave-on-a-string",
+        "title": "파동은 가는데 줄은 안 간다",
+        "hook": "파도타기 응원에서 사람은 어디로 갈까?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "wave-4",
+        "ready": true,
+        "sim": "fourier-making-waves",
+        "title": "모든 파형은 사인파의 합이다",
+        "hook": "둥근 사인파만 더해서 네모난 파동을 만들 수 있을까?",
+        "min": 14,
+        "diff": 3
+      }
     ]
   }
 }
