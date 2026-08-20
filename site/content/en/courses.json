@@ -510,6 +510,53 @@
         "min": 13,
         "diff": 2
       }
+    ],
+    "react": [
+      {
+        "id": "mix-1",
+        "ready": true,
+        "sim": "ph-scale",
+        "title": "One pH step is ten times",
+        "hook": "Lemon juice and coffee differ by 3 on the scale — how many times is that really?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "mix-2",
+        "ready": true,
+        "sim": "acid-base-solutions",
+        "title": "Strong is not the same as concentrated",
+        "hook": "Same amount in the beaker — so why is one of them stronger?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "mix-3",
+        "ready": true,
+        "sim": "balancing-chemical-equations",
+        "title": "Only the number in front",
+        "hook": "Why can't you fix the equation by turning H₂O into H₂O₂?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "mix-4",
+        "ready": true,
+        "sim": "reactants-products-and-leftovers",
+        "title": "Whatever runs out first decides",
+        "hook": "Ten slices of bread and three of cheese — how many sandwiches?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "mix-5",
+        "ready": true,
+        "sim": "beers-law-lab",
+        "title": "Measuring concentration by colour",
+        "hook": "The solution didn't change — so why does a wider cuvette absorb more?",
+        "min": 14,
+        "diff": 3
+      }
     ]
   }
 }

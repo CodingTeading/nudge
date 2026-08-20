@@ -509,6 +509,53 @@
         "min": 13,
         "diff": 2
       }
+    ],
+    "react": [
+      {
+        "id": "mix-1",
+        "ready": true,
+        "sim": "ph-scale",
+        "title": "pH 1 차이는 10배 차이다",
+        "hook": "레몬즙과 커피는 pH 3 차이인데, 실제로는 몇 배 차이일까?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "mix-2",
+        "ready": true,
+        "sim": "acid-base-solutions",
+        "title": "강산과 약산의 차이는 농도가 아니다",
+        "hook": "같은 양을 넣었는데 왜 한쪽이 더 셀까?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "mix-3",
+        "ready": true,
+        "sim": "balancing-chemical-equations",
+        "title": "앞의 숫자만 건드릴 수 있다",
+        "hook": "H₂O 를 H₂O₂ 로 고치면 왜 안 될까?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "mix-4",
+        "ready": true,
+        "sim": "reactants-products-and-leftovers",
+        "title": "먼저 떨어지는 재료가 정한다",
+        "hook": "빵 10장과 치즈 3장으로 샌드위치를 몇 개 만들까?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "mix-5",
+        "ready": true,
+        "sim": "beers-law-lab",
+        "title": "색으로 농도를 잰다",
+        "hook": "용액은 그대로인데 통을 넓히면 왜 빛을 더 먹을까?",
+        "min": 14,
+        "diff": 3
+      }
     ]
   }
 }
