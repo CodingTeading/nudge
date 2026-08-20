@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="수직선 위의 거리">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M34 112 L288 112" stroke="#6a72a8" stroke-width="3"/>
+    <path d="M34 104 L34 120" stroke="#6a72a8" stroke-width="3"/>
+    <path d="M70 104 L70 120" stroke="#6a72a8" stroke-width="3"/>
+    <path d="M106 104 L106 120" stroke="#6a72a8" stroke-width="3"/>
+    <path d="M142 104 L142 120" stroke="#6a72a8" stroke-width="3"/>
+    <path d="M178 104 L178 120" stroke="#6a72a8" stroke-width="3"/>
+    <path d="M214 104 L214 120" stroke="#6a72a8" stroke-width="3"/>
+    <path d="M250 104 L250 120" stroke="#6a72a8" stroke-width="3"/>
+    <path d="M286 104 L286 120" stroke="#6a72a8" stroke-width="3"/>
+
+    <path d="M106 62 L214 62" stroke="#ffa53d" stroke-width="3.5"/>
+    <path d="M118 50 L106 62 L118 74 M202 50 L214 62 L202 74" stroke="#ffa53d" stroke-width="3.5"/>
+    <path d="M106 62 L106 104 M214 62 L214 104" stroke="#ffa53d" stroke-width="2.5"
+          opacity=".5" stroke-dasharray="1 7"/>
+    <circle cx="106" cy="112" r="10" fill="#4d9bff"/>
+    <circle cx="214" cy="112" r="10" fill="#4d9bff"/>
+  </g>
+</svg>

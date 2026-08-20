@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="두 막대의 비 2 대 3">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <rect x="62" y="56" width="86" height="30" rx="15" fill="#4d9bff"/>
+    <rect x="62" y="104" width="129" height="30" rx="15" fill="#4d9bff" opacity=".6"/>
+    <path d="M105 56 L105 86" stroke="#0a0c18" stroke-width="3"/>
+    <path d="M105 104 L105 134 M148 104 L148 134" stroke="#0a0c18" stroke-width="3"/>
+    <path d="M215 71 L253 71" stroke="#ffa53d" stroke-width="3.5"/>
+    <path d="M215 91 L253 91" stroke="#ffa53d" stroke-width="3.5" opacity=".45"/>
+    <path d="M215 119 L253 119" stroke="#ffa53d" stroke-width="3.5"/>
+    <path d="M215 99 L253 99" stroke="#ffa53d" stroke-width="3.5" opacity=".45"/>
+    <path d="M234 62 L234 128" stroke="#6a72a8" stroke-width="2.5"
+          opacity=".45" stroke-dasharray="1 7"/>
+  </g>
+</svg>

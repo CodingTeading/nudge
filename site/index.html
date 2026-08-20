@@ -47,7 +47,8 @@
     <p class="warn-line" id="langwarn" hidden style="max-width:580px;margin-top:18px"></p>
   </section>
 
-  <section class="wrap">
+  <!-- 오늘의 실험 — 지금은 감춰 둡니다. SHOW_TODAY 를 true 로 되돌리면 살아납니다. -->
+  <section class="wrap" id="today-sec" hidden>
     <div class="section-head"><h2 id="h-today"></h2></div>
     <div class="today">
       <div class="txt">
@@ -148,14 +149,19 @@ if ( courseRes.fellBack ) {
 }
 
 /* ─────────── 오늘의 실험 ─────────── */
-const today = COURSES[ 0 ];
-const todayLesson = LESSONS[ today.id ][ 1 ];
-txt( '#today-course', today.no + ' · ' + today.title );
-txt( '#today-title', todayLesson.title );
-txt( '#today-hook', todayLesson.hook );
-$( '#today-shot' ).src = '/thumbs/' + todayLesson.sim + '.png';
-$( '#today-go' ).href = withLang( 'lesson.html?l=' + todayLesson.id, lang );
-txt( '#today-go', t( 'home.start', { min: todayLesson.min } ) );
+/* 감춰 둔 상태입니다. 되살리려면 true 로 바꾸기만 하면 됩니다 — 마크업도 문구도 그대로 있습니다. */
+const SHOW_TODAY = false;
+if ( SHOW_TODAY ) {
+  const today = COURSES[ 0 ];
+  const todayLesson = LESSONS[ today.id ][ 1 ];
+  $( '#today-sec' ).hidden = false;
+  txt( '#today-course', today.no + ' · ' + today.title );
+  txt( '#today-title', todayLesson.title );
+  txt( '#today-hook', todayLesson.hook );
+  $( '#today-shot' ).src = '/thumbs/' + todayLesson.sim + '.png';
+  $( '#today-go' ).href = withLang( 'lesson.html?l=' + todayLesson.id, lang );
+  txt( '#today-go', t( 'home.start', { min: todayLesson.min } ) );
+}
 
 /* ─────────── 이어서 하기 ─────────── */
 const resuming = COURSES.filter( c => progress[ c.id ] );
@@ -176,14 +182,18 @@ if ( resuming.length ) {
 }
 
 /* ─────────── 코스 그리드 ─────────── */
-const BIG = new Set( [ 0, 1, 4 ] );
-COURSES.forEach( ( c, i ) => {
-  const a = el( 'a', { className: 'course' + ( BIG.has( i ) ? ' big' : '' ),
-                       href: withLang( 'course.html?c=' + c.id, lang ) } );
+COURSES.forEach( c => {
+  const a = el( 'a', { className: 'course', href: withLang( 'course.html?c=' + c.id, lang ) } );
   a.style.setProperty( '--c', color( c.subject ) );
-  a.appendChild( el( 'span', { className: 'num', textContent: c.no + ' / ' + c.subject } ) );
-  a.appendChild( el( 'h3', { textContent: c.title } ) );
-  a.appendChild( el( 'p', { className: 'q', textContent: c.hook } ) );
+
+  const cover = el( 'div', { className: 'cover' } );
+  cover.appendChild( el( 'img', { src: '/covers/' + c.id + '.svg', alt: '', loading: 'lazy' } ) );
+  a.appendChild( cover );
+
+  const body = el( 'div', { className: 'body' } );
+  body.appendChild( el( 'span', { className: 'num', textContent: c.no + ' / ' + c.subject } ) );
+  body.appendChild( el( 'h3', { textContent: c.title } ) );
+  body.appendChild( el( 'p', { className: 'q', textContent: c.hook } ) );
 
   const meta = el( 'div', { className: 'meta' } );
   meta.appendChild( el( 'span', { textContent: t( 'course.sims', { n: c.sims.length } ) } ) );
@@ -196,7 +206,8 @@ COURSES.forEach( ( c, i ) => {
     s.style.color = 'var(--accent-hot)';
     meta.appendChild( s );
   }
-  a.appendChild( meta );
+  body.appendChild( meta );
+  a.appendChild( body );
   $( '#courses' ).appendChild( a );
 } );
 </script>

@@ -167,38 +167,45 @@ h1, h2, h3 {
 .bar { height: 5px; border-radius: 3px; background: var(--surface-3); overflow: hidden; }
 .bar span { display: block; height: 100%; border-radius: 3px; background: var(--accent-hot); }
 
-/* 코스 그리드 (bento) */
+/* 코스 그리드 — 썸네일이 붙으면서 카드 크기를 모두 같게 했습니다.
+   bento(큰 카드 섞기)는 그림이 없을 때의 요령이었고, 이제는 나란한 편이 낫습니다. */
 .courses {
-  display: grid; gap: 16px;
-  grid-template-columns: repeat( 6, 1fr );
+  display: grid; gap: 18px;
+  grid-template-columns: repeat( 3, minmax( 0, 1fr ) );
 }
 .course {
   --c: var(--s-etc);
-  grid-column: span 2;
   position: relative; overflow: hidden;
   background: var(--surface); border: 1px solid var(--line);
-  border-radius: var(--radius); padding: 22px 22px 18px;
-  min-height: 168px;
-  display: flex; flex-direction: column; gap: 8px;
+  border-radius: var(--radius);
+  display: flex; flex-direction: column;
   transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
 }
-.course.big { grid-column: span 3; min-height: 210px; }
 .course:hover { transform: translateY( -4px ); border-color: color-mix( in oklab, var(--c) 60%, var(--line) ); }
-.course::after {
-  content: ''; position: absolute; right: -70px; top: -70px;
-  width: 190px; height: 190px; border-radius: 50%;
-  background: radial-gradient( circle, color-mix( in oklab, var(--c) 40%, transparent ), transparent 68% );
-  pointer-events: none;
+
+/* 커버 — 과목색 기운을 뒤에 깔고 그 위에 SVG 를 얹습니다 */
+.course .cover {
+  position: relative; aspect-ratio: 16 / 9;
+  background:
+    radial-gradient( 120% 100% at 78% 8%, color-mix( in oklab, var(--c) 26%, transparent ), transparent 70% ),
+    var(--bg-deep);
+  border-bottom: 1px solid var(--line);
+}
+.course .cover img { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.course .body {
+  padding: 18px 20px 16px;
+  display: flex; flex-direction: column; gap: 7px; flex: 1;
 }
 .course .num {
-  font-family: var(--font-display); font-size: 13px;
+  font-family: var(--font-display); font-size: 12.5px;
   color: var(--c); letter-spacing: .06em;
 }
-.course h3 { margin: 0; font-size: 21px; }
-.course.big h3 { font-size: 26px; max-width: 400px; }
+.course h3 { margin: 0; font-size: 20px; }
 .course .q { color: var(--ink-soft); font-size: 14px; margin: 0; }
 .course .meta {
-  margin-top: auto; display: flex; align-items: center; gap: 10px;
+  margin-top: auto; padding-top: 8px;
+  display: flex; align-items: center; gap: 10px;
   font-size: 12.5px; color: var(--ink-faint);
 }
 .course .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--line); }
@@ -224,7 +231,7 @@ h1, h2, h3 {
 
 .lesson-row {
   --c: var(--s-etc);
-  display: grid; grid-template-columns: 56px 1fr 132px; gap: 20px; align-items: center;
+  display: grid; grid-template-columns: 56px 116px 1fr 132px; gap: 18px; align-items: center;
   background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 18px 22px;
   transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
@@ -240,6 +247,88 @@ h1, h2, h3 {
 .lesson-row h3 { margin: 0 0 3px; font-size: 19px; }
 .lesson-row .q { margin: 0; color: var(--ink-soft); font-size: 14px; }
 .lesson-row .side { display: flex; flex-direction: column; align-items: flex-end; gap: 7px; font-size: 12.5px; color: var(--ink-faint); }
+
+/* 레슨 썸네일 — 시뮬레이션 실제 화면입니다 */
+.lesson-row .shot {
+  aspect-ratio: 16 / 10; border-radius: 10px; overflow: hidden;
+  background: var(--bg-deep); border: 1px solid var(--line);
+  position: relative;
+}
+.lesson-row .shot img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+}
+.lesson-row.done .shot { opacity: .55; }
+
+/* ══════════════════════════ 전체 실험 (all) ══════════════════════════ */
+
+.all-head { padding-block: 44px 8px; }
+.all-head h1 { margin: 0 0 10px; font-size: clamp( 28px, 5vw, 42px ); }
+.all-head p { margin: 0; color: var(--ink-soft); max-width: 620px; }
+
+.filters { padding-block: 22px 6px; display: flex; flex-direction: column; gap: 12px; }
+.filter-row { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.filter-row > .lbl {
+  font-size: 12.5px; color: var(--ink-faint); width: 42px; flex: none;
+  letter-spacing: .08em;
+}
+.chip {
+  font: inherit; font-size: 13.5px; cursor: pointer; white-space: nowrap;
+  color: var(--ink-soft); background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius-pill); padding: 6px 15px;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease),
+              border-color var(--dur) var(--ease);
+}
+.chip:hover { color: var(--ink); background: var(--surface-2); }
+.chip[aria-pressed="true"] {
+  color: #06070f; background: var(--accent); border-color: transparent; font-weight: 600;
+}
+.chip[data-grade][aria-pressed="true"] { background: var(--accent-hot); }
+
+.search {
+  font: inherit; font-size: 15px; color: var(--ink); width: min( 100%, 340px );
+  background: var(--bg-deep); border: 1px solid var(--line);
+  border-radius: var(--radius-pill); padding: 10px 18px;
+}
+.search:focus { outline: none; border-color: var(--accent); }
+.search::placeholder { color: var(--ink-faint); }
+
+.count { color: var(--ink-faint); font-size: 13.5px; margin: 18px 0 0; }
+
+.group-title {
+  display: flex; align-items: center; gap: 10px;
+  margin: 34px 0 14px; font-size: 20px;
+}
+.group-title i { width: 9px; height: 9px; border-radius: 50%; display: block; flex: none; }
+
+.simgrid {
+  display: grid; gap: 16px;
+  grid-template-columns: repeat( auto-fill, minmax( 208px, 1fr ) );
+}
+.simcard {
+  --c: var(--s-etc);
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.simcard:hover { transform: translateY( -4px ); border-color: color-mix( in oklab, var(--c) 60%, var(--line) ); }
+.simcard .shot {
+  position: relative; aspect-ratio: 16 / 10;
+  background: var(--bg-deep); border-bottom: 1px solid var(--line);
+}
+.simcard .shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.simcard .body { padding: 13px 15px 14px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.simcard .name { font-family: var(--font-display); font-size: 16px; line-height: 1.35; }
+.simcard .tags { margin-top: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.simcard .tag {
+  font-size: 11.5px; padding: 2px 9px; border-radius: var(--radius-pill);
+  background: var(--surface-2); color: var(--ink-faint); border: 1px solid var(--line);
+}
+.simcard .tag.subject { color: var(--c); border-color: color-mix( in oklab, var(--c) 40%, var(--line) ); }
+.simcard .tag.warn { color: var(--accent-hot); border-color: color-mix( in oklab, var(--accent-hot) 40%, var(--line) ); }
+
+.empty { color: var(--ink-faint); padding: 40px 0; }
 
 /* ══════════════════════════ 레슨 화면 ══════════════════════════ */
 
@@ -638,8 +727,7 @@ footer.site a { color: var(--ink-soft); text-decoration: underline; text-underli
 @media ( max-width: 1000px ) {
   .today { grid-template-columns: 1fr; }
   .today .shot { border-left: 0; border-top: 1px solid var(--line); }
-  .courses { grid-template-columns: repeat( 4, 1fr ); }
-  .course, .course.big { grid-column: span 2; }
+  .courses { grid-template-columns: repeat( 2, minmax( 0, 1fr ) ); }
 }
 
 /* 좁은 화면에서도 바는 넓은 화면과 같은 모양입니다 — 이름 왼쪽, 버튼 오른쪽 한 줄.
@@ -663,10 +751,12 @@ footer.site a { color: var(--ink-soft); text-decoration: underline; text-underli
 
 @media ( max-width: 620px ) {
   body { font-size: 15.5px; }
-  .courses { grid-template-columns: 1fr; }
-  .course, .course.big { grid-column: span 1; min-height: 0; }
+  .courses { grid-template-columns: minmax( 0, 1fr ); }
+  /* 좁으면 썸네일은 접습니다 — 44px 짜리 그림은 아무것도 알려 주지 않습니다 */
   .lesson-row { grid-template-columns: 44px 1fr; padding: 15px 16px; gap: 14px; }
-  .lesson-row .side { grid-column: 2; flex-direction: row; align-items: center; }
+  .lesson-row .shot { display: none; }
+  .lesson-row .side { grid-column: 2; flex-direction: row; align-items: center; flex-wrap: wrap; }
+  .filter-row > .lbl { width: 100%; }
   .nav a { padding: 7px 10px; font-size: 13.5px; }
   .brand span { display: none; }
 

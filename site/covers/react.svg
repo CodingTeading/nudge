@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="섞이는 두 용액">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M42 40 L42 128 A14 14 0 0 0 56 142 L86 142 A14 14 0 0 0 100 128 L100 40"
+          stroke="#a5addb" stroke-width="3.5"/>
+    <path d="M42 100 L100 100 L100 128 A14 14 0 0 1 86 142 L56 142 A14 14 0 0 1 42 128 Z"
+          fill="#ff4d8d" opacity=".75"/>
+    <path d="M220 40 L220 128 A14 14 0 0 0 234 142 L264 142 A14 14 0 0 0 278 128 L278 40"
+          stroke="#a5addb" stroke-width="3.5"/>
+    <path d="M220 90 L278 90 L278 128 A14 14 0 0 1 264 142 L234 142 A14 14 0 0 1 220 128 Z"
+          fill="#2ee6d6" opacity=".7"/>
+    <path d="M126 90 L192 90" stroke="#ffa53d" stroke-width="3.5"/>
+    <path d="M178 78 L192 90 L178 102" stroke="#ffa53d" stroke-width="3.5"/>
+    <circle cx="238" cy="66" r="5" fill="#ffffff" opacity="0.55"/>
+    <circle cx="258" cy="52" r="5" fill="#ffffff" opacity="0.55"/>
+    <circle cx="266" cy="74" r="5" fill="#ffffff" opacity="0.55"/>
+  </g>
+</svg>

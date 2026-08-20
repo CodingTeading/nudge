@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="4분의 3">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M160 26 A64 64 0 0 1 224 90 L160 90 Z" fill="#4d9bff"/>
+    <path d="M224 90 A64 64 0 0 1 160 154 L160 90 Z" fill="#4d9bff" opacity=".8"/>
+    <path d="M160 154 A64 64 0 0 1 96 90 L160 90 Z" fill="#4d9bff" opacity=".6"/>
+    <circle cx="160" cy="90" r="64" stroke="#a5addb" stroke-width="3.5"/>
+    <path d="M96 90 L224 90 M160 26 L160 154" stroke="#a5addb" stroke-width="3.5"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="렌즈와 광선">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M148 34 C 176 62, 176 118, 148 146 C 120 118, 120 62, 148 34 Z"
+          stroke="#a5addb" stroke-width="3.5"/>
+    <path d="M34 56 L136 56 M34 90 L134 90 M34 124 L136 124" stroke="#9d5cff" stroke-width="3.5"/>
+    <path d="M160 56 L262 90 M162 90 L262 90 M160 124 L262 90" stroke="#9d5cff"
+          stroke-width="3.5" opacity=".9"/>
+    <circle cx="266" cy="90" r="7" fill="#ffa53d"/>
+  </g>
+</svg>

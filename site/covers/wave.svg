@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="두 파동">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M34 90 C 64 34, 94 34, 124 90 S 184 146, 214 90 S 274 34, 290 62"
+          stroke="#6a72a8" stroke-width="3" opacity=".55"/>
+    <path d="M30 118 C 60 62, 90 62, 120 118 S 180 174, 210 118 S 270 62, 292 84"
+          stroke="#9d5cff" stroke-width="3.5"/>
+    <path d="M30 90 L292 90" stroke="#6a72a8" stroke-width="2" opacity=".4" stroke-dasharray="1 8"/>
+  </g>
+</svg>

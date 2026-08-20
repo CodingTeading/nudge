@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="겹친 두 상태">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <circle cx="128" cy="90" r="52" stroke="#9d5cff" stroke-width="3.5" stroke-dasharray="1 10"/>
+    <circle cx="192" cy="90" r="52" stroke="#2ee6d6" stroke-width="3.5" stroke-dasharray="1 10"/>
+    <path d="M160 42 A 52 52 0 0 1 160 138 A 52 52 0 0 1 160 42 Z" fill="#9d5cff" opacity=".3"/>
+    <circle cx="160" cy="90" r="9" fill="#ffa53d"/>
+  </g>
+</svg>

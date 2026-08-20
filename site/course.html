@@ -136,6 +136,11 @@ lessons.forEach( ( l, i ) => {
   row.appendChild( el( 'span', { className: 'idx',
     textContent: l.state === 'done' ? '✓' : String( i + 1 ) } ) );
 
+  /* 시뮬레이션 실제 화면 — 어떤 실험인지 글보다 빨리 알려 줍니다 */
+  const shot = el( 'div', { className: 'shot' } );
+  shot.appendChild( el( 'img', { src: '/thumbs/' + l.sim + '.png', alt: '', loading: 'lazy' } ) );
+  row.appendChild( shot );
+
   const mid = el( 'div' );
   mid.appendChild( el( 'h3', { textContent: l.title } ) );
   mid.appendChild( el( 'p', { className: 'q', textContent: l.hook } ) );

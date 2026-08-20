@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="직선과 곡선">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M56 30 L56 146 L286 146" stroke="#6a72a8" stroke-width="3"/>
+    <path d="M70 138 Q 160 26, 250 138" stroke="#a5addb" stroke-width="3.5" opacity=".6"/>
+    <path d="M70 132 L262 44" stroke="#4d9bff" stroke-width="3.5"/>
+    <circle cx="70" cy="132" r="7" fill="#4d9bff" opacity="1"/>
+    <circle cx="166" cy="88" r="7" fill="#4d9bff" opacity="1"/>
+    <circle cx="262" cy="44" r="7" fill="#4d9bff" opacity="1"/>
+    <path d="M166 88 L262 88 M262 88 L262 44" stroke="#ffa53d" stroke-width="3"
+          stroke-dasharray="1 8"/>
+  </g>
+</svg>

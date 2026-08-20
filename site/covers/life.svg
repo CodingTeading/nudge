@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="세포막 통과">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M30 70 L290 70 M30 110 L290 110" stroke="#35e08f" stroke-width="3.5" opacity=".85"/>
+    <circle cx="50" cy="70" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="82" cy="70" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="114" cy="70" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="146" cy="70" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="178" cy="70" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="210" cy="70" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="242" cy="70" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="274" cy="70" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="50" cy="110" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="82" cy="110" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="114" cy="110" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="146" cy="110" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="178" cy="110" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="210" cy="110" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="242" cy="110" r="7" fill="#35e08f" opacity="0.55"/>
+    <circle cx="274" cy="110" r="7" fill="#35e08f" opacity="0.55"/>
+    <path d="M130 34 L130 146" stroke="#ffa53d" stroke-width="3.5" stroke-dasharray="1 10"/>
+    <path d="M118 134 L130 146 L142 134" stroke="#ffa53d" stroke-width="3.5"/>
+    <circle cx="130" cy="34" r="9" fill="#ffa53d"/>
+    <circle cx="206" cy="42" r="8" fill="#a5addb" opacity="0.5"/>
+    <circle cx="252" cy="52" r="8" fill="#a5addb" opacity="0.5"/>
+  </g>
+</svg>

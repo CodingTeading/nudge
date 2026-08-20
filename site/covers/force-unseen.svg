@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none" role="img" aria-label="두 전하와 역선">
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M128 62 C 160 48, 192 48, 224 62" stroke="#6a72a8" stroke-width="3" opacity=".65"/>
+    <path d="M126 90 L 226 90" stroke="#6a72a8" stroke-width="3" opacity=".65"/>
+    <path d="M128 118 C 160 132, 192 132, 224 118" stroke="#6a72a8" stroke-width="3" opacity=".65"/>
+    <circle cx="100" cy="90" r="23" fill="#9d5cff"/>
+    <path d="M100 80 L100 100 M90 90 L110 90" stroke="#0a0c18" stroke-width="4"/>
+    <circle cx="250" cy="90" r="23" fill="#a5addb"/>
+    <path d="M240 90 L260 90" stroke="#0a0c18" stroke-width="4"/>
+  </g>
+</svg>

@@ -10,3 +10,6 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
+
+# wrangler 로컬 캐시 — 계정 ID 와 이메일이 들어 있습니다
+.wrangler/
