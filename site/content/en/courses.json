@@ -76,13 +76,13 @@
 
   "lessons": {
     "force-unseen": [
-      { "id": "static-1", "sim": "balloons-and-static-electricity", "title": "Why a balloon pulls your hair",
+      { "id": "static-1", "ready": true, "sim": "balloons-and-static-electricity", "title": "Why a balloon pulls your hair",
         "hook": "Nothing happened before you rubbed it. What changed?", "min": 14, "diff": 1, "state": "done" },
       { "id": "static-2", "ready": true, "sim": "charges-and-fields", "title": "The invisible map around a charge",
         "hook": "Put down one charge and the space around it is already different?", "min": 16, "diff": 2, "state": "now" },
-      { "id": "static-3", "sim": "coulombs-law", "title": "Double the distance — what happens to the force?",
+      { "id": "static-3", "ready": true, "sim": "coulombs-law", "title": "Double the distance — what happens to the force?",
         "hook": "Half? Or a lot more than half?", "min": 12, "diff": 2 },
-      { "id": "static-4", "sim": "faradays-electromagnetic-lab", "title": "Move a magnet, make electricity",
+      { "id": "static-4", "ready": true, "sim": "faradays-electromagnetic-lab", "title": "Move a magnet, make electricity",
         "hook": "What if this one thing is all a power station does?", "min": 18, "diff": 3 }
     ]
   }

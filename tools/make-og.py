@@ -156,6 +156,8 @@ def main():
             accent))
 
     for lid, L in lessons.items():
+        if lid.startswith('_'):
+            continue          # _note 같은 메모 키는 레슨이 아닙니다
         course = next(x for x in data['courses'] if x['id'] == L['course'])
         meta = next(x for x in data['lessons'][L['course']] if x['id'] == lid)
         accent = SUBJECT.get(course['subject'], (127, 136, 184))

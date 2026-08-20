@@ -94,6 +94,7 @@ if ( !ready ) { warn( 'ready 로 표시된 레슨이 없음' ); }
 
 /* 본문의 정답 번호가 선택지 범위 안에 있는가 */
 for ( const [ id, L ] of Object.entries( lessons ) ) {
+  if ( id.startsWith( '_' ) ) { continue; }   // _note 같은 메모 키는 건너뜁니다
   if ( L.explain?.right >= L.predict?.opts?.length ) { err( `${ id }: explain.right 가 선택지 범위 밖` ); }
   L.quiz?.forEach( ( q, i ) => {
     if ( q.right >= q.opts.length ) { err( `${ id }/quiz[${ i }]: right 가 선택지 범위 밖` ); }
