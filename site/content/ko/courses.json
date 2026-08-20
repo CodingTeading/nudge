@@ -632,6 +632,35 @@
         "min": 14,
         "diff": 3
       }
+    ],
+    "space": [
+      {
+        "id": "space-1",
+        "ready": true,
+        "sim": "gravity-and-orbits",
+        "title": "달은 지금도 떨어지는 중이다",
+        "hook": "돌고 있는 달에서 중력이 사라지면 어디로 갈까?",
+        "min": 15,
+        "diff": 1
+      },
+      {
+        "id": "space-2",
+        "ready": true,
+        "sim": "my-solar-system",
+        "title": "태양도 흔들린다",
+        "hook": "지구가 태양을 당기는 힘은 얼마나 될까?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "space-3",
+        "ready": true,
+        "sim": "keplers-laws",
+        "title": "가까울 때 빨라진다",
+        "hook": "궤도가 원이 아니라면 속도는 어디서 가장 빠를까?",
+        "min": 15,
+        "diff": 3
+      }
     ]
   }
 }
