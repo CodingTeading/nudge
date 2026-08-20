@@ -7,5 +7,13 @@
   "fourier-making-waves": {
     "_why": "'기호' 로 되어 있습니다. 원제는 Fourier: Making Waves 입니다.",
     "ko": "푸리에: 파동 만들기"
+  },
+  "ratio-and-proportion": {
+    "_why": "'비울과 비' — '비율'의 오타입니다.",
+    "ko": "비와 비율"
+  },
+  "unit-rates": {
+    "_why": "Unit Rates 가 그냥 '비율'로 되어 있어 같은 코스의 '비율 놀이터'·'비와 비율'과 구별되지 않습니다.",
+    "ko": "단위 비율"
   }
 }

@@ -472,6 +472,44 @@
         "min": 12,
         "diff": 3
       }
+    ],
+    "ratio": [
+      {
+        "id": "ratio-1",
+        "ready": true,
+        "sim": "ratio-and-proportion",
+        "title": "Adding does not preserve a ratio",
+        "hook": "Two packs of noodles take 3 cups of water — so four packs take 5 or 6?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "ratio-2",
+        "ready": true,
+        "sim": "proportion-playground",
+        "title": "Same ratio, same result",
+        "hook": "Pour three times as much paint — does the colour get three times deeper?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "ratio-3",
+        "ready": true,
+        "sim": "unit-rates",
+        "title": "Which one is actually cheaper",
+        "hook": "Six for 3000 or ten for 4500 — which is the better deal?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "ratio-4",
+        "ready": true,
+        "sim": "mean-share-and-balance",
+        "title": "A mean is a fair share",
+        "hook": "Let the water level out — why is that height the average?",
+        "min": 13,
+        "diff": 2
+      }
     ]
   }
 }

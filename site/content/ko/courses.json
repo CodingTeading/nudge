@@ -471,6 +471,44 @@
         "min": 12,
         "diff": 3
       }
+    ],
+    "ratio": [
+      {
+        "id": "ratio-1",
+        "ready": true,
+        "sim": "ratio-and-proportion",
+        "title": "더하기로는 비율이 안 지켜진다",
+        "hook": "라면 2개에 물 3컵이면, 4개에는 5컵일까 6컵일까?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "ratio-2",
+        "ready": true,
+        "sim": "proportion-playground",
+        "title": "비율이 같으면 결과도 같다",
+        "hook": "물감 양을 세 배로 부으면 색도 세 배 진해질까?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "ratio-3",
+        "ready": true,
+        "sim": "unit-rates",
+        "title": "어느 쪽이 진짜 싼가",
+        "hook": "6개 3000원과 10개 4500원 중 이득인 쪽은?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "ratio-4",
+        "ready": true,
+        "sim": "mean-share-and-balance",
+        "title": "평균은 고르게 나눈 몫이다",
+        "hook": "물을 흘려보내 높이를 맞추면 그게 왜 평균일까?",
+        "min": 13,
+        "diff": 2
+      }
     ]
   }
 }
