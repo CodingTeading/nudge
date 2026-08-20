@@ -304,6 +304,62 @@
         "min": 12,
         "diff": 3
       }
+    ],
+    "atom": [
+      {
+        "id": "atom-1",
+        "ready": true,
+        "sim": "build-an-atom",
+        "title": "What decides which element it is",
+        "hook": "Add one neutron to hydrogen — does it become helium?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "atom-2",
+        "ready": true,
+        "sim": "rutherford-scattering",
+        "title": "An atom is mostly empty space",
+        "hook": "What if you fired a cannon at tissue paper and it bounced back?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "atom-3",
+        "ready": true,
+        "sim": "models-of-the-hydrogen-atom",
+        "title": "An electron can't just be anywhere",
+        "hook": "Why does an atom emit a few sharp lines instead of a rainbow?",
+        "min": 15,
+        "diff": 3
+      },
+      {
+        "id": "atom-4",
+        "ready": true,
+        "sim": "build-a-nucleus",
+        "title": "The moment a nucleus gives out",
+        "hook": "Neutrons don't change the element — so why does adding too many break it?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "atom-5",
+        "ready": true,
+        "sim": "alpha-decay",
+        "title": "Nobody knows when it will break",
+        "hook": "What if one is unknowable but a million are exactly predictable?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "atom-6",
+        "ready": true,
+        "sim": "beta-decay",
+        "title": "The moment one element becomes another",
+        "hook": "There are no electrons in a nucleus — so where does the emitted one come from?",
+        "min": 11,
+        "diff": 3
+      }
     ]
   }
 }

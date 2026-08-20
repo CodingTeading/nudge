@@ -303,6 +303,62 @@
         "min": 12,
         "diff": 3
       }
+    ],
+    "atom": [
+      {
+        "id": "atom-1",
+        "ready": true,
+        "sim": "build-an-atom",
+        "title": "무엇이 원소를 정하는가",
+        "hook": "수소에 중성자를 하나 더 넣으면 헬륨이 될까?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "atom-2",
+        "ready": true,
+        "sim": "rutherford-scattering",
+        "title": "원자 속은 거의 텅 비어 있다",
+        "hook": "휴지에 대포를 쐈는데 되돌아왔다면?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "atom-3",
+        "ready": true,
+        "sim": "models-of-the-hydrogen-atom",
+        "title": "전자는 아무 데나 있을 수 없다",
+        "hook": "원자가 내는 빛이 무지개가 아니라 선 몇 개인 이유는?",
+        "min": 15,
+        "diff": 3
+      },
+      {
+        "id": "atom-4",
+        "ready": true,
+        "sim": "build-a-nucleus",
+        "title": "핵이 버티지 못하는 순간",
+        "hook": "중성자는 원소를 안 바꾸는데, 너무 많으면 왜 부서질까?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "atom-5",
+        "ready": true,
+        "sim": "alpha-decay",
+        "title": "언제 깨질지는 아무도 모른다",
+        "hook": "하나는 알 수 없는데 전체는 정확히 맞힐 수 있다면?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "atom-6",
+        "ready": true,
+        "sim": "beta-decay",
+        "title": "원소가 바뀌는 순간",
+        "hook": "핵에는 전자가 없는데 왜 전자가 튀어나올까?",
+        "min": 11,
+        "diff": 3
+      }
     ]
   }
 }

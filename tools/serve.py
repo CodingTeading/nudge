@@ -42,6 +42,16 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             if 'If-None-Match' in self.headers else None
         return super().send_head()
 
+    def copyfile(self, source, outputfile):
+        # shutil.copyfileobj 는 Windows 에서 1MB 씩 write 합니다. 3MB 가 넘는
+        # 시뮬레이션에서 그 큰 write 가 중간에 끊겨 브라우저가 잘린 문서를 받습니다
+        # (curl 은 멀쩡). 64KB 로 잘라 보내면 재현되지 않습니다.
+        while True:
+            chunk = source.read(64 * 1024)
+            if not chunk:
+                break
+            outputfile.write(chunk)
+
     def log_message(self, fmt, *args):
         pass  # 조용히
 
