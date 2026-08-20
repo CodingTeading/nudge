@@ -398,6 +398,80 @@
         "min": 13,
         "diff": 3
       }
+    ],
+    "number": [
+      {
+        "id": "num-1",
+        "ready": true,
+        "sim": "number-play",
+        "title": "The many faces of seven",
+        "hook": "What if the digit 7, seven objects and the word \"seven\" are all one thing?",
+        "min": 11,
+        "diff": 1
+      },
+      {
+        "id": "num-2",
+        "ready": true,
+        "sim": "number-compare",
+        "title": "How much bigger",
+        "hook": "How do you get from \"7 is bigger\" to \"bigger by 4\"?",
+        "min": 11,
+        "diff": 1
+      },
+      {
+        "id": "num-3",
+        "ready": true,
+        "sim": "number-pairs",
+        "title": "One number, two pieces",
+        "hook": "How many ways can you split 10 into two pieces?",
+        "min": 12,
+        "diff": 1
+      },
+      {
+        "id": "num-4",
+        "ready": true,
+        "sim": "number-line-distance",
+        "title": "Distance has no direction",
+        "hook": "How is \"3 units apart\" different from \"moved −3\"?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "num-5",
+        "ready": true,
+        "sim": "equality-explorer",
+        "title": "A balance scale is an equation",
+        "hook": "If = doesn't mean \"here comes the answer\", what does it mean?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "num-6",
+        "ready": true,
+        "sim": "function-builder",
+        "title": "A box that changes what you put in",
+        "hook": "Chain two boxes together — does the order matter?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "num-7",
+        "ready": true,
+        "sim": "quadrilateral",
+        "title": "Is a square a rectangle?",
+        "hook": "Does a shape's name come from how it looks, or from what it satisfies?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "num-8",
+        "ready": true,
+        "sim": "center-and-variability",
+        "title": "An average is not enough",
+        "hook": "Is a river with an average depth of 1 m safe?",
+        "min": 12,
+        "diff": 3
+      }
     ]
   }
 }

@@ -397,6 +397,80 @@
         "min": 13,
         "diff": 3
       }
+    ],
+    "number": [
+      {
+        "id": "num-1",
+        "ready": true,
+        "sim": "number-play",
+        "title": "7이라는 것의 여러 얼굴",
+        "hook": "숫자 7, 낱개 일곱 개, '일곱'이라는 말이 같은 것이라면?",
+        "min": 11,
+        "diff": 1
+      },
+      {
+        "id": "num-2",
+        "ready": true,
+        "sim": "number-compare",
+        "title": "얼마나 더 큰가",
+        "hook": "\"7이 더 크다\"에서 \"4만큼 더 크다\"로 가려면?",
+        "min": 11,
+        "diff": 1
+      },
+      {
+        "id": "num-3",
+        "ready": true,
+        "sim": "number-pairs",
+        "title": "하나의 수를 두 조각으로",
+        "hook": "10을 두 조각으로 가르는 방법은 몇 가지일까?",
+        "min": 12,
+        "diff": 1
+      },
+      {
+        "id": "num-4",
+        "ready": true,
+        "sim": "number-line-distance",
+        "title": "거리에는 방향이 없다",
+        "hook": "\"3칸 떨어져 있다\"와 \"−3만큼 갔다\"는 어떻게 다를까?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "num-5",
+        "ready": true,
+        "sim": "equality-explorer",
+        "title": "양팔저울이 방정식이다",
+        "hook": "= 가 \"답이 나온다\"가 아니라면 무슨 뜻일까?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "num-6",
+        "ready": true,
+        "sim": "function-builder",
+        "title": "넣으면 바뀌어 나오는 상자",
+        "hook": "상자 두 개를 이어 붙이면 순서가 중요할까?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "num-7",
+        "ready": true,
+        "sim": "quadrilateral",
+        "title": "정사각형은 직사각형일까",
+        "hook": "도형의 이름은 생김새가 정할까, 조건이 정할까?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "num-8",
+        "ready": true,
+        "sim": "center-and-variability",
+        "title": "평균만으로는 모자란다",
+        "hook": "평균 수심 1m 인 강은 안전할까?",
+        "min": 12,
+        "diff": 3
+      }
     ]
   }
 }

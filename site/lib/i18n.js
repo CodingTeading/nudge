@@ -83,6 +83,16 @@ export async function simLocales() {
 }
 
 /** 이 시뮬레이션을 이 언어로 열 수 있는가. 없으면 영어로 엽니다. */
+/** PhET 번역이 잘못된 시뮬레이션 제목을 바로잡습니다. content/sim-titles.json 참고. */
+export async function applySimTitles( sims, lang ) {
+  const fix = ( await json( '/content/sim-titles.json' ) ) || {};
+  for ( const s of sims ) {
+    const t = fix[ s.repo ]?.[ lang ];
+    if ( t ) { s.title = t; }
+  }
+  return sims;
+}
+
 export function simLocaleFor( table, repo, lang ) {
   const have = table[ repo ] || [ 'en' ];
   return have.includes( lang ) ? lang : 'en';

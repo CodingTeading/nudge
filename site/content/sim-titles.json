@@ -1,0 +1,11 @@
+{
+  "_note": "PhET 한국어 번역이 잘못된 시뮬레이션 제목을 바로잡습니다. repo → { 언어: 제목 }. 여기 없는 것은 sims.json 값을 그대로 씁니다.",
+  "number-play": {
+    "_why": "Number Play 를 '게임 횟수'로 옮겨 놓았습니다. 수를 세고 놀아 보는 실험입니다.",
+    "ko": "수 놀이"
+  },
+  "fourier-making-waves": {
+    "_why": "'기호' 로 되어 있습니다. 원제는 Fourier: Making Waves 입니다.",
+    "ko": "푸리에: 파동 만들기"
+  }
+}

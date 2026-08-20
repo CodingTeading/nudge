@@ -143,7 +143,7 @@
 
 <script type="module">
 import { currentLang, loadUI, loadContent, applyDocLang, langPicker, withLang,
-         simLocales, simLocaleFor, LANGS, BASE } from '/lib/i18n.js';
+         simLocales, simLocaleFor, applySimTitles, LANGS, BASE } from '/lib/i18n.js';
 import { applySeo, lessonJsonLd } from '/lib/seo.js';
 
 const $ = s => document.querySelector( s );
@@ -160,7 +160,7 @@ const [ t, courseRes, lessonRes, guideRes, simTable, sims ] = await Promise.all(
   loadContent( 'lessons', lang ),
   loadContent( 'guides', lang ),
   simLocales(),
-  fetch( '/sims.json' ).then( r => r.json() )
+  fetch( '/sims.json' ).then( r => r.json() ).then( s => applySimTitles( s, lang ) )
 ] );
 
 const lid = new URLSearchParams( location.search ).get( 'l' ) || 'static-2';

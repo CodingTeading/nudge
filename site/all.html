@@ -63,7 +63,7 @@
 </footer>
 
 <script type="module">
-import { currentLang, loadUI, applyDocLang, langPicker, withLang } from '/lib/i18n.js';
+import { currentLang, loadUI, applySimTitles, applyDocLang, langPicker, withLang } from '/lib/i18n.js';
 
 const $ = s => document.querySelector( s );
 const el = ( t, p ) => Object.assign( document.createElement( t ), p || {} );
@@ -83,7 +83,7 @@ applyDocLang( lang );
 
 const [ t, sims ] = await Promise.all( [
   loadUI( lang ),
-  fetch( '/sims.json' ).then( r => r.json() )
+  fetch( '/sims.json' ).then( r => r.json() ).then( s => applySimTitles( s, lang ) )
 ] );
 
 const label = ( kind, key ) => t( kind + '.' + key );
