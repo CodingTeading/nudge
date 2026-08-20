@@ -33,7 +33,7 @@ COVERS = {}
 # 01 보이지 않는 힘 — 두 전하와 그 사이의 역선
 COVERS['force-unseen'] = ('두 전하와 역선', f'''
     <path d="M128 62 C 160 48, 192 48, 224 62" stroke="{FAINT}" stroke-width="3" opacity=".65"/>
-    <path d="M126 90 L 226 90" stroke="{FAINT}" stroke-width="3" opacity=".65"/>
+    <path d="M140 90 L 210 90" stroke="{FAINT}" stroke-width="3" opacity=".65"/>
     <path d="M128 118 C 160 132, 192 132, 224 118" stroke="{FAINT}" stroke-width="3" opacity=".65"/>
     <circle cx="100" cy="90" r="23" fill="{VIOLET}"/>
     <path d="M100 80 L100 100 M90 90 L110 90" stroke="#0a0c18" stroke-width="4"/>
@@ -61,8 +61,8 @@ COVERS['wave'] = ('두 파동', f'''
 COVERS['light'] = ('렌즈와 광선', f'''
     <path d="M148 34 C 176 62, 176 118, 148 146 C 120 118, 120 62, 148 34 Z"
           stroke="{SOFT}" stroke-width="3.5"/>
-    <path d="M34 56 L136 56 M34 90 L134 90 M34 124 L136 124" stroke="{VIOLET}" stroke-width="3.5"/>
-    <path d="M160 56 L262 90 M162 90 L262 90 M160 124 L262 90" stroke="{VIOLET}"
+    <path d="M34 56 L148 56 M34 90 L148 90 M34 124 L148 124" stroke="{VIOLET}" stroke-width="3.5"/>
+    <path d="M148 56 L262 90 M148 90 L262 90 M148 124 L262 90" stroke="{VIOLET}"
           stroke-width="3.5" opacity=".9"/>
     <circle cx="266" cy="90" r="7" fill="{AMBER}"/>''')
 
@@ -74,7 +74,7 @@ COVERS['atom'] = ('원자 궤도', f'''
     <ellipse cx="160" cy="90" rx="112" ry="42" stroke="{PINK}" stroke-width="3.5"
              transform="rotate(-60 160 90)" opacity=".55"/>
 {dots([(150,80),(170,80),(160,98),(148,96),(172,98)], 9, PINK)}
-{dots([(216,141),(90,52)], 8, AMBER)}''')
+{dots([(226,150),(100,57)], 8, AMBER)}''')
 
 # 06 양자 — 겹쳐 있는 두 상태
 COVERS['quantum'] = ('겹친 두 상태', f'''
@@ -141,9 +141,9 @@ COVERS['graph'] = ('직선과 곡선', f'''
     <path d="M56 30 L56 146 L286 146" stroke="{FAINT}" stroke-width="3"/>
     <path d="M70 138 Q 160 26, 250 138" stroke="{SOFT}" stroke-width="3.5" opacity=".6"/>
     <path d="M70 132 L262 44" stroke="{BLUE}" stroke-width="3.5"/>
-{dots([(70,132),(166,88),(262,44)], 7, BLUE)}
     <path d="M166 88 L262 88 M262 88 L262 44" stroke="{AMBER}" stroke-width="3"
-          stroke-dasharray="1 8"/>''')
+          stroke-dasharray="1 8"/>
+{dots([(70,132),(166,88),(262,44)], 7, BLUE)}''')
 
 # 13 살아있는 것들과 지구 — 세포막을 지나는 물질
 COVERS['life'] = ('세포막 통과', f'''

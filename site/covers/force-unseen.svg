@@ -2,7 +2,7 @@
   <g stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M128 62 C 160 48, 192 48, 224 62" stroke="#6a72a8" stroke-width="3" opacity=".65"/>
-    <path d="M126 90 L 226 90" stroke="#6a72a8" stroke-width="3" opacity=".65"/>
+    <path d="M140 90 L 210 90" stroke="#6a72a8" stroke-width="3" opacity=".65"/>
     <path d="M128 118 C 160 132, 192 132, 224 118" stroke="#6a72a8" stroke-width="3" opacity=".65"/>
     <circle cx="100" cy="90" r="23" fill="#9d5cff"/>
     <path d="M100 80 L100 100 M90 90 L110 90" stroke="#0a0c18" stroke-width="4"/>
