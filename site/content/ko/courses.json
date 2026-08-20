@@ -188,7 +188,7 @@
       "subject": "생명과학",
       "title": "살아있는 것들과 지구",
       "hook": "흰 토끼만 남는 섬과 갈색 토끼만 남는 섬, 무엇이 갈랐을까?",
-      "lead": "세포막을 드나드는 물질부터 지구 전체의 온도까지 규모를 넓혀 갑니다.",
+      "lead": "토끼 무리에서 세포 안팎, 지구 전체까지. 균형이 어떻게 유지되고 어떻게 깨지는지 봅니다.",
       "sims": [
         "natural-selection",
         "membrane-transport",
@@ -659,6 +659,35 @@
         "title": "가까울 때 빨라진다",
         "hook": "궤도가 원이 아니라면 속도는 어디서 가장 빠를까?",
         "min": 15,
+        "diff": 3
+      }
+    ],
+    "life": [
+      {
+        "id": "life-1",
+        "ready": true,
+        "sim": "natural-selection",
+        "title": "토끼는 변하지 않는다, 무리가 변한다",
+        "hook": "갈색 땅에서 흰 토끼가 갈색으로 바뀌는 걸까?",
+        "min": 14,
+        "diff": 1
+      },
+      {
+        "id": "life-2",
+        "ready": true,
+        "sim": "membrane-transport",
+        "title": "세포막은 아무나 통과시키지 않는다",
+        "hook": "밖에 아무리 많아도 못 들어가는 것이 있다면?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "life-3",
+        "ready": true,
+        "sim": "greenhouse-effect",
+        "title": "들어온 만큼 나가야 온도가 유지된다",
+        "hook": "온실가스를 늘리면 지구는 계속 뜨거워지기만 할까?",
+        "min": 14,
         "diff": 3
       }
     ]

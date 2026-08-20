@@ -189,7 +189,7 @@
       "subject": "Biology",
       "title": "Living things and the Earth",
       "hook": "One island ends up all white rabbits, another all brown. What decided it?",
-      "lead": "Scale up from what crosses a cell membrane to the temperature of a planet.",
+      "lead": "From a population of rabbits to the inside of a cell to the whole planet — how balance is held, and what happens when it breaks.",
       "sims": [
         "natural-selection",
         "membrane-transport",
@@ -660,6 +660,35 @@
         "title": "Closer means faster",
         "hook": "If the orbit isn't a circle, where does the planet move fastest?",
         "min": 15,
+        "diff": 3
+      }
+    ],
+    "life": [
+      {
+        "id": "life-1",
+        "ready": true,
+        "sim": "natural-selection",
+        "title": "The rabbit doesn't change, the population does",
+        "hook": "On brown ground, does a white rabbit turn brown?",
+        "min": 14,
+        "diff": 1
+      },
+      {
+        "id": "life-2",
+        "ready": true,
+        "sim": "membrane-transport",
+        "title": "A cell membrane is picky",
+        "hook": "What if something can't get in no matter how much of it is outside?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "life-3",
+        "ready": true,
+        "sim": "greenhouse-effect",
+        "title": "What comes in must go out",
+        "hook": "Add greenhouse gas — does the planet just keep heating forever?",
+        "min": 14,
         "diff": 3
       }
     ]
