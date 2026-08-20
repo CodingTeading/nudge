@@ -201,23 +201,29 @@ if ( lessonRes.fellBack ) {
   txt( '#langwarn', t( 'lang.fallback' ) );
 }
 
-[ 1, 2, 3, 4, 5, 6, 7 ].forEach( n => txt( '#l' + n, t( 'lesson.block' + n ) ) );
+/* 수학 레슨은 ② 가 "예상"이 아니라 "먼저 풀어 보기"입니다 — 답이 정해져 있는 문제를
+   짐작하라고 하면 어색해집니다. lessons.json 의 mode 가 'solve' 면 같은 키에 .solve 를
+   붙인 변형 문구를 씁니다. 네 언어 모두에 넣어 두었으므로 폴백은 일어나지 않습니다. */
+const V = L.mode === 'solve' ? '.solve' : '';
+
+[ 1, 2, 3, 4, 5, 6, 7 ].forEach( n => txt( '#l' + n,
+  t( 'lesson.block' + n + ( ( n === 2 || n === 5 ) ? V : '' ) ) ) );
 html( '#hook', L.hook );
 txt( '#mintro', t( 'lesson.missionIntro' ) );
 txt( '#rq', L.record );
 $( '#rec' ).placeholder = t( 'lesson.recordPlaceholder' );
 txt( '#real', L.real );
-html( '#pnote', t( 'lesson.predictNote' ) );
+html( '#pnote', t( 'lesson.predictNote' + V ) );
 
 /* ─────────── ② 예상 → ⑤ 대조 ─────────── */
 let picked = null;
-txt( '#pq', L.predict.q );
+html( '#pq', L.predict.q );
 const ch = $( '#choices' );
 L.predict.opts.forEach( ( o, i ) => {
   const b = el( 'button', { className: 'choice', type: 'button' } );
   b.setAttribute( 'aria-pressed', 'false' );
   b.appendChild( el( 'span', { className: 'k', textContent: 'ABCD'[ i ] } ) );
-  b.appendChild( el( 'span', { textContent: o } ) );
+  b.appendChild( el( 'span', { innerHTML: o } ) );
   b.onclick = () => {
     picked = i;
     [ ...ch.children ].forEach( ( x, j ) => x.setAttribute( 'aria-pressed', String( j === i ) ) );
@@ -229,11 +235,11 @@ L.predict.opts.forEach( ( o, i ) => {
 
 function paintReveal() {
   const right = L.explain.right;
-  if ( picked === null ) { html( '#your', t( 'lesson.notPicked' ) ); html( '#verdict', '' ); return; }
-  html( '#your', t( 'lesson.yourPick', { key: 'ABCD'[ picked ], text: L.predict.opts[ picked ] } ) );
+  if ( picked === null ) { html( '#your', t( 'lesson.notPicked' + V ) ); html( '#verdict', '' ); return; }
+  html( '#your', t( 'lesson.yourPick' + V, { key: 'ABCD'[ picked ], text: L.predict.opts[ picked ] } ) );
   html( '#verdict', picked === right
-    ? t( 'lesson.correct', { key: 'ABCD'[ right ] } )
-    : t( 'lesson.wrong', { key: 'ABCD'[ right ], text: L.predict.opts[ right ] } ) );
+    ? t( 'lesson.correct' + V, { key: 'ABCD'[ right ] } )
+    : t( 'lesson.wrong' + V, { key: 'ABCD'[ right ], text: L.predict.opts[ right ] } ) );
 }
 html( '#explain', L.explain.body );
 paintReveal();
@@ -257,7 +263,7 @@ L.quiz.forEach( q => {
     const b = el( 'button', { className: 'choice', type: 'button' } );
     b.setAttribute( 'aria-pressed', 'false' );
     b.appendChild( el( 'span', { className: 'k', textContent: i + 1 } ) );
-    b.appendChild( el( 'span', { textContent: o } ) );
+    b.appendChild( el( 'span', { innerHTML: o } ) );
     b.onclick = () => {
       [ ...opts.children ].forEach( ( x, j ) => x.setAttribute( 'aria-pressed', String( j === i ) ) );
       b.style.borderColor = i === q.right ? 'var(--s-bio)' : 'var(--s-chem)';

@@ -10,6 +10,10 @@ ROOT = sys.argv[2] if len(sys.argv) > 2 else 'dist'
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
+    # HTTP/1.0 으로 내보내면 3MB 가 넘는 시뮬레이션 파일이 브라우저에서 잘려 들어옵니다
+    # (curl 은 멀쩡한데 브라우저만 ERR_CONNECTION_RESET). 1.1 로 올려 연결을 유지합니다.
+    protocol_version = 'HTTP/1.1'
+
     extensions_map = {
         **http.server.SimpleHTTPRequestHandler.extensions_map,
         '.js': 'text/javascript',

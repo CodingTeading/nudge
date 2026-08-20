@@ -1,87 +1,308 @@
 {
   "courses": [
-    { "id": "force-unseen", "no": "01", "subject": "물리", "title": "보이지 않는 힘",
+    {
+      "id": "force-unseen",
+      "no": "01",
+      "subject": "물리",
+      "title": "보이지 않는 힘",
       "hook": "풍선을 머리에 문지르면 왜 머리카락이 따라 올라올까?",
       "lead": "만질 수도 볼 수도 없는데 분명히 있는 힘. 전기의 정체를 손으로 확인합니다.",
-      "sims": [ "balloons-and-static-electricity", "charges-and-fields", "coulombs-law", "faradays-electromagnetic-lab" ],
-      "minutes": 52 },
-    { "id": "throw", "no": "02", "subject": "물리", "title": "던지면 어디에 떨어질까",
+      "sims": [
+        "balloons-and-static-electricity",
+        "charges-and-fields",
+        "coulombs-law",
+        "faradays-electromagnetic-lab"
+      ],
+      "minutes": 52
+    },
+    {
+      "id": "throw",
+      "no": "02",
+      "subject": "물리",
+      "title": "던지면 어디에 떨어질까",
       "hook": "농구공은 왜 포물선을 그릴까? 각도를 바꾸면 뭐가 달라질까?",
       "lead": "던지고, 굴리고, 떨어뜨립니다. 운동을 지배하는 규칙 하나를 찾아냅니다.",
-      "sims": [ "projectile-motion", "projectile-data-lab", "energy-skate-park", "vector-addition" ],
-      "minutes": 56 },
-    { "id": "wave", "no": "03", "subject": "물리", "title": "흔들림과 파동",
+      "sims": [
+        "projectile-motion",
+        "projectile-data-lab",
+        "energy-skate-park",
+        "vector-addition"
+      ],
+      "minutes": 56
+    },
+    {
+      "id": "wave",
+      "no": "03",
+      "subject": "물리",
+      "title": "흔들림과 파동",
       "hook": "그네는 왜 밀어주는 타이밍이 중요할까?",
       "lead": "용수철에서 시작해 소리와 빛까지. 세상의 모든 반복 운동은 한 가족입니다.",
-      "sims": [ "hookes-law", "masses-and-springs", "wave-on-a-string", "fourier-making-waves" ],
-      "minutes": 54 },
-    { "id": "light", "no": "04", "subject": "물리", "title": "빛의 정체",
+      "sims": [
+        "hookes-law",
+        "masses-and-springs",
+        "wave-on-a-string",
+        "fourier-making-waves"
+      ],
+      "minutes": 54
+    },
+    {
+      "id": "light",
+      "no": "04",
+      "subject": "물리",
+      "title": "빛의 정체",
       "hook": "빛은 알갱이일까 물결일까? 답이 하나가 아니라면?",
       "lead": "렌즈에서 시작해 100년 전 물리학자들을 뒤집어 놓은 실험까지 갑니다.",
-      "sims": [ "geometric-optics", "blackbody-spectrum", "photoelectric-effect", "quantum-wave-interference" ],
-      "minutes": 58 },
-    { "id": "atom", "no": "05", "subject": "화학", "title": "원자 속으로",
+      "sims": [
+        "geometric-optics",
+        "blackbody-spectrum",
+        "photoelectric-effect",
+        "quantum-wave-interference"
+      ],
+      "minutes": 58
+    },
+    {
+      "id": "atom",
+      "no": "05",
+      "subject": "화학",
+      "title": "원자 속으로",
       "hook": "원자를 쪼개면 뭐가 나올까? 그 안은 텅 비어 있다는데?",
       "lead": "양성자를 하나씩 넣어 원소를 직접 만들고, 핵이 깨지는 순간까지 봅니다.",
-      "sims": [ "build-an-atom", "rutherford-scattering", "models-of-the-hydrogen-atom", "build-a-nucleus", "alpha-decay", "beta-decay" ],
-      "minutes": 76 },
-    { "id": "quantum", "no": "06", "subject": "물리", "title": "양자라는 이상한 세계",
+      "sims": [
+        "build-an-atom",
+        "rutherford-scattering",
+        "models-of-the-hydrogen-atom",
+        "build-a-nucleus",
+        "alpha-decay",
+        "beta-decay"
+      ],
+      "minutes": 76
+    },
+    {
+      "id": "quantum",
+      "no": "06",
+      "subject": "물리",
+      "title": "양자라는 이상한 세계",
       "hook": "보기 전까지는 정해져 있지 않다 — 이게 무슨 말일까?",
       "lead": "동전 던지기로 시작해서 상식이 무너지는 지점까지. 수식 없이 감각으로.",
-      "sims": [ "quantum-coin-toss", "quantum-measurement", "quantum-bound-states" ],
-      "minutes": 42 },
-    { "id": "space", "no": "07", "subject": "지구과학", "title": "우주는 어떻게 도는가",
+      "sims": [
+        "quantum-coin-toss",
+        "quantum-measurement",
+        "quantum-bound-states"
+      ],
+      "minutes": 42
+    },
+    {
+      "id": "space",
+      "no": "07",
+      "subject": "지구과학",
+      "title": "우주는 어떻게 도는가",
       "hook": "달은 왜 지구로 떨어지지 않을까? 사실은 계속 떨어지는 중이라면?",
       "lead": "행성을 직접 배치해 태양계를 만들고, 궤도가 무너지는 조건을 찾습니다.",
-      "sims": [ "my-solar-system", "gravity-and-orbits", "keplers-laws" ],
-      "minutes": 44 },
-    { "id": "matter", "no": "08", "subject": "화학", "title": "물질의 세 얼굴",
+      "sims": [
+        "my-solar-system",
+        "gravity-and-orbits",
+        "keplers-laws"
+      ],
+      "minutes": 44
+    },
+    {
+      "id": "matter",
+      "no": "08",
+      "subject": "화학",
+      "title": "물질의 세 얼굴",
       "hook": "얼음, 물, 수증기는 같은 것일까 다른 것일까?",
       "lead": "온도를 올리고 압력을 걸어 봅니다. 분자 하나하나가 보이는 눈을 얻습니다.",
-      "sims": [ "states-of-matter", "gas-properties", "molecule-shapes", "molecule-polarity" ],
-      "minutes": 56 },
-    { "id": "react", "no": "09", "subject": "화학", "title": "섞으면 무슨 일이",
+      "sims": [
+        "states-of-matter",
+        "gas-properties",
+        "molecule-shapes",
+        "molecule-polarity"
+      ],
+      "minutes": 56
+    },
+    {
+      "id": "react",
+      "no": "09",
+      "subject": "화학",
+      "title": "섞으면 무슨 일이",
       "hook": "레몬즙과 베이킹소다를 섞으면 왜 부글거릴까?",
       "lead": "pH 를 재고, 반응식을 맞추고, 남는 재료를 세어 봅니다.",
-      "sims": [ "ph-scale", "acid-base-solutions", "balancing-chemical-equations", "reactants-products-and-leftovers", "beers-law-lab" ],
-      "minutes": 68 },
-    { "id": "fraction", "no": "10", "subject": "수학", "title": "분수는 사실 나눗셈",
+      "sims": [
+        "ph-scale",
+        "acid-base-solutions",
+        "balancing-chemical-equations",
+        "reactants-products-and-leftovers",
+        "beers-law-lab"
+      ],
+      "minutes": 68
+    },
+    {
+      "id": "fraction",
+      "no": "10",
+      "subject": "수학",
+      "title": "분수는 사실 나눗셈",
       "hook": "피자 3판을 4명이 나누면 한 사람이 몇 판?",
       "lead": "분수를 \"위아래 숫자\"가 아니라 양으로 보는 눈을 만듭니다.",
-      "sims": [ "fractions-intro", "fractions-equality", "fractions-mixed-numbers", "build-a-fraction", "fraction-matcher" ],
-      "minutes": 64 },
-    { "id": "ratio", "no": "11", "subject": "수학", "title": "비율의 감각",
+      "sims": [
+        "fractions-intro",
+        "fractions-equality",
+        "fractions-mixed-numbers",
+        "build-a-fraction",
+        "fraction-matcher"
+      ],
+      "minutes": 64
+    },
+    {
+      "id": "ratio",
+      "no": "11",
+      "subject": "수학",
+      "title": "비율의 감각",
       "hook": "라면 2개에 물 1L 면, 3개에는?",
       "lead": "비율은 계산이 아니라 감각입니다. 눈으로 맞추는 연습부터 시작합니다.",
-      "sims": [ "ratio-and-proportion", "proportion-playground", "unit-rates", "mean-share-and-balance" ],
-      "minutes": 52 },
-    { "id": "graph", "no": "12", "subject": "수학", "title": "그래프로 말하기",
+      "sims": [
+        "ratio-and-proportion",
+        "proportion-playground",
+        "unit-rates",
+        "mean-share-and-balance"
+      ],
+      "minutes": 52
+    },
+    {
+      "id": "graph",
+      "no": "12",
+      "subject": "수학",
+      "title": "그래프로 말하기",
       "hook": "기울기가 가파르다는 건 무슨 뜻일까?",
       "lead": "식과 그림을 오갑니다. 숫자를 바꾸면 선이 어떻게 움직이는지 몸으로 익힙니다.",
-      "sims": [ "graphing-lines", "graphing-slope-intercept", "graphing-quadratics", "calculus-grapher" ],
-      "minutes": 56 },
-    { "id": "life", "no": "13", "subject": "생명과학", "title": "살아있는 것들과 지구",
+      "sims": [
+        "graphing-lines",
+        "graphing-slope-intercept",
+        "graphing-quadratics",
+        "calculus-grapher"
+      ],
+      "minutes": 56
+    },
+    {
+      "id": "life",
+      "no": "13",
+      "subject": "생명과학",
+      "title": "살아있는 것들과 지구",
       "hook": "흰 토끼만 남는 섬과 갈색 토끼만 남는 섬, 무엇이 갈랐을까?",
       "lead": "세포막을 드나드는 물질부터 지구 전체의 온도까지 규모를 넓혀 갑니다.",
-      "sims": [ "natural-selection", "membrane-transport", "greenhouse-effect" ],
-      "minutes": 42 },
-    { "id": "number", "no": "14", "subject": "수학", "title": "숫자와 친해지기",
+      "sims": [
+        "natural-selection",
+        "membrane-transport",
+        "greenhouse-effect"
+      ],
+      "minutes": 42
+    },
+    {
+      "id": "number",
+      "no": "14",
+      "subject": "수학",
+      "title": "숫자와 친해지기",
       "hook": "7은 3보다 얼마나 클까? \"4만큼\"이라는 말이 뜻하는 게 뭘까?",
       "lead": "수를 세고, 비교하고, 짝지어 봅니다. 모든 수학이 여기서 출발합니다.",
-      "sims": [ "number-play", "number-compare", "number-pairs", "number-line-distance", "equality-explorer", "function-builder", "quadrilateral", "center-and-variability" ],
-      "minutes": 96 }
+      "sims": [
+        "number-play",
+        "number-compare",
+        "number-pairs",
+        "number-line-distance",
+        "equality-explorer",
+        "function-builder",
+        "quadrilateral",
+        "center-and-variability"
+      ],
+      "minutes": 96
+    }
   ],
-
   "lessons": {
     "force-unseen": [
-      { "id": "static-1", "ready": true, "sim": "balloons-and-static-electricity", "title": "풍선이 머리카락을 끌어당기는 이유",
-        "hook": "문지르기 전에는 아무 일도 없었는데, 왜 문지르고 나면 달라질까?", "min": 14, "diff": 1, "state": "done" },
-      { "id": "static-2", "ready": true, "sim": "charges-and-fields", "title": "전하 주변에 그려지는 보이지 않는 지도",
-        "hook": "전하 하나가 놓이면 그 주변 공간 자체가 달라진다고?", "min": 16, "diff": 2, "state": "now" },
-      { "id": "static-3", "ready": true, "sim": "coulombs-law", "title": "거리가 2배가 되면 힘은 얼마가 될까",
-        "hook": "절반? 아니면 그보다 훨씬 더 많이 줄어들까?", "min": 12, "diff": 2 },
-      { "id": "static-4", "ready": true, "sim": "faradays-electromagnetic-lab", "title": "자석을 움직이면 전기가 생긴다",
-        "hook": "발전소가 하는 일이 사실은 이것 하나라면?", "min": 18, "diff": 3 }
+      {
+        "id": "static-1",
+        "ready": true,
+        "sim": "balloons-and-static-electricity",
+        "title": "풍선이 머리카락을 끌어당기는 이유",
+        "hook": "문지르기 전에는 아무 일도 없었는데, 왜 문지르고 나면 달라질까?",
+        "min": 14,
+        "diff": 1,
+        "state": "done"
+      },
+      {
+        "id": "static-2",
+        "ready": true,
+        "sim": "charges-and-fields",
+        "title": "전하 주변에 그려지는 보이지 않는 지도",
+        "hook": "전하 하나가 놓이면 그 주변 공간 자체가 달라진다고?",
+        "min": 16,
+        "diff": 2,
+        "state": "now"
+      },
+      {
+        "id": "static-3",
+        "ready": true,
+        "sim": "coulombs-law",
+        "title": "거리가 2배가 되면 힘은 얼마가 될까",
+        "hook": "절반? 아니면 그보다 훨씬 더 많이 줄어들까?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "static-4",
+        "ready": true,
+        "sim": "faradays-electromagnetic-lab",
+        "title": "자석을 움직이면 전기가 생긴다",
+        "hook": "발전소가 하는 일이 사실은 이것 하나라면?",
+        "min": 18,
+        "diff": 3
+      }
+    ],
+    "fraction": [
+      {
+        "id": "fraction-1",
+        "ready": true,
+        "sim": "fractions-intro",
+        "title": "피자 3판을 4명이 나누면",
+        "hook": "분수의 가로줄이 사실은 나눗셈 기호라면?",
+        "min": 14,
+        "diff": 1
+      },
+      {
+        "id": "fraction-2",
+        "ready": true,
+        "sim": "fractions-equality",
+        "title": "곱하기는 되고 더하기는 안 되는 이유",
+        "hook": "위아래에 똑같이 더했는데 왜 값이 변할까?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "fraction-3",
+        "ready": true,
+        "sim": "fractions-mixed-numbers",
+        "title": "분자가 분모보다 클 때",
+        "hook": "8/3 은 잘못 쓴 분수가 아니라면?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "fraction-4",
+        "ready": true,
+        "sim": "build-a-fraction",
+        "title": "같은 분수를 만드는 여러 가지 길",
+        "hook": "1/2 을 만드는 방법이 하나가 아니라면?",
+        "min": 12,
+        "diff": 2
+      },
+      {
+        "id": "fraction-5",
+        "ready": true,
+        "sim": "fraction-matcher",
+        "title": "겉모습이 달라도 같은 수",
+        "hook": "그림과 숫자와 대분수 중에서 같은 수를 골라낼 수 있을까?",
+        "min": 12,
+        "diff": 3
+      }
     ]
   }
 }
