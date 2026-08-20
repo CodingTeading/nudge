@@ -556,6 +556,44 @@
         "min": 14,
         "diff": 3
       }
+    ],
+    "throw": [
+      {
+        "id": "throw-1",
+        "ready": true,
+        "sim": "projectile-motion",
+        "title": "옆으로 던져도 떨어지는 시간은 같다",
+        "hook": "떨어뜨린 공과 옆으로 던진 공, 어느 쪽이 먼저 닿을까?",
+        "min": 14,
+        "diff": 1
+      },
+      {
+        "id": "throw-2",
+        "ready": true,
+        "sim": "projectile-data-lab",
+        "title": "똑같이 쏴도 매번 다르다",
+        "hook": "설정을 안 바꾸고 100번 쏘면 어디에 떨어질까?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "throw-3",
+        "ready": true,
+        "sim": "energy-skate-park",
+        "title": "출발한 높이보다 높이 갈 수는 없다",
+        "hook": "롤러코스터의 첫 언덕이 가장 높은 이유는?",
+        "min": 15,
+        "diff": 2
+      },
+      {
+        "id": "throw-4",
+        "ready": true,
+        "sim": "vector-addition",
+        "title": "3 더하기 4가 7이 아닐 때",
+        "hook": "크기 3과 4인 화살표를 더하면 얼마가 될까?",
+        "min": 14,
+        "diff": 3
+      }
     ]
   }
 }

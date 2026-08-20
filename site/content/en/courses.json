@@ -557,6 +557,44 @@
         "min": 14,
         "diff": 3
       }
+    ],
+    "throw": [
+      {
+        "id": "throw-1",
+        "ready": true,
+        "sim": "projectile-motion",
+        "title": "Sideways doesn't slow the fall",
+        "hook": "Drop one ball, throw another sideways — which lands first?",
+        "min": 14,
+        "diff": 1
+      },
+      {
+        "id": "throw-2",
+        "ready": true,
+        "sim": "projectile-data-lab",
+        "title": "Same setup, different landing",
+        "hook": "Fire 100 shots without touching a dial — where do they land?",
+        "min": 13,
+        "diff": 2
+      },
+      {
+        "id": "throw-3",
+        "ready": true,
+        "sim": "energy-skate-park",
+        "title": "You can't go higher than you started",
+        "hook": "Why is the first hill of a roller coaster always the tallest?",
+        "min": 15,
+        "diff": 2
+      },
+      {
+        "id": "throw-4",
+        "ready": true,
+        "sim": "vector-addition",
+        "title": "When 3 plus 4 isn't 7",
+        "hook": "Add an arrow of length 3 to one of length 4 — how long is the result?",
+        "min": 14,
+        "diff": 3
+      }
     ]
   }
 }
