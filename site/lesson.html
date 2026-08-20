@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>전하 주변에 그려지는 보이지 않는 지도 — 보이지 않는 힘 | Nudge</title>
+<meta name="description" content="전하 하나를 공중에 놓아 봅니다. 아무것도 안 보이지만, 그 주변 공간은 이미 달라져 있습니다. 하전과 전기장 시뮬레이션을 직접 조작하며 16분 만에 확인합니다. 사용 방법과 확인 문제까지 함께 있습니다.">
+<meta name="keywords" content="과학 시뮬레이션, 수학 시뮬레이션, 중학교 과학, 고등학교 물리, 온라인 실험, PhET 한국어, 무료 과학 학습, 자유학기제, 탐구 활동">
+<link rel="canonical" href="https://nudge.codingteading.com/lesson.html?l=static-2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nudge">
+<meta property="og:title" content="전하 주변에 그려지는 보이지 않는 지도 — 보이지 않는 힘 | Nudge">
+<meta property="og:description" content="전하 하나를 공중에 놓아 봅니다. 아무것도 안 보이지만, 그 주변 공간은 이미 달라져 있습니다. 하전과 전기장 시뮬레이션을 직접 조작하며 16분 만에 확인합니다. 사용 방법과 확인 문제까지 함께 있습니다.">
+<meta property="og:url" content="https://nudge.codingteading.com/lesson.html?l=static-2">
+<meta property="og:image" content="https://nudge.codingteading.com/og/l-static-2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="전하 주변에 그려지는 보이지 않는 지도 — 보이지 않는 힘 | Nudge">
+<meta name="twitter:description" content="전하 하나를 공중에 놓아 봅니다. 아무것도 안 보이지만, 그 주변 공간은 이미 달라져 있습니다. 하전과 전기장 시뮬레이션을 직접 조작하며 16분 만에 확인합니다. 사용 방법과 확인 문제까지 함께 있습니다.">
+<meta name="twitter:image" content="https://nudge.codingteading.com/og/l-static-2.png">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#080b18">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="stylesheet" href="/assets/fonts/jua.css">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap" style="max-width:1560px">
+    <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><line x1="4" y1="16" x2="28" y2="16" stroke="var(--line)" stroke-width="2.8" stroke-linecap="round"/><line x1="8.5" y1="12" x2="8.5" y2="20" stroke="var(--ink-faint)" stroke-width="2.3" stroke-linecap="round" opacity=".55"/><line x1="13" y1="12.8" x2="13" y2="19.2" stroke="var(--ink-faint)" stroke-width="2.3" stroke-linecap="round" opacity=".8"/><circle cx="21" cy="16" r="6" fill="var(--accent-hot)"/></svg><span id="brand"></span></a>
+    <nav class="nav">
+      <a id="back" href="course.html"></a>
+      <span id="langslot"></span>
+    </nav>
+  </div>
+</div>
+
+<!-- ══════════ 제목 — 상단 전체 폭 ══════════ -->
+<header class="lesson-top">
+  <p class="eyebrow" id="crumb"></p>
+  <h1 id="title"></h1>
+  <p class="lead" id="lead"></p>
+</header>
+
+<div class="lesson-layout" id="layout">
+
+  <!-- ══════════ 왼쪽 — 시뮬레이션 + 사용 방법 ══════════ -->
+  <div class="left-col">
+  <div class="stage-col">
+    <div class="stage">
+      <div class="stage-frame" id="frame">
+        <button class="poster" id="poster">
+          <img id="poster-img" alt="">
+          <span class="cta">
+            <span class="ring">▶</span>
+            <span id="open-label"></span>
+            <span class="sz" id="size"></span>
+          </span>
+        </button>
+        <div class="spin" id="spin"><span><i></i><span id="loading-label"></span></span></div>
+      </div>
+      <div class="stage-bar">
+        <span class="name" id="simname"></span>
+        <span class="hint" id="hint"></span>
+        <span class="acts">
+          <button id="pin"></button>
+          <button id="theater"></button>
+          <button id="full"></button>
+          <button id="restart"></button>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 저작자 표시는 무대와 함께 붙잡지 않습니다 — 고정되는 건 실험 자체뿐입니다 -->
+  <div class="credit-col">
+    <p class="warn-line" id="simwarn" hidden></p>
+    <p class="credit" id="credit"></p>
+  </div>
+
+  <!-- 사용 방법 — 2열이 성립하면 펼침, 아니면 접힘 -->
+  <div class="guide-col">
+    <details class="guide" id="guide"></details>
+  </div>
+  </div><!-- /.left-col -->
+
+  <!-- ══════════ 오른쪽 — 이론 (POE 7블록) ══════════ -->
+  <article class="lesson-body">
+    <p class="warn-line" id="langwarn" hidden></p>
+
+    <section class="blk">
+      <p class="label" id="l1"></p>
+      <p id="hook"></p>
+    </section>
+
+    <section class="blk predict">
+      <p class="label" id="l2"></p>
+      <p id="pq"></p>
+      <div class="choices" id="choices"></div>
+      <p class="predict-note" id="pnote"></p>
+    </section>
+
+    <section class="blk mission">
+      <p class="label" id="l3"></p>
+      <p style="font-size:14.5px;color:var(--ink-soft)" id="mintro"></p>
+      <ul class="missions" id="missions"></ul>
+    </section>
+
+    <section class="blk record">
+      <p class="label" id="l4"></p>
+      <p id="rq" style="font-size:14.5px"></p>
+      <textarea id="rec"></textarea>
+    </section>
+
+    <section class="blk explain">
+      <p class="label" id="l5"></p>
+      <div class="reveal">
+        <p class="your" id="your"></p>
+        <p style="margin:0" id="verdict"></p>
+      </div>
+      <div id="explain"></div>
+    </section>
+
+    <section class="blk">
+      <p class="label" id="l6"></p>
+      <p id="real"></p>
+    </section>
+
+    <section class="blk check">
+      <p class="label" id="l7"></p>
+      <div class="quiz" id="quiz"></div>
+    </section>
+
+    <div style="display:flex;gap:10px;margin-top:26px">
+      <a class="btn primary" id="next"></a>
+      <a class="btn ghost" id="tocourse"></a>
+    </div>
+  </article>
+</div>
+
+<script type="module">
+import { currentLang, loadUI, loadContent, applyDocLang, langPicker, withLang,
+         simLocales, simLocaleFor, LANGS, BASE } from '/lib/i18n.js';
+import { applySeo, lessonJsonLd } from '/lib/seo.js';
+
+const $ = s => document.querySelector( s );
+const el = ( t, p ) => Object.assign( document.createElement( t ), p || {} );
+const txt = ( id, v ) => { $( id ).textContent = v; };
+const html = ( id, v ) => { $( id ).innerHTML = v; };
+
+const lang = currentLang();
+applyDocLang( lang );
+
+const [ t, courseRes, lessonRes, guideRes, simTable, sims ] = await Promise.all( [
+  loadUI( lang ),
+  loadContent( 'courses', lang ),
+  loadContent( 'lessons', lang ),
+  loadContent( 'guides', lang ),
+  simLocales(),
+  fetch( '/sims.json' ).then( r => r.json() )
+] );
+
+const lid = new URLSearchParams( location.search ).get( 'l' ) || 'static-2';
+const L = lessonRes.data[ lid ] || Object.values( lessonRes.data )[ 0 ];
+const course = courseRes.data.courses.find( c => c.id === L.course );
+const siblings = courseRes.data.lessons[ L.course ];
+const idx = siblings.findIndex( x => x.id === lid );
+const lessonMeta = siblings[ idx ];
+
+/* ─────────── 껍데기 ─────────── */
+txt( '#brand', t( 'site.name' ) );
+txt( '#back', t( 'nav.back' ) );
+$( '#langslot' ).appendChild( langPicker( lang ) );
+$( '#back' ).href = $( '#tocourse' ).href = withLang( 'course.html?c=' + L.course, lang );
+$( '#next' ).href = withLang( siblings[ idx + 1 ]?.id
+  ? 'lesson.html?l=' + siblings[ idx + 1 ].id : 'course.html?c=' + L.course, lang );
+txt( '#next', t( 'lesson.next' ) );
+txt( '#tocourse', t( 'lesson.toCourse' ) );
+
+txt( '#crumb', t( 'lesson.crumb', { course: course.no + ' ' + course.title, i: idx + 1, n: siblings.length } ) );
+txt( '#title', L.title );
+txt( '#lead', L.lead );
+
+applySeo( {
+  lang, path: 'lesson.html?l=' + lid,
+  title: t( 'seo.lesson.title', { lesson: L.title, course: course.title } ),
+  desc: t( 'seo.lesson.desc', {
+    hook: L.lead, min: lessonMeta.min,
+    sim: sims.find( s => s.repo === L.sim )?.title || L.sim
+  } ),
+  keywords: t( 'seo.keywords' ), image: 'l-' + lid + '.png',
+  jsonld: lessonJsonLd( L, lessonMeta, course, lang )
+} );
+
+/* 콘텐츠가 기준 언어로 떨어졌으면 알려 줍니다 */
+if ( lessonRes.fellBack ) {
+  $( '#langwarn' ).hidden = false;
+  txt( '#langwarn', t( 'lang.fallback' ) );
+}
+
+[ 1, 2, 3, 4, 5, 6, 7 ].forEach( n => txt( '#l' + n, t( 'lesson.block' + n ) ) );
+html( '#hook', L.hook );
+txt( '#mintro', t( 'lesson.missionIntro' ) );
+txt( '#rq', L.record );
+$( '#rec' ).placeholder = t( 'lesson.recordPlaceholder' );
+txt( '#real', L.real );
+html( '#pnote', t( 'lesson.predictNote' ) );
+
+/* ─────────── ② 예상 → ⑤ 대조 ─────────── */
+let picked = null;
+txt( '#pq', L.predict.q );
+const ch = $( '#choices' );
+L.predict.opts.forEach( ( o, i ) => {
+  const b = el( 'button', { className: 'choice', type: 'button' } );
+  b.setAttribute( 'aria-pressed', 'false' );
+  b.appendChild( el( 'span', { className: 'k', textContent: 'ABCD'[ i ] } ) );
+  b.appendChild( el( 'span', { textContent: o } ) );
+  b.onclick = () => {
+    picked = i;
+    [ ...ch.children ].forEach( ( x, j ) => x.setAttribute( 'aria-pressed', String( j === i ) ) );
+    $( '#pnote' ).classList.add( 'show' );
+    paintReveal();
+  };
+  ch.appendChild( b );
+} );
+
+function paintReveal() {
+  const right = L.explain.right;
+  if ( picked === null ) { html( '#your', t( 'lesson.notPicked' ) ); html( '#verdict', '' ); return; }
+  html( '#your', t( 'lesson.yourPick', { key: 'ABCD'[ picked ], text: L.predict.opts[ picked ] } ) );
+  html( '#verdict', picked === right
+    ? t( 'lesson.correct', { key: 'ABCD'[ right ] } )
+    : t( 'lesson.wrong', { key: 'ABCD'[ right ], text: L.predict.opts[ right ] } ) );
+}
+html( '#explain', L.explain.body );
+paintReveal();
+
+/* ─────────── ③ 미션 · ⑦ 확인 ─────────── */
+L.missions.forEach( m => {
+  const li = el( 'li' );
+  li.setAttribute( 'aria-checked', 'false' );
+  li.appendChild( el( 'span', { className: 'box', textContent: '✓' } ) );
+  li.appendChild( el( 'span', { className: 'txt', innerHTML: m } ) );
+  li.onclick = () => li.setAttribute( 'aria-checked',
+    li.getAttribute( 'aria-checked' ) === 'true' ? 'false' : 'true' );
+  $( '#missions' ).appendChild( li );
+} );
+
+L.quiz.forEach( q => {
+  const box = el( 'div' );
+  box.appendChild( el( 'p', { className: 'q', innerHTML: q.q } ) );
+  const opts = el( 'div', { className: 'choices' } );
+  q.opts.forEach( ( o, i ) => {
+    const b = el( 'button', { className: 'choice', type: 'button' } );
+    b.setAttribute( 'aria-pressed', 'false' );
+    b.appendChild( el( 'span', { className: 'k', textContent: i + 1 } ) );
+    b.appendChild( el( 'span', { textContent: o } ) );
+    b.onclick = () => {
+      [ ...opts.children ].forEach( ( x, j ) => x.setAttribute( 'aria-pressed', String( j === i ) ) );
+      b.style.borderColor = i === q.right ? 'var(--s-bio)' : 'var(--s-chem)';
+    };
+    opts.appendChild( b );
+  } );
+  box.appendChild( opts );
+  $( '#quiz' ).appendChild( box );
+} );
+
+/* ══════════════════════════════════════════════════════
+   시뮬레이션 무대
+   ══════════════════════════════════════════════════════ */
+
+const SIM = L.sim;
+const simMeta = sims.find( s => s.repo === SIM );
+const simName = simMeta?.title || SIM;
+
+txt( '#simname', simName );
+txt( '#open-label', t( 'stage.open' ) );
+txt( '#loading-label', t( 'stage.loading' ) );
+txt( '#full', t( 'stage.fullscreen' ) );
+txt( '#restart', t( 'stage.restart' ) );
+txt( '#hint', t( 'stage.hint' ) );
+$( '#poster-img' ).src = '/thumbs/' + SIM + '.png';
+
+/* 저작자 표시 — 푸터가 아니라 시뮬레이션 바로 아래에 둡니다 (CC BY-NC 의 BY 조건).
+   좁은 화면에서 고정하면 세 줄을 먹으므로 축약형을 함께 심어 두고 CSS 로 갈아 끼웁니다.
+   축약형도 저작자·출처·라이선스·개작 사실을 모두 담고 있어야 합니다. */
+const ccLink = ' <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>';
+$( '#credit' ).innerHTML =
+  `<span class="credit-long">${ t( 'stage.credit', { sim: simName } ) }${ ccLink }</span>` +
+  `<span class="credit-short">${ t( 'stage.creditShort', { sim: simName } ) }${ ccLink }</span>`;
+
+/* 이 시뮬레이션을 이 언어로 열 수 있는가 */
+const simLang = simLocaleFor( simTable, SIM, lang );
+if ( simLang !== lang ) {
+  $( '#simwarn' ).hidden = false;
+  txt( '#simwarn', t( 'stage.notTranslated',
+    { lang: LANGS.find( l => l.code === lang )?.label || lang } ) );
+}
+
+fetch( '/sims/' + SIM + '.html', { method: 'HEAD' } ).then( r => {
+  const mb = ( +r.headers.get( 'content-length' ) / 1048576 ).toFixed( 1 );
+  if ( mb > 0 ) { txt( '#size', t( 'stage.size', { mb } ) ); }
+} ).catch( () => {} );
+
+function simURL() {
+  // locale · allowLinks 는 값을 받는 파라미터.
+  const p = new URLSearchParams( { locale: simLang, allowLinks: 'false' } );
+  if ( L.screens ) { p.set( 'screens', L.screens ); }
+  // postMessageOnLoad 는 type:'flag' 라 값을 붙이면 QueryStringMachine 이 죽습니다.
+  // URLSearchParams 는 언제나 key=value 로 직렬화하므로 따로 이어 붙입니다.
+  return '/sims/' + SIM + '.html?' + p + '&postMessageOnLoad';
+}
+
+let frameEl = null;
+function mount( into ) {
+  const f = el( 'iframe', { src: simURL(), title: simName } );
+  f.allow = 'fullscreen; autoplay';   // allowfullscreen 은 이것에 밀리므로 쓰지 않습니다
+  into.appendChild( f );
+  return f;
+}
+
+const isPhone = () => matchMedia( '( max-width: 760px )' ).matches;
+
+/* 휴대폰에서도 인라인으로 엽니다.
+   예전에는 전체화면 시트로 열었는데, 그러면 본문과 실험을 오가며 볼 수가 없습니다.
+   대신 무대를 상단에 고정해 두고 본문이 그 아래로 지나가게 합니다. */
+$( '#poster' ).onclick = () => {
+  $( '#poster' ).remove();
+  $( '#spin' ).classList.add( 'on' );
+  frameEl = mount( $( '#frame' ) );
+};
+
+addEventListener( 'message', e => {
+  try { if ( JSON.parse( e.data )?.type === 'load' ) { $( '#spin' ).classList.remove( 'on' ); } }
+  catch {}
+} );
+
+/* ── 무대 조작: 고정 · 확대 ──
+ *
+ * 확대는 2열이 성립하는 폭에서만 뜻이 있습니다(1열에서는 이미 폭을 다 씁니다).
+ * 고정은 반대로 좁은 화면에서 더 쓸모가 큽니다 — 1열에서는 본문을 읽는 동안
+ * 무대가 위로 사라져 버리기 때문입니다. 그래서 휴대폰까지 열어 둡니다.
+ *
+ * 숨기더라도 사용자가 켜 둔 뜻(want*)은 남겨서, 폭이 돌아오면 그대로 되살립니다.
+ */
+const TKEY = 'nudge.theater', PKEY = 'nudge.pin';
+// site.css 의 `@media ( max-width: 1199px )` 와 짝입니다. 한쪽만 고치면 조용히 어긋납니다.
+const isWide = () => matchMedia( '( min-width: 1200px )' ).matches;
+
+let wantTheater = localStorage.getItem( TKEY ) === '1';
+// 고정은 기본으로 켭니다. 사용법을 접었을 때 왼쪽에 생기는 빈 자리를
+// 무대가 따라 내려오며 채워 주기도 합니다.
+const savedPin = localStorage.getItem( PKEY );
+let wantPin = savedPin === null ? true : savedPin === '1';
+
+function syncStageControls() {
+  const wide = isWide();
+  const theater = wide && wantTheater;
+  // 확대 중에만 뺍니다 — 무대가 화면을 거의 채워 고정할 자리가 없습니다.
+  const pin = wantPin && !theater;
+
+  $( '#layout' ).classList.toggle( 'theater', theater );
+  $( '#layout' ).classList.toggle( 'pinned', pin );
+
+  $( '#theater' ).hidden = !wide;
+  $( '#pin' ).hidden = theater;
+  $( '#hint' ).hidden = !wide;
+
+  $( '#theater' ).classList.toggle( 'on', theater );
+  $( '#pin' ).classList.toggle( 'on', pin );
+  txt( '#theater', t( theater ? 'stage.theaterExit' : 'stage.theater' ) );
+  txt( '#pin', t( pin ? 'stage.pinOff' : 'stage.pin' ) );
+}
+
+$( '#theater' ).onclick = () => {
+  wantTheater = !wantTheater;
+  localStorage.setItem( TKEY, wantTheater ? '1' : '' );
+  syncStageControls();
+};
+$( '#pin' ).onclick = () => {
+  wantPin = !wantPin;
+  localStorage.setItem( PKEY, wantPin ? '1' : '' );
+  syncStageControls();
+};
+addEventListener( 'resize', syncStageControls );
+syncStageControls();
+
+/* ── 전체화면 = 브라우저 전체화면 (이전의 '확대') ── */
+$( '#full' ).onclick = () => {
+  const target = frameEl || $( '#frame' );
+  if ( document.fullscreenElement ) { document.exitFullscreen(); return; }
+  ( target.requestFullscreen || target.webkitRequestFullscreen )?.call( target );
+};
+
+$( '#restart' ).onclick = () => {
+  if ( frameEl ) { frameEl.src = simURL(); $( '#spin' ).classList.add( 'on' ); }
+};
+
+/* 단축키 — 확대·전체화면은 유튜브와 같게 T / F, 고정은 P.
+   글을 쓰는 중이거나 숨겨진 버튼에는 걸리지 않습니다. */
+addEventListener( 'keydown', e => {
+  if ( e.metaKey || e.ctrlKey || e.altKey ) { return; }
+  const tag = document.activeElement?.tagName;
+  if ( tag === 'TEXTAREA' || tag === 'INPUT' || tag === 'SELECT' ) { return; }
+  const hit = { p: '#pin', t: '#theater', f: '#full' }[ e.key.toLowerCase() ];
+  if ( hit && !$( hit ).hidden ) { $( hit ).click(); }
+} );
+
+
+/* ══════════════════════════════════════════════════════
+   사용 방법 — 무대 바로 아래
+   ══════════════════════════════════════════════════════ */
+
+const G = guideRes.data;
+const g = G[ SIM ];
+const guide = $( '#guide' );
+
+// 2열이 성립할 때만 펼쳐 둡니다. 1열에서는 펼쳐 두면 이론이 2000px 넘게 밀립니다.
+guide.open = isWide();
+guide.appendChild( el( 'summary', { textContent: t( 'guide.title' ) } ) );
+
+if ( !g ) {
+  guide.appendChild( el( 'p', { className: 'summary', textContent: t( 'guide.missing' ) } ) );
+}
+else {
+  guide.appendChild( el( 'p', { className: 'summary', innerHTML: g.summary } ) );
+
+  if ( g.screens?.length ) {
+    guide.appendChild( el( 'h3', { textContent: t( 'guide.screens' ) } ) );
+    g.screens.forEach( s => {
+      const d = el( 'div', { className: 'scr' } );
+      d.appendChild( el( 'span', { className: 'n', textContent: s.name } ) );
+      d.appendChild( el( 'span', { className: 'w', innerHTML: s.what } ) );
+      guide.appendChild( d );
+    } );
+  }
+
+  if ( g.controls?.length ) {
+    guide.appendChild( el( 'h3', { textContent: t( 'guide.controls' ) } ) );
+    g.controls.forEach( c => {
+      const d = el( 'div', { className: 'ctl' } );
+      d.appendChild( el( 'p', { className: 'n', innerHTML: c.name } ) );
+      d.appendChild( el( 'p', { className: 'd', innerHTML: c.desc } ) );
+      if ( c.tip ) { d.appendChild( el( 'p', { className: 't', innerHTML: c.tip } ) ); }
+      guide.appendChild( d );
+    } );
+  }
+
+  if ( g.steps?.length ) {
+    guide.appendChild( el( 'h3', { textContent: t( 'guide.steps' ) } ) );
+    const ol = el( 'ol', { className: 'steps' } );
+    g.steps.forEach( s => ol.appendChild( el( 'li', { innerHTML: s } ) ) );
+    guide.appendChild( ol );
+  }
+
+  if ( g.gotchas?.length ) {
+    guide.appendChild( el( 'h3', { textContent: t( 'guide.gotchas' ) } ) );
+    const ul = el( 'ul', { className: 'gotchas' } );
+    g.gotchas.forEach( s => ul.appendChild( el( 'li', { innerHTML: s } ) ) );
+    guide.appendChild( ul );
+  }
+}
+
+/* 공통 조작 — 61개 실험에 전부 해당하므로 접어 둡니다 */
+if ( G._common ) {
+  const det = el( 'details', { className: 'common' } );
+  det.appendChild( el( 'summary', { textContent: t( 'guide.common' ) } ) );
+  const inner = el( 'div', { className: 'inner' } );
+  inner.appendChild( el( 'p', { className: 'intro', innerHTML: G._common.intro } ) );
+  G._common.sections.forEach( s => {
+    const d = el( 'div', { className: 'ctl' } );
+    d.appendChild( el( 'p', { className: 'n', innerHTML: s.name } ) );
+    d.appendChild( el( 'p', { className: 'd', innerHTML: s.desc } ) );
+    if ( s.tip ) { d.appendChild( el( 'p', { className: 't', innerHTML: s.tip } ) ); }
+    inner.appendChild( d );
+  } );
+  det.appendChild( inner );
+  guide.appendChild( det );
+}
+</script>
+</body>
+</html>

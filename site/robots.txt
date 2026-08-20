@@ -1,0 +1,11 @@
+# Nudge
+User-agent: *
+Allow: /
+
+# 시뮬레이션 원본(각 2~5MB)은 색인할 값어치가 없습니다.
+# 학습자가 도달해야 할 곳은 레슨 페이지입니다.
+Disallow: /sims/
+Disallow: /test.html
+Disallow: /_proto/
+
+Sitemap: https://nudge.codingteading.com/sitemap.xml

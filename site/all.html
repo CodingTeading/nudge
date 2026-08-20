@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>과학·수학 시뮬레이션</title>
+<meta name="description" content="직접 만지면서 배우는 과학·수학 시뮬레이션. 학년과 과목으로 골라 보세요.">
+<!-- Same self-hosted font the sims use, so the portal and the sims read as one product. -->
+<link rel="stylesheet" href="/assets/fonts/jua.css">
+<style>
+  :root {
+    /* Same palette the sims are themed with. */
+    --coral: #FF4757;
+    --sky: #1E90FF;
+    --grass: #2ED573;
+    --sunny: #FFC312;
+    --grape: #A55EEA;
+    --turquoise: #0ABDE3;
+    --tangerine: #FF7F26;
+    --bubblegum: #FF6B9D;
+
+    --ink: #2F3542;
+    --ink-soft: #5A6273;
+    --line: #E4E9F2;
+    --bg: #F7F9FC;
+    --surface: #FFFFFF;
+    --tint: #EAF2FF;
+
+    --radius: 18px;
+    --shadow: 0 2px 0 var(--line);
+  }
+
+  @media ( prefers-color-scheme: dark ) {
+    :root {
+      --ink: #ECEFF4;
+      --ink-soft: #A8B0C0;
+      --line: #333B4D;
+      --bg: #171B24;
+      --surface: #212736;
+      --tint: #26304A;
+      --shadow: 0 2px 0 rgba( 0, 0, 0, 0.35 );
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Jua', system-ui, -apple-system, 'Malgun Gothic', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+
+  header {
+    background: linear-gradient( 160deg, var(--sky), var(--turquoise) );
+    color: #fff;
+    padding: 44px 0 38px;
+  }
+  header h1 { margin: 0 0 6px; font-size: clamp( 28px, 5vw, 42px ); letter-spacing: -0.01em; }
+  header p { margin: 0; font-size: clamp( 15px, 2.4vw, 19px ); opacity: 0.95; }
+
+  /* ---------- filters ---------- */
+
+  .filters {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg);
+    border-bottom: 2px solid var(--line);
+    padding: 14px 0;
+  }
+  .filter-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .filter-row + .filter-row { margin-top: 10px; }
+  .filter-label {
+    font-size: 14px; color: var(--ink-soft); min-width: 46px;
+  }
+
+  .chip {
+    appearance: none; border: 2px solid var(--line); background: var(--surface); color: var(--ink);
+    font: inherit; font-size: 15px; padding: 7px 15px; border-radius: 999px; cursor: pointer;
+    transition: transform .08s ease, border-color .12s ease, background .12s ease;
+  }
+  .chip:hover { transform: translateY( -1px ); }
+  .chip[aria-pressed="true"] { color: #fff; border-color: transparent; }
+  .chip[aria-pressed="true"][data-key="전체"] { background: var(--ink); }
+  .chip[aria-pressed="true"][data-key="수학"] { background: var(--sky); }
+  .chip[aria-pressed="true"][data-key="물리"] { background: var(--grape); }
+  .chip[aria-pressed="true"][data-key="화학"] { background: var(--coral); }
+  .chip[aria-pressed="true"][data-key="생명과학"] { background: var(--grass); }
+  .chip[aria-pressed="true"][data-key="지구과학"] { background: var(--turquoise); }
+  .chip[aria-pressed="true"][data-key="기타"] { background: var(--ink-soft); }
+  .chip[aria-pressed="true"][data-grade] { background: var(--tangerine); }
+
+  .search {
+    flex: 1 1 200px; min-width: 160px;
+    font: inherit; font-size: 15px; padding: 8px 14px;
+    border: 2px solid var(--line); border-radius: 999px;
+    background: var(--surface); color: var(--ink);
+  }
+
+  .count { color: var(--ink-soft); font-size: 14px; margin: 18px 0 4px; }
+
+  /* ---------- cards ---------- */
+
+  .group-title {
+    display: flex; align-items: center; gap: 10px;
+    margin: 30px 0 14px; font-size: 21px;
+  }
+  .group-title .dot { width: 13px; height: 13px; border-radius: 50%; flex: none; }
+
+  .grid {
+    display: grid; gap: 18px;
+    grid-template-columns: repeat( auto-fill, minmax( 210px, 1fr ) );
+    padding-bottom: 8px;
+  }
+
+  .card {
+    display: flex; flex-direction: column;
+    background: var(--surface); border: 2px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); overflow: hidden; text-decoration: none; color: inherit;
+    transition: transform .1s ease, border-color .12s ease;
+  }
+  .card:hover, .card:focus-visible { transform: translateY( -3px ); border-color: var(--sky); outline: none; }
+
+  .card img {
+    width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block;
+    background: var(--tint); border-bottom: 2px solid var(--line);
+  }
+  .card .body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .card .name { font-size: 17px; line-height: 1.35; }
+  .card .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+
+  .tag {
+    font-size: 12.5px; padding: 2px 9px; border-radius: 999px;
+    background: var(--tint); color: var(--ink-soft);
+  }
+  .tag.subject { color: #fff; }
+  .tag.subject[data-key="수학"] { background: var(--sky); }
+  .tag.subject[data-key="물리"] { background: var(--grape); }
+  .tag.subject[data-key="화학"] { background: var(--coral); }
+  .tag.subject[data-key="생명과학"] { background: var(--grass); }
+  .tag.subject[data-key="지구과학"] { background: var(--turquoise); }
+  .tag.subject[data-key="기타"] { background: var(--ink-soft); }
+  .tag.warn { background: var(--sunny); color: var(--ink); }
+
+  .empty { padding: 50px 0; text-align: center; color: var(--ink-soft); }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    margin-top: 50px; padding: 28px 0 40px;
+    border-top: 2px solid var(--line); color: var(--ink-soft); font-size: 14px;
+  }
+  footer p { margin: 0 0 8px; }
+  footer a { color: var(--sky); }
+
+  @media ( max-width: 520px ) {
+    .grid { grid-template-columns: repeat( auto-fill, minmax( 150px, 1fr ) ); gap: 12px; }
+    .filter-label { min-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>직접 만지며 배우는 과학·수학</h1>
+    <p>학년과 과목으로 골라 보세요. 설치 없이 바로 열립니다.</p>
+  </div>
+</header>
+
+<div class="filters">
+  <div class="wrap">
+    <div class="filter-row">
+      <span class="filter-label">과목</span>
+      <span id="subjects"></span>
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">학년</span>
+      <span id="grades"></span>
+      <input class="search" id="search" type="search" placeholder="이름으로 찾기" aria-label="이름으로 찾기">
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <p class="count" id="count"></p>
+  <div id="results"></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Simulation by PhET Interactive Simulations, University of Colorado Boulder,
+      licensed under CC BY-NC 4.0 (<a href="https://phet.colorado.edu" rel="noopener">https://phet.colorado.edu</a>).
+    </p>
+    <p>비영리 교육 목적으로 제공합니다. 시뮬레이션은 원작자의 표기를 유지한 채 화면 구성만 조정했습니다.</p>
+  </div>
+</footer>
+
+<script>
+( function() {
+
+  const SUBJECT_ORDER = [ '수학', '물리', '화학', '생명과학', '지구과학', '기타' ];
+  const GRADE_ORDER = [ '초등 3-4', '초등 5-6', '중학교', '고등학교' ];
+  const SUBJECT_COLOR = {
+    '수학': 'var(--sky)', '물리': 'var(--grape)', '화학': 'var(--coral)',
+    '생명과학': 'var(--grass)', '지구과학': 'var(--turquoise)', '기타': 'var(--ink-soft)'
+  };
+
+  const state = { subject: '전체', grade: '전체', query: '' };
+  let sims = [];
+
+  const el = ( tag, props ) => Object.assign( document.createElement( tag ), props || {} );
+
+  function chip( label, key, pressed, onClick, isGrade ) {
+    const b = el( 'button', { className: 'chip', type: 'button', textContent: label } );
+    b.dataset.key = key;
+    if ( isGrade ) { b.dataset.grade = '1'; }
+    b.setAttribute( 'aria-pressed', String( pressed ) );
+    b.addEventListener( 'click', onClick );
+    return b;
+  }
+
+  function renderFilters() {
+    const subjects = document.getElementById( 'subjects' );
+    const grades = document.getElementById( 'grades' );
+    subjects.innerHTML = '';
+    grades.innerHTML = '';
+
+    const present = SUBJECT_ORDER.filter( s => sims.some( x => x.subject === s ) );
+    [ '전체' ].concat( present ).forEach( s => {
+      subjects.appendChild( chip( s, s, state.subject === s, () => {
+        state.subject = s; render();
+      } ) );
+    } );
+
+    const gradesPresent = GRADE_ORDER.filter( g => sims.some( x => x.grade === g ) );
+    [ '전체' ].concat( gradesPresent ).forEach( g => {
+      grades.appendChild( chip( g, g, state.grade === g, () => {
+        state.grade = g; render();
+      }, g !== '전체' ) );
+    } );
+  }
+
+  function matches( sim ) {
+    if ( state.subject !== '전체' && sim.subject !== state.subject ) { return false; }
+    if ( state.grade !== '전체' && sim.grade !== state.grade ) { return false; }
+    if ( state.query ) {
+      const q = state.query.toLowerCase();
+      if ( !( sim.title + ' ' + sim.titleEn ).toLowerCase().includes( q ) ) { return false; }
+    }
+    return true;
+  }
+
+  function card( sim ) {
+    const a = el( 'a', { className: 'card', href: '/sims/' + sim.repo + '.html?locale=ko' } );
+    a.appendChild( el( 'img', {
+      src: sim.thumb || '',
+      alt: '',
+      loading: 'lazy'
+    } ) );
+
+    const body = el( 'div', { className: 'body' } );
+    body.appendChild( el( 'div', { className: 'name', textContent: sim.title } ) );
+
+    const tags = el( 'div', { className: 'tags' } );
+    const subject = el( 'span', { className: 'tag subject', textContent: sim.subject } );
+    subject.dataset.key = sim.subject;
+    tags.appendChild( subject );
+    tags.appendChild( el( 'span', { className: 'tag', textContent: sim.grade } ) );
+    if ( !sim.hasKorean ) { tags.appendChild( el( 'span', { className: 'tag', textContent: '영어' } ) ); }
+    if ( sim.notContent ) { tags.appendChild( el( 'span', { className: 'tag warn', textContent: '개발용 예제' } ) ); }
+    body.appendChild( tags );
+
+    a.appendChild( body );
+    return a;
+  }
+
+  function render() {
+    renderFilters();
+
+    const shown = sims.filter( matches );
+    document.getElementById( 'count' ).textContent = shown.length + '개';
+
+    const results = document.getElementById( 'results' );
+    results.innerHTML = '';
+
+    if ( !shown.length ) {
+      results.appendChild( el( 'p', { className: 'empty', textContent: '조건에 맞는 시뮬레이션이 없어요.' } ) );
+      return;
+    }
+
+    // Group by subject unless the user already narrowed to one; then group by grade instead,
+    // which is the more useful axis at that point.
+    const groupBy = state.subject === '전체' ? 'subject' : 'grade';
+    const order = groupBy === 'subject' ? SUBJECT_ORDER : GRADE_ORDER;
+
+    order.forEach( key => {
+      const items = shown.filter( s => s[ groupBy ] === key );
+      if ( !items.length ) { return; }
+
+      const title = el( 'h2', { className: 'group-title' } );
+      const dot = el( 'span', { className: 'dot' } );
+      dot.style.background = groupBy === 'subject' ? SUBJECT_COLOR[ key ] : 'var(--tangerine)';
+      title.appendChild( dot );
+      title.appendChild( document.createTextNode( key + ' · ' + items.length + '개' ) );
+      results.appendChild( title );
+
+      const grid = el( 'div', { className: 'grid' } );
+      items.forEach( s => grid.appendChild( card( s ) ) );
+      results.appendChild( grid );
+    } );
+  }
+
+  document.getElementById( 'search' ).addEventListener( 'input', e => {
+    state.query = e.target.value.trim();
+    render();
+  } );
+
+  fetch( '/sims.json' )
+    .then( r => r.json() )
+    .then( data => { sims = data; render(); } )
+    .catch( () => {
+      document.getElementById( 'results' ).innerHTML =
+        '<p class="empty">목록을 불러오지 못했습니다.</p>';
+    } );
+} )();
+</script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+{
+ "photoelectric-effect": [
+  "en"
+ ],
+ "quantum-bound-states": [
+  "en"
+ ],
+ "quantum-coin-toss": [
+  "en",
+  "es"
+ ],
+ "quantum-wave-interference": [
+  "en"
+ ],
+ "fourier-making-waves": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "rutherford-scattering": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "models-of-the-hydrogen-atom": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "coulombs-law": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "quantum-measurement": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "charges-and-fields": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "blackbody-spectrum": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "alpha-decay": [
+  "en"
+ ],
+ "beta-decay": [
+  "en"
+ ],
+ "geometric-optics": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "energy-skate-park": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "wave-on-a-string": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "masses-and-springs": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "faradays-electromagnetic-lab": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "projectile-motion": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "build-a-nucleus": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "hookes-law": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "balloons-and-static-electricity": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "membrane-transport": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "natural-selection": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "graphing-quadratics": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "calculus-grapher": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "vector-addition": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "graphing-slope-intercept": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "graphing-lines": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "equality-explorer": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "ratio-and-proportion": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "unit-rates": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "center-and-variability": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "projectile-data-lab": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "number-play": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "fractions-intro": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "number-compare": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "number-pairs": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "build-a-fraction": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "fraction-matcher": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "fractions-mixed-numbers": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "fractions-equality": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "proportion-playground": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "quadrilateral": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "number-line-distance": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "mean-share-and-balance": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "function-builder": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "keplers-laws": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "my-solar-system": [
+  "en",
+  "ko",
+  "es"
+ ],
+ "greenhouse-effect": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "gravity-and-orbits": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "beers-law-lab": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "molecule-shapes": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "molecule-polarity": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "gas-properties": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "ph-scale": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "states-of-matter": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "reactants-products-and-leftovers": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "acid-base-solutions": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "build-an-atom": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ],
+ "balancing-chemical-equations": [
+  "en",
+  "ko",
+  "ja",
+  "es"
+ ]
+}

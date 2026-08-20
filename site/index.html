@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nudge — 만지면서 배우는 중고등 과학·수학 시뮬레이션 61종</title>
+<meta name="description" content="전기·힘·파동·원자부터 분수·비율·그래프까지, 직접 조작하는 실험 61종을 코스 14개로 묶었습니다. 예상하고 실험하고 확인하는 순서로 배웁니다. 무료·회원가입 없음·광고 없음.">
+<meta name="keywords" content="과학 시뮬레이션, 수학 시뮬레이션, 중학교 과학, 고등학교 물리, 온라인 실험, PhET 한국어, 무료 과학 학습, 자유학기제, 탐구 활동">
+<link rel="canonical" href="https://nudge.codingteading.com/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nudge">
+<meta property="og:title" content="Nudge — 만지면서 배우는 중고등 과학·수학 시뮬레이션 61종">
+<meta property="og:description" content="전기·힘·파동·원자부터 분수·비율·그래프까지, 직접 조작하는 실험 61종을 코스 14개로 묶었습니다. 예상하고 실험하고 확인하는 순서로 배웁니다. 무료·회원가입 없음·광고 없음.">
+<meta property="og:url" content="https://nudge.codingteading.com/index.html">
+<meta property="og:image" content="https://nudge.codingteading.com/og/default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nudge — 만지면서 배우는 중고등 과학·수학 시뮬레이션 61종">
+<meta name="twitter:description" content="전기·힘·파동·원자부터 분수·비율·그래프까지, 직접 조작하는 실험 61종을 코스 14개로 묶었습니다. 예상하고 실험하고 확인하는 순서로 배웁니다. 무료·회원가입 없음·광고 없음.">
+<meta name="twitter:image" content="https://nudge.codingteading.com/og/default.png">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#080b18">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="stylesheet" href="/assets/fonts/jua.css">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><line x1="4" y1="16" x2="28" y2="16" stroke="var(--line)" stroke-width="2.8" stroke-linecap="round"/><line x1="8.5" y1="12" x2="8.5" y2="20" stroke="var(--ink-faint)" stroke-width="2.3" stroke-linecap="round" opacity=".55"/><line x1="13" y1="12.8" x2="13" y2="19.2" stroke="var(--ink-faint)" stroke-width="2.3" stroke-linecap="round" opacity=".8"/><circle cx="21" cy="16" r="6" fill="var(--accent-hot)"/></svg><span id="brand"></span></a>
+    <nav class="nav">
+      <a href="index.html" aria-current="page" id="nav-courses"></a>
+      <a href="/all.html" id="nav-all"></a>
+      <span id="langslot"></span>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="wrap hero">
+    <p class="eyebrow" id="tagline"></p>
+    <h1 id="hero-title"></h1>
+    <p id="hero-lead"></p>
+    <p class="warn-line" id="langwarn" hidden style="max-width:580px;margin-top:18px"></p>
+  </section>
+
+  <section class="wrap">
+    <div class="section-head"><h2 id="h-today"></h2></div>
+    <div class="today">
+      <div class="txt">
+        <p class="eyebrow" id="today-course"></p>
+        <h3 id="today-title"></h3>
+        <p id="today-hook"></p>
+        <a class="btn primary" id="today-go"></a>
+      </div>
+      <div class="shot"><img id="today-shot" alt="" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="resume-sec" hidden>
+    <div class="section-head"><h2 id="h-resume"></h2></div>
+    <div class="rail" id="resume"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="section-head">
+      <h2 id="h-courses"></h2>
+      <a class="more" href="/all.html" id="more-filter"></a>
+    </div>
+    <div class="courses" id="courses"></div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p id="f-license"></p>
+    <p id="f-nonprofit"></p>
+  </div>
+</footer>
+
+<script type="module">
+import { currentLang, loadUI, loadContent, applyDocLang, langPicker, withLang } from '/lib/i18n.js';
+import { applySeo, siteJsonLd } from '/lib/seo.js';
+
+const $ = s => document.querySelector( s );
+const el = ( t, p ) => Object.assign( document.createElement( t ), p || {} );
+const txt = ( id, v ) => { $( id ).textContent = v; };
+
+const SUBJECT_COLOR = {
+  수학: 'var(--s-math)', 물리: 'var(--s-phys)', 화학: 'var(--s-chem)',
+  생명과학: 'var(--s-bio)', 지구과학: 'var(--s-earth)', 기타: 'var(--s-etc)',
+  Math: 'var(--s-math)', Physics: 'var(--s-phys)', Chemistry: 'var(--s-chem)',
+  Biology: 'var(--s-bio)', 'Earth science': 'var(--s-earth)'
+};
+const color = s => SUBJECT_COLOR[ s ] || 'var(--s-etc)';
+
+const lang = currentLang();
+applyDocLang( lang );
+
+const [ t, courseRes, sims ] = await Promise.all( [
+  loadUI( lang ),
+  loadContent( 'courses', lang ),
+  fetch( '/sims.json' ).then( r => r.json() )
+] );
+
+const COURSES = courseRes.data.courses;
+const LESSONS = courseRes.data.lessons;
+
+/* 진도 — 로그인 없이 이 기기에만. 시안이라 첫 방문 시 예시 값을 심어 둡니다. */
+const KEY = 'nudge.progress';
+const progress = JSON.parse( localStorage.getItem( KEY ) || 'null' ) || {
+  'force-unseen': { done: 1, total: 4 },
+  atom: { done: 2, total: 6 }
+};
+localStorage.setItem( KEY, JSON.stringify( progress ) );
+
+/* ─────────── 껍데기 ─────────── */
+txt( '#brand', t( 'site.name' ) );
+txt( '#tagline', t( 'site.tagline' ) );
+txt( '#nav-courses', t( 'nav.courses' ) );
+txt( '#nav-all', t( 'nav.all', { n: sims.length } ) );
+$( '#langslot' ).appendChild( langPicker( lang ) );
+$( '#hero-title' ).innerHTML =
+  `${ t( 'home.title.a' ) } <em>${ t( 'home.title.b' ) }</em> ${ t( 'home.title.c' ) }`;
+txt( '#hero-lead', t( 'home.lead', { n: COURSES.length } ) );
+txt( '#h-today', t( 'home.today' ) );
+txt( '#h-resume', t( 'home.resume' ) );
+txt( '#h-courses', t( 'home.courses' ) );
+txt( '#more-filter', t( 'home.moreFilter' ) );
+txt( '#f-license', t( 'footer.license' ) );
+txt( '#f-nonprofit', t( 'footer.nonprofit' ) );
+
+applySeo( {
+  lang, path: 'index.html',
+  title: t( 'seo.home.title' ), desc: t( 'seo.home.desc' ),
+  keywords: t( 'seo.keywords' ), image: 'default.png',
+  jsonld: siteJsonLd( t )
+} );
+
+/* 코스 원고가 기준 언어로 떨어졌으면 알려 줍니다 — 안 그러면 일본어 화면에
+   한국어 제목이 아무 설명 없이 섞여 나옵니다. */
+if ( courseRes.fellBack ) {
+  $( '#langwarn' ).hidden = false;
+  txt( '#langwarn', t( 'lang.fallback' ) );
+}
+
+/* ─────────── 오늘의 실험 ─────────── */
+const today = COURSES[ 0 ];
+const todayLesson = LESSONS[ today.id ][ 1 ];
+txt( '#today-course', today.no + ' · ' + today.title );
+txt( '#today-title', todayLesson.title );
+txt( '#today-hook', todayLesson.hook );
+$( '#today-shot' ).src = '/thumbs/' + todayLesson.sim + '.png';
+$( '#today-go' ).href = withLang( 'lesson.html?l=' + todayLesson.id, lang );
+txt( '#today-go', t( 'home.start', { min: todayLesson.min } ) );
+
+/* ─────────── 이어서 하기 ─────────── */
+const resuming = COURSES.filter( c => progress[ c.id ] );
+if ( resuming.length ) {
+  $( '#resume-sec' ).hidden = false;
+  resuming.forEach( c => {
+    const p = progress[ c.id ];
+    const a = el( 'a', { className: 'resume', href: withLang( 'course.html?c=' + c.id, lang ) } );
+    a.appendChild( el( 'div', { className: 'c', textContent: c.no + ' · ' + c.subject } ) );
+    a.appendChild( el( 'div', { className: 't', textContent: c.title } ) );
+    const bar = el( 'div', { className: 'bar' } );
+    bar.appendChild( el( 'span' ) ).style.width = ( p.done / p.total * 100 ) + '%';
+    a.appendChild( bar );
+    a.appendChild( el( 'div', { className: 'c',
+      textContent: t( 'course.progress', { done: p.done, total: p.total } ) } ) );
+    $( '#resume' ).appendChild( a );
+  } );
+}
+
+/* ─────────── 코스 그리드 ─────────── */
+const BIG = new Set( [ 0, 1, 4 ] );
+COURSES.forEach( ( c, i ) => {
+  const a = el( 'a', { className: 'course' + ( BIG.has( i ) ? ' big' : '' ),
+                       href: withLang( 'course.html?c=' + c.id, lang ) } );
+  a.style.setProperty( '--c', color( c.subject ) );
+  a.appendChild( el( 'span', { className: 'num', textContent: c.no + ' / ' + c.subject } ) );
+  a.appendChild( el( 'h3', { textContent: c.title } ) );
+  a.appendChild( el( 'p', { className: 'q', textContent: c.hook } ) );
+
+  const meta = el( 'div', { className: 'meta' } );
+  meta.appendChild( el( 'span', { textContent: t( 'course.sims', { n: c.sims.length } ) } ) );
+  meta.appendChild( el( 'span', { className: 'dot' } ) );
+  meta.appendChild( el( 'span', { textContent: t( 'course.minutes', { n: c.minutes } ) } ) );
+  const p = progress[ c.id ];
+  if ( p ) {
+    meta.appendChild( el( 'span', { className: 'dot' } ) );
+    const s = el( 'span', { textContent: p.done + '/' + p.total } );
+    s.style.color = 'var(--accent-hot)';
+    meta.appendChild( s );
+  }
+  a.appendChild( meta );
+  $( '#courses' ).appendChild( a );
+} );
+</script>
+</body>
+</html>

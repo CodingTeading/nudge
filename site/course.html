@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>보이지 않는 힘 — 물리 실험 4종 | Nudge</title>
+<meta name="description" content="풍선을 머리에 문지르면 왜 머리카락이 따라 올라올까? 만질 수도 볼 수도 없는데 분명히 있는 힘. 전기의 정체를 손으로 확인합니다. 실험 4종을 순서대로 하며 약 52분에 끝냅니다. 설치도 회원가입도 필요 없습니다.">
+<meta name="keywords" content="과학 시뮬레이션, 수학 시뮬레이션, 중학교 과학, 고등학교 물리, 온라인 실험, PhET 한국어, 무료 과학 학습, 자유학기제, 탐구 활동">
+<link rel="canonical" href="https://nudge.codingteading.com/course.html?c=force-unseen">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nudge">
+<meta property="og:title" content="보이지 않는 힘 — 물리 실험 4종 | Nudge">
+<meta property="og:description" content="풍선을 머리에 문지르면 왜 머리카락이 따라 올라올까? 만질 수도 볼 수도 없는데 분명히 있는 힘. 전기의 정체를 손으로 확인합니다. 실험 4종을 순서대로 하며 약 52분에 끝냅니다. 설치도 회원가입도 필요 없습니다.">
+<meta property="og:url" content="https://nudge.codingteading.com/course.html?c=force-unseen">
+<meta property="og:image" content="https://nudge.codingteading.com/og/c-force-unseen.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="보이지 않는 힘 — 물리 실험 4종 | Nudge">
+<meta name="twitter:description" content="풍선을 머리에 문지르면 왜 머리카락이 따라 올라올까? 만질 수도 볼 수도 없는데 분명히 있는 힘. 전기의 정체를 손으로 확인합니다. 실험 4종을 순서대로 하며 약 52분에 끝냅니다. 설치도 회원가입도 필요 없습니다.">
+<meta name="twitter:image" content="https://nudge.codingteading.com/og/c-force-unseen.png">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#080b18">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="stylesheet" href="/assets/fonts/jua.css">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><line x1="4" y1="16" x2="28" y2="16" stroke="var(--line)" stroke-width="2.8" stroke-linecap="round"/><line x1="8.5" y1="12" x2="8.5" y2="20" stroke="var(--ink-faint)" stroke-width="2.3" stroke-linecap="round" opacity=".55"/><line x1="13" y1="12.8" x2="13" y2="19.2" stroke="var(--ink-faint)" stroke-width="2.3" stroke-linecap="round" opacity=".8"/><circle cx="21" cy="16" r="6" fill="var(--accent-hot)"/></svg><span id="brand"></span></a>
+    <nav class="nav">
+      <a href="index.html" aria-current="page" id="nav-courses"></a>
+      <a href="/all.html" id="nav-all"></a>
+      <span id="langslot"></span>
+    </nav>
+  </div>
+</div>
+
+<header class="course-hero" id="hero">
+  <div class="wrap">
+    <p class="eyebrow" id="c-no"></p>
+    <h1 id="c-title"></h1>
+    <p id="c-lead"></p>
+    <div class="course-progress">
+      <div class="bar"><span id="c-bar"></span></div>
+      <span class="n" id="c-n"></span>
+    </div>
+    <p class="warn-line" id="langwarn" hidden style="max-width:620px"></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="lessons" id="lessons"></div>
+</main>
+
+<footer class="site">
+  <div class="wrap"><p id="f-license"></p></div>
+</footer>
+
+<script type="module">
+import { currentLang, loadUI, loadContent, applyDocLang, langPicker, withLang } from '/lib/i18n.js';
+import { applySeo, courseJsonLd } from '/lib/seo.js';
+
+const $ = s => document.querySelector( s );
+const el = ( t, p ) => Object.assign( document.createElement( t ), p || {} );
+const txt = ( id, v ) => { $( id ).textContent = v; };
+
+const SUBJECT_COLOR = {
+  수학: 'var(--s-math)', 물리: 'var(--s-phys)', 화학: 'var(--s-chem)',
+  생명과학: 'var(--s-bio)', 지구과학: 'var(--s-earth)', 기타: 'var(--s-etc)',
+  Math: 'var(--s-math)', Physics: 'var(--s-phys)', Chemistry: 'var(--s-chem)',
+  Biology: 'var(--s-bio)', 'Earth science': 'var(--s-earth)'
+};
+
+const lang = currentLang();
+applyDocLang( lang );
+
+const [ t, courseRes, sims ] = await Promise.all( [
+  loadUI( lang ),
+  loadContent( 'courses', lang ),
+  fetch( '/sims.json' ).then( r => r.json() )
+] );
+
+const id = new URLSearchParams( location.search ).get( 'c' ) || 'force-unseen';
+const c = courseRes.data.courses.find( x => x.id === id ) || courseRes.data.courses[ 0 ];
+const color = SUBJECT_COLOR[ c.subject ] || 'var(--s-etc)';
+
+txt( '#brand', t( 'site.name' ) );
+txt( '#nav-courses', t( 'nav.courses' ) );
+txt( '#nav-all', t( 'nav.all', { n: sims.length } ) );
+txt( '#f-license', t( 'footer.license' ) );
+$( '#langslot' ).appendChild( langPicker( lang ) );
+
+$( '#hero' ).style.setProperty( '--c', color );
+txt( '#c-no', c.no + ' · ' + c.subject );
+txt( '#c-title', c.title );
+txt( '#c-lead', c.lead );
+
+if ( courseRes.fellBack ) {
+  $( '#langwarn' ).hidden = false;
+  txt( '#langwarn', t( 'lang.fallback' ) );
+}
+
+/* 레슨 목록이 없는 코스는 시뮬레이션 목록에서 자리표시자를 만듭니다 (시안이라). */
+let lessons = courseRes.data.lessons[ c.id ];
+if ( !lessons ) {
+  lessons = c.sims.map( ( s, i ) => {
+    const meta = sims.find( x => x.repo === s );
+    return { id: null, sim: s, title: meta?.title || s.replace( /-/g, ' ' ),
+             hook: t( 'course.draft' ), min: 14, diff: ( i % 3 ) + 1 };
+  } );
+}
+
+applySeo( {
+  lang, path: 'course.html?c=' + c.id,
+  title: t( 'seo.course.title', { course: c.title, subject: c.subject, n: c.sims.length } ),
+  desc: t( 'seo.course.desc', { hook: c.hook, lead: c.lead, n: c.sims.length, min: c.minutes } ),
+  keywords: t( 'seo.keywords' ), image: 'c-' + c.id + '.png',
+  jsonld: courseJsonLd( c, lessons, lang )
+} );
+
+const done = lessons.filter( l => l.state === 'done' ).length;
+$( '#c-bar' ).style.width = ( done / lessons.length * 100 ) + '%';
+txt( '#c-n', t( 'course.progress', { done, total: lessons.length } ) );
+
+lessons.forEach( ( l, i ) => {
+  const row = el( 'a', { className: 'lesson-row' + ( l.state ? ' ' + l.state : '' ) } );
+  // 원고가 준비된 레슨만 레슨 페이지로. 나머지는 시뮬레이션을 바로 엽니다.
+  row.href = withLang( l.ready ? 'lesson.html?l=' + l.id
+                               : '/sims/' + l.sim + '.html?locale=' + lang, lang );
+  row.style.setProperty( '--c', color );
+
+  row.appendChild( el( 'span', { className: 'idx',
+    textContent: l.state === 'done' ? '✓' : String( i + 1 ) } ) );
+
+  const mid = el( 'div' );
+  mid.appendChild( el( 'h3', { textContent: l.title } ) );
+  mid.appendChild( el( 'p', { className: 'q', textContent: l.hook } ) );
+  row.appendChild( mid );
+
+  const side = el( 'div', { className: 'side' } );
+  if ( !l.ready ) { side.appendChild( el( 'span', { className: 'pill', textContent: t( 'course.draft' ) } ) ); }
+  side.appendChild( el( 'span', { textContent: l.min + ( lang === 'ko' ? '분' : ' min' ) } ) );
+  const d = el( 'span', { className: 'diff' } );
+  for ( let k = 1; k <= 3; k++ ) { d.appendChild( el( 'i', { className: k <= l.diff ? 'on' : '' } ) ); }
+  side.appendChild( d );
+  row.appendChild( side );
+
+  $( '#lessons' ).appendChild( row );
+} );
+</script>
+</body>
+</html>

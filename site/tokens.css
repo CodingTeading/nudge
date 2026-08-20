@@ -1,0 +1,71 @@
+/* 디자인 토큰 — 시안 v0 (밤하늘 무대)
+ *
+ * 확정되면 portal/design/tokens.css 로 옮기고, aiTeadingForTeens 와 이름을 맞춥니다.
+ * 저쪽과 같은 이름/다른 값 전략입니다 — 형제로 읽히되 과목이 다르니 색은 갈라집니다.
+ *
+ * 원칙
+ *  - 셸은 어둡고 조용하다. 시뮬레이션이 유일한 밝은 면이다
+ *  - 과목색의 hue 는 시뮬레이션 kids 팔레트에서 그대로 가져왔다.
+ *    썸네일(=시뮬레이션 스크린샷)과 UI 가 충돌하지 않게 하기 위해서다
+ *  - 강조는 그림자가 아니라 빛(glow)으로 한다
+ */
+
+:root {
+  color-scheme: dark;
+
+  /* ── 무대 ────────────────────────────────── */
+  --bg:         #080b18;
+  --bg-deep:    #04060f;
+  --surface:    #121734;
+  --surface-2:  #1a2046;
+  --surface-3:  #232a58;
+  --line:       #262d5c;
+  --line-soft:  #1a2044;
+
+  --ink:        #eef1ff;
+  --ink-soft:   #a5addb;
+  --ink-faint:  #6a72a8;
+
+  /* 시뮬레이션이 놓이는 밝은 면. 셸과 대비를 만들되 순백은 피한다 */
+  --stage:      #f5f7ff;
+  --stage-edge: #c9d2f0;
+
+  /* ── 과목색 ──────────────────────────────── */
+  --s-math:    #4d9bff;
+  --s-phys:    #9d5cff;
+  --s-chem:    #ff4d8d;
+  --s-bio:     #35e08f;
+  --s-earth:   #2ee6d6;
+  --s-etc:     #7f88b8;
+
+  --accent:     var(--s-earth);   /* 기본 강조 */
+  --accent-hot: #ffa53d;          /* 진행·보상 */
+
+  /* ── 빛 ──────────────────────────────────── */
+  --glow:      0 0 28px rgba( 46, 230, 214, .28 );
+  --glow-hot:  0 0 28px rgba( 255, 165, 61, .30 );
+  --lift:      0 18px 44px rgba( 0, 0, 0, .55 );
+  --lift-sm:   0 6px 18px rgba( 0, 0, 0, .40 );
+
+  /* ── 형태 ────────────────────────────────── */
+  --radius:      20px;
+  --radius-sm:   12px;
+  --radius-lg:   28px;
+  --radius-pill: 999px;
+
+  /* ── 타이포 ──────────────────────────────── */
+  /* 본문은 성숙한 UI 서체, 제목·숫자만 Jua.
+     시뮬레이션 안은 Jua 그대로라 가족 유사성은 남는다. */
+  --font-ui: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+             system-ui, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+  --font-display: 'Jua', var(--font-ui);
+
+  /* ── 모션 ────────────────────────────────── */
+  --ease: cubic-bezier( .2, .8, .2, 1 );
+  --dur: .18s;
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+  :root { --dur: .001s; }
+  * { animation: none !important; }
+}

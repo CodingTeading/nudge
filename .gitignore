@@ -1,0 +1,12 @@
+# 배포본 — site/ 와 PhET 산출물을 합쳐 만든 것이라 소스가 아닙니다
+dist/
+
+# 파이썬
+__pycache__/
+*.pyc
+
+# 에디터 · OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
