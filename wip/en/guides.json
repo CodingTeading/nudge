@@ -2907,5 +2907,272 @@
    "From the second attempt a correct answer is worth <b>1 point</b>. Reduce it in your head before you rush the cards up.",
    "Leaving the timer on makes you hasty. Better off at first."
   ]
+ },
+ "ratio-and-proportion": {
+  "summary": "Drag the <b>two hands</b> on screen up and down to hit a ratio. You do not have to look at any numbers - when the ratio is right <b>the background deepens and the sound changes.</b> Learn it by eye and ear first and turn the numbers on later.",
+  "screens": [
+   {
+    "name": "Discover",
+    "what": "Where this lesson starts. Hit the set ratios (Challenge 1, 2, 3)."
+   },
+   {
+    "name": "Create",
+    "what": "<b>Set a ratio yourself</b> and hit it. You can also lock the two hands to move together."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The two hands (middle of the screen)",
+    "desc": "Drag each up and down. The ratio of the two heights is the current ratio.",
+    "tip": "The one key action here. Break the ratio by moving <b>one hand alone</b>, then raise <b>both together</b> and confirm the ratio holds."
+   },
+   {
+    "name": "The background colour and the sound",
+    "desc": "The closer the ratio, the <b>deeper the background</b> and the steadier the sound. Off the ratio, it fades.",
+    "tip": "This is the real marker in this sim. Hit the ratio <b>by colour and sound</b> before you look at numbers - it is built to teach ratio as a feel."
+   },
+   {
+    "name": "Challenge 1 · 2 · 3 (right of the Discover screen)",
+    "desc": "Choose the ratio to hit. <b>It does not tell you</b> what the ratio is.",
+    "tip": "Hit it by colour and sound without knowing the numbers, then turn the tick marks on to see <b>what it was</b>. That order is the design intent."
+   },
+   {
+    "name": "The tick mark chooser (top right, three buttons)",
+    "desc": "Three buttons with <b>pictures only</b> and no words. From the left: <b>no tick marks</b> (a crossed-out eye), <b>tick marks</b> (horizontal lines) and <b>numbered tick marks</b> (lines with numbers).",
+    "tip": "Start on <b>no tick marks</b>. With numbers visible you will solve it by arithmetic instead of by feel."
+   },
+   {
+    "name": "Range (right of the Create screen)",
+    "desc": "Choose how far the hands can move - <b>0 to 10 · 0 to 20 · 0 to 30</b>.",
+    "tip": "The same ratio can be hit with bigger numbers on a wider range. Good for confirming that <b>2 : 3 and 20 : 30 are the same</b>."
+   },
+   {
+    "name": "My Challenge (right of the Create screen)",
+    "desc": "Set the left and right values yourself to make <b>your own problem</b>.",
+    "tip": "Make one to set a friend. Becoming the person who sets the ratio deepens the understanding a lot."
+   },
+   {
+    "name": "Ratio Lock (bottom right of the Create screen)",
+    "desc": "On, the two hands move <b>together, keeping the ratio</b>.",
+    "tip": "<b>Do turn it on.</b> You can feel with your hand that the ratio holds while only the size changes. That is what \"a ratio is a relationship, not a size\" means."
+   }
+  ],
+  "steps": [
+   "On the <b>Discover</b> screen choose <b>Challenge 1</b>.",
+   "With the tick marks off, hit the ratio <b>by colour and sound alone</b>.",
+   "Once you have it, press the <b>third</b> tick mark button (numbered) to see what it was.",
+   "Set the left hand to 2 and the right to 3, then raise <b>the left alone to 4</b>.",
+   "Find what the right hand has to be to match again.",
+   "On the <b>Create</b> screen turn on <b>Ratio Lock</b> and raise both hands together."
+  ],
+  "gotchas": [
+   "The tick mark buttons have <b>no words on them.</b> Tell them apart by picture: from the left, no tick marks, tick marks, numbered tick marks.",
+   "A ratio <b>is not kept by adding.</b> Adding 2 to one side does not mean adding 2 to the other - you have to multiply both by <b>the same factor</b>.",
+   "If you cannot hear anything, check your device volume or the <b>sound button at the top right of the sim</b>. Half of this sim is sound."
+  ]
+ },
+ "proportion-playground": {
+  "summary": "Shows how <b>the same ratio</b> works in four completely different places. The <b>picture buttons</b> at the bottom centre switch between them - there are <b>no words</b>, so you choose by picture.",
+  "screens": [
+   {
+    "name": "Explore",
+    "what": "Where this lesson starts. Change the values and the result shows at once."
+   },
+   {
+    "name": "Predict",
+    "what": "The result is <b>hidden</b> so you can guess before opening it. Come here after Explore."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The place chooser (bottom centre, four picture buttons)",
+    "desc": "Choose between <b>necklace · billiard table · paint · apples</b>. Pictures only, no words.",
+    "tip": "<b>Do all four.</b> That one rule turns up as colour, as pattern, as angle and as price - that is the whole sim."
+   },
+   {
+    "name": "The two value handles",
+    "desc": "Each place has two values - bead counts, length and width, paint amounts, apple count and price.",
+    "tip": "Change <b>one alone</b> and watch the result change, then multiply <b>both by the same factor</b> and watch it stay. Those two contrasts are the point."
+   },
+   {
+    "name": "The paint place",
+    "desc": "Set the amounts of the two colours and the mixed colour appears below.",
+    "tip": "Compare <b>1 : 2</b> against <b>3 : 6</b>. Same colour. Then change to <b>2 : 6</b> and it shifts sharply."
+   },
+   {
+    "name": "The billiard table place - Length · Width",
+    "desc": "Set the table's length and width and the path the ball bounces along is drawn.",
+    "tip": "Try <b>doubling both</b>. The table grows and the shape of the path does not. That is what \"similar\" looks like."
+   },
+   {
+    "name": "The necklace place",
+    "desc": "The ratio of the two kinds of bead sets the <b>repeating pattern</b>.",
+    "tip": "Add beads to lengthen the necklace and the pattern is unchanged. Another example of a ratio setting <b>a shape</b>."
+   },
+   {
+    "name": "The apples place - Total Cost · Cost per Apple",
+    "desc": "Set the number of apples and the total cost and it gives you the <b>cost per apple</b>.",
+    "tip": "A trailer for the next lesson (unit rates). Get used to <b>what one costs</b> here and lesson 3 is much easier."
+   },
+   {
+    "name": "The cover button (Predict screen)",
+    "desc": "Hides the result, then reveals it.",
+    "tip": "<b>Say your answer first</b> and then open it. Opening it straight away is no practice at all."
+   }
+  ],
+  "steps": [
+   "On the <b>Explore</b> screen choose the <b>paint</b> place.",
+   "Set <b>1 : 2</b> and fix the colour in your mind.",
+   "Change to <b>3 : 6</b> and see whether the colour is the same.",
+   "Change to <b>2 : 6</b> and watch it change this time.",
+   "On the <b>billiard table</b> place, double <b>both</b> the length and the width.",
+   "On the <b>apples</b> place, see how the cost per apple comes out."
+  ],
+  "gotchas": [
+   "The place chooser has <b>no words on it.</b> Change places with the picture buttons at the bottom centre.",
+   "Increasing the amount and changing the ratio are <b>different things</b>. Double the paint and you get more of it, not a deeper colour.",
+   "Lengthen <b>one side alone</b> of the billiard table and the path changes. To stay similar, both need the same factor.",
+   "Go to the <b>Predict</b> screen only after plenty of Explore. In the other order it is just guessing."
+  ]
+ },
+ "unit-rates": {
+  "summary": "Convert prices into <b>what one costs</b> and compare. The <b>Double Number Line</b> at the top is the centre of this sim, so the practice is <b>reading off the line</b> instead of calculating.",
+  "screens": [
+   {
+    "name": "Shopping",
+    "what": "Where this lesson starts. Buy and sell fruit, vegetables and sweets and work with unit rates."
+   },
+   {
+    "name": "Shopping Lab",
+    "what": "<b>Set the prices and counts yourself</b> to make your own problems."
+   },
+   {
+    "name": "Racing Lab",
+    "what": "<b>Time and distance</b> instead of money. The unit rate becomes speed."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The item chooser (left)",
+    "desc": "Apples, Lemons, Oranges, Pears, Carrots, Cucumbers, Potatoes, Tomatoes, candy and more. Prices differ by kind.",
+    "tip": "<b>Note the unit rate of two items</b> and compare them. The best way to use this sim."
+   },
+   {
+    "name": "The Double Number Line (top centre)",
+    "desc": "Two number lines drawn side by side. The top is <b>dollars</b> and the bottom is <b>the count</b>.",
+    "tip": "The key tool here. The two lines growing <b>in step</b> is what the same ratio means, which is why knowing one side lets you <b>read the other off without calculating</b>."
+   },
+   {
+    "name": "Unit Rate? (in the Questions box)",
+    "desc": "Tells you <b>what one costs</b>.",
+    "tip": "The number this sim exists to teach. Whatever else you skip, check this one."
+   },
+   {
+    "name": "Questions (collapsible box on the right)",
+    "desc": "Problems like \"Cost of 10 Apples?\". Type an answer and it tells you whether it is right.",
+    "tip": "Answer <b>in your head</b> first, then <b>read</b> it off the double number line to check. The two methods have to agree."
+   },
+   {
+    "name": "The scale and the price tag (middle)",
+    "desc": "Put items on the scale or change the count and the price follows.",
+    "tip": "Some items are sold by weight (<b>pounds</b>). Only the basis changes from count to weight; the rule is the same."
+   },
+   {
+    "name": "Erase (right)",
+    "desc": "Clears the marks you have made on the double number line.",
+    "tip": "Press it when the marks pile up and get confusing. The item and the prices stay."
+   }
+  ],
+  "steps": [
+   "On the <b>Shopping</b> screen choose an item.",
+   "Check the <b>Unit Rate?</b> and note it down.",
+   "Raise the count <b>1 → 2 → 3</b> and watch the two lines grow in step.",
+   "Open the <b>Questions</b> box, answer first, then check on the double number line.",
+   "Change items and compare the unit rates.",
+   "Do the same with time and distance on the <b>Racing Lab</b>."
+  ],
+  "gotchas": [
+   "A cheaper total is not the better buy. You have to look at <b>the cost of one</b> to compare.",
+   "Items sold in <b>pounds</b> go by weight, not count. That is why decimals turn up.",
+   "The purpose of this sim is <b>reading off the double number line</b> rather than getting the questions right."
+  ]
+ },
+ "mean-share-and-balance": {
+  "summary": "Builds a mean <b>as a picture rather than a formula</b>. Connect cups with pipes and let the water level out, share apples among people, or find the balance point of a see-saw. All three are the same mean in the end.",
+  "screens": [
+   {
+    "name": "Level Out",
+    "what": "Where this lesson starts. Connect cups with pipes and make the water levels even."
+   },
+   {
+    "name": "Distribute",
+    "what": "Share candy bars out among people and watch the mean per person."
+   },
+   {
+    "name": "Fair Share",
+    "what": "<b>Apples</b> instead of water, shared among people. When they will not divide exactly, pieces appear."
+   },
+   {
+    "name": "Balance Point",
+    "what": "Shows the mean as <b>the fulcrum where a see-saw balances</b>."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Number of Cups · Number of People (bottom)",
+    "desc": "Sets how many cups or people you are working with, up to 7.",
+    "tip": "Start with <b>3</b>. With many of them it is hard to follow what is happening."
+   },
+   {
+    "name": "The cup handles (under each cup)",
+    "desc": "Sets the water level in each cup separately.",
+    "tip": "Fill them deliberately <b>unevenly</b>. Fill them evenly and opening the pipes does nothing at all."
+   },
+   {
+    "name": "The pipes (between the cups)",
+    "desc": "Open them and water moves between cups until <b>every level is the same.</b>",
+    "tip": "The key action of this sim. Predict the result <b>before</b> you open them. That prediction is the mean calculation."
+   },
+   {
+    "name": "Predict Mean · Tick Marks (right)",
+    "desc": "Mark <b>the level you think it will be</b> before you see the answer.",
+    "tip": "Mark first, then open the pipes, and <b>how far off you were</b> is right there. The best practice in this sim."
+   },
+   {
+    "name": "Sync · Collect · Share (middle of the Fair Share screen)",
+    "desc": "Buttons to <b>gather</b> the apples up (Collect) and <b>share them out evenly</b> (Share).",
+    "tip": "Press <b>Collect then Share</b>. Those two actions - gathering everything and dividing it equally - are the two halves of the mean formula."
+   },
+   {
+    "name": "Total (top right)",
+    "desc": "Shows the total amount of whatever you are working with.",
+    "tip": "Check that <b>the total does not change</b> across opening the pipes. Taking a mean leaves the whole untouched."
+   },
+   {
+    "name": "Mean (collapsible box, top left)",
+    "desc": "Shows the mean and how it was worked out.",
+    "tip": "Open it <b>after</b> you have understood the picture. Open it first and you will look at the formula and move on."
+   },
+   {
+    "name": "The info button (middle)",
+    "desc": "Tells you what the current screen is about.",
+    "tip": "Each screen handles something different, so press it when you lose track."
+   }
+  ],
+  "steps": [
+   "On the <b>Level Out</b> screen set <b>Number of Cups</b> to 3.",
+   "Fill the water levels unevenly at <b>2 · 4 · 6</b>.",
+   "Mark your answer first with <b>Predict Mean</b>.",
+   "Open the <b>pipes</b> and compare against the real level.",
+   "Take the cups up to 7 and do the same.",
+   "On the <b>Fair Share</b> screen press <b>Collect then Share</b>.",
+   "On the <b>Balance Point</b> screen watch the mean appear as the fulcrum."
+  ],
+  "gotchas": [
+   "Fill the cups <b>evenly</b> and opening the pipes changes nothing. Fill them unevenly on purpose.",
+   "The water neither grows nor shrinks. <b>What was there was simply spread out evenly</b> - that is what a mean means.",
+   "When the apples will not divide exactly, <b>pieces</b> appear. Not an error - the result of a division can be a fraction.",
+   "There are four screens and they get harder. <b>Level Out → Fair Share → Balance Point</b> is the order to take."
+  ]
  }
 }

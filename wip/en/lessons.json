@@ -2652,5 +2652,265 @@
     "right": 0
    }
   ]
+ },
+ "ratio-1": {
+  "course": "ratio",
+  "sim": "ratio-and-proportion",
+  "screens": null,
+  "mode": "solve",
+  "title": "Adding does not keep a ratio",
+  "lead": "Add 2 to each of 2 and 3 and you get 4 and 5. That is no longer the same ratio.",
+  "hook": "Two packets of noodles take <b>3 cups</b> of water. So how much water for <b>four packets</b>? Your hand goes two ways here. \"Two more packets, so two more cups - <b>5 cups</b>\" is one; \"twice the noodles, so twice the water - <b>6 cups</b>\" is the other. One is right and one is wrong, and the wrong one feels more natural. This sim shows you the difference <b>with your eyes and your ears</b>, through the height of two hands.",
+  "predict": {
+   "q": "From left hand at <b>2</b> and right hand at <b>3</b> (2 : 3), you raise the left hand to <b>4</b>. To keep the same ratio, the right hand goes to:",
+   "opts": [
+    "5 - the left went up 2, so the right does too",
+    "6",
+    "4 - the same as the left",
+    "9"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Discover</b> screen. There are <b>two hands</b> on screen; drag them up and down to change their heights.",
+   "Choose <b>Challenge 1</b> on the right. That fixes the ratio you have to hit.",
+   "Drag the two hands. When the ratio is right <b>the background deepens and the sound changes.</b> You can tell without looking at any numbers.",
+   "Keeping the ratio right, raise <b>both hands together</b>. The heights change and <b>the ratio stays matched</b>.",
+   "Of the <b>three tick mark buttons</b> at the top right, choose the <b>third</b> (the picture with numbers beside the ticks). Now you can read the hand heights as numbers.",
+   "Put the left hand at <b>2</b> and the right at <b>3</b>. Does the background deepen?",
+   "Raise the left hand alone to <b>4</b>. The background fades. What does the right hand have to be to deepen it again? That is the answer to ②.",
+   "Switch to <b>Challenge 2</b> and <b>Challenge 3</b> and hit those ratios the same way.",
+   "Use the house button to reach the <b>Create</b> screen and <b>set a ratio yourself</b> to hit.",
+   "On the Create screen turn on <b>Ratio Lock</b> and the two hands move <b>together</b>. The ratio is locked and only the size changes."
+  ],
+  "record": "From left 2 and right 3, when you raised the left alone to 4, what did the right have to be for the background to deepen again?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>6</strong>. The left hand <strong>doubled</strong> from 2 to 4, so the right hand has to <strong>double</strong> from 3 to 6.</p><p>If you chose <strong>5</strong>, you were <strong>trying to match by adding</strong> - the left went up 2, so the right goes up 2. A very natural thought, and therefore a very common mistake. But 4 : 5 is a different ratio from 2 : 3.</p><p>Why does adding fail? A ratio says <strong>how many times one is the other</strong>. 2 : 3 means \"the right is 1.5 times the left\". 4 : 6 is also 1.5 times. But 4 : 5 is 1.25 - <strong>the relationship has changed.</strong></p><p>It is exactly the story from course 10 (fractions), where <strong>multiplying top and bottom by the same number holds the value and adding does not</strong>. It is the same thing as 2/3 and 4/6 being equal while 4/5 is not. <strong>A ratio and a fraction are really the same object.</strong></p><p>That the ratio held when you raised <strong>both hands together</strong> matters too. 2 : 3, 4 : 6 and 6 : 9 are all <strong>the same ratio</strong>, and the actual size can be anything at all. A ratio is <strong>a relationship, not a size</strong>.</p>"
+  },
+  "real": "Recipes are the commonest example. Going from two servings to four means doubling <b>every</b> ingredient; adding \"a bit more\" of everything wrecks the taste. Enlarging a photo without distortion by multiplying both sides by the same number, a map scale, a 16:9 screen - all on the same rule.",
+  "quiz": [
+   {
+    "q": "Which is the same ratio as <b>3 : 4</b>?",
+    "opts": [
+     "4 : 5",
+     "6 : 8",
+     "5 : 6",
+     "3 : 8"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Two packets of noodles take 3 cups of water. <b>Six packets</b> take:",
+    "opts": [
+     "7 cups",
+     "9 cups",
+     "12 cups"
+    ],
+    "right": 1
+   },
+   {
+    "q": "To keep a ratio, what do you do to both numbers?",
+    "opts": [
+     "Add the same number",
+     "Multiply by the same number",
+     "Add to the bigger one only"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "ratio-2": {
+  "course": "ratio",
+  "sim": "proportion-playground",
+  "screens": null,
+  "mode": "solve",
+  "title": "Same ratio, same result",
+  "lead": "Paint colour, necklace pattern, the angle a billiard ball bounces at. Things that look nothing alike run on one rule.",
+  "hook": "Lesson 1 had you confirm with your hands that <b>2 : 3 and 4 : 6 are the same ratio</b>. But what is that good for? This sim shows the same ratio working identically in <b>four completely different places</b>. Mixing paint, threading beads, a ball bouncing round a billiard table, pricing apples - <b>same ratio, same result</b>.",
+  "predict": {
+   "q": "You mixed <b>1</b> red with <b>2</b> blue to make a purple. Now you mix <b>3</b> red with <b>6</b> blue:",
+   "opts": [
+    "Exactly the same purple - just three times as much of it",
+    "A purple three times deeper",
+    "It goes bluer",
+    "It goes redder"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Explore</b> screen. At the bottom centre are <b>four picture buttons</b> - necklace, billiard table, paint and apples. There are no words, so choose by the picture.",
+   "Choose <b>paint</b>. Change the amounts in the two containers and the colour below follows.",
+   "Set the left to <b>1</b> and the right to <b>2</b> and fix the colour in your mind.",
+   "Now set the left to <b>3</b> and the right to <b>6</b>. Has the colour changed? That is the answer to ②.",
+   "Now change the left alone to <b>2</b> (2 : 6). This time the colour changes <b>definitely</b>.",
+   "Switch to the <b>necklace</b>. Change the ratio of the two kinds of bead and <b>the length before the pattern repeats</b> changes.",
+   "Switch to the <b>billiard table</b>. Change the ratio of <b>Length</b> to <b>Width</b> and the <b>shape of the path</b> changes. At the same ratio the path is <b>similar</b> whatever the size.",
+   "Double <b>both</b> the length and the width of the table. Is the path unchanged?",
+   "Switch to <b>apples</b>. Set the number of apples and the <b>Total Cost</b> and it gives you the <b>Cost per Apple</b>. This screen leads into lesson 3.",
+   "Use the house button to reach the <b>Predict</b> screen, where you <b>guess the result first</b> and then open it up."
+  ],
+  "record": "How did the colours from 1 : 2 and 3 : 6 compare? And what happened to the path when you doubled both the length and the width of the table?",
+  "explain": {
+   "right": 0,
+   "body": "<p>The answer is <strong>exactly the same purple</strong>. There is three times as much of it, but <strong>the relationship between red and blue is unchanged</strong>. 1 : 2 and 3 : 6 both say \"twice as much blue as red\".</p><p>If you chose \"three times deeper\", you mixed up <strong>amount</strong> and <strong>ratio</strong>. Pouring three times the paint makes <strong>more of it</strong>, not <strong>a deeper version of it</strong>. To change the shade you have to change <strong>the ratio itself</strong>, which is why 2 : 6 looked so different.</p><p>That is the message of the whole sim. <strong>A ratio decides the result regardless of size.</strong></p><ul><li><strong>Paint</strong> - the ratio sets the colour. The amount only sets how much you make.</li><li><strong>Necklace</strong> - the bead ratio sets the pattern. A longer necklace has the same pattern.</li><li><strong>Billiard table</strong> - the length-to-width ratio sets the shape of the path. Scale it up and the path is similar.</li><li><strong>Apples</strong> - the ratio of count to cost sets the <strong>cost per apple</strong>.</li></ul><p>The path staying the same when you doubled <strong>both</strong> sides of the billiard table is a particularly good check. It is the story from course 10, lesson 2, where doubling a screen resolution did not change the shape of the picture. <strong>Multiply both by the same number and the relationship holds.</strong></p><p>That last <strong>apples</strong> screen is where the next lesson starts. Ten apples for five dollars - what is one apple? That is a <strong>unit rate</strong>.</p>"
+  },
+  "real": "A paint shop mixing a colour uses exactly this. One litre or twenty, <b>the same ratio</b> gives the same colour. Coffee grounds to water, a cement mix, camera exposure settings - all \"not the amount, the ratio\".",
+  "quiz": [
+   {
+    "q": "Which gives <b>the same colour</b> as 2 red : 3 blue?",
+    "opts": [
+     "3 red : 4 blue",
+     "4 red : 6 blue",
+     "4 red : 5 blue"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Double the length of the billiard table alone and the path:",
+    "opts": [
+     "Stays the same",
+     "Changes shape",
+     "The ball stops"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Double all the paint amounts and:",
+    "opts": [
+     "The colour deepens",
+     "The colour is the same, there is just more of it",
+     "The colour lightens"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "ratio-3": {
+  "course": "ratio",
+  "sim": "unit-rates",
+  "screens": null,
+  "mode": "solve",
+  "title": "Which one is actually cheaper",
+  "lead": "Six for $3 and ten for $4.50. To compare two things that differ in both, you have to bring them onto one measure.",
+  "hook": "The same fruit is sold two ways at the supermarket. <b>Six for $3</b> and <b>ten for $4.50</b>. Which is the better buy? At a glance <b>$3 is cheaper</b>, and by count <b>ten is more</b>. Both are true and neither gives you an answer. To compare things that will not compare, you have to <b>put them on one measure</b>. That measure is <b>what one costs</b>.",
+  "predict": {
+   "q": "Apples are <b>6 for $3</b> in one bag and <b>10 for $4.50</b> in another. Which is cheaper per apple?",
+   "opts": [
+    "The 6 for $3",
+    "The 10 for $4.50",
+    "The same",
+    "You cannot compare them with different counts"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Shopping</b> screen. Choose an item on the left - Apples, Lemons, Carrots, candy and so on.",
+   "Put things on the scale in the middle, or set the <b>Cost</b>, and two lines are drawn side by side on the <b>Double Number Line</b> above. The top is <b>dollars</b> and the bottom is <b>the count</b>.",
+   "Look at the <b>Unit Rate?</b> line in the <b>Questions</b> box on the right. It tells you <b>what one costs</b>. The key number of this sim.",
+   "Raise the count <b>1 → 2 → 3</b>. The two lines grow <b>in step</b>. That is what the same ratio looks like.",
+   "Open the rest of the <b>Questions</b> box. Problems like \"Cost of 10 Apples?\" appear.",
+   "Answer one and then check it <b>using the double number line</b>. You can <b>read</b> the answer off the line instead of calculating it.",
+   "Change items and note the <b>unit rate</b> of each, then compare which is cheaper. That is how you settle ②.",
+   "Use the house button to reach the <b>Shopping Lab</b>, where you <b>set the prices</b> and make your own problems.",
+   "On the <b>Racing Lab</b> the quantities are <b>time and distance</b> instead of money. The unit rate becomes <b>speed</b>."
+  ],
+  "record": "Write down the unit rate (cost per item) for two of the items you chose. And which was the better buy?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>the 10 for $4.50</strong>.</p><ul><li>6 for $3 → 3 ÷ 6 = <strong>$0.50 each</strong></li><li>10 for $4.50 → 4.50 ÷ 10 = <strong>$0.45 each</strong></li></ul><p>Look only at the total and $3 seems cheaper; look only at the count and ten seems better. Both look at <strong>one side only</strong>. The moment you convert to <strong>cost per item</strong> you can measure the two bags with the same ruler.</p><p>A ratio with <strong>the base set to 1</strong> like that is a <strong>unit rate</strong>. Why 1? <strong>Because from 1 you only have to multiply.</strong> Knowing one apple is 45 cents, seven apples is 45 × 7 and twenty-three is 45 × 23, straight off.</p><p>The <strong>double number line</strong> on screen draws that. The top line is cost and the bottom is count, and the two grow <strong>in step</strong>. In step is exactly what the same ratio means, which is why knowing one side lets you <strong>read the other off without calculating</strong>.</p><p>The <strong>Racing Lab</strong> is the same object. Distance ÷ time is <strong>how far in one second</strong>, which is speed. 60 mph, 15 km per litre, calories per 100 g - an enormous number of everyday figures are <strong>unit rates</strong>.</p>"
+  },
+  "real": "The small <b>price per 100 g</b> on a supermarket shelf label is exactly this. Pack sizes vary so wildly that nothing else compares, which is why the law requires the unit price alongside. Price per GB on a phone tariff, a car's fuel economy, an hourly wage - all figures with the base set to 1.",
+  "quiz": [
+   {
+    "q": "Something is <b>4 for $2</b>. One costs:",
+    "opts": [
+     "$0.40",
+     "$0.50",
+     "$0.80"
+    ],
+    "right": 1
+   },
+   {
+    "q": "At 45 cents each, <b>seven</b> cost:",
+    "opts": [
+     "$3.15",
+     "$3.50",
+     "$0.45"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Why is the base of a unit rate set to <b>1</b>?",
+    "opts": [
+     "Because 1 is the smallest number",
+     "Because you can then get any count by multiplying",
+     "Because 1 needs no calculation"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "ratio-4": {
+  "course": "ratio",
+  "sim": "mean-share-and-balance",
+  "screens": null,
+  "mode": "solve",
+  "title": "A mean is what you get sharing it out evenly",
+  "lead": "Not the formula for a mean but what a mean is. Let the water flow and it appears by itself.",
+  "hook": "A mean is taught as \"add them all up and divide by how many\". You memorised the formula, but <b>what it means</b> stays hazy. This sim <b>connects cups with pipes</b>. The water flows on its own until <b>every cup is at the same level</b>, and that level is the mean. You have made a mean without using the formula.",
+  "predict": {
+   "q": "Three cups hold <b>2 · 4 · 6</b> of water. Open the pipes and let it spread evenly. The level in each cup is:",
+   "opts": [
+    "3",
+    "4",
+    "6",
+    "12"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Level Out</b> screen. Set <b>Number of Cups</b> at the bottom to <b>3</b>.",
+   "Drag the handle under each cup to set the water levels to <b>2 · 4 · 6</b>.",
+   "Open the <b>pipes</b> in the middle. The water flows until <b>every cup is at the same level.</b> What level? That is the answer to ②.",
+   "Close the pipes and push one cup right up. Open them again - what is the new level?",
+   "Turn on <b>Predict Mean</b> on the right and mark your own guess <b>before</b> you open the pipes.",
+   "Turn on <b>Tick Marks</b> and your guess leaves a mark to compare against the answer.",
+   "Take the cups up to <b>7</b>, fill them unevenly and open the pipes. More cups, same thing.",
+   "Use the house button to reach the <b>Fair Share</b> screen. This time it is <b>apples</b> being shared among people, not water.",
+   "Press <b>Share</b> and the apples divide evenly. When they will not divide exactly they split into <b>pieces</b> - the fractions of course 10 turning up here.",
+   "On the <b>Balance Point</b> screen the mean appears as <b>the place a see-saw balances</b>. Another face of the same mean."
+  ],
+  "record": "What level did 2 · 4 · 6 come to when you opened the pipes? And what happened when the apples would not divide exactly?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>4</strong>. (2 + 4 + 6) ÷ 3 = 4. But what matters is not the arithmetic - it is <strong>what actually happened on screen</strong>.</p><p>No water arrived and none disappeared. <strong>The water that was there was simply spread out evenly.</strong> So the meaning of a mean is this - <strong>\"gather it all and share it equally; how much is one share?\"</strong></p><p>That is also where the shape of the formula comes from. <strong>Adding them all</strong> is pouring the water into one tank; <strong>dividing by how many</strong> is pouring it back equally into the cups. The formula just writes down those two actions.</p><p>If you chose <strong>3</strong>, you picked the middle value. With 2 · 4 · 6 the median happens to be 4 as well so it would not have caught you out, but for <strong>2 · 3 · 10</strong> the median is 3 and the mean is 5. That is the difference course 14 takes up.</p><p>The apples splitting into <strong>pieces</strong> on the <strong>Fair Share</strong> screen matters too. Seven apples between three people is 2 and 1/3 each. Course 10's \"the line in a fraction is a division sign\" is doing the work again. <strong>A mean is a division, and a division can come out as a fraction.</strong></p><p>The <strong>Balance Point</strong> screen shows the same mean in a completely different way. Put the values on a see-saw and the mean is <strong>the fulcrum where it balances</strong>. So one very large value at one end drags the fulcrum toward it - the whole reason a mean is vulnerable to outliers is in that picture.</p>"
+  },
+  "real": "\"Average temperature this month\", \"class average\", \"income per head\" - all of them are \"gather it all and share it equally\". Income per head being high while nobody feels it is because the water was not really spread out; it was spread out <b>only in the arithmetic</b>. Which is why a mean should always be read alongside \"how evenly is it spread\".",
+  "quiz": [
+   {
+    "q": "The mean of <b>3 · 5 · 7 · 9</b> is:",
+    "opts": [
+     "5",
+     "6",
+     "24"
+    ],
+    "right": 1
+   },
+   {
+    "q": "<b>Seven</b> apples shared equally between <b>two</b> people. One share is:",
+    "opts": [
+     "3 apples",
+     "3 and 1/2 apples",
+     "4 apples"
+    ],
+    "right": 1
+   },
+   {
+    "q": "After the pipes spread the water evenly, <b>the total amount of water</b>:",
+    "opts": [
+     "Has gone down",
+     "Is unchanged",
+     "Has gone up"
+    ],
+    "right": 1
+   }
+  ]
  }
 }
