@@ -884,5 +884,285 @@
    "This sim was built for high school and university. This lesson uses only the <b>Discrete</b> screen.",
    "If the formula is heavy going, leave <b>Equation</b> on <b>Hidden</b>. The pictures are enough."
   ]
+ },
+ "geometric-optics": {
+  "summary": "Watch <b>how an image is formed</b> by lenses and mirrors. Drag the object or the lens and the rays and the image follow immediately.",
+  "screens": [
+   {
+    "name": "Lens",
+    "what": "Where this lesson starts. Convex and concave lenses."
+   },
+   {
+    "name": "Mirror",
+    "what": "Concave, convex and flat mirrors. Almost the same rules as the lenses."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The object (left, drag it about)",
+    "desc": "Choose between a pencil, a penguin, a star, an arrow and a light, and drag it to change its distance from the lens.",
+    "tip": "The main thing you do here. Drag it slowly from <b>outside the focal point (F) to inside it</b>. Where the real image gives way to a virtual image is the heart of this lesson."
+   },
+   {
+    "name": "Rays (bottom left) - Marginal · Principal · Many · None",
+    "desc": "Chooses which rays to draw. <b>Principal</b> is the three representative rays used for drawing; <b>Many</b> is the real light spreading in all directions.",
+    "tip": "The most important switch in this lesson. Go from <b>Principal to Many</b>. Once you know there are not just three rays, the idea that \"covering a lens cuts the image\" falls apart."
+   },
+   {
+    "name": "Focal Length · Radius of Curvature · Index of Refraction · Diameter (bottom)",
+    "desc": "Set the properties of the lens. <b>Diameter</b> is how big the lens is.",
+    "tip": "Try shrinking the <b>Diameter</b>. The image stays as it is but <b>gets dimmer</b> - which means a bigger lens gathers more light."
+   },
+   {
+    "name": "Focal Points (F) · 2F Points (checkboxes on the right)",
+    "desc": "Marks the focal points on either side of the lens and the points at twice that distance.",
+    "tip": "<b>Leave them on.</b> Where you put the object only means anything relative to the focal point, so with the focus hidden you cannot judge a thing."
+   },
+   {
+    "name": "Virtual Image (checkbox on the right)",
+    "desc": "Draws the image that <b>looks as though</b> the light gathers there when it does not.",
+    "tip": "Pull the object inside the focal point and then tick it. This is what you are looking at when a magnifying glass enlarges text."
+   },
+   {
+    "name": "Labels · Second Point · Guides (checkboxes on the right)",
+    "desc": "Adds name tags, puts a second point on the object, and draws guide lines for the lens.",
+    "tip": "<b>Labels</b> is worth leaving on. It keeps you from mixing up the real image and the virtual image."
+   },
+   {
+    "name": "Screen (when the object is set to Light)",
+    "desc": "Drag it to where the image forms and the image is thrown onto it.",
+    "tip": "A real image <b>shows</b> on the screen and a virtual image <b>does not.</b> It is the best way to feel the difference with your own hands."
+   }
+  ],
+  "steps": [
+   "On the <b>Lens</b> screen turn on <b>Focal Points (F)</b> and <b>Labels</b>.",
+   "Set <b>Rays</b> to <b>Principal</b> and watch the three rays meet at one point.",
+   "Change <b>Rays</b> to <b>Many</b> and watch the light spread in every direction.",
+   "Drag the object nearer and further and watch the position and size of the image.",
+   "Pull the object <b>inside the focal point</b> and turn on <b>Virtual Image</b>.",
+   "Shrink the <b>Diameter</b> and watch the image get dimmer.",
+   "On the <b>Mirror</b> screen, do the same with a concave mirror."
+  ],
+  "gotchas": [
+   "The three <b>Principal</b> rays are a trick to make the drawing easy. The real light is closer to what <b>Many</b> shows.",
+   "A <b>virtual image</b> will not show on a screen, because no light actually gathers there.",
+   "Cover <b>part</b> of the lens and the shape of the image is unchanged. It only gets dimmer."
+  ]
+ },
+ "blackbody-spectrum": {
+  "summary": "A sim where <b>one handle</b> is nearly all of it. Change the temperature of an object and a curve draws <b>how much light comes out at each wavelength</b>. With only one screen, the black bar at the bottom carries no screen names.",
+  "screens": [
+   {
+    "name": "(only one screen)",
+    "what": "This sim has a single screen. Change the temperature and watch how the curve moves."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Blackbody Temperature (the vertical handle on the right)",
+    "desc": "Sets the temperature of the object. The one main control here.",
+    "tip": "Raise it <b>slowly</b> and watch which way the peak of the curve moves. Jump it up all at once and you miss the change happening."
+   },
+   {
+    "name": "The wavelength scale (horizontal axis)",
+    "desc": "From the left it is divided by colour into <b>X-Ray · Ultraviolet · Visible · Infrared</b>.",
+    "tip": "Look at <b>how narrow</b> the visible band is. It shows at a glance that what our eyes can see is a very small slice of the whole."
+   },
+   {
+    "name": "Real object buttons (right) - Earth · Light Bulb · Sun · Sirius A",
+    "desc": "Loads the temperature of a real object.",
+    "tip": "Press all four in turn and note <b>the temperature and where the peak is</b>. The Earth has its peak in the infrared, so you cannot see it."
+   },
+   {
+    "name": "Graph Values · Labels (checkboxes on the right)",
+    "desc": "Puts values on the curve and names on the bands.",
+    "tip": "Turn them on when you want to read the peak wavelength <b>exactly</b>."
+   },
+   {
+    "name": "Intensity (checkbox on the right)",
+    "desc": "Shows the total intensity as a number. It is the area under the curve.",
+    "tip": "<b>Double</b> the temperature and compare the values. Not twice - <b>sixteen times</b>."
+   },
+   {
+    "name": "The coloured square (top right)",
+    "desc": "Tells you <b>what colour</b> an object at that temperature looks.",
+    "tip": "The curve alone does not give you a feel for it. Watch this little square alongside and \"red → white → blue\" lands immediately."
+   },
+   {
+    "name": "The R · G · B readouts (under the visible band)",
+    "desc": "Show how much of each of the three colours is coming out.",
+    "tip": "When all three come out <b>about equally</b>, the object looks white. The Sun is around there."
+   }
+  ],
+  "steps": [
+   "Take the temperature down to about <b>3000 K</b> and see where the peak is.",
+   "Raise it slowly and watch which way the peak goes.",
+   "Find the temperature that brings the peak into the <b>Visible</b> band.",
+   "Turn on <b>Intensity</b>, double the temperature and compare the values.",
+   "Press <b>Earth · Light Bulb · Sun · Sirius A</b> in turn.",
+   "Check the colour at each temperature with the <b>coloured square</b> at the top right."
+  ],
+  "gotchas": [
+   "<b>Blue is hotter than red.</b> The opposite of the red and blue on a tap.",
+   "Double the temperature and the intensity goes to <b>sixteen times</b>. It goes as the fourth power.",
+   "At low temperatures the curve looks as though it is <b>flat on the floor</b>. The vertical scale rescales itself; the value is not 0.",
+   "The curve is <b>continuous, with no breaks</b> - unlike the hydrogen spectrum in course 05, which was a few separate lines.",
+   "With only one screen, the black bar at the bottom has <b>no house button</b>."
+  ]
+ },
+ "photoelectric-effect": {
+  "summary": "Shine light on a metal and see <b>whether electrons fly out</b>. There are only two handles - <b>Intensity</b> and <b>Wavelength</b>.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Where this lesson starts. Choose a metal, shine light on it and watch the current."
+   },
+   {
+    "name": "Experiment",
+    "what": "Measure the threshold of an unknown <b>Mystery</b> metal and work out what it is."
+   },
+   {
+    "name": "Energy",
+    "what": "Shows <b>how much energy</b> the electrons come out with."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Intensity - handle at the top",
+    "desc": "Sets the <b>intensity</b> of the light. It corresponds to the <b>number</b> of photons.",
+    "tip": "This is the handle that settles ② in this lesson. Do see for yourself that at a long wavelength the current stays 0 even at <b>full</b> intensity."
+   },
+   {
+    "name": "Wavelength - handle at the top",
+    "desc": "Sets the <b>wavelength</b> of the light. <b>UV</b> is to the left and <b>IR</b> to the right. It settles <b>the energy of one photon</b>.",
+    "tip": "Fix the intensity and lower <b>only this</b>, slowly. The point where the current <b>suddenly</b> starts to flow is that metal's threshold."
+   },
+   {
+    "name": "The metal chooser (left) - a combo box with no label above it",
+    "desc": "Choose between <b>Sodium</b>, <b>Copper</b>, <b>Calcium</b>, <b>Platinum</b>, <b>Zinc</b> and <b>Mystery</b>. The box itself carries no heading; it shows the name of the metal you have picked.",
+    "tip": "Start with <b>Sodium</b>. It has the lowest threshold, so visible light is enough to get electrons out. Platinum takes ultraviolet."
+   },
+   {
+    "name": "Current - the meter on the right",
+    "desc": "The current made by the electrons that fly out, in μA.",
+    "tip": "<b>Where the answer appears</b> in this sim. A reading of 0 means not one electron came out."
+   },
+   {
+    "name": "Show Electrons - checkbox at the bottom",
+    "desc": "Makes the escaping electrons visible.",
+    "tip": "<b>Leave it on.</b> Watching the grains fly stays with you far better than a number for the current."
+   },
+   {
+    "name": "Highest Energy Only",
+    "desc": "Picks out only the fastest electrons to show.",
+    "tip": "Turn it on once you know the electrons come out at a range of speeds. How far past the threshold you are sets the maximum energy."
+   },
+   {
+    "name": "Representation chooser (two pictures, no words - grounded / circuit)",
+    "desc": "Chooses whether the apparatus is drawn as a grounded setup or as a circuit diagram. The two buttons carry pictures only.",
+    "tip": "The result is the same either way. If circuits are familiar to you, the circuit picture is easier to follow."
+   },
+   {
+    "name": "Pause and step buttons (bottom)",
+    "desc": "Stop the action or advance a frame at a time. Both are icons with no words on them.",
+    "tip": "Use them when you want to catch <b>the instant</b> an electron flies off."
+   }
+  ],
+  "steps": [
+   "Set the metal to <b>Sodium</b> and put the wavelength long, over toward <b>IR</b>.",
+   "Push <b>Intensity</b> to maximum and confirm that <b>Current</b> reads 0.",
+   "Leaving the intensity alone, bring <b>Wavelength</b> down slowly toward <b>UV</b>.",
+   "Write down the <b>threshold wavelength</b> at which the current starts to flow.",
+   "Just past the threshold, turn the intensity down and see whether electrons still come.",
+   "Change the metal to <b>Copper</b> and <b>Platinum</b> and compare the thresholds.",
+   "On the <b>Energy</b> screen, see what the wavelength changes and what the intensity changes."
+  ],
+  "gotchas": [
+   "At a wavelength <b>longer than the threshold</b>, no intensity at all gets <b>a single</b> electron out. Not a fault.",
+   "<b>Intensity</b> sets the <b>number</b> of electrons; <b>wavelength</b> sets the <b>energy</b> of each one. Mix the two and you reach no conclusion.",
+   "The threshold is <b>different for every metal</b>. Sodium is low, platinum is high.",
+   "This sim has three screens. Start on <b>Intro</b>."
+  ]
+ },
+ "quantum-wave-interference": {
+  "summary": "Fire light or particles at a barrier with two slits and see <b>what pattern piles up</b> on the screen behind. Taking the intensity very low so they go <b>one at a time</b> is the key move in this lesson.",
+  "screens": [
+   {
+    "name": "Experiment",
+    "what": "The screen this lesson uses. Slit settings and intensity are both free to change."
+   },
+   {
+    "name": "High Intensity",
+    "what": "Fire the light hard and see the whole pattern at once."
+   },
+   {
+    "name": "Single Particles",
+    "what": "A screen built around sending the particles one at a time."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Source Intensity (left)",
+    "desc": "Sets how much you fire. <b>Max</b> is the top of the range.",
+    "tip": "The <b>most important handle</b> in this lesson. See the pattern at maximum, then take it <b>very low</b> to send them one at a time. That contrast is the whole thing."
+   },
+   {
+    "name": "Slit Configuration (middle)",
+    "desc": "<b>Both Open</b> · <b>Cover Left</b> · <b>Cover Right</b>, along with the detector settings.",
+    "tip": "Work through <b>Both Open → Cover Left → Cover Right</b>. Cover one and <b>the stripes vanish</b>, leaving a single smear."
+   },
+   {
+    "name": "Detector Left · Right · Both (watching which slit)",
+    "desc": "Switches on the apparatus that checks <b>which slit</b> the particle went through.",
+    "tip": "The strangest part of this sim. <b>Switch it on and the stripes vanish.</b> The act of looking changes the result."
+   },
+   {
+    "name": "Detection mode - Intensity · Hits",
+    "desc": "Chooses whether the screen shows <b>brightness</b> or <b>a dot where each one landed</b>. The pair of buttons has no heading of its own.",
+    "tip": "When you send them one at a time, use <b>Hits</b>. You get to watch the dots arrive one by one and the pattern <b>build up</b>."
+   },
+   {
+    "name": "Particle chooser (bottom left)",
+    "desc": "Choose between <b>Photons</b>, <b>Electrons</b>, <b>Neutrons</b> and <b>Helium Atoms</b>. The group carries no heading; each button shows its own name.",
+    "tip": "Switch to <b>Electrons</b>. <b>Matter</b>, not light, makes the same pattern - which makes this lesson's conclusion far stronger."
+   },
+   {
+    "name": "Wavelength (left)",
+    "desc": "Sets the wavelength of the light you fire.",
+    "tip": "Shorten it and the stripes pack <b>closer together</b>. Evidence of wave-like behaviour."
+   },
+   {
+    "name": "Slit Separation · Barrier-Screen Distance",
+    "desc": "Set the distance between the two slits and the distance to the screen.",
+    "tip": "<b>Narrow</b> the separation and the pattern spreads wider. Basic wave behaviour."
+   },
+   {
+    "name": "The clear and snapshot buttons (by the screen)",
+    "desc": "Wipe the dots that have piled up, or save the current state. Both are icons with no words on them.",
+    "tip": "When you change conditions to compare, wipe the screen first. Otherwise the dots from the last run are mixed in."
+   },
+   {
+    "name": "Particle Speed (bottom)",
+    "desc": "Sets how fast the run goes.",
+    "tip": "Sending them one at a time takes a while for a pattern to build. Set it fast and wait."
+   }
+  ],
+  "steps": [
+   "Check the particle chooser at the bottom left is on <b>Photons</b> and set the intensity to <b>Max</b>.",
+   "On <b>Both Open</b>, watch the stripes appear.",
+   "Switch to <b>Cover Left</b> and <b>Cover Right</b> and watch one smear remain.",
+   "Go back to <b>Both Open</b> and take the intensity <b>very low</b>.",
+   "Change the detection mode to <b>Hits</b>, run it fast and leave it a long while.",
+   "Watch the stripes appear as the dots pile up.",
+   "Change the particle chooser to <b>Electrons</b> and do the same again.",
+   "Turn on <b>Detector Left</b> and see what happens to the pattern."
+  ],
+  "gotchas": [
+   "Sent one at a time, the first few land <b>anywhere at all</b>. Do not give up because no pattern shows - <b>leave it running.</b>",
+   "<b>Adding</b> the two covered-slit smears together does not make the stripes. That is exactly what is strange about it.",
+   "Turn a <b>Detector</b> on and the pattern goes. Not a fault - that is the very result the sim is here to show.",
+   "Wipe the screen before you change conditions.",
+   "This sim was built at university level. The <b>Experiment</b> screen alone is enough for this lesson."
+  ]
  }
 }

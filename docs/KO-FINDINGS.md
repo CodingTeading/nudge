@@ -7,30 +7,37 @@
 
 ---
 
-## 1. 화면에 없는 이름(`a11y.*`)을 인용한 자리 — 10곳
+## 1. 화면에 없는 이름(`a11y.*`)을 인용한 자리 — 20곳 (코스 04 까지)
 
 검수에서 미션 22곳을 고쳤지만, **사용법의 `tip` 과 `name`, 설명 본문, 그리고 미션
-한 곳에는 아직 남아 있습니다.** `Step Forward` 는 세 곳에 반복해 나옵니다. 전부 아이콘만 있는 단추의 접근성 이름이라 어느 언어로도 화면에
-그려지지 않습니다.
+몇 곳에는 아직 남아 있습니다.** 전부 아이콘만 있거나 이름표가 없는 조작의 접근성
+이름이라 어느 언어로도 화면에 그려지지 않습니다.
 
-| 자리 | 인용한 이름 | 실제 |
+| 인용한 이름 | 나오는 자리 | 실제 |
 |---|---|---|
-| `lessons/throw-4/explain.body` | `Projected onto x y axes` | `a11y.projectionRadioButton.accessibleName` — 성분 상자의 오른쪽 아래 **그림** 단추 |
-| `guides/vector-addition/controls[4].tip` | `Projected onto x y axes` | 위와 같음 |
-| `guides/vector-addition/controls[6].tip` | `Polar` | a11y 전용. 오른쪽 아래 **부채꼴 그림** 단추 |
-| `guides/energy-skate-park/controls[3].tip` | `Double Well` | `a11y.trackSelectionRadioButtonGroup.doubleWellRadioButton.accessibleName` |
-| `guides/energy-skate-park/controls[4].tip` | `Loop` | 위와 같은 그룹의 a11y 이름 |
-| `guides/energy-skate-park/controls[9].name` | `Clear Thermal Energy` | `a11y.energyBarGraphAccordionBox.clearThermalButton.accessibleName` |
-| `guides/projectile-motion/controls[9].name` | `Erase · Pause · Step Forward` | scenery-phet 의 `a11y.eraserButton` · `a11y.playPauseButton` · `a11y.stepForwardButton` |
-| `lessons/wave-3/missions[5]` | `Step Forward` | `a11y.stepForwardButton.accessibleName` — 일시정지 옆 **아이콘** |
-| `guides/wave-on-a-string/controls[7].name` · `.tip` | `Step Forward` | 위와 같음 |
-| `guides/masses-and-springs/controls[7].name` | `Step Forward` | 위와 같음 |
+| `Projected onto x y axes` | `lessons/throw-4/explain.body`, `guides/vector-addition/controls[4].tip` | `a11y.projectionRadioButton` — 성분 상자의 오른쪽 아래 **그림** 단추 |
+| `Polar` | `guides/vector-addition/controls[6].tip` | a11y 전용. 오른쪽 아래 **부채꼴 그림** 단추 |
+| `Double Well` · `Loop` | `guides/energy-skate-park/controls[3].tip` · `[4].tip` | `a11y.trackSelectionRadioButtonGroup.*` |
+| `Clear Thermal Energy` | `guides/energy-skate-park/controls[9].name` | `a11y.…clearThermalButton` |
+| `Erase · Pause · Step Forward` | `guides/projectile-motion/controls[9].name` | scenery-phet 의 `a11y.eraserButton` · `a11y.playPauseButton` · `a11y.stepForwardButton` |
+| `Step Forward` | `lessons/wave-3/missions[5]`, `guides/wave-on-a-string/controls[7]`, `guides/masses-and-springs/controls[7]` | 위와 같음 |
+| `Target Material` | `lessons/light-3/missions[0]` · `[7]`, `guides/photoelectric-effect/controls[2].name` · `steps[0]` | `a11y.materialsComboBox.accessibleName` — 콤보 상자에 **이름표가 없습니다** |
+| `Circuit` | `guides/photoelectric-effect/controls[7].tip` | `a11y.representationRadioButtonGroup.circuitRadioButton` |
+| `Pause · Step Forward` | `guides/photoelectric-effect/controls[8].name` | 위의 scenery-phet a11y |
+| `Detection Mode` · `Particle Type` | `guides/quantum-wave-interference/controls[3].name` · `[4].name` | `a11y.detectionModeRadioButtons` 등. 라디오 묶음에 **제목이 없습니다** |
+| `Clear Hits` · `Take Snapshot` | `guides/quantum-wave-interference/controls[7].name` | `a11y.detectorScreenButtons.*` |
+| `Fast` | `guides/quantum-wave-interference/controls[8].name` · `steps[4]` | 화면 라벨은 `Particle Speed` 뿐입니다 |
 
-같은 자리에서 한국어 원고가 이미 "글자 없이 그림으로 구별합니다"라고 써 둔 곳도
-많습니다(예: `guides/vector-addition/gotchas[0]`). 그래서 **한 문서 안에서 앞뒤가
-어긋납니다** — 단추에 글자가 없다고 해 놓고 그 단추를 영어 이름으로 부릅니다.
+`photoelectric-effect` 와 `quantum-wave-interference` 는 한국어 번역이 없어 화면이
+영어로 나옵니다. 그래서 한국어 원고가 영어 이름을 인용하는 것 자체는 맞습니다 —
+문제는 **인용한 영어 이름 중 일부가 화면에 없는 이름**이라는 점입니다.
 
-영어판은 전부 그림으로 가리키게 썼습니다.
+같은 문서가 다른 자리에서는 "글자 없이 그림으로 구별합니다"라고 써 두어(예:
+`guides/photoelectric-effect/controls[7].name`), **한 항목 안에서 앞뒤가 어긋나는
+곳도 있습니다** — 이름표에는 "글자 없이 그림 두 개"라고 해 놓고 팁에서 `Circuit`
+이라고 부릅니다.
+
+영어판은 전부 그림이나 위치로 가리키게 썼습니다.
 
 ## 2. 번역이 "있는" 시뮬레이션도 일부는 영어로 나옵니다
 

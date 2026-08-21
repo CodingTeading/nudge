@@ -721,5 +721,266 @@
     "right": 1
    }
   ]
+ },
+ "light-1": {
+  "course": "light",
+  "sim": "geometric-optics",
+  "screens": null,
+  "title": "Cover half the lens - does half the picture go?",
+  "lead": "An image is not made at one point of the lens but by the whole lens together. Cover half of it and the picture is still whole.",
+  "hook": "Have you ever thrown the view out of a window onto a wall with a magnifying glass? An upside-down image forms. Now what happens if you <b>cover the bottom half of the lens with your hand</b>? It feels as though the bottom of the picture should be cut away. It is not. Get this answer and you have <b>how an image is made</b> whole.",
+  "predict": {
+   "q": "You form an image with a convex lens and then <b>cover half the lens</b>. The image:",
+   "opts": [
+    "Loses half of itself",
+    "Just <b>gets dimmer</b> all over, keeping its shape",
+    "Shrinks to half its size",
+    "Disappears"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Lens</b> screen. The object is on the left, the lens in the middle, the image on the right.",
+   "In the checkboxes on the right, turn on <b>Focal Points (F)</b> and <b>Labels</b>. The focal points on either side of the lens appear.",
+   "Set <b>Rays</b> at the bottom left to <b>Principal</b>. The <b>three representative rays</b> from the object are drawn.",
+   "Watch the three rays pass through the lens and <b>meet at one point</b>. That point is the image.",
+   "Now change <b>Rays</b> to <b>Many</b>. There are far more rays. You can see light spreading out <b>in every direction</b> from a single point on the object.",
+   "Do all of those rays gather at <b>the very same point</b>? That leads straight to the answer to ②.",
+   "Drag the object <b>far to the left</b>. Where does the image go and what happens to its size?",
+   "Now pull the object <b>inside the focal point (F)</b>. The image goes and a <b>Virtual Image</b> appears. Tick the checkbox to see it.",
+   "Change the <b>Focal Length</b> handle. The thicker the lens, the closer the focal point.",
+   "Change the object to <b>Light</b> and drag the <b>Screen</b> to where the image forms.",
+   "Use the house button to visit the <b>Mirror</b> screen and see whether a concave mirror does the same thing."
+  ],
+  "record": "When you switched Rays to \"Many\", where did the rays gather? And what happened when you pulled the object inside the focal point?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>it just gets dimmer all over, keeping its shape</strong>.</p><p>What you saw on <strong>Many</strong> is the answer. Light from a single point on the object <strong>spreads in every direction</strong> and passes through <strong>every part</strong> of the lens. And the lens brings <strong>all of it back to the same single point</strong>.</p><p>So cover half the lens and the image still forms at that same point, <strong>out of the light that goes through the other half</strong>. Only half as much light arrives, so it is <strong>dimmer</strong> - that is all.</p><p>You are usually taught to find the image by drawing the three <strong>Principal</strong> rays. That is <strong>a trick to make the drawing easy</strong>, not a claim that only three rays exist. The misreading of it is what makes people think covering a lens cuts the picture.</p><p>Worth collecting what the object's position does to the image, too.</p><ul><li><strong>Beyond the focal point</strong> - a <strong>real image, upside down</strong>, forms on the far side. It can be thrown onto a screen.</li><li><strong>Inside the focal point</strong> - the rays never gather; they spread. Extended backward they look as though they meet, and that is the <strong>virtual image</strong>. It is what you are looking at when a magnifying glass enlarges text.</li></ul><p>A virtual image <strong>cannot be thrown onto a screen.</strong> No light actually gathers there; it only <strong>looks</strong> as though it does.</p><p>All of this treated light as <strong>lines travelling straight</strong>. Lenses, glasses and cameras are all explained by that picture. But some things are not, and the remaining three lessons are about those.</p>"
+  },
+  "real": "Cameras, eyes and glasses all work this way. Your lens thickening to look at something near is a way of shortening the focal length, and short-sight glasses are concave to push the focus back. It is also why telescopes are built with <b>big lenses</b> to see faint stars - bigger gathers more light, so the image is brighter.",
+  "quiz": [
+   {
+    "q": "Why do we draw only <b>three representative rays</b> to find an image?",
+    "opts": [
+     "Because only three rays really pass through the lens",
+     "Because it is a <b>trick</b> to make the drawing easy",
+     "Because a lens has three parts"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Put the object <b>inside the focal point</b> and:",
+    "opts": [
+     "An upside-down real image forms",
+     "An upright virtual image is seen",
+     "Nothing is seen"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Can a <b>virtual image</b> be thrown onto a screen?",
+    "opts": [
+     "Yes",
+     "No - no light actually gathers there",
+     "It depends on the lens"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "light-2": {
+  "course": "light",
+  "sim": "blackbody-spectrum",
+  "screens": null,
+  "title": "Hot things change colour",
+  "lead": "Heat iron and it goes red, then white. It is how we read the temperature of a star from its colour.",
+  "hook": "Lesson 1 treated light only as <b>lines travelling straight</b>. This time you look at <b>where light comes from</b>. Anything with a temperature gives off light - people, stones, everything - though mostly as infrared you cannot see. Get it hot enough and it <b>starts to be visible</b>; get it hotter and <b>the colour changes.</b> Which is hotter, the red one or the blue one?",
+  "predict": {
+   "q": "Make an object <b>hotter</b> and the wavelength it gives out most strongly:",
+   "opts": [
+    "Gets longer - toward the red",
+    "Gets shorter - toward the blue",
+    "Does not move; only the brightness rises",
+    "Has nothing to do with temperature"
+   ]
+  },
+  "missions": [
+   "The <b>Blackbody Temperature</b> handle on the right is the one main control in this sim.",
+   "Set the temperature low, around <b>3000 K</b>. The peak of the curve sits over in the <b>Infrared</b>.",
+   "Raise the temperature and watch <b>which way the peak moves</b>. That is the answer to ②.",
+   "Find the temperature at which the peak comes inside the <b>Visible</b> band.",
+   "Turn on <b>Intensity</b> on the right for the total intensity as a number. <b>Double</b> the temperature - how many times bigger is the intensity?",
+   "The area under the curve is the intensity. Raise the temperature only a little and watch the area <b>leap</b>.",
+   "Press the <b>Earth · Light Bulb · Sun · Sirius A</b> buttons on the right in turn. Note the temperature and the colour of each.",
+   "Where is the peak for <b>Earth</b>? Does it come into the visible band?",
+   "Where is the peak for the <b>Sun</b>? Compare it with the range your eyes can see.",
+   "Look at the small <b>coloured square</b> at the top right of the screen. It tells you <b>what colour</b> an object at that temperature looks.",
+   "Turn on <b>Graph Values</b> and <b>Labels</b> and read the peak wavelength off exactly."
+  ],
+  "record": "Write down the peak wavelength and the colour of the object at 3000 K, 5800 K and 10000 K.",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>it gets shorter - toward the blue</strong>. The hotter it is, the further the peak moves to <strong>short wavelengths</strong>.</p><p>So the colour runs in this order.</p><ul><li><strong>Low temperature</strong> - the peak is in the infrared and <strong>you cannot see it.</strong> Human bodies and the Earth are here.</li><li><strong>Hotter</strong> - the peak comes into the visible and it glows <strong>red</strong>.</li><li><strong>Hotter still</strong> - <strong>orange → yellow → white</strong>. The Sun (5800 K) is around here.</li><li><strong>Very hot</strong> - it turns <strong>blue</strong>. Stars like Sirius A.</li></ul><p>So <strong>a blue star is far hotter than a red one.</strong> The opposite of everyday sense, where red on a tap means hot.</p><p>What you saw under <strong>Intensity</strong> is startling too. Doubling the temperature does not double the intensity - it makes it <strong>sixteen times</strong> bigger, because it goes as the fourth power. A little more heat gives a great deal more light.</p><p>One more thing matters here. <strong>The peak moves but the curve is always continuous.</strong> Fix the temperature and how much comes out at every wavelength is <strong>completely settled</strong>. That is the exact opposite of the hydrogen spectrum in course 05, lesson 3, which was <strong>a handful of lines</strong>.</p><p>The difference matters. <strong>A single atom</strong> emits only at set wavelengths, while <strong>a hot lump of matter</strong> emits at every wavelength continuously. That is why starlight shows <strong>dark lines laid over a continuous rainbow</strong> - the continuous light from the star's surface, with the atoms outside it eating particular wavelengths out.</p><p>And the attempt to explain this smooth curve <strong>brought down the physics of a century ago.</strong> The theory of the day said the intensity should shoot to <strong>infinity</strong> at short wavelengths. To get out of it, Planck forced in the assumption that <strong>\"energy only moves in lumps\"</strong> - and that was the start of the quantum. The next lesson is that story.</p>"
+  },
+  "real": "Reading a star's temperature from its colour is basic astronomy. Infrared cameras finding people in the dark, thermal imaging showing how well a building is insulated, a blacksmith judging heat by the colour of iron, the \"colour temperature 2700 K\" on a light bulb box - all of it sits on this curve.",
+  "quiz": [
+   {
+    "q": "Which is hotter, a <b>blue star</b> or a <b>red star</b>?",
+    "opts": [
+     "The blue star",
+     "The red star",
+     "The same"
+    ],
+    "right": 0
+   },
+   {
+    "q": "<b>Double</b> the temperature and the total intensity goes to:",
+    "opts": [
+     "Twice",
+     "Four times",
+     "Sixteen times"
+    ],
+    "right": 2
+   },
+   {
+    "q": "Why can you not see the light a human body gives off?",
+    "opts": [
+     "It gives off none",
+     "Its peak is in the infrared",
+     "It is too faint"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "light-3": {
+  "course": "light",
+  "sim": "photoelectric-effect",
+  "screens": null,
+  "title": "Some things brightness cannot buy",
+  "lead": "Shine red light as hard as you like and no electron comes out. A feeble violet light and one comes straight away.",
+  "hook": "At the end of lesson 2, Planck forced in the assumption that <b>\"energy only moves in lumps\"</b>. It was a fudge. Then five years later, <b>evidence that the fudge was true</b> turned up. Shine light on a metal and electrons fly out - but in a way that <b>simply cannot be explained if light is a wave</b>.",
+  "predict": {
+   "q": "You shine <b>red light</b> on a metal and no electrons come out. Turn the <b>intensity up 100 times</b> and:",
+   "opts": [
+    "Electrons start coming out",
+    "Still <b>not a single one</b> comes out",
+    "None at first, then some after a while",
+    "The metal melts"
+   ]
+  },
+  "missions": [
+   "This is the <b>Intro</b> screen. The material chooser is on the left - a combo box with no label above it, showing the name of the metal - and the <b>Intensity</b> and <b>Wavelength</b> handles are at the top.",
+   "Set the metal to <b>Sodium</b> and put <b>Wavelength</b> at a long wavelength, over toward <b>IR</b>.",
+   "Push <b>Intensity</b> to the <b>maximum</b>. Does the <b>Current</b> value on the right move at all? That is the answer to ②.",
+   "Leaving the intensity at maximum, bring <b>Wavelength</b> slowly down toward <b>UV</b>. At what point do electrons <b>suddenly</b> start coming out?",
+   "Write down the wavelength at that point. It is this metal's <b>threshold</b>.",
+   "Just past the threshold, turn <b>Intensity</b> down. Even very faint, do electrons still come out <b>at all</b>?",
+   "Turn on <b>Show Electrons</b> and watch them fly off.",
+   "Change the metal to <b>Copper</b> or <b>Platinum</b>. Does the threshold wavelength move?",
+   "Use the house button to reach the <b>Energy</b> screen, where you can see <b>how much energy</b> the electrons come out with.",
+   "Does a shorter wavelength give the electrons more energy? What about raising the <b>Intensity</b>?",
+   "On the <b>Experiment</b> screen, measure the threshold of a <b>Mystery</b> metal and work out what it is."
+  ],
+  "record": "Write down the wavelength at which electrons began to come out of sodium. And what changed when you raised the intensity, against what changed when you shortened the wavelength?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>still not a single one</strong>. Brightness makes no difference whatsoever.</p><p>Treat light as a <strong>wave</strong> and this makes no sense. A wave delivers more energy the harder it hits, so even a feeble light ought to let an electron <strong>save up enough energy over time</strong> and escape. In fact, <strong>however bright and however long</strong>, nothing comes.</p><p>Instead it goes like this.</p><ul><li><strong>Wavelength longer than the threshold</strong> - <strong>not one</strong> comes out, whatever the intensity.</li><li><strong>Wavelength shorter than the threshold</strong> - they come <strong>immediately</strong>, even in very faint light.</li><li><strong>Raise the intensity</strong> - the <strong>number</strong> of electrons goes up. Their energy does not.</li><li><strong>Shorten the wavelength further</strong> - the <strong>energy</strong> of each electron goes up.</li></ul><p>Einstein's explanation: <strong>light is a hail of grains (photons)</strong>, and the energy one grain carries is <strong>settled by the wavelength.</strong> To knock an electron loose, <strong>one grain</strong> has to carry enough energy. Weak grains are useless however many you throw.</p><p>Think of throwing balls. To knock over a brick, a <strong>ping pong ball</strong> will not do. A hundred of them will not do, nor a thousand. <strong>One baseball</strong> does it at once. Intensity is <strong>the number of balls</strong>; wavelength is <strong>the weight of each ball</strong>.</p><p>You will have seen that <strong>each metal has its own threshold</strong>, because each holds on to its electrons with a different grip. Sodium holds them loosely enough for visible light; platinum grips so hard it takes ultraviolet.</p><p>This experiment won Einstein the Nobel Prize - <strong>this</strong>, not relativity. It is the moment lesson 2's fudge turned out to be <strong>real</strong>.</p>"
+  },
+  "real": "Solar power is precisely this effect, which is why the wavelengths a panel can use decide its efficiency. Automatic door sensors, the image sensor in a digital camera, night vision goggles, and the reason ultraviolet harms skin while infrared does not - all of them come out of \"the energy of one grain\".",
+  "quiz": [
+   {
+    "q": "Raising the <b>intensity</b> of the light changes:",
+    "opts": [
+     "The energy of each electron",
+     "The number of electrons that come out",
+     "The threshold wavelength"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Shortening the <b>wavelength</b> of the light:",
+    "opts": [
+     "Raises the energy of each electron",
+     "Only raises the number of electrons",
+     "Changes nothing"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Why can this not be explained by light as a <b>wave</b> alone?",
+    "opts": [
+     "Because a wave should work if you shine it long enough, however faint",
+     "Because a wave cannot pass through metal",
+     "Because a wave has no energy"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "light-4": {
+  "course": "light",
+  "sim": "quantum-wave-interference",
+  "screens": null,
+  "title": "Send them one at a time and the pattern still appears",
+  "lead": "You throw grains one by one and a ripple pattern piles up. One grain went through both slits at once.",
+  "hook": "Lesson 3 gave you the evidence that light is a <b>grain</b>. But there has long been evidence that light is a <b>wave</b> too - light through two slits overlaps and makes <b>stripes</b>. Natural enough, for a wave. So what if you throw the grains <b>one at a time</b>? One grain can only go through one slit, so there should be no pattern. This sim shows you the answer.",
+  "predict": {
+   "q": "You fire light <b>one photon at a time</b>, very slowly, through two slits. After a long while, the screen behind shows:",
+   "opts": [
+    "Just <b>two bands</b>, at the two slit positions",
+    "An even scatter",
+    "<b>Stripes</b> - the same pattern as a wave gives",
+    "Nothing at all"
+   ]
+  },
+  "missions": [
+   "This is the <b>Experiment</b> screen. The source is on the left, a <b>barrier with slits</b> in the middle, and a <b>screen</b> on the right.",
+   "Check that the particle chooser at the bottom left is on <b>Photons</b> - the buttons carry no label of their own - and set <b>Source Intensity</b> on the left to <b>Max</b>.",
+   "Leave <b>Slit Configuration</b> on <b>Both Open</b>. <b>Stripes</b> appear on the screen.",
+   "Now switch to <b>Cover Left</b>. The stripes go and one <b>wide smear</b> is left.",
+   "Try <b>Cover Right</b> as well - another single smear. Do the two smears <b>simply added together</b> make the stripes?",
+   "Go back to <b>Both Open</b> and take <b>Source Intensity</b> <b>very low</b>. Now the photons go one at a time.",
+   "Change the detection mode to <b>Hits</b>. A <b>single dot</b> is marked wherever a grain lands.",
+   "The first few land <b>anywhere at all</b>. Leave it running <b>a long while</b>. What appears as the dots pile up? That is the answer to ②.",
+   "Change the <b>Slit Separation</b>. What happens to the spacing of the pattern?",
+   "Change the <b>Wavelength</b>. Do shorter wavelengths pack the stripes closer?",
+   "Change the particle chooser at the bottom left to <b>Electrons</b> or <b>Helium Atoms</b>. Matter makes the same pattern.",
+   "Turn on <b>Detector Left</b>. <b>If you check which slit it went through</b>, what happens to the pattern?"
+  ],
+  "record": "What appeared as the dots piled up when you sent photons one at a time? And what happened when you watched which slit they went through?",
+  "explain": {
+   "right": 2,
+   "body": "<p>The answer is <strong>stripes pile up</strong>. Sent one at a time, you still get <strong>exactly the pattern</strong> a wave gives.</p><p>Let us be clear about why that is strange.</p><ul><li>Each dot lands <strong>at one place</strong>. It is a grain, all right.</li><li>But <strong>where</strong> it lands depends on whether <strong>both slits are open</strong>.</li><li>Cover one and the pattern goes, so the grain apparently <strong>knows the other slit is open</strong>.</li></ul><p>There is no way to say it except that one grain went <strong>through both slits at once</strong>. And yet it arrives at <strong>a single point</strong>.</p><p>Remember that <strong>simply adding</strong> the two covered-slit smears did not give the stripes. So it is not \"half this way, half that way\". Something is <strong>overlapping, cancelling and reinforcing</strong>.</p><p>If you tried the <strong>Detector</strong> it is stranger still. <strong>The moment you check which slit it went through, the pattern vanishes.</strong> All you did was add equipment, and the result changed. Do not look and it goes both ways; look and it goes one way.</p><p>That <strong>electrons</strong> and <strong>helium atoms</strong> give the same pattern matters too. It is not only light that is odd - <strong>matter is the same</strong>. Atoms can behave like waves.</p><p>So the question this course opened with - is light a grain or a wave? - has an answer that is neither <strong>\"both\"</strong> nor <strong>\"one of the two\"</strong>. It is <strong>something that is neither the grains nor the waves we know</strong>, and which looks like a grain or a wave depending on how you measure it.</p><p>That is why this counts as the most famous experiment in physics. It does not give you an answer; it shows you that <strong>the world is not shaped the way our intuition says</strong>. Course 06 picks the story up from here.</p>"
+  },
+  "real": "Electron microscopes use the wave nature of electrons: the wavelength is far shorter than light, so they see far smaller things. Semiconductor devices, quantum cryptography and quantum computers all stand on this property. The semiconductors we use every day could not be designed without this \"strange\" physics.",
+  "quiz": [
+   {
+    "q": "Send photons <b>one at a time</b> and the screen shows:",
+    "opts": [
+     "One dot at a time, and stripes once they pile up",
+     "The whole striped pattern from the start",
+     "Nothing at all"
+    ],
+    "right": 0
+   },
+   {
+    "q": "<b>Cover one slit</b> and the pattern:",
+    "opts": [
+     "Stays the same",
+     "Goes, leaving one smear",
+     "Becomes twice as strong"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Run the same experiment with <b>electrons</b> and:",
+    "opts": [
+     "No pattern forms",
+     "The same stripes as light appear",
+     "The electrons bounce back"
+    ],
+    "right": 1
+   }
+  ]
  }
 }
