@@ -1,0 +1,798 @@
+{
+ "courses": [
+  {
+   "id": "force-unseen",
+   "no": "01",
+   "subject": "Física",
+   "title": "La fuerza que no se ve",
+   "hook": "Frotas un globo en la cabeza — ¿por qué el pelo lo sigue hacia arriba?",
+   "lead": "No la puedes tocar ni ver, pero está ahí. Descubre qué es en realidad la electricidad.",
+   "sims": [
+    "balloons-and-static-electricity",
+    "charges-and-fields",
+    "coulombs-law",
+    "faradays-electromagnetic-lab"
+   ],
+   "minutes": 60
+  },
+  {
+   "id": "throw",
+   "no": "02",
+   "subject": "Física",
+   "title": "¿Dónde va a caer?",
+   "hook": "¿Por qué el balón dibuja un arco? ¿Qué cambia si cambias el ángulo?",
+   "lead": "Lánzalo, hazlo rodar, déjalo caer — y encuentra la única regla que hay detrás de todo.",
+   "sims": [
+    "projectile-motion",
+    "projectile-data-lab",
+    "energy-skate-park",
+    "vector-addition"
+   ],
+   "minutes": 56
+  },
+  {
+   "id": "wave",
+   "no": "03",
+   "subject": "Física",
+   "title": "Vaivenes y ondas",
+   "hook": "¿Por qué importa tanto el momento del empujón en un columpio?",
+   "lead": "Empieza con un muelle y termina en el sonido y la luz. Todo lo que se repite es de la misma familia.",
+   "sims": [
+    "hookes-law",
+    "masses-and-springs",
+    "wave-on-a-string",
+    "fourier-making-waves"
+   ],
+   "minutes": 54
+  },
+  {
+   "id": "light",
+   "no": "04",
+   "subject": "Física",
+   "title": "Qué es la luz en realidad",
+   "hook": "¿La luz es partícula u onda? ¿Y si no hubiera una sola respuesta?",
+   "lead": "De las lentes al experimento que puso la física del revés hace un siglo.",
+   "sims": [
+    "geometric-optics",
+    "blackbody-spectrum",
+    "photoelectric-effect",
+    "quantum-wave-interference"
+   ],
+   "minutes": 58
+  },
+  {
+   "id": "atom",
+   "no": "05",
+   "subject": "Química",
+   "title": "Dentro del átomo",
+   "hook": "Parte un átomo, ¿qué cae? ¿Y de verdad está casi vacío por dentro?",
+   "lead": "Construye elementos protón a protón y luego mira cómo se rompe un núcleo.",
+   "sims": [
+    "build-an-atom",
+    "rutherford-scattering",
+    "models-of-the-hydrogen-atom",
+    "build-a-nucleus",
+    "alpha-decay",
+    "beta-decay"
+   ],
+   "minutes": 76
+  },
+  {
+   "id": "quantum",
+   "no": "06",
+   "subject": "Física",
+   "title": "El extraño mundo cuántico",
+   "hook": "Nada está decidido hasta que miras — ¿qué significa eso?",
+   "lead": "Empieza con una moneda al aire y termina donde el sentido común se rompe. Sin ecuaciones.",
+   "sims": [
+    "quantum-coin-toss",
+    "quantum-measurement",
+    "quantum-bound-states"
+   ],
+   "minutes": 42
+  },
+  {
+   "id": "space",
+   "no": "07",
+   "subject": "Ciencias de la Tierra",
+   "title": "Cómo gira el universo",
+   "hook": "¿Por qué la Luna no cae sobre la Tierra? ¿Y si estuviera cayendo todo el tiempo?",
+   "lead": "Coloca tus propios planetas, construye un sistema solar y encuentra dónde se rompen las órbitas.",
+   "sims": [
+    "my-solar-system",
+    "gravity-and-orbits",
+    "keplers-laws"
+   ],
+   "minutes": 44
+  },
+  {
+   "id": "matter",
+   "no": "08",
+   "subject": "Química",
+   "title": "Las tres caras de la materia",
+   "hook": "Hielo, agua, vapor — ¿lo mismo o cosas distintas?",
+   "lead": "Sube la temperatura, aplica presión y aprende a ver las moléculas una a una.",
+   "sims": [
+    "states-of-matter",
+    "gas-properties",
+    "molecule-shapes",
+    "molecule-polarity"
+   ],
+   "minutes": 56
+  },
+  {
+   "id": "react",
+   "no": "09",
+   "subject": "Química",
+   "title": "Qué pasa cuando mezclas",
+   "hook": "¿Por qué burbujea el zumo de limón al encontrarse con el bicarbonato?",
+   "lead": "Mide el pH, ajusta ecuaciones y cuenta lo que sobra.",
+   "sims": [
+    "ph-scale",
+    "acid-base-solutions",
+    "balancing-chemical-equations",
+    "reactants-products-and-leftovers",
+    "beers-law-lab"
+   ],
+   "minutes": 68
+  },
+  {
+   "id": "fraction",
+   "no": "10",
+   "subject": "Matemáticas",
+   "title": "Una fracción es una división",
+   "hook": "Tres pizzas repartidas entre cuatro personas — ¿cuánto le toca a cada uno?",
+   "lead": "Deja de ver un número encima de otro. Empieza a ver una cantidad.",
+   "sims": [
+    "fractions-intro",
+    "fractions-equality",
+    "fractions-mixed-numbers",
+    "build-a-fraction",
+    "fraction-matcher"
+   ],
+   "minutes": 64
+  },
+  {
+   "id": "ratio",
+   "no": "11",
+   "subject": "Matemáticas",
+   "title": "Sentido de la proporción",
+   "hook": "Dos paquetes de fideos llevan 1 L de agua. ¿Cuánta para tres?",
+   "lead": "La proporción no es aritmética, es un sentido. Empezamos ajustándola a ojo.",
+   "sims": [
+    "ratio-and-proportion",
+    "proportion-playground",
+    "unit-rates",
+    "mean-share-and-balance"
+   ],
+   "minutes": 52
+  },
+  {
+   "id": "graph",
+   "no": "12",
+   "subject": "Matemáticas",
+   "title": "Hablar con gráficas",
+   "hook": "¿Qué significa de verdad que una pendiente sea empinada?",
+   "lead": "Ve y ven entre la ecuación y el dibujo hasta que cambiar un número mueva la recta en tu cabeza.",
+   "sims": [
+    "graphing-lines",
+    "graphing-slope-intercept",
+    "graphing-quadratics",
+    "calculus-grapher"
+   ],
+   "minutes": 56
+  },
+  {
+   "id": "life",
+   "no": "13",
+   "subject": "Biología",
+   "title": "Los seres vivos y la Tierra",
+   "hook": "Una isla acaba llena de conejos blancos y otra de conejos marrones. ¿Qué lo decidió?",
+   "lead": "De una población de conejos al interior de una célula y al planeta entero — cómo se sostiene el equilibrio y qué pasa cuando se rompe.",
+   "sims": [
+    "natural-selection",
+    "membrane-transport",
+    "greenhouse-effect"
+   ],
+   "minutes": 42
+  },
+  {
+   "id": "number",
+   "no": "14",
+   "subject": "Matemáticas",
+   "title": "Hacerse amigo de los números",
+   "hook": "¿Cuánto mayor es 7 que 3? ¿Qué quiere decir de verdad «4 más»?",
+   "lead": "Contar, comparar, emparejar. Todas las matemáticas empiezan aquí.",
+   "sims": [
+    "number-play",
+    "number-compare",
+    "number-pairs",
+    "number-line-distance",
+    "equality-explorer",
+    "function-builder",
+    "quadrilateral",
+    "center-and-variability"
+   ],
+   "minutes": 96
+  }
+ ],
+ "lessons": {
+  "force-unseen": [
+   {
+    "id": "static-1",
+    "ready": true,
+    "sim": "balloons-and-static-electricity",
+    "title": "Por qué un globo atrae tu pelo",
+    "hook": "Antes de frotarlo no pasaba nada. ¿Qué ha cambiado?",
+    "min": 14,
+    "diff": 1
+   },
+   {
+    "id": "static-2",
+    "ready": true,
+    "sim": "charges-and-fields",
+    "title": "El mapa invisible que rodea a una carga",
+    "hook": "Pones una sola carga y el espacio a su alrededor ya es distinto, ¿en serio?",
+    "min": 16,
+    "diff": 2
+   },
+   {
+    "id": "static-3",
+    "ready": true,
+    "sim": "coulombs-law",
+    "title": "Si doblas la distancia, ¿qué le pasa a la fuerza?",
+    "hook": "¿La mitad? ¿O mucho menos que la mitad?",
+    "min": 12,
+    "diff": 2
+   },
+   {
+    "id": "static-4",
+    "ready": true,
+    "sim": "faradays-electromagnetic-lab",
+    "title": "Mueve un imán y aparece electricidad",
+    "hook": "¿Y si esto fuera todo lo que hace una central eléctrica?",
+    "min": 18,
+    "diff": 3
+   }
+  ],
+  "fraction": [
+   {
+    "id": "fraction-1",
+    "ready": true,
+    "sim": "fractions-intro",
+    "title": "Tres pizzas, cuatro personas",
+    "hook": "¿Y si la raya de la fracción fuera de verdad un signo de división?",
+    "min": 14,
+    "diff": 1
+   },
+   {
+    "id": "fraction-2",
+    "ready": true,
+    "sim": "fractions-equality",
+    "title": "Por qué multiplicar vale y sumar no",
+    "hook": "Le has hecho lo mismo arriba y abajo, ¿por qué cambia el valor?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "fraction-3",
+    "ready": true,
+    "sim": "fractions-mixed-numbers",
+    "title": "Cuando el de arriba es mayor que el de abajo",
+    "hook": "¿Y si 8/3 no fuera ningún error?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "fraction-4",
+    "ready": true,
+    "sim": "build-a-fraction",
+    "title": "Muchas maneras de construir la misma fracción",
+    "hook": "¿Y si hubiera más de una forma de hacer un medio?",
+    "min": 12,
+    "diff": 2
+   },
+   {
+    "id": "fraction-5",
+    "ready": true,
+    "sim": "fraction-matcher",
+    "title": "Otra cara, el mismo número",
+    "hook": "¿Sabrías encontrar el mismo número escondido en un dibujo, una fracción y un número mixto?",
+    "min": 12,
+    "diff": 3
+   }
+  ],
+  "atom": [
+   {
+    "id": "atom-1",
+    "ready": true,
+    "sim": "build-an-atom",
+    "title": "Qué decide de qué elemento se trata",
+    "hook": "Añade un neutrón al hidrógeno, ¿se convierte en helio?",
+    "min": 13,
+    "diff": 1
+   },
+   {
+    "id": "atom-2",
+    "ready": true,
+    "sim": "rutherford-scattering",
+    "title": "Un átomo es casi todo espacio vacío",
+    "hook": "¿Y si disparases un cañón contra un pañuelo de papel y la bala rebotara?",
+    "min": 12,
+    "diff": 2
+   },
+   {
+    "id": "atom-3",
+    "ready": true,
+    "sim": "models-of-the-hydrogen-atom",
+    "title": "Un electrón no puede estar en cualquier sitio",
+    "hook": "¿Por qué un átomo emite unas pocas rayas nítidas en vez de un arcoíris?",
+    "min": 15,
+    "diff": 3
+   },
+   {
+    "id": "atom-4",
+    "ready": true,
+    "sim": "build-a-nucleus",
+    "title": "El momento en que un núcleo no aguanta",
+    "hook": "Los neutrones no cambian el elemento, ¿por qué añadir demasiados lo rompe?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "atom-5",
+    "ready": true,
+    "sim": "alpha-decay",
+    "title": "Nadie sabe cuándo se va a romper",
+    "hook": "¿Y si uno solo fuera impredecible y un millón fuera exacto?",
+    "min": 12,
+    "diff": 2
+   },
+   {
+    "id": "atom-6",
+    "ready": true,
+    "sim": "beta-decay",
+    "title": "El momento en que un elemento se convierte en otro",
+    "hook": "En el núcleo no hay electrones, ¿de dónde sale el que se emite?",
+    "min": 11,
+    "diff": 3
+   }
+  ],
+  "graph": [
+   {
+    "id": "graph-1",
+    "ready": true,
+    "sim": "graphing-lines",
+    "title": "Ponerle un número a lo empinado",
+    "hook": "¿Se puede convertir «esa cuesta es empinada» en un solo número?",
+    "min": 14,
+    "diff": 1
+   },
+   {
+    "id": "graph-2",
+    "ready": true,
+    "sim": "graphing-slope-intercept",
+    "title": "Dos números deciden la recta",
+    "hook": "En y = mx + b, ¿qué le pasa a la recta si cambias solo b?",
+    "min": 14,
+    "diff": 2
+   },
+   {
+    "id": "graph-3",
+    "ready": true,
+    "sim": "graphing-quadratics",
+    "title": "Es un menos y aun así se va a la derecha",
+    "hook": "¿Por qué el vértice de y = (x − 3)² está en 3 y no en −3?",
+    "min": 15,
+    "diff": 3
+   },
+   {
+    "id": "graph-4",
+    "ready": true,
+    "sim": "calculus-grapher",
+    "title": "La pendiente también se puede dibujar",
+    "hook": "Si la pendiente cambia de un punto a otro, ¿qué forma dibujan todas esas pendientes?",
+    "min": 13,
+    "diff": 3
+   }
+  ],
+  "number": [
+   {
+    "id": "num-1",
+    "ready": true,
+    "sim": "number-play",
+    "title": "Las muchas caras del siete",
+    "hook": "¿Y si la cifra 7, siete objetos y la palabra «siete» fueran una misma cosa?",
+    "min": 11,
+    "diff": 1
+   },
+   {
+    "id": "num-2",
+    "ready": true,
+    "sim": "number-compare",
+    "title": "Cuánto mayor",
+    "hook": "¿Cómo se pasa de «7 es mayor» a «mayor por 4»?",
+    "min": 11,
+    "diff": 1
+   },
+   {
+    "id": "num-3",
+    "ready": true,
+    "sim": "number-pairs",
+    "title": "Un número, dos trozos",
+    "hook": "¿De cuántas maneras se puede partir el 10 en dos trozos?",
+    "min": 12,
+    "diff": 1
+   },
+   {
+    "id": "num-4",
+    "ready": true,
+    "sim": "number-line-distance",
+    "title": "La distancia no tiene dirección",
+    "hook": "¿En qué se diferencia «a 3 de distancia» de «se ha movido −3»?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "num-5",
+    "ready": true,
+    "sim": "equality-explorer",
+    "title": "Una balanza es una ecuación",
+    "hook": "Si = no significa «aquí viene el resultado», ¿qué significa?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "num-6",
+    "ready": true,
+    "sim": "function-builder",
+    "title": "Una caja que cambia lo que metes",
+    "hook": "Encadena dos cajas, ¿importa el orden?",
+    "min": 12,
+    "diff": 2
+   },
+   {
+    "id": "num-7",
+    "ready": true,
+    "sim": "quadrilateral",
+    "title": "¿Un cuadrado es un rectángulo?",
+    "hook": "¿El nombre de una figura viene de cómo se ve o de lo que cumple?",
+    "min": 12,
+    "diff": 2
+   },
+   {
+    "id": "num-8",
+    "ready": true,
+    "sim": "center-and-variability",
+    "title": "Con la media no basta",
+    "hook": "¿Es seguro un río con 1 m de profundidad media?",
+    "min": 12,
+    "diff": 3
+   }
+  ],
+  "ratio": [
+   {
+    "id": "ratio-1",
+    "ready": true,
+    "sim": "ratio-and-proportion",
+    "title": "Sumar no conserva la proporción",
+    "hook": "Dos paquetes de fideos llevan 3 vasos de agua, ¿cuatro paquetes llevan 5 o 6?",
+    "min": 13,
+    "diff": 1
+   },
+   {
+    "id": "ratio-2",
+    "ready": true,
+    "sim": "proportion-playground",
+    "title": "Misma proporción, mismo resultado",
+    "hook": "Echa el triple de pintura, ¿el color queda tres veces más intenso?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "ratio-3",
+    "ready": true,
+    "sim": "unit-rates",
+    "title": "Cuál sale más barato de verdad",
+    "hook": "Seis por $3 o diez por $4.50, ¿cuál conviene más?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "ratio-4",
+    "ready": true,
+    "sim": "mean-share-and-balance",
+    "title": "La media es un reparto a partes iguales",
+    "hook": "Deja que el agua se nivele, ¿por qué esa altura es la media?",
+    "min": 13,
+    "diff": 2
+   }
+  ],
+  "react": [
+   {
+    "id": "mix-1",
+    "ready": true,
+    "sim": "ph-scale",
+    "title": "Un paso de pH son diez veces",
+    "hook": "El zumo de limón y el café se llevan 3 en la escala, ¿cuántas veces es eso en realidad?",
+    "min": 13,
+    "diff": 1
+   },
+   {
+    "id": "mix-2",
+    "ready": true,
+    "sim": "acid-base-solutions",
+    "title": "Fuerte no es lo mismo que concentrado",
+    "hook": "La misma cantidad en el vaso, ¿por qué uno es más fuerte?",
+    "min": 14,
+    "diff": 2
+   },
+   {
+    "id": "mix-3",
+    "ready": true,
+    "sim": "balancing-chemical-equations",
+    "title": "Solo el número de delante",
+    "hook": "¿Por qué no puedes arreglar la ecuación cambiando H₂O por H₂O₂?",
+    "min": 14,
+    "diff": 2
+   },
+   {
+    "id": "mix-4",
+    "ready": true,
+    "sim": "reactants-products-and-leftovers",
+    "title": "Manda lo primero que se acaba",
+    "hook": "Diez rebanadas de pan y tres de queso, ¿cuántos sándwiches salen?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "mix-5",
+    "ready": true,
+    "sim": "beers-law-lab",
+    "title": "Medir la concentración por el color",
+    "hook": "La disolución no ha cambiado, ¿por qué una cubeta más ancha absorbe más?",
+    "min": 14,
+    "diff": 3
+   }
+  ],
+  "throw": [
+   {
+    "id": "throw-1",
+    "ready": true,
+    "sim": "projectile-motion",
+    "title": "Ir de lado no frena la caída",
+    "hook": "Sueltas una bola y lanzas otra de lado, ¿cuál llega antes?",
+    "min": 14,
+    "diff": 1
+   },
+   {
+    "id": "throw-2",
+    "ready": true,
+    "sim": "projectile-data-lab",
+    "title": "Mismo montaje, caída distinta",
+    "hook": "Dispara 100 veces sin tocar ningún mando, ¿dónde caen?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "throw-3",
+    "ready": true,
+    "sim": "energy-skate-park",
+    "title": "No puedes subir más alto de donde saliste",
+    "hook": "¿Por qué la primera cuesta de una montaña rusa es siempre la más alta?",
+    "min": 15,
+    "diff": 2
+   },
+   {
+    "id": "throw-4",
+    "ready": true,
+    "sim": "vector-addition",
+    "title": "Cuando 3 más 4 no son 7",
+    "hook": "Suma una flecha de longitud 3 con otra de 4, ¿cuánto mide el resultado?",
+    "min": 14,
+    "diff": 3
+   }
+  ],
+  "wave": [
+   {
+    "id": "wave-1",
+    "ready": true,
+    "sim": "hookes-law",
+    "title": "El doble de estiramiento, cuatro veces la energía",
+    "hook": "La fuerza se dobla, ¿por qué la energía se multiplica por cuatro?",
+    "min": 13,
+    "diff": 1
+   },
+   {
+    "id": "wave-2",
+    "ready": true,
+    "sim": "masses-and-springs",
+    "title": "Una oscilación más amplia tarda lo mismo",
+    "hook": "Si recorre más camino, ¿no debería tardar más?",
+    "min": 14,
+    "diff": 2
+   },
+   {
+    "id": "wave-3",
+    "ready": true,
+    "sim": "wave-on-a-string",
+    "title": "La onda avanza, la cuerda no",
+    "hook": "En una ola de estadio, ¿adónde va cada persona en realidad?",
+    "min": 13,
+    "diff": 2
+   },
+   {
+    "id": "wave-4",
+    "ready": true,
+    "sim": "fourier-making-waves",
+    "title": "Toda onda es una suma de senos",
+    "hook": "¿Se puede construir una onda cuadrada solo con senos redondeados?",
+    "min": 14,
+    "diff": 3
+   }
+  ],
+  "space": [
+   {
+    "id": "space-1",
+    "ready": true,
+    "sim": "gravity-and-orbits",
+    "title": "La Luna sigue cayendo",
+    "hook": "Apaga la gravedad a mitad de órbita, ¿adónde va la Luna?",
+    "min": 15,
+    "diff": 1
+   },
+   {
+    "id": "space-2",
+    "ready": true,
+    "sim": "my-solar-system",
+    "title": "El Sol también se tambalea",
+    "hook": "¿Con cuánta fuerza tira la Tierra del Sol?",
+    "min": 14,
+    "diff": 2
+   },
+   {
+    "id": "space-3",
+    "ready": true,
+    "sim": "keplers-laws",
+    "title": "Más cerca, más rápido",
+    "hook": "Si la órbita no es un círculo, ¿dónde va más rápido el planeta?",
+    "min": 15,
+    "diff": 3
+   }
+  ],
+  "life": [
+   {
+    "id": "life-1",
+    "ready": true,
+    "sim": "natural-selection",
+    "title": "El conejo no cambia, cambia la población",
+    "hook": "Sobre tierra marrón, ¿un conejo blanco se vuelve marrón?",
+    "min": 14,
+    "diff": 1
+   },
+   {
+    "id": "life-2",
+    "ready": true,
+    "sim": "membrane-transport",
+    "title": "La membrana celular es exigente",
+    "hook": "¿Y si algo no pudiera entrar por mucho que hubiera fuera?",
+    "min": 14,
+    "diff": 2
+   },
+   {
+    "id": "life-3",
+    "ready": true,
+    "sim": "greenhouse-effect",
+    "title": "Lo que entra tiene que salir",
+    "hook": "Añade gases de efecto invernadero, ¿el planeta se calienta sin parar?",
+    "min": 14,
+    "diff": 3
+   }
+  ],
+  "light": [
+   {
+    "id": "light-1",
+    "ready": true,
+    "sim": "geometric-optics",
+    "title": "Tapa media lente, ¿desaparece media imagen?",
+    "hook": "Pon la mano sobre la parte de abajo de una lupa. ¿Qué le pasa a la imagen?",
+    "min": 14,
+    "diff": 1
+   },
+   {
+    "id": "light-2",
+    "ready": true,
+    "sim": "blackbody-spectrum",
+    "title": "Lo caliente cambia de color",
+    "hook": "Una estrella azul o una roja, ¿cuál está más caliente?",
+    "min": 14,
+    "diff": 2
+   },
+   {
+    "id": "light-3",
+    "ready": true,
+    "sim": "photoelectric-effect",
+    "title": "Más brillo no siempre sirve",
+    "hook": "Ilumina con luz roja cien veces más intensa, ¿salen electrones?",
+    "min": 15,
+    "diff": 3
+   },
+   {
+    "id": "light-4",
+    "ready": true,
+    "sim": "quantum-wave-interference",
+    "title": "De uno en uno y aun así aparece un patrón",
+    "hook": "Lanza partículas una a una, ¿por qué se va formando un patrón de ondas?",
+    "min": 15,
+    "diff": 3
+   }
+  ],
+  "matter": [
+   {
+    "id": "matter-1",
+    "ready": true,
+    "sim": "states-of-matter",
+    "title": "El hielo y el agua son las mismas partículas",
+    "hook": "Al calentarlo, ¿las partículas se hacen más grandes o más rápidas?",
+    "min": 13,
+    "diff": 1
+   },
+   {
+    "id": "matter-2",
+    "ready": true,
+    "sim": "gas-properties",
+    "title": "La presión son partículas golpeando la pared",
+    "hook": "¿Qué es exactamente lo que infla un globo?",
+    "min": 14,
+    "diff": 2
+   },
+   {
+    "id": "matter-3",
+    "ready": true,
+    "sim": "molecule-shapes",
+    "title": "Por qué el agua está doblada",
+    "hook": "El CO₂ es recto, ¿por qué el H₂O no?",
+    "min": 14,
+    "diff": 3
+   },
+   {
+    "id": "matter-4",
+    "ready": true,
+    "sim": "molecule-polarity",
+    "title": "La forma decide las propiedades",
+    "hook": "¿Pueden estar todos los enlaces desequilibrados y la molécula no?",
+    "min": 15,
+    "diff": 3
+   }
+  ],
+  "quantum": [
+   {
+    "id": "quantum-1",
+    "ready": true,
+    "sim": "quantum-coin-toss",
+    "title": "Una moneda tapada no es una moneda cuántica",
+    "hook": "¿En qué se diferencia «aún no lo sé» de «aún no está decidido»?",
+    "min": 14,
+    "diff": 2
+   },
+   {
+    "id": "quantum-2",
+    "ready": true,
+    "sim": "quantum-measurement",
+    "title": "Medir la cambia",
+    "hook": "¿Y si cambiar el orden de las medidas cambiara el resultado?",
+    "min": 14,
+    "diff": 3
+   },
+   {
+    "id": "quantum-3",
+    "ready": true,
+    "sim": "quantum-bound-states",
+    "title": "Encierra algo y su energía se vuelve escalones",
+    "hook": "¿Por qué un electrón solo puede estar en ciertos peldaños?",
+    "min": 14,
+    "diff": 3
+   }
+  ]
+ }
+}
