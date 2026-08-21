@@ -5,11 +5,9 @@
 카카오톡·페이스북·X 는 og:image 로 SVG 를 받지 않습니다. 래스터가 필요합니다.
 한국 학생들이 링크를 나르는 곳이 카카오톡이라 이 그림이 유입의 첫 관문입니다.
 
-⚠ 서체 주의
-  지금은 Windows 의 맑은 고딕(malgun.ttf)으로 굽습니다. 배포용으로는
-  사이트가 어차피 싣게 될 OFL 서체(Pretendard 또는 Jua)의 TTF 를 저장소에 넣고
-  FONT_KR 을 그쪽으로 돌려야 합니다. 그래야 어느 기계에서 돌려도 같은 그림이 나오고
-  라이선스도 깨끗합니다.
+서체는 tools/fonts/ 에 넣어 둔 것을 씁니다 — 둘 다 SIL Open Font License 라
+  저장소에 담아도 되고, 어느 기계에서 돌려도 같은 그림이 나옵니다.
+  제목·워드마크는 Jua(사이트의 표시 서체), 본문은 Pretendard(사이트의 본문 서체).
 """
 import io, json, os, sys
 from PIL import Image, ImageDraw, ImageFont
@@ -18,9 +16,11 @@ ROOT = 'site'
 OUT = f'{ROOT}/og'
 W, H = 1200, 630
 
-FONT_KR_B = 'C:/Windows/Fonts/malgunbd.ttf'
-FONT_KR_R = 'C:/Windows/Fonts/malgun.ttf'
-FONT_LAT_B = 'C:/Windows/Fonts/arialbd.ttf'
+FONTS = 'tools/fonts'
+FONT_KR_B = f'{FONTS}/Pretendard-Bold.otf'      # 본문 굵게
+FONT_KR_R = f'{FONTS}/Pretendard-Regular.otf'   # 본문
+FONT_DISPLAY = f'{FONTS}/Jua-Regular.ttf'       # 제목·워드마크 (사이트와 같은 서체)
+FONT_LAT_B = FONT_DISPLAY
 
 BG        = (8, 11, 24)
 INK       = (238, 241, 255)
@@ -39,6 +39,24 @@ SUBJECT = {
 
 def font(path, size):
     return ImageFont.truetype(path, size)
+
+
+_COVER = {}
+
+
+def _covers(path, text):
+    """그 서체가 이 글자들을 전부 갖고 있는지. 없으면 두부 상자가 찍힙니다."""
+    if path not in _COVER:
+        from fontTools.ttLib import TTFont
+        _COVER[path] = set(TTFont(path).getBestCmap())
+    have = _COVER[path]
+    return all(ord(c) in have for c in text if not c.isspace())
+
+
+def display_font(text, size):
+    """제목은 사이트와 같은 Jua 로. 다만 Jua 에 없는 글자(· ² → − 등)가 섞이면
+    그 줄만 통째로 본문 서체로 넘깁니다 — 한 글자 때문에 상자가 찍히는 게 더 나쁩니다."""
+    return font(FONT_DISPLAY if _covers(FONT_DISPLAY, text) else FONT_KR_B, size)
 
 
 def wrap(draw, text, f, max_w):
@@ -99,8 +117,7 @@ def card(path, kicker, title, sub, chips, accent):
     d = ImageDraw.Draw(img)
 
     f_word = font(FONT_LAT_B, 40)
-    f_kick = font(FONT_KR_B, 26)
-    f_title = font(FONT_KR_B, 62)
+    f_title = display_font(title, 62)
     f_sub = font(FONT_KR_R, 30)
     f_chip = font(FONT_KR_R, 24)
 
@@ -111,7 +128,7 @@ def card(path, kicker, title, sub, chips, accent):
     logo(d, 74, 47, 2.0)
     d.text((156, 56), 'Nudge', font=f_word, fill=INK)
 
-    d.text((74, 168), kicker, font=f_kick, fill=accent)
+    d.text((74, 168), kicker, font=display_font(kicker, 26), fill=accent)
 
     y = 210
     for line in wrap(d, title, f_title, W - 160)[:3]:

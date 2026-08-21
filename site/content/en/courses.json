@@ -226,8 +226,7 @@
         "title": "Why a balloon pulls your hair",
         "hook": "Nothing happened before you rubbed it. What changed?",
         "min": 14,
-        "diff": 1,
-        "state": "done"
+        "diff": 1
       },
       {
         "id": "static-2",
@@ -236,8 +235,7 @@
         "title": "The invisible map around a charge",
         "hook": "Put down one charge and the space around it is already different?",
         "min": 16,
-        "diff": 2,
-        "state": "now"
+        "diff": 2
       },
       {
         "id": "static-3",
