@@ -200,5 +200,266 @@
     "right": 1
    }
   ]
+ },
+ "throw-1": {
+  "course": "throw",
+  "sim": "projectile-motion",
+  "screens": null,
+  "title": "Throw it sideways and it still falls in the same time",
+  "lead": "Fire a bullet horizontally and drop another from your hand at the same moment, and both hit the ground together.",
+  "hook": "From the edge of a table, <b>just drop one ball</b> while you <b>shove another hard sideways</b> at the same instant. Which one reaches the floor first? Most people say the one you dropped, because the flying one looks like it <b>needs more time to cover all that distance.</b> In fact they land <b>together</b>. Once you see why, the whole shape of a parabola makes sense.",
+  "predict": {
+   "q": "From the same height, one ball is <b>simply dropped</b> and the other is <b>thrown hard, horizontally.</b> Which hits the ground first?",
+   "opts": [
+    "The dropped ball",
+    "The ball thrown sideways",
+    "They land together",
+    "It depends how hard you throw"
+   ]
+  },
+  "missions": [
+   "This is the <b>Intro</b> screen. Drag the cannon on the left up and down for height, and set the launch with <b>Cannon Angle</b> and <b>Initial Speed</b> below.",
+   "First <b>turn off</b> the <b>Air Resistance</b> checkbox. For now you want the bare rule.",
+   "Raise the cannon to about <b>Height 10 m</b> and set <b>Cannon Angle</b> to <b>0°</b> (horizontal).",
+   "Leave <b>Initial Speed</b> at <b>0</b> and fire. It just falls. Write down the <b>Time</b> reading at the top.",
+   "Now raise <b>Initial Speed</b> to <b>15 m/s</b>, leave the angle at 0°, and fire. Is the <b>Time</b> the same as before? That is the answer to ②.",
+   "Push the speed up to <b>25 m/s</b>. It goes much further - what does the <b>Time</b> do?",
+   "Use the house button to reach the <b>Vectors</b> screen and tick <b>Velocity Vectors → Components</b>. The velocity splits into a <b>horizontal arrow</b> and a <b>vertical arrow</b>.",
+   "While it flies, does the <b>horizontal arrow</b> change? What about the <b>vertical arrow</b>? That difference is the whole story.",
+   "Turn on <b>Acceleration Vectors</b> as well. It always points <b>straight down</b>, nowhere else.",
+   "Work through angles of <b>15° · 30° · 45° · 60° · 75°</b> and write down the <b>Range</b> each time. Which angle carries it furthest?",
+   "Now switch <b>Air Resistance</b> on and redo just <b>30° · 45° · 60°</b>. Does the furthest angle move?"
+  ],
+  "record": "Write down the time it took at speeds of 0, 15 and 25. And which angle carried it the furthest?",
+  "explain": {
+   "right": 2,
+   "body": "<p>The answer is <strong>they land together</strong>. Whether you set the speed to 0 or to 25 m/s, <strong>the time was the same</strong>.</p><p>The reason is that <strong>the horizontal and the vertical do not interfere with each other</strong>. What you saw on the Vectors screen is the proof.</p><ul><li><strong>The horizontal arrow</strong> - <strong>the same length</strong> the whole way. Nothing pushes sideways, so the speed does not change.</li><li><strong>The vertical arrow</strong> - <strong>grows longer downward.</strong> Gravity only pulls down.</li></ul><p>Gravity acts <strong>downward only</strong>. So <strong>the time it takes to fall</strong> has nothing to do with how fast you go sideways. Going sideways faster takes you <strong>further</strong>; it does not keep you up <strong>longer</strong>.</p><p>That also explains the shape. Sideways it travels <strong>steadily</strong>, downward it <strong>speeds up as it falls</strong>, and putting the two together gives a curve that starts gentle and gets steeper - the parabola from lesson 12.</p><p><strong>45°</strong> will have gone the furthest. A low angle falls too soon to have the time; a high angle stays up a long while but hardly moves sideways. 45° is <strong>where the two balance</strong>.</p><p>But <strong>switch Air Resistance on</strong> and the furthest angle drops <strong>below 45°</strong>. Air fights the forward motion, so staying up longer starts to cost you. That is why the best angle for a real shell or a golf ball is not 45°.</p>"
+  },
+  "real": "The arc of a basketball shot, a free kick, the range tables for artillery - all this same calculation. It is also why a plane dropping relief supplies lets go <b>well before</b> the target: the crates fall while still carrying the plane's sideways speed. A long jumper takes off at more like <b>20°</b> for a different reason - launching high means planting the foot longer, and that costs the run-up speed.",
+  "quiz": [
+   {
+    "q": "While a horizontally thrown ball is in flight, its <b>horizontal speed</b> is:",
+    "opts": [
+     "Getting faster",
+     "Getting slower",
+     "Unchanged (with no air resistance)"
+    ],
+    "right": 2
+   },
+   {
+    "q": "With no air resistance, which launch angle goes furthest?",
+    "opts": [
+     "30°",
+     "45°",
+     "60°"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Which way does the <b>acceleration</b> on a flying ball point?",
+    "opts": [
+     "The way it is flying",
+     "Always downward",
+     "Up at first, down later"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "throw-2": {
+  "course": "throw",
+  "sim": "projectile-data-lab",
+  "screens": null,
+  "title": "Fire it the same way and it lands somewhere else",
+  "lead": "Change nothing at all, fire a hundred times, and every landing spot is different. And yet that scatter has a rule in it.",
+  "hook": "Lesson 1 said that once you fix the angle and the speed you can <b>work out where it lands</b>. So what happens if you really do fire the same cannon on the same setting a hundred times? Do all hundred go through <b>one hole</b>? Of course not - the powder, the air, tiny differences in each shell all vary a little. This sim takes that <b>scatter</b> head on.",
+  "predict": {
+   "q": "You change nothing at all and fire <b>100 times</b>. What do the landing spots look like?",
+   "opts": [
+    "All 100 in the same place",
+    "Spread out <b>around</b> one particular spot",
+    "Scattered anywhere across the screen",
+    "Drifting further out the more you fire"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Variability</b> screen. At the top left you choose <b>Orientation · Projectile · Mystery Launcher</b>. The launch settings are <b>hidden and cannot be changed</b> - that is the point of this screen.",
+   "Leave it on <b>Single</b> below and fire one shot. One bar of the <b>Histogram</b> at the top goes up a notch.",
+   "Change nothing and fire <b>five more times</b>. Do they land in the same spot?",
+   "Switch to <b>Continuous</b> and fire <b>dozens</b> of shots. Watch how the bars pile up. That is the answer to ②.",
+   "What shape are the bars making? Is it a bell - <b>high in the middle, low at both edges</b>?",
+   "Change <b>Bin Width</b> on the left. Same data, but <b>how finely</b> you chop it up to count changes the bars.",
+   "Turn on <b>Paths</b> on the right and every flight leaves its trail. See how much they overlap.",
+   "Use the house button to go to the <b>Measures</b> screen. Now you can turn on <b>Mean</b> and <b>Standard Deviation</b>.",
+   "Turn on <b>Mean</b> and keep firing. The more shots, the more the mean line <b>wobbles and then settles</b>.",
+   "Turn on <b>Standard Deviation</b>. It shows the spread as a width. That is the idea from lesson 14.",
+   "Switch to the <b>Custom Launcher</b> and make the scatter bigger and smaller yourself."
+  ],
+  "record": "What shape did the bars make after dozens of shots? And what happened to the mean line as the number of shots grew?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>spread out around one particular spot</strong>. Not scattered anywhere, and not piled on one point either.</p><p>The bars will have made a bell - <strong>high in the middle, lower toward both edges</strong>. This shape turns up constantly in nature: people's heights, exam scores, measurement error, the weight of manufactured goods. Whenever <strong>several small causes of variation stack up</strong>, you almost always get this shape.</p><p>So <strong>you cannot predict one, but you can predict the whole.</strong> Where the next single shot lands is beyond you; roughly where a hundred of them will cluster, you can say quite accurately.</p><p>Lesson 05 told the same story about radioactive decay. You cannot say when one atom will decay, yet the curve for a great many atoms was as smooth as if it were drawn with a ruler. <strong>Gather enough things that vary and a rule comes out.</strong></p><p>Which means describing the result takes <strong>two</strong> numbers.</p><ul><li><strong>Mean</strong> - roughly where they cluster</li><li><strong>Standard Deviation</strong> - how widely they spread</li></ul><p>Lesson 14 said \"the mean alone is not enough\", and here it is in the flesh. Two cannons with the same mean but a different <strong>spread</strong> are completely different cannons. A cannon that never misses and a cannon that sprays everywhere can share a mean.</p><p>Remember, too, that changing <strong>Bin Width</strong> made the bars look different. <strong>The data never changed - only how you grouped it to count.</strong> That is worth being careful about every time you read a statistical graph.</p>"
+  },
+  "real": "What separates archers is not their mean but their <b>spread</b>. Managing screw diameters in a factory, running a vaccine trial across tens of thousands of people, a forecast saying \"60% chance of rain\" - all of them lean on knowing the whole while not knowing the one.",
+  "quiz": [
+   {
+    "q": "Fire repeatedly on the same setting and the landing spots:",
+    "opts": [
+     "Gather at a single point",
+     "Spread in a bell around one point",
+     "Are completely random"
+    ],
+    "right": 1
+   },
+   {
+    "q": "If two cannons have <b>the same mean range</b>:",
+    "opts": [
+     "They perform identically",
+     "Their spread can still be different",
+     "Both never miss"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Changing the <b>Bin Width</b>:",
+    "opts": [
+     "Changes the data",
+     "Leaves the data alone and only changes how it is grouped",
+     "Changes the mean"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "throw-3": {
+  "course": "throw",
+  "sim": "energy-skate-park",
+  "screens": null,
+  "title": "You can never get higher than where you started",
+  "lead": "Lose height and you gain speed; lose speed and you gain height. The total stays put.",
+  "hook": "In lesson 1 the ball you threw <b>went up and came back down.</b> It slowed on the way up and sped up on the way down, as if it were <b>trading height for speed</b>. This sim shows you that trade on a skate park. And the trade has <b>one line it cannot cross</b>.",
+  "predict": {
+   "q": "On a track with <b>no friction at all</b>, you put the skater at a height of 5 m and let go. How high can the skater get on the far side?",
+   "opts": [
+    "Higher than 5 m",
+    "Exactly 5 m",
+    "Less than 5 m",
+    "It depends on the shape of the track"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Intro</b> screen. Drag the skater onto the track and they start sliding.",
+   "The <b>Energy</b> box at the top left opens <b>collapsed</b>. Press <b>▸</b> to open it. Four bars appear: <b>Kinetic · Potential · Thermal · Total</b>.",
+   "Set <b>Friction</b> on the right to <b>None</b>. For now you want the trade on its own.",
+   "Put the skater on the <b>high side</b> of the track and let go. How do the bars move back and forth?",
+   "At the lowest point, check that <b>Kinetic</b> is at its tallest and <b>Potential</b> at its shortest.",
+   "What about the <b>Total</b> bar? Does it hold <b>the same height</b> wherever the skater is?",
+   "Watch <b>how far up</b> the skater gets on the far side. Does it pass the height you started from? That is the answer to ②.",
+   "Turn on the <b>Pie Chart</b> on the right to see the same thing as a circle.",
+   "Now push <b>Friction</b> up a little. The <b>Thermal</b> bar starts to grow, and the skater climbs lower and lower.",
+   "Check that the <b>Total</b> bar holds steady even with friction on. Nothing vanished - it <b>moved into heat</b>.",
+   "Use the house button to reach the <b>Measure</b> screen and move the <b>Reference Height</b>. Every potential energy value shifts with it.",
+   "Change <b>Gravity</b> to <b>Moon</b> or <b>Jupiter</b>. Same track, completely different motion."
+  ],
+  "record": "With no friction, how did the highest point the skater reached on the far side compare with the starting height? And which bar grew once you turned friction on?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>exactly 5 m</strong>. It cannot go higher than that.</p><p>The reason is that <strong>the Total bar never changes</strong>. The energy the skater has is split in two.</p><ul><li><strong>Potential energy</strong> - bigger the higher you are</li><li><strong>Kinetic energy</strong> - bigger the faster you go</li></ul><p>Coming down, potential falls and kinetic rises; going up, the reverse. But <strong>their sum is always the same.</strong> So at the top of the far side, the instant the speed reaches 0, all of the energy is potential again and that value <strong>has to match the value at the start</strong>. Same potential energy means <strong>the same height</strong>.</p><p>This is <strong>conservation of energy</strong>, which is another way of saying there is no free energy. It is exactly why a roller coaster can never build a hill taller than its first one.</p><p>The <strong>Thermal</strong> bar growing when you turned on <strong>Friction</strong> matters just as much. The skater climbed lower each time, yet <strong>the Total held steady</strong>. The energy <strong>did not disappear; it changed form into heat</strong> - the same reason a slide leaves you warm.</p><p>Energy that has turned into heat, though, <strong>cannot be taken back.</strong> It has scattered. That is why a real roller coaster has ever lower hills and finally stops.</p><p>It is also worth noticing that moving the <strong>Reference Height</strong> shifted every potential energy value. Potential energy is <strong>a quantity that needs a baseline</strong>: its value depends on <strong>where you call zero</strong>, just like <strong>distance and displacement</strong> in lesson 14. What matters is never the value itself but the <strong>difference</strong>.</p>"
+  },
+  "real": "Roller coaster design sits on this rule, which is why the first hill is the tallest. A dam holding water high to drop it through a turbine, a pendulum swinging back to the same height, an electric car charging its battery under braking - all of them trade between height, speed and heat.",
+  "quiz": [
+   {
+    "q": "With no friction, the <b>Total</b> energy:",
+    "opts": [
+     "Grows on the way down",
+     "Is the same everywhere",
+     "Grows on the way up"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Turn friction on and which bar grows?",
+    "opts": [
+     "Kinetic",
+     "Potential",
+     "Thermal"
+    ],
+    "right": 2
+   },
+   {
+    "q": "Why is a roller coaster's <b>first hill</b> the tallest?",
+    "opts": [
+     "To build up starting speed",
+     "Because it can never climb above its starting height",
+     "Because it looks good"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "throw-4": {
+  "course": "throw",
+  "sim": "vector-addition",
+  "screens": null,
+  "title": "When 3 plus 4 is not 7",
+  "lead": "Quantities with a direction cannot simply be added. What you split by hand in lesson 1 becomes a tool here.",
+  "hook": "In lesson 1 you split a velocity into a <b>horizontal arrow and a vertical arrow</b>. A quantity that carries <b>both a size and a direction</b> like that is a vector. Velocity, force, displacement - most of the quantities that matter in physics are vectors. But adding vectors is not like adding numbers. <b>3 plus 4</b> need not come to 7.",
+  "predict": {
+   "q": "You add a vector of size <b>3</b> to a vector of size <b>4</b>. How big is the sum?",
+   "opts": [
+    "Always 7",
+    "Anything <b>from 1 to 7</b>, depending on the directions",
+    "Always 5",
+    "Always 12"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Explore 1D</b> screen. Drag vectors out of the drawer on the right onto the graph.",
+   "Place vector <b>a</b> with length <b>3</b> and vector <b>b</b> with length <b>4</b>, both pointing <b>right</b>.",
+   "Tick <b>Sum</b> on the right. The sum vector appears. How big is it?",
+   "Now flip <b>b</b> to point <b>left</b>. What happens to the size of the sum?",
+   "Write down the sum for the two <b>same direction</b> and <b>opposite direction</b> cases. Those are the two ends of the range in ②.",
+   "Use the house button to go to the <b>Explore 2D</b> screen. Now vectors can point <b>any way</b> you like.",
+   "Place vectors of size <b>3</b> and <b>4</b> again and <b>turn one slowly</b>. The size of the sum travels <b>between 1 and 7</b>.",
+   "Set the two vectors at <b>right angles</b>. The sum comes to <b>exactly 5</b> - the 3, 4, 5 right triangle.",
+   "In the <b>Components</b> box on the right there are <b>four picture buttons</b>. Choose the <b>bottom right</b> one, the picture with dotted lines dropped onto the horizontal and vertical axes. The vector splits <b>into horizontal and vertical</b> - what you saw in lesson 1.",
+   "Tick <b>Values</b> and the <b>θ picture checkbox</b> below it (show angles) to get the size and the angle as numbers.",
+   "Of the <b>two picture buttons</b> at the bottom right, choose the one drawn as a <b>fan of angle marks</b> and the grid turns into an <b>angle scale</b>."
+  ],
+  "record": "Write down the size of the sum for vectors of 3 and 4 placed in the same direction, in opposite directions, and at right angles.",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>anything from 1 to 7, depending on the directions</strong>.</p><ul><li><strong>Same direction</strong> - 3 + 4 = <strong>7</strong>. The largest it gets.</li><li><strong>Opposite directions</strong> - 4 − 3 = <strong>1</strong>. The smallest.</li><li><strong>At right angles</strong> - <strong>5</strong>. The 3, 4, 5 right triangle.</li><li>At angles in between you get values <strong>between 1 and 7</strong>.</li></ul><p>Why? Adding vectors means <strong>laying them end to end</strong>. Walk 3 paces and then 4 more: go the same way and you end up 7 paces from the start, but double back and you are only 1 pace away. A vector sum is not <strong>how far you walked</strong> but <strong>where you ended up</strong>.</p><p>So you <strong>cannot just add the sizes.</strong> The directions have to come along too. The trick that makes this easy is <strong>splitting into components</strong>.</p><p>That is what happened when you chose the picture button with the dotted lines dropped onto the axes and the vector split into horizontal and vertical. Once they are split you can add <strong>horizontals to horizontals and verticals to verticals</strong>, plainly. The directions have been sorted out, so it is ordinary addition again.</p><p>You already used this in lesson 1. Splitting the thrown ball's velocity <strong>into horizontal and vertical</strong> made it obvious at a glance that the horizontal held steady while only the vertical changed. What you did by hand there, you have made into a <strong>tool</strong> here.</p><p>Working out a slope as <strong>rise ÷ run</strong> in lesson 12 is the same idea. Handling something slanted by <strong>splitting it into horizontal and vertical</strong> is the single most useful trick maths and physics share.</p>"
+  },
+  "real": "A plane in a crosswind has to angle its nose slightly into the wind to reach its destination, because the real path is the plane's velocity vector plus the wind's. A boat crossing a river, a tug-of-war pulled at an angle, a crane lifting on two cables - all vector sums.",
+  "quiz": [
+   {
+    "q": "The sum of two vectors of size <b>5</b> and <b>5</b> is <b>largest</b> when they are:",
+    "opts": [
+     "At right angles",
+     "In the same direction",
+     "In opposite directions"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Add vectors of size <b>6</b> and <b>8</b> at <b>right angles</b>:",
+    "opts": [
+     "10",
+     "14",
+     "2"
+    ],
+    "right": 0
+   },
+   {
+    "q": "What is good about <b>splitting a vector into components</b>?",
+    "opts": [
+     "It makes the size smaller",
+     "You can add horizontals to horizontals and verticals to verticals",
+     "You can ignore the direction"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

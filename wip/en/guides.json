@@ -267,5 +267,338 @@
    "The bulb tells you nothing about the <b>direction</b> of the electricity. Switch to the meter for that.",
    "If the bulb only glows very faintly, turn up the strength or move the magnet faster. It is not broken."
   ]
+ },
+ "projectile-motion": {
+  "summary": "Fire things out of a cannon and watch <b>where they land and how long they take</b>. Change the angle, the speed, the object and the air resistance until the rule shows itself.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Where this lesson starts. The simplest screen - only the angle and the speed to change."
+   },
+   {
+    "name": "Vectors",
+    "what": "Shows velocity and acceleration as <b>arrows</b>. Splitting them into horizontal and vertical is the heart of this lesson."
+   },
+   {
+    "name": "Drag",
+    "what": "The <b>air resistance</b> screen. \"Drag\" here does not mean hauling something along - it is the <b>resistance of the air</b>."
+   },
+   {
+    "name": "Lab",
+    "what": "Type in the numbers yourself: height, angle, speed, mass, diameter, even gravity."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Cannon Angle · Initial Speed (bottom of the screen)",
+    "desc": "Set the launch angle and the starting speed. You can press the number field and type a value in.",
+    "tip": "Change <b>one at a time</b>. Change the angle and the speed together and you will never know which one moved the result."
+   },
+   {
+    "name": "Cannon height (drag the cannon up and down)",
+    "desc": "Drag the cannon upward and the launch height changes. The scale on the left shows the height.",
+    "tip": "To compare dropping against throwing you have to keep <b>the same height</b>. Set it against the scale."
+   },
+   {
+    "name": "Time · Range · Height (readouts at the top)",
+    "desc": "<b>Time</b> is how long the flight took, <b>Range</b> how far it went, <b>Height</b> the top of the arc.",
+    "tip": "The value that matters most in this lesson is <b>Time</b>. Changing the speed without changing the time is the whole point, so write it down every run."
+   },
+   {
+    "name": "Velocity Vectors - Total · Components (right of the Vectors screen)",
+    "desc": "Choose whether to see the velocity as <b>one arrow</b> or <b>split into horizontal and vertical</b>.",
+    "tip": "Do turn on <b>Components</b>. That the horizontal arrow keeps its length while only the vertical one grows is this entire lesson."
+   },
+   {
+    "name": "Acceleration Vectors (right of the Vectors screen)",
+    "desc": "Shows the acceleration as an arrow.",
+    "tip": "It points <b>straight down</b> for the whole flight, including while the ball is still going up. That is an easy one to get wrong."
+   },
+   {
+    "name": "Air Resistance (checkbox on the right)",
+    "desc": "Tick it and the air is taken into the calculation. The <b>Drag Coefficient</b> underneath is how much the object catches the air.",
+    "tip": "Leave it <b>off</b> to begin with. Get hold of the bare rule first, then switch it on and see what moves."
+   },
+   {
+    "name": "Projectile chooser (right)",
+    "desc": "Cannonball, golf ball, baseball, football, pumpkin, human, piano, car and more. The mass and the diameter change with your choice.",
+    "tip": "With air resistance <b>off</b>, every one of them flies the same path. It takes air to make a difference - which is a good check in itself."
+   },
+   {
+    "name": "Measuring tape (bottom left)",
+    "desc": "Drag it out to measure between two points.",
+    "tip": "The screen scale only gets you an estimate. When you need the real value, use the tape."
+   },
+   {
+    "name": "Eraser · pause · step buttons and the speed setting (bottom)",
+    "desc": "Clear the trails, stop the action, advance one frame, and change the playback speed. All of these are icons with no words on them.",
+    "tip": "Set the speed to <b>Slow</b> and walk forward one frame at a time with the step button, and you can see exactly how the arrows change."
+   }
+  ],
+  "steps": [
+   "Turn <b>Air Resistance</b> off.",
+   "Set the cannon to <b>Height 10 m</b>, <b>Cannon Angle 0°</b>.",
+   "Fire at <b>Initial Speed 0</b> and note the <b>Time</b>.",
+   "Fire at <b>Initial Speed 15</b>, then <b>25</b>, and compare the times.",
+   "On the <b>Vectors</b> screen turn on <b>Velocity Vectors → Components</b> and watch the arrows.",
+   "Work the angle from 15° to 75°, noting the <b>Range</b>, and find the best angle.",
+   "Turn <b>Air Resistance</b> on and see whether the best angle moves."
+  ],
+  "gotchas": [
+   "The screen called <b>Drag</b> is about <b>air resistance</b>, not about dragging things. The <b>Drag Coefficient</b> below is the air resistance coefficient.",
+   "With air resistance off, <b>everything flies the same path</b> whatever you fire. That is not a fault; it is the correct answer.",
+   "The acceleration arrow points <b>down</b> even while the ball is rising.",
+   "There are four screens. Start on <b>Intro</b> and move to <b>Vectors</b>."
+  ]
+ },
+ "projectile-data-lab": {
+  "summary": "It looks like the previous sim but the purpose is different. Not <b>where one shot lands</b> but <b>how many shots scatter</b>. That is why there is a histogram across the top.",
+  "screens": [
+   {
+    "name": "Variability",
+    "what": "Where this lesson starts. Fire repeatedly on one setting and look at the scatter."
+   },
+   {
+    "name": "Sources",
+    "what": "Where the scatter comes from - the launcher or the projectile - pulled apart."
+   },
+   {
+    "name": "Measures",
+    "what": "You can switch on <b>Mean</b> and <b>Standard Deviation</b> here. The back half of this lesson happens on this screen."
+   },
+   {
+    "name": "Sampling",
+    "what": "Fire in batches and then look at the means of those batches. The hardest screen."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Single · Continuous (bottom center)",
+    "desc": "<b>Single</b> fires one at a time; <b>Continuous</b> keeps firing while you hold it.",
+    "tip": "Fire five or six on <b>Single</b> first to see that every one is different, then collect dozens with <b>Continuous</b>."
+   },
+   {
+    "name": "Launch Angle · Launch Speed (checkboxes, top right)",
+    "desc": "Tick these and the launch angle and speed are <b>displayed</b> on screen. Unlike the previous sim these are not handles that set the values - the launcher on the Variability screen is a <b>Mystery Launcher</b> with its settings hidden.",
+    "tip": "In this lesson, <b>do not change them</b>. Firing on a fixed setting is the whole point."
+   },
+   {
+    "name": "Histogram (top of the screen)",
+    "desc": "Counts the landing distances into intervals and stacks them as bars. The horizontal axis is <b>Distance</b>, the vertical axis is <b>Count</b>.",
+    "tip": "Stack up dozens of shots and a <b>bell, high in the middle</b>, comes out. Ten or so will not show it, so fire plenty."
+   },
+   {
+    "name": "Bin Width · Total Bins (left of the histogram)",
+    "desc": "Sets <b>how wide an interval</b> each bar counts.",
+    "tip": "Same data, different-looking shape. Chop it <b>too finely</b> and it goes ragged; <b>too coarsely</b> and the shape is smeared away."
+   },
+   {
+    "name": "Paths (right)",
+    "desc": "Leaves the flight trails on the screen.",
+    "tip": "Leave it on and you can see at a glance <b>how much the paths overlap and how far they spread</b>."
+   },
+   {
+    "name": "Mean · Standard Deviation (right of the Measures screen)",
+    "desc": "<b>Mean</b> shows where they cluster, <b>Standard Deviation</b> how wide the spread is.",
+    "tip": "Add shots and watch <b>the mean line settle</b>. With few shots it wanders; with many it takes its place."
+   },
+   {
+    "name": "Mystery Launcher · Custom Launcher",
+    "desc": "<b>Mystery</b> will not tell you how much scatter it has. <b>Custom</b> lets you set it yourself.",
+    "tip": "Fire the mystery one, guess its scatter, then build the same value on the custom launcher and compare. Good practice."
+   },
+   {
+    "name": "Measuring Tape · Stopwatch · Interval Tool (right)",
+    "desc": "Measure distance and time, and count how many shots fell inside a given stretch.",
+    "tip": "Set the <b>Interval Tool</b> to a narrow stretch around the mean. More shots fall inside it than you would think."
+   }
+  ],
+  "steps": [
+   "On the <b>Variability</b> screen, change nothing and fire five or six on <b>Single</b>.",
+   "Collect dozens with <b>Continuous</b> and look at the shape of the histogram.",
+   "Change the <b>Bin Width</b> and see the same data look different.",
+   "Turn on <b>Paths</b> and see how far the trails spread.",
+   "On the <b>Measures</b> screen turn on <b>Mean</b> and <b>Standard Deviation</b>.",
+   "Add shots and watch the mean line settle."
+  ],
+  "gotchas": [
+   "The point of this sim is <b>not changing the settings</b>. Touch the angle or the speed and there is no scatter to see.",
+   "Ten or so shots will not show the shape. Collect <b>dozens</b>.",
+   "Changing the <b>Bin Width</b> leaves the data alone. Only the grouping changes.",
+   "The screens get harder as you go. <b>Variability → Measures</b> is enough for this lesson."
+  ]
+ },
+ "energy-skate-park": {
+  "summary": "Put a skater on a track and watch, in bars, <b>how the energy moves around</b>. You can draw your own track, and you can swap gravity for the Moon or Jupiter.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Where this lesson starts. Ready-made tracks, and the energy bars."
+   },
+   {
+    "name": "Measure",
+    "what": "Adds a tape, a stopwatch and an energy probe. You can move the <b>Reference Height</b> here too."
+   },
+   {
+    "name": "Graphs",
+    "what": "The energies drawn as a graph against time."
+   },
+   {
+    "name": "Playground",
+    "what": "<b>Draw your own</b> track. A good place to play once you are done."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The skater (drag onto the track)",
+    "desc": "Drop the skater at any height on the track and they slide from there.",
+    "tip": "Try dropping from <b>the same height</b> several times. Different track shapes, same height, same speed."
+   },
+   {
+    "name": "Energy bars (collapsible box, top left) - Kinetic · Potential · Thermal · Total",
+    "desc": "It opens <b>collapsed</b>, showing only the title. Press <b>▸</b> to open it. <b>Kinetic</b> is the energy of speed, <b>Potential</b> the energy of height, <b>Thermal</b> the share lost to friction, and <b>Total</b> the sum of the three.",
+    "tip": "This is the key readout. <b>Do not take your eyes off the Total bar.</b> With no friction it must be the same height wherever the skater is."
+   },
+   {
+    "name": "Friction (right) - None ↔ Lots",
+    "desc": "Sets the friction of the track.",
+    "tip": "Start on <b>None</b>. With friction on, conservation of energy comes out blurred. Get hold of the rule first, then switch it on."
+   },
+   {
+    "name": "Track chooser (right, four picture buttons)",
+    "desc": "Four ready-made tracks. There are no words on them - you tell them apart by <b>the shape of the track drawn on each</b>: in order, a parabola, a ramp, a double dip and a loop.",
+    "tip": "The <b>double dip</b> is the best one for watching the energy trade. The skater runs from side to side, swapping height for speed."
+   },
+   {
+    "name": "Stick to Track (checkbox on the right)",
+    "desc": "On, the skater stays glued to the track; off, they can fly off it.",
+    "tip": "Turn it off on the <b>loop</b> track. Without enough speed the skater falls - which is why a real loop-the-loop needs to be taken fast."
+   },
+   {
+    "name": "Gravity (right) - Earth · Moon · Jupiter · Custom",
+    "desc": "Changes the strength of gravity.",
+    "tip": "Try the <b>Moon</b>. Same track, far slower motion. What matters is that <b>the Total still holds</b>."
+   },
+   {
+    "name": "Mass (right)",
+    "desc": "Changes how heavy the skater is.",
+    "tip": "With no friction, changing the mass <b>does not change how high they get.</b> Only the size of the bars changes - a good thing to check."
+   },
+   {
+    "name": "Pie Chart (checkbox on the right)",
+    "desc": "Shows the energy split as a circle. It follows the skater around.",
+    "tip": "The bars give you the exact amounts, the pie gives you the <b>proportions</b>. Having both on makes it click faster."
+   },
+   {
+    "name": "Reference Height (Measure screen) · Grid",
+    "desc": "Sets where you call <b>zero</b> for potential energy.",
+    "tip": "Move it and every potential energy value shifts. It is there to show you that <b>the difference matters, not the value</b>."
+   },
+   {
+    "name": "Restart Skater · the clear-thermal button",
+    "desc": "Put the skater back where they started, or clear the heat that has piled up. The clear-thermal button sits on the energy box as an icon, with no words on it.",
+    "tip": "When you run several friction experiments, <b>clear the heat</b> before each one. Otherwise the last run's heat is still there."
+   }
+  ],
+  "steps": [
+   "Set <b>Friction</b> to <b>None</b> and press <b>▸</b> on the <b>Energy</b> box at the top left to open it.",
+   "Put the skater on the high side of the track and watch the bars move back and forth.",
+   "Check that the <b>Total</b> bar is the same everywhere.",
+   "Compare the highest point on the far side with the height you started from.",
+   "Raise <b>Friction</b> and watch the <b>Thermal</b> bar grow.",
+   "Change <b>Gravity</b> to <b>Moon</b> and do it all again.",
+   "On the <b>Measure</b> screen, move the <b>Reference Height</b>."
+  ],
+  "gotchas": [
+   "The track buttons have <b>no words on them.</b> You tell them apart by the shape drawn on each: parabola, ramp, double dip, loop.",
+   "With friction on the Total looks as if it is shrinking, but <b>count the Thermal bar too</b> and it is unchanged.",
+   "Clear the heat before you repeat a friction experiment.",
+   "Changing the mass <b>does not change how high they get</b>, as long as there is no friction.",
+   "Moving the <b>Reference Height</b> changes the potential energy values. Not an error - the baseline moved."
+  ]
+ },
+ "vector-addition": {
+  "summary": "Drag arrows onto a graph and <b>add them up</b>. See with your own eyes how quantities that carry a direction combine. Only <b>Sum · Values · Components</b> are labelled in words; the rest of the buttons carry <b>pictures and no text at all</b>.",
+  "screens": [
+   {
+    "name": "Explore 1D",
+    "what": "Where this lesson starts. Vectors sit <b>on a single line</b>. Two directions only, so it is the simplest."
+   },
+   {
+    "name": "Explore 2D",
+    "what": "Vectors can point any way at all. The heart of this lesson is here."
+   },
+   {
+    "name": "Lab",
+    "what": "Put several vectors out and handle them freely."
+   },
+   {
+    "name": "Equations",
+    "what": "Relationships between vectors, written as equations. The hardest screen."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Vector drawer (right) - a · b · c",
+    "desc": "Drag a lettered arrow onto the graph. Once it is down, <b>drag its tip</b> to change the size and the direction.",
+    "tip": "Drag the <b>body</b> of an arrow to move it, drag the <b>tip</b> to resize and turn it. When in doubt, grab the tip."
+   },
+   {
+    "name": "Sum (checkbox on the right)",
+    "desc": "Shows the <b>sum vector</b> of everything you have put down.",
+    "tip": "The star of this sim. <b>Leave it on</b> and turn a vector. How the size of the sum changes is this whole lesson."
+   },
+   {
+    "name": "Values (checkbox on the right)",
+    "desc": "Puts the size of each vector on screen as a number.",
+    "tip": "By eye you cannot land exactly on 3 and 4. <b>Turn it on.</b>"
+   },
+   {
+    "name": "Show angles (top right, the θ picture checkbox)",
+    "desc": "Marks the angle each vector makes with the x axis.",
+    "tip": "When you are hunting for where the sum is largest and smallest, seeing the angle makes the rule obvious."
+   },
+   {
+    "name": "Components (top right, four picture buttons)",
+    "desc": "Splits a vector into horizontal and vertical. Four pictures in a 2×2 block with no words, running from the top left: off, right triangle, parallelogram, and dotted lines dropped onto the axes.",
+    "tip": "Choose the <b>bottom right</b> picture, the one with dotted lines down to the axes. It is the same picture as splitting the velocity into horizontal and vertical in lesson 1 (projectile motion)."
+   },
+   {
+    "name": "Grid (top right, the graph-paper picture checkbox)",
+    "desc": "Turns the background grid on and off.",
+    "tip": "<b>Leave it on.</b> Without the grid you cannot set the sizes exactly."
+   },
+   {
+    "name": "Coordinate chooser (bottom right, two picture buttons)",
+    "desc": "On the 1D screen it picks horizontal or vertical; on the 2D screen it picks grid coordinates or angle coordinates. There are no words - the right-triangle picture is grid coordinates, the fan-of-angles picture is angle coordinates.",
+    "tip": "Switch to the <b>fan-of-angles</b> one and you get an angle scale, which makes 30° or 45° easy to hit exactly."
+   },
+   {
+    "name": "Erase all vectors (bottom right, picture button)",
+    "desc": "Clears every vector you have put down.",
+    "tip": "When the arrows overlap and you lose track, clearing and starting again is quicker."
+   },
+   {
+    "name": "Vector Values (readout at the top)",
+    "desc": "Shows the size and angle of the vector you have selected. With nothing selected it reads <b>No vector selected</b>.",
+    "tip": "To see the values you have to <b>click an arrow once to select it.</b>"
+   }
+  ],
+  "steps": [
+   "On the <b>Explore 1D</b> screen turn on <b>Values</b> and the grid (the graph-paper picture checkbox).",
+   "Put vector <b>a</b> down at size 3 and <b>b</b> at size 4, both pointing right.",
+   "Turn on <b>Sum</b> and look at the size of the sum.",
+   "Flip <b>b</b> the other way and see what the sum does.",
+   "On the <b>Explore 2D</b> screen, turn one of them slowly.",
+   "Set the two at <b>right angles</b> and check the sum comes to 5.",
+   "Switch the <b>Components</b> picture buttons to the <b>bottom right</b> one, the dotted lines down to the axes."
+  ],
+  "gotchas": [
+   "<b>Most of the buttons have no words on them.</b> They are pictures, not English text you have missed - use the names above to work out which picture is which.",
+   "Vector sizes <b>cannot simply be added.</b> 3 and 4 make 7 only when they point the same way.",
+   "Dragging an arrow's <b>body</b> moves it; dragging its <b>tip</b> changes the size and direction.",
+   "To see the values you have to <b>click an arrow to select it</b>.",
+   "This sim was built for high school. This lesson only uses <b>Explore 1D</b> and <b>Explore 2D</b>."
+  ]
  }
 }
