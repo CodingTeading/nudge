@@ -3484,8 +3484,8 @@
     "tip": "The proportions of the appearance (fur colour) and of the <b>genes</b> can differ. A recessive gene stays in the population without showing."
    },
    {
-    "name": "Pause · Reset All",
-    "desc": "Stop, or start again from the beginning.",
+    "name": "The pause button and the round reset button",
+    "desc": "Stop, or start again from the beginning. Both are icons with no words on them - the reset is the yellow circle at the bottom right.",
     "tip": "Too many rabbits and the screen gets crowded. When you want to change conditions and go again, <b>Reset All</b> is quickest."
    }
   ],

@@ -7,7 +7,7 @@
 
 ---
 
-## 1. 화면에 없는 이름(`a11y.*`)을 인용한 자리 — 27곳 (코스 06 까지)
+## 1. 화면에 없는 이름(`a11y.*`)을 인용한 자리 — 28곳 (코스 13 까지)
 
 검수에서 미션 22곳을 고쳤지만, **사용법의 `tip` 과 `name`, 설명 본문, 그리고 미션
 몇 곳에는 아직 남아 있습니다.** 전부 아이콘만 있거나 이름표가 없는 조작의 접근성
@@ -27,6 +27,7 @@
 | `Detection Mode` · `Particle Type` | `guides/quantum-wave-interference/controls[3].name` · `[4].name` | `a11y.detectionModeRadioButtons` 등. 라디오 묶음에 **제목이 없습니다** |
 | `Clear Hits` · `Take Snapshot` | `guides/quantum-wave-interference/controls[7].name` | `a11y.detectorScreenButtons.*` |
 | `Fast` | `guides/quantum-wave-interference/controls[8].name` · `steps[4]` | 화면 라벨은 `Particle Speed` 뿐입니다 |
+| `Pause · Reset All` | `guides/natural-selection/controls[7].name` | scenery-phet a11y. 되돌리기는 오른쪽 아래 **노란 원**입니다 |
 | `Heads` · `Tails` | `lessons/quantum-1/missions[1]`, `guides/quantum-coin-toss/controls[0].desc` | `a11y.coinsScreen.coinStates.*` — 동전 면은 **그림**입니다 |
 | `Start Measurement` | `lessons/quantum-1/missions[8]` | `a11y.coinsScreen.startMeasurement`. 단추에 찍히는 글자는 **`Start`** 뿐입니다 |
 | `Potential` | `guides/quantum-bound-states/controls[0].name` · `steps[0]` · `steps[6]` | 가두는 모양 콤보 상자에 **제목이 없습니다** |
