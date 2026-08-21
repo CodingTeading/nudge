@@ -690,6 +690,44 @@
         "min": 14,
         "diff": 3
       }
+    ],
+    "light": [
+      {
+        "id": "light-1",
+        "ready": true,
+        "sim": "geometric-optics",
+        "title": "렌즈를 반쯤 가리면 그림도 반쯤 사라질까",
+        "hook": "돋보기의 아래쪽을 손으로 가리면 상은 어떻게 될까?",
+        "min": 14,
+        "diff": 1
+      },
+      {
+        "id": "light-2",
+        "ready": true,
+        "sim": "blackbody-spectrum",
+        "title": "뜨거우면 색이 바뀐다",
+        "hook": "파란 별과 빨간 별 중 더 뜨거운 쪽은?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "light-3",
+        "ready": true,
+        "sim": "photoelectric-effect",
+        "title": "아무리 밝아도 안 되는 것이 있다",
+        "hook": "빨간 빛을 100배 세게 쬐면 전자가 나올까?",
+        "min": 15,
+        "diff": 3
+      },
+      {
+        "id": "light-4",
+        "ready": true,
+        "sim": "quantum-wave-interference",
+        "title": "하나씩 보내도 무늬가 생긴다",
+        "hook": "알갱이를 한 알씩 던지는데 왜 물결무늬가 쌓일까?",
+        "min": 15,
+        "diff": 3
+      }
     ]
   }
 }

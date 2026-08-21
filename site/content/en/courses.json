@@ -691,6 +691,44 @@
         "min": 14,
         "diff": 3
       }
+    ],
+    "light": [
+      {
+        "id": "light-1",
+        "ready": true,
+        "sim": "geometric-optics",
+        "title": "Cover half the lens — does half the image go?",
+        "hook": "Put your hand over the bottom of a magnifying glass. What happens to the image?",
+        "min": 14,
+        "diff": 1
+      },
+      {
+        "id": "light-2",
+        "ready": true,
+        "sim": "blackbody-spectrum",
+        "title": "Hot things change colour",
+        "hook": "A blue star or a red star — which one is hotter?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "light-3",
+        "ready": true,
+        "sim": "photoelectric-effect",
+        "title": "Brighter doesn't always help",
+        "hook": "Shine red light a hundred times brighter — do electrons come out?",
+        "min": 15,
+        "diff": 3
+      },
+      {
+        "id": "light-4",
+        "ready": true,
+        "sim": "quantum-wave-interference",
+        "title": "One at a time, and still a pattern",
+        "hook": "Fire particles one by one — why does a wave pattern build up?",
+        "min": 15,
+        "diff": 3
+      }
     ]
   }
 }
