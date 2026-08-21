@@ -461,5 +461,265 @@
     "right": 1
    }
   ]
+ },
+ "wave-1": {
+  "course": "wave",
+  "sim": "hookes-law",
+  "screens": null,
+  "title": "Pull it twice as far and the energy is four times as much",
+  "lead": "The force doubles but the energy quadruples. That mismatch explains a bow, a slingshot and a car bumper.",
+  "hook": "Pull on a spring and it fights back <b>harder the further you pull</b>. Twice the stretch takes twice the force. So far so obvious. But what about <b>the energy that went in</b>? Twice the force suggests twice the energy, and it is not. Without that mismatch you cannot explain \"I only pulled it a bit further - why did it fly so hard?\"",
+  "predict": {
+   "q": "You stretch a spring <b>twice</b> as far. The <b>energy</b> stored in it is:",
+   "opts": [
+    "Twice as much",
+    "Four times as much",
+    "The same",
+    "Half as much"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Intro</b> screen. In the checkboxes on the right, turn on <b>Applied Force · Spring Force · Displacement · Equilibrium Position · Values</b>.",
+   "Move the <b>Applied Force</b> handle at the bottom and note the <b>Displacement</b> (how far it stretched) each time.",
+   "Double the force - does the stretch double too? Check it a few times.",
+   "Double the <b>Spring Constant</b> and apply the same force. Is the stretch now <b>half</b>?",
+   "Look at the <b>Applied Force</b> and <b>Spring Force</b> arrows. Same size, <b>opposite directions</b>.",
+   "Use the house button to reach the <b>Energy</b> screen. A <b>Bar Graph</b> and an <b>Energy Plot</b> appear on the right.",
+   "Set the stretch to <b>0.1 m</b> and note the energy. Then stretch it to <b>0.2 m</b> and note it again. How many times bigger? That is the answer to ②.",
+   "Try <b>0.3 m</b> as well. How many times the value at 0.1 m?",
+   "Look at the shape of the <b>Energy Plot</b>. Straight line, or curved?",
+   "On the <b>Systems</b> screen, put two springs <b>side by side</b> and then <b>end to end</b>. What happens to the overall spring constant?"
+  ],
+  "record": "Write down the energy at stretches of 0.1 m, 0.2 m and 0.3 m. And what shape was the energy plot?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>four times</strong>. Going from 0.1 m to 0.2 m doubles the force but takes the energy to <strong>four times</strong>. At 0.3 m the force is three times and the energy <strong>nine</strong>.</p><p>Why the mismatch? <strong>Because the force is not strong from the start.</strong> As you begin pulling it is nearly 0, and it builds as you go. Energy is <strong>that force piled up over the distance</strong>, so the distance grows and the force along the way grows too - it gets <strong>multiplied twice</strong>.</p><p>So force is <strong>proportional</strong> to the stretch (a straight line) while energy is proportional to the <strong>square</strong> of it (a parabola). The curve in the energy plot is the proof. It is <strong>y = ax²</strong> from lesson 12, turning up again.</p><p>The mismatch matters day to day.</p><ul><li>Pull a <strong>bow</strong> a little further and the arrow flies far harder.</li><li>Double a <strong>car's speed</strong> and the braking distance goes to four times, because kinetic energy also goes as the square of the speed.</li><li>A <strong>bungee cord</strong> stretched only a little further answers back with a much bigger force.</li></ul><p>Remember too that <strong>Applied Force</strong> and <strong>Spring Force</strong> were the same size in opposite directions. A spring <strong>gives back as hard as you pull.</strong> Let go and that force drives the object away - which is where the next lesson's oscillation begins.</p>"
+  },
+  "real": "Bathroom scales and kitchen scales are exactly this. The spring shortens in proportion to the force on it, and the machine reads that shortening off as a weight. A click pen, a car suspension, a mattress, the mainspring of a watch - all of them use \"it gives back what you put in\".",
+  "quiz": [
+   {
+    "q": "Stretch the same spring <b>three times</b> as far. The force needed is:",
+    "opts": [
+     "Three times",
+     "Nine times",
+     "Unchanged"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Stretch the same spring <b>three times</b> as far. The stored energy is:",
+    "opts": [
+     "Three times",
+     "Nine times",
+     "Six times"
+    ],
+    "right": 1
+   },
+   {
+    "q": "The bigger the <b>spring constant</b>:",
+    "opts": [
+     "The more easily it stretches",
+     "The stiffer it is, so the less it stretches",
+     "The longer it is"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "wave-2": {
+  "course": "wave",
+  "sim": "masses-and-springs",
+  "screens": null,
+  "title": "Pull it further and it still takes the same time",
+  "lead": "Big swing or small swing, one round trip takes exactly as long. It is the reason clocks could be built at all.",
+  "hook": "Lesson 1 said a spring <b>gives back what you put in</b>. So what happens if you hang a weight and let go? It is pushed back up, overshoots, comes down again - it <b>oscillates</b>. And here is the strange part. A bigger swing has <b>further to travel</b>, so a round trip ought to take <b>longer</b>. It does not.",
+  "predict": {
+   "q": "Same spring, same weight. One you pull down <b>only a little</b>, the other <b>a long way</b>. The time for one round trip is:",
+   "opts": [
+    "Longer for the one pulled further",
+    "Shorter for the one pulled further",
+    "The same for both",
+    "It depends on the spring constant"
+   ]
+  },
+  "missions": [
+   "This is the <b>Intro</b> screen. Drag a mass off the rack on the left and hang it on a spring.",
+   "Set <b>Damping</b> on the right to <b>0</b>. With no friction it keeps swinging.",
+   "In the checkboxes on the right, turn on <b>Natural Length</b> and <b>Equilibrium Position</b>. Two reference lines appear.",
+   "Hang the <b>100 g</b> mass, pull it down a little and let go. It starts oscillating.",
+   "Take the stopwatch from the top left, time <b>10 round trips</b> and divide by 10.",
+   "Now pull the mass down <b>much further</b> and time it the same way. Is it the same? That is the answer to ②.",
+   "Change to the <b>250 g</b> mass and take the same measurement. Does heavier mean slower or faster?",
+   "Leave the mass alone and push the <b>Spring Constant</b> toward <b>Large</b>. What now?",
+   "Change <b>Gravity</b> to <b>Moon</b>. The equilibrium position moves - does the <b>round trip time</b> move with it?",
+   "Use the house button to reach the <b>Energy</b> screen. The <b>KE · PE<sub>grav</sub> · PE<sub>elas</sub> · E<sub>total</sub></b> bars trade back and forth.",
+   "Push <b>Damping</b> up. The <b>E<sub>therm</sub></b> bar grows and the swinging dies away. That is the story from course 02 again."
+  ],
+  "record": "Write down the round trip time for the small pull and for the big pull. And what happened when you used the heavier mass?",
+  "explain": {
+   "right": 2,
+   "body": "<p>The answer is <strong>the same for both</strong>. Big swing or small swing, one round trip takes <strong>exactly as long.</strong></p><p>It looks wrong, but there is a reason. Pulling further does mean <strong>further to travel</strong>. But pulling further also means the spring <strong>pushes back harder</strong>, so it moves <strong>faster</strong> by the same measure. The extra distance and the extra speed <strong>cancel out</strong> in the time.</p><p>This property is called <strong>isochronism</strong> - the period does not depend on the size of the swing. It is <strong>why a clock could be built.</strong> Galileo is said to have found it timing a swinging lamp in a cathedral against his own pulse. A <strong>pendulum</strong> like that lamp is only isochronous while the swings stay small, mind you; a mass on a spring holds exactly even for big ones.</p><p>So what does set the period? The two things you checked on screen.</p><ul><li><strong>Mass</strong> - heavier is <strong>slower</strong>. The restoring force is the same but there is more to move.</li><li><strong>Spring constant</strong> - stiffer is <strong>faster</strong>. It pushes back harder.</li></ul><p><strong>Switching gravity to the Moon</strong> is the interesting one. The equilibrium position rises but <strong>the round trip time does not change.</strong> Gravity only moves the <strong>centre</strong> of the oscillation; the oscillation itself is settled between the spring and the mass.</p><p>The <strong>E<sub>therm</sub></strong> bar growing as you raised <strong>Damping</strong> is exactly what lesson 3 of course 02 showed. The energy has not gone; it moved into heat, and that is why the swinging dies away.</p>"
+  },
+  "real": "A pendulum clock, a guitar string, the bounce of a car, the earthquake design of a building - all of them are the question of what sets the period. It is also why <b>timing</b> matters when you push a swing: a swing has a period of its own, and you have to push on that beat to build it up. Bridges shaking and buildings swaying in resonance disasters work the same way.",
+  "quiz": [
+   {
+    "q": "Double the <b>size</b> of the swing and the period:",
+    "opts": [
+     "Doubles",
+     "Halves",
+     "Stays the same"
+    ],
+    "right": 2
+   },
+   {
+    "q": "Use a <b>heavier</b> mass and the period:",
+    "opts": [
+     "Gets longer (slower)",
+     "Gets shorter (faster)",
+     "Stays the same"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Switch gravity to the Moon and the round trip time:",
+    "opts": [
+     "Gets longer",
+     "Gets shorter",
+     "Stays the same - only the equilibrium position moves"
+    ],
+    "right": 2
+   }
+  ]
+ },
+ "wave-3": {
+  "course": "wave",
+  "sim": "wave-on-a-string",
+  "screens": null,
+  "title": "The wave travels but the string does not",
+  "lead": "In a stadium wave nobody leaves their seat. What moves is not the people but the shape.",
+  "hook": "In lesson 2 a single mass swung <b>on the spot</b>. But what if there is another mass beside it, and they are joined? The first one's swing <b>passes to</b> the second, and on to the third. That is a wave. And it raises the most confusing question there is - when a wave runs to the right, <b>does the string go right too?</b>",
+  "predict": {
+   "q": "You shake a string and send a wave off to the right. How does <b>one point</b> on the string move?",
+   "opts": [
+    "It travels right along with the wave",
+    "It moves <b>up and down only</b>, staying where it is",
+    "It goes round in a circle",
+    "It does not move"
+   ]
+  },
+  "missions": [
+   "At the top left of the screen, choose <b>Pulse</b> from <b>Manual · Oscillate · Pulse</b>.",
+   "At the top right set the end to <b>Fixed End</b>, and turn <b>Damping</b> below down to <b>0</b>.",
+   "Press the button at the bottom left to send <b>one pulse</b>. A hump travels off to the right.",
+   "Turn on <b>Reference Line</b> on the right and set it anywhere along the string.",
+   "Send another pulse and stare at <b>a single green bead on the reference line</b>. Which way does that bead move? That is the answer to ②.",
+   "Drop the speed to <b>Slow Motion</b> at the bottom of the screen and walk forward one frame at a time with the step button beside pause - it is much clearer that way.",
+   "What happens when the pulse reaches the <b>Fixed End</b>? Watch whether it comes back <b>flipped upside down</b>.",
+   "Change the end to <b>Loose End</b> and send another. Does it flip this time?",
+   "Change it to <b>No End</b> and the wave leaves without coming back at all.",
+   "Now switch to <b>Oscillate</b> for a continuous wave. Take out the <b>Rulers</b> and measure the <b>wavelength</b> (crest to next crest).",
+   "Turn <b>Tension</b> down. The wave gets <b>slower</b> and the wavelength gets shorter.",
+   "Turn <b>Damping</b> up. The wave gets <b>smaller</b> as it travels."
+  ],
+  "record": "Which way did the bead on the reference line move? And what did the reflected wave look like at the fixed end and at the loose end?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>up and down only, staying where it is</strong>. The string does <strong>not travel one step</strong> to the right.</p><p>So what is going right? <strong>The shape.</strong> More precisely, <strong>the energy</strong>. Each point pulls its neighbour up, that neighbour pulls the next one up, and it is <strong>handed along</strong> in turn.</p><p>Picture a stadium wave. The wave runs right across the stands, but <strong>nobody moves sideways at all.</strong> They stand up and sit down where they are.</p><p>That is what a wave is - <strong>the material stays put and only the disturbance travels.</strong> Sound is the same. When someone speaks, the air out of their mouth does not fly to your ear; only the <strong>vibration</strong> is passed along.</p><p>What you saw in the <strong>reflections</strong> matters too.</p><ul><li><strong>Fixed End</strong> - the returning wave comes back <strong>flipped.</strong> The end cannot move, so the string pulls on the wall and the wall pushes back by the same amount in the opposite direction.</li><li><strong>Loose End</strong> - <strong>no flip.</strong> The end is free to fly up.</li></ul><p>Reflection is why a guitar string makes a note and why a wind instrument has a pitch. Waves coming back from both ends overlap and build <strong>a wave that stands still</strong>.</p><p>Remember also that lowering the <strong>Tension</strong> slowed the wave down. The speed of a wave is <strong>set by the medium.</strong> Not by how hard you shake it, but by how tight the string is - which is why tightening a guitar string raises the note.</p>"
+  },
+  "real": "A seismic wave crosses the planet without the ground moving anywhere. Sound and earthquakes are both \"the material stays, the disturbance travels\". Light, radio and wifi need <b>no material to carry them at all</b>, but that story belongs to course 04. Seismometers catching a quake on the far side of the world, and ultrasound looking inside a body, both live off this property.",
+  "quiz": [
+   {
+    "q": "As a wave goes past, the medium (string, air, water):",
+    "opts": [
+     "Travels along with the wave",
+     "Vibrates where it is",
+     "Disappears"
+    ],
+    "right": 1
+   },
+   {
+    "q": "A wave reflected from a <b>fixed end</b>:",
+    "opts": [
+     "Comes back the same way up",
+     "Comes back flipped upside down",
+     "Does not come back"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Raise the <b>tension</b> in the string and the wave speed:",
+    "opts": [
+     "Goes up",
+     "Goes down",
+     "Stays the same"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "wave-4": {
+  "course": "wave",
+  "sim": "fourier-making-waves",
+  "screens": "1",
+  "title": "Every waveform is a sum of sine waves",
+  "lead": "A square wave, a sawtooth - all of them can be built by adding up smooth sine waves.",
+  "hook": "The waves in lesson 3 were <b>smooth ripples</b>. Real sound is not that pretty. A violin and a piano playing <b>the same C</b> sound different because their waveforms differ. So where do the <b>angular</b> waveforms come from? Remarkably, piling up <b>nothing but smooth sine waves</b> produces them. You are going to build one.",
+  "predict": {
+   "q": "Can you build a <b>square wave</b> out of nothing but smooth <b>sine waves</b>?",
+   "opts": [
+    "No - sine waves are round and a square wave has corners",
+    "Yes - the <b>more</b> you add, the closer it gets to a square wave",
+    "A triangle wave yes, a square wave no",
+    "Two sine waves are enough"
+   ]
+  },
+  "missions": [
+   "This is the <b>Discrete</b> screen. The upper graph is the <b>individual sine waves</b>, the lower one is <b>all of them added together</b>.",
+   "Raise only the first (n=1) of the <b>Amplitude</b> handles on the left. One smooth sine wave appears below.",
+   "Now raise the second (n=2) as well. The shape below <b>goes out of shape</b> - two waves have been added.",
+   "Push the handles up and down at random and get a feel for how the shape below responds.",
+   "Choose <b>square</b> from <b>Waveform</b> on the right. The handles set themselves <b>automatically</b>.",
+   "How square is the result? Is there still <b>ripple left</b> in it?",
+   "Raise the number under <b>Harmonics</b> on the right. More sine waves get added in.",
+   "Push Harmonics to the <b>maximum</b>. It gets far squarer. That is the answer to ②.",
+   "Turn on <b>Infinite Harmonics</b> at the bottom right and the <b>true square wave</b> is drawn over the top. Compare it with yours.",
+   "Try <b>sawtooth</b> and <b>triangle</b> too. Which of them gets close with fewer sine waves?",
+   "Under <b>Measurement Tools</b>, turn on <b>Wavelength</b> and compare the wavelength of the first sine wave with the second."
+  ],
+  "record": "On the square waveform, what did the shape look like with few harmonics and with many?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>yes - the more you add, the closer it gets</strong>. This is <strong>what Fourier found</strong>, and it underpins nearly every technology that handles sound and pictures today.</p><p>How do round things add up to something angular? The trick is <strong>overlapping sine waves of different wavelengths</strong>. Take the fundamental (n=1), add a third of the wavelength (n=3), a fifth (n=5) - <strong>the odd ones only</strong>, each at the right size - and in some places they reinforce into a flat stretch while in others they cancel into a sharp turn. That is how <strong>a corner gets made</strong>. The proof is that choosing <b>square</b> under Waveform <strong>drops the A2, A4 and A6 handles to 0</strong>.</p><p>But <strong>a finite number never gives a perfect square wave.</strong> Ripple stays near the corners. Add more harmonics and the ripple <strong>squeezes in toward the corner</strong>, without ever quite going. Only infinitely many make a true square wave.</p><p>You have in fact met this idea already.</p><ul><li>Course 02, lesson 4 - splitting <strong>a slanted vector</strong> into horizontal and vertical components.</li><li>Here - splitting <strong>a complicated waveform</strong> into sine wave components.</li></ul><p>Both are <strong>turning something complicated into a sum of simple things</strong>, because simple things are easy to handle. It is the favourite trick of physics and maths alike.</p><p>It connects to the <strong>spectrum</strong> from course 05, lesson 3 as well. There, light was split by wavelength into a handful of lines; here, a waveform is split by wavelength into a handful of bars. The same work of <strong>breaking a mixture into its components</strong>.</p><p>It is also why instruments sound different. On the same note, <strong>which harmonics are mixed in and in what proportion</strong> differs, and that blend is what we call <strong>timbre</strong>.</p>"
+  },
+  "real": "MP3 and JPEG are built on this. They break sound and pictures into components and then <b>throw away the components people barely notice</b> to shrink the file. Speech recognition, noise-cancelling headphones, medical MRI, earthquake analysis, even a wifi signal - all of them handle waveforms by their components.",
+  "quiz": [
+   {
+    "q": "When you choose <b>square</b> under Waveform, the <b>even-numbered</b> handles (A2 · A4):",
+    "opts": [
+     "Drop to 0",
+     "Match the odd-numbered ones",
+     "Become the largest"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Why do instruments sound different on the same note?",
+    "opts": [
+     "The pitch is different",
+     "The blend of harmonics mixed in is different",
+     "The loudness is different"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Why break a complicated waveform into <b>a sum of sine waves</b>?",
+    "opts": [
+     "It looks nicer",
+     "Simple things are easy to handle",
+     "Sine waves are the biggest waves"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

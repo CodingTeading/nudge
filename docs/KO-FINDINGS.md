@@ -7,10 +7,10 @@
 
 ---
 
-## 1. 화면에 없는 이름(`a11y.*`)을 인용한 자리 — 7곳
+## 1. 화면에 없는 이름(`a11y.*`)을 인용한 자리 — 10곳
 
-검수에서 미션 22곳을 고쳤지만, **사용법의 `tip` 과 `name`, 그리고 설명 본문에는
-남아 있습니다.** 전부 아이콘만 있는 단추의 접근성 이름이라 어느 언어로도 화면에
+검수에서 미션 22곳을 고쳤지만, **사용법의 `tip` 과 `name`, 설명 본문, 그리고 미션
+한 곳에는 아직 남아 있습니다.** `Step Forward` 는 세 곳에 반복해 나옵니다. 전부 아이콘만 있는 단추의 접근성 이름이라 어느 언어로도 화면에
 그려지지 않습니다.
 
 | 자리 | 인용한 이름 | 실제 |
@@ -22,6 +22,9 @@
 | `guides/energy-skate-park/controls[4].tip` | `Loop` | 위와 같은 그룹의 a11y 이름 |
 | `guides/energy-skate-park/controls[9].name` | `Clear Thermal Energy` | `a11y.energyBarGraphAccordionBox.clearThermalButton.accessibleName` |
 | `guides/projectile-motion/controls[9].name` | `Erase · Pause · Step Forward` | scenery-phet 의 `a11y.eraserButton` · `a11y.playPauseButton` · `a11y.stepForwardButton` |
+| `lessons/wave-3/missions[5]` | `Step Forward` | `a11y.stepForwardButton.accessibleName` — 일시정지 옆 **아이콘** |
+| `guides/wave-on-a-string/controls[7].name` · `.tip` | `Step Forward` | 위와 같음 |
+| `guides/masses-and-springs/controls[7].name` | `Step Forward` | 위와 같음 |
 
 같은 자리에서 한국어 원고가 이미 "글자 없이 그림으로 구별합니다"라고 써 둔 곳도
 많습니다(예: `guides/vector-addition/gotchas[0]`). 그래서 **한 문서 안에서 앞뒤가

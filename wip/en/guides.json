@@ -600,5 +600,289 @@
    "To see the values you have to <b>click an arrow to select it</b>.",
    "This sim was built for high school. This lesson only uses <b>Explore 1D</b> and <b>Explore 2D</b>."
   ]
+ },
+ "hookes-law": {
+  "summary": "Pull or press a spring and watch the relationship between force and stretch. Nothing here moves, so the controls are very simple - one handle is nearly all of it.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Where this lesson starts. One spring, force against stretch."
+   },
+   {
+    "name": "Systems",
+    "what": "Put <b>two</b> springs side by side or end to end."
+   },
+   {
+    "name": "Energy",
+    "what": "Shows the stored energy as bars and as a plot. The heart of this lesson is here."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Applied Force (handle at the bottom)",
+    "desc": "Sets the force you put on the spring. Push it right to pull, left to compress.",
+    "tip": "The main thing you do here. Land on <b>round values</b> (0.1 m, 0.2 m) and write them down, or the rule stays hidden."
+   },
+   {
+    "name": "Spring Constant (handle at the bottom)",
+    "desc": "Sets how stiff the spring is. Bigger means it stretches less.",
+    "tip": "Apply the same force and double the constant. The stretch goes to <b>half</b> - the two are inversely proportional."
+   },
+   {
+    "name": "Applied Force · Spring Force (checkboxes on the right)",
+    "desc": "Draws the two forces as arrows.",
+    "tip": "Turn both on. They are <b>the same size in opposite directions</b>. That picture is what \"a spring gives back what you put in\" means."
+   },
+   {
+    "name": "Displacement · Equilibrium Position · Values (checkboxes on the right)",
+    "desc": "<b>Displacement</b> is how far it stretched, <b>Equilibrium Position</b> is where it sits at zero force, and <b>Values</b> puts the numbers on screen.",
+    "tip": "Do turn <b>Values</b> on. By eye you cannot tell twice from four times."
+   },
+   {
+    "name": "Bar Graph and Energy Plot (right of the Energy screen)",
+    "desc": "Shows the stored elastic energy as a bar and as a curve.",
+    "tip": "Look hard at <b>the shape of the plot</b>. Force is a straight line but energy is <b>curved</b> - the parabola from lesson 12."
+   },
+   {
+    "name": "Spring arrangement (Systems screen) - side by side · end to end",
+    "desc": "Puts the two springs in parallel or in series.",
+    "tip": "Side by side makes the pair <b>stiffer</b>; end to end makes it <b>stretch more easily.</b> Worth checking for yourself."
+   }
+  ],
+  "steps": [
+   "On the <b>Intro</b> screen turn on <b>all</b> the checkboxes on the right.",
+   "Raise <b>Applied Force</b> and see whether <b>Displacement</b> keeps pace.",
+   "Double the <b>Spring Constant</b> and apply the same force.",
+   "Move to the <b>Energy</b> screen.",
+   "Note the energy at stretches of <b>0.1 · 0.2 · 0.3 m</b>.",
+   "See whether the <b>Energy Plot</b> is a straight line or a curve.",
+   "On the <b>Systems</b> screen, try the two springs side by side and end to end."
+  ],
+  "gotchas": [
+   "Force is <b>proportional</b> to the stretch but energy goes as the <b>square</b>. Twice the stretch is four times the energy.",
+   "Without the <b>Values</b> checkbox on, no numbers appear.",
+   "<b>Displacement</b> here means \"how far it stretched\". It does not mean the spring has moved somewhere.",
+   "<b>Nothing moves in this sim.</b> Springs that oscillate come in the next lesson (Masses and Springs)."
+  ]
+ },
+ "masses-and-springs": {
+  "summary": "Hang a mass on a spring and let it <b>oscillate</b>. The aim is to find what sets the round trip time, which makes the <b>stopwatch</b> the most important tool here.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Where this lesson starts. Hang masses on two springs and compare them."
+   },
+   {
+    "name": "Vectors",
+    "what": "Shows velocity and acceleration as arrows."
+   },
+   {
+    "name": "Energy",
+    "what": "Kinetic, gravitational potential, elastic potential and thermal energy as bars."
+   },
+   {
+    "name": "Lab",
+    "what": "Work out the mass of a weight whose value is hidden."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Masses (drag from the rack on the left)",
+    "desc": "There are 50 g, 100 g and 250 g weights and a <b>?</b> weight of unknown mass. Drag one onto a spring.",
+    "tip": "Once it is hanging, <b>pull it down and let go</b> to start it oscillating. Just hanging it on gives a small wobble that settles at the equilibrium."
+   },
+   {
+    "name": "Damping (handle on the right)",
+    "desc": "Friction, like air resistance. Turn it up and the oscillation dies away.",
+    "tip": "To time the period, <b>take it to 0.</b> With friction it stops before you can count many round trips."
+   },
+   {
+    "name": "Natural Length · Equilibrium Position · Movable Line (checkboxes on the right)",
+    "desc": "<b>Natural Length</b> is where the spring ends with nothing on it, <b>Equilibrium Position</b> is where it settles with the mass, and <b>Movable Line</b> is a reference line you can put anywhere.",
+    "tip": "Leave <b>Equilibrium Position</b> on. You can see that the oscillation runs <b>with that line at its centre</b>."
+   },
+   {
+    "name": "Spring Constant (handle above each spring)",
+    "desc": "Sets the stiffness of the spring, from <b>Small</b> to <b>Large</b>.",
+    "tip": "Set the two springs <b>differently</b> and hang the same mass on each. Watching them swing side by side shows the difference at once."
+   },
+   {
+    "name": "Gravity (right) - Earth · Moon · Jupiter · Planet X · Custom",
+    "desc": "Changes the strength of gravity.",
+    "tip": "Switch to the Moon and the equilibrium position rises. But <b>the round trip time does not change</b> - do check that one."
+   },
+   {
+    "name": "Stopwatch (top left)",
+    "desc": "Drag it out, then start and stop it.",
+    "tip": "The <b>most important tool</b> in this lesson. Timing a single round trip has too much error - <b>time 10 and divide by 10.</b>"
+   },
+   {
+    "name": "Energy bars (left of the Energy screen)",
+    "desc": "Five of them: <b>KE</b> · <b>PE<sub>grav</sub></b> · <b>PE<sub>elas</sub></b> · <b>E<sub>therm</sub></b> · <b>E<sub>total</sub></b>.",
+    "tip": "The same structure as the skate park in course 02, with one extra - <b>elastic energy</b>. There is a spring here."
+   },
+   {
+    "name": "Speed setting and the step button (bottom)",
+    "desc": "Play it slowly or advance one frame at a time. Both are icons with no words on them.",
+    "tip": "To catch the instant the speed reaches 0 at <b>each end</b> of the swing, run it slowly."
+   }
+  ],
+  "steps": [
+   "Take <b>Damping</b> down to <b>0</b>.",
+   "Turn on <b>Natural Length</b> and <b>Equilibrium Position</b>.",
+   "Hang the <b>100 g</b> mass, pull it down a little and let it swing.",
+   "Time 10 round trips with the <b>stopwatch</b> and divide by 10.",
+   "Now pull it down <b>a long way</b> and time it the same way.",
+   "Change to the <b>250 g</b> mass and time it again.",
+   "Raise the <b>Spring Constant</b> and time it again.",
+   "Change <b>Gravity</b> to <b>Moon</b> and check the round trip time."
+  ],
+  "gotchas": [
+   "With <b>Damping</b> above 0 the swinging stops quickly and the period is hard to time.",
+   "Timing a single round trip carries too much error. <b>Time 10 and divide.</b>",
+   "The <b>size</b> of the swing does not change the period. Only the mass and the spring constant do.",
+   "Simply hanging a mass on does not start it oscillating. You have to <b>pull it down and let go</b>."
+  ]
+ },
+ "wave-on-a-string": {
+  "summary": "Shake the left end of a long string and <b>send a wave</b> down it. There is one screen and the controls are simple, so everything depends on <b>what you fix your eyes on</b>.",
+  "screens": [
+   {
+    "name": "(only one screen)",
+    "what": "This sim has a single screen. The black bar at the bottom carries no house button and no screen names."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Manual · Oscillate · Pulse (top left)",
+    "desc": "<b>Manual</b> lets you shake the handle yourself, <b>Oscillate</b> shakes it continuously, and <b>Pulse</b> sends a single hump.",
+    "tip": "Start with <b>Pulse</b>. Following one hump with your eyes is the best way to see what a wave really does. Continuous waves come after."
+   },
+   {
+    "name": "Fixed End · Loose End · No End (top right)",
+    "desc": "Sets how the right-hand end of the string is tied.",
+    "tip": "<b>Fixed End</b> comes back <b>flipped</b>; <b>Loose End</b> comes back <b>the same way up.</b> Do compare the two. <b>No End</b> gives no reflection at all."
+   },
+   {
+    "name": "Damping (handle at the bottom)",
+    "desc": "Sets <b>how much the wave dies away</b> as it travels.",
+    "tip": "While you are after the rule, <b>take it to 0.</b> Otherwise the wave fades before it reaches the far end to reflect."
+   },
+   {
+    "name": "Tension (handle at the bottom)",
+    "desc": "Sets how tight the string is.",
+    "tip": "Lower it and the wave gets <b>slower.</b> It shows you that the speed of a wave is <b>set by the string</b>, not by how hard you shake it."
+   },
+   {
+    "name": "Reference Line (checkbox at the bottom right)",
+    "desc": "Puts a long horizontal reference line on screen. You can drag it about.",
+    "tip": "The <b>key tool</b> of this lesson. Use it to confirm that a single point on the string only travels <b>up and down</b> against that line."
+   },
+   {
+    "name": "Rulers · Stopwatch (checkboxes at the bottom right)",
+    "desc": "Brings out horizontal and vertical rulers and a stopwatch.",
+    "tip": "<b>Wavelength</b> is the distance from one crest to the next. Lay a ruler along the string to measure it."
+   },
+   {
+    "name": "Restart String (bottom center)",
+    "desc": "Straightens the string and puts everything back to the start.",
+    "tip": "When the waves get tangled, press this first."
+   },
+   {
+    "name": "Speed setting and the step button (bottom)",
+    "desc": "Play slowly or advance one frame at a time. Both are icons with no words on them.",
+    "tip": "Step forward a frame at a time and watch a point on the reference line. That it moves only up and down becomes unmistakable."
+   }
+  ],
+  "steps": [
+   "Set it to <b>Pulse</b> and take <b>Damping</b> down to 0.",
+   "Leave the end on <b>Fixed End</b> and send one pulse.",
+   "Turn on <b>Reference Line</b> and fix your eyes on one point of the string.",
+   "Use <b>Slow Motion</b> and the step button to check how that point moves.",
+   "Watch whether the pulse comes back <b>flipped</b> from the end.",
+   "Change the end to <b>Loose End</b> and watch again.",
+   "Switch to <b>Oscillate</b> and measure the wavelength with the <b>Rulers</b>.",
+   "Lower the <b>Tension</b> and watch the wave slow down."
+  ],
+  "gotchas": [
+   "The string <b>does not travel sideways.</b> The only thing moving is the shape (the energy).",
+   "<b>Damping</b> is how fast the wave fades. Set high, the wave never reaches the end to reflect, so take it to 0.",
+   "Only <b>Fixed End</b> flips the reflected wave. Loose End comes back the same way up.",
+   "Shaking harder does not make the wave <b>faster</b>. <b>Tension</b> sets the speed.",
+   "With only one screen, the black bar at the bottom has <b>no house button</b>. Not a fault."
+  ]
+ },
+ "fourier-making-waves": {
+  "summary": "Build a waveform by <b>adding sine waves together</b>. The upper graph is the individual sine waves and the lower one is all of them added up.",
+  "screens": [
+   {
+    "name": "Discrete",
+    "what": "The screen this lesson uses. \"Discrete\" means taken one at a time - you add the sine waves in one by one."
+   },
+   {
+    "name": "Wave Game",
+    "what": "A game where you match a waveform you are given. Play it once the lesson is done."
+   },
+   {
+    "name": "Wave Packet",
+    "what": "Adds a great many sine waves to build a short burst of wave. Much harder."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Amplitude handles (the column on the left)",
+    "desc": "Set the <b>size</b> of each individual sine wave. They run n = 1, 2, 3… from the top, and the wavelength gets shorter as you go down.",
+    "tip": "Raise <b>just one</b> to begin with. Then two, then three, getting a feel for how the shape below goes out of shape."
+   },
+   {
+    "name": "Waveform (right) - sinusoid · triangle · square · sawtooth · wave packet · custom",
+    "desc": "Choose the shape you want and the handles set themselves <b>automatically</b>.",
+    "tip": "Choose <b>square</b> and run the Harmonics number up and down. The heart of this lesson is in that single action."
+   },
+   {
+    "name": "Harmonics (right)",
+    "desc": "Sets <b>how many</b> sine waves get added in.",
+    "tip": "Few leaves a lot of ripple; more gets closer to the target shape. Push it to the <b>maximum</b> and compare."
+   },
+   {
+    "name": "Infinite Harmonics (checkbox at the bottom)",
+    "desc": "Draws <b>the true shape</b> you would get from adding infinitely many.",
+    "tip": "Leave it on while you raise the Harmonics. You can see straight away <b>how close</b> yours is getting to the real thing."
+   },
+   {
+    "name": "Harmonics chart (top)",
+    "desc": "Shows the sine waves you are adding, one by one.",
+    "tip": "Look <b>back and forth</b> between the top and the bottom. How the individual waves up top combine down below is the whole sim."
+   },
+   {
+    "name": "Sum chart (bottom)",
+    "desc": "The result of adding every sine wave together.",
+    "tip": "This is <b>the product</b>. Compare it against the target waveform."
+   },
+   {
+    "name": "Measurement Tools - Wavelength · Period (bottom right)",
+    "desc": "Brings out a ruler for the wavelength or the period of an individual sine wave.",
+    "tip": "Measure the wavelength of n=1 and n=2. It is <b>exactly half</b>. That rule is how the sine waves are chosen."
+   },
+   {
+    "name": "Equation · Series (right)",
+    "desc": "Writes what you have built as a formula, and lets you choose between sin and cos.",
+    "tip": "If the formula is heavy going, leave it on <b>Hidden</b>. The pictures alone are enough for this lesson."
+   }
+  ],
+  "steps": [
+   "On the <b>Discrete</b> screen, raise only the first <b>Amplitude</b> handle.",
+   "Raise the second as well and watch the shape below go out of shape.",
+   "Choose <b>square</b> under <b>Waveform</b>.",
+   "Lower the <b>Harmonics</b> number and see the ripple that is left.",
+   "Push Harmonics to the <b>maximum</b> and watch it square up.",
+   "Turn on <b>Infinite Harmonics</b> and compare with yours.",
+   "Try <b>sawtooth</b> and <b>triangle</b> too."
+  ],
+  "gotchas": [
+   "A finite number of sine waves <b>never gives a perfect square wave.</b> Ripple near the corners is normal.",
+   "This sim was built for high school and university. This lesson uses only the <b>Discrete</b> screen.",
+   "If the formula is heavy going, leave <b>Equation</b> on <b>Hidden</b>. The pictures are enough."
+  ]
  }
 }
