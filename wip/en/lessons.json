@@ -3175,5 +3175,201 @@
     "right": 1
    }
   ]
+ },
+ "life-1": {
+  "course": "life",
+  "sim": "natural-selection",
+  "screens": null,
+  "title": "A rabbit does not change; the population does",
+  "lead": "A white rabbit does not turn brown on brown ground. The brown ones simply survive more often.",
+  "hook": "Snowy ground has more white rabbits and bare earth has more brown ones. People usually say the rabbits <b>\"changed to suit the environment\"</b>, as though a rabbit looked around and altered its colour. But <b>a single rabbit never changes colour in its life.</b> So what did change? This sim runs a population of rabbits through generations and shows you.",
+  "predict": {
+   "q": "Brown ground with wolves about. A <b>brown mutation</b> appears in a population of <b>white rabbits</b>. After many generations:",
+   "opts": [
+    "Every rabbit <b>turns</b> brown",
+    "The <b>proportion</b> of brown rabbits rises",
+    "White rabbits turn brown as they grow",
+    "Nothing changes"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Intro</b> screen. Press <b>Add a Mate</b> in the middle to let the rabbits breed.",
+   "Watch for a moment and the rabbits multiply <b>exponentially</b>. The generation count climbs.",
+   "Under <b>Add Mutation</b> on the right, choose <b>Fur</b> and add <b>Brown Fur</b> as <b>Dominant</b>.",
+   "Choose <b>Population</b> on the graph at the left and turn on the <b>White Fur</b> and <b>Brown Fur</b> lines. Both climb together.",
+   "There are no wolves yet, so neither has an advantage. Check that the proportion stays about the same.",
+   "Now turn on <b>Wolves</b> under <b>Environmental Factors</b> on the right. What happens? That is the answer to ②.",
+   "Change the graph to <b>Proportions</b>. The <b>share</b> held by white and brown rabbits is clear at a glance.",
+   "Watch to see <b>whether any individual rabbit changes colour</b>. Does a white rabbit turn brown, or does it simply disappear?",
+   "Now change the background to snow (the environment can be chosen on the <b>Lab</b> screen). Which one has the advantage now?",
+   "Turn on <b>Limited Food</b> and add a <b>Teeth</b> mutation. Under a different pressure, a different trait wins.",
+   "Turn on the <b>Pedigree</b> graph to see how one rabbit's descendants spread."
+  ],
+  "record": "How did the proportions of white and brown rabbits differ before and after you turned the wolves on? And did you ever see an individual rabbit change colour?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>the proportion of brown rabbits rises</strong>. <strong>No individual rabbit changes colour.</strong> You will never have seen a white rabbit turn brown on screen.</p><p>What actually happened is this.</p><ul><li>Brown rabbits are <strong>harder to spot</strong> on brown ground, so they are more likely to survive.</li><li>Survivors have young, so <strong>the brown gene gets passed on more often</strong>.</li><li>Generation by generation, <strong>brown takes a larger share</strong> of the population.</li></ul><p>So <strong>what changes is not the individual but the make-up of the population</strong>. That is natural selection, and it is where it parts company most sharply with the common belief. Not \"giraffes stretched their necks\" but \"long-necked giraffes survived better\".</p><p>It also matters that <strong>both</strong> of two things are needed.</p><ul><li><strong>Variation</strong> - there have to be differences in the population already. Mutation supplies them.</li><li><strong>Selection pressure</strong> - something has to decide which is favoured. The wolves play that part.</li></ul><p>Before the wolves the proportions barely moved. <strong>Variation without pressure has no direction.</strong> Conversely, pressure without variation leaves nothing to select from, and the whole population can disappear.</p><p>Remember, too, that <strong>the advantage flipped</strong> when you changed the background to snow. Brown is not the \"better\" trait. <strong>The environment decides what counts as better.</strong> Change the environment and the answer changes.</p>"
+  },
+  "real": "Antibiotic resistance is exactly this story. Bacteria that survive the antibiotic breed and the resistant share rises - the bacteria did not \"build up resistance\"; the resistant ones that were already there survived. Pesticide-resistant insects, the spread of a COVID variant and crop breeding all work the same way.",
+  "quiz": [
+   {
+    "q": "In natural selection, <b>what changes</b>?",
+    "opts": [
+     "The traits of an individual",
+     "The proportions of traits in the population",
+     "The environment"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Natural selection needs <b>both</b> of:",
+    "opts": [
+     "Variation and selection pressure",
+     "Mutation and time",
+     "Food and predators"
+    ],
+    "right": 0
+   },
+   {
+    "q": "On snow, <b>white fur</b> has the advantage. That means:",
+    "opts": [
+     "White fur is the better trait",
+     "The environment decides what is favoured",
+     "Brown fur is inferior"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "life-2": {
+  "course": "life",
+  "sim": "membrane-transport",
+  "screens": null,
+  "title": "A cell membrane does not let just anything through",
+  "lead": "Oxygen goes straight through. Sodium needs a door. Without a door it does not get in however much of it there is.",
+  "hook": "Lesson 1 looked at a <b>population</b> of rabbits; this time the scale narrows right down to <b>a single cell</b>. A cell is wrapped in a membrane, and to stay alive it has to let in what it needs and put out what it does not. But this membrane does not <b>sieve by size</b> like a strainer. Some things pass straight through and some <b>only get through a door</b>.",
+  "predict": {
+   "q": "There is <b>plenty of sodium (Na⁺) outside the cell and almost none inside.</b> Will the sodium get in by itself?",
+   "opts": [
+    "Yes - it flows from where there is more to where there is less",
+    "<b>No</b> - it cannot pass the membrane and needs a channel",
+    "Yes, but very slowly",
+    "More goes out instead"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Simple Diffusion</b> screen. The horizontal line across the middle is the <b>membrane</b>: <b>Outside</b> above, <b>Inside</b> below.",
+   "In the <b>Solute Concentrations</b> panel below, choose <b>O₂</b> and put plenty of it <b>outside the cell</b> only.",
+   "Watch for a moment. Does the oxygen go <b>straight through</b> the membrane?",
+   "Leave it until the oxygen is <b>about the same</b> on both sides. That is the end of diffusion, or <b>equilibrium</b>.",
+   "Now put plenty of <b>Na⁺</b> <b>outside the cell</b> only. Does the same thing happen as with oxygen? That is the answer to ②.",
+   "Try <b>Glucose</b> the same way. What about a big, heavy molecule?",
+   "Turn on <b>Crossing Highlights</b> on the right and the moment of crossing flashes.",
+   "Use the house button to reach the <b>Facilitated Diffusion</b> screen, where you can drag <b>transport proteins</b> into the <b>empty slots</b> along the top.",
+   "Put a sodium channel in and add sodium again. Does it get through this time?",
+   "Even with a channel, <b>which way</b> does it flow? From more to less?",
+   "Go to the <b>Active Transport</b> screen and fit a <b>pump</b>. This time it pushes <b>from less to more</b>. It spends energy to do it."
+  ],
+  "record": "Note whether oxygen, sodium and glucose each went straight through the membrane. And which way did the sodium flow once you fitted a channel?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>no</strong>. However much of it there is outside, sodium cannot get past the membrane <strong>without a channel</strong>.</p><p>A cell membrane is a thin layer of fatty material, so what gets through is decided by <strong>size and character</strong>.</p><ul><li><strong>Small and electrically neutral</strong> (O₂, CO₂) - <strong>goes straight through.</strong></li><li><strong>Charged ions</strong> (Na⁺, K⁺) - cannot get through the fatty layer. <strong>Needs a channel.</strong></li><li><strong>Big, heavy molecules</strong> (glucose) - <strong>also needs a channel.</strong></li></ul><p>That is why a membrane is called <strong>selectively permeable</strong>. It does not just sieve by size; it <strong>chooses what to let in</strong>.</p><p>That the sodium flowed <strong>from more to less</strong> once you fitted a channel matters too. A channel only <strong>opens a door</strong>; the direction is still set by concentration. That is <strong>facilitated diffusion</strong> - it helps, but it cannot go against the flow.</p><p><strong>Active transport</strong> is genuinely different. A pump pushes <strong>from less to more</strong>. Water does not run uphill by itself, and neither does this - <strong>it is not free.</strong> The cell has to spend energy.</p><p>Why bother? Because a cell has to keep the concentrations inside and outside <strong>deliberately different</strong>. That difference makes nerve signals and draws nutrients in. <strong>Left alone everything equalises, so being alive is a matter of standing against equilibrium.</strong></p><p>The <strong>concentration</strong> of course 09 is used exactly as it stands. The difference is that there it was one beaker and here it is <strong>two rooms divided by a membrane</strong>.</p>"
+  },
+  "real": "A nerve sending a signal is a matter of sodium and potassium concentration differences. A large part of the energy your body uses goes into running those pumps. Getting the concentration of a drip exactly right, kidneys filtering out only the waste, vegetables pickling in brine - all stories about membranes and concentrations.",
+  "quiz": [
+   {
+    "q": "Which of these can go <b>straight through</b> a cell membrane?",
+    "opts": [
+     "Na⁺ ions",
+     "Oxygen (O₂)",
+     "Glucose"
+    ],
+    "right": 1
+   },
+   {
+    "q": "In <b>facilitated diffusion</b>, which way does a substance flow?",
+    "opts": [
+     "From more to less",
+     "From less to more",
+     "Either way"
+    ],
+    "right": 0
+   },
+   {
+    "q": "How does <b>active transport</b> differ from diffusion?",
+    "opts": [
+     "It is faster",
+     "It spends energy to move against the concentration",
+     "It needs no channel"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "life-3": {
+  "course": "life",
+  "sim": "greenhouse-effect",
+  "screens": null,
+  "title": "What comes in has to go out for the temperature to hold",
+  "lead": "Raise the greenhouse gases and does the energy the Earth sends to space go down? The answer is \"for a while\".",
+  "hook": "Lesson 2 said a cell keeps inside and outside different <b>by standing against equilibrium</b>. The Earth is solving a similar problem. Energy comes in from the Sun and goes out to space, and <b>as much out as in</b> holds the temperature steady. So what if you raise the greenhouse gases and block the way out? Does the Earth simply keep getting hotter? This sim has an <b>Energy Balance</b> panel so you can see the answer for yourself.",
+  "predict": {
+   "q": "You <b>raise the greenhouse gas concentration sharply.</b> What eventually happens to the energy the Earth sends to space?",
+   "opts": [
+    "It stays down",
+    "It goes up immediately",
+    "It does not change",
+    "It <b>dips for a while</b>, then as the Earth warms it matches <b>what comes in</b> again"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Waves</b> screen. Tick <b>Energy Balance</b> at the <b>bottom right</b> of the view, and <b>In · Out · Net</b> bars appear at the <b>top left</b>.",
+   "Press <b>Start Sunlight</b> in the middle to switch the sunlight on.",
+   "Set the <b>Greenhouse Gas Concentration</b> on the right to <b>None</b> and wait. Net goes to <b>0</b> and the temperature settles. Write that temperature down.",
+   "Now push the concentration sharply toward <b>Lots</b>. What happens to the <b>Out</b> bar?",
+   "Look at the <b>Net</b> bar. It is no longer 0 and the temperature starts to rise.",
+   "Leave it running <b>a good while</b>. The temperature rises and then stops. What is <b>Net</b> then? That is the answer to ②.",
+   "Note the new temperature and compare it against the first.",
+   "Watch where the <b>Infrared</b> waves turn back on screen. Greenhouse gases <b>let the sunlight through and catch only the infrared</b>.",
+   "Under <b>Energy</b> on the right, switch between <b>Sunlight</b> and <b>Infrared</b> and compare the lengths of the two waves.",
+   "Turn on the <b>Cloud</b>. A cloud turns <b>sunlight</b> back - the opposite direction to a greenhouse gas.",
+   "Below the <b>Greenhouse Gas Concentration</b> box on the right are <b>two buttons with no words</b>. Press the right-hand one (the calendar picture, for choosing by period) and work through <b>Ice Age · 1750 · 1950 · 2020</b>, noting the temperature.",
+   "Use the house button to reach the <b>Photons</b> screen to see the same thing <b>grain by grain</b>."
+  ],
+  "record": "Write down the settled temperature with no greenhouse gas and with plenty of it. And what was the Net bar once the temperature had settled?",
+  "explain": {
+   "right": 3,
+   "body": "<p>The answer is <strong>it dips for a while and then matches what comes in again</strong>. On screen <strong>the Net bar will have come back to 0</strong>.</p><p>Follow it through.</p><ul><li>Raise the greenhouse gases and more infrared is caught, so <strong>Out falls.</strong></li><li>In is unchanged and Out has fallen, so <strong>Net goes positive</strong> and energy piles up on Earth.</li><li>Piling up means <strong>the temperature rises.</strong></li><li>But a hotter object <strong>gives off more infrared</strong>. So Out climbs back up.</li><li>Eventually In = Out again, <strong>at a higher temperature</strong>.</li></ul><p>So what greenhouse gases do is not <strong>heat the Earth forever</strong> but <strong>raise the temperature at which the balance settles</strong>. Pile on a thicker duvet and your temperature does not climb without limit; you <strong>settle warmer</strong>.</p><p>What matters is that this change of temperature is <strong>not free</strong>. Energy accumulates on the way to the new balance, and while it does, ice melts and the sea expands.</p><p>That <strong>greenhouse gases catch only infrared</strong> is central too. They let sunlight through and catch only the infrared the Earth radiates back. Course 05, lesson 3 said <strong>each atom absorbs particular wavelengths</strong>, and here it is on a planetary scale. Course 09, lesson 5 said each substance has <strong>a colour it eats well</strong> - the same story.</p><p>The <strong>cloud</strong> worked the other way. It turns sunlight back and reduces <strong>In</strong>. Which is part of why climate is hard to predict - the warming and the cooling move together.</p><p>If you noted the temperatures by period, <strong>the change after 1750</strong> will have stood out. That is the industrial revolution.</p>"
+  },
+  "real": "Venus is the useful comparison. It is only the second planet out, yet its surface is 460 °C - hotter than Mercury. Its atmosphere is 96% carbon dioxide, so the greenhouse effect is extreme. The Moon, with no atmosphere at all, swings between 120 °C by day and −170 °C by night. <b>The duvet of an atmosphere</b> is what makes Earth liveable.",
+  "quiz": [
+   {
+    "q": "What do greenhouse gases catch?",
+    "opts": [
+     "The incoming sunlight",
+     "The infrared the Earth gives off",
+     "Both equally"
+    ],
+    "right": 1
+   },
+   {
+    "q": "The temperature being <b>settled</b> means:",
+    "opts": [
+     "The incoming energy is 0",
+     "What comes in equals what goes out",
+     "The outgoing energy is 0"
+    ],
+    "right": 1
+   },
+   {
+    "q": "<b>In this sim</b>, what does the cloud do?",
+    "opts": [
+     "Catches infrared and warms things",
+     "Turns sunlight back and cools things",
+     "Has no effect"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

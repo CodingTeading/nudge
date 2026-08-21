@@ -3434,5 +3434,233 @@
    "The shape buttons have <b>no words on them.</b> Tell them apart by picture.",
    "This sim was built for high school and university. This lesson uses only the <b>Derivative</b> screen."
   ]
+ },
+ "natural-selection": {
+  "summary": "Run a population of rabbits through <b>many generations</b> and watch how the proportions of a trait change. <b>Mutation</b> and <b>environmental factors</b> can be switched on separately, so you can confirm for yourself that it takes both to produce a change.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Where this lesson starts. The background is fixed and only the basic controls are there."
+   },
+   {
+    "name": "Lab",
+    "what": "Set the environment and the conditions more freely. You can switch between snow and bare earth."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Add a Mate · Play · Start Over (top centre)",
+    "desc": "<b>Gives the single rabbit a mate</b> and starts it breeding. After that the generations advance by themselves.",
+    "tip": "The experiment does not start until you press this. Before that, one rabbit sits there doing nothing."
+   },
+   {
+    "name": "Add Mutation (top right)",
+    "desc": "Choose <b>Fur · Ears · Teeth</b> and put a new trait into the population. You can make it <b>Dominant</b> or <b>Recessive</b>.",
+    "tip": "Put it in as <b>Dominant</b> and the change shows quickly. A recessive one hides for a while before it appears, which is much slower."
+   },
+   {
+    "name": "Environmental Factors (right) - Wolves · Tough Food · Limited Food",
+    "desc": "The <b>selection pressure</b> that decides what is favoured. Nothing has a direction until you switch one on.",
+    "tip": "The key switch of this lesson. Compare the proportions <b>before and after</b> switching one on and natural selection appears in one go. Different traits suit different factors - fur goes with wolves, teeth with food."
+   },
+   {
+    "name": "The graph chooser (bottom right) - Population · Proportions · Pedigree · None",
+    "desc": "<b>Population</b> is head count, <b>Proportions</b> is the share held by each trait, and <b>Pedigree</b> shows the descendants of one rabbit.",
+    "tip": "<b>Proportions</b> suits this lesson best. Whether the head count rises or falls, <b>how the shares change</b> is what natural selection is."
+   },
+   {
+    "name": "Turning trait lines on (the graph on the left)",
+    "desc": "Choose what to show from <b>White Fur · Brown Fur · Straight Ears · Floppy Ears · Short Teeth · Long Teeth</b>.",
+    "tip": "Leave <b>only the two traits</b> you are experimenting with switched on and the graph is far easier to read."
+   },
+   {
+    "name": "Data Probe (the probe on the graph)",
+    "desc": "Drag it onto the graph and it reads the exact values for that generation.",
+    "tip": "Use it when you want to know \"around which generation did it flip\"."
+   },
+   {
+    "name": "Alleles (bottom left)",
+    "desc": "Shows the proportions of dominant and recessive genes as <b>F/f · E/e · T/t</b>.",
+    "tip": "The proportions of the appearance (fur colour) and of the <b>genes</b> can differ. A recessive gene stays in the population without showing."
+   },
+   {
+    "name": "Pause · Reset All",
+    "desc": "Stop, or start again from the beginning.",
+    "tip": "Too many rabbits and the screen gets crowded. When you want to change conditions and go again, <b>Reset All</b> is quickest."
+   }
+  ],
+  "steps": [
+   "Press <b>Add a Mate</b> to start the breeding.",
+   "Under <b>Add Mutation</b>, add <b>Brown Fur</b> as <b>Dominant</b>.",
+   "Set the graph to <b>Proportions</b> and turn on the white and brown fur lines.",
+   "Watch the proportions barely move while there is no environmental factor.",
+   "Turn on <b>Wolves</b> and watch the proportions change.",
+   "Watch to see whether any individual rabbit <b>changes</b> colour.",
+   "On the <b>Lab</b> screen, change the background to snow and watch the advantage flip."
+  ],
+  "gotchas": [
+   "<b>No individual rabbit changes colour.</b> What changes is the proportions in the population.",
+   "Add <b>a mutation alone</b> without switching on an environmental factor and almost nothing happens. You need both.",
+   "Added as recessive it stays out of sight for a long while. Not a fault - that is how it works.",
+   "Too strong a selection pressure can wipe <b>the whole population out</b>. That happens in reality too.",
+   "Too many rabbits and it slows down. Switching on <b>Limited Food</b> keeps the numbers in check."
+  ]
+ },
+ "membrane-transport": {
+  "summary": "The horizontal line across the middle is the <b>cell membrane</b>: outside above, inside below. Add substances from the panel below and see <b>what gets through and what does not</b>. The later screens add more tools - <b>channels then pumps</b>.",
+  "screens": [
+   {
+    "name": "Simple Diffusion",
+    "what": "Where this lesson starts. Only the things that <b>can get through on their own</b>, with no channels."
+   },
+   {
+    "name": "Facilitated Diffusion",
+    "what": "Fit <b>transport proteins</b> into the membrane. With a channel, even ions get through."
+   },
+   {
+    "name": "Active Transport",
+    "what": "Fit a <b>pump</b>. It spends energy to move things <b>against</b> the concentration."
+   },
+   {
+    "name": "Playground",
+    "what": "Use all the tools freely."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Solute Concentrations (below) - O₂ · CO₂ · Na⁺ · K⁺ · Glucose",
+    "desc": "Set how many of each substance to put <b>outside</b> and <b>inside</b> the cell.",
+    "tip": "Start with <b>one substance only</b>. Put several in at once and you cannot tell which is which."
+   },
+   {
+    "name": "The membrane (the horizontal line in the middle)",
+    "desc": "A thin layer of fatty material with <b>seven empty slots</b> along the top for proteins.",
+    "tip": "On the Simple Diffusion screen the slots are empty. Oxygen and carbon dioxide <b>still go straight through.</b>"
+   },
+   {
+    "name": "The protein toolbox (top left)",
+    "desc": "Holds the <b>transport proteins</b> and <b>pumps</b> that go into the membrane. Drag one into a slot.",
+    "tip": "Each substance has its own channel. A sodium channel is what lets sodium through - <b>any channel will not do</b>."
+   },
+   {
+    "name": "Crossing Highlights (checkbox, bottom right)",
+    "desc": "Flashes at the moment a substance crosses the membrane.",
+    "tip": "<b>Leave it on.</b> With many grains about it is hard to follow what crossed."
+   },
+   {
+    "name": "Crossing Sounds (checkbox, bottom right)",
+    "desc": "Makes a sound as things cross.",
+    "tip": "You can tell whether the flow is lively without watching. As it approaches equilibrium the sounds thin out."
+   },
+   {
+    "name": "Erase All Solutes (below)",
+    "desc": "Clears everything you have put in.",
+    "tip": "<b>Clear it</b> before moving on to the next substance, or it mixes with the last one and confuses you."
+   },
+   {
+    "name": "The slow-speed and pause controls (below)",
+    "desc": "Play slowly or stop.",
+    "tip": "To watch the moment something passes through a channel, run it <b>slowly</b>."
+   }
+  ],
+  "steps": [
+   "On the <b>Simple Diffusion</b> screen put <b>O₂</b> outside the cell only.",
+   "Watch whether it goes straight through, until it is about even on both sides.",
+   "Clear it with <b>Erase All Solutes</b> and put <b>Na⁺</b> outside only.",
+   "Confirm that it does not get through.",
+   "Try <b>Glucose</b> the same way.",
+   "On the <b>Facilitated Diffusion</b> screen fit a sodium channel and add it again.",
+   "Check <b>which way</b> it flows with a channel present.",
+   "On the <b>Active Transport</b> screen, fit a pump."
+  ],
+  "gotchas": [
+   "Each substance has <b>its own channel</b>. Fit the wrong one and nothing gets through.",
+   "A <b>channel</b> only opens a door; it cannot change the direction. Things still flow from more to less.",
+   "Only a <b>pump</b> can push against the concentration, and it spends energy to do it.",
+   "A warning like <b>Outside Sodium Too Low!</b> at the top means you need to add more of the substance.",
+   "Clear things with <b>Erase All Solutes</b> before changing substance."
+  ]
+ },
+ "greenhouse-effect": {
+  "summary": "Compare the energy the Earth takes from the Sun against the energy it sends to space, <b>as bars</b>. The <b>Energy Balance</b> panel is the heart of this sim, so switch it on at the <b>bottom right</b> of the view before anything else.",
+  "screens": [
+   {
+    "name": "Waves",
+    "what": "Where this lesson starts. Draws the sunlight and the infrared as <b>waves</b>."
+   },
+   {
+    "name": "Photons",
+    "what": "The same thing <b>grain by grain</b>. Where things turn back is clearer."
+   },
+   {
+    "name": "Layer Model",
+    "what": "Divides the atmosphere into layers and calculates. Much harder."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Energy Balance (checkbox, bottom right of the view)",
+    "desc": "Switch it on and <b>In · Out · Net</b> bars appear at the <b>top left</b> of the view, measured at the top of the atmosphere.",
+    "tip": "The <b>most important readout</b> in this sim. Once the temperature settles, <b>Net goes to 0</b> - the answer to this lesson is right there."
+   },
+   {
+    "name": "Greenhouse Gas Concentration (right) - None ↔ Lots",
+    "desc": "Sets the amount of greenhouse gas in the atmosphere.",
+    "tip": "Wait for it to settle at <b>None</b> and note the temperature, then push it to <b>Lots</b>. Comparing the two settled temperatures is the lesson."
+   },
+   {
+    "name": "The surface thermometer (bottom left)",
+    "desc": "Shows the surface temperature. You can choose <b>K · °C · °F</b>.",
+    "tip": "<b>°C</b> gives you the feel. With no greenhouse gas it is about −28 °C, and the real Earth being 15 °C is thanks to the greenhouse effect."
+   },
+   {
+    "name": "Start Sunlight (middle)",
+    "desc": "Switches the sunlight on. Nothing happens at all until you press it.",
+    "tip": "The experiment begins here. Do not be puzzled that the temperature will not move before you press it."
+   },
+   {
+    "name": "Energy (right) - Sunlight · Infrared",
+    "desc": "Turns the two kinds of light on and off separately.",
+    "tip": "Try <b>Infrared alone</b>. It shows plainly that <b>infrared is all</b> the greenhouse gas catches. Sunlight goes straight through."
+   },
+   {
+    "name": "The concentration mode chooser (under the concentration box, two picture buttons)",
+    "desc": "Chooses whether to set the greenhouse gas <b>by amount</b> or <b>by period</b>. There are no words - the left is by amount and the right, the <b>calendar picture</b>, is by period.",
+    "tip": "Switch to the calendar and you can choose <b>Ice Age · 1750 · 1950 · 2020</b>. Worth noting the temperature for each period and comparing."
+   },
+   {
+    "name": "Cloud (checkbox, bottom right)",
+    "desc": "Puts a cloud in the sky.",
+    "tip": "A cloud works <b>the opposite way</b> to a greenhouse gas. It turns sunlight back and reduces <b>In</b>. Switch it on and off and compare the temperature."
+   },
+   {
+    "name": "The flux meter (Photons screen)",
+    "desc": "Set a height and it measures the energy passing that level.",
+    "tip": "Move it up and down to see <b>at what height the infrared drops off</b>, which tells you where the greenhouse gas is acting."
+   },
+   {
+    "name": "The slow-speed and step controls (below)",
+    "desc": "Play slowly or advance a frame at a time.",
+    "tip": "To catch one grain turning back on the <b>Photons</b> screen, run it slowly."
+   }
+  ],
+  "steps": [
+   "Tick <b>Energy Balance</b> at the <b>bottom right</b> of the view.",
+   "Press <b>Start Sunlight</b> to switch the sunlight on.",
+   "At <b>None</b>, wait for Net to reach 0 and note the temperature.",
+   "Push the concentration to <b>Lots</b> and watch the <b>Out</b> bar fall.",
+   "Leave it a good while until the temperature settles.",
+   "Note the <b>Net</b> and the <b>temperature</b> then, and compare with the first.",
+   "Switch the <b>Cloud</b> on and off and compare the temperature.",
+   "Switch to the <b>calendar</b> button under the concentration box and note the temperature for each period."
+  ],
+  "gotchas": [
+   "Nothing happens at all until you press <b>Start Sunlight</b>.",
+   "The temperature <b>takes time</b> to settle. Do not keep fiddling because it does not move at once.",
+   "<b>Net</b> reaching 0 means what comes in and what goes out have become equal. It does not mean the energy is 0.",
+   "Greenhouse gases catch <b>the infrared, not the sunlight</b>. A cloud does the opposite and turns sunlight back.",
+   "The concentration mode chooser has <b>no words on it</b> - tell the two pictures apart. The temperature units are <b>K · °C · °F</b>.",
+   "The <b>Layer Model</b> screen is beyond this lesson."
+  ]
  }
 }
