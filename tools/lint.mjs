@@ -184,13 +184,38 @@ console.log( '\n[7] 본문 조판' );
     }
   };
 
-  scan( read( `content/${ BASE }/lessons.json` ) || {}, 'lessons', PLAIN.lessons );
-  scan( read( `content/${ BASE }/guides.json` ) || {}, 'guides', [] );
+  /* 있는 언어는 전부 봅니다. 새 언어 원고가 검사 없이 들어오면
+     태그 깨짐과 보이지 않는 문자를 아무도 못 잡습니다. */
   for ( const L of LANGS ) {
+    const l = read( `content/${ L }/lessons.json` );
+    if ( l ) { scan( l, `lessons(${ L })`, PLAIN.lessons ); }
+    const g = read( `content/${ L }/guides.json` );
+    if ( g ) { scan( g, `guides(${ L })`, [] ); }
     const c = read( `content/${ L }/courses.json` );
     if ( c ) { scan( c, `courses(${ L })`, PLAIN.courses ); }
   }
   if ( !typo ) { ok( '태그 · 조사 띄어쓰기 · 레이블 콜론 이상 없음' ); }
+}
+
+/* ── [8] 코스 시간 ─────────────────────────────────────────────
+   courses[].minutes 는 그 코스 레슨 min 의 합입니다. 손으로 적는 값이라
+   레슨을 더하거나 시간을 고칠 때 조용히 어긋납니다. */
+{
+  console.log( '\n[8] 코스 시간 합' );
+  let bad = 0;
+  for ( const L of LANGS ) {
+    const c = read( `content/${ L }/courses.json` );
+    if ( !c ) { continue; }
+    for ( const course of c.courses ) {
+      const rows = c.lessons[ course.id ] || [];
+      const sum = rows.reduce( ( a, r ) => a + ( r.min || 0 ), 0 );
+      if ( sum !== course.minutes ) {
+        err( `courses(${ L })/${ course.id }: minutes ${ course.minutes } ≠ 레슨 합 ${ sum }` );
+        bad++;
+      }
+    }
+  }
+  if ( !bad ) { ok( '코스마다 minutes 가 레슨 min 의 합과 일치' ); }
 }
 
 console.log( `\n오류 ${ errors } · 경고 ${ warns }\n` );

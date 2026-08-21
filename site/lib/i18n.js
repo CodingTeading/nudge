@@ -23,6 +23,10 @@ export const BASE = 'ko';
 const KEY = 'nudge.lang';
 
 export function currentLang() {
+  /* 구운 파일은 자기 언어를 알고 있습니다. 경로가 곧 언어입니다. */
+  if ( window.__NUDGE?.lang ) { return window.__NUDGE.lang; }
+  const seg = location.pathname.split( '/' )[ 1 ];
+  if ( LANGS.some( l => l.code === seg ) ) { return seg; }
   const q = new URLSearchParams( location.search ).get( 'lang' );
   const saved = localStorage.getItem( KEY );
   const nav = ( navigator.language || '' ).slice( 0, 2 );
@@ -34,9 +38,7 @@ export function currentLang() {
 
 export function setLang( code ) {
   localStorage.setItem( KEY, code );
-  const u = new URL( location.href );
-  u.searchParams.set( 'lang', code );
-  location.href = u;
+  location.href = samePageIn( code );
 }
 
 const cache = new Map();
@@ -121,4 +123,37 @@ export function langPicker( lang ) {
 export function withLang( href, lang ) {
   if ( lang === BASE ) { return href; }
   return href + ( href.includes( '?' ) ? '&' : '?' ) + 'lang=' + lang;
+}
+
+/* ── 주소 만들기 ──────────────────────────────────────────────────
+ * 카카오톡·네이버의 미리보기 수집기는 자바스크립트를 실행하지 않습니다.
+ * 그래서 코스와 레슨마다 <head> 를 미리 구운 파일을 따로 두고, 주소도
+ * 쿼리가 아니라 경로로 잡습니다 — 쿼리로는 파일 하나에 머리말 하나뿐이라
+ * 61편이 전부 같은 미리보기를 갖게 됩니다.
+ *
+ *   ko   /            /all        /c/<코스>      /l/<레슨>
+ *   그 외 /en/         /en/all     /en/c/<코스>   /en/l/<레슨>
+ *
+ * 확장자는 붙이지 않습니다. Cloudflare Pages 가 .html 을 떼고 되돌려 보내는데,
+ * 처음부터 없는 주소로 링크하면 그 우회가 없어집니다.
+ */
+const base = lang => ( lang === BASE ? '/' : `/${ lang }/` );
+
+export const homePath = lang => base( lang );
+export const allPath = lang => base( lang ) + 'all';
+export const coursePath = ( id, lang ) => base( lang ) + 'c/' + id;
+export const lessonPath = ( id, lang ) => base( lang ) + 'l/' + id;
+
+/** 지금 보고 있는 문서를 다른 언어로 바꾼 주소. 언어 고르개가 씁니다. */
+export function samePageIn( lang ) {
+  const n = window.__NUDGE;
+  if ( n?.kind === 'course' ) { return coursePath( n.id, lang ); }
+  if ( n?.kind === 'lesson' ) { return lessonPath( n.id, lang ); }
+  if ( n?.kind === 'all' ) { return allPath( lang ); }
+  if ( n?.kind === 'home' ) { return homePath( lang ); }
+  /* 구운 파일이 아니라 셸(course.html?c=…)로 들어온 경우 */
+  const q = new URLSearchParams( location.search );
+  if ( q.get( 'c' ) ) { return coursePath( q.get( 'c' ), lang ); }
+  if ( q.get( 'l' ) ) { return lessonPath( q.get( 'l' ), lang ); }
+  return homePath( lang );
 }

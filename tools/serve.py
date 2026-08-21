@@ -3,7 +3,7 @@
 Windows 의 Python 은 .js 의 MIME 을 레지스트리에서 읽어 오는데, 많은 기계에서
 text/plain 으로 잡혀 있어 ES 모듈 로딩이 막힙니다. 그래서 확장자 표를 직접 고정합니다.
 """
-import http.server, socketserver, sys
+import http.server, os, socketserver, sys
 
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8123
 ROOT = sys.argv[2] if len(sys.argv) > 2 else 'dist'
@@ -33,6 +33,16 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # 시안 작업 중에는 캐시가 방해만 됩니다.
         self.send_header('Cache-Control', 'no-store')
         super().end_headers()
+
+    def translate_path(self, path):
+        # Cloudflare Pages 는 확장자 없는 주소에 .html 을 붙여 찾아 줍니다.
+        # 로컬에서도 같게 굴어야 /c/<id> 같은 주소를 여기서 확인할 수 있습니다.
+        full = super().translate_path(path)
+        if not os.path.exists(full) and not path.rstrip().endswith('/'):
+            cand = full + '.html'
+            if os.path.isfile(cand):
+                return cand
+        return full
 
     def send_head(self):
         # 조건부 요청(304)도 막아 항상 새로 내려보냅니다.

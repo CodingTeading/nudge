@@ -17,10 +17,9 @@ BASE = 'ko'
 
 
 def url_for(path, lang):
-    if lang == BASE:
-        return f'{ORIGIN}/{path}'
-    sep = '&' if '?' in path else '?'
-    return f'{ORIGIN}/{path}{sep}lang={lang}'
+    """경로 기반 주소. tools/bake-head.py 가 내는 파일 위치와 반드시 같아야 합니다."""
+    base = '/' if lang == BASE else f'/{lang}/'
+    return ORIGIN + base + path
 
 
 def entry(path, priority, changefreq):
@@ -41,14 +40,14 @@ def main():
     data = json.load(io.open(f'{ROOT}/content/{BASE}/courses.json', encoding='utf-8'))
     sims = json.load(io.open('../phet/deploy/sims.json', encoding='utf-8'))
 
-    rows = [entry('index.html', '1.0', 'weekly')]
+    rows = [entry('', '1.0', 'weekly'), entry('all', '0.7', 'weekly')]
     for c in data['courses']:
-        rows.append(entry(f"course.html?c={c['id']}", '0.9', 'monthly'))
+        rows.append(entry(f"c/{c['id']}", '0.9', 'monthly'))
     ready = 0
     for cid, ls in data['lessons'].items():
         for l in ls:
             if l.get('ready'):
-                rows.append(entry(f"lesson.html?l={l['id']}", '0.8', 'monthly'))
+                rows.append(entry(f"l/{l['id']}", '0.8', 'monthly'))
                 ready += 1
 
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -72,7 +71,7 @@ def main():
     )
     io.open(f'{ROOT}/robots.txt', 'w', encoding='utf-8').write(robots)
 
-    print('sitemap.xml : %d urls (home 1 + courses %d + lessons %d)'
+    print('sitemap.xml : %d urls (home + all + courses %d + lessons %d)'
           % (len(rows), len(data['courses']), ready))
     print('robots.txt  : written')
     print('sims not indexed: %d files under /sims/' % len(sims))

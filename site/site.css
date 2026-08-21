@@ -664,6 +664,9 @@ footer.site {
   color: var(--ink-faint); font-size: 13px;
 }
 footer.site a { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 2px; }
+footer.site p + p { margin-top: 6px; }
+/* 저작권 줄은 한 칸 떼어 이용 안내와 구분합니다. */
+footer.site .copy { margin-top: 14px; letter-spacing: .04em; opacity: .75; }
 
 /* ══════════════════════════ 반응형 ══════════════════════════ */
 

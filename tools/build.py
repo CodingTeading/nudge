@@ -7,7 +7,7 @@ dist/ 는 git 에 넣지 않습니다. 시뮬레이션 61종(약 205MB)은 PhET 
 
   NUDGE_PHET=../phet python tools/build.py   # PhET 포크 위치를 바꾸려면
 """
-import os, shutil, sys
+import os, runpy, shutil, sys
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PHET = os.environ.get('NUDGE_PHET', os.path.join(HERE, '..', 'phet'))
@@ -68,6 +68,13 @@ def main():
         dst = os.path.join(DIST, name)
         (shutil.copytree if os.path.isdir(src) else shutil.copy2)(src, dst)
         rows.append(('%s (phet fork)' % name, count_of(src), size_of(src)))
+
+    # 3) 사이트 페이지마다 <head> 를 구워 정적 HTML 로 냅니다.
+    #    카카오톡·네이버의 미리보기 수집기는 자바스크립트를 실행하지 않습니다.
+    print()
+    sys.argv = [ sys.argv[0], DIST ]
+    runpy.run_path(os.path.join(HERE, 'tools', 'bake-head.py'), run_name='__main__')
+    print()
 
     print('dist/ 조립 완료\n')
     for label, n, sz in rows:

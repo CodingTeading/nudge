@@ -26,6 +26,16 @@ cmap = f.getBestCmap()
 gs = f.getGlyphSet()
 hmtx = f['hmtx']
 
+def round_path(d, nd=2):
+    """0.1 → 58.400000000000006 같은 부동소수 찌꺼기를 잘라 냅니다.
+    100 단위 좌표계라 소수 두 자리면 화면에서 구별되지 않습니다."""
+    import re
+    def f(m):
+        v = round(float(m.group()), nd)
+        return f'{v:g}'
+    return re.sub(r'-?\d+\.\d+', f, d)
+
+
 scale = CAP / upem
 # 폰트 좌표는 y 가 위로 자라고 SVG 는 아래로 자랍니다. 뒤집고 기준선을 내립니다.
 ascent = f['hhea'].ascent * scale
@@ -38,7 +48,7 @@ for ch in WORD:
     # 글자 하나를 옮기고(x), 뒤집고(-1), 기준선 위에 올립니다.
     tpen = TransformPen(pen, Transform(scale, 0, 0, -scale, x, ascent))
     gs[gname].draw(tpen)
-    d = pen.getCommands()
+    d = round_path(pen.getCommands())
     if d:
         paths.append(d)
     x += hmtx[gname][0] * scale
