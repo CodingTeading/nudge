@@ -728,6 +728,73 @@
         "min": 15,
         "diff": 3
       }
+    ],
+    "matter": [
+      {
+        "id": "matter-1",
+        "ready": true,
+        "sim": "states-of-matter",
+        "title": "얼음과 물은 같은 알갱이다",
+        "hook": "데우면 알갱이가 커지는 걸까, 빨라지는 걸까?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "matter-2",
+        "ready": true,
+        "sim": "gas-properties",
+        "title": "압력은 알갱이가 벽을 때리는 것이다",
+        "hook": "풍선을 부풀리는 건 정확히 무엇일까?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "matter-3",
+        "ready": true,
+        "sim": "molecule-shapes",
+        "title": "물은 왜 굽어 있을까",
+        "hook": "CO₂는 일직선인데 H₂O는 왜 굽었을까?",
+        "min": 14,
+        "diff": 3
+      },
+      {
+        "id": "matter-4",
+        "ready": true,
+        "sim": "molecule-polarity",
+        "title": "모양이 성질을 바꾼다",
+        "hook": "결합이 치우쳤는데 분자는 안 치우칠 수 있을까?",
+        "min": 15,
+        "diff": 3
+      }
+    ],
+    "quantum": [
+      {
+        "id": "quantum-1",
+        "ready": true,
+        "sim": "quantum-coin-toss",
+        "title": "가려진 동전과 양자 동전의 차이",
+        "hook": "'아직 모른다'와 '아직 정해지지 않았다'는 어떻게 다를까?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "quantum-2",
+        "ready": true,
+        "sim": "quantum-measurement",
+        "title": "재는 순간 바뀐다",
+        "hook": "재는 순서를 바꾸면 결과가 달라진다면?",
+        "min": 14,
+        "diff": 3
+      },
+      {
+        "id": "quantum-3",
+        "ready": true,
+        "sim": "quantum-bound-states",
+        "title": "가두면 에너지가 계단이 된다",
+        "hook": "전자가 정해진 계단 위에만 있는 이유는 뭘까?",
+        "min": 14,
+        "diff": 3
+      }
     ]
   }
 }

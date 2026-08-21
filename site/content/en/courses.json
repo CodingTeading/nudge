@@ -729,6 +729,73 @@
         "min": 15,
         "diff": 3
       }
+    ],
+    "matter": [
+      {
+        "id": "matter-1",
+        "ready": true,
+        "sim": "states-of-matter",
+        "title": "Ice and water are the same particles",
+        "hook": "Heat it up — do the particles get bigger, or faster?",
+        "min": 13,
+        "diff": 1
+      },
+      {
+        "id": "matter-2",
+        "ready": true,
+        "sim": "gas-properties",
+        "title": "Pressure is particles hitting the wall",
+        "hook": "What exactly is it that inflates a balloon?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "matter-3",
+        "ready": true,
+        "sim": "molecule-shapes",
+        "title": "Why water is bent",
+        "hook": "CO₂ is straight — so why isn't H₂O?",
+        "min": 14,
+        "diff": 3
+      },
+      {
+        "id": "matter-4",
+        "ready": true,
+        "sim": "molecule-polarity",
+        "title": "Shape decides the properties",
+        "hook": "Can every bond be lopsided while the molecule is not?",
+        "min": 15,
+        "diff": 3
+      }
+    ],
+    "quantum": [
+      {
+        "id": "quantum-1",
+        "ready": true,
+        "sim": "quantum-coin-toss",
+        "title": "A hidden coin is not a quantum coin",
+        "hook": "How is \"I don't know yet\" different from \"it isn't decided yet\"?",
+        "min": 14,
+        "diff": 2
+      },
+      {
+        "id": "quantum-2",
+        "ready": true,
+        "sim": "quantum-measurement",
+        "title": "Measuring changes it",
+        "hook": "What if changing the order of measurements changed the answer?",
+        "min": 14,
+        "diff": 3
+      },
+      {
+        "id": "quantum-3",
+        "ready": true,
+        "sim": "quantum-bound-states",
+        "title": "Trap it and the energy becomes steps",
+        "hook": "Why can an electron only sit on certain rungs?",
+        "min": 14,
+        "diff": 3
+      }
     ]
   }
 }

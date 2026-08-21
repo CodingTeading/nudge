@@ -27,5 +27,13 @@
   "greenhouse-effect": {
     "_why": "sims.json 에 '에너지' 로 들어 있습니다. 실험 안에서는 '온실 효과' 로 나옵니다.",
     "ko": "온실 효과"
+  },
+  "gas-properties": {
+    "_why": "sims.json 에 '불변 상태' 로 들어 있습니다 — 실험 안의 조작 이름입니다. 제목은 '기체의 성질' 입니다.",
+    "ko": "기체의 성질"
+  },
+  "quantum-measurement": {
+    "_why": "sims.json 에 '평균 분극 표현' 으로 들어 있습니다. 원제는 Quantum Measurement 입니다.",
+    "ko": "양자 측정"
   }
 }

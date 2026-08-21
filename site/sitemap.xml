@@ -691,4 +691,74 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://nudge.codingteading.com/lesson.html?l=matter-1</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nudge.codingteading.com/lesson.html?l=matter-1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nudge.codingteading.com/lesson.html?l=matter-1&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nudge.codingteading.com/lesson.html?l=matter-1&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nudge.codingteading.com/lesson.html?l=matter-1&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nudge.codingteading.com/lesson.html?l=matter-1"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nudge.codingteading.com/lesson.html?l=matter-2</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nudge.codingteading.com/lesson.html?l=matter-2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nudge.codingteading.com/lesson.html?l=matter-2&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nudge.codingteading.com/lesson.html?l=matter-2&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nudge.codingteading.com/lesson.html?l=matter-2&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nudge.codingteading.com/lesson.html?l=matter-2"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nudge.codingteading.com/lesson.html?l=matter-3</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nudge.codingteading.com/lesson.html?l=matter-3"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nudge.codingteading.com/lesson.html?l=matter-3&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nudge.codingteading.com/lesson.html?l=matter-3&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nudge.codingteading.com/lesson.html?l=matter-3&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nudge.codingteading.com/lesson.html?l=matter-3"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nudge.codingteading.com/lesson.html?l=matter-4</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nudge.codingteading.com/lesson.html?l=matter-4"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nudge.codingteading.com/lesson.html?l=matter-4&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nudge.codingteading.com/lesson.html?l=matter-4&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nudge.codingteading.com/lesson.html?l=matter-4&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nudge.codingteading.com/lesson.html?l=matter-4"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nudge.codingteading.com/lesson.html?l=quantum-1</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nudge.codingteading.com/lesson.html?l=quantum-1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nudge.codingteading.com/lesson.html?l=quantum-1&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nudge.codingteading.com/lesson.html?l=quantum-1&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nudge.codingteading.com/lesson.html?l=quantum-1&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nudge.codingteading.com/lesson.html?l=quantum-1"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nudge.codingteading.com/lesson.html?l=quantum-2</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nudge.codingteading.com/lesson.html?l=quantum-2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nudge.codingteading.com/lesson.html?l=quantum-2&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nudge.codingteading.com/lesson.html?l=quantum-2&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nudge.codingteading.com/lesson.html?l=quantum-2&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nudge.codingteading.com/lesson.html?l=quantum-2"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nudge.codingteading.com/lesson.html?l=quantum-3</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nudge.codingteading.com/lesson.html?l=quantum-3"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nudge.codingteading.com/lesson.html?l=quantum-3&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nudge.codingteading.com/lesson.html?l=quantum-3&amp;lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nudge.codingteading.com/lesson.html?l=quantum-3&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nudge.codingteading.com/lesson.html?l=quantum-3"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
