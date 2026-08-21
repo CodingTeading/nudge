@@ -3174,5 +3174,265 @@
    "When the apples will not divide exactly, <b>pieces</b> appear. Not an error - the result of a division can be a fraction.",
    "There are four screens and they get harder. <b>Level Out → Fair Share → Balance Point</b> is the order to take."
   ]
+ },
+ "graphing-lines": {
+  "summary": "<b>The graph on the left, the equation on the right.</b> They are joined, so dragging a point on the graph changes the equation and changing a number in the equation moves the line. Work from either side.",
+  "screens": [
+   {
+    "name": "Slope",
+    "what": "Where this lesson starts. See how two points settle a slope."
+   },
+   {
+    "name": "Slope-Intercept",
+    "what": "Works in the y = mx + b form. <b>Lesson 2 uses it properly</b> - you can skip it here."
+   },
+   {
+    "name": "Point-Slope",
+    "what": "Fixes a line from one point and a slope. A brief visit at the end of lesson 1."
+   },
+   {
+    "name": "Line Game",
+    "what": "A six-level check game. Draw the line from the equation, or make the equation from the line."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The points on the graph (left)",
+    "desc": "Drag a round point and the line follows and the equation on the right changes at once.",
+    "tip": "The main action here. Land them <b>exactly on the grid</b> and the values come out whole, which makes the arithmetic easy."
+   },
+   {
+    "name": "The numbers in the equation (top right)",
+    "desc": "Each number in the equation has up and down arrows. Press them and <b>the graph follows.</b>",
+    "tip": "Dragging the graph and changing the equation are <b>the same thing</b>. Use the equation when you need an exact value and the graph when you want the feel."
+   },
+   {
+    "name": "The slope value (top right of the graph)",
+    "desc": "Shows the current slope as a fraction, written as <b>the vertical difference over the horizontal difference</b>.",
+    "tip": "Check here which of the two is the vertical one. It stops you memorising the slope upside down."
+   },
+   {
+    "name": "Save Line · Erase Lines (right)",
+    "desc": "<b>Save Line</b> leaves the current line on screen in a faded colour. <b>Erase Lines</b> clears everything you have left.",
+    "tip": "The most useful button in this sim. <b>Save before you change</b> and you can see before and after side by side. Do not rely on memory."
+   },
+   {
+    "name": "Line Game - choosing a level",
+    "desc": "Six levels. The higher you go, the less information you are given.",
+    "tip": "From <b>level 3</b> it gives you two points and asks for the equation. Lesson 1 alone is enough to solve it."
+   }
+  ],
+  "steps": [
+   "On the <b>Slope</b> screen, drag the two points about.",
+   "Set the points to <b>(1, 2)</b> and <b>(3, 8)</b> and read the slope.",
+   "Run the line <b>down to the right</b> and watch the slope go negative.",
+   "Make the line <b>horizontal</b> and then <b>vertical</b> and see what each gives.",
+   "Keep one with <b>Save Line</b> and compare it against a line of a different slope.",
+   "On the <b>Point-Slope</b> screen, see one point and a slope fix a line."
+  ],
+  "gotchas": [
+   "Slope is <b>the vertical difference over the horizontal</b>. Flip it and your answer is the reciprocal.",
+   "A vertical line reads <b>slope undefined</b>. Not infinite - <b>no value at all</b>, because it would mean dividing by 0.",
+   "Saved lines stay faded on screen. When they get confusing, tidy up with <b>Erase Lines</b>.",
+   "This sim has four screens. The <b>Slope-Intercept</b> screen belongs to lesson 2."
+  ]
+ },
+ "graphing-slope-intercept": {
+  "summary": "The <b>Slope-Intercept screen only</b>, lifted out of the previous sim (Graphing Lines). The controls are identical so there is nothing new to learn, but the <b>Line Game</b> here is built around y = mx + b.",
+  "screens": [
+   {
+    "name": "Slope-Intercept",
+    "what": "The screen this lesson uses. The equation is fixed in the form <b>y = m x + b</b>."
+   },
+   {
+    "name": "Line Game",
+    "what": "A six-level game. The back half of this lesson happens here."
+   }
+  ],
+  "controls": [
+   {
+    "name": "m (slope) · b (y-intercept) - the equation at the top right",
+    "desc": "Change the two numbers in the equation with the up and down arrows. m can be set as a fraction.",
+    "tip": "<b>Change one at a time, always.</b> Move both and you cannot tell which did what. That distinction is the whole lesson."
+   },
+   {
+    "name": "The handles on the graph (left)",
+    "desc": "There are two points on the line. Drag the one on the y axis and <b>b</b> changes; drag the other and <b>m</b> changes.",
+    "tip": "Dragging the point on the y axis is how you feel with your hand that <b>b is the height at which it meets the y axis</b>."
+   },
+   {
+    "name": "Save Line · Erase Lines (right)",
+    "desc": "Leave the current line faded on screen, or clear what you have left.",
+    "tip": "Save the line with <b>b changed alone</b> and the one with <b>m changed alone</b> and put all three on one screen. The difference is obvious at a glance."
+   },
+   {
+    "name": "Line Game - choosing a level",
+    "desc": "Six levels. Three kinds of problem: <b>draw the line, make the equation, put points on the line</b>.",
+    "tip": "It is fine to get them wrong. The game overlays <b>the correct line</b>, and the direction yours is off tells you at once whether you had m wrong or b wrong."
+   }
+  ],
+  "steps": [
+   "Set the equation to <b>y = 2x + 3</b>.",
+   "Raise <b>b alone</b> to 5 and watch how the line moves.",
+   "Raise <b>m alone</b> to 4 and see what changes this time.",
+   "Keep one with <b>Save Line</b> and compare against a negative m.",
+   "Set <b>b to 0</b> and watch the line pass through the origin.",
+   "Play <b>Line Game</b> levels 1 to 3."
+  ],
+  "gotchas": [
+   "<b>b does not change the slope.</b> It only slides the whole line up and down.",
+   "<b>Change m and the line turns about the y-intercept.</b> That one point stays put.",
+   "The two points on the graph do different jobs. <b>The one on the y axis is the b side.</b>",
+   "The screen is nearly identical to the previous sim. <b>If there are only two screens</b>, you are in this one."
+  ]
+ },
+ "graphing-quadratics": {
+  "summary": "<b>Drive a parabola from its equation.</b> <b>Each screen uses a different form of the equation</b> - the same parabola written different ways - so checking which screen you are on matters.",
+  "screens": [
+   {
+    "name": "Explore",
+    "what": "<b>y = a x² + b x + c</b>, moved freely with sliders. Start here."
+   },
+   {
+    "name": "Standard Form",
+    "what": "The same equation with whole-number values, showing <b>Roots · Vertex · Axis of Symmetry</b> together."
+   },
+   {
+    "name": "Vertex Form",
+    "what": "<b>y = a(x − h)² + k</b>. The best screen for seeing where the vertex goes. The back half of this lesson happens here."
+   },
+   {
+    "name": "Focus & Directrix",
+    "what": "The focus of a parabola. Beyond this lesson - visit later if you are curious."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The a · b · c sliders (Explore, top right)",
+    "desc": "Move the three values of <b>y = a x² + b x + c</b>.",
+    "tip": "Start with <b>a</b>. It is a that sets the width and the direction. The effect of b is confusing, so leave it at 0 to begin with."
+   },
+   {
+    "name": "The a · h · k sliders (Vertex Form, top right)",
+    "desc": "The three values of <b>y = a(x − h)² + k</b>. <b>h</b> handles left and right, <b>k</b> up and down.",
+    "tip": "A positive h moves the parabola <b>right</b>. It is written as a subtraction in the formula and moves right, which is the point of this screen."
+   },
+   {
+    "name": "Quadratic Terms (Explore checkbox)",
+    "desc": "Draws the x² part on its own, overlaid on the whole parabola.",
+    "tip": "Worth having on while you look at how a sets the width. It separates out <b>which part makes the curve</b>."
+   },
+   {
+    "name": "Vertex (checkbox)",
+    "desc": "Marks the vertex with a point and shows its coordinates.",
+    "tip": "<b>Do turn it on.</b> With it off there is nothing to check while you move h and k on the Vertex Form screen."
+   },
+   {
+    "name": "Axis of Symmetry (checkbox)",
+    "desc": "Draws a vertical line through the vertex.",
+    "tip": "Shows that the parabola <b>folds like a mirror</b> about that line. The x value of the axis is the x value of the vertex."
+   },
+   {
+    "name": "Roots (Standard Form checkbox)",
+    "desc": "Marks where the parabola meets the x axis. If it does not, it says <b>NO REAL ROOTS</b>.",
+    "tip": "Lift the parabola clear of the x axis. <b>NO REAL ROOTS</b> appears - a picture of what \"no roots\" means."
+   },
+   {
+    "name": "Equations · Coordinates (checkboxes)",
+    "desc": "Put the equation beside the graph, or coordinates on each point.",
+    "tip": "Leave <b>Coordinates</b> on and you can read the vertex values off by eye and check them against your arithmetic."
+   }
+  ],
+  "steps": [
+   "On the <b>Explore</b> screen, raise and lower <b>a</b> alone and watch the width.",
+   "Take <b>a negative</b> and watch the parabola flip.",
+   "Take <b>a to 0</b> and confirm you get a straight line.",
+   "Move to the <b>Vertex Form</b> screen and turn on the <b>Vertex</b> checkbox.",
+   "Set <b>h to 3</b> and see which way the vertex goes.",
+   "Move <b>k</b> and confirm this one goes with its sign."
+  ],
+  "gotchas": [
+   "<b>Raise a and the parabola gets narrower.</b> The opposite of the \"bigger means wider\" feeling.",
+   "The vertex of <b>y = (x − 3)² is at x = 3</b>. A subtraction that moves it right. Find <b>the x that makes the bracket 0</b> and it will not confuse you.",
+   "<b>k goes with its sign.</b> Only h is backwards.",
+   "Each screen uses a different form. <b>a, b, c</b> means Explore or Standard Form; <b>a, h, k</b> means Vertex Form.",
+   "This sim was built for high school. This lesson does not use the <b>Focus & Directrix</b> screen."
+  ]
+ },
+ "calculus-grapher": {
+  "summary": "The screen is in <b>two panels</b>. <b>Draw a curve by hand in the top panel</b> and the <b>slope graph</b> of that curve is drawn live in the bottom one.",
+  "screens": [
+   {
+    "name": "Derivative",
+    "what": "The screen this lesson uses. The bottom panel is the slope graph."
+   },
+   {
+    "name": "Integral",
+    "what": "The other direction. The bottom panel draws <b>the area under the curve</b>. Not used in this lesson."
+   },
+   {
+    "name": "Advanced",
+    "what": "Goes as far as the slope of the slope. Much harder."
+   },
+   {
+    "name": "Lab",
+    "what": "A screen for drawing freely with no target."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The shape buttons (right, four icons)",
+    "desc": "Choose the shape to draw in the top panel - <b>hill · pedestal · tilt · shift</b>. Pictures only, with no words.",
+    "tip": "Choose <b>tilt</b> (the diagonal picture) to make a straight slope and <b>hill</b> (the peak picture) to make a hill. This lesson only uses those two."
+   },
+   {
+    "name": "The curve in the top panel (drag it directly)",
+    "desc": "Drag in the top panel and the curve changes on the spot, according to the shape button you chose.",
+    "tip": "<b>Drag slowly and watch the bottom panel.</b> How the bottom follows while you work on the top is the whole sim. Look only when you have finished and you miss it."
+   },
+   {
+    "name": "Tangent (checkbox on the right)",
+    "desc": "Puts a <b>tangent line</b> in the top panel. Drag it left and right and it measures the slope at that place.",
+    "tip": "Turn it on and drag from the uphill of a hill to the top and down the other side. Why the sign of the bottom graph changes becomes obvious."
+   },
+   {
+    "name": "Slope of Tangent (the vertical gauge at the left edge)",
+    "desc": "Shows the slope where the tangent sits, as a bar. Up is +, down is −.",
+    "tip": "The height of this bar and the height of the bottom graph are <b>always the same</b> - one value shown two ways."
+   },
+   {
+    "name": "Reference Line (checkbox on the right)",
+    "desc": "Puts a vertical line through both panels. You can drag it left and right.",
+    "tip": "The tool for comparing the top and bottom graphs <b>at the same x</b>. Turn it on when lining them up by eye is hard."
+   },
+   {
+    "name": "The undo and reset buttons (right)",
+    "desc": "Undo the last thing you drew, or put the curve back to the start.",
+    "tip": "When the curve gets into a mess, <b>reset</b> first. Redrawing from scratch is faster than repairing it."
+   },
+   {
+    "name": "Predict (top left / top right toggle)",
+    "desc": "Switches to a mode where you <b>draw the bottom graph yourself</b> and check it against the answer.",
+    "tip": "Good for testing yourself once the lesson is done - draw the bottom graph first and then open the answer."
+   },
+   {
+    "name": "Show (top)",
+    "desc": "Shows or hides the original curve f(x).",
+    "tip": "Used in Predict mode to hide the answer for a moment."
+   }
+  ],
+  "steps": [
+   "Choose the <b>tilt</b> shape and make a straight slope in the top panel.",
+   "Check the bottom panel is a <b>horizontal line</b>, and that its height rises as you make the slope steeper.",
+   "Tilt the slope the other way and check the line below goes <b>below 0</b>.",
+   "Choose the <b>hill</b> shape and draw a hill.",
+   "Turn on <b>Tangent</b> and drag it uphill → top → downhill.",
+   "Turn on the <b>Reference Line</b> and compare the two graphs at the same x."
+  ],
+  "gotchas": [
+   "The top and bottom panels have <b>different meanings on the vertical axis.</b> The top is height and the bottom is slope. They must not be read as overlaid.",
+   "The shape buttons have <b>no words on them.</b> Tell them apart by picture.",
+   "This sim was built for high school and university. This lesson uses only the <b>Derivative</b> screen."
+  ]
  }
 }
