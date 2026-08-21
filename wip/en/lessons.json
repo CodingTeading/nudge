@@ -2011,5 +2011,325 @@
     "right": 1
    }
   ]
+ },
+ "mix-1": {
+  "course": "react",
+  "sim": "ph-scale",
+  "screens": "1",
+  "title": "One step of pH is ten times",
+  "lead": "pH 2 and pH 3 look one step apart. They are ten times apart.",
+  "hook": "Lemon juice is about pH 2 and coffee about pH 5. Three apart in numbers, so it is easy to think it is <b>about three times</b> as sour. It is really <b>a thousand times</b>. The pH scale is not like an ordinary ruler: <b>one step is a multiplication by 10</b>. There is a reason for a scale like that, and knowing it also clears up the common belief that \"adding water makes it neutral\".",
+  "predict": {
+   "q": "You take an acid at pH <b>2</b> and add water until the total volume is <b>10 times</b> as much. The pH is:",
+   "opts": [
+    "3",
+    "7 - you added water, so it is neutral",
+    "20",
+    "0.2"
+   ]
+  },
+  "missions": [
+   "This is the <b>Macro</b> screen. The dropper above the beaker in the middle lets you pour a liquid in.",
+   "Choose <b>Orange Juice</b> from the list on the right and press the dropper to pour it into the beaker.",
+   "Drag the pH meter on the left into the liquid. A pH value appears. Write it down.",
+   "Open the <b>Water</b> tap at the top right and pour water in. Which way does the pH move?",
+   "Keep pouring until the beaker is <b>full</b>. Does the pH <b>go past 7</b>? That is the core of ②.",
+   "Open the drain below to empty it, then do the same thing with <b>Drain Cleaner</b> (a base).",
+   "Check where <b>Acidic · Neutral · Basic</b> sit on the scale at the left.",
+   "Pick several liquids and note their pH - <b>Battery Acid · Coffee · Milk · Spit · Hand Soap</b>.",
+   "Use the house button to reach the <b>Micro</b> screen, where you can see the <b>number of H₃O⁺ and OH⁻ particles</b> in the same liquid. The lower the pH, which of them is more plentiful?"
+  ],
+  "record": "How far did the pH go as you kept pouring water into the orange juice? And did it pass 7?",
+  "explain": {
+   "right": 0,
+   "body": "<p>The answer is <strong>3</strong>. Dilute it ten-fold with water and the pH rises by <strong>exactly 1</strong>.</p><p>Why 1? pH reports <strong>how many hydrogen ions (H₃O⁺) there are</strong>, and it writes that count as <strong>a power of ten</strong>. pH 2 means there is \"10⁻²\" of it, pH 3 means \"10⁻³\". Dilute ten-fold and the count becomes <strong>a tenth</strong>, so the exponent moves one and the pH goes up by 1.</p><p>So <strong>one step of pH = ten times</strong>. Lemon juice (pH 2) and coffee (pH 5) are 3 apart, which is 10 × 10 × 10 = <strong>a thousand times</strong>. A log scale is what you build to fit a difference that large on one line. It is the same device as the half-life scale in course 05, where <strong>one step was a thousand times</strong>.</p><p>If you chose \"it becomes 7\", that is a very common belief. Adding water <strong>brings the pH toward 7 but never past it.</strong> No amount of water turns an acid into a base. Filling the beaker on screen without ever passing 7 is the proof.</p><p>Diluting and neutralising are <strong>different things</strong>. Diluting is adding water to make it <strong>weaker</strong>; neutralising is adding the opposite (a base) to <strong>remove the property itself</strong>.</p><p>Collect what the Micro screen showed you too. <strong>Acidic means plenty of H₃O⁺; basic means plenty of OH⁻.</strong> pH is in the end just those two counts squeezed into a single number.</p>"
+  },
+  "real": "Stomach acid is pH 1-2, strong enough to dissolve metal. Your stomach lining survives because mucus keeps it off. \"Mildly acidic\" on a shampoo bottle, keeping a swimming pool at the right pH, why acid rain is a problem, hydrangeas changing colour with the pH of the soil - all of it sits on this scale.",
+  "quiz": [
+   {
+    "q": "How many times more hydrogen ions are there at pH <b>4</b> than at pH <b>6</b>?",
+    "opts": [
+     "2 times",
+     "20 times",
+     "100 times"
+    ],
+    "right": 2
+   },
+   {
+    "q": "Pour a great deal of water into an acid and the pH:",
+    "opts": [
+     "Passes 7 and turns basic",
+     "Approaches 7 without passing it",
+     "Does not change"
+    ],
+    "right": 1
+   },
+   {
+    "q": "The <b>lower</b> the pH, the more there is of:",
+    "opts": [
+     "H₃O⁺",
+     "OH⁻",
+     "Water molecules"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "mix-2": {
+  "course": "react",
+  "sim": "acid-base-solutions",
+  "screens": null,
+  "title": "Strong and weak acids do not differ by concentration",
+  "lead": "\"Strong\" and \"concentrated\" are different words. Mix them up and the whole of chemistry gets confusing.",
+  "hook": "Lesson 1 said pH is <b>how many hydrogen ions there are</b>. So to make an acid stronger, do you just add more? This is where <b>a strong acid</b> and <b>a concentrated acid</b> part company. They mean completely different things, and everyday speech calls both of them \"a strong acid\". You are going to see, grain by grain, why the same amount gives a different result.",
+  "predict": {
+   "q": "You prepare a strong acid and a weak acid <b>at the same concentration</b>. The strong one has a lower pH because:",
+   "opts": [
+    "You put more of the strong one in",
+    "The strong acid splits into ions <b>almost completely</b> while the weak one splits <b>only partly</b>",
+    "The strong acid's molecules are heavier",
+    "There is really no difference"
+   ]
+  },
+  "missions": [
+   "This is the <b>Intro</b> screen. Under <b>Solution</b> on the right, choose between <b>Water · Strong Acid · Weak Acid · Strong Base · Weak Base</b>.",
+   "Set <b>Views</b> at the bottom right to <b>Particles</b>. The grains inside the beaker appear.",
+   "Choose <b>Strong Acid</b>. What do the grains look like? <b>Is there any HA left?</b>",
+   "Switch to <b>Weak Acid</b>. Same concentration, and there are <b>plenty of HA lumps</b> left. That is the answer to ②.",
+   "Change <b>Views</b> to <b>Graph</b>. The vertical axis is a log scale in <b>powers of ten</b>. Compare the height of the H₃O⁺ bar for the strong and weak acids.",
+   "Drag the <b>pH Color Key</b> at the top left into the liquid and look at the colour. The strong and weak acids differ.",
+   "Dip the conductivity tester on the left into the liquid. The more ions there are, <b>the brighter the bulb.</b>",
+   "Compare the brightness for the strong and weak acids. Same concentration - why the difference?",
+   "Use the house button to reach the <b>My Solution</b> screen, where <b>Initial Concentration</b> and <b>Strength</b> can be set separately.",
+   "Leave the <b>strength alone</b> and raise the <b>concentration</b>. Then leave the <b>concentration alone</b> and raise the <b>strength</b>. The two handles do different jobs."
+  ],
+  "record": "What did the grains in the beaker look like for the strong and the weak acid at the same concentration? And what about the brightness of the bulb?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>the strong one splits almost completely and the weak one only partly</strong>.</p><p>An acid put into water splits as <strong>HA → H⁺ + A⁻</strong>. That is ionisation, and the difference is <strong>how much of it splits</strong>.</p><ul><li><strong>Strong acid</strong> - <strong>nearly all</strong> of what you put in splits. Almost no HA lumps are left in the beaker.</li><li><strong>Weak acid</strong> - <strong>only part</strong> of it splits. As you saw on screen, plenty of HA lumps remain.</li></ul><p>So <strong>the same number of them going in</strong> gives a different number of H₃O⁺ coming out, and a different pH.</p><p>Two words are worth pinning down firmly here.</p><ul><li><strong>Strength</strong> (strong/weak) - <strong>how readily it splits.</strong> A property of the substance; you cannot change it.</li><li><strong>Concentration</strong> (concentrated/dilute) - <strong>how much you put in.</strong> Yours to set.</li></ul><p>So there is such a thing as a <strong>dilute strong acid</strong> and a <strong>concentrated weak acid</strong>. Vinegar is a weak acid you can make concentrated; the hydrochloric acid in a lab is a strong acid you can dilute with plenty of water. This is what lesson 1 was showing when water never turned an acid into a base - <strong>the concentration changes and the strength does not.</strong></p><p>The <strong>bulb</strong> was a good check. Electricity is carried by <strong>ions</strong>. The strong acid has plenty and glows bright; the weak one has few and glows dim. It turns an invisible degree of ionisation into <strong>brightness</strong>.</p>"
+  },
+  "real": "Stomach acid (hydrochloric) is strong but very dilute. Vinegar (acetic acid) is weak but fairly concentrated. Which is why you can drink vinegar and dilute hydrochloric acid is dangerous. \"pH neutral\" on a detergent, why battery acid is hazardous, using lemon juice to kill the smell of fish - separate strength from concentration and it all makes sense.",
+  "quiz": [
+   {
+    "q": "What does the word <b>strong acid</b> mean?",
+    "opts": [
+     "Very concentrated",
+     "It splits into ions almost completely",
+     "It is dangerous"
+    ],
+    "right": 1
+   },
+   {
+    "q": "What is left in quantity in a weak acid solution?",
+    "opts": [
+     "Unsplit HA lumps",
+     "H₃O⁺ ions",
+     "OH⁻ ions"
+    ],
+    "right": 0
+   },
+   {
+    "q": "At the same concentration, which makes the bulb <b>brighter</b>?",
+    "opts": [
+     "The strong acid",
+     "The weak acid",
+     "The same"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "mix-3": {
+  "course": "react",
+  "sim": "balancing-chemical-equations",
+  "screens": null,
+  "title": "You may only touch the number in front",
+  "lead": "When you balance an equation you cannot turn H₂O into H₂O₂. That is a different substance altogether.",
+  "hook": "In a chemical reaction <b>no atom is destroyed or created.</b> They only <b>change partners</b>. So the left and right of an equation must have <b>the same number of atoms</b>. It is the same story as course 05, where adding the top and bottom numbers of a nuclear equation balanced on both sides. But when you set about matching the counts, your hand keeps reaching for <b>the place you must not touch</b>.",
+  "predict": {
+   "q": "You are balancing <b>H₂ + O₂ → H₂O</b>. Changing the right side to <b>H₂O₂</b> would make the oxygen count work. This approach is:",
+   "opts": [
+    "Fine - the atom counts match, so no problem",
+    "Not allowed - H₂O₂ is not water but <b>hydrogen peroxide</b>, a different substance",
+    "Not allowed - it makes the arithmetic harder",
+    "Allowed in some cases"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Intro</b> screen. Choose between <b>Make Ammonia · Separate Water · Combust Methane</b> at the bottom.",
+   "Choose <b>Separate Water</b>. The <b>boxes in front of each substance</b> are what you can change.",
+   "Press <b>View</b> at the top right and choose the <b>picture of the particles</b> (the top item). Particles are drawn on both sides.",
+   "Raise and lower the numbers in the boxes while watching <b>the balance in the middle</b>. When the atom counts match on both sides, an <b>=</b> appears.",
+   "Look at the <b>counts by element</b> under the equation. It counts how many H and O there are on each side.",
+   "Confirm that <b>the small number inside a formula</b> (the 2 in H₂O) <b>cannot be changed</b>. That is the answer to ②.",
+   "Once it is right, <b>Balanced</b> appears at the top left.",
+   "Switch <b>View</b> to the balance-scale picture and the bar-chart picture to see the same thing three ways.",
+   "Use the house button to reach the <b>Equations</b> screen for much harder ones. At the bottom you can choose <b>Synthesis · Decomposition · Combustion</b>.",
+   "Try the <b>Game</b> screen at a level of your choosing."
+  ],
+  "record": "Write down the numbers you put in each box to balance the water equation. And which places could you change, and which could you not?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>not allowed - H₂O₂ is a different substance</strong>. It is the commonest mistake in equations, and it is why the sim <strong>will not let you touch the small numbers at all.</strong></p><p>The two numbers in a formula do completely different jobs.</p><ul><li><strong>The big number in front</strong> (the coefficient) - <strong>how many.</strong> 2 H₂O is <strong>two</strong> water molecules. You may change it.</li><li><strong>The small number after</strong> (the subscript) - <strong>which substance.</strong> H₂O is water, H₂O₂ is hydrogen peroxide. Change it and you have <strong>a different substance</strong>.</li></ul><p>Think of <strong>three bicycles</strong> against <strong>one tricycle</strong>. Either way there can be six wheels, but changing the number in front is \"how many shall I fetch\" while changing the object itself is \"fetching something else entirely\". Balancing an equation only ever lets you decide <strong>how many to use</strong>.</p><p>The answer for separating water is <strong>2 H₂O → 2 H₂ + 1 O₂</strong>. Left: 4 H and 2 O. Right: 4 H and 2 O.</p><p>Think back to course 05, where adding the top and bottom numbers of the alpha decay equation gave <strong>211 = 207 + 4</strong> and <strong>84 = 82 + 2</strong>. There <strong>protons and neutrons</strong> were conserved; here <strong>atoms</strong> are. Different scale, same rule that <strong>nothing is lost and nothing is created</strong>.</p>"
+  },
+  "real": "This rule is what lets a factory work out how much of each ingredient to put in. How many tonnes of nitrogen and hydrogen it takes to make a tonne of ammonia comes straight out of the equation. The mixture ratio of rocket fuel, the air-to-fuel ratio in a car engine, the chemistry inside a fire extinguisher - all of it rests on matching these counts.",
+  "quiz": [
+   {
+    "q": "In <b>2 H₂O</b>, what does the leading <b>2</b> mean?",
+    "opts": [
+     "2 oxygens",
+     "2 water molecules",
+     "2 hydrogens"
+    ],
+    "right": 1
+   },
+   {
+    "q": "What may you change when balancing an equation?",
+    "opts": [
+     "The small number inside a formula",
+     "The coefficient in front of a substance",
+     "Both"
+    ],
+    "right": 1
+   },
+   {
+    "q": "To balance <b>CH₄ + O₂ → CO₂ + H₂O</b>, what goes in front of O₂?",
+    "opts": [
+     "1",
+     "2",
+     "3"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "mix-4": {
+  "course": "react",
+  "sim": "reactants-products-and-leftovers",
+  "screens": null,
+  "title": "Whatever runs out first decides",
+  "lead": "However much bread you have, three slices of cheese means three sandwiches. Chemistry is exactly the same.",
+  "hook": "Lesson 3 had you matching the counts in an equation. But when you actually mix ingredients you almost never get them <b>exactly right</b>. One side is left over. So which side decides the result? This sim tells the chemistry story with <b>sandwiches</b> first. Once you know the answer it looks obvious, and yet written out as a chemical formula this same topic suddenly gets confusing.",
+  "predict": {
+   "q": "It takes <b>2</b> slices of bread and <b>1</b> slice of cheese to make one sandwich. With <b>10</b> bread and <b>3</b> cheese, how many sandwiches?",
+   "opts": [
+    "5",
+    "3",
+    "10",
+    "13"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Sandwiches</b> screen. At the top, choose between <b>Cheese · Meat and Cheese · Custom</b>.",
+   "Choose <b>Cheese</b>. The rule appears above: <b>2 bread + 1 cheese → 1 sandwich</b>.",
+   "On the <b>Before \"Reaction\"</b> side below, set bread to <b>10</b> and cheese to <b>3</b>.",
+   "Look at the <b>After \"Reaction\"</b> side. How many sandwiches were made? That is the answer to ②.",
+   "Look at the <b>Leftovers</b> box. What is left, and how much?",
+   "Raise the cheese <b>one at a time</b>. How far do the sandwiches climb before they stop?",
+   "Now raise the bread one at a time. With the cheese unchanged, do the sandwiches go up?",
+   "Use the house button to reach the <b>Molecules</b> screen, where the sandwiches turn into <b>real chemical reactions</b>.",
+   "Choose <b>Make Water</b> and put in different amounts of H₂ and O₂. It is the equation you balanced in lesson 3.",
+   "Try <b>Make Ammonia</b> and <b>Combust Methane</b> too, and see which ingredient runs out first."
+  ],
+  "record": "With 10 bread and 3 cheese, how many sandwiches and what was left over? And when did adding more H₂ in Make Water stop producing more water?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>3</strong>. There are 10 slices of bread but only <strong>3 of cheese</strong>, so 3 sandwiches is the limit. <strong>4 slices of bread are left</strong>, since 6 were used.</p><p>Out of that comes the rule that <strong>the result is decided not by the most plentiful ingredient but by the one that runs out first</strong>. Chemistry calls it the <strong>limiting reactant</strong>. Difficult name, sandwich meaning.</p><p>Which one runs out first <strong>cannot be told from the counts alone.</strong> There was more bread, at 10 slices, and the cheese still went first. You have to compare <strong>the ratio the rule demands</strong> against <strong>the ratio you have</strong>. Bread and cheese are needed <strong>2 : 1</strong>, and you have 10 : 3 - for all that bread you would need 5 slices of cheese and you only have 3.</p><p>The <strong>ratios</strong> of lesson 11 apply here exactly. To double a recipe you have to double <strong>everything</strong>. Raise one side alone and that side is simply left over.</p><p>The <strong>Molecules</strong> screen is the same thing. Making water is <strong>2 H₂ + O₂ → 2 H₂O</strong>, and if the O₂ is short, no amount of H₂ makes more water. The surplus H₂ just becomes <strong>leftovers</strong>.</p><p>Real reactions do work that way. However much you pour in, <strong>without a partner nothing reacts.</strong> Which is why a factory adds a little extra of the cheap ingredient so that none of the expensive one is left over.</p>"
+  },
+  "real": "Cooking is the nearest example. Ten eggs and one cup of flour still only makes so many pancakes. A car engine mixing fuel and air at a set ratio, a rocket carrying both fuel and oxidiser, a battery going flat - all stories about whichever side runs out first.",
+  "quiz": [
+   {
+    "q": "On the 2 bread + 1 cheese rule, with <b>9</b> bread and <b>5</b> cheese, how many sandwiches?",
+    "opts": [
+     "4",
+     "5",
+     "9"
+    ],
+    "right": 0
+   },
+   {
+    "q": "What is left over in that case?",
+    "opts": [
+     "1 bread",
+     "1 cheese",
+     "1 bread and 1 cheese"
+    ],
+    "right": 2
+   },
+   {
+    "q": "What is a <b>limiting reactant</b>?",
+    "opts": [
+     "The ingredient you put in most of",
+     "The ingredient that runs out first and caps the result",
+     "The ingredient left over after the reaction"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "mix-5": {
+  "course": "react",
+  "sim": "beers-law-lab",
+  "screens": null,
+  "title": "Measuring concentration by colour",
+  "lead": "The more concentrated it is, the more light it eats. The rule is exact enough that colour alone tells you the concentration.",
+  "hook": "Lesson 2 said <b>concentration</b> is \"how much you put in\". But once it has all dissolved, how do you measure it? The answer is <b>colour</b>. More concentrated eats more light, so measuring the light that gets through tells you the concentration backwards. But concentration is not the only thing that sets <b>how much gets eaten</b>. There is one more.",
+  "predict": {
+   "q": "Leaving the concentration alone, you <b>double the width</b> of the cell the light passes through. The absorbance (how much light is eaten) is:",
+   "opts": [
+    "Unchanged - you did not touch the solution",
+    "Doubled",
+    "Halved",
+    "Four times"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Concentration</b> screen. Choose a substance under <b>Solute</b> on the right.",
+   "Pick something strongly coloured like <b>Potassium permanganate</b> and shake the shaker to put it in.",
+   "Dip the concentration probe on the left into the liquid. The deeper the colour, the bigger the number.",
+   "Pour in more water. The colour <b>fades</b> and the concentration number <b>goes down.</b>",
+   "Keep adding solute until <b>Saturated!</b> appears. That is the point where no more will dissolve.",
+   "Use the house button to reach the <b>Beer's Law</b> screen. The light is on the left, the cell of liquid in the middle, and the detector on the right.",
+   "Set the detector on the right to <b>Absorbance</b>. It reports how much light was eaten.",
+   "Double the <b>Concentration</b> handle below. How many times bigger is the absorbance?",
+   "Now leave the concentration alone and double the <b>width of the cell</b> (the handle in the middle). That is the answer to ②.",
+   "Switch to <b>Transmittance</b>. It moves <b>the opposite way</b> - the more is eaten, the less light gets through.",
+   "Change the <b>Wavelength</b>. The same solution absorbs very differently at different wavelengths."
+  ],
+  "record": "What happened to the absorbance when you doubled the concentration, and when you doubled the width of the cell?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>doubled</strong>. The solution is untouched and the absorbance still rises.</p><p>The reason is simple. The <strong>path the light takes is twice as long</strong>, so it meets twice as many grains on the way. Each grain eats a little of the light, so meeting twice as many means twice as much eaten.</p><p>So <strong>two things</strong> set the absorbance.</p><ul><li><strong>Concentration</strong> - <strong>how densely packed</strong> the grains are along a given length</li><li><strong>Width of the cell</strong> - <strong>how long a path</strong> the light travels</li></ul><p>Both come down to changing <strong>the number of grains the light meets on its way</strong>, so they have the same effect. Written down, that is <strong>Beer's law</strong>, which the sim is named after.</p><p>In practice the important part is that <strong>one of the two has to be held fixed.</strong> To measure a concentration you must keep <strong>the width of the cell the same every time</strong>. Which is why laboratory cells (cuvettes) are made to a standard width of exactly 1 cm.</p><p>That the absorbance changed a great deal when you changed the <strong>wavelength</strong> matters too. Every substance has <strong>a colour it eats well</strong>. Purple potassium permanganate eats green light - it looks purple <em>because</em> it eats the green. What course 05 said about atoms absorbing <strong>only particular wavelengths</strong> turns practical here.</p><p><strong>Transmittance</strong> is the other side of absorbance. Eat more and less gets through. The same fact seen from <strong>what was eaten</strong> or <strong>what is left</strong>.</p>"
+  },
+  "real": "A hospital blood test is exactly this principle. A reagent produces a colour and the depth of that colour gives the amount of a component. Water quality testing, the dye content of food, how dark the line on a pregnancy test is, the colour change in a COVID test - devices that \"measure an amount by depth of colour\" are all around us.",
+  "quiz": [
+   {
+    "q": "Make the concentration <b>three times</b> and the absorbance is:",
+    "opts": [
+     "Unchanged",
+     "Three times",
+     "Nine times"
+    ],
+    "right": 1
+   },
+   {
+    "q": "As absorbance goes up, <b>transmittance</b>:",
+    "opts": [
+     "Goes up",
+     "Goes down",
+     "Does not change"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Why are laboratory cuvettes <b>standardised at 1 cm</b> wide?",
+    "opts": [
+     "They are easier to make",
+     "The width has to be fixed for absorbance to give a concentration",
+     "Light only travels 1 cm"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

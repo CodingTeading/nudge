@@ -2290,5 +2290,328 @@
    "<b>Molecular Dipole</b> only exists on the Three Atoms screen. With two atoms there is one bond, so the two are the same.",
    "This sim was built for high school. Keep to the order <b>Two Atoms → Three Atoms</b> and you can follow it."
   ]
+ },
+ "ph-scale": {
+  "summary": "Pour <b>familiar liquids</b> into a beaker and measure the pH. Add water or drain it away and watch the pH move. The scale on the left shows acidic, neutral and basic in colour.",
+  "screens": [
+   {
+    "name": "Macro",
+    "what": "The screen this lesson uses. Pour a real liquid and measure it with the pH meter."
+   },
+   {
+    "name": "Micro",
+    "what": "Shows the <b>H₃O⁺ and OH⁻ particles</b> in the same liquid. Confirm grain by grain why the pH is what it is."
+   },
+   {
+    "name": "My Solution",
+    "what": "Set the pH yourself and see what the particles do at that value."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The liquid chooser (the dropper above the beaker)",
+    "desc": "Choose from <b>familiar liquids</b> - Battery Acid, Blood, Coffee, Milk, Orange Juice, Spit, Hand Soap, Drain Cleaner and more. Press the dropper to pour into the beaker.",
+    "tip": "Compare <b>one acid against one base</b> first. Measuring your way through the list gives you a feel for the scale quickly."
+   },
+   {
+    "name": "The pH meter (left)",
+    "desc": "Drag it into the liquid and a pH value appears. Out of the liquid there is no reading.",
+    "tip": "The tip of the probe has to be <b>inside the liquid</b>. A reading of <b>—</b> means you have not dipped it yet."
+   },
+   {
+    "name": "The water tap (top right)",
+    "desc": "Pours more water into the beaker, diluting the liquid.",
+    "tip": "The key action of this lesson. Pour water and watch the pH <b>approach 7 without passing it</b>."
+   },
+   {
+    "name": "The drain (below the beaker)",
+    "desc": "Empties the liquid out. Use it to start again.",
+    "tip": "<b>Empty it</b> before changing liquids. Mixed together, there is no telling what made the pH what it is."
+   },
+   {
+    "name": "The Acidic · Neutral · Basic scale (left)",
+    "desc": "A 0-14 scale in colour, with the current value marked on it.",
+    "tip": "On this scale <b>one step is ten times</b>. Read it like an ordinary ruler and you will badly misjudge the difference."
+   },
+   {
+    "name": "The volume readout (½ L · 1 L)",
+    "desc": "Shows how much liquid is in the beaker.",
+    "tip": "Bring the <b>volume up ten-fold</b> with water and the pH moves by 1. Watching the volume as you pour makes the rule visible."
+   }
+  ],
+  "steps": [
+   "Choose <b>Orange Juice</b> and pour it into the beaker.",
+   "Dip the <b>pH meter</b> and note the value.",
+   "Pour <b>water</b> in and watch which way the pH goes.",
+   "Fill the beaker and check whether it <b>passes 7</b>.",
+   "Empty it with the drain and do the same with <b>Drain Cleaner</b>.",
+   "Compare the particle counts on the <b>Micro</b> screen."
+  ],
+  "gotchas": [
+   "On the pH scale <b>one step is ten times</b>. pH 4 and pH 6 are 100 times apart.",
+   "No amount of water turns an acid <b>into a base.</b> It only approaches 7.",
+   "The <b>tip of the meter has to be under the liquid</b> for a reading.",
+   "<b>Empty it with the drain</b> before changing liquids. Mixed, the result is unreadable.",
+   "This sim has three screens. The lesson opens only the <b>Macro</b> screen."
+  ]
+ },
+ "acid-base-solutions": {
+  "summary": "Put <b>strong acid, weak acid, strong base and weak base</b> side by side and compare them <b>grain by grain</b>. The power of this sim is that it shows not just the pH but <b>what is in the beaker and how much of it</b>.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Where this lesson starts. Choose between five ready-made solutions and compare them."
+   },
+   {
+    "name": "My Solution",
+    "what": "Set the <b>concentration</b> and the <b>strength</b> separately. The best screen for pulling the two ideas apart."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The solution chooser (top right)",
+    "desc": "Choose between <b>Water · Strong Acid · Weak Acid · Strong Base · Weak Base</b>. The formula is in the brackets.",
+    "tip": "Flip between <b>Strong Acid and Weak Acid</b> and compare the beakers. That single contrast is the whole lesson."
+   },
+   {
+    "name": "Views - Particles · Graph · Hide Views (bottom right)",
+    "desc": "Choose whether to look inside the beaker as <b>grains</b>, as a <b>bar graph</b>, or not at all.",
+    "tip": "Look at <b>Particles</b> first and confirm with <b>Graph</b>. The grains give you the feel; the graph gives you the exact amount."
+   },
+   {
+    "name": "The equilibrium concentration graph (left)",
+    "desc": "Bars for H₃O⁺, OH⁻ and the unsplit molecules. The vertical axis is a log scale in <b>powers of ten</b>.",
+    "tip": "<b>One step of a bar is ten times.</b> A small-looking difference is really a large one. <b>negligible</b> at the bottom means \"too little to matter\"."
+   },
+   {
+    "name": "pH Color Key (top left)",
+    "desc": "Drag it into the liquid and it changes colour. Read the pH roughly from the colour.",
+    "tip": "The same as litmus paper in a real lab. Learning it <b>by colour</b> before numbers builds the instinct."
+   },
+   {
+    "name": "The conductivity tester (left)",
+    "desc": "Dip both electrodes into the liquid and <b>the bulb lights.</b> The more ions, the brighter.",
+    "tip": "The most entertaining tool here. It turns an invisible <b>degree of ionisation</b> into brightness. Do compare the strong and weak acids."
+   },
+   {
+    "name": "Initial Concentration · Strength (right of the My Solution screen)",
+    "desc": "<b>Initial Concentration</b> is how much you put in; <b>Strength</b> is how readily it splits. Two separate handles.",
+    "tip": "Move <b>one at a time</b>. How the beaker differs when you raise only the concentration against only the strength is the heart of this lesson."
+   }
+  ],
+  "steps": [
+   "On the <b>Intro</b> screen set <b>Views</b> to <b>Particles</b>.",
+   "Choose <b>Strong Acid</b> and look inside the beaker.",
+   "Switch to <b>Weak Acid</b> and see the HA lumps left over.",
+   "Change to <b>Graph</b> and compare the height of the H₃O⁺ bars.",
+   "Dip the conductivity tester and compare the brightness.",
+   "On the <b>My Solution</b> screen, move concentration and strength one at a time."
+  ],
+  "gotchas": [
+   "<b>Strength</b> (strong/weak) and <b>concentration</b> (concentrated/dilute) are different words. This sim exists to pull them apart.",
+   "The vertical axis of the graph is <b>logarithmic</b>. One step is ten times.",
+   "If the bulb does not light, check that <b>both electrodes</b> are under the liquid.",
+   "A short-circuit warning on the tester means there are a great many ions. Not a fault."
+  ]
+ },
+ "balancing-chemical-equations": {
+  "summary": "Put numbers in the <b>boxes in front of each substance</b> to make the atom counts match on both sides. <b>The small numbers inside a formula cannot be touched at all</b> - which is the rule the sim exists to teach.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Where this lesson starts. Three easy equations."
+   },
+   {
+    "name": "Equations",
+    "what": "Much harder equations, selectable by type of reaction."
+   },
+   {
+    "name": "Game",
+    "what": "A check game at the level of your choosing."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The boxes (in front of each substance in the equation)",
+    "desc": "The number that goes here is the <b>coefficient</b>. Change it with the up and down arrows. <b>The only place in this sim you can change.</b>",
+    "tip": "Try to change the small number inside a formula and <b>you cannot.</b> It is blocked, not broken - and that is the point of this lesson."
+   },
+   {
+    "name": "The equation chooser (bottom of the screen, three buttons)",
+    "desc": "On the Intro screen, choose between <b>Make Ammonia · Separate Water · Combust Methane</b>.",
+    "tip": "Start with <b>Separate Water</b>. Only two elements, so it is the simplest."
+   },
+   {
+    "name": "View (top right)",
+    "desc": "Choose between the <b>particles picture</b>, the <b>balance scales picture</b>, the <b>bar chart picture</b> and <b>None</b>. The first three carry pictures only, with no words; only the last is a word.",
+    "tip": "The <b>balance scales</b> picture is the most intuitive - level on both sides means you have it. The particles picture shows you why."
+   },
+   {
+    "name": "The balance in the middle and the = / ≠ marks",
+    "desc": "An <b>=</b> appears when the atom counts match on both sides, a <b>≠</b> when they do not. Each element is marked separately.",
+    "tip": "With several elements, fix them <b>one at a time</b>. Fixing one and breaking another is normal; go back and forth a few times and the answer appears."
+   },
+   {
+    "name": "Balanced (top left)",
+    "desc": "Appears when the equation is completely right.",
+    "tip": "You are not finished until this shows. Getting one element right will not do it."
+   },
+   {
+    "name": "The reaction type chooser (bottom of the Equations screen)",
+    "desc": "Choose between <b>Synthesis · Decomposition · Combustion</b>.",
+    "tip": "Each type of reaction has equations of a different shape. Work through all three and the pattern appears."
+   },
+   {
+    "name": "Simplified / Not Simplified (top of the Equations screen)",
+    "desc": "Tells you whether the coefficients can be reduced further.",
+    "tip": "Even with the counts matching, something like <b>2 : 4 : 2</b> that divides through by 2 is not yet tidied up."
+   }
+  ],
+  "steps": [
+   "On the <b>Intro</b> screen choose <b>Separate Water</b>.",
+   "Set <b>View</b> to the balance scales picture.",
+   "Change the numbers in the boxes until the scales are level.",
+   "Check that <b>Balanced</b> appears.",
+   "Change <b>View</b> to the particles picture and check again.",
+   "Switch to <b>Combust Methane</b> for an equation with three elements."
+  ],
+  "gotchas": [
+   "<b>The small numbers inside a formula cannot be changed.</b> They are blocked because changing one gives you a different substance.",
+   "With several elements, fixing one breaks another. <b>That is normal</b> - go back and forth.",
+   "Matching counts are not the answer if they <b>can still be reduced</b>. Check the Simplified mark.",
+   "A coefficient of <b>1</b> is usually left out when writing, but here you have to put 1 in the box."
+  ]
+ },
+ "reactants-products-and-leftovers": {
+  "summary": "Put ingredients in and see <b>how much gets made and how much is left</b>. The good thing about this sim is that it explains with <b>sandwiches</b> before it goes anywhere near chemistry.",
+  "screens": [
+   {
+    "name": "Sandwiches",
+    "what": "Where this lesson starts. Make sandwiches out of bread and cheese, and learn the rule with no chemical vocabulary at all."
+   },
+   {
+    "name": "Molecules",
+    "what": "The same rule with <b>real chemical reactions</b> - Make Water, Make Ammonia, Combust Methane."
+   },
+   {
+    "name": "Game",
+    "what": "A check game where you fill in the blanks."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The reaction chooser (top right)",
+    "desc": "On the Sandwiches screen, <b>Cheese · Meat and Cheese · Custom</b>; on the Molecules screen, <b>Make Water · Make Ammonia · Combust Methane</b>.",
+    "tip": "<b>Custom</b> is where you set the rule yourself."
+   },
+   {
+    "name": "Before \"Reaction\" (the big box, middle left)",
+    "desc": "Sets how many of each ingredient to put in. Change with the up and down arrows.",
+    "tip": "Raise <b>one ingredient only</b>. Some raise the result and some do not - that is the limiting reactant."
+   },
+   {
+    "name": "After \"Reaction\" (the big box, middle right)",
+    "desc": "Shows what was made (<b>Products</b>) and what is left (<b>Leftovers</b>).",
+    "tip": "Do watch the <b>Leftovers</b> box. What is left tells you which ingredient ran short."
+   },
+   {
+    "name": "The rule shown at the top",
+    "desc": "Shows how many of each ingredient this reaction uses, as an equation. For sandwiches it reads like 2 bread + 1 cheese.",
+    "tip": "That <b>ratio</b> is everything. Set it against the ratio of what you have and you can see which will run out first without doing any arithmetic."
+   },
+   {
+    "name": "The No \"Reaction\" mark",
+    "desc": "Appears when there are not enough ingredients to make anything.",
+    "tip": "Not a fault. If one ingredient is at <b>0</b>, the result is 0 however much of the rest there is."
+   }
+  ],
+  "steps": [
+   "On the <b>Sandwiches</b> screen choose <b>Cheese</b>.",
+   "Check the rule at the top (2 bread + 1 cheese).",
+   "Set bread to <b>10</b> and cheese to <b>3</b>.",
+   "Check the <b>Products</b> and the <b>Leftovers</b>.",
+   "Raise the cheese one at a time and watch how the result changes.",
+   "Do the same with <b>Make Water</b> on the <b>Molecules</b> screen."
+  ],
+  "gotchas": [
+   "The most plentiful ingredient does not decide the result. <b>The one that runs out first</b> does.",
+   "If one ingredient is 0 the result is 0. That is why <b>No \"Reaction\"</b> appears.",
+   "The Sandwiches screen and the Molecules screen are <b>the same rule</b>. Get it firmly from the sandwiches before moving on.",
+   "The quotation marks in <b>Before \"Reaction\" · After \"Reaction\"</b> are there to mark that a sandwich is not really a chemical reaction."
+  ]
+ },
+ "beers-law-lab": {
+  "summary": "Measure <b>concentration by depth of colour</b>. Make a solution on the first screen, then <b>shine light through it</b> on the second to measure how much is eaten. The same arrangement as a real laboratory spectrophotometer.",
+  "screens": [
+   {
+    "name": "Concentration",
+    "what": "Where this lesson starts. Add solute and pour water to <b>make a solution.</b>"
+   },
+   {
+    "name": "Beer's Law",
+    "what": "<b>Shine light</b> through the solution you made and measure the absorbance. Concentration, cell width and wavelength can all be changed."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The solute chooser (right of the Concentration screen)",
+    "desc": "Choose between coloured substances such as Potassium permanganate, Potassium dichromate and Copper(II) sulfate.",
+    "tip": "Pick something <b>strongly coloured</b>. Potassium permanganate (purple) shows the change best."
+   },
+   {
+    "name": "Solid (shaker) · Solution (dropper)",
+    "desc": "<b>Shake in</b> the solid or <b>drip in</b> a ready-made solution. Choose the method on the right.",
+    "tip": "Shaking the solid in raises the concentration faster. The dropper is easier for fine adjustment."
+   },
+   {
+    "name": "The water tap and the drain",
+    "desc": "Pour more water in, or drain the liquid away.",
+    "tip": "Pour water and <b>the colour fades and the concentration drops.</b> The amount of solute is unchanged and the concentration still moves - worth seeing."
+   },
+   {
+    "name": "The concentration probe (Concentration screen)",
+    "desc": "Drag it into the liquid and the concentration appears as a number.",
+    "tip": "The tip has to be <b>inside the liquid</b>. Watching the colour and the number together builds the instinct."
+   },
+   {
+    "name": "The Saturated! mark",
+    "desc": "Appears when no more will dissolve, with undissolved grains piling up at the bottom.",
+    "tip": "Not a fault. It means the water has reached its <b>limit</b>, and adding more will not raise the concentration."
+   },
+   {
+    "name": "Concentration handle (bottom of the Beer's Law screen)",
+    "desc": "Sets the concentration of the solution directly.",
+    "tip": "<b>Double it</b> and see how many times the absorbance grows. Exactly twice."
+   },
+   {
+    "name": "The cell width handle (the cell of liquid in the middle)",
+    "desc": "Changes <b>the length of the path</b> the light travels.",
+    "tip": "The solution is untouched and the absorbance changes. The most surprising part of this lesson - do try it."
+   },
+   {
+    "name": "Absorbance / Transmittance (the detector on the right)",
+    "desc": "<b>Absorbance</b> is how much light was <b>eaten</b>; <b>Transmittance</b> is how much <b>got through</b>.",
+    "tip": "The two move in opposite directions. The same fact seen from what was eaten or what is left."
+   },
+   {
+    "name": "Wavelength - Preset · Variable (left)",
+    "desc": "<b>Preset</b> sets it automatically to the wavelength that substance eats best. <b>Variable</b> lets you choose.",
+    "tip": "Move the wavelength a long way on <b>Variable</b>. Same solution, wildly different absorbance - every substance has its own colour that it eats."
+   }
+  ],
+  "steps": [
+   "On the <b>Concentration</b> screen, choose <b>Potassium permanganate</b> and add it.",
+   "Dip the concentration probe and look at the value.",
+   "Pour water and watch the colour and the concentration fall together.",
+   "Move to the <b>Beer's Law</b> screen and set the detector to <b>Absorbance</b>.",
+   "Double the <b>Concentration</b> and compare the absorbance.",
+   "Leave the concentration alone and double <b>the width of the cell</b>.",
+   "Change the <b>Wavelength</b> and watch the absorbance change."
+  ],
+  "gotchas": [
+   "Absorbance is proportional to <b>both the concentration and the cell width</b>. To measure a concentration you have to fix the width.",
+   "Once <b>Saturated!</b> shows, adding more will not raise the concentration.",
+   "A colourless solute barely eats any light, so the absorbance hardly registers. Pick something <b>strongly coloured</b>."
+  ]
  }
 }
