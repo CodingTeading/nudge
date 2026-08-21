@@ -186,13 +186,17 @@ console.log( '\n[7] 본문 조판' );
 
   /* 있는 언어는 전부 봅니다. 새 언어 원고가 검사 없이 들어오면
      태그 깨짐과 보이지 않는 문자를 아무도 못 잡습니다. */
+  /* wip/ 도 같이 봅니다. 번역이 거기서 몇 달을 머무는데 그동안 태그 깨짐을
+     아무도 못 잡으면, 옮겨 오는 날 한꺼번에 터집니다. */
   for ( const L of LANGS ) {
-    const l = read( `content/${ L }/lessons.json` );
-    if ( l ) { scan( l, `lessons(${ L })`, PLAIN.lessons ); }
-    const g = read( `content/${ L }/guides.json` );
-    if ( g ) { scan( g, `guides(${ L })`, [] ); }
-    const c = read( `content/${ L }/courses.json` );
-    if ( c ) { scan( c, `courses(${ L })`, PLAIN.courses ); }
+    for ( const [ where, dir ] of [ [ L, `content/${ L }` ], [ `${ L }·wip`, `../wip/${ L }` ] ] ) {
+      const l = read( `${ dir }/lessons.json` );
+      if ( l ) { scan( l, `lessons(${ where })`, PLAIN.lessons ); }
+      const g = read( `${ dir }/guides.json` );
+      if ( g ) { scan( g, `guides(${ where })`, [] ); }
+      const c = read( `${ dir }/courses.json` );
+      if ( c ) { scan( c, `courses(${ where })`, PLAIN.courses ); }
+    }
   }
   if ( !typo ) { ok( '태그 · 조사 띄어쓰기 · 레이블 콜론 이상 없음' ); }
 }

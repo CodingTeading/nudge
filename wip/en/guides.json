@@ -1,0 +1,48 @@
+{
+ "_note": "How to use each simulation. The control names are taken from the simulation's actual English UI strings. Changing the language changes the names inside the simulation too, so a translation has to match the names in that language's UI strings.",
+ "_common": {
+  "intro": "All 61 PhET sims are built to the same rules. Learn these eight things and you won't get lost in a sim you have never opened before.",
+  "sections": [
+   {
+    "name": "The black bar along the bottom",
+    "desc": "Every sim has one. On the <b>left</b> are the house button and the screen names; at the <b>far right</b> is the PhET logo.",
+    "tip": "The house button and the screen names show up <b>only in sims with more than one screen</b>. If you cannot see them, that sim has just one screen."
+   },
+   {
+    "name": "The house button — choosing a screen",
+    "desc": "One sim often holds several screens. Press the house button to go back to the list of screens and pick a different one.",
+    "tip": "Each screen covers something different. When a lesson names a screen we open that one for you, so if nothing is specified, start on the first screen."
+   },
+   {
+    "name": "The round reset button, bottom right",
+    "desc": "It puts <b>every</b> setting back the way it started. It is the yellow circle at the bottom right of the sim.",
+    "tip": "<b>Press this first when you are stuck.</b> It is the quickest fix when you have lost track of what you changed. It only clears settings inside the sim — what you wrote in ④ stays where it is."
+   },
+   {
+    "name": "The group of checkboxes at the top right",
+    "desc": "These are <b>switches for things you cannot see</b>. Electric fields, velocity arrows, gridlines, numeric values — whatever is normally hidden is gathered here.",
+    "tip": "Nine times out of ten, \"I cannot see anything\" is solved right here. When you open a sim, <b>turn every checkbox on once.</b> You will find out what that sim is able to show you."
+   },
+   {
+    "name": "Play, pause, and speed",
+    "desc": "Only in sims where time runs. The triangle is play and the two bars are pause, with buttons beside them for <b>Slow</b> · <b>Normal</b> · <b>Fast</b>.",
+    "tip": "If it moves too fast to follow, set it to <b>Slow</b> and watch again. You can still change values while it is paused, so stopping the sim, setting up your conditions and then pressing play makes things far easier to watch."
+   },
+   {
+    "name": "Sliders (the bar you drag)",
+    "desc": "Grab the handle and drag. When you need an exact value, <b>click the handle once and then use the left and right arrow keys</b>.",
+    "tip": "<b>Shift + arrow</b> moves in smaller steps and <b>Page Up/Down</b> in larger ones. A value you cannot hit with the mouse is easy to hit from the keyboard."
+   },
+   {
+    "name": "The PhET logo menu (far right)",
+    "desc": "Press the logo and you get items such as <b>Options…</b> (sound, color contrast and so on), <b>Screenshot</b>, <b>Full Screen</b> and <b>About…</b>. Which items appear differs a little from sim to sim.",
+    "tip": "Rather than the <b>Full Screen</b> in here, use the <b>Fullscreen</b> button above this page. It brings you back to exactly the place in the lesson you left."
+   },
+   {
+    "name": "Working with the keyboard alone",
+    "desc": "<b>Tab</b> for the next item, <b>Shift+Tab</b> for the previous one, <b>Space</b> or <b>Enter</b> to press, <b>arrow keys</b> to change a value. For an object you drag, press Space to grab it, move it with the arrows, then press Space again to drop it.",
+    "tip": "Some sims have a button in the bottom bar that opens a list of <b>Keyboard Shortcuts</b>. Any special key that exists only in that sim — jumping to the wall, for instance — is written there."
+   }
+  ]
+ }
+}
