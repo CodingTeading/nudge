@@ -2331,5 +2331,326 @@
     "right": 1
    }
   ]
+ },
+ "fraction-1": {
+  "course": "fraction",
+  "sim": "fractions-intro",
+  "screens": "1",
+  "mode": "solve",
+  "title": "Three pizzas shared between four people",
+  "lead": "The line in a fraction is really a division sign. Here is how to answer 3 ÷ 4 without doing the division.",
+  "hook": "<b>Three pizzas</b> shared equally between <b>four people</b>. One share is 0.75 of a pizza in decimals, but you can say the answer without dividing 3 by 4 at all. <b>3/4 of a pizza</b> - that is the answer. The line in a fraction is not decoration; it is <b>a division sign</b>. And once you know that, something odd follows: the bigger the bottom number, the <b>smaller</b> the fraction.",
+  "predict": {
+   "q": "Which is bigger, 1/3 or 1/8? Do not calculate - picture it.",
+   "opts": [
+    "1/8 - because 8 is bigger than 3",
+    "1/3 - because fewer pieces means each piece is bigger",
+    "They are the same - the top numbers are both 1",
+    "You cannot compare them without a picture"
+   ]
+  },
+  "missions": [
+   "At the <b>top centre</b> of the screen, check that the shape chooser is on the circle. There are six: circle, horizontal bar, vertical bar, beaker, cake and number line.",
+   "At the <b>middle right</b> there is a large fraction. Set the <b>denominator</b> (the number under the line) to <b>3</b> and raise the <b>numerator</b> to <b>1</b>. One circle splits into three pieces and one of them fills in.",
+   "Leave the numerator at 1 and raise <b>the denominator alone to 8</b>. <b>Keep your eyes on</b> the filled piece as it happens.",
+   "Flip the denominator between 3 and 8 a few times and compare the size of the piece. That is the answer to ②.",
+   "Now raise <b>Max</b> at the top right to <b>3</b>. Three empty circles appear. Three pizzas.",
+   "Set the denominator to <b>4</b> and raise the numerator slowly from <b>1 to 12</b>. At 12 the three circles are <b>exactly full.</b>",
+   "Change the shape chooser to the <b>number line</b> and see where the same fraction sits on it. A fraction is, in the end, <b>a single number</b>."
+  ],
+  "record": "What happened to the size of the filled piece when you took the denominator from 3 to 8? And how many circles was 12/4?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>1/3</strong>. The denominator says <strong>how many pieces you cut the whole into</strong>. Cut it into 8 and each piece <strong>has to be thinner</strong> than if you cut it into 3.</p><p>If you said 1/8 was bigger, you compared 8 against 3 and nothing else. It is a very common mistake and a long-lasting one. A fraction is not two numbers but <strong>one value</strong>. Look at the top and bottom separately and you will get it wrong every time.</p><p>The numerator is <strong>how many of those pieces you have</strong>. So <strong>a bigger numerator makes it bigger and a bigger denominator makes it smaller.</strong> They pull opposite ways.</p><p>The sixth mission is the title of this lesson. At denominator 4 and numerator 12 the three circles filled exactly. So <strong>12/4 = 3</strong>. Read backwards: <strong>three pizzas cut into quarters gives 12 pieces</strong>, three each - <strong>3/4 of a pizza</strong>. That is what it means to say the line in a fraction is a division sign.</p><p>The number line makes it clearer still. 3/4 is <strong>a point</strong> between 0 and 1. Not a pizza, not a cake - just a number.</p>"
+  },
+  "real": "When a recipe says 3/4 cup it means \"three of the four parts a cup divides into\". A 3/8 inch spanner, a quarter note in music, a batting average - all of them say how many of the divided pieces you have. A calculator can tell you 0.375, but if you do not know what 3/8 means you cannot pick the right spanner.",
+  "quiz": [
+   {
+    "q": "Which is bigger, 1/5 or 1/9?",
+    "opts": [
+     "1/9",
+     "1/5",
+     "The same"
+    ],
+    "right": 1
+   },
+   {
+    "q": "<b>2</b> cakes shared equally between <b>5</b> people. One share is:",
+    "opts": [
+     "5/2 of a cake",
+     "2/5 of a cake",
+     "1/5 of a cake",
+     "It cannot be shared"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Keep the numerator and raise the denominator. The value of the fraction:",
+    "opts": [
+     "Gets bigger",
+     "Gets smaller",
+     "Stays the same"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "fraction-2": {
+  "course": "fraction",
+  "sim": "fractions-equality",
+  "screens": "1",
+  "mode": "solve",
+  "title": "Why multiplying works and adding does not",
+  "lead": "Multiply the top and bottom by the same number and the value holds. So what about adding the same number? Almost everyone trips here.",
+  "hook": "Multiply the top and bottom of 3/4 <b>both by 2</b> and you get 6/8, with the value unchanged. That much you have been taught. Now add <b>2 to both</b> the top and bottom of 3/4 and you get 5/6. You did the same thing to both - does the value hold this time too? There is a strong feeling that it should, because it was \"fair\". You are going to test that feeling.",
+  "predict": {
+   "q": "Add <b>2 to each</b> of the numerator and denominator of 3/4 and you get 5/6. Compared with 3/4, 5/6 is:",
+   "opts": [
+    "The same - you added the same to both",
+    "Bigger",
+    "Smaller",
+    "It depends what you added"
+   ]
+  },
+  "missions": [
+   "At the bottom left set the <b>denominator</b> to <b>4</b> and the <b>numerator</b> to <b>3</b>. 3/4 is drawn on the left.",
+   "Another fraction appears by itself to the right of the <b>=</b> in the middle. The <b>green arrow</b> beside it is the number you multiply by (1-3).",
+   "Raise the green arrow to <b>2</b>. The right side becomes <b>6/8</b> and <b>the shaded area is identical to the left.</b> Check it with your eyes.",
+   "Take the green arrow up to <b>3</b>. At 9/12 the area is still the same. The pieces have only been cut finer.",
+   "Now change the left side to <b>5/6</b> (denominator 6, numerator 5). Fix the shaded area in your mind.",
+   "Set it back to <b>3/4</b>. Against 5/6, which was fuller? That is the answer to ②.",
+   "Change the chooser at the top right to the <b>number line</b>. Only the right side becomes a <b>vertical number line</b>. Move the green arrow between 1 and 3 and <b>the marked point does not move up or down.</b>"
+  ],
+  "record": "What happened to the shaded area as you took the green arrow to 2 and 3? And which was fuller, 3/4 or 5/6?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>5/6 is bigger</strong>. 3/4 is 0.75 and 5/6 is about 0.833. <strong>Adding the same number to top and bottom changes the value.</strong></p><p>Why does multiplying work and adding not? Think about what happened on screen when you took the arrow to 2. <strong>The pieces were simply cut in half.</strong> Twice as many pieces and twice as many held, so the area is unchanged. Multiplying only <strong>changes how you cut</strong>, so the amount holds.</p><p>Adding is different. 3/4 → 5/6 does not cut the pieces; it builds <strong>a different fraction from scratch</strong>. The 2 added to the top and the 2 added to the bottom are <strong>2s of different weight</strong>. Adding 2 to 3 nearly doubles it; adding 2 to 4 only gets you to 1.5 times. The top grows more, so the value rises.</p><p>Out of that comes a rule. <strong>When you put fractions over a common denominator or reduce them, you only ever multiply and divide. There is no adding or subtracting.</strong> That rule holds all the way to algebraic fractions with letters in them.</p>"
+  },
+  "real": "Map scales, photo aspect ratios, a 16:9 screen - all the same principle. Blowing 1920×1080 up to 3840×2160 does not change the shape of the picture because <b>both sides were multiplied by 2</b>. Add 100 to each side instead and the frame gets dragged toward a square and the picture distorts.",
+  "quiz": [
+   {
+    "q": "Which fraction has <b>the same</b> value as 2/5?",
+    "opts": [
+     "3/6",
+     "4/10",
+     "4/7",
+     "3/5"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Add 1 to each of the top and bottom of 1/2 and you get 2/3. Against 1/2, 2/3 is:",
+    "opts": [
+     "Bigger",
+     "Smaller",
+     "The same"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Reduce 6/8 and you get:",
+    "opts": [
+     "3/4 - divided top and bottom by 2",
+     "4/6 - subtracted 2 from top and bottom",
+     "6/8 cannot be reduced"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "fraction-3": {
+  "course": "fraction",
+  "sim": "fractions-mixed-numbers",
+  "screens": "1",
+  "mode": "solve",
+  "title": "When the top is bigger than the bottom",
+  "lead": "8/3 is not a fraction written wrongly. It means two whole circles and a bit more.",
+  "hook": "Learning fractions, they are always <b>less than 1</b> - 1/2, 3/4 and so on. Then you meet one like <b>8/3</b> with the bigger number on top and your hand stops. It even looks like a mistake. It is not. You saw 12/4 = 3 in lesson 1, so you already have the answer.",
+  "predict": {
+   "q": "Written as a mixed number (a whole number plus a proper fraction), <b>8/3</b> is:",
+   "opts": [
+    "2 and 2/3",
+    "2 and 1/3",
+    "3 and 2/3",
+    "8 and 1/3"
+   ]
+  },
+  "missions": [
+   "In the large fraction at the <b>middle right</b> of the screen, set the <b>denominator</b> to <b>3</b> and the <b>numerator</b> to <b>8</b>. Three circles appear and only the last one is short.",
+   "Count <b>how many circles are full</b> and <b>how many pieces are in the last one</b>.",
+   "Tick <b>Mixed Number</b> at the bottom right (just above the reset button). The large display changes to <b>2 and 2/3</b>.",
+   "Open the <b>Equation</b> box at the bottom left. It writes out exactly <b>how 8/3 was split up</b>.",
+   "Raise the numerator by one to <b>9</b>. The three circles fill and the display becomes <b>3</b>. The fraction part disappears.",
+   "Raise the numerator slowly from <b>1 to 12</b> and watch when the display becomes a whole number. 3, 6, 9, 12 - there is a pattern.",
+   "Change the shape to the <b>number line</b>. You can see 8/3 sitting <b>between</b> 2 and 3. That is where the \"2 and\" of the mixed number comes from."
+  ],
+  "record": "For 8/3, how many circles were full and how many pieces were left over? And which numerators made the display a whole number?",
+  "explain": {
+   "right": 0,
+   "body": "<p>The answer is <strong>2 and 2/3</strong>. Divide 8 by 3 and you get <strong>a quotient of 2 and a remainder of 2</strong>. The quotient is the whole part, the remainder is the numerator, and the denominator stays.</p><p>That division is exactly what you saw on screen. Fill circles cut into thirds with 8 pieces and <strong>two fill up and 2 pieces are left.</strong> 8 ÷ 3 = 2 remainder 2. Lesson 1's \"the line in a fraction is a division sign\" is doing the work here.</p><p>If you chose <strong>2 and 1/3</strong>, the remainder was probably miscounted. 3 × 2 = 6 and 8 − 6 = 2, so the remainder is 2.</p><p>The numerators that gave whole numbers - 3, 6, 9, 12 - are the same story. It comes out even <strong>only when the numerator is a multiple of the denominator</strong>, because the remainder is 0.</p><p>The names are all you need to keep. Top-heavy like 8/3 is an <strong>improper fraction</strong>; with the whole number pulled out in front like 2 and 2/3 it is a <strong>mixed number</strong>. <strong>They are the same number written two ways.</strong> Neither is the right one - the mixed number is easier for judging size and the improper fraction is easier for calculating.</p>"
+  },
+  "real": "\"1 and 1/2 cups of flour\" in a recipe, \"2 and 3/8 inches\" in woodwork, \"1 and 1/4 laps\" running - everyday life uses mixed numbers, because 1 and 1/2 cups lands far faster than 3/2 cups. Calculators and computers do the opposite and convert everything to improper fractions, because multiplying and dividing gets much simpler.",
+  "quiz": [
+   {
+    "q": "As a mixed number, <b>11/4</b> is:",
+    "opts": [
+     "2 and 3/4",
+     "3 and 1/4",
+     "2 and 1/4",
+     "4 and 3/11"
+    ],
+    "right": 0
+   },
+   {
+    "q": "As an improper fraction, <b>3 and 1/5</b> is:",
+    "opts": [
+     "4/5",
+     "8/5",
+     "16/5",
+     "31/5"
+    ],
+    "right": 2
+   },
+   {
+    "q": "If dividing the numerator by the denominator leaves a remainder of <b>0</b>, the fraction:",
+    "opts": [
+     "Becomes a whole number",
+     "Becomes a mixed number",
+     "Becomes a fraction less than 1"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "fraction-4": {
+  "course": "fraction",
+  "sim": "build-a-fraction",
+  "screens": null,
+  "mode": "solve",
+  "title": "Several ways to make the same fraction",
+  "lead": "Being able to read one and being able to build one are different things. This time you assemble them by hand.",
+  "hook": "So far you have been reading what the screen drew for you. Now <b>you build them.</b> You are given a target fraction and drag pieces in to fill it. And there is <b>more than one way</b> to fill it. Asked for 1/2 you can put down one half, or two quarter pieces. That is the whole of this lesson.",
+  "predict": {
+   "q": "To fill <b>1/2</b> using nothing but <b>1/6 pieces</b>, how many do you need?",
+   "opts": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ]
+  },
+  "missions": [
+   "On the <b>Build a Fraction</b> screen press <b>Level 1</b> in the top row. The level buttons come in <b>two rows</b>: the top row builds with <b>shapes</b>, the bottom row with <b>number cards</b>.",
+   "On the right are boxes with target fractions written on them. Drag pieces out of the tray below into the empty circle on the left.",
+   "Once it is full, <b>drag that group onto the target box</b>. Right, and it settles in; wrong, and it comes back.",
+   "The <b>green +</b> to the right of the circle adds another circle. That is how you make fractions bigger than 1. The <b>red −</b> takes one away.",
+   "The <b>◀ ▶</b> under a circle change the number of pieces. You can re-cut it from whole down to <b>eighths</b>.",
+   "When a <b>1/2</b> target comes up, fill it deliberately with <b>1/6 pieces only</b>. How many make it exact? That is the answer to ②.",
+   "Fill the same target <b>two different ways</b>. Use the undo arrow to take the pieces out and build it again.",
+   "Work up to levels <b>4-5</b>. The targets pass 1 and you start needing the green +.",
+   "Use the house button to reach the <b>Mixed Numbers</b> screen for the same game with mixed numbers. It follows on from lesson 3."
+  ],
+  "record": "How many 1/6 pieces did it take to fill 1/2? And write down <b>two different ways</b> you filled the same target.",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>3</strong>. Three sixths is 3/6, and 3/6 has the same value as 1/2. Lesson 2's \"multiply the top and bottom by the same number\" <strong>gets built by hand</strong> here, since multiplying 1/2 top and bottom by 3 gives 3/6.</p><p>If you answered 2, you may have paired the denominator 6 with two pieces. Two pieces of a sixth is 2/6, which is 1/3, and that falls short of a half.</p><p>The real lesson of this game is that <strong>there are several right answers</strong>. A half is made by one half, by two quarters, by three sixths, by four eighths. There are endlessly many fractions of the same value, and the <strong>simplest form</strong> among them is 1/2. Finding that simplest form is what reducing a fraction is.</p><p>The number card levels (the bottom row) are a little different. With no picture, <strong>you choose the numbers to put in the numerator and denominator yourself.</strong> It feels much harder because you have to build it in your head instead of leaning on the picture, and that is exactly the step to be taking now.</p><p>A wrong group <strong>simply comes back.</strong> No points lost, no lives. It is built that way so you will try things freely.</p>"
+  },
+  "real": "Think of Lego. An eight-stud space takes two four-stud bricks or four two-stud bricks. A carpenter needing 3/4 inch using six 1/8 inch shims, a cook measuring a cup with a quarter-cup measure - the same thing. The pieces can be any size as long as <b>the amount they add to</b> is the same.",
+  "quiz": [
+   {
+    "q": "To fill <b>2/3</b> using only <b>1/9 pieces</b>:",
+    "opts": [
+     "3",
+     "6",
+     "9"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Which of these does <b>not</b> make <b>3/4</b>?",
+    "opts": [
+     "Three 1/4 pieces",
+     "Six 1/8 pieces",
+     "One 1/2 piece and one 1/4 piece",
+     "Three 1/8 pieces"
+    ],
+    "right": 3
+   },
+   {
+    "q": "Put a <b>wrong</b> group on a target box and:",
+    "opts": [
+     "You lose points",
+     "The group returns to where it was",
+     "You restart the level"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "fraction-5": {
+  "course": "fraction",
+  "sim": "fraction-matcher",
+  "screens": null,
+  "mode": "solve",
+  "title": "Different faces, same number",
+  "lead": "Pictures and numbers, improper fractions and mixed numbers - find the same number among the different faces. The close of four lessons.",
+  "hook": "By now you have all the tools. A fraction is a division (lesson 1), multiplying top and bottom by the same number holds the value (lesson 2), a top-heavy one can become a mixed number (lesson 3), and there are several ways to make the same fraction (lesson 4). Now you use them <b>mixed together</b>. Cards are laid out and you find six pairs, <b>two cards of equal value</b> each. They might be pictures or numbers.",
+  "predict": {
+   "q": "Which of these does <b>not</b> pair with <b>3/4</b>?",
+   "opts": [
+    "6/8",
+    "9/12",
+    "4/5",
+    "A circle cut into eighths with 6 pieces shaded"
+   ]
+  },
+  "missions": [
+   "On the <b>Fractions</b> screen choose <b>Level 1</b>. There are 8 levels, and level 1 has pictures and numbers that <b>match exactly</b>.",
+   "Drag two of the laid-out cards onto the two pans of the balance in the middle.",
+   "With both on, a <b>Check</b> button appears. Press it to be told whether it is right.",
+   "Right, and the balance goes <b>level</b> and the cards move up to <b>My Matches</b>. Wrong, and the balance <b>tips.</b>",
+   "Put a <b>wrong pair</b> on deliberately once. The way the balance tips tells you <b>which is bigger</b>. That is the hidden tool of this sim.",
+   "Get it wrong and <b>Try Again</b> appears. Wrong a second time and <b>Show Answer</b> appears and places the right pair for you.",
+   "Finish a level by matching all six pairs. <b>Right first time is 2 points, right second time is 1</b>, so 12 is full marks.",
+   "Go to <b>level 3 or above</b> and fractions greater than 1 appear in the mix. The improper fractions and mixed numbers of lesson 3 become pairs here.",
+   "Move to the <b>Mixed Numbers</b> screen for the same game. The clock button below the level chooser turns the timer on and off."
+  ],
+  "record": "Write down one pair that tipped the balance and which side was bigger. And which pair confused you most?",
+  "explain": {
+   "right": 2,
+   "body": "<p>The answer is <strong>4/5</strong>. 3/4 is 0.75 and 4/5 is 0.8 - <strong>different numbers</strong>. It looks the same because top and bottom each went up by one, but as lesson 2 showed, <strong>adding does not hold the value.</strong></p><p>The other three are all 3/4. 6/8 is top and bottom times 2, 9/12 is times 3, and the circle cut into eighths with 6 shaded is <strong>6/8 drawn as a picture</strong>.</p><p>What this game is after is <strong>the habit of reducing before you compare</strong>. To see whether two fractions are equal, put each in its simplest form and set them side by side. 6/8 → 3/4, 9/12 → 3/4, 4/5 → 4/5. It separates at a glance.</p><p>The balance is not decoration. When you are wrong it tells you <strong>which side is bigger</strong> as well. That is more useful than getting it right, because it tells you why you were wrong. Which is why a mission asks you to get one wrong on purpose.</p><p>The scoring - <strong>2 points first time, 1 point second</strong> - has a point too. It is built so that <strong>getting it right first time</strong> pays better than guessing. Do not rush the cards up; reduce them in your head first.</p>"
+  },
+  "real": "Discounts are a good example. \"25% off\", \"a quarter off\" and \"0.25 off\" all say the same thing. A test score of 18/24, 3/4 and 75% are all the same too. It is one number written as a percentage, a fraction or a decimal to suit the situation - and <b>if you cannot recognise it as the same number</b> you end up recalculating every time.",
+  "quiz": [
+   {
+    "q": "What pairs with <b>2/6</b>?",
+    "opts": [
+     "1/3",
+     "1/2",
+     "2/3",
+     "3/6"
+    ],
+    "right": 0
+   },
+   {
+    "q": "You put two cards on the balance and it <b>tips to the left.</b> That means:",
+    "opts": [
+     "The left card is the bigger number",
+     "The right card is the bigger number",
+     "They are the same number"
+    ],
+    "right": 0
+   },
+   {
+    "q": "What pairs with <b>5/4</b>?",
+    "opts": [
+     "1 and 1/4",
+     "1 and 4/5",
+     "4 and 1/5",
+     "5 and 1/4"
+    ],
+    "right": 0
+   }
+  ]
  }
 }

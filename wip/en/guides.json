@@ -2613,5 +2613,299 @@
    "Once <b>Saturated!</b> shows, adding more will not raise the concentration.",
    "A colourless solute barely eats any light, so the absorbance hardly registers. Pick something <b>strongly coloured</b>."
   ]
+ },
+ "fractions-intro": {
+  "summary": "Turns a fraction <b>into a picture</b>. There is almost no text - changing two numbers changes the picture, and that is all of it, so five minutes is enough to get comfortable.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "The screen this lesson uses. Change the numerator and denominator and the picture follows at once."
+   },
+   {
+    "name": "Game",
+    "what": "Name the fraction from the picture. 10 levels. Good on your own once the lesson is done."
+   },
+   {
+    "name": "Lab",
+    "what": "A free space with no targets, where you drag pieces around as you like."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The shape chooser (the box at the top centre)",
+    "desc": "Choose one of six: <b>circle · horizontal bar · vertical bar · beaker · cake · number line</b>. It sits just above the picture. Only the picture changes; the value of the fraction does not.",
+    "tip": "Seeing the same fraction <b>in all six</b> is the heart of this sim. The <b>number line</b> especially is the only one that shows a fraction is not a \"piece\" but a single number."
+   },
+   {
+    "name": "Max (top right)",
+    "desc": "Sets how many containers you can use, from 1 to 6, with the round arrows.",
+    "tip": "Left at 1, <b>you cannot make a fraction bigger than 1.</b> If raising the numerator stops having any effect, check here."
+   },
+   {
+    "name": "Numerator · Denominator (the large fraction, middle right)",
+    "desc": "The number <b>above the line is the numerator</b> and the one <b>below is the denominator</b>. Round arrows beside each raise and lower them. The denominator runs 1-8.",
+    "tip": "<b>Change one and leave the other alone.</b> Move both and you cannot tell what made the picture change."
+   },
+   {
+    "name": "The piece tray (bottom centre)",
+    "desc": "You can also drag pieces into and out of the containers by hand. The numerator follows.",
+    "tip": "Raising the arrows and dragging pieces in <b>give the same result.</b> Use whichever suits."
+   }
+  ],
+  "steps": [
+   "Choose the <b>circle</b> in the shape chooser.",
+   "Set the denominator to <b>3</b> and the numerator to <b>1</b> for 1/3.",
+   "Leave the numerator and raise <b>the denominator alone to 8</b>, watching how thin the piece gets.",
+   "Raise <b>Max</b> to 3 for three containers.",
+   "With denominator <b>4</b>, raise the numerator to <b>12</b> and check the three containers fill exactly.",
+   "Change the shape chooser to the <b>number line</b> and see where the same fraction sits."
+  ],
+  "gotchas": [
+   "Raise the denominator and <b>the pieces get smaller.</b> A bigger number feels like a bigger value; it is the opposite.",
+   "If raising the numerator does not fill the picture, <b>Max</b> is set to 1. You are short of containers, not broken.",
+   "Change the denominator and pieces already placed get re-cut. Nothing to be alarmed at - it is <b>the same amount cut differently</b>.",
+   "This sim has three screens. The lesson opens only the <b>Intro</b> screen."
+  ]
+ },
+ "fractions-equality": {
+  "summary": "Builds a fraction <b>of equal value</b> on the right automatically and shows it beside yours. A sim for checking, by area, whether the <b>=</b> in the middle is really telling the truth.",
+  "screens": [
+   {
+    "name": "Equality Lab",
+    "what": "The screen this lesson uses. Really a bench for comparing equal values side by side."
+   },
+   {
+    "name": "Game",
+    "what": "Find fractions of equal value. 10 levels."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The shape chooser (above and left of the = sign)",
+    "desc": "Four this time: <b>circle · horizontal bar · vertical bar · beaker</b>. Unlike the previous sim, cake and number line are not in this chooser.",
+    "tip": "Since you are comparing areas, the <b>horizontal bar</b> reads best. Circles get hard to judge by eye once the pieces are cut fine."
+   },
+   {
+    "name": "Numerator · Denominator (the large fraction, bottom left)",
+    "desc": "Sets the left-hand fraction. The denominator runs <b>1-6</b> and there are at most 4 containers.",
+    "tip": "The right-hand fraction <b>cannot be set directly.</b> It is settled entirely by the left-hand one and the multiplier."
+   },
+   {
+    "name": "The green arrow (bottom right end)",
+    "desc": "The <b>multiplier</b>, 1, 2 or 3, sitting <b>immediately to the right</b> of the multiplied fraction. The right-hand fraction is the left one with its numerator and denominator multiplied by it.",
+    "tip": "The most important control here. That raising it <b>does not change the shaded area</b> is the whole of this lesson."
+   },
+   {
+    "name": "The picture / number line chooser (top right)",
+    "desc": "Chooses whether to see <b>the right half only</b> as a picture or as a number line. The left stays a picture.",
+    "tip": "The number line <b>stands vertically.</b> Raise the multiplier and the ticks get finer while <b>the marked point stays at the same height</b>. Area gets you as far as \"they look similar\"; this nails it as \"the same number\"."
+   }
+  ],
+  "steps": [
+   "Set the left-hand fraction to <b>3/4</b>.",
+   "Raise the green arrow to <b>2</b> and watch the right become 6/8. Compare the areas.",
+   "Take the green arrow to <b>3</b> and check the area is still the same at 9/12.",
+   "Change the left to <b>5/6</b> and fix the shaded area in your mind.",
+   "Return to <b>3/4</b> and compare which is fuller.",
+   "Change the right-hand chooser to the <b>number line</b> and check the point stays at the same height as you raise the green arrow."
+  ],
+  "gotchas": [
+   "The right-hand fraction is <b>not yours to set.</b> It follows automatically from the left-hand fraction times the green arrow.",
+   "The green arrow only goes <b>up to 3</b>. Larger multiples are not available here.",
+   "The denominator only goes <b>up to 6</b>. A fraction like 7/8 cannot be built here - use the previous sim (Fractions: Intro) for that."
+  ]
+ },
+ "fractions-mixed-numbers": {
+  "summary": "The controls are <b>identical</b> to Fractions: Intro. Exactly two things are added - the <b>Mixed Number</b> checkbox and the <b>Equation</b> box. Those two are the whole sim.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "The screen this lesson uses. Where you turn improper fractions into mixed numbers."
+   },
+   {
+    "name": "Game",
+    "what": "Name the mixed number. 10 levels."
+   },
+   {
+    "name": "Lab",
+    "what": "A free space with no targets, where you handle the pieces as you like."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The shape chooser (top centre)",
+    "desc": "Six: circle, horizontal bar, vertical bar, beaker, cake and number line.",
+    "tip": "The <b>number line</b> is especially good for improper fractions. That 8/3 lies between 2 and 3 shows up immediately as a picture."
+   },
+   {
+    "name": "Max (top right)",
+    "desc": "Sets how many containers you can use - here <b>1-4</b>.",
+    "tip": "The previous sim went to 6 and this one to 4. With a large whole part the picture gets messy, so it was cut back."
+   },
+   {
+    "name": "Numerator · Denominator (the large fraction, middle right)",
+    "desc": "The denominator runs 1-8. Being able to raise <b>the numerator above the denominator</b> is the point of this sim.",
+    "tip": "Set the numerator to a multiple of the denominator (3, 6, 9…) and the display becomes a <b>whole number</b>. That is where you see the division come out even."
+   },
+   {
+    "name": "Mixed Number (bottom right, above the reset button)",
+    "desc": "On, the large display changes into a mixed number like <b>2 and 2/3</b>. Off, it stays 8/3.",
+    "tip": "<b>Turn it on and off repeatedly.</b> Once you see it is two name tags on one picture, improper fractions and mixed numbers stop being confusing."
+   },
+   {
+    "name": "Equation (collapsible box, bottom left)",
+    "desc": "Press the title to open it. It writes out <b>how the fraction was split</b>.",
+    "tip": "If the Mixed Number checkbox shows you the \"result\", this box shows you the <b>\"working\"</b>. Open it when you cannot see why the answer came out that way."
+   }
+  ],
+  "steps": [
+   "Set the denominator to <b>3</b> and the numerator to <b>8</b> for 8/3.",
+   "Count the full containers and the pieces left over.",
+   "Tick <b>Mixed Number</b> and watch the display become 2 and 2/3.",
+   "Open the <b>Equation</b> box and check how it was split.",
+   "Raise the numerator to <b>9</b> and watch the display become the whole number 3.",
+   "Change the shape to the <b>number line</b> and confirm 8/3 lies between 2 and 3."
+  ],
+  "gotchas": [
+   "The <b>Mixed Number</b> checkbox <b>changes only the display.</b> The value is unchanged - 8/3 and 2 and 2/3 are the same number.",
+   "If raising the numerator does not fill the picture, <b>Max</b> is too low. It only goes to 4 here.",
+   "When it comes out to a whole number the fraction part of the mixed number <b>disappears.</b> It is not lost - it is 0/3, so it is not written.",
+   "The screen is nearly identical to Fractions: Intro, which is confusing. <b>If you can see the Mixed Number checkbox</b>, you are in this one."
+  ]
+ },
+ "build-a-fraction": {
+  "summary": "The opposite of everything so far. The screen does not draw for you - <b>you drag pieces in to make the target fraction.</b> This sim <b>starts at the level chooser</b> - open it and you get level buttons before any game.",
+  "screens": [
+   {
+    "name": "Build a Fraction",
+    "what": "The screen this lesson uses. Build fractions smaller than 1 out of pieces."
+   },
+   {
+    "name": "Mixed Numbers",
+    "what": "The same game with fractions bigger than 1. Come here after lesson 3 (Fractions: Mixed Numbers)."
+   },
+   {
+    "name": "Lab",
+    "what": "A free space with no targets and no score. Use the pieces and number cards as you like."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The level buttons (the first screen when you open it)",
+    "desc": "The buttons come in <b>two rows</b>. The <b>top row builds with shapes</b> and the <b>bottom row with number cards</b>. Only five show at a time; the <b>yellow arrow</b> at the bottom centre moves you across to <b>levels 6-10</b>.",
+    "tip": "Start with the top row. The bottom row has no pictures and has to be built in your head, which is much harder."
+   },
+   {
+    "name": "The piece tray (bottom)",
+    "desc": "Pieces stacked by size from 1/1 down to 1/8. Drag them into the container on the left.",
+    "tip": "<b>Fill the same target with different pieces too.</b> That is exactly what this sim is here to teach."
+   },
+   {
+    "name": "Green + · red − (right of the container)",
+    "desc": "Adds or removes a container. Used for fractions bigger than 1.",
+    "tip": "With one container you cannot make a fraction bigger than 1. When the target passes 1, press the <b>green +</b> first."
+   },
+   {
+    "name": "◀ ▶ (under the container)",
+    "desc": "Changes how many pieces the container is cut into, from whole down to <b>eighths</b>. Set this first or a piece of that size will not go in.",
+    "tip": "<b>If a piece will not go in</b>, it is usually because the container is cut into a size that does not match. Check here first."
+   },
+   {
+    "name": "The target boxes (right)",
+    "desc": "The fractions you have to make. <b>Drag a finished group onto a box.</b>",
+    "tip": "Right, and it settles in; wrong, and it <b>simply comes back.</b> Nothing is lost, so put it down even when you are not sure."
+   },
+   {
+    "name": "The undo arrow (left of a group)",
+    "desc": "Takes the pieces out of that group one at a time. Only visible while the group is selected.",
+    "tip": "If you cannot see it, <b>press the group once to select it.</b> It only appears on the selected group."
+   },
+   {
+    "name": "Back · refresh (top left)",
+    "desc": "<b>Back</b> returns to the level chooser. <b>Refresh</b> draws a new set of problems at the same level.",
+    "tip": "<b>Refresh</b> is useful when one problem has you stuck. It keeps the level and swaps the problems."
+   }
+  ],
+  "steps": [
+   "On the <b>Build a Fraction</b> screen press <b>Level 1</b> in the top row.",
+   "Pick a target fraction on the right and fill the container with pieces from the tray.",
+   "Once it is full, <b>drag the group onto the target box</b>.",
+   "Fill a <b>1/2</b> target using <b>1/6 pieces only</b>.",
+   "Fill the same target <b>again with different pieces</b>.",
+   "Move up to levels 4-5 and meet a problem that needs the <b>green +</b>.",
+   "Use the house button to play the same game on the <b>Mixed Numbers</b> screen."
+  ],
+  "gotchas": [
+   "Do not be thrown when no game appears as you open it. This one <b>asks you to pick a level first</b>.",
+   "It is easy to miss that the level buttons come in <b>two rows</b>. The top row (shapes) and the bottom row (number cards) are completely different games. <b>Levels 6-10 are beyond the yellow arrow.</b>",
+   "A piece that will not go into a container is not a fault - <b>the division does not match</b>. Set it with the ◀ ▶ under the container.",
+   "Getting it wrong <b>costs you nothing.</b> It just comes back. Try freely.",
+   "This sim has three screens. The lesson starts on <b>Build a Fraction</b>, but the others are open too."
+  ]
+ },
+ "fraction-matcher": {
+  "summary": "A game of pairing <b>two cards of equal value</b> on a balance. This sim also <b>starts at the level chooser</b>. The balance both marks your answer and <b>tells you which side is bigger</b>.",
+  "screens": [
+   {
+    "name": "Fractions",
+    "what": "The screen this lesson uses. It starts below 1 and mixes in bigger fractions as the levels rise."
+   },
+   {
+    "name": "Mixed Numbers",
+    "what": "The same game with mixed numbers. Cards like 1 and 1/4 turn up."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The level buttons (the first screen when you open it)",
+    "desc": "There are <b>8 levels</b>. 1 is the easiest and 8 the hardest.",
+    "tip": "Level 1 only has pictures and numbers that <b>match exactly</b>. From 2 on you have to reduce."
+   },
+   {
+    "name": "The clock button (below the level chooser)",
+    "desc": "Turns the timer on and off. On, the elapsed time shows during the game.",
+    "tip": "Leave it <b>off</b> to begin with. Under time pressure you will guess instead of reducing. Turning it on later makes good practice."
+   },
+   {
+    "name": "The cards",
+    "desc": "Picture cards and number cards laid out together. Drag them about.",
+    "tip": "Picture cards can pair with picture cards. Assume it is only <b>picture ↔ number</b> and you will flounder."
+   },
+   {
+    "name": "The balance (middle)",
+    "desc": "Put one card on each pan. Right, and it goes <b>level</b>; wrong, and it <b>tips toward the bigger side.</b>",
+    "tip": "The most useful part of this sim. Getting it wrong tells you <b>which side is bigger</b>, so there is more to learn here than in getting it right."
+   },
+   {
+    "name": "Check · Try Again · Show Answer",
+    "desc": "With both cards on, <b>Check</b> appears. Wrong, and you get <b>Try Again</b>; wrong a second time and <b>Show Answer</b> appears.",
+    "tip": "<b>Show Answer</b> places the right pair for you. It scores nothing, but you get to see why they are a pair."
+   },
+   {
+    "name": "My Matches (the row at the top)",
+    "desc": "Pairs you have got right collect here. Fill all six and the level is over.",
+    "tip": "Press a collected pair again and you can put it back on the balance to check. Good for revision."
+   },
+   {
+    "name": "Score · time (top)",
+    "desc": "<b>Right first time is 2 points, right second time is 1.</b> Six pairs, so full marks is 12.",
+    "tip": "Short of full marks means you guessed somewhere. The scoring is built so that <b>getting it right first time pays</b>."
+   }
+  ],
+  "steps": [
+   "On the <b>Fractions</b> screen choose <b>Level 1</b>.",
+   "Drag two cards onto the pans and press <b>Check</b>.",
+   "Put a <b>wrong pair</b> on deliberately once and watch which way the balance tips.",
+   "Match all six pairs to finish a level.",
+   "Move to <b>level 3 or above</b> and watch fractions bigger than 1 come in.",
+   "Use the house button to play the same game on the <b>Mixed Numbers</b> screen."
+  ],
+  "gotchas": [
+   "Do not be thrown when no game appears as you open it. This one <b>asks you to pick a level first</b>.",
+   "Pairs are not only <b>picture ↔ number</b>. Picture ↔ picture and number ↔ number count too, as long as the values match.",
+   "Do not shrug off a tipped balance. <b>The direction it tips is information</b> - it tells you which side is bigger.",
+   "From the second attempt a correct answer is worth <b>1 point</b>. Reduce it in your head before you rush the cards up.",
+   "Leaving the timer on makes you hasty. Better off at first."
+  ]
  }
 }
