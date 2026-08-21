@@ -1560,5 +1560,218 @@
    "The layout is the same as alpha decay, which is easy to confuse. If the starting atom is <b>³H</b> you are here; if it is <b>²¹¹Po</b> you are in the alpha sim.",
    "<b>Alpha Particle</b> may still appear in the legend. The two sims share components; no alpha particle comes out of beta decay."
   ]
+ },
+ "quantum-coin-toss": {
+  "summary": "The screen is split down the middle: <b>an ordinary coin on the left, a quantum coin on the right</b>. Doing the same thing on both sides and <b>comparing the results</b> is the whole of this sim.",
+  "screens": [
+   {
+    "name": "Coins",
+    "what": "This sim has a single screen, split left and right to handle the two kinds of coin side by side."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Coin to Prepare (top left)",
+    "desc": "The settings for the ordinary coin. <b>Initial Orientation</b> picks the starting face - the two buttons show the faces as pictures, with no words on them.",
+    "tip": "An ordinary coin has a state <b>before you throw it</b>. What you set here is that state."
+   },
+   {
+    "name": "Coin Bias (State) - handle on the left",
+    "desc": "Sets the <b>probability</b> of the first face. 0.5 is fifty-fifty.",
+    "tip": "Set <b>the same probability</b> on both sides before comparing. With different probabilities there is nothing to compare."
+   },
+   {
+    "name": "State to Prepare (top right)",
+    "desc": "The quantum coin side. The state is written with two values, <b>α</b> and <b>β</b>. Square each of them to get a probability.",
+    "tip": "Set α = β = <b>0.707</b> for a fifty-fifty probability (0.707² ≈ 0.5). Start from those values."
+   },
+   {
+    "name": "Hide · Flip · Flip and Reveal (ordinary coin side)",
+    "desc": "<b>Hide</b> the coin, <b>flip</b> it, or <b>flip and reveal</b> it.",
+    "tip": "The <b>Hide</b> state is the key picture of this lesson - already settled, and I cannot see it."
+   },
+   {
+    "name": "Observe · Reprepare · Reprepare and Observe (quantum coin side)",
+    "desc": "<b>Observe</b> settles the state into one value; <b>Reprepare</b> puts it back into superposition.",
+    "tip": "Press <b>Reprepare and Observe</b> several times over. You can see it settled <b>anew</b> each time."
+   },
+   {
+    "name": "Multiple Coin Measurements (bottom)",
+    "desc": "Measures <b>N</b> coins at once, up to 100.",
+    "tip": "The decisive experiment of this lesson. Measure 100 on each side and see whether <b>the results alone let you tell them apart</b> - they do not."
+   },
+   {
+    "name": "New Coin (bottom left)",
+    "desc": "Puts everything back to the start.",
+    "tip": "When the settings get tangled, press this first."
+   }
+  ],
+  "steps": [
+   "On the <b>Classical Coin</b> side, do <b>Flip</b> and <b>Reveal</b> several times.",
+   "Set <b>Coin Bias (State)</b> to <b>0.5</b>.",
+   "On the <b>Quantum \"Coin\"</b> side, set α and β to <b>0.707</b> each.",
+   "Press <b>Observe</b> several times and look at the results.",
+   "Under <b>Multiple Coin Measurements</b> set <b>N = 100</b> and measure both sides.",
+   "Compare the two results and see whether you can tell them apart.",
+   "Repeat <b>Reprepare and Observe</b> and watch it settle anew each time."
+  ],
+  "gotchas": [
+   "<b>The results alone cannot tell the two coins apart.</b> That is not a failure; it is the conclusion of this sim.",
+   "α and β are not probabilities but <b>values that become probabilities when squared</b>. 0.707² ≈ 0.5.",
+   "Once you <b>Observe</b> the quantum coin it is fixed at that value. Press <b>Reprepare</b> to put it back into superposition.",
+   "This sim was built at university level. You can follow it from <b>the two probabilities</b> alone, without the algebra of α and β."
+  ]
+ },
+ "quantum-measurement": {
+  "summary": "Shows quantum measurement in <b>four different ways</b>. It opens with the same coin story as the previous lesson, then moves on to photons and spin.",
+  "screens": [
+   {
+    "name": "Coins",
+    "what": "<b>The same material as the previous lesson</b> (Quantum Coin Toss). Worth one more look if any of it did not land."
+   },
+   {
+    "name": "Photons",
+    "what": "The key screen for this lesson. Measurement handled through the <b>polarization</b> of light."
+   },
+   {
+    "name": "Spin",
+    "what": "The same story told with the spin of an electron. Measuring devices can be put <b>in a row</b>."
+   },
+   {
+    "name": "Bloch Sphere",
+    "what": "Draws a quantum state as a point on a ball. The hardest screen."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Single Photon · Many Photons (top of the Photons screen)",
+    "desc": "Choose whether to send photons <b>one at a time</b> or <b>in numbers</b>.",
+    "tip": "Start with <b>Single Photon</b>. This lesson only works once you have seen one grain go one way whole. Proportions come after."
+   },
+   {
+    "name": "Photon Polarization Angle (bottom left)",
+    "desc": "Choose between <b>Vertical (V)</b>, <b>Horizontal (H)</b>, <b>45°</b>, <b>Unpolarized</b> and <b>Custom</b>.",
+    "tip": "The main control here. Go from <b>Vertical to 45°</b>. On vertical the result is settled; at 45° it cannot be predicted."
+   },
+   {
+    "name": "Behavior - Classical · Quantum (middle)",
+    "desc": "Choose whether light is handled <b>as a wave</b> or <b>as grains</b>.",
+    "tip": "The best contrast in this lesson. <b>Classical</b> divides the intensity and sends both ways; <b>Quantum</b> sends it whole, one way."
+   },
+   {
+    "name": "Polarizing Beam Splitter (middle)",
+    "desc": "Splits the incoming light into a <b>vertical component</b> and a <b>horizontal component</b> and sends them to different detectors.",
+    "tip": "This is the \"measuring device\". The moment a photon passes it, its polarization is <b>settled into one of the two.</b>"
+   },
+   {
+    "name": "Polarization Detectors (middle - vertical above, horizontal below)",
+    "desc": "Count the photons that arrive. The difference between the two counts gives the <b>average polarization</b>.",
+    "tip": "At 45° the two counts come out <b>close together</b>. Each one is unruly and the whole is even."
+   },
+   {
+    "name": "Vector Representation · Expectation Value · Decimal Values (right)",
+    "desc": "Show the result as an arrow, as an expectation value, and as numbers.",
+    "tip": "If the algebra is heavy going, leave only <b>Decimal Values</b> on. The proportions alone are enough for this lesson."
+   },
+   {
+    "name": "Chaining measuring devices (Spin screen)",
+    "desc": "Put <b>several measuring devices in a row</b>, each at its own angle.",
+    "tip": "Try <b>vertical → horizontal → vertical</b>. The first vertical result being <b>erased</b> is the most startling thing in this sim."
+   },
+   {
+    "name": "Speed setting and the step button (bottom)",
+    "desc": "Play slowly or advance one frame at a time. Both are icons with no words on them.",
+    "tip": "To watch one photon pass the splitter, run it slowly."
+   }
+  ],
+  "steps": [
+   "On the <b>Coins</b> screen, go over the previous lesson's material again.",
+   "Move to the <b>Photons</b> screen and set the angle to <b>Vertical (V)</b>.",
+   "Send them one at a time on <b>Single Photon</b> and see whether it always goes the same way.",
+   "Change the angle to <b>45°</b> and watch it become unpredictable.",
+   "Switch to <b>Many Photons</b> and check the split is even.",
+   "Switch <b>Behavior</b> between <b>Classical</b> and <b>Quantum</b> and compare.",
+   "On the <b>Spin</b> screen put devices in a row at different angles."
+  ],
+  "gotchas": [
+   "A single photon <b>is not divided in half.</b> It goes one way whole - check it under <b>Quantum</b> behavior.",
+   "There are four screens and they get harder as you go. <b>Coins → Photons</b> is enough for this lesson.",
+   "The <b>Bloch Sphere</b> screen is university level. Have a look round it if you are curious."
+  ]
+ },
+ "quantum-bound-states": {
+  "summary": "<b>Confine an electron in a box</b> and see what energies it can have. The upper graph is the <b>energy staircase</b> and the lower one is the <b>wave shape</b>, so the trick is to watch both together.",
+  "screens": [
+   {
+    "name": "One Well",
+    "what": "The screen this lesson uses. You can change the confining shape in several ways."
+   },
+   {
+    "name": "Two Wells",
+    "what": "Two wells, with the electron moving between them. Much harder."
+   },
+   {
+    "name": "Many Wells",
+    "what": "Wells in a row. Closer to the situation of an electron in a solid."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The confining-shape chooser (top right - a combo box with no heading, showing the current shape)",
+    "desc": "Choose between <b>Infinite Square</b>, <b>Finite Square</b>, <b>Harmonic Oscillator</b>, <b>Coulomb</b> and others.",
+    "tip": "Start on <b>Infinite Square</b>, the simplest box. <b>Coulomb</b> is the situation of the hydrogen atom from course 05."
+   },
+   {
+    "name": "The energy staircase (the horizontal lines in the upper graph)",
+    "desc": "The energies the electron can have. <b>Press</b> a line to select that state.",
+    "tip": "The answer to this lesson is here. <b>The gaps between the lines are empty</b> - those energies are impossible."
+   },
+   {
+    "name": "The width and depth handles (small handles on the graph)",
+    "desc": "Drag to change the <b>width</b> and <b>depth</b> of the box. The readout beside each says width = … nm or depth = … eV.",
+    "tip": "The key action in this lesson. <b>Narrow</b> the width and the steps spread apart; <b>widen</b> it and they pack together. Why quantum is invisible in daily life comes out of this."
+   },
+   {
+    "name": "Quantum State Graph (right) - Probability Density · Wave Function",
+    "desc": "Choose whether the lower graph shows the <b>probability density</b> or the <b>wave function</b>.",
+    "tip": "<b>Probability Density</b> is the easier one to read. It shows you <b>where the electron is likely to be found</b>."
+   },
+   {
+    "name": "Energy Level (right)",
+    "desc": "Choose between <b>E₁ · E₂ · E₃</b> and so on. Pressing a line in the upper graph does the same thing.",
+    "tip": "Work up from E₁ and watch the <b>number of humps</b> rise by one each time. The same shapes as the guitar string harmonics in course 03."
+   },
+   {
+    "name": "Mass (right)",
+    "desc": "Changes the mass of the confined particle, in units of the electron mass.",
+    "tip": "Heavier packs the steps <b>closer together.</b> Much the same effect as widening the box - heavy things do not show quantum effects."
+   },
+   {
+    "name": "Values · Magnifier · Reference Line (bottom left)",
+    "desc": "Put values on screen as numbers, and bring out a magnifier and a reference line.",
+    "tip": "Turn on <b>Values</b> and you can read each step's energy as a number. Good for measuring how far the gaps open up."
+   },
+   {
+    "name": "Hide-curve, restart and pause buttons",
+    "desc": "Hide a graph, or wind the time back and stop it. All are icons with no words on them.",
+    "tip": "If the wave rippling with time is distracting, stop it with the pause button and look at the shape alone."
+   }
+  ],
+  "steps": [
+   "Check the confining shape is <b>Infinite Square</b>.",
+   "Look at the <b>horizontal lines</b> in the upper graph and the empty space between them.",
+   "Select <b>E₁ · E₂ · E₃</b> in turn and count the humps in the wave.",
+   "Switch to <b>Probability Density</b> and look at where it is likely to be found.",
+   "Drag the <b>width</b> handle to narrow the box and watch the step spacing.",
+   "Widen the box and watch the steps pack together.",
+   "Change the shape to <b>Coulomb</b> for the situation of the hydrogen atom."
+  ],
+  "gotchas": [
+   "The energies <b>between the steps</b> cannot be had. The empty space is the answer to this lesson.",
+   "The <b>narrower</b> the box, the wider the step spacing. It can feel backwards.",
+   "At <b>E₂</b> the electron is <b>never found</b> at the middle of the box. Not an error.",
+   "The wave ripples with time. To look at the shape alone, stop it with the pause button.",
+   "This sim was built at university level. Grasping <b>that there are steps</b> and <b>that narrowing spreads them</b> is enough."
+  ]
  }
 }

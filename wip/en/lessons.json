@@ -1361,5 +1361,200 @@
     "right": 0
    }
   ]
+ },
+ "quantum-1": {
+  "course": "quantum",
+  "sim": "quantum-coin-toss",
+  "screens": null,
+  "title": "A covered coin and a quantum coin are not the same",
+  "lead": "A coin under your palm has already landed. A quantum coin has not. How those two differ is the whole thing.",
+  "hook": "You toss a coin and cover it with your palm. Heads or tails? <b>You do not know.</b> But there are two kinds of \"do not know\": <b>already settled and I cannot see it</b>, and <b>not settled yet</b>. In daily life there is no need to tell them apart - you just lift your hand. In the quantum world the two <b>actually behave differently.</b>",
+  "predict": {
+   "q": "You prepare a <b>quantum coin</b> with a fifty-fifty probability. <b>Before</b> you observe it, its state is:",
+   "opts": [
+    "Already heads or tails; I simply do not know which",
+    "<b>Neither</b> heads nor tails, and settles into one at the moment of observation",
+    "Flicking between heads and tails very fast",
+    "The coin does not exist"
+   ]
+  },
+  "missions": [
+   "The <b>left half</b> of the screen is the <b>Classical Coin</b> and the <b>right half</b> is the <b>Quantum \"Coin\"</b>. The whole layout is built to compare them side by side.",
+   "Look at the <b>Classical Coin</b> side first. Set <b>Initial Orientation</b> to the heads face.",
+   "Press <b>Flip</b> and then <b>Reveal</b> to see the result. Repeat it several times.",
+   "Put <b>Coin Bias (State)</b> at <b>0.5</b> for fifty-fifty, or <b>0.8</b> to get heads more often.",
+   "Now the <b>Quantum \"Coin\"</b> side. Set α and β under <b>State to Prepare</b>.",
+   "Make α and β <b>equal</b> (0.707 each). The probabilities below become <b>0.5 / 0.5</b>.",
+   "Press <b>Observe</b> for a result. Repeat several times and check that heads and tails come out evenly.",
+   "Up to here <b>it is indistinguishable from an ordinary coin.</b> Judged on results alone they are the same.",
+   "Now set <b>N = 100</b> under <b>Multiple Coin Measurements</b> and press <b>Start</b>.",
+   "Take 100 measurements on each side. Are the proportions the same? That is the core of ② - <b>the results alone cannot tell them apart.</b>",
+   "Press <b>Reprepare and Observe</b> several times. It is settled anew every time."
+  ],
+  "record": "Write down the result of 100 measurements on the ordinary coin and on the quantum coin. Looking at the two results, could you tell which was which?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>neither heads nor tails, and it settles into one at the moment of observation</strong>.</p><p>And yet, as the screen showed you, <strong>the results alone cannot tell them apart.</strong> A hundred measurements or ten thousand, both come out even. So on what grounds do we say they differ?</p><p>The difference lies in <strong>what you can do before you measure</strong>. Think back to the two-slit experiment in course 04, lesson 4.</p><ul><li><strong>If it were already settled</strong> - the grain went through the left slit or the right one, and you should get the <strong>sum of the two smears</strong>.</li><li><strong>If it is not settled</strong> - the two possibilities <strong>overlap</strong>, cancelling and reinforcing, and make <strong>stripes</strong>.</li></ul><p>What actually came out was <strong>stripes</strong>. So it is not \"it was settled and we merely did not know\".</p><p>This state is called <strong>superposition</strong>. It is often described as \"both at once\", which is not quite right. It is a <strong>third state that is neither heads nor tails</strong>, and we stretch ordinary words over it because there is no everyday word for it.</p><p><strong>α and β</strong> on screen are how that state is written down. Square them and you get each probability. The important part is that <strong>α and β carry more information than the probabilities do</strong>. Two states that look identical in probability can differ in α and β, and that difference is what shows up in the two-slit experiment.</p><p>If you chose \"flicking very fast\", that is a very natural thought. But it also means <strong>settled into one at every instant</strong>, so in the end it is the same as the first option.</p>"
+  },
+  "real": "Quantum computers use this property. A bit in an ordinary computer is 0 or 1, while a quantum bit can be left in superposition, so for certain problems it reaches an answer in far fewer steps. Quantum cryptography spots eavesdropping the same way, using \"measuring it changes the state\".",
+  "quiz": [
+   {
+    "q": "The state of an <b>ordinary</b> coin you have covered up:",
+    "opts": [
+     "Is already settled; I simply do not know it",
+     "Is not settled",
+     "Neither of those"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Can you tell a quantum coin from an ordinary one <b>by the measurement results alone</b>?",
+    "opts": [
+     "Yes",
+     "No - it takes a different experiment",
+     "Yes, if you take enough measurements"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Then where does <b>the evidence that they differ</b> come from?",
+    "opts": [
+     "Take enough measurements and the proportions come apart",
+     "The overlap <b>before</b> measurement shows up as <b>stripes</b> in the two-slit experiment",
+     "A quantum coin lands the same face every time"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "quantum-2": {
+  "course": "quantum",
+  "sim": "quantum-measurement",
+  "screens": null,
+  "title": "Measuring it changes it",
+  "lead": "Put a thermometer in soup and the soup cools a little. In quantum mechanics it is worse than that - before you measure, there is no value at all.",
+  "hook": "Lesson 1 said a quantum coin <b>settles when you observe it</b>. So what is observation doing? This sim tells the same story with <b>the polarization of light</b> instead of a coin. Polarization is something you can actually hold, so it is far more concrete. And here something genuinely strange turns up - <b>change the order you measure in and the result changes.</b>",
+  "predict": {
+   "q": "Light has passed a filter that only lets <b>vertical</b> polarization through. Now you hold up a <b>horizontal</b> filter:",
+   "opts": [
+    "It goes straight through",
+    "<b>None</b> of it gets through",
+    "Half of it gets through",
+    "It gets brighter"
+   ]
+  },
+  "missions": [
+   "The <b>Coins</b> screen repeats what lesson 1 covered. Worth one more look if any of it did not land.",
+   "Use the house button to reach the <b>Photons</b> screen. The source is on the left, the <b>Polarizing Beam Splitter</b> in the middle, and the <b>Polarization Detectors</b> on the right.",
+   "Set <b>Photon Polarization Angle</b> at the bottom left to <b>Vertical (V)</b>.",
+   "Leave it on <b>Single Photon</b> and send photons one at a time. Which detector responds? Is it always the same one?",
+   "Now change the angle to <b>45°</b>. Which way it goes is now <b>unpredictable.</b>",
+   "Switch to <b>Many Photons</b> and send a lot. Check that at 45° the split is <b>even</b>.",
+   "Under <b>Behavior</b>, switch between <b>Classical</b> and <b>Quantum</b>. The classical model <b>splits</b> the light and sends both ways; the quantum one sends it <b>whole</b>, one way.",
+   "That difference matters. A single photon <b>is not divided in half.</b> It goes one way, entire.",
+   "Change the light to <b>Unpolarized</b>. What does light with no set direction do at the splitter?",
+   "Use the house button to reach the <b>Spin</b> screen for the same story told with the spin of an electron.",
+   "On the Spin screen, put <b>several measuring devices in a row</b> at different angles. What you measured earlier gets <b>erased</b> by what you measure later."
+  ],
+  "record": "At a polarization angle of 45°, which way did each individual photon go? And what was the proportion when you sent many?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>none of it gets through</strong>. Take light that is purely vertical, hold up a horizontal filter, and it is blocked completely.</p><p>So far a wave picture explains it. But what this sim showed you is far stranger.</p><p>Think back to sending a single photon polarized at <strong>45°</strong> into a vertical/horizontal splitter. That photon is neither vertical nor horizontal. And yet it arrived at <strong>one detector, whole.</strong> <strong>It did not split in half.</strong></p><p>Switching <strong>Behavior</strong> to <strong>Classical</strong> made the contrast nicely. The classical model treats light as a wave, so it <strong>divides the intensity</strong> and sends both ways. Reality (quantum) does not. <strong>One grain does not divide, and which way it goes is settled only by probability.</strong></p><p>And once through, that photon is no longer at 45°. It has <strong>become the direction you measured.</strong> The information that it was at 45° is <strong>gone.</strong></p><p>That is what \"measurement changes the state\" means. It is not like a thermometer cooling the soup a little. That nudges <strong>a value that was already there</strong>; here <strong>there was no such value before the measurement</strong> and the measurement makes one.</p><p>If you chained devices on the <strong>Spin</strong> screen it is clearer still. Measure vertically, then horizontally, then vertically again, and <strong>the first vertical result has been erased.</strong> The act of measuring horizontally destroyed the vertical information. <strong>The order you measure in changes the result.</strong></p><p>This is exactly the story behind course 04, lesson 4, where <strong>the pattern vanished once you checked which slit</strong>. It looked bizarre then; once you know measurement changes the state, it is the obvious outcome.</p>"
+  },
+  "real": "Sunglasses and camera filters use polarization. An LCD screen is liquid crystal between two polarizers, opening and closing the light. Quantum cryptography catches eavesdroppers on this principle - the moment an eavesdropper measures the signal, the state changes and leaves a trace. Security guaranteed by a law of physics.",
+  "quiz": [
+   {
+    "q": "<b>One</b> photon polarized at 45° meets a vertical/horizontal splitter:",
+    "opts": [
+     "It divides in half and goes both ways",
+     "It goes one way whole, and which way is a matter of probability",
+     "It stops"
+    ],
+    "right": 1
+   },
+   {
+    "q": "After the measurement, that photon's polarization is:",
+    "opts": [
+     "Still 45°, as before",
+     "Changed to the direction you measured",
+     "Gone"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Measure vertical → horizontal → vertical and:",
+    "opts": [
+     "The first vertical result comes back unchanged",
+     "Measuring horizontally erased the vertical information",
+     "No result comes out at all"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "quantum-3": {
+  "course": "quantum",
+  "sim": "quantum-bound-states",
+  "screens": null,
+  "title": "Confine it and the energy becomes a staircase",
+  "lead": "A free particle can have any energy at all. Confine it and only fixed values are left.",
+  "hook": "Course 05 said <b>an electron can only sit on fixed steps</b>. Why steps of all things? We let it go as \"apparently so\" back then; now it can be answered. The answer is in the <b>waves</b> of course 04. In course 03 you saw a guitar string refuse to make just any note and give only <b>fixed notes</b>. <b>A confined wave cannot take just any shape.</b> That is all there is to it.",
+  "predict": {
+   "q": "<b>Confine</b> an electron in a narrow box and the energies it can have are:",
+   "opts": [
+    "Any value at all",
+    "Only <b>a few fixed</b> values",
+    "Only 0",
+    "Confining it destroys the energy"
+   ]
+  },
+  "missions": [
+   "This is the <b>One Well</b> screen. The upper graph is the <b>Energy Diagram</b> and the lower one is the <b>Wave Function</b>.",
+   "Check that the well shape on the right is <b>Infinite Square</b> - a box with very high walls.",
+   "The upper graph shows <b>several horizontal lines</b>. Those are the energies the electron can have. <b>Is there anything between them?</b> That is the answer to ②.",
+   "Press a line to select <b>E₁</b>. The wave for that state is drawn below.",
+   "Go up through <b>E₂ · E₃</b> and watch how the <b>number of humps</b> grows.",
+   "Think back to the guitar string in course 03. Are these not the same shapes a <b>string fixed at both ends</b> can make?",
+   "Choose <b>Probability Density</b> at the bottom right. It shows you <b>where the electron is likely to be found</b>.",
+   "At <b>E₁</b> the middle is highest; at <b>E₂</b> the middle is <b>0</b>. There is a place the electron is never found at all.",
+   "Drag the <b>width</b> handle to make the box <b>narrower</b>. What happens to the spacing of the steps?",
+   "And <b>wider</b>? The steps pack together. Widen it a great deal and they look almost continuous.",
+   "Change the well shape to <b>Coulomb</b>. This is the situation of the <b>hydrogen atom</b> from course 05."
+  ],
+  "record": "Write down the wave shape and the number of humps for E₁, E₂ and E₃. And what happened to the step spacing when you narrowed the box and when you widened it?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>only a few fixed values</strong>. The horizontal lines in the upper graph are those values, and <strong>the energies between the lines cannot be had.</strong></p><p>Why? The answer is in <strong>a confined wave</strong>.</p><p>Think of the guitar string from course 03. Both ends are fixed, so not just any wavelength will do. Only <strong>wavelengths that come out even at both ends</strong> survive; the rest cancel themselves out. That is why a guitar string gives <strong>fixed notes</strong>.</p><p>An electron is the same. Course 04 showed you that <strong>electrons behave like waves</strong>. Confine that wave in a box and only <strong>the shapes that come out even at both ends</strong> survive. Each shape has its own energy, so <strong>the energies are fixed at a few values too.</strong></p><p>That is exactly what you saw on screen. E₁ has one hump, E₂ two, E₃ three - <strong>the same shapes as the harmonics of a guitar string</strong>.</p><p>Changing the <strong>width</strong> of the box is the high point of this lesson.</p><ul><li><strong>Narrower</strong> - the steps get <strong>further apart.</strong> The tighter the confinement, the more the values jump.</li><li><strong>Wider</strong> - the steps <strong>pack together.</strong> Widen it a great deal and they look almost continuous.</li></ul><p>Which is why <strong>you never see quantum effects day to day.</strong> The things we handle are so large that the steps are infinitely fine, and that is indistinguishable from \"any value at all\". <strong>Quantum only shows itself when things are small.</strong></p><p>Switching to <strong>Coulomb</strong> gives you the hydrogen atom from course 05, lesson 3. What was stated there - \"an electron only sits on fixed steps\" - now has its <strong>why</strong>: the nucleus is confining the electron, and a confined wave has only a few possible shapes.</p><p>Remember what <strong>Probability Density</strong> showed as well. At E₂ the electron is never found <strong>in the middle</strong> of the box. And yet it is found on both sides. <strong>How did it cross without passing through the middle?</strong> There is no good answer to that question - because an electron is not <strong>a grain that travels</strong> in the first place.</p>"
+  },
+  "real": "Semiconductors work on this principle. The colour of an LED is set by the height of the step an electron drops down, and lasers use transitions between fixed levels too. A quantum dot display (QLED) changes the <b>size</b> of its grains to tune the step spacing and so make its colours - exactly what you did by changing the width of the box in this lesson.",
+  "quiz": [
+   {
+    "q": "Why does a confined electron have only fixed energies?",
+    "opts": [
+     "Because the electron is small",
+     "Because a confined wave has only a few possible shapes",
+     "Because there is not enough energy"
+    ],
+    "right": 1
+   },
+   {
+    "q": "<b>Narrow</b> the box and the energy steps:",
+    "opts": [
+     "Spread further apart",
+     "Pack closer together",
+     "Stay as they were"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Why are quantum effects invisible in everyday life?",
+    "opts": [
+     "Because things are large, so the steps are extremely fine",
+     "Because quantum laws do not apply to large objects",
+     "Because our eyes are not good enough"
+    ],
+    "right": 0
+   }
+  ]
  }
 }
