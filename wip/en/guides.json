@@ -1164,5 +1164,401 @@
    "Wipe the screen before you change conditions.",
    "This sim was built at university level. The <b>Experiment</b> screen alone is enough for this lesson."
   ]
+ },
+ "build-an-atom": {
+  "summary": "Build an atom yourself by dragging <b>protons, neutrons and electrons</b> out of their buckets.",
+  "screens": [
+   {
+    "name": "Atom",
+    "what": "The screen this lesson uses. Add and remove particles and watch what moves the element, the charge and the mass number."
+   },
+   {
+    "name": "Symbol",
+    "what": "The same building, with the <b>element symbol</b> shown large on the right. The number above is the mass number, below is the proton count, and top right is the charge."
+   },
+   {
+    "name": "Game",
+    "what": "A four-level check: identify the element, calculate mass and charge, fill in the symbol, and a mixed review."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The Protons · Neutrons · Electrons buckets (bottom centre)",
+    "desc": "<b>Drag</b> a particle out of a bucket and into the atom. Drag it back to the bucket to take it out again.",
+    "tip": "The one key action in this sim. Add <b>one kind at a time</b> and watch what changes on screen. Add all three at once and you will not know what caused what."
+   },
+   {
+    "name": "Model - Shells · Cloud (top left)",
+    "desc": "Radio buttons for how the electrons are drawn. <b>Shells</b> is the old picture with lines; <b>Cloud</b> is the modern one, blurred and spread out.",
+    "tip": "Not one value changes. Only <b>the picture</b> changes. Lesson 3 takes up which of them is closer to reality."
+   },
+   {
+    "name": "Element Name (checkbox)",
+    "desc": "Puts the name of the element in words under the atom.",
+    "tip": "<b>Leave it on.</b> Far quicker than hunting for the cell in the periodic table with your eyes."
+   },
+   {
+    "name": "Neutral Atom or Ion (checkbox)",
+    "desc": "Tells you it is an <b>ion</b> when the electron and proton counts do not match, and a <b>neutral atom</b> when they do.",
+    "tip": "Add and remove electrons while watching this readout and it becomes obvious that <b>electrons change the charge, never the element</b>."
+   },
+   {
+    "name": "Nuclear Stability (checkbox)",
+    "desc": "Tells you whether the combination is one a nucleus can hold. When it is unstable the nucleus picture <b>shakes.</b>",
+    "tip": "Keep adding neutrons. At some point it tips over into unstable. A trailer for lesson 4 (Build a Nucleus)."
+   },
+   {
+    "name": "Periodic Table (collapsible box, top right)",
+    "desc": "The periodic table, with the cell for the element you have built lit up.",
+    "tip": "You <b>cannot</b> press a cell to choose an element. It only reports - the element changes when you add protons."
+   },
+   {
+    "name": "Net Charge · Mass Number (collapsible boxes, bottom right)",
+    "desc": "<b>Net Charge</b> is the difference between protons and electrons; <b>Mass Number</b> is protons plus neutrons.",
+    "tip": "Open <b>both at once</b> and add particles. The table of which particle moves which number draws itself."
+   }
+  ],
+  "steps": [
+   "Tick <b>Element Name</b> and <b>Neutral Atom or Ion</b> first.",
+   "Put in <b>one proton only</b> and check the element name.",
+   "Add one neutron and see that the name <b>does not change</b>.",
+   "Add one more proton and see that this time it <b>does</b>.",
+   "Take one electron away and watch for the <b>ion</b> readout.",
+   "Turn on <b>Nuclear Stability</b> and keep adding neutrons."
+  ],
+  "gotchas": [
+   "The periodic table cells <b>do nothing when pressed.</b> They only report the result.",
+   "The mass number <b>does not count electrons</b>, because an electron is far too light to matter.",
+   "You do not have to place a particle precisely. Drop it nearby and it <b>finds its own place.</b>",
+   "This sim has three screens. The lesson opens only the <b>Atom</b> screen."
+  ]
+ },
+ "rutherford-scattering": {
+  "summary": "Fire alpha particles at an atom and see <b>how they bounce</b>. The two screens are the <b>old model</b> and the <b>new one</b>, so going back and forth to compare them is the whole sim.",
+  "screens": [
+   {
+    "name": "Rutherford Atom",
+    "what": "The model with the mass gathered into one point at the centre. <b>Protons</b> and <b>Neutrons</b> handles are on the right."
+   },
+   {
+    "name": "Plum Pudding Atom",
+    "what": "The old model, with the positive charge spread out. <b>There is no atom panel</b> - there is nothing to change. Worth starting here."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The gun (bottom centre)",
+    "desc": "Press it and alpha particles fire continuously. Press again to stop.",
+    "tip": "Leave it on and <b>wait.</b> Big bounces are rare, so turning it off after a few seconds means you never see one."
+   },
+   {
+    "name": "Alpha Particle - Energy (right)",
+    "desc": "Sets the speed of the alpha particles, from <b>min</b> to <b>max</b>.",
+    "tip": "Slower bends <b>more sharply</b>, because going past fast leaves no time to be pushed. Try both ends to find the rule."
+   },
+   {
+    "name": "Traces (checkbox)",
+    "desc": "Leaves the path of each alpha particle drawn as a line.",
+    "tip": "<b>Do turn this on.</b> With it off the particles flash past and you cannot tell what happened. The single most important switch here."
+   },
+   {
+    "name": "Atom - Protons · Neutrons (right, Rutherford screen only)",
+    "desc": "Changes the number of particles in the nucleus. Protons run 20-100, neutrons up to 150.",
+    "tip": "Change <b>only the protons</b>. The bouncing gets stronger because of the charge, not the weight. Adding neutrons barely changes it."
+   },
+   {
+    "name": "Legend (top right)",
+    "desc": "Tells you what each dot on screen is - alpha particle, nucleus, electron energy level, alpha particle trace.",
+    "tip": "Open it once at the start. Mix up the yellow dots and the red ones and you will see nothing at all."
+   },
+   {
+    "name": "The scale readout (top of the screen)",
+    "desc": "Tells you the size you are looking at, in <b>m (atomic scale)</b> or <b>m (nuclear scale)</b>.",
+    "tip": "Read the numbers once. Atomic scale and nuclear scale differ by a factor of <b>a hundred thousand</b>. The nucleus is drawn big on screen; it is nothing like that in reality."
+   }
+  ],
+  "steps": [
+   "Open the <b>Plum Pudding Atom</b> screen first.",
+   "Turn on <b>Traces</b>, switch the gun on and leave it a while.",
+   "Move to the <b>Rutherford Atom</b> screen and fire under the same conditions.",
+   "<b>Wait</b> until a big bounce happens.",
+   "Take <b>Protons</b> from 20 to 100 and watch how the bouncing changes.",
+   "Drop <b>Energy</b> to minimum and fire again."
+  ],
+  "gotchas": [
+   "Big bounces are <b>rare.</b> Do not watch for a few seconds and conclude \"it does not bounce\" - the rarity is half the conclusion.",
+   "The nucleus on screen is drawn <b>far larger than it really is</b>. At true scale it would not be a visible dot.",
+   "The plum pudding screen <b>has no atom panel.</b> Not a fault - that model has no nucleus.",
+   "Adding neutrons barely changes the bouncing. What makes a bounce is <b>charge</b>, not weight."
+  ]
+ },
+ "models-of-the-hydrogen-atom": {
+  "summary": "Shine light into a hydrogen atom and look at <b>the light that comes out</b> with a spectrometer. The switch at the top left moves between <b>Experiment</b> (you cannot see inside) and <b>Model</b> (you can), and the point is to work out which model matches reality.",
+  "screens": [
+   {
+    "name": "Spectra",
+    "what": "The screen this lesson uses. All <b>six</b> models are available."
+   },
+   {
+    "name": "Energy Levels",
+    "what": "Only the <b>three</b> quantum models (Bohr, de Broglie, Schrödinger), but with the <b>Electron Energy Level</b> staircase added on the right."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The Experiment / Model switch (top left)",
+    "desc": "On <b>Experiment</b> the inside of the box is hidden behind a <b>?</b>. Slide it to <b>Model</b> and you can see in and pick a model.",
+    "tip": "<b>Do the experiment first.</b> Looking at the answer first makes the whole thing pointless. Write down the experimental result, then try the models against it."
+   },
+   {
+    "name": "Model chooser (left)",
+    "desc": "Under <b>Classical</b> are Billiard Ball, Plum Pudding and Classical Solar System; under <b>Quantum</b> are Bohr, de Broglie and Schrödinger.",
+    "tip": "They are laid out top to bottom in historical order. Work down and find <b>where they start matching the experiment</b>."
+   },
+   {
+    "name": "The light box - White · Monochromatic (bottom left)",
+    "desc": "<b>White</b> fires every colour at once; <b>Monochromatic</b> fires a single wavelength, and brings out a wavelength handle.",
+    "tip": "See <b>the whole picture</b> with white, then <b>check one at a time</b> with monochromatic. On monochromatic only the exactly right wavelength gets a response."
+   },
+   {
+    "name": "Spectrometer (bottom centre)",
+    "desc": "Counts the light that comes out by wavelength and stacks it as bars. Along the bottom is <b>wavelength (nm)</b>, divided into UV, Visible and IR.",
+    "tip": "Results <b>take time</b> to build up. Give it a few seconds before the lines show. Do not switch models the moment nothing appears."
+   },
+   {
+    "name": "Transitions (bottom left, the button under the light box - it opens a window)",
+    "desc": "A list of <b>the steps an electron can move between</b>, written as <b>1 ↔ 2, 2 ↔ 3</b> and so on. It appears from <b>Bohr</b> onward; the earlier models have no such button at all.",
+    "tip": "Read the numbers inside - they tell you which step an electron can move to from which."
+   },
+   {
+    "name": "Speed - Fast · Normal · Slow (bottom)",
+    "desc": "How fast the simulation runs.",
+    "tip": "To watch <b>a single event</b> of an electron jumping and spitting out light, set it to <b>Slow</b>. At normal speed it is over in an instant."
+   },
+   {
+    "name": "Electron Energy Level (right of the Energy Levels screen)",
+    "desc": "Draws the steps from n = 1 to 6, showing which step the electron is on now.",
+    "tip": "Notice that <b>the gaps narrow as you go up</b>. That is why transitions between the high steps carry little energy and come out at long wavelengths, in the infrared."
+   }
+  ],
+  "steps": [
+   "Leave the switch on <b>Experiment</b> and fire <b>White</b> light.",
+   "Count and note <b>how many</b> lines appear in the spectrometer.",
+   "Move the switch to <b>Model</b> and work down from <b>Billiard Ball</b>.",
+   "Find which model first gives <b>the same lines</b> as the experiment.",
+   "Change the light to <b>Monochromatic</b> and move the wavelength to find where it responds.",
+   "Drop the speed to <b>Slow</b> and watch the moment an electron jumps."
+  ],
+  "gotchas": [
+   "Results <b>take time</b> to build up in the spectrometer. Nothing appearing straight away is not a fault.",
+   "Choose the <b>Classical Solar System</b> model and the electron spirals into the nucleus, so the sim looks as though it has stopped. That is precisely the evidence that the model is wrong.",
+   "This sim was built for high school. Grasping that there are only a few steps is enough."
+  ]
+ },
+ "build-a-nucleus": {
+  "summary": "Change <b>only the number of protons and neutrons</b> and see which nuclei hold together and which fall apart. Press a decay button and the nucleus really does break.",
+  "screens": [
+   {
+    "name": "Decay",
+    "what": "The screen this lesson uses. You can go up to <b>94</b> protons and <b>146</b> neutrons."
+   },
+   {
+    "name": "Chart Intro",
+    "what": "A nuclide chart with <b>Neutron Number</b> across and <b>Proton Number</b> up. This screen only goes to 10 protons and 12 neutrons."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Protons · Neutrons (arrows at the bottom left)",
+    "desc": "Up and down arrows change the counts one at a time, and particles attach to or leave the nucleus.",
+    "tip": "Change <b>one of them only</b>. Hold the protons and raise the neutrons and you walk through the isotopes of one element - the proper way to use this sim."
+   },
+   {
+    "name": "Half-life (the scale at the top left)",
+    "desc": "Shows how long the nucleus you have built survives, on a log scale from <b>10⁻²⁴ to 10²⁴ seconds</b>. Stable nuclei sit off the scale, and combinations nobody has measured read <b>Unknown</b>.",
+    "tip": "The scale is logarithmic. One step is <b>a thousand times</b>. A small shift along it is an enormous difference."
+   },
+   {
+    "name": "Available Decays (right)",
+    "desc": "The decays this nucleus can do, as buttons - <b>α decay · β⁻ decay · β⁺ decay · Proton emission · Neutron emission</b>. Press one and it really decays.",
+    "tip": "Note the proton and neutron counts <b>before</b> you press. Comparing afterwards builds the table of what each decay changes, for free."
+   },
+   {
+    "name": "Symbol (collapsible box on the right)",
+    "desc": "Shows the element symbol with the mass number and the proton count.",
+    "tip": "Leave it open. It is the fastest place to see <b>whether the element changed</b> after a decay."
+   },
+   {
+    "name": "The less stable / more stable scale",
+    "desc": "An arrow telling you whether this nucleus is on the stable side.",
+    "tip": "Move the neutrons one at a time and watch the arrow. You get a feel for <b>which way you have to go to become stable</b>."
+   },
+   {
+    "name": "Electron Cloud (checkbox)",
+    "desc": "Draws the electron cloud around the nucleus.",
+    "tip": "The nucleus is the star of this sim. <b>Leaving the cloud off</b> makes it easier to watch."
+   },
+   {
+    "name": "Partial Nuclide Chart · Full Chart · Magic Numbers (Chart Intro screen)",
+    "desc": "Choose a narrow or a wide view of the nuclide chart, and turn on <b>Magic Numbers</b> to mark the unusually stable rows.",
+    "tip": "Take the wide view with <b>Full Chart</b> and you can see the stable nuclei forming a <b>diagonal band</b>. Decay is, in the end, an attempt to get inside that band."
+   }
+  ],
+  "steps": [
+   "Set <b>6 protons and 6 neutrons</b> (carbon-12) and look at the half-life.",
+   "Take <b>the neutrons alone up to 8</b> (carbon-14) and see how the half-life changes.",
+   "Open the <b>Symbol</b> box and note the proton and neutron counts.",
+   "Press a button under <b>Available Decays</b> to decay it, and note the numbers again.",
+   "Keep raising the neutrons until you reach <b>Unknown</b>.",
+   "On the <b>Chart Intro</b> screen turn on <b>Full Chart</b> and <b>Magic Numbers</b> and look at the shape of the band."
+  ],
+  "gotchas": [
+   "The half-life scale is <b>logarithmic</b>. One step is a thousand times.",
+   "<b>Unknown</b> is not a fault. It means nobody has yet made or measured that combination.",
+   "If a decay <b>changes the proton count, it changes the element.</b> Do check the name tag.",
+   "The <b>Chart Intro</b> screen only goes to 10 protons and 12 neutrons. Heavy nuclei can only be built on the <b>Decay</b> screen.",
+   "β⁻ and β⁺ are <b>different decays</b>. The minus turns a neutron into a proton; the plus turns a proton into a neutron."
+  ]
+ },
+ "alpha-decay": {
+  "summary": "The three screens run <b>one atom → several → a great many</b>, so going through them in order is itself the design of this sim.",
+  "screens": [
+   {
+    "name": "Single Atom",
+    "what": "Watch when <b>one</b> atom decays. It is different every time. An energy diagram is attached below."
+   },
+   {
+    "name": "Multiple Atoms",
+    "what": "Put down <b>several</b> atoms and watch them decay one by one. A tendency starts to show."
+   },
+   {
+    "name": "Decay Rate",
+    "what": "Draws the <b>percentage remaining</b> of a great many atoms as a curve. You get a smooth exponential."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Add Atom",
+    "desc": "Puts down one polonium-211 atom. Once it decays you can press again for a fresh one.",
+    "tip": "Repeat it <b>more than ten times</b>. Once or twice will not show you \"different every time\", and that repetition is the heart of this lesson."
+   },
+   {
+    "name": "Decay Time",
+    "desc": "Prints, in seconds, how long this atom took to decay.",
+    "tip": "Write down <b>just five of them</b> on paper. Seeing the numbers all over the place is the point."
+   },
+   {
+    "name": "Half-life handle",
+    "desc": "Changes the half-life. The <b>Time Scale</b> below runs logarithmically from ms to 10⁹ yr.",
+    "tip": "A short half-life ends each run quickly, which is good for repeating. Keep it <b>short</b> while you are looking for the rule."
+   },
+   {
+    "name": "Isotope - Polonium-211 · Custom",
+    "desc": "Choose a real isotope or build your own. <b>Custom</b> lets you set the protons and neutrons freely.",
+    "tip": "Leave it on <b>Polonium-211</b> to start with. Real values mean the nuclear equation later matches a textbook exactly."
+   },
+   {
+    "name": "Nuclear Equation",
+    "desc": "Writes the decay as a formula: ²¹¹Po → ²⁰⁷Pb + ⁴He. The upper number is the mass number, the lower one the proton count.",
+    "tip": "<b>Add up the top and bottom numbers separately.</b> 211 = 207 + 4, 84 = 82 + 2. Both sides always match - nothing is lost and nothing is created."
+   },
+   {
+    "name": "Energy Diagram (below, on the Single Atom screen)",
+    "desc": "<b>Distance</b> across, <b>Energy</b> up. The <b>Alpha Particle Energy</b> is lower than the <b>Potential Energy</b> wall, and it gets out anyway.",
+    "tip": "This is <b>tunnelling</b>. It passes through a wall it cannot climb, so when it will pass can only be spoken of as a probability. The real reason decay is unruly."
+   },
+   {
+    "name": "Labels · Stopwatch (Multiple Atoms screen)",
+    "desc": "Puts a name tag on each atom, and brings out a stopwatch.",
+    "tip": "Turn <b>Labels</b> on and you can see at a glance which atoms are still polonium and which have already become lead."
+   },
+   {
+    "name": "Data Probe (Decay Rate screen)",
+    "desc": "Drag it onto the curve and it reads the <b>Isotope Remaining (%)</b> at that moment.",
+    "tip": "Put it on <b>Half-lives</b> 1, 2 and 3 in turn. It reads exactly 100 → 50 → 25 → 12.5."
+   },
+   {
+    "name": "Normal · Slow (speed)",
+    "desc": "How fast the simulation runs.",
+    "tip": "To catch <b>the moment</b> of a decay, use <b>Slow</b>."
+   }
+  ],
+  "steps": [
+   "On the <b>Single Atom</b> screen press <b>Add Atom</b> to put an atom down.",
+   "Note the <b>Decay Time</b>, and repeat the whole thing <b>more than ten times</b>.",
+   "Open the <b>Nuclear Equation</b> and check that the top and bottom numbers balance.",
+   "On the <b>Energy Diagram</b>, see the alpha particle shut inside the wall.",
+   "On the <b>Multiple Atoms</b> screen put down several atoms and turn on <b>Labels</b>.",
+   "On the <b>Decay Rate</b> screen look at the curve and read values off with the <b>Data Probe</b>."
+  ],
+  "gotchas": [
+   "When <b>one</b> atom decays cannot be predicted. The point is to run it several times and see the times come out all over the place.",
+   "Atoms <b>do not age.</b> Waiting a long time does not bring one closer to its turn.",
+   "<b>Half-lives</b> and <b>Half-life</b> are different things. The first is a count, the second is the length of one.",
+   "The energy diagram is <b>only on the Single Atom screen</b>. You will not find it on the others."
+  ]
+ },
+ "beta-decay": {
+  "summary": "The controls are <b>almost identical</b> to the alpha decay sim, and the three screens run in the same order. The only difference is <b>what flies out and what happens to the proton count</b>, so if you have done lesson 5 you can concentrate on that difference alone.",
+  "screens": [
+   {
+    "name": "Single Atom",
+    "what": "The screen this lesson uses. Watch one tritium (³H) or carbon-14 atom decay."
+   },
+   {
+    "name": "Multiple Atoms",
+    "what": "Put down several atoms and watch them decay one by one."
+   },
+   {
+    "name": "Decay Rate",
+    "what": "The percentage-remaining curve. Compare it against alpha decay and see whether it is <b>the same shape</b>."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Isotope - Hydrogen-3 · Carbon-14 · Custom",
+    "desc": "Choose tritium (³H), carbon-14, or a nucleus you build yourself.",
+    "tip": "Do try <b>Carbon-14</b>. It is the nucleus you built in lesson 4 (Build a Nucleus), and the very one used for dating."
+   },
+   {
+    "name": "Protons · Neutrons",
+    "desc": "The proton and neutron counts of the current nucleus.",
+    "tip": "The <b>most important readout</b> in this sim. Note both numbers before and after the decay - you get neutrons −1, protons +1."
+   },
+   {
+    "name": "Nuclear Equation",
+    "desc": "Written out as ³H → ³He + e⁻.",
+    "tip": "Check that <b>the upper number (the mass number) does not change</b>. In alpha decay it dropped by 4; here it holds. That is the biggest difference between the two decays."
+   },
+   {
+    "name": "Half-life handle",
+    "desc": "Changes the half-life. The <b>Time Scale</b> below runs from ms to 10⁹ yr.",
+    "tip": "The real half-life of carbon-14 is 5730 years. Find roughly where that sits on the scale."
+   },
+   {
+    "name": "Labels · Stopwatch (Multiple Atoms screen)",
+    "desc": "Puts a name tag on each atom and times them.",
+    "tip": "Turn <b>Labels</b> on and you can watch ³H turn into ³He in words. The clearest possible demonstration that the element changes."
+   },
+   {
+    "name": "Data Probe (Decay Rate screen)",
+    "desc": "Reads the percentage remaining off the curve.",
+    "tip": "Compare against the values you read for alpha decay. <b>They are the same.</b> Different kinds of decay, one rule of half-life."
+   }
+  ],
+  "steps": [
+   "On the <b>Single Atom</b> screen put an atom down and note <b>Protons</b> and <b>Neutrons</b>.",
+   "Wait for it to decay, then <b>note both numbers again</b> and compare.",
+   "Open the <b>Nuclear Equation</b> and check the mass number is unchanged.",
+   "Change <b>Isotope</b> to <b>Carbon-14</b> and do the same.",
+   "On the <b>Multiple Atoms</b> screen turn on <b>Labels</b> and watch the element change.",
+   "Compare the curve on the <b>Decay Rate</b> screen against lesson 5."
+  ],
+  "gotchas": [
+   "The electron that flies out <b>did not come from the electron shells.</b> It is made inside the nucleus at the instant of decay.",
+   "In β⁻ decay the <b>mass number does not change.</b> One neutron <b>turned into</b> one proton, so the total holds.",
+   "The layout is the same as alpha decay, which is easy to confuse. If the starting atom is <b>³H</b> you are here; if it is <b>²¹¹Po</b> you are in the alpha sim.",
+   "<b>Alpha Particle</b> may still appear in the legend. The two sims share components; no alpha particle comes out of beta decay."
+  ]
  }
 }

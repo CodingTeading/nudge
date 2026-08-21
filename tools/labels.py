@@ -14,7 +14,7 @@ fallback 이 따로 있는 이유: sim-locales.json 은 "번역이 있다"만 �
 번역이 있어도 문자열 단위로 빠진 것은 영어로 그려집니다. 한국어판에서 화면에
 없는 글자를 찾게 만든 사고가 22곳 있었고, 그 자리들이 이런 틈에서 나왔습니다.
 """
-import io, json, os, sys
+import io, json, os, re, sys
 
 # 윈도우 콘솔이 cp949 라 한글·일본어를 그대로 못 찍습니다.
 try:
@@ -67,14 +67,35 @@ def strings_lang(repo, lang):
     return flatten(load(p) or {})
 
 
+IMPORT = re.compile(r"from '(?:\.\./)+([a-z0-9-]+)/js/")
+
+
 def deps(repo):
     """시뮬레이션이 끌어다 쓰는 저장소들. 화면 글자의 일부가 여기서 옵니다 —
        예를 들어 coulombs-law 의 'Force Values' 와 'Hidden' 은
-       inverse-square-law-common 에 있습니다. 시뮬레이션 파일만 읽으면 놓칩니다."""
-    d = load(os.path.join(PHET, repo, 'dependencies.json')) or {}
-    return [k for k in d
-            if k not in SHARED and k != repo and k != 'comment'
-            and os.path.isdir(os.path.join(PHET, k))]
+       inverse-square-law-common 에 있습니다. 시뮬레이션 파일만 읽으면 놓칩니다.
+
+       dependencies.json 이 오래된 경우가 있습니다 — alpha-decay 는
+       nuclear-decay-common 을 빠뜨리는데 화면 글자는 대부분 거기 있습니다.
+       그래서 소스의 import 문도 함께 훑습니다."""
+    names = set(k for k in (load(os.path.join(PHET, repo, 'dependencies.json')) or {})
+                if k != 'comment')
+
+    js = os.path.join(PHET, repo, 'js')
+    for root, dirs, files in os.walk(js):
+        dirs[:] = [d for d in dirs if d != 'node_modules']
+        for f in files:
+            if not f.endswith(('.ts', '.js')):
+                continue
+            try:
+                with io.open(os.path.join(root, f), encoding='utf-8') as fh:
+                    names.update(IMPORT.findall(fh.read()))
+            except Exception:
+                pass
+
+    return [k for k in sorted(names)
+            if k not in SHARED and k != repo
+            and os.path.isfile(os.path.join(PHET, k, '%s-strings_en.json' % k))]
 
 
 def build(repo, lang, opens_in):
