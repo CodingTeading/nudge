@@ -1,0 +1,272 @@
+{
+ "_common": {
+  "intro": "Las 61 simulaciones de PhET están hechas con las mismas reglas. Con estas ocho cosas no te perderás ni en una simulación que abras por primera vez.",
+  "sections": [
+   {
+    "name": "La franja negra de abajo",
+    "desc": "La tienen todas las simulaciones. A la <b>izquierda</b> están el botón con forma de casa y los nombres de las pantallas; en el <b>extremo derecho</b>, el logotipo de PhET.",
+    "tip": "El botón de la casa y los nombres de las pantallas aparecen <b>solo en las simulaciones con más de una pantalla</b>. Si no los ves, esa simulación tiene una sola."
+   },
+   {
+    "name": "El botón con forma de casa — elegir pantalla",
+    "desc": "Una misma simulación suele contener varias pantallas. Pulsa el botón de la casa para volver a la lista de pantallas y elegir otra.",
+    "tip": "Cada pantalla trata algo distinto. Cuando una lección nombra una pantalla, la abrimos directamente por ti; si no se indica ninguna, empieza por la primera."
+   },
+   {
+    "name": "El botón redondo de reinicio, abajo a la derecha",
+    "desc": "Devuelve <b>todos</b> los ajustes a su estado inicial. Es el círculo amarillo de la esquina inferior derecha de la simulación.",
+    "tip": "<b>Púlsalo lo primero cuando te atasques.</b> Es la salida más rápida cuando ya no sabes qué has tocado. Solo borra los ajustes de dentro de la simulación — lo que escribiste en ④ se queda donde está."
+   },
+   {
+    "name": "El grupo de casillas de arriba a la derecha",
+    "desc": "Son <b>interruptores para lo que no se ve</b>. Campos eléctricos, flechas de velocidad, cuadrículas, valores numéricos: todo lo que normalmente está escondido se reúne aquí.",
+    "tip": "Nueve de cada diez veces, «no veo nada» se resuelve justo aquí. Al abrir una simulación, <b>marca todas las casillas una vez.</b> Así descubres qué es capaz de enseñarte."
+   },
+   {
+    "name": "Reproducir, pausar y velocidad",
+    "desc": "Solo en las simulaciones donde corre el tiempo. El triángulo es reproducir y las dos barras son pausa, con botones al lado para <b>Lento</b> · <b>Normal</b> · <b>Rápido</b>.",
+    "tip": "Si va demasiado deprisa, ponlo en <b>Lento</b> y míralo otra vez. En pausa todavía puedes cambiar valores, así que parar la simulación, preparar las condiciones y entonces darle a reproducir hace que observar sea mucho más fácil."
+   },
+   {
+    "name": "Deslizadores (la barra que se arrastra)",
+    "desc": "Agarra el mando y arrástralo. Cuando necesites un valor exacto, <b>haz un clic en el mando y luego usa las teclas de flecha izquierda y derecha</b>.",
+    "tip": "<b>Mayús + flecha</b> avanza en pasos más pequeños y <b>Re Pág / Av Pág</b> en pasos más grandes. Un valor imposible de acertar con el ratón se acierta fácil con el teclado."
+   },
+   {
+    "name": "El menú del logotipo de PhET (extremo derecho)",
+    "desc": "Al pulsar el logotipo aparecen entradas como <b>Opciones</b> (sonido, contraste de color y demás), <b>Captura de pantalla</b>, <b>Pantalla completa</b> y <b>Acerca de...</b>. Las entradas cambian un poco de una simulación a otra.",
+    "tip": "En lugar de la <b>Pantalla completa</b> de aquí dentro, usa el botón de pantalla completa que hay encima de esta página. Al volver te deja exactamente en el punto de la lección que dejaste."
+   },
+   {
+    "name": "Manejarlo todo con el teclado",
+    "desc": "<b>Tab</b> pasa al siguiente elemento, <b>Mayús+Tab</b> al anterior, <b>Espacio</b> o <b>Intro</b> pulsan y las <b>flechas</b> cambian un valor. Para un objeto que se arrastra, pulsa Espacio para agarrarlo, muévelo con las flechas y vuelve a pulsar Espacio para soltarlo.",
+    "tip": "Algunas simulaciones tienen en la franja de abajo un botón que abre la lista de <b>Atajos del teclado</b>. Allí está escrita cualquier tecla especial que solo exista en esa simulación — saltar hasta la pared, por ejemplo."
+   }
+  ]
+ },
+ "balloons-and-static-electricity": {
+  "summary": "Frota un globo contra un jersey para acumular estática y luego mira cómo se pega a la pared, hasta ver las cargas una a una. <b>Solo hay una pantalla</b>, así que la franja de abajo no tiene botón de casa. El jersey está a la izquierda, la pared a la derecha y el globo en medio.",
+  "controls": [
+   {
+    "name": "El globo (arrástralo)",
+    "desc": "Agarra el globo y <b>frótalo por el jersey</b>: la carga negativa pasa del jersey al globo.",
+    "tip": "No lo frotes una vez y fuerte; ve y ven <b>despacio, varias veces</b>. Puedes ver las cargas cruzar de una en una. Suéltalo y el globo vuelve solo, atraído."
+   },
+   {
+    "name": "Mostrar todas las cargas · No mostrar ninguna carga · Mostrar las diferencias de la carga (abajo a la izquierda)",
+    "desc": "Son <b>botones de opción</b>: solo uno a la vez. A diferencia de las casillas, no puedes tener varios activos.",
+    "tip": "Empieza en <b>Mostrar todas las cargas</b> para ver lo que ocurre y luego cambia a <b>Mostrar las diferencias de la carga</b> para ver solo el resultado. Las parejas emparejadas se esfuman y quedan únicamente las sobrantes."
+   },
+   {
+    "name": "Eliminar muro (abajo a la derecha)",
+    "desc": "Quita la pared de la derecha. Una vez fuera, el botón del mismo sitio pasa a ser el que la devuelve.",
+    "tip": "Quita la pared, acumula carga frotando y luego devuélvela. Así ves el momento exacto en que se pega."
+   },
+   {
+    "name": "Un globo · dos globos (abajo en el centro, dos paneles con globos dibujados)",
+    "desc": "Dos paneles con globos dibujados. Pulsa el de la derecha y aparece un segundo globo, verde. Los paneles llevan dibujos, sin palabras.",
+    "tip": "Frota los dos para que lleven el mismo signo y acércalos. <b>Se repelen.</b>"
+   },
+   {
+    "name": "Reiniciar globo",
+    "desc": "Devuelve solo el globo: su posición y su carga.",
+    "tip": "El reinicio amarillo y redondo de abajo a la derecha devuelve también la pared y el modo de visualización. Cuando solo quieres los globos otra vez, usa este."
+   }
+  ],
+  "steps": [
+   "Comprueba que está elegido <b>Mostrar todas las cargas</b>.",
+   "Arrastra el globo por el jersey y trabájalo despacio de un lado a otro. Mira qué cruza: <b>solo los −, nunca los +</b>.",
+   "Acerca el globo frotado a la pared. Fíjate en cómo se colocan las cargas de la superficie de la pared.",
+   "Cambia a <b>Mostrar las diferencias de la carga</b> y mira cuál quedó positivo, el jersey o el globo.",
+   "Elige el panel de dos globos, frota los dos y acércalos entre sí."
+  ],
+  "gotchas": [
+   "Aunque el globo esté pegado, <b>la pared no tiene carga.</b> Las cargas de dentro solo han cambiado de asiento.",
+   "Lo que se mueve es siempre la <b>carga negativa</b>. La positiva se queda quieta. Si esto se te escapa, todo lo que viene después se vuelve confuso.",
+   "Apoya el globo en algo sin frotarlo y no pasa nada. No es un fallo."
+  ]
+ },
+ "charges-and-fields": {
+  "summary": "Suelta cargas en el espacio vacío y mira, con flechas, cómo cambia el espacio a su alrededor. <b>Solo hay una pantalla</b>, así que la franja de abajo no tiene botón de casa.",
+  "controls": [
+   {
+    "name": "La bandeja de abajo: +1 nC · -1 nC · Sensores",
+    "desc": "<b>Sácalos de la bandeja arrastrando</b> para colocarlos. El <b>+1 nC</b> rojo es una carga positiva, el <b>-1 nC</b> azul una negativa, y el punto amarillo es un <b>sensor</b>.",
+    "tip": "Para quitar uno, arrástralo de vuelta a la bandeja. En cuanto aterriza una carga, las flechas de alrededor cobran vida."
+   },
+   {
+    "name": "Campo eléctrico (arriba a la derecha · activado de entrada)",
+    "desc": "Tiende una alfombra tupida de flechitas por toda la pantalla. Sin cargas fuera están pálidas; coloca una carga y a su alrededor se vuelven grandes y brillantes.",
+    "tip": "<b>El tamaño y el brillo de una flecha son la intensidad.</b> Sin medir nada se ve que se debilita deprisa con la distancia."
+   },
+   {
+    "name": "Mostrar solo dirección",
+    "desc": "Va sangrado un paso por debajo de Campo eléctrico. Pone todas las flechas de la misma longitud y deja solo la dirección.",
+    "tip": "Actívalo cuando las intensidades sean tan distintas que las flechas queden demasiado largas o demasiado cortas para leerles la dirección."
+   },
+   {
+    "name": "Voltaje · Valores · Grilla",
+    "desc": "<b>Voltaje</b> pinta la pantalla con colores según el voltaje, <b>Valores</b> muestra los números al lado y <b>Grilla</b> tiende una cuadrícula sobre el suelo.",
+    "tip": "El <b>Snap to Grid</b> de debajo solo despierta cuando <b>Grilla</b> está activada; por eso lo ves apagado. Con él, las cargas se encajan en la cuadrícula y las distancias son fáciles de fijar."
+   },
+   {
+    "name": "El sensor de voltaje (centro derecha · hueco de arriba)",
+    "desc": "Sácalo y marca el voltaje de ese punto como número, del estilo de <b>0,0 V</b>. Pulsa el botón del sensor y dibuja <b>la línea que une todos los puntos con ese mismo voltaje</b>.",
+    "tip": "Muévete por una de esas líneas y el valor no cambia nunca, por lejos que vayas. Verlo con tus ojos es lo que hace que la palabra «equipotencial» encaje."
+   },
+   {
+    "name": "La cinta métrica (centro derecha · hueco de abajo)",
+    "desc": "Tira del carrete amarillo y mide la distancia entre dos puntos.",
+    "tip": "Úsala en cualquier misión que diga «exactamente el doble de distancia». A ojo no distingues una cuarta parte de una mitad."
+   }
+  ],
+  "steps": [
+   "Arrastra un <b>+1 nC</b> rojo hasta el centro de la pantalla.",
+   "Comprueba que las flechas de alrededor <b>se hacen más pequeñas y más pálidas con la distancia</b>.",
+   "Mide una distancia con la cinta métrica y pon ahí un sensor. Recuerda la longitud de la flecha.",
+   "Lleva ese mismo sensor <b>al doble de distancia</b>. Mira si es la mitad o menos que la mitad.",
+   "Añade un <b>-1 nC</b> azul enfrente y pon un sensor <b>entre</b> las dos cargas.",
+   "Toma lecturas en varios puntos con el sensor de voltaje y dibuja las líneas equipotenciales."
+  ],
+  "gotchas": [
+   "Una flecha significa <b>la fuerza que notaría una carga positiva si la pusieras ahí</b>. No significa que haya algo ahí ahora notando una fuerza.",
+   "Acércate mucho a una carga y las flechas se alargan hasta salirse de la pantalla. No es un fallo: es que de verdad es así de intensa.",
+   "Si <b>Snap to Grid</b> no responde, es que <b>Grilla</b> está apagada. Esa casilla se quedó sin traducir y aparece en inglés.",
+   "Las cargas soltadas unas encima de otras hacen que las cuentas parezcan raras. Sepáralas un poco."
+  ]
+ },
+ "coulombs-law": {
+  "summary": "Mide la fuerza entre dos cargas <b>como número</b>. Esta simulación <b>arranca en el selector de pantallas</b>: al abrirla te encuentras primero dos paneles de pantalla, no el experimento.",
+  "screens": [
+   {
+    "name": "Escala Macro",
+    "what": "Dos objetos de un tamaño que se ve, en cm y μC. <b>Empieza aquí.</b>"
+   },
+   {
+    "name": "Escala Atómica",
+    "what": "Si la misma regla sigue valiendo a tamaño atómico (pm, e). Los mandos son idénticos; solo cambian las unidades."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los dos objetos cargados, q₁ y q₂ (arrástralos)",
+    "desc": "Arrastra un objeto a izquierda o derecha y la distancia cambia; la flecha de fuerza y el número la siguen al instante.",
+    "tip": "Esto es lo principal que se hace aquí. <b>Cambia la distancia y deja quietas las cargas</b>: así es como la regla se deja ver."
+   },
+   {
+    "name": "La regla (ya tumbada en la pantalla)",
+    "desc": "Arrástrala contra los dos objetos para medir la distancia exacta. Está fuera desde el principio; no hay que ir a buscarla.",
+    "tip": "Para que la distancia sea exactamente el doble hay que usar la regla. A ojo la regla física no se deja ver."
+   },
+   {
+    "name": "Carga 1 · Carga 2 (casilla de valor y deslizador)",
+    "desc": "Van de −10 a 10. También entran en negativo.",
+    "tip": "Los <b>◀ ▶</b> de al lado de la casilla avanzan de muesca en muesca. Arrastrando el deslizador cuesta acertar números redondos."
+   },
+   {
+    "name": "Valor de las Fuerzas: Notación decimal · Notación cientifica · Oculto (derecha)",
+    "desc": "Botones de opción, uno cada vez. Elige <b>Oculto</b> y los números desaparecen y solo quedan las flechas.",
+    "tip": "Cuando el valor es tan pequeño que sale 0,0000…, la <b>Notación cientifica</b> se lee mejor. Cuando quieras adivinar de intuición antes de apoyarte en los números, déjalo en <b>Oculto</b>."
+   },
+   {
+    "name": "Las figuras que tiran de los dos objetos",
+    "desc": "Escenifican el tamaño de la fuerza. No son un mando, pero sí el dibujo más importante de esta simulación.",
+    "tip": "Por muy distintas que sean las cargas, <b>las dos figuras tiran con la misma fuerza</b>. Que el lado mayor no note un tirón más fuerte está dibujado justo ahí."
+   }
+  ],
+  "steps": [
+   "En el selector de pantallas, pulsa <b>Escala Macro</b>.",
+   "Pon la distancia en <b>2 cm</b> con la regla y anota el valor de la fuerza.",
+   "Deja quietas las cargas y estira la distancia hasta <b>4 cm</b>. Calcula qué fracción de la fuerza queda.",
+   "Vuelve a <b>2 cm</b> y dobla <b>solo el tamaño</b> de la <b>Carga 1</b> (−4 → −8 μC). ¿Cuántas veces mayor sale esta vez?",
+   "Haz negativa una de las cargas y mira qué le pasa a la <b>dirección</b> de las flechas.",
+   "Usa el botón de la casa para visitar <b>Escala Atómica</b> y comprobar que la regla se mantiene."
+  ],
+  "gotchas": [
+   "Si tocas las cargas mientras cambias la distancia, la regla no se deja ver. Cambia <b>una cosa cada vez</b>.",
+   "Las flechas de fuerza están sobre los dos objetos, <b>del mismo tamaño y en sentidos contrarios</b>. La carga mayor no nota más fuerza.",
+   "Acerca la distancia a 0 y el valor se dispara. Es el límite de la simulación, no un error.",
+   "No te desconcierte que al abrirla no aparezca ningún experimento. Esta <b>te pide elegir pantalla primero</b>.",
+   "La opción se llama <b>Notación cientifica</b> en pantalla, sin la tilde de «científica». Es una errata de la traducción de PhET."
+  ]
+ },
+ "faradays-electromagnetic-lab": {
+  "summary": "Fabrica electricidad con un imán y una bobina. <b>Hay cinco pantallas</b>, así que abre en el selector y te mueves entre ellas con el botón de la casa de la franja de abajo. <b>Las herramientas cambian de una pantalla a otra</b>: léete primero la lista de pantallas de aquí abajo.",
+  "screens": [
+   {
+    "name": "Imán de barra",
+    "what": "Solo un imán, para mirar la forma del campo. <b>Ver por dentro</b> e <b>Invertir Polaridad</b> existen únicamente en esta pantalla."
+   },
+   {
+    "name": "Bobina de captación",
+    "what": "Mueve un imán cerca de una bobina para fabricar electricidad. <b>Esta es la pantalla clave de este curso</b>, y aquí viven Indicador, Espiras y Fijar al eje."
+   },
+   {
+    "name": "Electroimán",
+    "what": "Al revés: haces pasar electricidad y fabricas un imán."
+   },
+   {
+    "name": "Transformador",
+    "what": "Dos bobinas enfrentadas que se pasan la electricidad."
+   },
+   {
+    "name": "Generador",
+    "what": "Una rueda de agua gira el imán para fabricar electricidad sin parar. Así funciona una central eléctrica."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Campo Magnético (B) — todas las pantallas · activado de entrada",
+    "desc": "Llena el fondo con un enjambre de agujas de brújula que enseñan la forma del campo magnético.",
+    "tip": "Apágalo y el espacio alrededor del imán parece vacío. Te enseña que un campo no es algo que <b>veas</b>, sino algo que la simulación <b>te dibuja</b>."
+   },
+   {
+    "name": "Intensidad (panel del imán de barra · 75% de entrada)",
+    "desc": "Fija lo potente que es el imán, de 0 a 100%.",
+    "tip": "Bájalo a 0 y súbelo otra vez y verás exactamente cómo responde el dibujo del campo."
+   },
+   {
+    "name": "Ver por dentro · Invertir Polaridad — solo en la pantalla Imán de barra",
+    "desc": "<b>Ver por dentro</b> enseña el interior del imán; <b>Invertir Polaridad</b> intercambia N y S.",
+    "tip": "Es fácil ponerse a buscar estos dos en la pantalla Bobina de captación. <b>Ahí no están.</b> Para invertir el sentido, pasa el imán del otro lado."
+   },
+   {
+    "name": "Indicador — bombilla · medidor (pantalla Bobina de captación)",
+    "desc": "Elige qué cuelga de la bobina. La bombilla solo enseña el brillo; <b>el medidor enseña además el sentido</b>. Las dos opciones son dibujos, sin palabras.",
+    "tip": "Para ver que «entrar y salir son contrarios» <b>hay que pasar al medidor</b>. La bombilla se enciende igual vaya la corriente hacia donde vaya."
+   },
+   {
+    "name": "Espiras · Área se la espira (pantalla Bobina de captación)",
+    "desc": "Cuántas vueltas tiene la bobina y cómo de ancha la haces.",
+    "tip": "Dos maneras de sacar más electricidad sin un imán más potente. Por esto un generador de verdad enrolla su bobina miles de vueltas."
+   },
+   {
+    "name": "Fijar al eje (pantalla Bobina de captación)",
+    "desc": "Sujeta el imán para que solo pueda moverse a izquierda y derecha.",
+    "tip": "Si se te va la mano y el imán se pasea arriba y abajo, los resultados salen sucios. <b>Actívalo antes de empezar.</b>"
+   },
+   {
+    "name": "Brújula · Medidor de Campo",
+    "desc": "Marca estas casillas y la herramienta aparece en pantalla. La <b>Brújula</b> te da la dirección del campo en ese punto; el <b>Medidor de Campo</b> te da la intensidad como número.",
+    "tip": "Pasea la brújula despacio una vuelta entera alrededor del imán. Se ve por dónde sale el campo y por dónde vuelve a entrar."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Imán de barra</b>, pasea la brújula una vuelta alrededor del imán para ver la forma del campo.",
+   "Con el botón de la casa ve a <b>Bobina de captación</b> y activa <b>Fijar al eje</b>.",
+   "Mete el imán <b>despacio</b> en la bobina. ¿Qué hace la bombilla?",
+   "Deja el imán <b>completamente quieto</b> dentro de la bobina: esta única observación es toda la simulación.",
+   "Ahora pásalo <b>deprisa</b>. ¿En qué se diferencia de la pasada lenta?",
+   "Cambia el <b>Indicador</b> al medidor y compara el sentido al entrar con el de salir.",
+   "Sube <b>Espiras</b> y <b>Área se la espira</b> y pásalo otra vez a la misma velocidad.",
+   "Termina en la pantalla <b>Generador</b>, mirando cómo el agua mantiene el imán girando."
+  ],
+  "gotchas": [
+   "<b>Un imán quieto no fabrica electricidad.</b> No va de que el imán sea potente: tiene que <b>moverse</b>. Si esto se te escapa, todo lo demás sale mal.",
+   "<b>Las herramientas cambian de una pantalla a otra.</b> Ver por dentro e Invertir Polaridad están en Imán de barra; Indicador, Espiras y Fijar al eje, en Bobina de captación.",
+   "La bombilla no te dice nada del <b>sentido</b> de la electricidad. Para eso, pasa al medidor.",
+   "Si la bombilla apenas brilla, sube la intensidad o mueve el imán más deprisa. No está rota.",
+   "El deslizador se llama <b>Área se la espira</b> en pantalla. Es una errata de la traducción de PhET por «Área de la espira»; búscalo tal cual está escrito."
+  ]
+ }
+}

@@ -1,0 +1,203 @@
+{
+ "static-1": {
+  "course": "force-unseen",
+  "sim": "balloons-and-static-electricity",
+  "screens": null,
+  "title": "Por qué un globo levanta tu pelo",
+  "lead": "Antes de frotarlo no pasaba nada. Después de frotarlo, todo cambia. ¿Qué ha pasado de uno a otro?",
+  "hook": "Seguro que alguna vez te has quitado un jersey en invierno y has visto el pelo salir flotando detrás. Frota un globo contra la ropa, apóyalo en la pared y <b>se queda ahí en vez de caerse.</b> Sin pegamento ni celo. ¿Qué ha ocurrido entre el globo y el jersey mientras los frotabas?",
+  "predict": {
+   "q": "Frotas un globo contra un jersey. ¿Qué pasa de uno a otro?",
+   "opts": [
+    "El <b>+</b> del globo pasa al jersey",
+    "El <b>−</b> del jersey pasa al globo",
+    "El + y el − se intercambian entre sí",
+    "No pasa nada de uno a otro; solo cambian las propiedades"
+   ]
+  },
+  "missions": [
+   "Abajo a la izquierda, comprueba que está elegido <b>Mostrar todas las cargas</b>. El jersey y el globo tienen sus + y sus − colocados por parejas.",
+   "Arrastra el globo amarillo hasta el jersey y frótalo <b>despacio, varias veces</b>. Sigue con la vista lo que se mueve.",
+   "Suelta el globo ya frotado. Vuelve solo hacia el jersey.",
+   "Pulsa <b>Eliminar muro</b> a la derecha y luego devuelve la pared. ¿Qué hace el globo cuando la pared está?",
+   "Cambia a <b>Mostrar las diferencias de la carga</b>. Las parejas emparejadas desaparecen y solo queda a la vista <b>lo que sobra</b>.",
+   "Abajo en el centro, elige la opción de dos globos — esos botones son dibujos de globos, sin palabras — y luego frota los dos y acércalos entre sí."
+  ],
+  "record": "Después de frotar, ¿qué quedó en el globo y qué quedó en el jersey? Anota exactamente lo que te enseñó «Mostrar las diferencias de la carga».",
+  "explain": {
+   "right": 1,
+   "body": "<p>Lo único que se movió fue la <strong>carga negativa (−)</strong>. Los − que estaban en el jersey pasaron al globo. Ni un solo + se movió de sitio.</p><p>El + está encerrado en el centro del átomo (el núcleo), y frotar no basta ni de lejos para sacarlo de ahí. Los − de fuera, en cambio, están sujetos flojos, así que <strong>cambian de asiento en cuanto rozan con otro objeto.</strong> Por eso el − es siempre el que se mueve en cualquier historia de electricidad estática. Si esto se te escapa, las lecciones siguientes te van a resultar confusas.</p><p>El resultado es un globo con <strong>− de más, o sea negativo</strong>, y un jersey que <strong>ha perdido −, o sea positivo</strong>. Ahora son contrarios, así que se atraen.</p><p>La pared es otro caso. <strong>La pared no tiene carga neta.</strong> Pero cuando se le acerca el globo negativo, los − de su superficie son empujados hacia dentro y los + se quedan delante. No ha llegado ni se ha ido nada — las cargas solo han cambiado de asiento — y con eso ya basta para que atraiga.</p>"
+  },
+  "real": "El chispazo al agarrar el pomo de una puerta en invierno, el chisporroteo al quitarte una camiseta, el polvo pegado a la ropa negra más que a ninguna otra: todo es lo mismo. Cuando el aire está húmedo, el agua que hay en él se lleva los − por ti, y por eso casi no pasa en verano. Esa es la razón de que la estática solo dé la lata en los meses fríos.",
+  "quiz": [
+   {
+    "q": "Después de frotar, ¿qué carga tiene el <b>jersey</b>?",
+    "opts": [
+     "Negativa: ha ganado −",
+     "Positiva: ha perdido −",
+     "Ninguna carga"
+    ],
+    "right": 1
+   },
+   {
+    "q": "El globo está pegado a la pared. ¿Está cargada la <b>pared</b>?",
+    "opts": [
+     "Sí: por eso se pega",
+     "No: las cargas de dentro solo han cambiado de asiento"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "static-2": {
+  "course": "force-unseen",
+  "sim": "charges-and-fields",
+  "screens": null,
+  "title": "El mapa invisible que se dibuja alrededor de una carga",
+  "lead": "Pon una sola carga al aire libre. No se ve nada distinto, pero el espacio a su alrededor ya ha cambiado.",
+  "hook": "En la lección anterior viste un globo tirando de tu pelo. Pero el globo y el pelo <b>nunca llegaron a tocarse</b>. ¿Cómo cruzó una fuerza un hueco así? ¿Hay algo en medio?",
+  "predict": {
+   "q": "Colocas una carga y mides la fuerza en varios puntos a su alrededor. ¿Cómo sale?",
+   "opts": [
+    "La fuerza se mantiene más o menos igual por lejos que vayas",
+    "La fuerza baja a un ritmo constante conforme te alejas",
+    "La fuerza baja muy deprisa conforme te alejas",
+    "A partir de cierta distancia la fuerza se vuelve 0 de golpe"
+   ]
+  },
+  "missions": [
+   "De la bandeja de abajo, arrastra un <b>+1 nC</b> rojo hasta el centro de la pantalla. En cuanto lo sueltas, las flechas de alrededor cobran vida.",
+   "Fíjate bien en las flechas. <b>Cuanto más lejos de la carga, más pequeñas y más pálidas.</b> El tamaño y el brillo son la intensidad.",
+   "Saca la cinta métrica del centro derecha, mide una distancia desde la carga y deja ahí un sensor de <b>Sensores</b>. Fíjate en la longitud de esa flecha.",
+   "Lleva ese mismo sensor <b>al doble de distancia</b>. ¿Mide la mitad, o menos que la mitad?",
+   "Añade un <b>-1 nC</b> azul enfrente y pon un sensor <b>entre</b> las dos cargas.",
+   "Saca el sensor de voltaje de la derecha — la herramienta de retícula que marca en <b>V</b> — y sujétalo en distintos sitios. Cuanto más cerca de la carga, mayor la lectura."
+  ],
+  "record": "¿Qué le pasó a la flecha cuando la llevaste al doble de distancia? Anota lo que viste de verdad.",
+  "explain": {
+   "right": 2,
+   "body": "<p>El espacio que rodea a una carga está lleno de algo llamado <strong>campo eléctrico</strong>. La carga no «dispara» una fuerza a distancia; la carga <strong>cambia el espacio que la rodea</strong>. Y entonces cualquier otra carga que entre en ese espacio nota una fuerza.</p><p>Las flechas son ese mapa. Una flecha señala hacia donde <strong>sería empujada una carga positiva</strong>, y su longitud es la intensidad. Por eso se dibujan flechas en el espacio vacío, donde no hay ninguna carga: son un pronóstico, «pon aquí una carga y esta es la fuerza que notará».</p><p>Cuando doblaste la distancia, la flecha no bajó a la mitad. Bajó a <strong>la cuarta parte</strong>. Al triple de distancia, la novena parte. Esto es el <strong>inverso del cuadrado de la distancia</strong>, la regla que comprobarás con números en la lección siguiente, y la gravedad sigue exactamente la misma.</p>"
+  },
+  "real": "Justo antes de que caiga un rayo, un campo eléctrico enorme llena el espacio entre la nube y el suelo. El rayo es lo que ocurre cuando el aire ya no aguanta esa fuerza y se abre para dejar pasar la electricidad. Que se te ponga el pelo de punta es señal de que estás dentro de ese campo: si estás en la montaña, agáchate ya.",
+  "quiz": [
+   {
+    "q": "Si donde está dibujada una flecha de campo <b>no hay ninguna carga</b>, ¿hay fuerza ahí?",
+    "opts": [
+     "Sí que hay una fuerza ahí",
+     "No hay fuerza; marca la que notaría una carga si llegase"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Al triple de distancia, ¿a qué fracción baja la fuerza?",
+    "opts": [
+     "A un tercio",
+     "A un sexto",
+     "A un noveno"
+    ],
+    "right": 2
+   }
+  ]
+ },
+ "static-3": {
+  "course": "force-unseen",
+  "sim": "coulombs-law",
+  "screens": null,
+  "title": "Si doblas la distancia, ¿en qué se queda la fuerza?",
+  "lead": "La lección pasada lo adivinaste por las flechas. Esta vez lo compruebas con números. Y hay algo más que puedes cambiar además de la distancia.",
+  "hook": "La lección pasada llevaste el sensor al doble de distancia y la flecha se quedó en <b>una cuarta parte</b>. Eso es lo que parecía, pero ¿es así de verdad? Esta simulación <b>escribe la fuerza como número.</b> Y hay algo más que puedes cambiar además de la distancia: cuánta carga hay.",
+  "predict": {
+   "q": "Deja quieta la distancia y <b>dobla solo una de las cargas</b>. ¿Qué le pasa a la fuerza?",
+   "opts": [
+    "Se queda igual: la otra no ha cambiado",
+    "Se dobla",
+    "Se multiplica por cuatro, al cuadrado, como con la distancia",
+    "Se reduce a la mitad"
+   ]
+  },
+  "missions": [
+   "Esta simulación abre en el selector de pantallas. Pulsa <b>Escala Macro</b> a la izquierda.",
+   "Hay una regla tumbada en medio de la pantalla. Arrástrala contra los dos objetos y pon la distancia en <b>2 cm</b>. Anota el valor de la fuerza que sale.",
+   "Deja las cargas quietas y estira la distancia hasta <b>4 cm</b>. ¿Qué fracción de la fuerza queda?",
+   "Vuelve a <b>2 cm</b> y dobla <b>solo el tamaño</b> de la <b>Carga 1</b> (−4 → −8 μC). Los <b>◀ ▶</b> que hay junto a la casilla del valor te dejan acertarlo exacto.",
+   "Mira las <b>dos figuras</b> que tiran de los objetos. Las cargas son distintas y aun así tiran <b>con la misma fuerza</b>.",
+   "En <b>Valor de las Fuerzas</b>, a la derecha, elige <b>Oculto</b>. Los números desaparecen y solo quedan las flechas."
+  ],
+  "record": "Cuando doblaste la distancia y cuando doblaste la carga, ¿cuántas veces mayor o menor se hizo la fuerza? Escribe los dos resultados uno al lado del otro.",
+  "explain": {
+   "right": 1,
+   "body": "<p>Dobla la distancia y la fuerza se queda en <strong>una cuarta parte</strong>. Dobla la carga y la fuerza se hace <strong>el doble</strong>. La misma palabra «doblar», dos resultados distintos.</p><p>Es porque la distancia entra <strong>al cuadrado</strong> y la carga entra <strong>tal cual</strong>. Esto es la <strong>ley de Coulomb</strong>.</p><p>Has visto a las dos figuras tirando de los objetos con cuerdas. Míralo bien: <strong>las dos tiran exactamente con la misma fuerza</strong>. Uno esperaría que el lado con mucha más carga notase un tirón más fuerte, pero no. Los dos objetos siempre se dan fuerzas <strong>del mismo tamaño y en sentidos contrarios</strong>.</p><p>Haz negativa una de las cargas y las flechas se dan la vuelta. Signos iguales se repelen, signos distintos se atraen. Lo que fija el <strong>tamaño</strong> de la fuerza no tiene nada que ver con los signos: solo la cantidad de carga y la distancia.</p>"
+  },
+  "real": "Este «inverso del cuadrado de la distancia» no es una regla solo de la electricidad. La cumple la gravedad, la cumple el sonido, la cumple el brillo de una lámpara. Al doble de distancia de un altavoz, la energía del sonido es la cuarta parte; al triple de una lámpara, el brillo es la novena parte. Siempre que algo se reparte en todas direcciones desde un solo punto, aparece esta regla.",
+  "quiz": [
+   {
+    "q": "Dobla <b>las dos</b> cargas. ¿Cuántas veces mayor es la fuerza?",
+    "opts": [
+     "El doble",
+     "Cuatro veces",
+     "Ocho veces"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Cuál nota <b>más fuerza</b>, la carga grande o la pequeña?",
+    "opts": [
+     "La carga grande",
+     "La carga pequeña",
+     "Exactamente la misma las dos"
+    ],
+    "right": 2
+   }
+  ]
+ },
+ "static-4": {
+  "course": "force-unseen",
+  "sim": "faradays-electromagnetic-lab",
+  "screens": "2",
+  "title": "Mueve un imán y aparece electricidad",
+  "lead": "Hasta ahora la electricidad hacía la fuerza. Esta vez va al revés: mueves un imán y fabricas electricidad.",
+  "hook": "¿De dónde vino la electricidad que enciende esta pantalla? Carbón, nuclear, viento, agua: los combustibles no se parecen en nada, pero <b>el último paso es el mismo en todos.</b> Girar un imán cerca de una bobina. Ya está. ¿De verdad puede bastar con eso para fabricar electricidad?",
+  "predict": {
+   "q": "Metes el imán <b>dentro de la bobina y lo dejas quieto</b> ahí. ¿Qué hace la bombilla?",
+   "opts": [
+    "Sigue encendida: el imán está dentro de la bobina",
+    "Se enciende más: está lo más cerca que puede",
+    "Se apaga",
+    "Parpadea"
+   ]
+  },
+  "missions": [
+   "Activa <b>Fijar al eje</b> abajo a la derecha. Así el imán solo se mueve a izquierda y derecha, y los resultados salen limpios.",
+   "Coge el imán y mételo <b>despacio</b> en la bobina. ¿Qué hace la bombilla?",
+   "Deja el imán <b>completamente quieto</b> dentro de la bobina. Esta única observación es toda la lección.",
+   "Ahora pásalo <b>deprisa</b>. ¿En qué se diferencia de la pasada lenta?",
+   "Cambia el <b>Indicador</b> de la bombilla al medidor, el de la aguja. La aguja se va <b>al lado contrario</b> al entrar que al salir.",
+   "Sube <b>Espiras</b> desde 2 y ensancha el deslizador de <b>Área se la espira</b>. La misma velocidad de movimiento da ahora otro resultado."
+  ],
+  "record": "¿Qué hizo la bombilla mientras el imán estaba quieto dentro de la bobina? ¿Y qué diferencia había entre moverlo deprisa y moverlo despacio?",
+  "explain": {
+   "right": 2,
+   "body": "<p>Para el imán y <strong>la bombilla se apaga.</strong> Se apaga incluso con el imán justo en el centro de la bobina.</p><p>Es porque lo que fabrica electricidad no es la <strong>intensidad</strong> del imán sino el <strong>cambio</strong>. La corriente circula <strong>solo mientras el campo magnético que atraviesa la bobina está cambiando</strong>. Déjalo quieto y no pasa absolutamente nada, con campo fuerte o flojo. Si esto se te escapa, todo lo demás sale mal.</p><p>Y por eso también <strong>moverlo más deprisa lo enciende más.</strong> Recorrer la misma distancia en menos tiempo hace el cambio más brusco, y un cambio más brusco fabrica electricidad más fuerte. Esto es la <strong>ley de Faraday</strong>.</p><p>Cambia al medidor y <strong>la aguja se va a un lado al entrar y al otro al salir</strong>. Eso significa que la corriente va en un sentido mientras el campo crece y en el otro mientras mengua. Sigue agitando el imán adelante y atrás y el sentido de la electricidad no para de cambiar — y esa <strong>electricidad de ida y vuelta</strong> es justo la que llega a los enchufes de tu casa.</p><p>Más espiras, o más anchas, la hacen más fuerte. La bobina está recogiendo esa misma cantidad de más del cambio del campo.</p>"
+  },
+  "real": "Una central eléctrica usa agua o vapor o viento para <b>girar un imán.</b> La luz de una bicicleta, una base de carga inalámbrica, una placa de inducción: todo la misma idea. Acerca una tarjeta de transporte al torno y la bobina de dentro recoge electricidad del campo magnético cambiante que produce el torno, y así es como una tarjeta sin pila hace algo.",
+  "quiz": [
+   {
+    "q": "Si <b>simplemente dejas</b> un imán muy potente quieto dentro de la bobina, ¿sigue saliendo electricidad?",
+    "opts": [
+     "Sí: el imán es potente",
+     "No: no se está moviendo"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Pasa el mismo imán <b>al doble de velocidad</b>. ¿Qué le pasa a la electricidad?",
+    "opts": [
+     "No cambia nada",
+     "Se hace más fuerte",
+     "Se hace más débil"
+    ],
+    "right": 1
+   }
+  ]
+ }
+}
