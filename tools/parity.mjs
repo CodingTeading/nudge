@@ -44,6 +44,17 @@ const walk = ( base, tgt, path, key, frozen ) => {
   if ( tb !== tt ) { err( `${ path }: ko 는 ${ tb } 인데 ${ tt }` ); return; }
 
   if ( tb === 'array' ) {
+    /* gotchas 는 언어마다 개수가 다른 것이 정상입니다. PhET 번역 자체가 틀린 곳을
+       한 줄씩 적어 두는 자리인데, 그 오역은 언어마다 다르니까요
+       (docs/I18N-BRIEF.md §8-8). 개수만 알리고 넘어갑니다. */
+    if ( key === 'gotchas' ) {
+      const bad = tgt.filter( v => typeof v !== 'string' );
+      if ( bad.length ) { err( `${ path }: 글이 아닌 항목이 섞여 있음` ); }
+      else if ( base.length !== tgt.length ) {
+        console.log( `  · ${ path }: ${ base.length } → ${ tgt.length }줄 (언어별로 달라도 됩니다)` );
+      }
+      return;
+    }
     if ( base.length !== tgt.length ) {
       err( `${ path }: 개수가 다름 — ko ${ base.length } vs ${ tgt.length }` );
       return;

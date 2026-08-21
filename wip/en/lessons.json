@@ -1,0 +1,204 @@
+{
+ "_note": "Lesson manuscripts. Every control name quoted here is text that is really painted on the simulation screen in this language - checked against wip/labels/en/. Names that live only under a11y.* are never drawn, so they are described by shape instead.",
+ "static-1": {
+  "course": "force-unseen",
+  "sim": "balloons-and-static-electricity",
+  "screens": null,
+  "title": "Why a balloon pulls your hair up",
+  "lead": "Nothing happened before you rubbed it. After you rub it, everything changes. What passed between the two?",
+  "hook": "You have probably pulled off a sweater in winter and watched your hair float up after it. Rub a balloon on your clothes, hold it against the wall, and it <b>stays there instead of falling.</b> No glue, no tape. What went on between the balloon and the sweater while you were rubbing?",
+  "predict": {
+   "q": "You rub a balloon on a sweater. What moves across?",
+   "opts": [
+    "The balloon's <b>+</b> moves to the sweater",
+    "The sweater's <b>−</b> moves to the balloon",
+    "+ and − trade places with each other",
+    "Nothing moves across; the properties just change"
+   ]
+  },
+  "missions": [
+   "At the bottom left, check that <b>Show all charges</b> is selected. The sweater and the balloon each have + and − sitting in pairs.",
+   "Drag the yellow balloon onto the sweater and rub it <b>slowly, several times</b>. Follow what moves with your eyes.",
+   "Let go of the rubbed balloon. It drifts back toward the sweater on its own.",
+   "Press <b>Remove Wall</b> on the right, then bring the wall back. What does the balloon do when the wall is there?",
+   "Switch to <b>Show charge differences</b>. Matched pairs disappear and only <b>what is left over</b> stays visible.",
+   "At the bottom center, pick the two-balloon option - those buttons are pictures of balloons, with no words on them - then rub both and bring them near each other."
+  ],
+  "record": "After the rubbing, what was left on the balloon and what was left on the sweater? Write down exactly what \"Show charge differences\" showed you.",
+  "explain": {
+   "right": 1,
+   "body": "<p>The only thing that moved was <strong>negative charge (−)</strong>. The − that was on the sweater went across to the balloon. Not one + moved anywhere.</p><p>The + sits locked in the middle of the atom (the nucleus), and rubbing is nowhere near enough to pull it out. The outer −, on the other hand, are held loosely, so <strong>they change seats whenever they scrape against another object.</strong> That is why − is always the one that moves in any static electricity story. Miss this and the next lessons will all feel confusing.</p><p>The result is a balloon with <strong>extra −, so it is negative</strong>, and a sweater that <strong>lost −, so it is positive</strong>. They are now opposites, so they pull on each other.</p><p>The wall is a different case. <strong>The wall carries no net charge.</strong> But when the negative balloon comes close, the − at the surface of the wall are pushed back inward and the + are left in front. Nothing arrived or left - the charges only moved seats - and that alone is enough to pull.</p>"
+  },
+  "real": "The snap you feel grabbing a door handle in winter, the crackle as you take off a shirt, the way dust clings to black clothes more than anything else - all the same thing. When the air is humid, water in the air carries the − away for you, which is why it hardly happens in summer. That is why static only bothers you in the cold months.",
+  "quiz": [
+   {
+    "q": "After the rubbing, what charge does the <b>sweater</b> carry?",
+    "opts": [
+     "Negative - it gained −",
+     "Positive - it lost −",
+     "No charge at all"
+    ],
+    "right": 1
+   },
+   {
+    "q": "The balloon is stuck to the wall. Is the <b>wall</b> charged?",
+    "opts": [
+     "Yes - that is why it sticks",
+     "No - the charges inside the wall only moved seats"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "static-2": {
+  "course": "force-unseen",
+  "sim": "charges-and-fields",
+  "screens": null,
+  "title": "The invisible map drawn around a charge",
+  "lead": "Put a single charge out in the open. Nothing looks different, but the space around it has already changed.",
+  "hook": "Last lesson you watched a balloon pull your hair. But the balloon and the hair <b>never touched each other</b>. How did a force get across a gap like that? Is there something in between?",
+  "predict": {
+   "q": "You place one charge and measure the force at several spots around it. How does it come out?",
+   "opts": [
+    "The force stays about the same however far out you go",
+    "The force drops at a steady rate as you move away",
+    "The force drops very quickly as you move away",
+    "Past a certain distance the force suddenly becomes 0"
+   ]
+  },
+  "missions": [
+   "From the tray at the bottom, drag one red <b>+1 nC</b> into the middle of the screen. The moment you drop it, the arrows around it come alive.",
+   "Look closely at the arrows. <b>They get smaller and fainter the further they are from the charge.</b> Size and brightness are the strength.",
+   "Pull out the measuring tape at the middle right, measure some distance from the charge, and drop a sensor from <b>Sensors</b> at that spot. Fix the arrow length in your mind.",
+   "Move that same sensor <b>twice as far out</b>. Is it half as long, or shorter than that?",
+   "Add a blue <b>-1 nC</b> facing it, and put a sensor <b>between</b> the two charges.",
+   "Pull out the voltage sensor on the right - the crosshair tool that reads in <b>V</b> - and hold it in different places. The closer to the charge, the bigger the reading."
+  ],
+  "record": "What happened to the arrow when you moved it twice as far out? Write down what you actually saw.",
+  "explain": {
+   "right": 2,
+   "body": "<p>The space around a charge is filled with something called an <strong>electric field</strong>. The charge does not \"shoot\" a force across; the charge <strong>changes the space around it</strong>. Then any other charge that enters that space feels a force.</p><p>The arrows are that map. An arrow points the way <strong>a positive charge would be pushed</strong>, and its length is the strength. That is why arrows are drawn in empty space where there is no charge at all - they are a forecast: \"put a charge here and this is the force it will feel.\"</p><p>When you doubled the distance, the arrow did not drop to half. It dropped to <strong>a quarter</strong>. Three times the distance gives a ninth. This is the <strong>inverse square of the distance</strong>, the rule you will check with numbers in the next lesson, and gravity follows exactly the same one.</p>"
+  },
+  "real": "Just before lightning strikes, an enormous electric field fills the space between the cloud and the ground. Lightning is what happens when the air can no longer hold that force and tears open so electricity can run through. Your hair standing on end is a sign that you are inside that field - if you are up a mountain, get low immediately.",
+  "quiz": [
+   {
+    "q": "If there is <b>no charge at all</b> where a field arrow is drawn, is there a force there?",
+    "opts": [
+     "There really is a force there",
+     "There is no force; it marks the force a charge would feel if it came"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Triple the distance and the force drops to what fraction?",
+    "opts": [
+     "A third",
+     "A sixth",
+     "A ninth"
+    ],
+    "right": 2
+   }
+  ]
+ },
+ "static-3": {
+  "course": "force-unseen",
+  "sim": "coulombs-law",
+  "screens": null,
+  "title": "Double the distance, and the force becomes what?",
+  "lead": "Last lesson you guessed it from arrows. This time you check it with numbers. And there is one more thing you can change besides distance.",
+  "hook": "Last lesson you moved the sensor twice as far out and the arrow became <b>a quarter</b> of what it was. That is what it looked like - but is it really so? This sim <b>prints the force as a number.</b> And there is one more thing you can change besides the distance: how much charge there is.",
+  "predict": {
+   "q": "Leave the distance alone and <b>double just one of the charges</b>. What happens to the force?",
+   "opts": [
+    "It stays the same - the other one did not change",
+    "It doubles",
+    "It goes up four times - squared, like the distance",
+    "It halves"
+   ]
+  },
+  "missions": [
+   "This sim opens on the screen chooser. Press <b>Macro Scale</b> on the left.",
+   "There is a ruler lying in the middle of the screen. Drag it against the two objects and set the distance to <b>2 cm</b>. Write down the force value you get.",
+   "Leave the charges alone and stretch the distance to <b>4 cm</b>. What fraction of the force is left?",
+   "Go back to <b>2 cm</b>, then double <b>only the size</b> of <b>Charge 1</b> (−4 → −8 μC). The <b>◀ ▶</b> beside the value box lets you hit it exactly.",
+   "Look at the <b>two figures</b> hauling on the objects. The charges are different, yet they are pulling <b>with the same force</b>.",
+   "Under <b>Force Values</b> on the right, choose <b>Hidden</b>. The numbers disappear and only the arrows are left."
+  ],
+  "record": "When you doubled the distance and when you doubled the charge, how many times bigger or smaller did the force get? Write the two results side by side.",
+  "explain": {
+   "right": 1,
+   "body": "<p>Double the distance and the force becomes <strong>a quarter</strong>. Double the charge and the force becomes <strong>twice</strong> as big. The same word \"double\", two different results.</p><p>That is because distance goes in <strong>squared</strong> and charge goes in <strong>as it is</strong>. This is <strong>Coulomb’s law</strong>.</p><p>You saw the two figures hauling the objects with ropes. Look closely and <strong>both of them are pulling with exactly the same force</strong>. You might expect the side with far more charge to feel a stronger pull, but it does not. The two objects always give each other forces of <strong>equal size in opposite directions</strong>.</p><p>Make one of the charges negative and the arrows flip. Like signs push, unlike signs pull. What sets the <strong>size</strong> of the force has nothing to do with the signs - only the amount of charge and the distance.</p>"
+  },
+  "real": "This \"inverse square of the distance\" is not a rule about electricity alone. Gravity does it, loudness does it, the brightness of a lamp does it. Twice as far from a speaker and the sound energy is a quarter; three times as far from a lamp and the brightness is a ninth. Whenever something spreads out in all directions from a single point, this rule turns up.",
+  "quiz": [
+   {
+    "q": "Double <b>both</b> charges. How many times bigger is the force?",
+    "opts": [
+     "Twice",
+     "Four times",
+     "Eight times"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Which one feels the <b>stronger force</b>, the bigger charge or the smaller one?",
+    "opts": [
+     "The bigger charge",
+     "The smaller charge",
+     "They are exactly the same"
+    ],
+    "right": 2
+   }
+  ]
+ },
+ "static-4": {
+  "course": "force-unseen",
+  "sim": "faradays-electromagnetic-lab",
+  "screens": "2",
+  "title": "Move a magnet and electricity appears",
+  "lead": "So far electricity made the force. This time it runs the other way - you move a magnet and make electricity.",
+  "hook": "Where did the electricity lighting this screen come from? Coal, nuclear, wind, water - the fuels look completely different, but <b>the last step is the same in every one of them.</b> Spin a magnet near a coil. That is it. Can that really be enough to make electricity?",
+  "predict": {
+   "q": "You push the magnet <b>inside the coil and hold it still</b> there. What does the bulb do?",
+   "opts": [
+    "Stays lit - the magnet is inside the coil",
+    "Gets brighter - it is as close as it can be",
+    "Goes out",
+    "Flickers"
+   ]
+  },
+  "missions": [
+   "Turn on <b>Lock to Axis</b> at the bottom right. The magnet will only move left and right, which keeps the results clean.",
+   "Take the magnet and push it <b>slowly</b> into the coil. What does the bulb do?",
+   "Hold the magnet <b>completely still</b> inside the coil. This one observation is the whole lesson.",
+   "Now run it through <b>quickly</b>. What is different from the slow pass?",
+   "Switch <b>Indicator</b> from the bulb to the meter - the one with the needle. The needle swings <b>the opposite way</b> going in and coming out.",
+   "Raise <b>Loops</b> from 2 and widen the <b>Loop Area</b> slider. The same speed of movement now gives a different result."
+  ],
+  "record": "What did the bulb do while the magnet sat still inside the coil? And what was different between moving it quickly and moving it slowly?",
+  "explain": {
+   "right": 2,
+   "body": "<p>Stop the magnet and <strong>the bulb goes out.</strong> It goes out even with the magnet sitting right in the middle of the coil.</p><p>That is because what makes electricity is not the <strong>strength</strong> of the magnet but the <strong>change</strong>. Current flows <strong>only while the magnetic field through the coil is changing</strong>. Hold it still and nothing happens at all, strong field or weak. Miss this and everything else comes out wrong.</p><p>That is also why <strong>moving faster makes it brighter.</strong> Cover the same distance in less time and the change is steeper, and a steeper change makes stronger electricity. This is <strong>Faraday’s law</strong>.</p><p>Switch to the meter and <strong>the needle goes one way going in and the other way coming out</strong>. That means the current runs one direction while the field grows and the other direction while it shrinks. Keep shaking the magnet back and forth and the direction of the electricity keeps flipping - and that <strong>back-and-forth electricity</strong> is exactly what arrives at the sockets in your house.</p><p>More loops, or wider ones, make it stronger. The coil is taking in that much more of the change in the field.</p>"
+  },
+  "real": "A power station uses water or steam or wind to <b>spin a magnet.</b> A bicycle light, a wireless charging pad, an induction cooktop - all the same idea. Tap a transit card at the gate and the coil inside the card picks up electricity from the changing magnetic field the gate makes, which is how a card with no battery in it does anything at all.",
+  "quiz": [
+   {
+    "q": "If you <b>just leave</b> a very strong magnet sitting inside the coil, does electricity keep coming out?",
+    "opts": [
+     "Yes - the magnet is strong",
+     "No - it is not moving"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Run the same magnet through <b>twice as fast</b>. What happens to the electricity?",
+    "opts": [
+     "Nothing changes",
+     "It gets stronger",
+     "It gets weaker"
+    ],
+    "right": 1
+   }
+  ]
+ }
+}

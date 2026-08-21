@@ -28,6 +28,7 @@ OUT = os.path.join(HERE, 'wip', 'labels')
 LANGS = ['en', 'es', 'ja']
 
 # 실험마다 붙는 공통 화면 요소. 조작 이름을 인용할 때 자주 쓰입니다.
+# 이 넷은 _shared.json 에 따로 뽑으므로 시뮬레이션마다 다시 넣지 않습니다.
 SHARED = ['joist', 'scenery-phet', 'sun', 'vegas']
 
 
@@ -66,6 +67,16 @@ def strings_lang(repo, lang):
     return flatten(load(p) or {})
 
 
+def deps(repo):
+    """시뮬레이션이 끌어다 쓰는 저장소들. 화면 글자의 일부가 여기서 옵니다 —
+       예를 들어 coulombs-law 의 'Force Values' 와 'Hidden' 은
+       inverse-square-law-common 에 있습니다. 시뮬레이션 파일만 읽으면 놓칩니다."""
+    d = load(os.path.join(PHET, repo, 'dependencies.json')) or {}
+    return [k for k in d
+            if k not in SHARED and k != repo and k != 'comment'
+            and os.path.isdir(os.path.join(PHET, k))]
+
+
 def build(repo, lang, opens_in):
     """opens_in 이 en 이면 그 언어 번역이 아예 없는 시뮬입니다 — 전부 영어입니다."""
     en = strings_en(repo)
@@ -84,15 +95,29 @@ def build(repo, lang, opens_in):
             screen[key] = en[key]
             if opens_in != 'en':
                 fallback[key] = en[key]
-    # 번역본에만 있는 키 (영어 원본에서 지워진 옛 문자열) 는 화면에 안 나옵니다.
+    # 딸린 저장소의 글자. 키 앞에 저장소 이름을 붙여 어디서 왔는지 남깁니다.
+    common = {}
+    for dep in deps(repo):
+        den = strings_en(dep)
+        if not den:
+            continue
+        dgot = strings_lang(dep, opens_in) if opens_in != 'en' else den
+        for key in sorted(den):
+            if key == 'a11y' or key.startswith('a11y.'):
+                continue
+            v = dgot.get(key)
+            common['%s.%s' % (dep, key)] = v if v and v.strip() else den[key]
+
     return {
         'repo': repo,
         'lang': lang,
         'opensIn': opens_in,
         '_note': ('이 시뮬레이션은 %s 로 열립니다. screen 이 화면에 실제로 찍히는 글자 '
-                  '전부이니 그대로 인용하세요. fallback 은 그중 번역이 빠져 영어로 '
-                  '찍히는 자리입니다. hidden 은 화면에 절대 안 나옵니다.' % opens_in),
+                  '전부이니 그대로 인용하세요. common 은 딸린 저장소에서 오는 글자로, '
+                  '이것도 화면에 나옵니다. fallback 은 번역이 빠져 영어로 찍히는 '
+                  '자리입니다. hidden 은 화면에 절대 안 나옵니다.' % opens_in),
         'screen': screen,
+        'common': common,
         'fallback': fallback,
         'hidden': hidden,
     }

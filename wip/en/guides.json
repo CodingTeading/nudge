@@ -44,5 +44,228 @@
     "tip": "Some sims have a button in the bottom bar that opens a list of <b>Keyboard Shortcuts</b>. Any special key that exists only in that sim — jumping to the wall, for instance — is written there."
    }
   ]
+ },
+ "balloons-and-static-electricity": {
+  "summary": "Rub a balloon on a sweater to build up static, then watch it stick to the wall - down to the individual charges. <b>There is only one screen</b>, so the bottom bar has no house button. The sweater is on the left, the wall on the right, the balloon in the middle.",
+  "controls": [
+   {
+    "name": "The balloon (drag it around)",
+    "desc": "Grab the balloon and <b>rub it over the sweater</b>, and negative charge moves from the sweater onto the balloon.",
+    "tip": "Do not rub once and hard - go back and forth <b>slowly, several times</b>. You can watch the charges cross one at a time. Let go and the balloon is pulled back on its own."
+   },
+   {
+    "name": "Show all charges · Show no charges · Show charge differences (bottom left)",
+    "desc": "These are <b>radio buttons</b> - only one at a time. Unlike checkboxes, you cannot have several on at once.",
+    "tip": "Start on <b>Show all charges</b> to see what is happening, then switch to <b>Show charge differences</b> to see just the outcome. Matched pairs vanish and only the leftovers stay."
+   },
+   {
+    "name": "Remove Wall (bottom right)",
+    "desc": "Takes the wall on the right away. Once it is gone, the button in the same place turns into the one that brings the wall back.",
+    "tip": "Take the wall away, rub up some charge, then put the wall back. You get to see the exact moment it sticks."
+   },
+   {
+    "name": "One balloon · two balloons (bottom center, two panels of balloon pictures)",
+    "desc": "Two panels with balloons drawn on them. Press the right-hand one and a second, green balloon appears. The panels carry pictures only, no words.",
+    "tip": "Rub both so they carry the same sign, then bring them close. <b>They push each other away.</b>"
+   },
+   {
+    "name": "Reset Balloon",
+    "desc": "Puts only the balloon back - its position and its charge.",
+    "tip": "The round yellow reset at the bottom right puts back the wall and the display setting as well. When you only want the balloons again, use this one."
+   }
+  ],
+  "steps": [
+   "Check that <b>Show all charges</b> is selected.",
+   "Drag the balloon over the sweater and work it slowly back and forth. Watch what crosses - <b>only the −, never the +</b>.",
+   "Bring the rubbed balloon close to the wall. Watch how the charges at the surface of the wall arrange themselves.",
+   "Switch to <b>Show charge differences</b> and see which one ended up positive, the sweater or the balloon.",
+   "Pick the two-balloon panel, rub them both, and bring them near each other."
+  ],
+  "gotchas": [
+   "Even with the balloon stuck to it, <b>the wall carries no charge.</b> The charges inside the wall have only moved seats.",
+   "The thing that moves is always <b>negative charge</b>. Positive charge stays put. Miss this and everything after it gets confusing.",
+   "Hold the balloon against something without rubbing and nothing happens. That is not a fault."
+  ]
+ },
+ "charges-and-fields": {
+  "summary": "Drop charges into empty space and watch, in arrows, how the space around them changes. <b>There is only one screen</b>, so the bottom bar has no house button.",
+  "controls": [
+   {
+    "name": "The tray at the bottom - +1 nC · -1 nC · Sensors",
+    "desc": "<b>Drag them out of the tray</b> to place them. Red +1 nC is a positive charge, blue -1 nC a negative one, and the yellow dot is a <b>sensor</b>.",
+    "tip": "To clear one away, drag it back onto the tray. The moment a charge lands, the arrows around it come alive."
+   },
+   {
+    "name": "Electric Field (top right · on by default)",
+    "desc": "Lays a dense carpet of little arrows over the whole screen. With no charges out they are faint; place a charge and they turn bright and large around it.",
+    "tip": "<b>The size and brightness of an arrow is the strength.</b> Without measuring anything you can see that it weakens fast with distance."
+   },
+   {
+    "name": "Direction Only",
+    "desc": "Indented one step under Electric Field. Makes every arrow the same length and leaves only the direction.",
+    "tip": "Turn it on when the strengths are so different that the arrows are too long or too short to read a direction from."
+   },
+   {
+    "name": "Voltage · Values · Grid",
+    "desc": "<b>Voltage</b> paints the screen in colors by voltage, <b>Values</b> shows the numbers alongside, and <b>Grid</b> lays a grid on the floor.",
+    "tip": "<b>Snap to Grid</b> below only wakes up once <b>Grid</b> is on - that is why it sits greyed out. With it on, charges click onto the grid and distances are easy to set."
+   },
+   {
+    "name": "The voltage sensor (middle right · upper slot)",
+    "desc": "Drag it out and it reads the voltage at that spot as a number, like <b>0.0 V</b>. Press the button on the sensor and it draws <b>the line joining every point at that same voltage</b>.",
+    "tip": "Move along one of those lines and the value never changes, however far you go. Seeing that for yourself is what makes the word \"equipotential\" click."
+   },
+   {
+    "name": "The measuring tape (middle right · lower slot)",
+    "desc": "Pull the yellow reel out and it measures the distance between two points.",
+    "tip": "Use it for any mission that says \"exactly twice the distance\". By eye you cannot tell a quarter from a half."
+   }
+  ],
+  "steps": [
+   "Drag one red <b>+1 nC</b> into the middle of the screen.",
+   "Check that the arrows around it <b>get smaller and fainter with distance</b>.",
+   "Measure a distance with the measuring tape and put a sensor there. Remember the arrow length.",
+   "Move that same sensor <b>twice as far out</b>. See whether it is half, or less than half.",
+   "Add a blue <b>-1 nC</b> facing it and put a sensor <b>between</b> the two charges.",
+   "Take readings at a few spots with the voltage sensor and draw the equipotential lines."
+  ],
+  "gotchas": [
+   "An arrow means <b>the force a positive charge would feel if you put one there</b>. It does not mean something is there now feeling a force.",
+   "Get very close to a charge and the arrows grow long enough to run off the screen. Not a fault - it really is that strong.",
+   "If <b>Snap to Grid</b> will not take a press, <b>Grid</b> is switched off.",
+   "Charges dropped on top of each other make the arithmetic look strange. Set them a little apart."
+  ]
+ },
+ "coulombs-law": {
+  "summary": "Measure the force between two charges <b>as a number</b>. This sim <b>starts at the screen chooser</b> - open it and you get two screen panels first, not the experiment.",
+  "screens": [
+   {
+    "name": "Macro Scale",
+    "what": "Two objects at a size you can see, in cm and μC. <b>Start here.</b>"
+   },
+   {
+    "name": "Atomic Scale",
+    "what": "Whether the same rule still holds at atomic size (pm, e). The controls are identical; only the units change."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The two charged objects, q₁ and q₂ (drag them)",
+    "desc": "Drag an object left or right and the distance changes; the force arrow and the number follow immediately.",
+    "tip": "This is the main thing you do here. <b>Change the distance and leave the charges alone</b> - that is how the rule shows itself."
+   },
+   {
+    "name": "The ruler (already lying on the screen)",
+    "desc": "Drag it against the two objects to measure the distance exactly. It is out from the start; you do not have to fetch it.",
+    "tip": "To make the distance exactly double, you have to use the ruler. By eye the rule stays invisible."
+   },
+   {
+    "name": "Charge 1 · Charge 2 (value box and slider)",
+    "desc": "Run from −10 to 10. They go negative as well.",
+    "tip": "The <b>◀ ▶</b> beside the value box step one notch at a time. Dragging the slider makes round numbers hard to hit."
+   },
+   {
+    "name": "Force Values - Decimal Notation · Scientific Notation · Hidden (right)",
+    "desc": "Radio buttons, one at a time. Choose <b>Hidden</b> and the numbers go away, leaving only the arrows.",
+    "tip": "When the value is so small it reads 0.0000…, <b>Scientific Notation</b> is easier. When you want to guess by feel before leaning on the numbers, leave it on <b>Hidden</b>."
+   },
+   {
+    "name": "The figures hauling on the two objects",
+    "desc": "They act out the size of the force. Not a control, but the most important picture in this sim.",
+    "tip": "However different the charges are, <b>both figures pull with the same force</b>. The fact that the bigger side does not feel a stronger pull is drawn right there."
+   }
+  ],
+  "steps": [
+   "At the screen chooser, press <b>Macro Scale</b>.",
+   "Set the distance to <b>2 cm</b> with the ruler and write down the force value.",
+   "Leave the charges alone and stretch the distance to <b>4 cm</b>. Work out what fraction of the force is left.",
+   "Go back to <b>2 cm</b>, then double <b>only the size</b> of <b>Charge 1</b> (−4 → −8 μC). How many times bigger is it this time?",
+   "Make one of the charges negative and see what happens to the <b>direction</b> of the arrows.",
+   "Use the house button to visit <b>Atomic Scale</b> and check that the same rule holds."
+  ],
+  "gotchas": [
+   "Touch the charges while you are changing the distance and the rule stays hidden. Change <b>one thing at a time</b>.",
+   "The force arrows sit on both objects, <b>the same size in opposite directions</b>. The bigger charge does not feel a stronger force.",
+   "Bring the distance close to 0 and the value explodes. That is the limit of the sim, not an error.",
+   "Do not be thrown when no experiment appears as you open it. This one <b>asks you to pick a screen first</b>."
+  ]
+ },
+ "faradays-electromagnetic-lab": {
+  "summary": "Make electricity with a magnet and a coil. <b>There are five screens</b>, so it opens on the screen chooser and you move between them with the house button in the bottom bar. <b>The tools differ from screen to screen</b> - read the screen list below first.",
+  "screens": [
+   {
+    "name": "Bar Magnet",
+    "what": "Just a magnet, to look at the shape of the field. <b>See Inside</b> and <b>Flip Polarity</b> exist only on this screen."
+   },
+   {
+    "name": "Pickup Coil",
+    "what": "Move a magnet near a coil to make electricity. <b>This is the key screen for this course</b>, and Indicator, Loops and Lock to Axis all live here."
+   },
+   {
+    "name": "Electromagnet",
+    "what": "The other way round: run electricity through and make a magnet."
+   },
+   {
+    "name": "Transformer",
+    "what": "Two coils facing each other, moving electricity across."
+   },
+   {
+    "name": "Generator",
+    "what": "A water wheel spins the magnet to make electricity continuously. This is how a power station works."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Magnetic Field (B) - every screen · on by default",
+    "desc": "Fills the background with a dense field of little compass needles showing the shape of the magnetic field.",
+    "tip": "Turn it off and the space around the magnet looks empty. It shows you that a field is not something you <b>see</b> but something the sim <b>draws for you</b>."
+   },
+   {
+    "name": "Strength (bar magnet panel · 75% by default)",
+    "desc": "Sets how strong the magnet is, from 0 to 100%.",
+    "tip": "Take it down to 0 and back up and you can see exactly how the field display responds."
+   },
+   {
+    "name": "See Inside · Flip Polarity - Bar Magnet screen only",
+    "desc": "<b>See Inside</b> shows the inside of the magnet; <b>Flip Polarity</b> swaps N and S.",
+    "tip": "It is easy to hunt for these two on the Pickup Coil screen. <b>They are not there.</b> To reverse the direction, run the magnet through the other way instead."
+   },
+   {
+    "name": "Indicator - bulb · meter (Pickup Coil screen)",
+    "desc": "Chooses what hangs off the coil. The bulb shows only brightness; <b>the meter shows direction too</b>. Both options are pictures, with no words on them.",
+    "tip": "To see that \"in and out are opposite\" you <b>have to switch to the meter</b>. The bulb lights the same either way the current runs."
+   },
+   {
+    "name": "Loops · Loop Area (Pickup Coil screen)",
+    "desc": "How many turns the coil has, and how wide you make it.",
+    "tip": "Two ways to get more electricity without a stronger magnet. This is why a real generator winds its coil thousands of times."
+   },
+   {
+    "name": "Lock to Axis (Pickup Coil screen)",
+    "desc": "Pins the magnet so it can only move left and right.",
+    "tip": "If your hand slips and the magnet wanders up and down, the results get messy. <b>Turn it on before you start.</b>"
+   },
+   {
+    "name": "Compass · Field Meter",
+    "desc": "Tick these and the tool appears on screen. The <b>Compass</b> gives you the field direction at that spot; the <b>Field Meter</b> gives you the strength as a number.",
+    "tip": "Walk the compass slowly once around the magnet. You can see where the field comes out and where it goes back in."
+   }
+  ],
+  "steps": [
+   "On the <b>Bar Magnet</b> screen, walk the compass once around the magnet to see the shape of the field.",
+   "Use the house button to go to <b>Pickup Coil</b> and turn on <b>Lock to Axis</b>.",
+   "Push the magnet <b>slowly</b> into the coil. What does the bulb do?",
+   "Hold the magnet <b>completely still</b> inside the coil - this one observation is the whole sim.",
+   "Now run it through <b>quickly</b>. What is different from the slow pass?",
+   "Switch <b>Indicator</b> to the meter and check the direction going in against coming out.",
+   "Raise <b>Loops</b> and <b>Loop Area</b> and run it again at the same speed.",
+   "Finish on the <b>Generator</b> screen, watching water keep the magnet turning."
+  ],
+  "gotchas": [
+   "<b>A magnet held still makes no electricity.</b> It is not about the magnet being strong; it has to <b>move</b>. Miss this and everything else comes out wrong.",
+   "<b>The tools differ from screen to screen.</b> See Inside and Flip Polarity are on Bar Magnet; Indicator, Loops and Lock to Axis are on Pickup Coil.",
+   "The bulb tells you nothing about the <b>direction</b> of the electricity. Switch to the meter for that.",
+   "If the bulb only glows very faintly, turn up the strength or move the magnet faster. It is not broken."
+  ]
  }
 }
