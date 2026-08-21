@@ -1751,5 +1751,265 @@
     "right": 1
    }
   ]
+ },
+ "matter-1": {
+  "course": "matter",
+  "sim": "states-of-matter",
+  "screens": null,
+  "title": "Ice and water are the same grains",
+  "lead": "Solid, liquid and gas are not different substances. They are the same grains, shaking harder or less hard.",
+  "hook": "Ice, water and steam look nothing like one another. Hard, flowing, invisible. And yet <b>every single grain is exactly the same water molecule</b>. So what is different? This sim magnifies down to the grains and shows you the answer. And <b>what temperature really is</b> falls out along the way.",
+  "predict": {
+   "q": "You warm a solid until it becomes a liquid. What has changed about <b>one grain</b>?",
+   "opts": [
+    "The grain has <b>got bigger</b>",
+    "The grain <b>shakes faster</b>",
+    "The grain has <b>melted away</b>",
+    "The grain has <b>turned into a different kind</b>"
+   ]
+  },
+  "missions": [
+   "Start on the <b>States</b> screen.",
+   "Choose <b>Neon</b> under <b>Atoms & Molecules</b> on the right. Simple grains are easier to watch.",
+   "Press the <b>Solid</b> button on the right. The grains line up <b>in rows</b> and shiver in place.",
+   "Push the handle at the bottom toward <b>Heat</b> and warm it slowly. The <b>Temperature</b> at the top left goes up.",
+   "How do the grains change? <b>Do they get bigger, or do they shake faster?</b> That is the answer to ②.",
+   "Keep heating and the rows collapse into a <b>Liquid</b>. Do the grains stay in contact while changing places?",
+   "Heat further and it becomes a <b>Gas</b>. Now the grains are far apart and fly about at random.",
+   "Now push toward <b>Cool</b> and chill it. Does it go back?",
+   "Change to <b>Water</b> and do the same. Can you see the grains arranging themselves <b>more loosely</b> as it freezes?",
+   "Use the house button to reach the <b>Phase Changes</b> screen, where you can also apply <b>Pressure</b>. Raise the pressure to turn the gas into a liquid.",
+   "On the <b>Interaction</b> screen, change the <b>Distance Between Atoms</b>. Close in it is <b>Repulsive</b>; far out it is <b>Attractive</b>."
+  ],
+  "record": "As you heated it from solid to gas, what happened to the size of the grains and to their shaking?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>they shake faster</strong>. The grains themselves <strong>change neither size nor kind.</strong></p><p>Collecting what you saw on screen:</p><ul><li><strong>Solid</strong> - the grains line up <strong>in rows</strong> and only shiver in place. The force holding them together beats the shaking.</li><li><strong>Liquid</strong> - still in contact, but <strong>changing places.</strong> Which is why it flows.</li><li><strong>Gas</strong> - <strong>apart</strong> from each other, flying about at random. The shaking has beaten the holding.</li></ul><p>So the three states are a matter of which way <strong>the contest between holding and shaking</strong> has tipped. The grains are the same throughout.</p><p>And here is <strong>what temperature is</strong>. Temperature is not a degree of hotness but <strong>how fast the grains are moving</strong>. Heating something is <strong>shaking its grains harder</strong>.</p><p>Freezing <strong>water</strong> is the interesting one. Most substances pack tighter as they freeze; water arranges itself <strong>more loosely</strong>. Which is why <strong>ice floats.</strong> Thanks to that odd property, a lake freezes from the surface down and the life in it gets through the winter.</p><p>What you saw on the <strong>Interaction</strong> screen matters too. Grains <strong>pull when far apart and push when close.</strong> So they settle at a particular distance. It is why a solid has a volume at all, and why there is a limit to how far you can squeeze anything.</p>"
+  },
+  "real": "All of cooking is this story. Water boiling and then sitting at 100 °C, a pressure cooker cooking at a higher temperature, dry ice going straight to gas without a liquid stage - all contests between grains. Without ice floating, lakes would freeze from the bottom every winter and the fish would not survive.",
+  "quiz": [
+   {
+    "q": "Warm some water and one water molecule:",
+    "opts": [
+     "Gets bigger",
+     "Moves faster",
+     "Turns into a different molecule"
+    ],
+    "right": 1
+   },
+   {
+    "q": "What does <b>temperature</b> represent?",
+    "opts": [
+     "The size of the grains",
+     "How fast the grains are moving",
+     "The number of grains"
+    ],
+    "right": 1
+   },
+   {
+    "q": "When grains are <b>very close together</b>, the force between them is:",
+    "opts": [
+     "Attractive",
+     "Repulsive",
+     "There is none"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "matter-2": {
+  "course": "matter",
+  "sim": "gas-properties",
+  "screens": null,
+  "title": "Pressure is grains hitting the wall",
+  "lead": "A balloon swells not because something inside is pushing, but because grains are drumming on the wall without a pause.",
+  "hook": "Lesson 1 said the grains of a gas <b>fly about at random</b>. So what is <b>pressure</b>? People wave at it with \"the air pushes out\", but at the level of grains it is far simpler. Grains <b>hitting the wall</b> is all it is. This sim even has a <b>Collision Counter</b>, so you can count the drumming yourself.",
+  "predict": {
+   "q": "Gas in a sealed container. You <b>hold the volume</b> and <b>double the temperature</b>. The pressure:",
+   "opts": [
+    "Stays the same",
+    "<b>Goes up</b> - the grains hit harder and more often",
+    "Goes down",
+    "Depends on the number of grains"
+   ]
+  },
+  "missions": [
+   "This is the <b>Ideal</b> screen. Press the pump on the left to put gas into the container.",
+   "Check the <b>Pressure</b> gauge at the top and the <b>Temperature</b> readout on the left.",
+   "Under <b>Hold Constant</b> on the right, choose <b>Volume (V)</b>. The volume is now fixed.",
+   "Push the handle at the bottom toward <b>Heat</b>. What does the <b>Pressure</b> do as the temperature rises? That is the answer to ②.",
+   "Turn on the <b>Collision Counter</b> on the right. It reports <b>Wall Collisions</b>. Do they rise as you heat?",
+   "Now switch <b>Hold Constant</b> to <b>Temperature (T)</b> and push the right-hand wall of the container <b>inward</b> to reduce the volume. The pressure?",
+   "Set it to <b>Nothing</b> and heat the container: <b>the lid is pushed up.</b> The volume grew.",
+   "Under <b>Particles</b> on the left, put in <b>the same number</b> of <b>Heavy</b> and <b>Light</b> ones.",
+   "Which fly about faster, the heavy grains or the light ones?",
+   "Use the house button to reach the <b>Diffusion</b> screen and remove the divider in the middle. The two gases <b>mix by themselves.</b>",
+   "On the <b>Energy</b> screen, look at the speed distribution of the grains. They are not all at one speed - they are <b>all over the place</b>."
+  ],
+  "record": "With the volume held, what happened to the pressure and to the wall collision count as you heated it? And how did the speeds of the heavy and light grains compare?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>it goes up</strong>. The number on the <b>Collision Counter</b> rising alongside is the proof.</p><p>Start with what pressure is. Pressure is <strong>grains drumming on the wall</strong>. So two things raise it.</p><ul><li>The grains hit <strong>more often</strong>, or</li><li>each hit lands <strong>harder</strong></li></ul><p>Raise the temperature and the grains speed up, so <strong>both</strong> go up. That is why the pressure climbs so sharply.</p><p>The pressure also rose when you reduced the volume. This time the grains kept their speed but <strong>the walls came closer</strong>, so they hit more often.</p><p>To collect it:</p><ul><li><strong>Temperature ↑</strong> (volume held) → pressure ↑ - harder and more often</li><li><strong>Volume ↓</strong> (temperature held) → pressure ↑ - closer walls, more often</li><li><strong>Number of grains ↑</strong> → pressure ↑ - more things doing the hitting</li></ul><p>Every gas law in the textbook comes out of this one picture. There is no separate formula to memorise.</p><p>That <strong>the heavy grains were slower</strong> matters too. The same temperature means <strong>the same energy</strong>, and with the same energy a heavier thing moves more slowly. It is why a helium balloon goes down faster than an air-filled one, and why perfume takes time to fill a room.</p><p>Remember, too, that the speeds on the <strong>Energy</strong> screen were <strong>all different</strong>. Temperature is only an <strong>average</strong>, and the few unusually fast ones escaping from the surface of a liquid are what <strong>evaporation</strong> is. It is why washing dries without boiling.</p>"
+  },
+  "real": "Filling a tyre and getting a pressure warning light in winter, a pressure cooker taking water past 100 °C, why you must not put an aerosol can in a fire, a crisp packet swelling as a plane takes off - all of it comes from this one picture.",
+  "quiz": [
+   {
+    "q": "The <b>pressure</b> of a gas is:",
+    "opts": [
+     "How much the grains drum on the wall",
+     "The weight of the grains",
+     "The size of the container"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Hold the temperature and <b>reduce the volume</b>. The pressure:",
+    "opts": [
+     "Goes up",
+     "Goes down",
+     "Stays the same"
+    ],
+    "right": 0
+   },
+   {
+    "q": "At the same temperature, a <b>heavier</b> grain is:",
+    "opts": [
+     "Faster",
+     "Slower",
+     "The same speed"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "matter-3": {
+  "course": "matter",
+  "sim": "molecule-shapes",
+  "screens": null,
+  "title": "Why is water bent?",
+  "lead": "Two bonds ought to make a straight line, and yet water is bent. It is because of electron pairs you cannot see.",
+  "hook": "Carbon dioxide (CO₂) is <b>a straight line</b> while water (H₂O) is <b>bent</b>. Both have one central atom with two arms on it. Why the difference? The answer is in <b>what you cannot see</b>. And this difference in shape leads straight into the next lesson - <b>why water is so special</b>.",
+  "predict": {
+   "q": "A central atom has <b>2 bonds</b>. But it also has <b>2 lone pairs</b> that take no part in bonding. The shape is:",
+   "opts": [
+    "A straight line",
+    "<b>Bent</b>",
+    "A triangle",
+    "Only the bonds matter, so the lone pairs make no difference"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Model</b> screen. One central atom is laid out, and you attach arms from the right.",
+   "Under <b>Bonding</b> on the right, attach <b>two</b> single bonds. What shape do you get?",
+   "Turn on <b>Name</b> at the bottom left and it reads <b>Linear</b>. A straight line.",
+   "Now attach <b>one</b> <b>Lone Pair</b>. Does the shape change?",
+   "Attach <b>one more</b> lone pair. Now you have 2 bonds and 2 lone pairs. This is the structure of water, and the answer to ②.",
+   "Turn on <b>Show Bond Angles</b> on the right. The angle appears as a number. How many degrees?",
+   "Turn <b>Show Lone Pairs</b> off and on. With it off, <b>you cannot see why it is bent.</b>",
+   "Now take the bonds up to <b>3</b> and <b>4</b>. What shape does each give?",
+   "With 4 bonds, check that the angle is <b>not 90°</b>. Why not?",
+   "Use the house button to reach the <b>Real Molecules</b> screen, where you can pick real molecules like <b>H₂O · CO₂ · NH₃ · CH₄</b>.",
+   "Flip between <b>CO₂</b> and <b>H₂O</b> and compare <b>the number of lone pairs</b>."
+  ],
+  "record": "Write down the shape and the angle with 2 bonds alone, and with 2 bonds plus 2 lone pairs.",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>bent</strong>. That is exactly water's structure, and the angle is about <strong>104.5°</strong>.</p><p>The reason is simple. <strong>Electron pairs push each other away.</strong> They are all negative. So the pairs move to wherever they are <strong>as far from each other as possible</strong>.</p><p>The important part is that <strong>a pair used in a bond and a pair that is not push exactly the same.</strong> So when you work out the shape you have to <strong>count both</strong>.</p><ul><li><strong>2 pairs</strong> → opposite each other → <strong>linear</strong> (180°)</li><li><strong>3 pairs</strong> → triangular</li><li><strong>4 pairs</strong> → tetrahedral (about 109.5°)</li></ul><p>Water has 2 bonds plus 2 lone pairs = <strong>4 pairs in all</strong>, so they spread tetrahedrally. But all we can see is <strong>the two bonds</strong>, so it <strong>looks bent</strong>.</p><p>Turning <strong>Show Lone Pairs</strong> off was a good check. With it off there is no telling why it bends. <strong>Something invisible is setting the shape.</strong></p><p>Carbon dioxide is straight for the same reason. The central carbon has <strong>no</strong> lone pairs, so only the two bonds push apart, and that gives 180°.</p><p>Remember also that with 4 bonds the angle was <strong>109.5°, not 90°</strong>. Drawn on paper it looks like a cross, so 90° feels right; but it is really <strong>three-dimensional</strong>, and spreading into a tetrahedron gets them furthest apart. <strong>Molecules are not flat.</strong></p><p>This difference in shape is where the next lesson starts, because the same bonds give <strong>a whole molecule with different properties depending on the shape</strong>.</p>"
+  },
+  "real": "How a drug works in the body hangs on this shape, because an enzyme and a drug molecule have to fit like a lock and a key. Built of the same atoms, a different <b>order and angle</b> makes a completely different substance. The thalidomide disaster of the 1960s is usually given as the example, though the real story is a step more complicated - the two mirror images <b>convert into each other in the body</b>, so feeding only the safe one would not have prevented it.",
+  "quiz": [
+   {
+    "q": "What sets the shape of a molecule?",
+    "opts": [
+     "The number of bonds alone",
+     "The count of bonds and lone pairs together",
+     "The weight of the atoms"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Why is <b>CO₂</b> a straight line?",
+    "opts": [
+     "Because it has two bonds",
+     "Because the central atom has no lone pairs",
+     "Because carbon is light"
+    ],
+    "right": 1
+   },
+   {
+    "q": "With <b>4</b> electron pairs, why is the angle not 90°?",
+    "opts": [
+     "The calculation is wrong",
+     "Spreading into a tetrahedron in three dimensions gets them furthest apart",
+     "The bond lengths differ"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "matter-4": {
+  "course": "matter",
+  "sim": "molecule-polarity",
+  "screens": null,
+  "title": "Shape changes the properties",
+  "lead": "Even when every bond is lopsided, a symmetric shape cancels them out. It is why water is special.",
+  "hook": "Lesson 3 said <b>water is bent and carbon dioxide is straight</b>. Yet water dissolves almost anything and carbon dioxide barely dissolves in it - though both have bonds where <b>oxygen pulls hard on the electrons</b>. The difference is in the <b>shape</b>. And this story uses <b>adding vectors</b> from course 02 exactly as it stands.",
+  "predict": {
+   "q": "<b>Two bonds</b> are each lopsided to one side. When is the <b>whole molecule</b> <b>not</b> lopsided?",
+   "opts": [
+    "If the bonds are lopsided the molecule always is",
+    "If the two bonds point <b>exactly opposite</b> ways they cancel out",
+    "Two bonds always cancel",
+    "They cancel if the atoms are heavy"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Two Atoms</b> screen. Two atoms joined by one bond.",
+   "The <b>Electronegativity</b> handles for <b>Atom A</b> and <b>Atom B</b> below are how hard each pulls on the electrons.",
+   "Set the two <b>equal</b>. Turn on <b>Bond Dipole</b> on the right and the arrow <b>disappears</b> - there is no lopsidedness.",
+   "Now raise <b>Atom B</b> alone to its maximum. The arrow points <b>toward B</b>. The electrons have shifted that way.",
+   "Turn on <b>Partial Charges</b> and <b>δ+ and δ−</b> appear - slightly positive and slightly negative.",
+   "Turn on <b>Electric Field</b>. A lopsided molecule <b>turns to face</b> the field.",
+   "Use the house button to reach the <b>Three Atoms</b> screen. Three atoms now, and <b>you can change the shape.</b>",
+   "Turn on <b>both</b> <b>Bond Dipoles</b> and <b>Molecular Dipole</b>. Two small arrows and one big one appear.",
+   "Drag A and C to straighten the molecule into <b>a line</b>. The bond arrows are still there - <b>what happens to the molecular arrow?</b> That is the answer to ②.",
+   "Now bend it back. The molecular arrow reappears.",
+   "On the <b>Real Molecules</b> screen, pick <b>H₂O</b> and <b>CO₂</b> and compare. The difference in shape from lesson 3 becomes a difference in properties here."
+  ],
+  "record": "What did the molecular dipole arrow do when you straightened the three atoms into a line, and when you bent them?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>if the two bonds point exactly opposite ways they cancel</strong>. On screen, straightening the molecule left <strong>the bond arrows exactly as they were while the molecular arrow disappeared</strong>.</p><p>Course 02, lesson 4 said that <strong>adding vectors of size 3 and 4 gives anything from 1 to 7 depending on direction</strong>. The same thing happens here. A bond dipole is <strong>an arrow with a size and a direction</strong>, and the lopsidedness of the whole molecule is <strong>those arrows added up</strong>.</p><ul><li><strong>Straight (symmetric)</strong> - the two arrows are exactly opposite → the sum is <strong>0</strong> → non-polar</li><li><strong>Bent</strong> - the two arrows are at an angle → the sum is <strong>not 0</strong> → polar</li></ul><p>So <strong>a molecule can be un-lopsided even when its bonds are lopsided</strong>, as long as the shape is symmetric.</p><p>Carbon dioxide is exactly that case. Each C=O bond is strongly lopsided, but being <strong>straight</strong> they cancel. Water is <strong>bent</strong>, so nothing cancels and the whole thing is lopsided - a <strong>polar molecule</strong>.</p><p>That difference has enormous consequences.</p><ul><li><strong>Water dissolves almost anything.</strong> Lopsided ends grab each other, so it can tear apart an ionic substance like salt.</li><li><strong>Water grabs other water hard.</strong> Its boiling point is far above that of molecules of similar size. Water being liquid at room temperature at all is down to this.</li><li><strong>Oil does not mix.</strong> Being non-polar, it has no way to grab hold of water.</li></ul><p>Lesson 1 said <strong>the force with which grains hold each other</strong> settles the state. What settles the strength of that holding is exactly <strong>this lopsidedness</strong>. The course closes its loop here - <strong>shape sets the lopsidedness, the lopsidedness sets the holding force, and that force sets solid, liquid and gas.</strong></p>"
+  },
+  "real": "\"Oil and water do not mix\" is the whole of this story. Detergent lifts grease because one end of the molecule is polar and the other is not, so it can grab both. A microwave heating only the water, soap washing your hands, waterproofing on a coat, how well a drug is absorbed - all of it divides along polarity.",
+  "quiz": [
+   {
+    "q": "Why is <b>CO₂</b> non-polar?",
+    "opts": [
+     "Its bonds are not lopsided",
+     "It is straight, so the two lopsidednesses cancel",
+     "Carbon is light"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Why is <b>H₂O</b> polar?",
+    "opts": [
+     "Oxygen is heavy",
+     "It is bent, so nothing cancels",
+     "There are two hydrogens"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Why does oil not mix with water?",
+    "opts": [
+     "Oil is lighter",
+     "It is non-polar, so it has no way to grab hold of water",
+     "Oil is a liquid"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

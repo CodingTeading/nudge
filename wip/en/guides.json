@@ -2000,5 +2000,295 @@
    "With a <b>small</b> eccentricity the difference in speed is barely visible. Keep it high while you experiment.",
    "This sim was built for high school. The <b>first and second laws</b> alone are enough for this lesson."
   ]
+ },
+ "states-of-matter": {
+  "summary": "Heat and cool matter <b>magnified down to the grains</b>. You can watch with your own eyes how solid, liquid and gas divide by the motion of the grains.",
+  "screens": [
+   {
+    "name": "States",
+    "what": "Where this lesson starts. Heat and cool to move between the three states."
+   },
+   {
+    "name": "Phase Changes",
+    "what": "You can apply <b>Pressure</b> as well as temperature, and turn a gas into a liquid with pressure alone."
+   },
+   {
+    "name": "Interaction",
+    "what": "The force <b>between two grains</b> on its own. The push-when-close, pull-when-far relationship is drawn as a graph."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Atoms & Molecules (top right) - Neon · Argon · Oxygen · Water",
+    "desc": "Choose the substance. The look of the grains and the force holding them both change.",
+    "tip": "Start with <b>Neon</b>. One round grain shows the motion most clearly. Leave <b>Water</b> until last - it has the odd property of arranging loosely as it freezes."
+   },
+   {
+    "name": "Solid · Liquid · Gas (buttons on the right)",
+    "desc": "Press one and it switches straight to that state.",
+    "tip": "Press the three <b>in turn</b> to compare the arrangements, then use <b>Heat / Cool</b> to change slowly and watch the in-between."
+   },
+   {
+    "name": "Heat · Cool (handle at the bottom)",
+    "desc": "Warms or chills it. The <b>Temperature</b> at the top left follows.",
+    "tip": "The main action here. Push it <b>gently</b>. Shove it and the state jumps, and you miss the change happening."
+   },
+   {
+    "name": "The temperature readout (top left)",
+    "desc": "Shown in both <b>K</b> and <b>℃</b>.",
+    "tip": "The ℃ side gives you a feel for it. Neon boils around −249 ℃ - it is only a liquid at very low temperatures."
+   },
+   {
+    "name": "Pressure (Phase Changes screen)",
+    "desc": "Applies pressure to the container to squeeze the grains together.",
+    "tip": "Turn a gas into a liquid <b>with pressure alone</b>, without lowering the temperature. It is why the inside of a butane canister is liquid."
+   },
+   {
+    "name": "Distance Between Atoms (Interaction screen)",
+    "desc": "Sets the distance between two grains directly. The <b>Potential Energy</b> curve below moves with it.",
+    "tip": "Close is <b>Repulsive</b>, far is <b>Attractive</b>. The curve is lowest at just the right distance, and that is the stable spot."
+   },
+   {
+    "name": "Forces (right of the Interaction screen)",
+    "desc": "Choose between <b>Hide Forces · Total Force · Attractive</b> (van der Waals) and <b>Repulsive</b> (electron overlap).",
+    "tip": "Turn <b>Attractive</b> and <b>Repulsive</b> on separately and you can see why the total force has the shape it does. It is a contest between the two."
+   },
+   {
+    "name": "The pause, step and slow-speed controls",
+    "desc": "Stop, advance a frame, or play slowly. The pause and step buttons are icons with no words on them.",
+    "tip": "To catch <b>the moment</b> a solid turns into a liquid, run it slowly."
+   }
+  ],
+  "steps": [
+   "On the <b>States</b> screen choose <b>Neon</b> and press the <b>Solid</b> button.",
+   "Watch the grains shiver in their rows.",
+   "Push gently toward <b>Heat</b>, watching the temperature and the grains together.",
+   "Catch the moment it turns to liquid and then to gas.",
+   "Push toward <b>Cool</b> and take it back.",
+   "Change to <b>Water</b> and look at the arrangement as it freezes.",
+   "On the <b>Phase Changes</b> screen, turn a gas into a liquid with <b>Pressure</b> alone.",
+   "On the <b>Interaction</b> screen, change the distance and watch attraction and repulsion."
+  ],
+  "gotchas": [
+   "Grains <b>do not get bigger</b> when you heat them. They only get faster.",
+   "The temperature at which a substance becomes liquid <b>differs enormously</b>. Neon is around −249 ℃.",
+   "<b>Water</b> arranges its grains loosely as it freezes, which is why ice floats - the opposite of most substances.",
+   "Shove the heat/cool handle and the state jumps right past. Push it gently."
+  ]
+ },
+ "gas-properties": {
+  "summary": "Heat, squeeze and resize a container of gas to see <b>where pressure comes from</b>. There is a <b>Collision Counter</b>, so you can count the grains drumming on the wall yourself.",
+  "screens": [
+   {
+    "name": "Ideal",
+    "what": "Where this lesson starts. Temperature, volume, pressure and the number of grains, all free to change."
+   },
+   {
+    "name": "Explore",
+    "what": "Measure the relationships under set conditions."
+   },
+   {
+    "name": "Energy",
+    "what": "Shows the <b>speed distribution</b> of the grains. This is where you see they are not all at one speed."
+   },
+   {
+    "name": "Diffusion",
+    "what": "Open the divider and watch two gases <b>mix by themselves.</b>"
+   }
+  ],
+  "controls": [
+   {
+    "name": "The pump (bottom left)",
+    "desc": "Press it to put gas into the container. Under <b>Particles</b> above you can choose <b>Heavy</b> or <b>Light</b> ones.",
+    "tip": "Put in <b>the same number</b> of each and compare their speeds. Same temperature, and the heavy ones are slower."
+   },
+   {
+    "name": "Hold Constant (right) - Nothing · Volume (V) · Temperature (T) · Pressure",
+    "desc": "Sets <b>what stays fixed</b> while you experiment.",
+    "tip": "The key switch in this sim. <b>Fix one</b> and the relationship between the other two shows itself. Fix nothing and several things move at once and you reach no conclusion."
+   },
+   {
+    "name": "Heat · Cool (handle at the bottom)",
+    "desc": "Warms or chills the container.",
+    "tip": "Hold <b>Volume (V)</b> and then heat. The pressure rises cleanly on its own."
+   },
+   {
+    "name": "The right-hand wall of the container (drag it)",
+    "desc": "Push or pull the wall to change the <b>volume</b>.",
+    "tip": "Hold <b>Temperature (T)</b> and push the wall. Only the relationship between volume and pressure is left."
+   },
+   {
+    "name": "The pressure gauge (above the container)",
+    "desc": "Shown in both <b>atm</b> and <b>kPa</b>.",
+    "tip": "Where the answer appears in this sim. <b>Write the value down</b> before you change conditions."
+   },
+   {
+    "name": "Collision Counter (checkbox on the right)",
+    "desc": "Counts <b>Wall Collisions</b> over a set time. The <b>Sample Period</b> can be changed too.",
+    "tip": "The best tool in this lesson. Watching the collision count rise <b>alongside</b> the pressure makes \"pressure = drumming\" concrete."
+   },
+   {
+    "name": "Width · Stopwatch (checkboxes on the right)",
+    "desc": "Bring out a ruler for the container width and a stopwatch.",
+    "tip": "Turn on <b>Width</b> when you want to halve the volume exactly."
+   },
+   {
+    "name": "Return Lid (above the container)",
+    "desc": "Puts the lid back after the pressure has blown it off.",
+    "tip": "Heat it enough and the lid flies off. Not a fault - the pressure passed the limit."
+   }
+  ],
+  "steps": [
+   "Pump gas in and note the <b>Pressure</b> and <b>Temperature</b>.",
+   "Set <b>Hold Constant</b> to <b>Volume (V)</b>.",
+   "Turn on the <b>Collision Counter</b>.",
+   "Heat it and watch the pressure and the collision count together.",
+   "Switch <b>Hold Constant</b> to <b>Temperature (T)</b> and push the wall in to reduce the volume.",
+   "Put heavy and light grains in together and compare their speeds.",
+   "Look at the speed distribution on the <b>Energy</b> screen.",
+   "Open the divider on the <b>Diffusion</b> screen."
+  ],
+  "gotchas": [
+   "With <b>Hold Constant</b> on <b>Nothing</b>, several values move at once and you cannot see the relationship. <b>Fix one</b> and then experiment.",
+   "Heat it enough and <b>the lid flies off.</b> Put it back with <b>Return Lid</b>.",
+   "The grains' speeds are <b>all different</b>. Temperature is only an average."
+  ]
+ },
+ "molecule-shapes": {
+  "summary": "Attach <b>bonds</b> and <b>lone pairs</b> to a central atom and see how the shape of a molecule is settled. You can <b>drag to rotate</b> the view, so you can see the three-dimensional shape from several angles.",
+  "screens": [
+   {
+    "name": "Model",
+    "what": "Where this lesson starts. Attach bonds and lone pairs as you like."
+   },
+   {
+    "name": "Real Molecules",
+    "what": "Pick real molecules like <b>H₂O · CO₂ · NH₃ · CH₄</b>."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Bonding (top right)",
+    "desc": "Attaches arms to the central atom. <b>Single, double and triple</b> bonds are available.",
+    "tip": "<b>Single bonds</b> alone are enough for this lesson. Change the number and watch how the shape changes."
+   },
+   {
+    "name": "Lone Pair (right)",
+    "desc": "Attaches a pair of electrons that takes <b>no</b> part in bonding. No atom is attached, but it takes up room.",
+    "tip": "The heart of this sim. Make 2 bonds plus 2 lone pairs and you have <b>the structure of water</b>."
+   },
+   {
+    "name": "Show Lone Pairs (checkbox on the right)",
+    "desc": "Shows or hides the lone pairs on screen.",
+    "tip": "Turn it <b>off and on</b>. With it off there is no telling why it bends - a device for showing you that something invisible is setting the shape."
+   },
+   {
+    "name": "Show Bond Angles (checkbox on the right)",
+    "desc": "Shows the angle between bonds as a number.",
+    "tip": "<b>Leave it on.</b> By eye you cannot tell 104.5° from 109.5°."
+   },
+   {
+    "name": "Molecule Geometry · Electron Geometry (bottom left, under Name)",
+    "desc": "<b>Molecule Geometry</b> is the shape of the atoms you can see; <b>Electron Geometry</b> is the shape counting the lone pairs as well.",
+    "tip": "The two <b>can differ.</b> Water is tetrahedral by electron geometry and bent by molecule geometry. That difference is the point of this lesson."
+   },
+   {
+    "name": "Dragging to rotate the view",
+    "desc": "Drag an empty part of the screen and the molecule turns.",
+    "tip": "<b>Do turn it.</b> Seen from one direction only it looks flat and you will not recognise the tetrahedron."
+   },
+   {
+    "name": "Remove All (right)",
+    "desc": "Takes off everything you have attached.",
+    "tip": "Press it before building a new structure. Clearing and starting again is quicker."
+   }
+  ],
+  "steps": [
+   "On the <b>Model</b> screen turn on <b>Molecule Geometry</b> and <b>Show Bond Angles</b>.",
+   "Attach <b>two</b> bonds and watch it become linear.",
+   "Add <b>Lone Pairs</b> one at a time and watch it bend.",
+   "Read the angle at 2 bonds plus 2 lone pairs.",
+   "Turn <b>Show Lone Pairs</b> off and on.",
+   "Take the bonds to 3 and 4 and look at the shapes.",
+   "<b>Drag to rotate</b> the view and check it in three dimensions.",
+   "Compare H₂O against CO₂ on the <b>Real Molecules</b> screen."
+  ],
+  "gotchas": [
+   "<b>Lone pairs take up room too.</b> Being invisible does not mean they have no effect on the shape.",
+   "<b>Molecule Geometry</b> (the shape you see) and <b>Electron Geometry</b> (counting the pairs) can differ.",
+   "The angle with 4 bonds is <b>109.5°, not 90°</b>. Molecules are not flat.",
+   "Seen from one direction only you will read the shape wrongly. <b>Drag to rotate.</b>",
+   "This sim was built for high school. The <b>Model</b> screen alone is enough for this lesson."
+  ]
+ },
+ "molecule-polarity": {
+  "summary": "Shows <b>which way a bond is lopsided</b> as an arrow, and <b>adds</b> those arrows up to give the lopsidedness of the whole molecule. Adding vectors from course 02, used exactly as it stands.",
+  "screens": [
+   {
+    "name": "Two Atoms",
+    "what": "Where this lesson starts. The lopsidedness of <b>one</b> bond alone."
+   },
+   {
+    "name": "Three Atoms",
+    "what": "<b>Two</b> bonds, and <b>you can change the shape.</b> The heart of this lesson is here."
+   },
+   {
+    "name": "Real Molecules",
+    "what": "Pick real molecules like H₂O and CO₂."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The Electronegativity handles (bottom) - Atom A · B · C",
+    "desc": "Set how hard each atom <b>pulls on the electrons</b>, from <b>less</b> to <b>more</b>.",
+    "tip": "Set two of them <b>equal</b> and the lopsidedness vanishes. Raise one alone and it tips that way - try both extremes first."
+   },
+   {
+    "name": "Bond Dipole (checkbox on the right)",
+    "desc": "Draws the lopsidedness of <b>each individual</b> bond as a small arrow.",
+    "tip": "With no lopsidedness the arrow <b>disappears.</b> Present or absent is all you need to judge by."
+   },
+   {
+    "name": "Molecular Dipole (checkbox on the right of the Three Atoms screen)",
+    "desc": "Draws the lopsidedness of the <b>whole</b> molecule as a big arrow. It is the bond arrows added together.",
+    "tip": "The key readout of this lesson. Leave it on <b>together with the bond dipoles</b> and change the shape. The moment the small arrows stay and only the big one goes is the answer."
+   },
+   {
+    "name": "Dragging atoms to change the shape (Three Atoms screen)",
+    "desc": "Drag the outer atoms A and C to change the <b>bond angle</b>.",
+    "tip": "Go between <b>straight</b> and <b>bent</b> while watching the molecular dipole. That single action is the whole of this lesson."
+   },
+   {
+    "name": "Partial Charges (checkbox on the right)",
+    "desc": "Marks <b>δ+</b> and <b>δ−</b> - slightly positive and slightly negative.",
+    "tip": "This may be more intuitive than the arrows. The side the electrons have shifted to is δ−."
+   },
+   {
+    "name": "Surface (Two Atoms screen) - None · Electrostatic Potential · Electron Density",
+    "desc": "Colours the outside of the molecule to show where the electrons have gathered.",
+    "tip": "<b>Electrostatic Potential</b> reads well. Red and blue put the lopsidedness in front of you at a glance."
+   },
+   {
+    "name": "Electric Field (checkbox on the right)",
+    "desc": "Applies an electric field to the molecule.",
+    "tip": "A lopsided molecule <b>turns to face</b> the field; a non-polar one does not move. Another way of testing for polarity."
+   }
+  ],
+  "steps": [
+   "On the <b>Two Atoms</b> screen turn on <b>Bond Dipole</b> and <b>Partial Charges</b>.",
+   "Set the two electronegativities <b>equal</b> and watch the arrow disappear.",
+   "Raise one alone and watch it reappear.",
+   "Move to the <b>Three Atoms</b> screen and turn on both <b>Bond Dipoles</b> and <b>Molecular Dipole</b>.",
+   "Straighten the molecule into <b>a line</b> and see what the big arrow does.",
+   "Bend it back again.",
+   "Turn on the <b>Electric Field</b> and see whether the molecule turns.",
+   "Compare H₂O against CO₂ on the <b>Real Molecules</b> screen."
+  ],
+  "gotchas": [
+   "Even with lopsided bonds, <b>a molecule can be un-lopsided.</b> A symmetric shape cancels them.",
+   "<b>Bond Dipole</b> (the small arrows) and <b>Molecular Dipole</b> (the big one) are different things. You need both on to see the relationship.",
+   "<b>Molecular Dipole</b> only exists on the Three Atoms screen. With two atoms there is one bond, so the two are the same.",
+   "This sim was built for high school. Keep to the order <b>Two Atoms → Three Atoms</b> and you can follow it."
+  ]
  }
 }
