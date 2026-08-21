@@ -13,3 +13,7 @@ Thumbs.db
 
 # wrangler 로컬 캐시 — 계정 ID 와 이메일이 들어 있습니다
 .wrangler/
+
+# 번역 작업 폴더 — 원고는 남기고, 뽑아 낸 사전은 남기지 않습니다.
+# labels/ 는 PhET 포크에서 만든 것이라 `python tools/labels.py` 로 언제든 다시 나옵니다.
+wip/labels/

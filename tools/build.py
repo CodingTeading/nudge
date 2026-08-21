@@ -55,12 +55,19 @@ def main():
     rows = []
 
     # 1) 포털 (이 저장소)
+    #    site/ 아래는 통째로 실립니다. 번역 중인 원고는 저장소 루트 wip/ 에 두세요.
+    #    (혹시 site/ 안에 _wip 이 생기더라도 배포본에는 넣지 않습니다)
+    skip = shutil.ignore_patterns('_wip', '_wip.*')
     for name in os.listdir(os.path.join(HERE, 'site')):
+        if name.startswith('_wip'):
+            continue
         src = os.path.join(HERE, 'site', name)
         dst = os.path.join(DIST, name)
-        (shutil.copytree if os.path.isdir(src) else shutil.copy2)(src, dst)
-    rows.append(('site/ (this repo)', count_of(os.path.join(HERE, 'site')),
-                 size_of(os.path.join(HERE, 'site'))))
+        if os.path.isdir(src):
+            shutil.copytree(src, dst, ignore=skip)
+        else:
+            shutil.copy2(src, dst)
+    rows.append(('site/ (this repo)', count_of(DIST), size_of(DIST)))
 
     # 2) PhET 산출물
     for name in FROM_PHET:
