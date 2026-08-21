@@ -77,8 +77,13 @@ TITLE_FIX = load(f'{SITE}/content/sim-titles.json')
 
 
 def sim_title(repo, lang):
-    fix = TITLE_FIX.get(repo, {})
-    return fix.get(lang) or SIMS.get(repo, {}).get('title') or repo
+    """site/lib/i18n.js 의 applySimTitles 와 같은 규칙이어야 합니다.
+       sims.json 의 title 은 한국어라, 다른 언어에서는 titleEn 을 먼저 씁니다."""
+    meta = SIMS.get(repo, {})
+    base = meta.get('title')
+    if lang != BASE and meta.get('titleEn'):
+        base = meta['titleEn']
+    return TITLE_FIX.get(repo, {}).get(lang) or base or repo
 
 
 # ── 주소 ────────────────────────────────────────────────────────────

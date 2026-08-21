@@ -89,6 +89,10 @@ export async function simLocales() {
 export async function applySimTitles( sims, lang ) {
   const fix = ( await json( '/content/sim-titles.json' ) ) || {};
   for ( const s of sims ) {
+    /* sims.json 의 title 은 한국어입니다. 다른 언어에서는 먼저 영어 제목으로 바꿉니다 —
+       학습자가 화면에서 찾을 글자여야 하므로, 한국어 이름을 그대로 두면 안 됩니다.
+       그 언어의 제목이 sim-titles.json 에 있으면 아래에서 다시 덮어씁니다. */
+    if ( lang !== BASE && s.titleEn ) { s.title = s.titleEn; }
     const t = fix[ s.repo ]?.[ lang ];
     if ( t ) { s.title = t; }
   }

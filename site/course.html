@@ -61,7 +61,7 @@
 </footer>
 
 <script type="module">
-import { currentLang, loadUI, loadContent, applyDocLang, langPicker,
+import { currentLang, loadUI, loadContent, applySimTitles, applyDocLang, langPicker,
          homePath, allPath, coursePath, lessonPath } from '/lib/i18n.js';
 import { applySeo, courseJsonLd } from '/lib/seo.js';
 
@@ -82,7 +82,7 @@ applyDocLang( lang );
 const [ t, courseRes, sims ] = await Promise.all( [
   loadUI( lang ),
   loadContent( 'courses', lang ),
-  fetch( '/sims.json' ).then( r => r.json() )
+  fetch( '/sims.json' ).then( r => r.json() ).then( s => applySimTitles( s, lang ) )
 ] );
 
 /* 구운 파일이 심어 준 값이 먼저입니다. 없으면 옛 주소(?c=)를 봅니다. */
