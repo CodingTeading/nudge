@@ -1773,5 +1773,232 @@
    "The wave ripples with time. To look at the shape alone, stop it with the pause button.",
    "This sim was built at university level. Grasping <b>that there are steps</b> and <b>that narrowing spreads them</b> is enough."
   ]
+ },
+ "gravity-and-orbits": {
+  "summary": "Set up pairs like a star and a planet, or the Earth and the Moon, and watch <b>how an orbit holds itself together</b>. Being able to <b>switch gravity on and off</b> is the key device in this sim.",
+  "screens": [
+   {
+    "name": "Model",
+    "what": "The screen this lesson uses. Drawn at <b>exaggerated sizes</b> so you can see it."
+   },
+   {
+    "name": "To Scale",
+    "what": "Drawn at true proportions. The bodies shrink below a dot and <b>almost vanish</b> - which is itself the thing to learn."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The system chooser (bottom)",
+    "desc": "Choose between a star and planet, a star with planet and moon, the Earth and Moon, and the Earth with a satellite. The buttons are pictures of the bodies.",
+    "tip": "Start with the <b>star and planet</b>. With only two of them, what is happening is at its clearest."
+   },
+   {
+    "name": "Gravity - on · off (top right)",
+    "desc": "Switches gravity on and off. Switch it <b>off</b> and the bodies fly off straight.",
+    "tip": "The <b>most important button</b> in this sim. Press it while it is orbiting - you understand what an orbit is in one go."
+   },
+   {
+    "name": "Velocity · Path · Grid (checkboxes on the right)",
+    "desc": "Turn on the velocity arrows, the trail, and the background grid.",
+    "tip": "Turn on all three. <b>Path</b> especially - without it the shape of the orbit leaves no trace in your eye."
+   },
+   {
+    "name": "The velocity arrow (the V mark on a body)",
+    "desc": "<b>Drag</b> the tip of the arrow to change the size and direction of the velocity.",
+    "tip": "The main action here. Nudge it down and up and hunt for the point <b>where the orbit falls apart</b>."
+   },
+   {
+    "name": "Mass handles (bottom right)",
+    "desc": "Change <b>Star Mass · Planet Mass · Moon Mass · Satellite Mass</b> separately.",
+    "tip": "Make the star heavier and it pulls harder, so the orbit shrinks. Compare what happens at the same speed."
+   },
+   {
+    "name": "Return Objects · Clear (top left and below)",
+    "desc": "Put the bodies back where they started, or wipe the path that has been drawn.",
+    "tip": "When you run several experiments, <b>Clear</b> the trail before each one. Otherwise the lines tangle."
+   },
+   {
+    "name": "Zoom (top left)",
+    "desc": "Zooms the view in and out.",
+    "tip": "If a body flies off, zoom out and chase it. Seeing how far it gets is entertaining in itself."
+   },
+   {
+    "name": "Fast · Normal · Slow (bottom)",
+    "desc": "The playback speed of the simulation.",
+    "tip": "If one circuit takes a long time, use <b>Fast</b>. To catch the moment you switch gravity off, use <b>Slow</b>."
+   }
+  ],
+  "steps": [
+   "On the <b>Model</b> screen choose the <b>star and planet</b>.",
+   "Turn on <b>Velocity · Path · Grid</b>.",
+   "Press play and let it go round a few times.",
+   "Switch <b>Gravity</b> to <b>off</b> and see what happens.",
+   "Press <b>Return Objects</b>, then shrink the velocity arrow.",
+   "Now make the velocity much larger.",
+   "Change the <b>Star Mass</b> and see how the orbit changes.",
+   "Open the <b>To Scale</b> screen once."
+  ],
+  "gotchas": [
+   "The sizes and distances on screen are <b>exaggerated</b>. For the true proportions, look at the <b>To Scale</b> screen.",
+   "The velocity arrow always points <b>along the tangent</b> of the orbit. It does not point at the centre.",
+   "Paths pile up and get confusing. Use <b>Clear</b> often.",
+   "If a body leaves the screen, zoom out or press <b>Return Objects</b>."
+  ]
+ },
+ "my-solar-system": {
+  "summary": "Build your own solar system by <b>laying the bodies out yourself</b>. Mass, position and velocity can all be typed in as numbers, and you can put down <b>several</b> bodies at once.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Where this lesson starts. The basics, with two bodies."
+   },
+   {
+    "name": "Lab",
+    "what": "Put down <b>several</b> bodies and experiment freely. The three-body problem lives here."
+   }
+  ],
+  "controls": [
+   {
+    "name": "The bodies (drag them on screen)",
+    "desc": "Drag a body to move it, and drag the <b>V arrow</b> attached to it to set its velocity.",
+    "tip": "Placing them roughly by hand is fine. When you need exact values, type them in under <b>More Data</b> below."
+   },
+   {
+    "name": "More Data (bottom left)",
+    "desc": "Open it and you can type in each body's <b>Mass</b>, <b>Position</b> (AU) and <b>Speed</b> (km/s) as numbers.",
+    "tip": "To rebuild the same conditions and compare, type the numbers in here. Dragging by hand comes out a little different every time."
+   },
+   {
+    "name": "Bodies (bottom centre)",
+    "desc": "Sets how many bodies you are working with. On the Lab screen you can take it up to several.",
+    "tip": "Raise it to <b>3</b> and press play. The orbits do not settle easily - that is the famous three-body problem."
+   },
+   {
+    "name": "Center of Mass (checkbox on the right)",
+    "desc": "Marks the <b>shared centre</b> that the two bodies really go round.",
+    "tip": "The key readout of this lesson. Check that it sits far closer to the heavy one, and that the two bodies go round <b>that point together</b>."
+   },
+   {
+    "name": "Follow Center of Mass (bottom left)",
+    "desc": "Locks the view onto the centre of mass.",
+    "tip": "With it on, the star's wobble is far clearer. The star traces a <b>small circle on the spot</b>."
+   },
+   {
+    "name": "Gravity Force · Velocity · Path · Grid · Measuring Tape (checkboxes on the right)",
+    "desc": "Turn on the force arrows, the velocity arrows, the trail, the grid and a ruler.",
+    "tip": "Turn on <b>Gravity Force</b> and you can compare the lengths of the two bodies' force arrows. That is how you settle ② in this lesson."
+   },
+   {
+    "name": "Zoom (right)",
+    "desc": "Changes the view scale, over a very wide range.",
+    "tip": "Zoom out when a body flies off. Zoom in to see the star's tiny wobble."
+   },
+   {
+    "name": "Return Bodies and the clear-path button",
+    "desc": "Put the bodies back where they started, or wipe the paths.",
+    "tip": "If a body is slingshotted away and lost, press Return Bodies first."
+   }
+  ],
+  "steps": [
+   "On the <b>Intro</b> screen turn on <b>Gravity Force · Path · Grid</b>.",
+   "Compare <b>the lengths of the two gravity force arrows</b>.",
+   "Press play and see whether the star moves too.",
+   "Reduce the star's <b>Mass</b> and watch the wobble grow.",
+   "Turn on <b>Center of Mass</b> and <b>Follow Center of Mass</b>.",
+   "Make the two masses nearly equal.",
+   "On the <b>Lab</b> screen take <b>Bodies</b> to 3 and press play."
+  ],
+  "gotchas": [
+   "The two bodies' <b>gravity force arrows are the same length.</b> If they look different, an arrow has been clipped for being too small.",
+   "With <b>three or more</b> bodies the orbits do not settle easily. Not a fault - that is how it is.",
+   "Dragging by hand gives slightly different values every time. To repeat the same conditions, type them in under <b>More Data</b>."
+  ]
+ },
+ "keplers-laws": {
+  "summary": "See <b>why an orbit is an ellipse</b>, and <b>how the speed varies</b> along it. The screen names are Kepler's three laws, so <b>going through them in order</b> is the lesson.",
+  "screens": [
+   {
+    "name": "First Law",
+    "what": "An orbit is an <b>ellipse</b> and the star is at a <b>focus</b>. Change how squashed it is by dragging the planet."
+   },
+   {
+    "name": "Second Law",
+    "what": "It sweeps <b>equal areas in equal times</b>. Measure the areas of the wedges."
+   },
+   {
+    "name": "Third Law",
+    "what": "<b>The square of the period is proportional to the cube of the orbit size.</b> Check it on the graph."
+   },
+   {
+    "name": "All Laws",
+    "what": "All three together on one screen."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Eccentricity (checkbox on the right)",
+    "desc": "<b>Shows</b> how squashed the current orbit is. It is not a handle that sets the value. Tick it and a <b>scale from 0 to 1</b> appears on the left. <b>0 is a circle</b>; larger is a longer, thinner ellipse.",
+    "tip": "The main thing you work with here. Keep the value <b>high</b> or the difference between near and far will not be visible."
+   },
+   {
+    "name": "Changing the orbit shape (drag on screen)",
+    "desc": "Drag the planet, or drag the <b>velocity arrow (v)</b> attached to it, and the orbit shape changes. <b>Mercury · Earth · Eris · Nereid · Halley</b> written on the eccentricity scale are <b>markers</b> for comparison only; pressing them does nothing.",
+    "tip": "<b>Earth</b> is nearly a circle and <b>Halley</b> is very long and thin. Comparing the two tells you what eccentricity is straight away."
+   },
+   {
+    "name": "Axes · Foci · String · Semiaxes (checkboxes on the right)",
+    "desc": "Draw the skeleton of the ellipse. Turn on <b>Foci</b> and you can see the star is <b>at a focus, not at the centre</b>.",
+    "tip": "Try <b>String</b>. Add the distances from the two foci to the planet and it is <b>always the same</b> - that is the definition of an ellipse."
+   },
+   {
+    "name": "Velocity · Speed (checkboxes on the right)",
+    "desc": "Show the velocity arrow and the speed as a number.",
+    "tip": "The tool for settling ② in this lesson. <b>Write the numbers down</b> close in and far out, and compare."
+   },
+   {
+    "name": "Period Divisions (left of the Second Law screen)",
+    "desc": "Sets <b>how many pieces</b> one circuit is cut into. That many wedges get filled in.",
+    "tip": "About <b>6</b> looks best. Cut too finely and the areas are hard to compare."
+   },
+   {
+    "name": "Area Values · Time Values (left of the Second Law screen)",
+    "desc": "Show each wedge's area and the time it took, as numbers.",
+    "tip": "Turn on <b>Area Values</b>. The shapes are all different and <b>the areas are all the same</b> - that is the whole law."
+   },
+   {
+    "name": "The Period vs Semi-major Axis graph (Third Law screen)",
+    "desc": "Graphs the relationship between period and orbit size. The axes can be switched between <b>T · T² · T³</b> and <b>a · a² · a³</b>.",
+    "tip": "Set them to <b>T²</b> and <b>a³</b> and the points fall on a <b>straight line</b>. Other combinations curve - do try them."
+   },
+   {
+    "name": "Target Orbit (top right) - Mercury · Venus · Earth · Mars · Jupiter",
+    "desc": "<b>Draws a real planet's orbit over the top.</b> Choosing one does not move your orbit there - it is for matching against.",
+    "tip": "Use it to compare the orbit you built against a real one. The difference in size is obvious at a glance."
+   },
+   {
+    "name": "Always Circular (checkbox on the right)",
+    "desc": "Forces the orbit to stay a circle.",
+    "tip": "Good for flipping <b>back and forth</b> between ellipse and circle to compare the speed. On a circle the speed is constant."
+   },
+   {
+    "name": "Star Mass · Zoom · Measuring Tape · Stopwatch",
+    "desc": "Change the mass of the central star, and use the scale and the measuring tools.",
+    "tip": "Raise the <b>Star Mass</b> and the period shortens for the same orbit. Worth looking at alongside the third law."
+   }
+  ],
+  "steps": [
+   "On the <b>First Law</b> screen tick <b>Eccentricity</b>, then drag the planet to bring the orbit close to 0 and then out to a long thin ellipse.",
+   "Match your orbit against the <b>Earth</b> and <b>Halley</b> markers on the eccentricity scale and compare.",
+   "Turn on <b>Velocity</b> and <b>Speed</b> and note the speed close in and far out.",
+   "Turn on <b>Foci</b> and confirm the star sits at a focus.",
+   "On the <b>Second Law</b> screen set <b>Period Divisions</b> to 6 and press play.",
+   "Turn on <b>Area Values</b> and compare the wedge areas.",
+   "On the <b>Third Law</b> screen set the axes to <b>T²</b> and <b>a³</b>."
+  ],
+  "gotchas": [
+   "The star sits at a <b>focus of the ellipse, not at its centre</b>. That is what creates a near side and a far side.",
+   "With a <b>small</b> eccentricity the difference in speed is barely visible. Keep it high while you experiment.",
+   "This sim was built for high school. The <b>first and second laws</b> alone are enough for this lesson."
+  ]
  }
 }

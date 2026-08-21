@@ -1556,5 +1556,200 @@
     "right": 0
    }
   ]
+ },
+ "space-1": {
+  "course": "space",
+  "sim": "gravity-and-orbits",
+  "screens": null,
+  "title": "The Moon is falling right now",
+  "lead": "Being in orbit is really a matter of falling continuously and missing continuously.",
+  "hook": "In course 02, <b>a ball thrown sideways hit the ground at the same moment as one simply dropped</b>. So what if you throw it very, very hard? It goes further. Harder still, further still. But the Earth is round. <b>What if the ground curves away below just as fast as the ball falls?</b> The ball never reaches the ground and goes round the Earth instead. That is an orbit.",
+  "predict": {
+   "q": "While the Moon is going round the Earth, <b>gravity suddenly disappears.</b> What does the Moon do?",
+   "opts": [
+    "Stops where it is",
+    "Flies off <b>in a straight line</b>, the way it was going at that moment",
+    "Spirals outward, further and further",
+    "Falls straight down to Earth"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Model</b> screen. At the bottom right you can choose combinations like a star with a planet, or the Earth with the Moon - the buttons are pictures of the bodies.",
+   "In the checkboxes on the right turn on <b>Velocity</b>, <b>Path</b> and <b>Grid</b>. The arrows and the trail appear.",
+   "Press play and let it go round a few times. The <b>Path</b> draws itself.",
+   "Look at the <b>Velocity</b> arrow on the planet. It always points <b>along the tangent</b> of the orbit - never at the centre.",
+   "Now switch <b>Gravity</b> on the right to <b>off</b>. What happens? That is the answer to ②.",
+   "Put it back to <b>on</b> and use <b>Return Objects</b> to go back to the start.",
+   "<b>Drag the planet's velocity arrow</b> to make the speed <b>smaller</b>. What happens to the orbit?",
+   "Now make it <b>much larger</b>. The planet leaves the orbit and flies away.",
+   "Hunt for the speed that makes the orbit <b>very nearly a circle</b>. Too slow will not do and neither will too fast.",
+   "Raise the <b>Star Mass</b>. Same speed - how does the orbit change?",
+   "Use the house button to visit the <b>To Scale</b> screen. Drawn at true proportions, <b>you can barely see anything.</b> It tells you how empty space is."
+  ],
+  "record": "What path did the planet take when you turned gravity off? And what happened to the orbit when you made the speed smaller, and larger?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>it flies off in a straight line, the way it was going</strong>. With gravity off on screen, the planet will have left in a <strong>straight line</strong>.</p><p>Why straight? With no force on it, an object <strong>keeps going the way it was going.</strong> The Moon is trying to go straight this very moment, and gravity keeps <strong>bending it inward</strong>.</p><p>So an orbit is this picture.</p><ul><li>The Moon moves fast <strong>sideways</strong></li><li>Gravity keeps pulling it <strong>toward the Earth</strong></li><li>The Moon keeps falling, but it is going sideways fast enough to <strong>miss the Earth</strong></li></ul><p>So <strong>the Moon is falling right now</strong>. Its sideways speed is simply right for it to keep missing forever. Astronauts float in a space station not because there is no gravity but because <strong>they are falling along with the station.</strong></p><p>Worth collecting what changing the speed showed you.</p><ul><li><strong>Too slow</strong> - it does not miss by enough and <strong>spirals inward.</strong></li><li><strong>Too fast</strong> - gravity cannot hold it and it <strong>flies away.</strong></li><li><strong>Just right</strong> - a stable orbit.</li></ul><p>Which is why <strong>speed matters more than height</strong> when you launch a satellite. Lift it high and it just falls back. You have to push it <strong>fast enough sideways</strong> to reach orbit.</p><p>Remember, too, that you could see almost nothing on the <strong>To Scale</strong> screen. Every textbook diagram is <strong>exaggerated</strong>. Space is far emptier than the pictures.</p>"
+  },
+  "real": "GPS satellites, communications satellites and the space station are all in the state of falling continuously and missing continuously. A geostationary satellite appears to hang at one spot in the sky because its period matches the rotation of the Earth. A SpaceX rocket <b>tips over sideways</b> after launch for the same reason - it is buying sideways speed, not height.",
+  "quiz": [
+   {
+    "q": "Which way does the <b>velocity arrow</b> of an orbiting planet point?",
+    "opts": [
+     "Always toward the centre (the star)",
+     "Always along the <b>tangent</b> of the orbit",
+     "Always outward from the orbit"
+    ],
+    "right": 1
+   },
+   {
+    "q": "If a satellite is going <b>too fast</b>:",
+    "opts": [
+     "It leaves the orbit and flies away",
+     "It spirals inward",
+     "It carries on as it was"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Why do astronauts on a space station float?",
+    "opts": [
+     "Because there is no gravity up there",
+     "Because they are falling along with the station",
+     "Because there is no air"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "space-2": {
+  "course": "space",
+  "sim": "my-solar-system",
+  "screens": null,
+  "title": "The Sun wobbles too",
+  "lead": "The Sun pulls the planet and the planet pulls the Sun. So the Sun cannot stay still.",
+  "hook": "In lesson 1 the star stayed <b>put</b> and only the planet went round. But does it? Course 01 said two charges pull each other <b>with forces of equal size</b>. Gravity is the same. The Sun pulls the Earth, and <b>the Earth pulls the Sun</b> by just as much. So the Sun ought to move as well. In this sim you lay out the bodies yourself and watch that wobble.",
+  "predict": {
+   "q": "Compare the force with which the Sun pulls the Earth against <b>the force with which the Earth pulls the Sun</b>:",
+   "opts": [
+    "The Sun pulls far harder",
+    "The Earth pulls far harder",
+    "<b>They are the same size</b> - only the directions differ",
+    "They differ by the ratio of the masses"
+   ]
+  },
+  "missions": [
+   "Start on the <b>Intro</b> screen. One star and one planet are laid out.",
+   "In the checkboxes on the right turn on <b>Gravity Force</b>, <b>Path</b> and <b>Grid</b>. The force arrows appear.",
+   "Compare the length of the <b>Gravity Force</b> arrows on the two bodies. Which is longer? That is the answer to ②.",
+   "Press play and let it run. <b>Does the star move at all?</b> If it is hard to see, go on to the next mission.",
+   "Use <b>Mass</b> at the bottom left to <b>reduce</b> the mass of the star. Now it wobbles far more.",
+   "Turn on <b>Center of Mass</b> on the right. You can see the two bodies going round <b>with that point between them</b>.",
+   "Turn on <b>Follow Center of Mass</b> and the view locks onto that point.",
+   "Make the two masses <b>nearly equal</b>. Where does the centre of mass go?",
+   "Use the house button to reach the <b>Lab</b> screen, where you can take <b>Bodies</b> up to <b>three or more</b>.",
+   "Put down <b>three</b> bodies and press play. Does the orbit settle? Try it a few times.",
+   "Use the zoom control to chase down a body that has flown off."
+  ],
+  "record": "How did the lengths of the two gravity force arrows compare? And how did the star's motion change when you reduced its mass?",
+  "explain": {
+   "right": 2,
+   "body": "<p>The answer is <strong>they are the same size</strong>. The two arrows on screen will have been <strong>the same length, pointing opposite ways</strong>.</p><p>It was the same with the two charges in course 01, lesson 3. However large you made one charge, <strong>both figures pulled with the same force</strong>. Gravity works the same way. <strong>Forces always come in pairs, equal in size, opposite in direction.</strong></p><p>So why does only the Earth appear to go round? <strong>Because the forces are equal but the masses are not.</strong> Under the same force, the heavier one <strong>moves less.</strong> The Sun is 330,000 times heavier than the Earth, so it moves 330,000 times less.</p><p>The Sun therefore <strong>does move - just very little.</strong> Reducing the star's mass on screen and watching the wobble grow is the proof.</p><p>The <strong>centre of mass</strong> is the heart of this story. The two bodies do not orbit each other; they <strong>both go round one shared point.</strong> That point is the centre of mass, and it sits far closer to the heavy one. For the Sun and the Earth it lies <strong>inside the Sun</strong>, which is why the Sun looks as though it turns slightly on the spot.</p><p>Make the two masses similar and the centre of mass moves <strong>toward the middle</strong>, giving you a <strong>binary star</strong> with the two going round each other. Space is full of them.</p><p>With <strong>three bodies</strong> the orbit will not have settled easily. This is the famous <strong>three-body problem</strong>. With two the answer comes out cleanly; with three there is <strong>no general solution</strong>. Nudge it slightly and you get a completely different result.</p>"
+  },
+  "real": "One of the ways we find planets around other stars is exactly this - watching for <b>a tiny wobble in the star</b>. The planet is never seen directly; its existence is deduced from the star's wobble. A good share of the thousands of exoplanets found so far were found this way.",
+  "quiz": [
+   {
+    "q": "The force with which the Earth pulls the Sun is:",
+    "opts": [
+     "The same as the force with which the Sun pulls the Earth",
+     "Far smaller",
+     "Nonexistent"
+    ],
+    "right": 0
+   },
+   {
+    "q": "So why does the Sun barely move?",
+    "opts": [
+     "It feels no force",
+     "It is far heavier, so it moves less under the same force",
+     "It is fixed in place"
+    ],
+    "right": 1
+   },
+   {
+    "q": "What do two bodies really go round?",
+    "opts": [
+     "The centre of the heavier one",
+     "The centre of mass of the two",
+     "The centre of the lighter one"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "space-3": {
+  "course": "space",
+  "sim": "keplers-laws",
+  "screens": null,
+  "title": "It speeds up when it is close",
+  "lead": "An orbit is not a perfect circle but a squashed ellipse. So the speed differs through the year.",
+  "hook": "Textbook pictures of the solar system draw the planets on <b>neat circles</b>. They are really slightly squashed <b>ellipses</b>. Which means there is a <b>near</b> point and a <b>far</b> point from the star. So what about the speed? Lesson 1 said <b>too fast and it flies away, too slow and it spirals in</b>. That rule works within a single orbit too.",
+  "predict": {
+   "q": "Where in an elliptical orbit is a planet <b>fastest</b>?",
+   "opts": [
+    "At its <b>furthest</b> from the star",
+    "At its <b>closest</b> to the star",
+    "The same everywhere",
+    "Somewhere in between"
+   ]
+  },
+  "missions": [
+   "Start on the <b>First Law</b> screen. The controls are all on the <b>right</b>. There is <b>no handle</b> for the shape of the orbit - you change it by dragging the planet or the <b>velocity arrow (v)</b> attached to it.",
+   "Tick <b>Eccentricity</b> on the right. A <b>scale from 0 to 1</b> appears on the left with the current value marked. Drag the planet to bring the value <b>close to 0</b> for a <b>circle</b>, or raise it for a <b>long thin ellipse</b>.",
+   "That scale is <b>marked</b> with <b>Mercury · Earth · Eris · Nereid · Halley</b>. They are there to compare against, not to choose - drag your orbit until it sits next to Halley.",
+   "In the checkboxes on the right turn on <b>Velocity</b> and <b>Speed</b>. You get the arrow and the number.",
+   "Leave the eccentricity high and press play. Note the speed reading <b>close to</b> the star and <b>far from</b> it. That is the answer to ②.",
+   "Turn on <b>Axes</b> and <b>Foci</b> to see the skeleton of the ellipse. The star sits <b>at a focus, not at the centre</b>.",
+   "Use the house button to reach the <b>Second Law</b> screen. <b>Period Divisions</b> sets how many pieces the orbit is cut into.",
+   "Press play and the <b>wedges</b> fill in one at a time. Turn on <b>Area Values</b> and compare the areas of the pieces.",
+   "The wedge near the star is <b>short and fat</b>; the far one is <b>long and thin</b>. But what about the areas?",
+   "Go to the <b>Third Law</b> screen for the <b>Period vs Semi-major Axis</b> graph.",
+   "Set the axes to <b>T²</b> and <b>a³</b>. Do the points fall on a <b>straight line</b>? What about other combinations?"
+  ],
+  "record": "Write down the speed close in and far out. And what were the areas of the wedges on the Second Law screen?",
+  "explain": {
+   "right": 1,
+   "body": "<p>The answer is <strong>at its closest to the star</strong>. Closer is faster, further is slower.</p><p>There are two ways to say why.</p><p>First, <strong>gravity is stronger there</strong>. The closer it is the harder the pull, so it is dragged along faster. As with the Coulomb force in course 01, <strong>the force rises sharply as the distance closes.</strong></p><p>Second, <strong>the energy trade</strong>. On the skate park in course 02, <strong>losing height gained you speed.</strong> An orbit is the same. Coming close to the star is \"going down\" and gains speed; moving away is \"going up\" and loses it. The same picture as a roller coaster.</p><p>The <strong>Second Law</strong> is that turned into an exact rule. The wedges will all have had <strong>the same area</strong>. Close in the radius is short, so it has to <strong>sweep quickly</strong> to make the same area; far out the radius is long, so <strong>sweeping slowly</strong> is enough. \"It sweeps equal areas in equal times\" - that is Kepler's second law.</p><p>You will have checked the <strong>Third Law</strong> too. The points only fall on a straight line when the axes are <strong>T²</strong> and <strong>a³</strong>. So <strong>the square of the period is proportional to the cube of the size of the orbit</strong>. Which is why a planet further out takes so much longer to go round - Neptune takes 165 years.</p><p>That <strong>the star sits at a focus of the ellipse, not at its centre</strong>, matters as well. That is the first law, and it is what creates a near side and a far side. The Earth is closest to the Sun in January - the seasons are made by <strong>tilt</strong>, not by distance.</p>"
+  },
+  "real": "Comets are a good example. Halley's comet has such a high eccentricity that it tears past near the Sun and crawls for decades out at the far end. Designing satellite orbits, working out when a Mars probe should depart, and predicting when an asteroid comes near the Earth are all calculated with these three laws.",
+  "quiz": [
+   {
+    "q": "Where in an elliptical orbit is a planet <b>slowest</b>?",
+    "opts": [
+     "At its closest to the star",
+     "At its furthest from the star",
+     "The same everywhere"
+    ],
+    "right": 1
+   },
+   {
+    "q": "What does Kepler's <b>second law</b> say?",
+    "opts": [
+     "It sweeps equal areas in equal times",
+     "It covers equal distances in equal times",
+     "Its speed is always constant"
+    ],
+    "right": 0
+   },
+   {
+    "q": "The <b>bigger</b> the orbit, the time for one circuit:",
+    "opts": [
+     "Gets shorter",
+     "Gets longer",
+     "Stays the same"
+    ],
+    "right": 1
+   }
+  ]
  }
 }
