@@ -2330,5 +2330,326 @@
     "right": 1
    }
   ]
+ },
+ "fraction-1": {
+  "course": "fraction",
+  "sim": "fractions-intro",
+  "screens": "1",
+  "mode": "solve",
+  "title": "Tres pizzas repartidas entre cuatro personas",
+  "lead": "La raya de una fracción es de verdad un signo de división. Así se responde a 3 ÷ 4 sin hacer la división.",
+  "hook": "<b>Tres pizzas</b> repartidas a partes iguales entre <b>cuatro personas</b>. Una parte es 0,75 de pizza en decimales, pero puedes decir la respuesta sin dividir 3 entre 4 en ningún momento. <b>3/4 de pizza</b>: esa es la respuesta. La raya de una fracción no es un adorno; es <b>un signo de división</b>. Y en cuanto lo sabes, sale algo raro: cuanto mayor el número de abajo, <b>menor</b> la fracción.",
+  "predict": {
+   "q": "¿Cuál es mayor, 1/3 o 1/8? No calcules: imagínatelo.",
+   "opts": [
+    "1/8, porque 8 es mayor que 3",
+    "1/3, porque menos trozos significa que cada trozo es mayor",
+    "Son iguales: los números de arriba son los dos 1",
+    "No se pueden comparar sin un dibujo"
+   ]
+  },
+  "missions": [
+   "En la parte <b>de arriba, en el centro</b> de la pantalla, comprueba que el selector de forma está en el círculo. Hay seis: círculo, barra horizontal, barra vertical, vaso, tarta y recta numérica.",
+   "En el <b>centro derecha</b> hay una fracción grande. Pon el <b>denominador</b> (el número de debajo de la raya) en <b>3</b> y sube el <b>numerador</b> a <b>1</b>. Un círculo se parte en tres trozos y se rellena uno.",
+   "Deja el numerador en 1 y sube <b>solo el denominador hasta 8</b>. <b>No le quites ojo</b> al trozo relleno mientras pasa.",
+   "Cambia el denominador entre 3 y 8 unas cuantas veces y compara el tamaño del trozo. Esa es la respuesta a ②.",
+   "Ahora sube <b>Máximo</b>, arriba a la derecha, a <b>3</b>. Aparecen tres círculos vacíos. Tres pizzas.",
+   "Pon el denominador en <b>4</b> y sube el numerador despacio de <b>1 a 12</b>. En 12 los tres círculos están <b>exactamente llenos.</b>",
+   "Cambia el selector de forma a la <b>recta numérica</b> y mira dónde cae en ella la misma fracción. Una fracción es, al final, <b>un solo número</b>."
+  ],
+  "record": "¿Qué le pasó al tamaño del trozo relleno al llevar el denominador de 3 a 8? ¿Y cuántos círculos eran 12/4?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>1/3</strong>. El denominador dice <strong>en cuántos trozos cortas el entero</strong>. Córtalo en 8 y cada trozo <strong>tiene que ser más fino</strong> que si lo cortas en 3.</p><p>Si dijiste que 1/8 era mayor, comparaste 8 con 3 y nada más. Es un error muy común y de larga vida. Una fracción no son dos números sino <strong>un valor</strong>. Mira el de arriba y el de abajo por separado y fallarás siempre.</p><p>El numerador es <strong>cuántos de esos trozos tienes</strong>. Así que <strong>un numerador mayor la hace mayor y un denominador mayor la hace menor.</strong> Tiran en sentidos contrarios.</p><p>La sexta misión es el título de esta lección. Con denominador 4 y numerador 12 los tres círculos se llenaron exactos. Así que <strong>12/4 = 3</strong>. Leído al revés: <strong>tres pizzas cortadas en cuartos dan 12 trozos</strong>, tres para cada uno: <strong>3/4 de pizza</strong>. Eso es lo que significa decir que la raya de una fracción es un signo de división.</p><p>La recta numérica lo deja más claro todavía. 3/4 es <strong>un punto</strong> entre 0 y 1. Ni una pizza ni una tarta: solo un número.</p>"
+  },
+  "real": "Cuando una receta dice 3/4 de taza significa «tres de las cuatro partes en que se divide una taza». Una llave de 3/8 de pulgada, una negra en música, un promedio de bateo: todos dicen cuántos tienes de los trozos en que se dividió. Una calculadora te puede decir 0,375, pero si no sabes qué significa 3/8 no puedes elegir la llave correcta.",
+  "quiz": [
+   {
+    "q": "¿Cuál es mayor, 1/5 o 1/9?",
+    "opts": [
+     "1/9",
+     "1/5",
+     "Iguales"
+    ],
+    "right": 1
+   },
+   {
+    "q": "<b>2</b> tartas repartidas a partes iguales entre <b>5</b> personas. Una parte es:",
+    "opts": [
+     "5/2 de tarta",
+     "2/5 de tarta",
+     "1/5 de tarta",
+     "No se puede repartir"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Mantén el numerador y sube el denominador. El valor de la fracción:",
+    "opts": [
+     "Se hace mayor",
+     "Se hace menor",
+     "Se queda igual"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "fraction-2": {
+  "course": "fraction",
+  "sim": "fractions-equality",
+  "screens": "1",
+  "mode": "solve",
+  "title": "Por qué multiplicar vale y sumar no",
+  "lead": "Multiplica arriba y abajo por el mismo número y el valor se mantiene. ¿Y sumar el mismo número? Casi todo el mundo tropieza aquí.",
+  "hook": "Multiplica arriba y abajo de 3/4 <b>los dos por 2</b> y sale 6/8, con el valor sin cambiar. Eso ya te lo han enseñado. Ahora suma <b>2 a los dos</b>, arriba y abajo de 3/4, y sale 5/6. Le has hecho lo mismo a los dos, ¿se mantiene el valor esta vez también? Da la sensación de que debería, porque fue «justo». Vas a poner a prueba esa sensación.",
+  "predict": {
+   "q": "Suma <b>2 a cada uno</b> del numerador y el denominador de 3/4 y sale 5/6. Comparado con 3/4, el 5/6 es:",
+   "opts": [
+    "Igual: has sumado lo mismo a los dos",
+    "Mayor",
+    "Menor",
+    "Depende de lo que sumes"
+   ]
+  },
+  "missions": [
+   "Abajo a la izquierda pon el <b>denominador</b> en <b>4</b> y el <b>numerador</b> en <b>3</b>. A la izquierda se dibuja 3/4.",
+   "A la derecha del <b>=</b> del centro aparece sola otra fracción. La <b>flecha verde</b> de al lado es el número por el que multiplicas (1-3).",
+   "Sube la flecha verde a <b>2</b>. El lado derecho pasa a <b>6/8</b> y <b>el área sombreada es idéntica a la de la izquierda.</b> Compruébalo con los ojos.",
+   "Lleva la flecha verde a <b>3</b>. En 9/12 el área sigue siendo la misma. Los trozos solo se han cortado más fino.",
+   "Ahora cambia el lado izquierdo a <b>5/6</b> (denominador 6, numerador 5). Fíjate en el área sombreada.",
+   "Vuelve a ponerlo en <b>3/4</b>. Frente a 5/6, ¿cuál estaba más lleno? Esa es la respuesta a ②.",
+   "Cambia el selector de arriba a la derecha a la <b>recta numérica</b>. Solo el lado derecho pasa a ser una <b>recta numérica vertical</b>. Mueve la flecha verde entre 1 y 3 y <b>el punto marcado no sube ni baja.</b>"
+  ],
+  "record": "¿Qué le pasó al área sombreada al llevar la flecha verde a 2 y a 3? ¿Y cuál estaba más lleno, 3/4 o 5/6?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>5/6 es mayor</strong>. 3/4 es 0,75 y 5/6 es unos 0,833. <strong>Sumar el mismo número arriba y abajo cambia el valor.</strong></p><p>¿Por qué vale multiplicar y no sumar? Piensa en lo que pasó en pantalla al llevar la flecha a 2. <strong>Los trozos simplemente se partieron por la mitad.</strong> El doble de trozos y el doble cogidos, así que el área no cambia. Multiplicar solo <strong>cambia cómo cortas</strong>, así que la cantidad se mantiene.</p><p>Sumar es otra cosa. 3/4 → 5/6 no corta los trozos; construye <strong>otra fracción desde cero</strong>. El 2 sumado arriba y el 2 sumado abajo son <strong>2 de peso distinto</strong>. Sumar 2 a 3 casi lo dobla; sumar 2 a 4 solo lo lleva a 1,5 veces. El de arriba crece más, así que el valor sube.</p><p>De ahí sale una regla. <strong>Al poner fracciones a común denominador o al reducirlas, solo se multiplica y se divide. No se suma ni se resta.</strong> Esa regla se cumple hasta en las fracciones algebraicas con letras.</p>"
+  },
+  "real": "Las escalas de un mapa, la proporción de una foto, una pantalla 16:9: todo el mismo principio. Ampliar 1920×1080 a 3840×2160 no cambia la forma de la imagen porque <b>se multiplicaron los dos lados por 2</b>. Suma en cambio 100 a cada lado y el marco se arrastra hacia un cuadrado y la imagen se deforma.",
+  "quiz": [
+   {
+    "q": "¿Qué fracción tiene <b>el mismo</b> valor que 2/5?",
+    "opts": [
+     "3/6",
+     "4/10",
+     "4/7",
+     "3/5"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Suma 1 a cada uno, arriba y abajo de 1/2, y sale 2/3. Frente a 1/2, el 2/3 es:",
+    "opts": [
+     "Mayor",
+     "Menor",
+     "Igual"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Reduce 6/8 y sale:",
+    "opts": [
+     "3/4: dividido arriba y abajo entre 2",
+     "4/6: restado 2 arriba y abajo",
+     "6/8 no se puede reducir"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "fraction-3": {
+  "course": "fraction",
+  "sim": "fractions-mixed-numbers",
+  "screens": "1",
+  "mode": "solve",
+  "title": "Cuando el de arriba es mayor que el de abajo",
+  "lead": "8/3 no es una fracción mal escrita. Significa dos círculos enteros y un poco más.",
+  "hook": "Al aprender fracciones, siempre son <b>menores que 1</b>: 1/2, 3/4 y demás. Y luego te encuentras una como <b>8/3</b>, con el número mayor arriba, y se te para la mano. Hasta parece un error. No lo es. Ya viste 12/4 = 3 en la lección 1, así que ya tienes la respuesta.",
+  "predict": {
+   "q": "Escrito como número mixto (un entero más una fracción propia), <b>8/3</b> es:",
+   "opts": [
+    "2 y 2/3",
+    "2 y 1/3",
+    "3 y 2/3",
+    "8 y 1/3"
+   ]
+  },
+  "missions": [
+   "En la fracción grande del <b>centro derecha</b> de la pantalla, pon el <b>denominador</b> en <b>3</b> y el <b>numerador</b> en <b>8</b>. Aparecen tres círculos y solo al último le falta.",
+   "Cuenta <b>cuántos círculos están llenos</b> y <b>cuántos trozos hay en el último</b>.",
+   "Marca <b>Número mixto</b> abajo a la derecha (justo encima del botón de reinicio). El display grande pasa a <b>2 y 2/3</b>.",
+   "Abre la caja de <b>Ecuación</b> de abajo a la izquierda. Escribe exactamente <b>cómo se repartió 8/3</b>.",
+   "Sube el numerador en uno hasta <b>9</b>. Los tres círculos se llenan y el display pasa a <b>3</b>. La parte fraccionaria desaparece.",
+   "Sube el numerador despacio de <b>1 a 12</b> y mira cuándo el display se vuelve un número entero. 3, 6, 9, 12: hay un patrón.",
+   "Cambia la forma a la <b>recta numérica</b>. Se ve 8/3 <b>entre</b> 2 y 3. De ahí sale el «2 y» del número mixto."
+  ],
+  "record": "Para 8/3, ¿cuántos círculos estaban llenos y cuántos trozos sobraban? ¿Y qué numeradores hacían que el display fuera un número entero?",
+  "explain": {
+   "right": 0,
+   "body": "<p>La respuesta es <strong>2 y 2/3</strong>. Divide 8 entre 3 y sale <strong>cociente 2 y resto 2</strong>. El cociente es la parte entera, el resto es el numerador y el denominador se queda.</p><p>Esa división es exactamente lo que viste en pantalla. Llena con 8 trozos círculos cortados en tercios y <strong>se llenan dos y sobran 2 trozos.</strong> 8 ÷ 3 = 2 resto 2. El «la raya de una fracción es un signo de división» de la lección 1 está trabajando aquí.</p><p>Si elegiste <strong>2 y 1/3</strong>, seguramente contaste mal el resto. 3 × 2 = 6 y 8 − 6 = 2, así que el resto es 2.</p><p>Los numeradores que daban números enteros — 3, 6, 9, 12 — son la misma historia. Sale exacto <strong>solo cuando el numerador es múltiplo del denominador</strong>, porque el resto es 0.</p><p>Con quedarte los nombres basta. Con el de arriba mayor, como 8/3, es una <strong>fracción impropia</strong>; con el entero sacado delante, como 2 y 2/3, es un <strong>número mixto</strong>. <strong>Son el mismo número escrito de dos maneras.</strong> Ninguno es el bueno: el número mixto es más fácil para juzgar el tamaño y la fracción impropia es más fácil para calcular.</p>"
+  },
+  "real": "«1 taza y media de harina» en una receta, «2 pulgadas y 3/8» en carpintería, «1 vuelta y 1/4» corriendo: la vida diaria usa números mixtos, porque 1 taza y media entra mucho antes que 3/2 de taza. Las calculadoras y los ordenadores hacen lo contrario y lo convierten todo a fracciones impropias, porque multiplicar y dividir sale mucho más sencillo.",
+  "quiz": [
+   {
+    "q": "Como número mixto, <b>11/4</b> es:",
+    "opts": [
+     "2 y 3/4",
+     "3 y 1/4",
+     "2 y 1/4",
+     "4 y 3/11"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Como fracción impropia, <b>3 y 1/5</b> es:",
+    "opts": [
+     "4/5",
+     "8/5",
+     "16/5",
+     "31/5"
+    ],
+    "right": 2
+   },
+   {
+    "q": "Si dividir el numerador entre el denominador deja resto <b>0</b>, la fracción:",
+    "opts": [
+     "Se vuelve un número entero",
+     "Se vuelve un número mixto",
+     "Se vuelve una fracción menor que 1"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "fraction-4": {
+  "course": "fraction",
+  "sim": "build-a-fraction",
+  "screens": null,
+  "mode": "solve",
+  "title": "Varias maneras de hacer la misma fracción",
+  "lead": "Saber leer una y saber construirla son cosas distintas. Esta vez las montas a mano.",
+  "hook": "Hasta ahora has ido leyendo lo que la pantalla te dibujaba. Ahora <b>las construyes tú.</b> Te dan una fracción objetivo y arrastras trozos para llenarla. Y hay <b>más de una manera</b> de llenarla. Si te piden 1/2 puedes poner un medio, o dos trozos de un cuarto. De eso va toda esta lección.",
+  "predict": {
+   "q": "Para llenar <b>1/2</b> usando solo <b>trozos de 1/6</b>, ¿cuántos hacen falta?",
+   "opts": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ]
+  },
+  "missions": [
+   "En la pantalla <b>Construye una fracción</b> pulsa <b>Nivel 1</b> en la fila de arriba. Los botones de nivel vienen en <b>dos filas</b>: la de arriba construye con <b>formas</b> y la de abajo con <b>tarjetas de números</b>.",
+   "A la derecha hay cajas con fracciones objetivo escritas. Arrastra trozos de la bandeja de abajo hasta el círculo vacío de la izquierda.",
+   "Una vez lleno, <b>arrastra ese grupo hasta la caja objetivo</b>. Si está bien, se coloca; si está mal, vuelve.",
+   "El <b>+ verde</b> de la derecha del círculo añade otro círculo. Así se hacen fracciones mayores que 1. El <b>− rojo</b> quita uno.",
+   "Los <b>◀ ▶</b> de debajo de un círculo cambian el número de trozos. Puedes volver a cortarlo desde entero hasta <b>octavos</b>.",
+   "Cuando salga un objetivo de <b>1/2</b>, llénalo a propósito <b>solo con trozos de 1/6</b>. ¿Cuántos lo dejan exacto? Esa es la respuesta a ②.",
+   "Llena el mismo objetivo <b>de dos maneras distintas</b>. Usa la flecha de deshacer para sacar los trozos y volver a construirlo.",
+   "Sube a los niveles <b>4-5</b>. Los objetivos pasan de 1 y empiezas a necesitar el + verde.",
+   "Con el botón de la casa ve a la pantalla <b>Números mixtos</b> para el mismo juego con números mixtos. Va detrás de la lección 3."
+  ],
+  "record": "¿Cuántos trozos de 1/6 hicieron falta para llenar 1/2? Y anota <b>dos maneras distintas</b> en las que llenaste el mismo objetivo.",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>3</strong>. Tres sextos son 3/6, y 3/6 tiene el mismo valor que 1/2. El «multiplica arriba y abajo por el mismo número» de la lección 2 <strong>se construye a mano</strong> aquí, ya que multiplicar 1/2 arriba y abajo por 3 da 3/6.</p><p>Si respondiste 2, quizá emparejaste el denominador 6 con dos trozos. Dos trozos de un sexto son 2/6, que es 1/3, y eso se queda corto para un medio.</p><p>La lección de verdad de este juego es que <strong>hay varias respuestas correctas</strong>. Un medio se hace con un medio, con dos cuartos, con tres sextos, con cuatro octavos. Hay infinitas fracciones del mismo valor, y la <strong>forma más simple</strong> entre ellas es 1/2. Encontrar esa forma más simple es lo que es reducir una fracción.</p><p>Los niveles de tarjetas de números (la fila de abajo) son un poco distintos. Sin dibujo, <strong>eliges tú los números que van en el numerador y el denominador.</strong> Se siente mucho más difícil porque hay que construirlo en la cabeza en vez de apoyarse en el dibujo, y ese es justo el paso que toca dar ahora.</p><p>Un grupo equivocado <strong>simplemente vuelve.</strong> No se pierden puntos ni vidas. Está hecho así para que pruebes con libertad.</p>"
+  },
+  "real": "Piensa en el Lego. Un hueco de ocho puntos admite dos piezas de cuatro puntos o cuatro de dos. Un carpintero que necesita 3/4 de pulgada usando seis calzos de 1/8, un cocinero midiendo una taza con una medida de cuarto de taza: lo mismo. Los trozos pueden ser de cualquier tamaño mientras <b>la cantidad que suman</b> sea la misma.",
+  "quiz": [
+   {
+    "q": "Para llenar <b>2/3</b> usando solo <b>trozos de 1/9</b>:",
+    "opts": [
+     "3",
+     "6",
+     "9"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Cuál de estos <b>no</b> hace <b>3/4</b>?",
+    "opts": [
+     "Tres trozos de 1/4",
+     "Seis trozos de 1/8",
+     "Un trozo de 1/2 y uno de 1/4",
+     "Tres trozos de 1/8"
+    ],
+    "right": 3
+   },
+   {
+    "q": "Pon un grupo <b>equivocado</b> en una caja objetivo y:",
+    "opts": [
+     "Pierdes puntos",
+     "El grupo vuelve a donde estaba",
+     "Reinicias el nivel"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "fraction-5": {
+  "course": "fraction",
+  "sim": "fraction-matcher",
+  "screens": null,
+  "mode": "solve",
+  "title": "Otra cara, el mismo número",
+  "lead": "Dibujos y números, fracciones impropias y números mixtos: encuentra el mismo número entre las caras distintas. El cierre de cuatro lecciones.",
+  "hook": "A estas alturas tienes todas las herramientas. Una fracción es una división (lección 1), multiplicar arriba y abajo por el mismo número mantiene el valor (lección 2), una con el de arriba mayor se puede volver número mixto (lección 3) y hay varias maneras de hacer la misma fracción (lección 4). Ahora las usas <b>todas mezcladas</b>. Se reparten cartas y encuentras seis parejas, <b>dos cartas del mismo valor</b> cada una. Pueden ser dibujos o números.",
+  "predict": {
+   "q": "¿Cuál de estos <b>no</b> hace pareja con <b>3/4</b>?",
+   "opts": [
+    "6/8",
+    "9/12",
+    "4/5",
+    "Un círculo cortado en octavos con 6 trozos sombreados"
+   ]
+  },
+  "missions": [
+   "En la pantalla <b>Fracciones</b> elige <b>Nivel 1</b>. Hay 8 niveles, y el nivel 1 tiene dibujos y números que <b>coinciden exactos</b>.",
+   "Arrastra dos de las cartas repartidas a los dos platillos de la balanza del centro.",
+   "Con las dos puestas aparece un botón de <b>Revisar</b>. Púlsalo para que te digan si está bien.",
+   "Si está bien, la balanza se pone <b>nivelada</b> y las cartas suben a <b>Mis partidas</b>. Si está mal, la balanza <b>se inclina.</b>",
+   "Pon una <b>pareja equivocada</b> a propósito una vez. La forma en que se inclina la balanza te dice <b>cuál es mayor</b>. Esa es la herramienta escondida de esta simulación.",
+   "Si fallas aparece <b>Intenta de nuevo</b>. Si fallas por segunda vez aparece <b>Mostrar la respuesta</b> y te coloca la pareja correcta.",
+   "Termina un nivel emparejando las seis parejas. <b>Acertar a la primera son 2 puntos y a la segunda 1</b>, así que 12 es la nota máxima.",
+   "Ve al <b>nivel 3 o más</b> y aparecen mezcladas fracciones mayores que 1. Las fracciones impropias y los números mixtos de la lección 3 se vuelven parejas aquí.",
+   "Pasa a la pantalla <b>Números mixtos</b> para el mismo juego. El botón del reloj de debajo del selector de nivel enciende y apaga el cronómetro."
+  ],
+  "record": "Anota una pareja que inclinara la balanza y qué lado era mayor. ¿Y qué pareja te lió más?",
+  "explain": {
+   "right": 2,
+   "body": "<p>La respuesta es <strong>4/5</strong>. 3/4 es 0,75 y 4/5 es 0,8: <strong>números distintos</strong>. Parece lo mismo porque arriba y abajo subieron uno cada uno, pero como enseñó la lección 2, <strong>sumar no mantiene el valor.</strong></p><p>Los otros tres son todos 3/4. 6/8 es arriba y abajo por 2, 9/12 es por 3, y el círculo cortado en octavos con 6 sombreados es <strong>6/8 dibujado</strong>.</p><p>Lo que busca este juego es <strong>la costumbre de reducir antes de comparar</strong>. Para ver si dos fracciones son iguales, pon cada una en su forma más simple y ponlas lado a lado. 6/8 → 3/4, 9/12 → 3/4, 4/5 → 4/5. Se separa de un vistazo.</p><p>La balanza no es un adorno. Cuando fallas te dice además <strong>qué lado es mayor</strong>. Eso es más útil que acertar, porque te dice por qué fallaste. Por eso una misión te pide fallar a propósito.</p><p>La puntuación — <strong>2 puntos a la primera, 1 a la segunda</strong> — también tiene su sentido. Está hecha para que <strong>acertar a la primera</strong> pague más que adivinar. No subas las cartas con prisa: redúcelas antes en la cabeza.</p>"
+  },
+  "real": "Los descuentos son un buen ejemplo. «25% de descuento», «una cuarta parte menos» y «0,25 menos» dicen lo mismo. Una nota de 18/24, 3/4 y 75% también son lo mismo. Es un número escrito como porcentaje, fracción o decimal según convenga, y <b>si no lo reconoces como el mismo número</b> acabas recalculándolo cada vez.",
+  "quiz": [
+   {
+    "q": "¿Qué hace pareja con <b>2/6</b>?",
+    "opts": [
+     "1/3",
+     "1/2",
+     "2/3",
+     "3/6"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Pones dos cartas en la balanza y <b>se inclina a la izquierda.</b> Eso significa:",
+    "opts": [
+     "La carta de la izquierda es el número mayor",
+     "La carta de la derecha es el número mayor",
+     "Son el mismo número"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿Qué hace pareja con <b>5/4</b>?",
+    "opts": [
+     "1 y 1/4",
+     "1 y 4/5",
+     "4 y 1/5",
+     "5 y 1/4"
+    ],
+    "right": 0
+   }
+  ]
  }
 }

@@ -2622,5 +2622,299 @@
    "Una vez sale <b>¡Saturado!</b>, echar más no subirá la concentración.",
    "Un soluto incoloro apenas se come luz, así que la absorbancia casi no marca. Coge algo <b>de color intenso</b>."
   ]
+ },
+ "fractions-intro": {
+  "summary": "Convierte una fracción <b>en un dibujo</b>. Casi no hay texto: cambiar dos números cambia el dibujo, y eso es todo, así que con cinco minutos te haces con ella.",
+  "screens": [
+   {
+    "name": "Introducción",
+    "what": "La pantalla que usa esta lección. Cambia el numerador y el denominador y el dibujo sigue al instante."
+   },
+   {
+    "name": "Juego",
+    "what": "Nombra la fracción a partir del dibujo. 10 niveles. Bueno por tu cuenta cuando termines la lección."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Un espacio libre sin objetivos, donde arrastras trozos a tu gusto."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de forma (la caja de arriba en el centro)",
+    "desc": "Elige una de seis: <b>círculo · barra horizontal · barra vertical · vaso · tarta · recta numérica</b>. Está justo encima del dibujo. Solo cambia el dibujo; el valor de la fracción no.",
+    "tip": "Ver la misma fracción <b>en las seis</b> es el corazón de esta simulación. La <b>recta numérica</b> sobre todo es la única que enseña que una fracción no es un «trozo» sino un solo número."
+   },
+   {
+    "name": "Máximo (arriba a la derecha)",
+    "desc": "Fija cuántos recipientes puedes usar, de 1 a 6, con las flechas redondas.",
+    "tip": "Dejado en 1, <b>no puedes hacer una fracción mayor que 1.</b> Si subir el numerador deja de tener efecto, mira aquí."
+   },
+   {
+    "name": "Numerador · Denominador (la fracción grande, centro derecha)",
+    "desc": "El número <b>de encima de la raya es el numerador</b> y el <b>de debajo, el denominador</b>. Las flechas redondas de al lado los suben y los bajan. El denominador va de 1 a 8.",
+    "tip": "<b>Cambia uno y deja el otro quieto.</b> Si mueves los dos no sabrás qué hizo cambiar el dibujo."
+   },
+   {
+    "name": "La bandeja de trozos (abajo en el centro)",
+    "desc": "También puedes arrastrar trozos dentro y fuera de los recipientes a mano. El numerador lo sigue.",
+    "tip": "Subir las flechas y arrastrar trozos <b>dan el mismo resultado.</b> Usa lo que te convenga."
+   }
+  ],
+  "steps": [
+   "Elige el <b>círculo</b> en el selector de forma.",
+   "Pon el denominador en <b>3</b> y el numerador en <b>1</b> para 1/3.",
+   "Deja el numerador y sube <b>solo el denominador hasta 8</b>, mirando lo fino que queda el trozo.",
+   "Sube <b>Máximo</b> a 3 para tener tres recipientes.",
+   "Con denominador <b>4</b>, sube el numerador a <b>12</b> y comprueba que los tres recipientes se llenan exactos.",
+   "Cambia el selector de forma a la <b>recta numérica</b> y mira dónde cae la misma fracción."
+  ],
+  "gotchas": [
+   "Sube el denominador y <b>los trozos se hacen más pequeños.</b> Un número mayor da sensación de valor mayor; es al revés.",
+   "Si subir el numerador no llena el dibujo, <b>Máximo</b> está en 1. Te faltan recipientes, no está roto.",
+   "Cambia el denominador y los trozos ya colocados se vuelven a cortar. Nada de qué alarmarse: es <b>la misma cantidad cortada de otra manera</b>.",
+   "Esta simulación tiene tres pantallas. La lección abre solo la de <b>Introducción</b>."
+  ]
+ },
+ "fractions-equality": {
+  "summary": "Construye sola a la derecha una fracción <b>del mismo valor</b> y la enseña junto a la tuya. Una simulación para comprobar, por área, si el <b>=</b> del centro dice de verdad la verdad.",
+  "screens": [
+   {
+    "name": "Laboratorio de Igualdades",
+    "what": "La pantalla que usa esta lección. En realidad, un banco de trabajo para comparar valores iguales lado a lado."
+   },
+   {
+    "name": "Juego",
+    "what": "Encuentra fracciones del mismo valor. 10 niveles."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de forma (encima y a la izquierda del signo =)",
+    "desc": "Cuatro esta vez: <b>círculo · barra horizontal · barra vertical · vaso</b>. A diferencia de la simulación anterior, la tarta y la recta numérica no están en este selector.",
+    "tip": "Como estás comparando áreas, la <b>barra horizontal</b> se lee mejor. Los círculos cuestan de juzgar a ojo en cuanto los trozos se cortan finos."
+   },
+   {
+    "name": "Numerador · Denominador (la fracción grande, abajo a la izquierda)",
+    "desc": "Fijan la fracción de la izquierda. El denominador va de <b>1 a 6</b> y hay como mucho 4 recipientes.",
+    "tip": "La fracción de la derecha <b>no se puede fijar directamente.</b> La deciden por completo la de la izquierda y el multiplicador."
+   },
+   {
+    "name": "La flecha verde (extremo de abajo a la derecha)",
+    "desc": "El <b>multiplicador</b>, 1, 2 o 3, situado <b>justo a la derecha</b> de la fracción multiplicada. La fracción de la derecha es la de la izquierda con el numerador y el denominador multiplicados por él.",
+    "tip": "El control más importante de aquí. Que subirlo <b>no cambie el área sombreada</b> es toda esta lección."
+   },
+   {
+    "name": "El selector de dibujo / recta numérica (arriba a la derecha)",
+    "desc": "Elige si ver <b>solo la mitad derecha</b> como dibujo o como recta numérica. La izquierda sigue siendo dibujo.",
+    "tip": "La recta numérica <b>se pone en vertical.</b> Sube el multiplicador y las marcas se hacen más finas mientras <b>el punto marcado se queda a la misma altura</b>. El área te lleva hasta «parecen parecidas»; esto lo clava en «el mismo número»."
+   }
+  ],
+  "steps": [
+   "Pon la fracción de la izquierda en <b>3/4</b>.",
+   "Sube la flecha verde a <b>2</b> y mira cómo la derecha pasa a 6/8. Compara las áreas.",
+   "Lleva la flecha verde a <b>3</b> y comprueba que el área sigue siendo la misma en 9/12.",
+   "Cambia la izquierda a <b>5/6</b> y fíjate en el área sombreada.",
+   "Vuelve a <b>3/4</b> y compara cuál está más lleno.",
+   "Cambia el selector de la derecha a la <b>recta numérica</b> y comprueba que el punto se queda a la misma altura al subir la flecha verde."
+  ],
+  "gotchas": [
+   "La fracción de la derecha <b>no la fijas tú.</b> Sale automática de la fracción de la izquierda por la flecha verde.",
+   "La flecha verde solo llega <b>hasta 3</b>. Múltiplos mayores no están disponibles aquí.",
+   "El denominador solo llega <b>hasta 6</b>. Una fracción como 7/8 no se puede construir aquí: usa para eso la simulación anterior (Fracciones: Intro)."
+  ]
+ },
+ "fractions-mixed-numbers": {
+  "summary": "Los mandos son <b>idénticos</b> a los de Fracciones: Intro. Se añaden exactamente dos cosas: la casilla de <b>Número mixto</b> y la caja de <b>Ecuación</b>. Esas dos son toda la simulación.",
+  "screens": [
+   {
+    "name": "Introducción",
+    "what": "La pantalla que usa esta lección. Donde conviertes fracciones impropias en números mixtos."
+   },
+   {
+    "name": "Juego",
+    "what": "Nombra el número mixto. 10 niveles."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Un espacio libre sin objetivos, donde manejas los trozos a tu gusto."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de forma (arriba en el centro)",
+    "desc": "Seis: círculo, barra horizontal, barra vertical, vaso, tarta y recta numérica.",
+    "tip": "La <b>recta numérica</b> va especialmente bien para las fracciones impropias. Que 8/3 caiga entre 2 y 3 se ve enseguida como dibujo."
+   },
+   {
+    "name": "Máximo (arriba a la derecha)",
+    "desc": "Fija cuántos recipientes puedes usar; aquí <b>de 1 a 4</b>.",
+    "tip": "La simulación anterior llegaba a 6 y esta a 4. Con una parte entera grande el dibujo se lía, así que lo recortaron."
+   },
+   {
+    "name": "Numerador · Denominador (la fracción grande, centro derecha)",
+    "desc": "El denominador va de 1 a 8. Poder subir <b>el numerador por encima del denominador</b> es el sentido de esta simulación.",
+    "tip": "Pon el numerador en un múltiplo del denominador (3, 6, 9…) y el display pasa a ser un <b>número entero</b>. Ahí es donde ves la división salir exacta."
+   },
+   {
+    "name": "Número mixto (abajo a la derecha, encima del botón de reinicio)",
+    "desc": "Activado, el display grande pasa a un número mixto como <b>2 y 2/3</b>. Apagado, se queda en 8/3.",
+    "tip": "<b>Enciéndelo y apágalo varias veces.</b> En cuanto ves que son dos rótulos sobre un mismo dibujo, las fracciones impropias y los números mixtos dejan de confundir."
+   },
+   {
+    "name": "Ecuación (caja plegable, abajo a la izquierda)",
+    "desc": "Pulsa el título para abrirla. Escribe <b>cómo se repartió la fracción</b>.",
+    "tip": "Si la casilla de Número mixto te enseña el «resultado», esta caja te enseña el <b>«desarrollo»</b>. Ábrela cuando no veas por qué salió esa respuesta."
+   }
+  ],
+  "steps": [
+   "Pon el denominador en <b>3</b> y el numerador en <b>8</b> para 8/3.",
+   "Cuenta los recipientes llenos y los trozos que sobran.",
+   "Marca <b>Número mixto</b> y mira el display pasar a 2 y 2/3.",
+   "Abre la caja de <b>Ecuación</b> y comprueba cómo se repartió.",
+   "Sube el numerador a <b>9</b> y mira el display pasar al número entero 3.",
+   "Cambia la forma a la <b>recta numérica</b> y confirma que 8/3 cae entre 2 y 3."
+  ],
+  "gotchas": [
+   "La casilla de <b>Número mixto</b> <b>cambia solo el display.</b> El valor no cambia: 8/3 y 2 y 2/3 son el mismo número.",
+   "Si subir el numerador no llena el dibujo, <b>Máximo</b> está demasiado bajo. Aquí solo llega a 4.",
+   "Cuando sale un número entero la parte fraccionaria del número mixto <b>desaparece.</b> No se ha perdido: es 0/3, así que no se escribe.",
+   "La pantalla es casi idéntica a la de Fracciones: Intro, y eso confunde. <b>Si ves la casilla de Número mixto</b>, estás en esta."
+  ]
+ },
+ "build-a-fraction": {
+  "summary": "Lo contrario de todo lo anterior. La pantalla no dibuja por ti: <b>arrastras trozos para hacer la fracción objetivo.</b> Esta simulación <b>arranca en el selector de nivel</b>: al abrirla te encuentras botones de nivel antes que ningún juego.",
+  "screens": [
+   {
+    "name": "Construye una fracción",
+    "what": "La pantalla que usa esta lección. Construye con trozos fracciones menores que 1."
+   },
+   {
+    "name": "Números mixtos",
+    "what": "El mismo juego con fracciones mayores que 1. Ven aquí después de la lección 3 (Fracciones: números mixtos)."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Un espacio libre sin objetivos ni puntuación. Usa los trozos y las tarjetas de números a tu gusto."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los botones de nivel (la primera pantalla al abrirla)",
+    "desc": "Los botones vienen en <b>dos filas</b>. La <b>de arriba construye con formas</b> y la <b>de abajo con tarjetas de números</b>. Solo se ven cinco a la vez; la <b>flecha amarilla</b> de abajo en el centro te lleva a los <b>niveles 6-10</b>.",
+    "tip": "Empieza por la fila de arriba. La de abajo no tiene dibujos y hay que construirla en la cabeza, lo cual es mucho más difícil."
+   },
+   {
+    "name": "La bandeja de trozos (abajo)",
+    "desc": "Trozos apilados por tamaño de 1/1 a 1/8. Arrástralos al recipiente de la izquierda.",
+    "tip": "<b>Llena el mismo objetivo también con trozos distintos.</b> Es justo lo que esta simulación viene a enseñar."
+   },
+   {
+    "name": "+ verde · − rojo (a la derecha del recipiente)",
+    "desc": "Añaden o quitan un recipiente. Se usan para fracciones mayores que 1.",
+    "tip": "Con un recipiente no puedes hacer una fracción mayor que 1. Cuando el objetivo pase de 1, pulsa primero el <b>+ verde</b>."
+   },
+   {
+    "name": "◀ ▶ (bajo el recipiente)",
+    "desc": "Cambian en cuántos trozos está cortado el recipiente, desde entero hasta <b>octavos</b>. Ponlo primero o un trozo de ese tamaño no entrará.",
+    "tip": "<b>Si un trozo no entra</b>, suele ser porque el recipiente está cortado en un tamaño que no cuadra. Mira aquí primero."
+   },
+   {
+    "name": "Las cajas objetivo (derecha)",
+    "desc": "Las fracciones que tienes que hacer. <b>Arrastra un grupo terminado hasta una caja.</b>",
+    "tip": "Si está bien, se coloca; si está mal, <b>simplemente vuelve.</b> No se pierde nada, así que suéltalo aunque no estés seguro."
+   },
+   {
+    "name": "La flecha de deshacer (a la izquierda de un grupo)",
+    "desc": "Saca los trozos de ese grupo de uno en uno. Solo se ve mientras el grupo está seleccionado.",
+    "tip": "Si no la ves, <b>pulsa el grupo una vez para seleccionarlo.</b> Solo aparece en el grupo seleccionado."
+   },
+   {
+    "name": "Atrás · refrescar (arriba a la izquierda)",
+    "desc": "<b>Atrás</b> vuelve al selector de nivel. <b>Refrescar</b> saca un juego nuevo de problemas del mismo nivel.",
+    "tip": "<b>Refrescar</b> va bien cuando un problema te tiene atascado. Mantiene el nivel y cambia los problemas."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Construye una fracción</b> pulsa <b>Nivel 1</b> en la fila de arriba.",
+   "Elige una fracción objetivo de la derecha y llena el recipiente con trozos de la bandeja.",
+   "Una vez lleno, <b>arrastra el grupo hasta la caja objetivo</b>.",
+   "Llena un objetivo de <b>1/2</b> usando <b>solo trozos de 1/6</b>.",
+   "Llena el mismo objetivo <b>otra vez con trozos distintos</b>.",
+   "Sube a los niveles 4-5 y encuéntrate un problema que necesite el <b>+ verde</b>.",
+   "Con el botón de la casa juega al mismo juego en la pantalla <b>Números mixtos</b>."
+  ],
+  "gotchas": [
+   "No te desconcierte que al abrirla no aparezca ningún juego. Esta <b>te pide elegir nivel primero</b>.",
+   "Es fácil no ver que los botones de nivel vienen en <b>dos filas</b>. La de arriba (formas) y la de abajo (tarjetas de números) son juegos completamente distintos. <b>Los niveles 6-10 están pasada la flecha amarilla.</b>",
+   "Que un trozo no entre en un recipiente no es un fallo: <b>la división no cuadra</b>. Ajústala con los ◀ ▶ de debajo del recipiente.",
+   "Fallar <b>no te cuesta nada.</b> Simplemente vuelve. Prueba con libertad.",
+   "Esta simulación tiene tres pantallas. La lección empieza en <b>Construye una fracción</b>, pero las otras también están abiertas."
+  ]
+ },
+ "fraction-matcher": {
+  "summary": "Un juego de emparejar <b>dos cartas del mismo valor</b> en una balanza. Esta simulación también <b>arranca en el selector de nivel</b>. La balanza marca tu respuesta y además <b>te dice qué lado es mayor</b>.",
+  "screens": [
+   {
+    "name": "Fracciones",
+    "what": "La pantalla que usa esta lección. Empieza por debajo de 1 y va mezclando fracciones mayores según suben los niveles."
+   },
+   {
+    "name": "Números mixtos",
+    "what": "El mismo juego con números mixtos. Salen cartas como 1 y 1/4."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los botones de nivel (la primera pantalla al abrirla)",
+    "desc": "Hay <b>8 niveles</b>. El 1 es el más fácil y el 8 el más difícil.",
+    "tip": "El nivel 1 solo tiene dibujos y números que <b>coinciden exactos</b>. Del 2 en adelante hay que reducir."
+   },
+   {
+    "name": "El botón del reloj (bajo el selector de nivel)",
+    "desc": "Enciende y apaga el cronómetro. Encendido, el tiempo transcurrido se ve durante la partida.",
+    "tip": "Déjalo <b>apagado</b> al principio. Con presión de tiempo adivinarás en vez de reducir. Encenderlo después es buen ejercicio."
+   },
+   {
+    "name": "Las cartas",
+    "desc": "Cartas con dibujos y cartas con números repartidas juntas. Arrástralas.",
+    "tip": "Una carta con dibujo puede emparejar con otra carta con dibujo. Da por hecho que solo es <b>dibujo ↔ número</b> y te liarás."
+   },
+   {
+    "name": "La balanza (centro)",
+    "desc": "Pon una carta en cada platillo. Si está bien, se queda <b>nivelada</b>; si está mal, <b>se inclina hacia el lado mayor.</b>",
+    "tip": "La parte más útil de esta simulación. Fallar te dice <b>qué lado es mayor</b>, así que aquí hay más que aprender que acertando."
+   },
+   {
+    "name": "Revisar · Intenta de nuevo · Mostrar la respuesta",
+    "desc": "Con las dos cartas puestas aparece <b>Revisar</b>. Si fallas sale <b>Intenta de nuevo</b>; si fallas por segunda vez sale <b>Mostrar la respuesta</b>.",
+    "tip": "<b>Mostrar la respuesta</b> te coloca la pareja correcta. No puntúa, pero te deja ver por qué son pareja."
+   },
+   {
+    "name": "Mis partidas (la fila de arriba)",
+    "desc": "Las parejas que has acertado se recogen aquí. Llena las seis y el nivel se acaba.",
+    "tip": "Pulsa otra vez una pareja recogida y puedes volver a ponerla en la balanza para comprobarla. Buena para repasar."
+   },
+   {
+    "name": "Puntuación · tiempo (arriba)",
+    "desc": "<b>Acertar a la primera son 2 puntos y a la segunda 1.</b> Seis parejas, así que la nota máxima es 12.",
+    "tip": "Quedarte corto de la máxima significa que adivinaste en algún sitio. La puntuación está hecha para que <b>acertar a la primera pague</b>."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Fracciones</b> elige <b>Nivel 1</b>.",
+   "Arrastra dos cartas a los platillos y pulsa <b>Revisar</b>.",
+   "Pon una <b>pareja equivocada</b> a propósito una vez y mira hacia dónde se inclina la balanza.",
+   "Empareja las seis parejas para terminar un nivel.",
+   "Pasa al <b>nivel 3 o más</b> y mira entrar las fracciones mayores que 1.",
+   "Con el botón de la casa juega al mismo juego en la pantalla <b>Números mixtos</b>."
+  ],
+  "gotchas": [
+   "No te desconcierte que al abrirla no aparezca ningún juego. Esta <b>te pide elegir nivel primero</b>.",
+   "Las parejas no son solo <b>dibujo ↔ número</b>. Dibujo ↔ dibujo y número ↔ número también valen, mientras los valores coincidan.",
+   "No te encojas de hombros ante una balanza inclinada. <b>La dirección en que se inclina es información</b>: te dice qué lado es mayor.",
+   "A partir del segundo intento una respuesta correcta vale <b>1 punto</b>. Redúcela en la cabeza antes de subir las cartas con prisa.",
+   "Dejar el cronómetro encendido te vuelve precipitado. Mejor apagado al principio."
+  ]
  }
 }
