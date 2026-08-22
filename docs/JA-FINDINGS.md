@@ -173,11 +173,24 @@
 
 ---
 
-## 7. 아직 안 된 것
+## 7. 공유 이미지(OG) — 서체 이야기
 
-- **공유 이미지(OG)** — `python tools/font-check.py` 기준 Pretendard 에 한자가 없어
-  (표본 757자 중 491자) 지금 구우면 두부(□)가 찍힙니다. Noto Sans JP(OFL)를
-  `tools/fonts/` 에 넣고 `make-og.py` 의 서체 사슬에 이어야 합니다.
-  그전까지 일본어 페이지의 공유 카드는 **한국어 그림**을 가리킵니다 — 어색하지만
-  깨지지는 않습니다.
-- **썸네일** — 모든 언어에서 영어로 두기로 되어 있습니다 (사용자 결정). 그대로입니다.
+Jua 에도 Pretendard 에도 **한자가 없습니다.** 그대로 구우면 일본어 카드가 통째로
+두부(□)가 됩니다. 그래서 **Noto Sans JP**(SIL OFL, `notofonts/noto-cjk` 의 일본어
+부분집합 OTF)를 `tools/fonts/` 에 넣고 사슬에 이었습니다.
+
+| 언어 | 제목 | 본문 |
+|---|---|---|
+| ko · en · es | Jua → Pretendard-Bold | Pretendard-Regular |
+| ja | Noto Sans JP Bold → Pretendard-Bold | Noto Sans JP Regular → Pretendard-Regular |
+
+**Noto Sans JP 에는 `₂`(U+2082)가 없습니다.** 일본어 원고에서 `CO₂` · `H₂O` 가
+나오는 카드가 둘 있어(`l-matter-3` · `l-mix-3`), 그 한 글자 때문에 줄 전체가
+Pretendard 로 떨어지면 나머지 한자가 다 두부가 됩니다. 그래서 `make-og.py` 에
+**글자 단위 대체**를 넣었습니다 — 줄을 통째로 덮는 서체가 없으면 글자마다 서체를
+갈아 가며 그립니다.
+
+`python tools/font-check.py` 가 이 사슬을 그대로 가져다, 실제로 카드에 그려질 글자를
+표본으로 잡아 검사합니다. 못 덮는 글자가 있으면 종료 코드 1 입니다.
+
+> **썸네일** — 모든 언어에서 영어로 두기로 되어 있습니다 (사용자 결정). 그대로입니다.

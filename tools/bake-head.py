@@ -125,7 +125,9 @@ def esc(s):
 def head(lang, kind, ident, title, desc, image, jsonld):
     d = clamp(desc, lang)
     url = ORIGIN + path_of(kind, ident, lang)
-    img = f'{ORIGIN}/og/{image}'
+    # 공유 이미지는 언어별로 굽습니다 (tools/make-og.py). 경로 규칙이 셋에 흩어져
+    # 있으니 — 여기 · lib/seo.js · make-og.py — 하나를 고치면 셋 다 고쳐야 합니다.
+    img = f'{ORIGIN}/og/{lang}/{image}'
     out = [
         f'<title>{esc(title)}</title>',
         f'<meta name="description" content="{esc(d)}">',

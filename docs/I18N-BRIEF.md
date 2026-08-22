@@ -365,37 +365,35 @@ const SUBJECT_COLOR = {
 넣지 않으면 코스 카드가 전부 회색으로 떨어집니다. `courses.json` 의 `subject` 값과
 **글자 하나까지 같아야** 합니다.
 
-### 5-3. 공유 이미지 (OG) — 지금 76장이 전부 한국어입니다
+### 5-3. 공유 이미지 (OG) — 언어별로 굽습니다 ✅
 
-`site/og/` 에 `default.png` + 코스 14장 + 레슨 61장이 있고, **파일 이름에 언어가 없습니다.**
-그래서 `/ja/l/atom-1` 의 `og:image` 도 한국어 그림을 가리킵니다.
-
-두 가지 길이 있습니다.
-
-- **당분간 그대로 둔다** — 카카오톡 공유 카드에 한국어 그림이 뜹니다. 일본어 사용자에게는
-  어색하지만 깨지지는 않습니다.
-- **언어별로 굽는다** — `tools/make-og.py` 를 언어 인자를 받게 고치고
-  `site/og/<lang>/…` 으로 내보낸 뒤, `tools/bake-head.py` 의 `img` 경로와
-  `site/lib/seo.js` 의 `applySeo({ image })` 를 함께 고칩니다. 76 × 4 = 304장이 되고
-  파일 수는 여유가 있습니다(632 / 20,000).
-
-`make-og.py` 는 이미 Jua(제목)와 Pretendard(본문)로 그리고 있고, Jua 에 없는 글자는
-Pretendard 로 떨어지게 되어 있습니다. 확인은 아래 한 줄로 끝납니다.
+`tools/make-og.py` 가 네 언어를 각각 굽습니다. `site/og/<lang>/` 에 언어마다 76장씩,
+모두 304장입니다.
 
 ```bash
-python tools/font-check.py
+python tools/make-og.py          # 네 언어 전부
+python tools/make-og.py ja       # 한 언어만
+python tools/font-check.py       # 그 언어 글자를 서체가 덮는지
 ```
 
-**확인 결과(2026-08-21):**
+**경로 규칙이 세 곳에 있습니다** — `tools/make-og.py` · `site/lib/seo.js` ·
+`tools/bake-head.py`. 하나만 고치면 어긋나니 셋을 함께 보세요. 각 HTML `<head>` 에
+박아 둔 한국어 기준값도 `/og/ko/…` 를 가리킵니다.
 
-| 언어 | 결과 |
-|---|---|
-| en · es | Pretendard 가 다 덮습니다. 악센트 · `¿` · `¡` 전부 있음 — **그대로 가면 됩니다** |
-| **ja** | **Pretendard 에 한자가 없습니다 (표본 757자 중 491자 없음)** — 지금 구우면 두부(□) |
+서체는 언어마다 사슬이 다릅니다. 앞에서부터 그 줄을 통째로 덮는 것을 고르고,
+아무것도 못 덮으면 **글자 단위로** 나눠 그립니다.
 
-그래서 일본어 공유 이미지를 굽기 전에 **CJK 서체를 하나 더 얹어야 합니다.**
-저장소 서체 정책이 OFL 이므로 Noto Sans JP(OFL)가 맞습니다. `tools/fonts/` 에 넣고
-`make-og.py` 의 `display_font()` 처럼 "없으면 다음 서체" 사슬에 이어 붙이면 됩니다.
+| 언어 | 제목 | 본문 |
+|---|---|---|
+| ko · en · es | Jua → Pretendard-Bold | Pretendard-Regular |
+| ja | **Noto Sans JP Bold** → Pretendard-Bold | **Noto Sans JP Regular** → Pretendard-Regular |
+
+일본어에 Noto Sans JP(OFL)를 넣은 이유는 Jua 에도 Pretendard 에도 **한자가 없어서**
+입니다. 반대로 Noto Sans JP 에는 `₂`(U+2082)가 없어 `CO₂` 의 아래첨자만 Pretendard 로
+떨어집니다 — 글자 단위 대체가 필요한 자리가 바로 여기입니다.
+
+`python tools/font-check.py` 가 실제로 카드에 그려질 글자를 표본으로 잡아
+사슬이 덮는지 봅니다. 못 덮으면 종료 코드 1 로 떨어집니다.
 
 > **썸네일은 손대지 마세요.** `thumbs/` 의 시뮬레이션 미리보기는 **모든 언어에서 영어인
 > 채로 두기로** 정해져 있습니다(사용자 결정).
