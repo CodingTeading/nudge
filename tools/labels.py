@@ -1,6 +1,6 @@
 """화면 글자 사전 뽑기 — 번역 전에 한 번만 돌립니다.
 
-  python tools/labels.py            # en · es · ja 전부
+  python tools/labels.py            # ko · en · es · ja 전부
   python tools/labels.py ja         # 하나만
 
 docs/I18N-BRIEF.md §4-2 의 ① 방법을 세션마다 반복하지 않도록 미리 뽑아 둡니다.
@@ -25,7 +25,7 @@ except Exception:
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PHET = os.environ.get('NUDGE_PHET', os.path.join(HERE, '..', 'phet'))
 OUT = os.path.join(HERE, 'wip', 'labels')
-LANGS = ['en', 'es', 'ja']
+LANGS = ['ko', 'en', 'es', 'ja']
 
 # 실험마다 붙는 공통 화면 요소. 조작 이름을 인용할 때 자주 쓰입니다.
 # 이 넷은 _shared.json 에 따로 뽑으므로 시뮬레이션마다 다시 넣지 않습니다.

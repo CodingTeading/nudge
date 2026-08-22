@@ -3553,7 +3553,7 @@
     "tip": "You can tell whether the flow is lively without watching. As it approaches equilibrium the sounds thin out."
    },
    {
-    "name": "Erase All Solutes (below)",
+    "name": "Eraser icon (below)",
     "desc": "Clears everything you have put in.",
     "tip": "<b>Clear it</b> before moving on to the next substance, or it mixes with the last one and confuses you."
    },
@@ -3566,7 +3566,7 @@
   "steps": [
    "On the <b>Simple Diffusion</b> screen put <b>O₂</b> outside the cell only.",
    "Watch whether it goes straight through, until it is about even on both sides.",
-   "Clear it with <b>Erase All Solutes</b> and put <b>Na⁺</b> outside only.",
+   "Clear it with the <b>eraser icon</b> and put <b>Na⁺</b> outside only.",
    "Confirm that it does not get through.",
    "Try <b>Glucose</b> the same way.",
    "On the <b>Facilitated Diffusion</b> screen fit a sodium channel and add it again.",
@@ -3578,7 +3578,7 @@
    "A <b>channel</b> only opens a door; it cannot change the direction. Things still flow from more to less.",
    "Only a <b>pump</b> can push against the concentration, and it spends energy to do it.",
    "A warning like <b>Outside Sodium Too Low!</b> at the top means you need to add more of the substance.",
-   "Clear things with <b>Erase All Solutes</b> before changing substance."
+   "Clear things with the <b>eraser icon</b> before changing substance."
   ]
  },
  "greenhouse-effect": {
@@ -3834,7 +3834,7 @@
     "tip": "Leave <b>Equation</b> on and the picture and the equation sit side by side. It is the bridge from picture to equation."
    },
    {
-    "name": "Automatically Hear Phrase (top left)",
+    "name": "Speaker icon (top left) — reads the phrase",
     "desc": "Reads the phrase above out loud.",
     "tip": "Useful for hearing the wording of the split as well as reading it."
    }

@@ -222,5 +222,141 @@ console.log( '\n[7] 본문 조판' );
   if ( !bad ) { ok( '코스마다 minutes 가 레슨 min 의 합과 일치' ); }
 }
 
+/* ── [9] 화면에 없는 이름 ───────────────────────────────────────
+   이 사이트의 1번 규칙 — 학습자가 화면에서 못 찾을 글자를 원고가 인용하면 안 됩니다.
+   PhET 은 아이콘만 있는 단추에 `a11y.*` 로 접근성 이름을 붙여 두는데, 그 이름은
+   스크린리더 전용이라 어느 언어로도 그려지지 않습니다. 원고를 쓰다 보면 그걸
+   화면 글자로 착각하기 쉽습니다 (의뢰서 §4-2).
+
+   대조 기준은 `wip/labels/<lang>/<repo>.json` 의 `screen` · `common` 입니다.
+   생성물이라 저장소에 없으므로, 없으면 건너뜁니다 — `python tools/labels.py`.
+
+   **한국어·일본어 원고만 봅니다.** CJK 원고에서 로마자가 굵게 묶여 있으면 그건
+   화면 글자를 인용한 것이 거의 확실합니다. 영어·스페인어 원고에서는
+   `<b>Start here</b>` 같은 강조와 라벨 인용을 기계가 가를 수 없어 — 둘 다 로마자라 —
+   시끄러운 검사가 되느니 안 보는 편이 낫다고 판단했습니다. 그쪽은 사람이 봐야 합니다.
+   ───────────────────────────────────────────────────────────── */
+console.log( '\n[9] 화면에 없는 이름' );
+{
+  const LAB = '../wip/labels';
+  const shared = read( `${ LAB }/_shared_placeholder` );   /* 자리 채우기용 (아래에서 언어별로 읽습니다) */
+  void shared;
+
+  /* 우리 표기이지 화면 글자가 아닌 것들. 화학식·수식·단위가 대부분입니다. */
+  const NOT_LABEL = /[0-9₀-₉⁰-⁹⁺⁻°=+×÷→←↔≠≈…％%]/;
+  const HAS_CJK = /[가-힣ぁ-んァ-ヴ一-龥]/;
+
+  /* 화면 이름 후보만 남깁니다. 소문자로 시작하거나 전부 대문자면 뺍니다
+     (IQR · MAD 같은 약어는 실제 라벨이어도 놓치는 편이 시끄러운 것보다 낫습니다). */
+  const looksLikeLabel = s =>
+    s.length >= 3 && /^[A-Z]/.test( s ) && /[a-z]/.test( s ) &&
+    /[A-Za-z]{3}/.test( s ) &&      /* 'F/f' 같은 우리 표기를 뺍니다 — 낱글자 나열입니다 */
+    !NOT_LABEL.test( s ) && !HAS_CJK.test( s ) && /^[A-Za-z][A-Za-z ()/'’.-]*$/.test( s );
+
+  /* 'Organize (왼쪽) — 가지런히 놓기' → 'Organize'
+     'Hide Left / Right Counting Area' → 두 갈래로 나눠 각각 봅니다. */
+  const pieces = raw => String( raw )
+    .split( /[(（—–]/ )[ 0 ]
+    .split( /[·•]/ )
+    .flatMap( s => s.includes( '/' ) ? [ s, ...s.split( '/' ) ] : [ s ] )
+    .map( s => s.trim().replace( /[:：]$/, '' ).replace( /^["'“”]|["'“”]$/g, '' ).trim() );
+
+  /* 화면 문자열 다듬기 — <br> 같은 태그와 겹친 공백을 걷어 냅니다.
+     'Polarizing<br>Beam<br>Splitter' 가 화면에서는 한 줄로 읽히기 때문입니다. */
+  const flatten = s => String( s )
+    .replace( /<[^>]*>/g, ' ' ).replace( / /g, ' ' ).replace( /\s+/g, ' ' ).trim();
+
+  const BOLD = /<b>([^<]{2,60})<\/b>/g;
+  const bolds = obj => {
+    const out = [];
+    let m;
+    const s = JSON.stringify( obj );
+    while ( ( m = BOLD.exec( s ) ) !== null ) { out.push( ...pieces( m[ 1 ] ) ); }
+    return out;
+  };
+
+  /* CJK 원고에서만 로마자 인용이 곧 화면 글자 인용입니다 (위 설명 참고). */
+  const CJK = [ 'ko', 'ja' ];
+
+  let checked = 0, missing = 0, skipped = [];
+  for ( const L of LANGS ) {
+    if ( !CJK.includes( L ) ) { continue; }
+    const guides = read( `content/${ L }/guides.json` );
+    const lessons = read( `content/${ L }/lessons.json` );
+    if ( !guides ) { continue; }
+    /* 그 언어의 화면 글자 사전이 있어야 대조할 수 있습니다. */
+    const probe = read( `${ LAB }/${ L }/_shared.json` );
+    if ( !probe ) { skipped.push( L ); continue; }
+
+    /* joist · scenery-phet · sun · vegas — 61종 전부에 딸려 오는 공통 화면 글자.
+       영어로 열리는 실험은 이 공통 글자도 영어로 나오므로 사전을 갈아 끼웁니다. */
+    const sharedOf = {};
+    const commonSet = code => {
+      if ( sharedOf[ code ] ) { return sharedOf[ code ]; }
+      const bag = code === L ? probe : read( `${ LAB }/${ code }/_shared.json` );
+      const out = new Set();
+      for ( const sec of Object.values( bag || {} ) ) {
+        for ( const v of Object.values( sec.screen || {} ) ) {
+          if ( typeof v === 'string' ) { out.add( flatten( v ) ); }
+        }
+      }
+      sharedOf[ code ] = out;
+      return out;
+    };
+
+    for ( const repo of Object.keys( guides ) ) {
+      if ( repo.startsWith( '_' ) ) { continue; }
+      const dict = read( `${ LAB }/${ L }/${ repo }.json` );
+      if ( !dict ) { continue; }
+
+      const screen = new Set( commonSet( dict.opensIn || L ) );
+      for ( const bag of [ dict.screen, dict.common ] ) {
+        for ( const v of Object.values( bag || {} ) ) {
+          if ( typeof v === 'string' ) { screen.add( flatten( v ) ); }
+        }
+      }
+      /* `{{item}} to Prepare` 처럼 자리표시자가 든 글자는 화면에서 채워져 나옵니다.
+         남는 조각이 전부 후보 안에 있으면 그 화면 글자를 인용한 것으로 봅니다. */
+      const onScreen = t => [ ...screen ].some( s => {
+        if ( s === t || s.includes( t ) ) { return true; }
+        if ( !s.includes( '{{' ) ) { return false; }
+        const bits = s.split( /\{\{[^}]*\}\}/ ).map( x => x.trim() ).filter( x => x.length >= 3 );
+        return bits.length > 0 && bits.every( b => t.includes( b ) );
+      } );
+
+      /* 후보 모으기 — 조작 이름표와 굵은 글씨 인용 */
+      const cand = new Map();
+      const add = ( t, where ) => {
+        if ( !looksLikeLabel( t ) ) { return; }
+        if ( !cand.has( t ) ) { cand.set( t, where ); }
+      };
+      ( guides[ repo ].controls || [] ).forEach( ( c, i ) => {
+        pieces( c.name ).forEach( t => add( t, `guides(${ L })/${ repo }/controls[${ i }].name` ) );
+      } );
+      bolds( guides[ repo ] ).forEach( t => add( t, `guides(${ L })/${ repo }` ) );
+      for ( const [ lid, les ] of Object.entries( lessons || {} ) ) {
+        if ( lid.startsWith( '_' ) || les.sim !== repo ) { continue; }
+        bolds( les ).forEach( t => add( t, `lessons(${ L })/${ lid }` ) );
+      }
+
+      for ( const [ t, where ] of cand ) {
+        checked++;
+        if ( onScreen( t ) ) { continue; }
+        const inA11y = ( dict.hidden || [] ).some(
+          h => String( h ).toLowerCase().replace( /[._]/g, '' )
+            .includes( t.toLowerCase().replace( /[ /]/g, '' ) ) );
+        err( `${ where }: "${ t }" — 화면에 없음${ inA11y ? ' (a11y 전용)' : '' }` );
+        missing++;
+      }
+    }
+  }
+
+  if ( skipped.length ) {
+    console.log( `  … ${ skipped.join( ' · ' ) } 는 화면 글자 사전이 없어 건너뜀 — python tools/labels.py` );
+  }
+  if ( !missing && checked ) { ok( `인용한 이름 ${ checked }개가 모두 화면에 있음` ); }
+  else if ( !checked ) { console.log( '  … 대조할 사전이 없어 검사하지 못함' ); }
+}
+
 console.log( `\n오류 ${ errors } · 경고 ${ warns }\n` );
 process.exit( errors ? 1 : 0 );
