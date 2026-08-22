@@ -1169,5 +1169,404 @@
    "Borra la pantalla antes de cambiar condiciones.",
    "Esta simulación se hizo a nivel universitario. Con la pantalla <b>Experiment</b> sola basta para esta lección."
   ]
+ },
+ "build-an-atom": {
+  "summary": "Construye tú mismo un átomo arrastrando <b>protones, neutrones y electrones</b> desde sus depósitos.",
+  "screens": [
+   {
+    "name": "Átomo",
+    "what": "La pantalla que usa esta lección. Mete y saca partículas y mira qué mueve el elemento, la carga y el número másico."
+   },
+   {
+    "name": "Símbolo",
+    "what": "La misma construcción, con el <b>símbolo del elemento</b> en grande a la derecha. El número de arriba es el número másico, el de abajo el número de protones y el de arriba a la derecha, la carga."
+   },
+   {
+    "name": "Modo Juego",
+    "what": "Una comprobación de cuatro niveles: identificar el elemento, calcular masa y carga, completar el símbolo y un repaso mixto."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los depósitos de Protones · Neutrones · Electrones (abajo en el centro)",
+    "desc": "<b>Arrastra</b> una partícula de un depósito hasta el átomo. Arrástrala de vuelta al depósito para sacarla.",
+    "tip": "La única acción clave de esta simulación. Añade <b>un tipo cada vez</b> y mira qué cambia en pantalla. Si añades los tres a la vez no sabrás qué causó qué."
+   },
+   {
+    "name": "Modelo — Órbitas · Nube (arriba a la izquierda)",
+    "desc": "Botones de opción para cómo se dibujan los electrones. <b>Órbitas</b> es el dibujo antiguo con líneas; <b>Nube</b> es el moderno, difuso y extendido.",
+    "tip": "No cambia ni un valor. Solo cambia <b>el dibujo</b>. La lección 3 se ocupa de cuál de los dos está más cerca de la realidad."
+   },
+   {
+    "name": "Elemento (casilla)",
+    "desc": "Escribe el nombre del elemento debajo del átomo.",
+    "tip": "<b>Déjala activada.</b> Mucho más rápido que buscar la casilla en la tabla periódica con la vista."
+   },
+   {
+    "name": "Neutro/Ion (casilla)",
+    "desc": "Te dice que es un <b>ion</b> cuando las cuentas de electrones y protones no coinciden, y un <b>átomo neutro</b> cuando sí.",
+    "tip": "Mete y saca electrones mirando esta lectura y se vuelve evidente que <b>los electrones cambian la carga, nunca el elemento</b>."
+   },
+   {
+    "name": "Estable/Inestable (casilla)",
+    "desc": "Te dice si la combinación es una que un núcleo puede sostener. Cuando es inestable, el dibujo del núcleo <b>tiembla.</b>",
+    "tip": "Sigue añadiendo neutrones. En algún momento se pasa a inestable. Un adelanto de la lección 4 (Construye un Núcleo)."
+   },
+   {
+    "name": "Tabla periódica (caja plegable, arriba a la derecha)",
+    "desc": "La tabla periódica, con la casilla del elemento que has construido encendida.",
+    "tip": "<b>No</b> puedes pulsar una casilla para elegir elemento. Solo informa: el elemento cambia cuando añades protones."
+   },
+   {
+    "name": "Carga neta · Número másico (cajas plegables, abajo a la derecha)",
+    "desc": "La <b>Carga neta</b> es la diferencia entre protones y electrones; el <b>Número másico</b> es protones más neutrones.",
+    "tip": "Abre <b>las dos a la vez</b> y añade partículas. La tabla de qué partícula mueve qué número se dibuja sola."
+   }
+  ],
+  "steps": [
+   "Marca primero <b>Elemento</b> y <b>Neutro/Ion</b>.",
+   "Mete <b>un protón y nada más</b> y comprueba el nombre del elemento.",
+   "Añade un neutrón y verás que el nombre <b>no cambia</b>.",
+   "Añade un protón más y verás que esta vez <b>sí</b>.",
+   "Quita un electrón y busca la lectura de <b>ion</b>.",
+   "Activa <b>Estable/Inestable</b> y sigue añadiendo neutrones."
+  ],
+  "gotchas": [
+   "Las casillas de la tabla periódica <b>no hacen nada al pulsarlas.</b> Solo informan del resultado.",
+   "El número másico <b>no cuenta los electrones</b>, porque un electrón es demasiado ligero para contar.",
+   "No hace falta colocar la partícula con precisión. Suéltala cerca y <b>se coloca sola.</b>",
+   "Esta simulación tiene tres pantallas. La lección abre solo la de <b>Átomo</b>."
+  ]
+ },
+ "rutherford-scattering": {
+  "summary": "Dispara partículas alfa contra un átomo y mira <b>cómo rebotan</b>. Las dos pantallas son el <b>modelo antiguo</b> y el <b>nuevo</b>, así que ir y venir para compararlos es toda la simulación.",
+  "screens": [
+   {
+    "name": "Modelo atómico de Rutherford",
+    "what": "El modelo con la masa reunida en un punto del centro. Los mandos de <b>Número de protones</b> y <b>Número de neutrones</b> están a la derecha."
+   },
+   {
+    "name": "Modelo atómico de budín de pasas (Thomson)",
+    "what": "El modelo antiguo, con la carga positiva repartida. <b>No hay panel de átomo</b>: no hay nada que cambiar. Merece la pena empezar aquí."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El cañón (abajo en el centro)",
+    "desc": "Púlsalo y las partículas alfa se disparan sin parar. Vuelve a pulsar para parar.",
+    "tip": "Déjalo encendido y <b>espera.</b> Los rebotes grandes son raros, así que si lo apagas a los pocos segundos no verás ninguno."
+   },
+   {
+    "name": "partícula alfa — Energía (derecha)",
+    "desc": "Fija la velocidad de las partículas alfa, de <b>mínimo</b> a <b>máximo</b>.",
+    "tip": "Más lentas se desvían <b>más en seco</b>, porque pasar deprisa no deja tiempo a que las empujen. Prueba los dos extremos para encontrar la regla."
+   },
+   {
+    "name": "Trazas (casilla)",
+    "desc": "Deja dibujado como una línea el camino de cada partícula alfa.",
+    "tip": "<b>Actívalo sin falta.</b> Apagado, las partículas pasan como un fogonazo y no puedes saber qué ocurrió. El interruptor más importante de aquí."
+   },
+   {
+    "name": "Átomo — Número de protones · Número de neutrones (derecha, solo en la pantalla de Rutherford)",
+    "desc": "Cambian el número de partículas del núcleo. Los protones van de 20 a 100 y los neutrones hasta 150.",
+    "tip": "Cambia <b>solo los protones</b>. El rebote se hace más fuerte por la carga, no por el peso. Añadir neutrones apenas lo cambia."
+   },
+   {
+    "name": "Leyenda (arriba a la derecha)",
+    "desc": "Te dice qué es cada punto de la pantalla: partícula alfa, núcleo, nivel de energía del electrón, traza de la partícula alfa.",
+    "tip": "Ábrela una vez al principio. Si confundes los puntos amarillos con los rojos no verás nada de nada."
+   },
+   {
+    "name": "La lectura de escala (arriba de la pantalla)",
+    "desc": "Te dice el tamaño que estás mirando, en <b>m (escala atómica)</b> o <b>m (escala nuclear)</b>.",
+    "tip": "Lee los números una vez. La escala atómica y la nuclear se llevan un factor de <b>cien mil</b>. El núcleo sale dibujado grande en pantalla; en realidad no es nada de eso."
+   }
+  ],
+  "steps": [
+   "Abre primero la pantalla <b>Modelo atómico de budín de pasas (Thomson)</b>.",
+   "Activa <b>Trazas</b>, enciende el cañón y déjalo un rato.",
+   "Pasa a la pantalla <b>Modelo atómico de Rutherford</b> y dispara en las mismas condiciones.",
+   "<b>Espera</b> hasta que ocurra un rebote grande.",
+   "Lleva el <b>Número de protones</b> de 20 a 100 y mira cómo cambia el rebote.",
+   "Baja la <b>Energía</b> al mínimo y dispara otra vez."
+  ],
+  "gotchas": [
+   "Los rebotes grandes son <b>raros.</b> No mires unos segundos y concluyas «no rebota»: la rareza es la mitad de la conclusión.",
+   "El núcleo de la pantalla está dibujado <b>mucho más grande de lo que es</b>. A escala real no sería ni un punto visible.",
+   "La pantalla del budín de pasas <b>no tiene panel de átomo.</b> No es un fallo: ese modelo no tiene núcleo.",
+   "Añadir neutrones apenas cambia el rebote. Lo que hace un rebote es la <b>carga</b>, no el peso."
+  ]
+ },
+ "models-of-the-hydrogen-atom": {
+  "summary": "Ilumina un átomo de hidrógeno y mira <b>la luz que sale</b> con un espectrómetro. El interruptor de arriba a la izquierda va entre <b>Experimento</b> (no ves dentro) y <b>Modelo</b> (sí ves), y de lo que va es de averiguar qué modelo cuadra con la realidad.",
+  "screens": [
+   {
+    "name": "Espectros",
+    "what": "La pantalla que usa esta lección. Están disponibles los <b>seis</b> modelos."
+   },
+   {
+    "name": "Niveles de energía",
+    "what": "Solo los <b>tres</b> modelos cuánticos (Bohr, de Broglie, Schrödinger), pero con la escalera de <b>Nivel de energía de los electrones</b> añadida a la derecha."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El interruptor Experimento / Modelo (arriba a la izquierda)",
+    "desc": "En <b>Experimento</b> el interior de la caja está tapado por una <b>?</b>. Deslízalo a <b>Modelo</b> y puedes ver dentro y elegir un modelo.",
+    "tip": "<b>Haz primero el experimento.</b> Mirar la respuesta antes deja todo esto sin sentido. Anota el resultado experimental y luego prueba los modelos contra él."
+   },
+   {
+    "name": "Selector de modelo (izquierda)",
+    "desc": "Bajo <b>Clásico</b> están Esfera rígida, Pudín de pasas y Sistema solar clásico; bajo <b>Cuántico</b>, Bohr, de Broglie y Schrödinger.",
+    "tip": "Están puestos de arriba abajo en orden histórico. Baja por ellos y encuentra <b>dónde empiezan a coincidir con el experimento</b>."
+   },
+   {
+    "name": "La caja de la luz — Blanco · Monocromático (abajo a la izquierda)",
+    "desc": "<b>Blanco</b> dispara todos los colores a la vez; <b>Monocromático</b> dispara una sola longitud de onda y saca un mando de longitud de onda.",
+    "tip": "Mira <b>el cuadro entero</b> con blanco y luego <b>comprueba de uno en uno</b> con monocromático. En monocromático solo responde la longitud de onda exacta."
+   },
+   {
+    "name": "Espectro (abajo en el centro)",
+    "desc": "Cuenta por longitud de onda la luz que sale y la apila en barras. Abajo está <b>longitud de onda (nm)</b>, dividida en UV, Visible e IR.",
+    "tip": "Los resultados <b>tardan</b> en acumularse. Dale unos segundos antes de que salgan las rayas. No cambies de modelo en cuanto veas que no aparece nada."
+   },
+   {
+    "name": "Transiciones (abajo a la izquierda, el botón bajo la caja de la luz — abre una ventana)",
+    "desc": "Una lista de <b>los escalones entre los que puede moverse un electrón</b>, escrita como <b>1 ↔ 2, 2 ↔ 3</b> y demás. Aparece a partir de <b>Bohr</b>; los modelos anteriores no tienen ese botón.",
+    "tip": "Lee los números de dentro: te dicen a qué escalón puede moverse un electrón desde cuál."
+   },
+   {
+    "name": "Velocidad — Rápido · Normal · Lento (abajo)",
+    "desc": "Lo rápido que corre la simulación.",
+    "tip": "Para mirar <b>un solo suceso</b> de un electrón saltando y escupiendo luz, ponlo en <b>Lento</b>. A velocidad normal se acaba en un instante."
+   },
+   {
+    "name": "Nivel de energía de los electrones (derecha de la pantalla Niveles de energía)",
+    "desc": "Dibuja los escalones de n = 1 a 6, señalando en cuál está ahora el electrón.",
+    "tip": "Fíjate en que <b>los huecos se estrechan según subes</b>. Por eso las transiciones entre los escalones altos llevan poca energía y salen en longitudes de onda largas, en el infrarrojo."
+   }
+  ],
+  "steps": [
+   "Deja el interruptor en <b>Experimento</b> y dispara luz <b>Blanco</b>.",
+   "Cuenta y anota <b>cuántas</b> rayas aparecen en el espectro.",
+   "Pasa el interruptor a <b>Modelo</b> y baja desde <b>Esfera rígida</b>.",
+   "Encuentra qué modelo da por primera vez <b>las mismas rayas</b> que el experimento.",
+   "Cambia la luz a <b>Monocromático</b> y mueve la longitud de onda para encontrar dónde responde.",
+   "Baja la velocidad a <b>Lento</b> y mira el momento en que salta un electrón."
+  ],
+  "gotchas": [
+   "Los resultados <b>tardan</b> en acumularse en el espectro. Que no aparezca nada enseguida no es un fallo.",
+   "Elige el modelo <b>Sistema solar clásico</b> y el electrón cae en espiral hasta el núcleo, así que la simulación parece haberse parado. Eso es precisamente la prueba de que el modelo está mal.",
+   "Esta simulación se hizo para secundaria. Con entender que solo hay unos pocos escalones basta.",
+   "La caja de resultados se llama <b>Espectro</b> en pantalla, no «espectrómetro»."
+  ]
+ },
+ "build-a-nucleus": {
+  "summary": "Cambia <b>solo el número de protones y neutrones</b> y mira qué núcleos aguantan y cuáles se caen a pedazos. Pulsa un botón de decaimiento y el núcleo se rompe de verdad.",
+  "screens": [
+   {
+    "name": "Decaimiento",
+    "what": "La pantalla que usa esta lección. Puedes llegar a <b>94</b> protones y <b>146</b> neutrones."
+   },
+   {
+    "name": "Intro a la Gráfica",
+    "what": "Una gráfica de nucleidos con <b>Número de Neutrones</b> a lo ancho y <b>Número de Protones</b> a lo alto. Esta pantalla solo llega a 10 protones y 12 neutrones."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Protones · Neutrones (flechas de abajo a la izquierda)",
+    "desc": "Las flechas de arriba y abajo cambian las cuentas de una en una, y las partículas se pegan al núcleo o lo dejan.",
+    "tip": "Cambia <b>solo uno de los dos</b>. Mantén los protones y sube los neutrones y recorres los isótopos de un elemento: la forma correcta de usar esta simulación."
+   },
+   {
+    "name": "Semivida (la escala de arriba a la izquierda)",
+    "desc": "Enseña cuánto sobrevive el núcleo que has construido, en escala logarítmica de <b>10⁻²⁴ a 10²⁴ segundos</b>. Los núcleos estables quedan fuera de la escala, y las combinaciones que nadie ha medido ponen <b>Desconocido</b>.",
+    "tip": "La escala es logarítmica. Un paso son <b>mil veces</b>. Un desplazamiento pequeño es una diferencia enorme."
+   },
+   {
+    "name": "Decaimientos Disponibles (derecha)",
+    "desc": "Los decaimientos que puede hacer este núcleo, como botones: <b>decaimiento α · decaimiento β⁻ · decaimiento β⁺ · emisión de Protones · emisión de Neutrones</b>. Pulsa uno y se desintegra de verdad.",
+    "tip": "Anota las cuentas de protones y neutrones <b>antes</b> de pulsar. Compararlas después te construye gratis la tabla de qué cambia cada decaimiento."
+   },
+   {
+    "name": "Símbolo (caja plegable de la derecha)",
+    "desc": "Enseña el símbolo del elemento con el número másico y el número de protones.",
+    "tip": "Déjala abierta. Es el sitio más rápido para ver <b>si cambió el elemento</b> tras un decaimiento."
+   },
+   {
+    "name": "La escala de menos estable a más estable",
+    "desc": "Una flecha que te dice si este núcleo está del lado estable.",
+    "tip": "Mueve los neutrones de uno en uno mirando la flecha. Te haces una idea de <b>hacia dónde hay que ir para ser estable</b>."
+   },
+   {
+    "name": "Nube de Electrones (casilla)",
+    "desc": "Dibuja la nube de electrones alrededor del núcleo.",
+    "tip": "El núcleo es la estrella de esta simulación. <b>Dejar la nube apagada</b> facilita mirarlo."
+   },
+   {
+    "name": "Gráfica Parcial de Nucleidos · Gráfica Completa · Números mágicos (pantalla Intro a la Gráfica)",
+    "desc": "Elige una vista estrecha o ancha de la gráfica de nucleidos, y activa <b>Números mágicos</b> para marcar las filas especialmente estables.",
+    "tip": "Coge la vista ancha con <b>Gráfica Completa</b> y verás los núcleos estables formando una <b>banda diagonal</b>. El decaimiento es, al final, un intento de meterse en esa banda."
+   }
+  ],
+  "steps": [
+   "Pon <b>6 protones y 6 neutrones</b> (carbono-12) y mira la semivida.",
+   "Sube <b>solo los neutrones a 8</b> (carbono-14) y mira cómo cambia la semivida.",
+   "Abre la caja <b>Símbolo</b> y anota las cuentas de protones y neutrones.",
+   "Pulsa un botón de <b>Decaimientos Disponibles</b> para desintegrarlo y vuelve a anotar los números.",
+   "Sigue subiendo los neutrones hasta llegar a <b>Desconocido</b>.",
+   "En la pantalla <b>Intro a la Gráfica</b> activa <b>Gráfica Completa</b> y <b>Números mágicos</b> y mira la forma de la banda."
+  ],
+  "gotchas": [
+   "La escala de semivida es <b>logarítmica</b>. Un paso son mil veces.",
+   "<b>Desconocido</b> no es un fallo. Significa que nadie ha fabricado ni medido todavía esa combinación.",
+   "Si un decaimiento <b>cambia el número de protones, cambia el elemento.</b> Comprueba el nombre.",
+   "La pantalla <b>Intro a la Gráfica</b> solo llega a 10 protones y 12 neutrones. Los núcleos pesados solo se construyen en la pantalla <b>Decaimiento</b>.",
+   "β⁻ y β⁺ son <b>decaimientos distintos</b>. El menos convierte un neutrón en protón; el más, un protón en neutrón."
+  ]
+ },
+ "alpha-decay": {
+  "summary": "<b>Esta simulación solo aparece en inglés</b>, así que abajo están los nombres ingleses tal cual, con su significado al lado. Las tres pantallas van <b>un átomo → varios → muchísimos</b>, así que recorrerlas en orden es ya el diseño de la simulación.",
+  "screens": [
+   {
+    "name": "Single Atom",
+    "what": "Mira cuándo se desintegra <b>un</b> átomo. Sale distinto cada vez. Debajo lleva enganchado un diagrama de energía."
+   },
+   {
+    "name": "Multiple Atoms",
+    "what": "Pon <b>varios</b> átomos y míralos desintegrarse uno a uno. Empieza a asomar una tendencia."
+   },
+   {
+    "name": "Decay Rate",
+    "what": "Dibuja como curva el <b>porcentaje restante</b> de muchísimos átomos. Sale una exponencial lisa."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Add Atom (añadir átomo)",
+    "desc": "Pone un átomo de polonio-211. Una vez se desintegra, puedes volver a pulsar para tener otro.",
+    "tip": "Repítelo <b>más de diez veces</b>. Una o dos no te enseñan el «distinto cada vez», y esa repetición es el corazón de esta lección."
+   },
+   {
+    "name": "Decay Time (tiempo de desintegración)",
+    "desc": "Escribe, en segundos, lo que tardó en desintegrarse este átomo.",
+    "tip": "Anota <b>solo cinco</b> en papel. Ver los números desperdigados es de lo que va esto."
+   },
+   {
+    "name": "Half-life (semivida) — mando",
+    "desc": "Cambia la semivida. La <b>Time Scale</b> (escala de tiempo) de debajo va logarítmica de ms a 10⁹ años.",
+    "tip": "Una semivida corta acaba cada intento deprisa, lo cual va bien para repetir. Mantenla <b>corta</b> mientras buscas la regla."
+   },
+   {
+    "name": "Isotope (isótopo) — Polonium-211 · Custom",
+    "desc": "Elige un isótopo real o construye el tuyo. <b>Custom</b> te deja fijar protones y neutrones a tu gusto.",
+    "tip": "Déjalo en <b>Polonium-211</b> para empezar. Con valores reales, la ecuación nuclear de después cuadra exacta con un libro de texto."
+   },
+   {
+    "name": "Nuclear Equation (ecuación nuclear)",
+    "desc": "Escribe la desintegración como fórmula: ²¹¹Po → ²⁰⁷Pb + ⁴He. El número de arriba es el másico y el de abajo, el de protones.",
+    "tip": "<b>Suma por separado los números de arriba y los de abajo.</b> 211 = 207 + 4, 84 = 82 + 2. Los dos lados cuadran siempre: no se pierde ni se crea nada."
+   },
+   {
+    "name": "Energy Diagram (diagrama de energía, abajo, en la pantalla Single Atom)",
+    "desc": "<b>Distance</b> (distancia) en horizontal, <b>Energy</b> (energía) en vertical. La <b>Alpha Particle Energy</b> queda por debajo del muro de <b>Potential Energy</b>, y sale igualmente.",
+    "tip": "Esto es el <b>efecto túnel</b>. Atraviesa un muro que no puede escalar, así que cuándo lo atravesará solo se puede decir como probabilidad. La razón real de que la desintegración sea indomable."
+   },
+   {
+    "name": "Labels · Stopwatch (etiquetas · cronómetro, pantalla Multiple Atoms)",
+    "desc": "Ponen un rótulo con el nombre a cada átomo y sacan un cronómetro.",
+    "tip": "Activa <b>Labels</b> y verás de un vistazo qué átomos siguen siendo polonio y cuáles ya son plomo."
+   },
+   {
+    "name": "Data Probe (sonda de datos, pantalla Decay Rate)",
+    "desc": "Arrástrala sobre la curva y lee el <b>Isotope Remaining (%)</b> (isótopo restante) de ese instante.",
+    "tip": "Ponla en las <b>Half-lives</b> 1, 2 y 3 por turnos. Marca exactamente 100 → 50 → 25 → 12,5."
+   },
+   {
+    "name": "Normal · Slow (velocidad)",
+    "desc": "Lo rápido que corre la simulación.",
+    "tip": "Para pillar <b>el momento</b> de una desintegración, usa <b>Slow</b>."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Single Atom</b> pulsa <b>Add Atom</b> para poner un átomo.",
+   "Anota el <b>Decay Time</b> y repítelo todo <b>más de diez veces</b>.",
+   "Abre la <b>Nuclear Equation</b> y comprueba que los números de arriba y de abajo cuadran.",
+   "En el <b>Energy Diagram</b>, mira a la partícula alfa encerrada dentro del muro.",
+   "En la pantalla <b>Multiple Atoms</b> pon varios átomos y activa <b>Labels</b>.",
+   "En la pantalla <b>Decay Rate</b> mira la curva y lee valores con la <b>Data Probe</b>."
+  ],
+  "gotchas": [
+   "<b>La pantalla solo sale en inglés.</b> Busca el significado en los nombres de arriba.",
+   "Cuándo se desintegra <b>un</b> átomo no se puede predecir. De lo que va es de repetirlo varias veces y ver los tiempos salir desperdigados.",
+   "Los átomos <b>no envejecen.</b> Esperar mucho no acerca a ninguno a su turno.",
+   "<b>Half-lives</b> y <b>Half-life</b> son cosas distintas. La primera es una cuenta; la segunda, la duración de una.",
+   "El diagrama de energía está <b>solo en la pantalla Single Atom</b>. En las otras no lo encontrarás."
+  ]
+ },
+ "beta-decay": {
+  "summary": "<b>Esta simulación también sale en inglés.</b> Los mandos son <b>casi idénticos</b> a los de la simulación de decaimiento alfa y las tres pantallas van en el mismo orden. La única diferencia es <b>qué sale volando y qué le pasa al número de protones</b>, así que si has hecho la lección 5 puedes concentrarte solo en esa diferencia.",
+  "screens": [
+   {
+    "name": "Single Atom",
+    "what": "La pantalla que usa esta lección. Mira desintegrarse un átomo de tritio (³H) o de carbono-14."
+   },
+   {
+    "name": "Multiple Atoms",
+    "what": "Pon varios átomos y míralos desintegrarse uno a uno."
+   },
+   {
+    "name": "Decay Rate",
+    "what": "La curva de porcentaje restante. Compárala con la del decaimiento alfa y mira si tiene <b>la misma forma</b>."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Isotope (isótopo) — Hydrogen-3 · Carbon-14 · Custom",
+    "desc": "Elige tritio (³H), carbono-14 o un núcleo que construyas tú.",
+    "tip": "Prueba <b>Carbon-14</b>, sin falta. Es el núcleo que construiste en la lección 4 (Construye un Núcleo), y justo el que se usa para datar."
+   },
+   {
+    "name": "Protons · Neutrons (protones · neutrones)",
+    "desc": "Las cuentas de protones y neutrones del núcleo actual.",
+    "tip": "La <b>lectura más importante</b> de esta simulación. Anota los dos números antes y después de la desintegración: te salen neutrones −1, protones +1."
+   },
+   {
+    "name": "Nuclear Equation (ecuación nuclear)",
+    "desc": "Escrita como ³H → ³He + e⁻.",
+    "tip": "Comprueba que <b>el número de arriba (el másico) no cambia</b>. En el decaimiento alfa bajaba en 4; aquí se mantiene. Esa es la mayor diferencia entre los dos decaimientos."
+   },
+   {
+    "name": "Half-life (semivida) — mando",
+    "desc": "Cambia la semivida. La <b>Time Scale</b> de debajo va de ms a 10⁹ años.",
+    "tip": "La semivida real del carbono-14 es de 5730 años. Busca más o menos dónde cae eso en la escala."
+   },
+   {
+    "name": "Labels · Stopwatch (etiquetas · cronómetro, pantalla Multiple Atoms)",
+    "desc": "Ponen un rótulo con el nombre a cada átomo y los cronometran.",
+    "tip": "Activa <b>Labels</b> y podrás ver al ³H convertirse en ³He con todas las letras. La demostración más clara posible de que el elemento cambia."
+   },
+   {
+    "name": "Data Probe (sonda de datos, pantalla Decay Rate)",
+    "desc": "Lee de la curva el porcentaje restante.",
+    "tip": "Compara con los valores que leíste en el decaimiento alfa. <b>Son los mismos.</b> Distintos tipos de decaimiento, una sola regla de semivida."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Single Atom</b> pon un átomo y anota <b>Protons</b> y <b>Neutrons</b>.",
+   "Espera a que se desintegre y <b>vuelve a anotar los dos números</b> y compara.",
+   "Abre la <b>Nuclear Equation</b> y comprueba que el número másico no cambia.",
+   "Cambia <b>Isotope</b> a <b>Carbon-14</b> y haz lo mismo.",
+   "En la pantalla <b>Multiple Atoms</b> activa <b>Labels</b> y mira cambiar el elemento.",
+   "Compara la curva de la pantalla <b>Decay Rate</b> con la de la lección 5."
+  ],
+  "gotchas": [
+   "<b>La pantalla solo sale en inglés.</b> Busca el significado en los nombres de arriba.",
+   "El electrón que sale volando <b>no vino de las capas de electrones.</b> Se fabrica dentro del núcleo en el instante de la desintegración.",
+   "En el decaimiento β⁻ el <b>número másico no cambia.</b> Un neutrón <b>se convirtió</b> en un protón, así que el total se mantiene.",
+   "La disposición es la misma que la del decaimiento alfa y es fácil confundirse. Si el átomo de partida es <b>³H</b> estás aquí; si es <b>²¹¹Po</b>, en la de alfa.",
+   "Puede que en la leyenda siga apareciendo <b>Alpha Particle</b>. Las dos simulaciones comparten componentes; del decaimiento beta no sale ninguna partícula alfa."
+  ]
  }
 }
