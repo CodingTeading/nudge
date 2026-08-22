@@ -199,5 +199,266 @@
     "right": 1
    }
   ]
+ },
+ "throw-1": {
+  "course": "throw",
+  "sim": "projectile-motion",
+  "screens": null,
+  "title": "Lánzalo de lado y aun así tarda lo mismo en caer",
+  "lead": "Dispara una bala en horizontal y suelta otra de la mano en el mismo instante: las dos llegan al suelo a la vez.",
+  "hook": "Desde el borde de una mesa, <b>suelta una bola sin más</b> mientras <b>empujas otra fuerte hacia un lado</b> en el mismo instante. ¿Cuál llega antes al suelo? Casi todo el mundo dice que la que soltaste, porque la que vuela parece <b>necesitar más tiempo para recorrer toda esa distancia.</b> En realidad caen <b>a la vez</b>. En cuanto ves por qué, la forma entera de una parábola cobra sentido.",
+  "predict": {
+   "q": "Desde la misma altura, una bola se <b>suelta sin más</b> y la otra se <b>lanza fuerte, en horizontal.</b> ¿Cuál llega antes al suelo?",
+   "opts": [
+    "La bola que se suelta",
+    "La bola lanzada de lado",
+    "Llegan a la vez",
+    "Depende de la fuerza del lanzamiento"
+   ]
+  },
+  "missions": [
+   "Esta es la pantalla <b>Introducción</b>. Arrastra el cañón de la izquierda arriba y abajo para la altura, y prepara el disparo con <b>Ángulo</b> y <b>Rapidez Inicial</b>, abajo.",
+   "Primero <b>desactiva</b> la casilla <b>Resistencia del aire</b>. De momento quieres la regla pelada.",
+   "Sube el cañón hasta una <b>Altura</b> de unos <b>10 m</b> y pon el <b>Ángulo</b> en <b>0°</b> (horizontal).",
+   "Deja la <b>Rapidez Inicial</b> en <b>0</b> y dispara. Solo cae. Anota la lectura de <b>Tiempo</b> de arriba.",
+   "Ahora sube la <b>Rapidez Inicial</b> a <b>15 m/s</b>, deja el ángulo en 0° y dispara. ¿Es el <b>Tiempo</b> el mismo que antes? Esa es la respuesta a ②.",
+   "Sube la rapidez hasta <b>25 m/s</b>. Llega mucho más lejos: ¿qué hace el <b>Tiempo</b>?",
+   "Con el botón de la casa ve a la pantalla <b>Vectores</b> y marca <b>Vectores Velocidad → Componentes</b>. La velocidad se parte en una <b>flecha horizontal</b> y una <b>flecha vertical</b>.",
+   "Mientras vuela, ¿cambia la <b>flecha horizontal</b>? ¿Y la <b>flecha vertical</b>? Esa diferencia es toda la historia.",
+   "Activa también <b>Vectores Aceleración</b>. Apunta siempre <b>recto hacia abajo</b>, a ningún otro sitio.",
+   "Recorre los ángulos de <b>15° · 30° · 45° · 60° · 75°</b> y anota la <b>Distancia horizontal</b> de cada uno. ¿Qué ángulo lo lleva más lejos?",
+   "Ahora activa la <b>Resistencia del aire</b> y repite solo <b>30° · 45° · 60°</b>. ¿Se mueve el ángulo que llega más lejos?"
+  ],
+  "record": "Anota el tiempo que tardó con rapideces de 0, 15 y 25. ¿Y qué ángulo lo llevó más lejos?",
+  "explain": {
+   "right": 2,
+   "body": "<p>La respuesta es que <strong>llegan a la vez</strong>. Pusieras la rapidez en 0 o en 25 m/s, <strong>el tiempo fue el mismo</strong>.</p><p>La razón es que <strong>lo horizontal y lo vertical no se estorban entre sí</strong>. Lo que viste en la pantalla Vectores es la prueba.</p><ul><li><strong>La flecha horizontal</strong>: <strong>la misma longitud</strong> todo el camino. Nada empuja de lado, así que la rapidez no cambia.</li><li><strong>La flecha vertical</strong>: <strong>se alarga hacia abajo.</strong> La gravedad solo tira hacia abajo.</li></ul><p>La gravedad actúa <strong>solo hacia abajo</strong>. Así que <strong>el tiempo que tarda en caer</strong> no tiene nada que ver con lo deprisa que vayas de lado. Ir más rápido de lado te lleva <strong>más lejos</strong>; no te mantiene arriba <strong>más rato</strong>.</p><p>Eso explica también la forma. De lado avanza <strong>a ritmo constante</strong>, hacia abajo <strong>se acelera al caer</strong>, y juntar las dos cosas da una curva que empieza suave y se hace más empinada: la parábola de la lección 12.</p><p>El que habrá llegado más lejos es <strong>45°</strong>. Un ángulo bajo cae demasiado pronto para tener tiempo; uno alto se queda arriba mucho rato pero casi no avanza de lado. 45° es <strong>donde las dos cosas se equilibran</strong>.</p><p>Pero <strong>activa la Resistencia del aire</strong> y el ángulo que llega más lejos baja <strong>por debajo de 45°</strong>. El aire pelea contra el avance, así que quedarse arriba más rato empieza a salir caro. Por eso el mejor ángulo para un proyectil real o una pelota de golf no es 45°.</p>"
+  },
+  "real": "El arco de un tiro a canasta, un tiro libre, las tablas de alcance de la artillería: todo es este mismo cálculo. Es también la razón de que un avión que suelta ayuda humanitaria la deje caer <b>bastante antes</b> del objetivo: las cajas caen llevándose todavía la velocidad lateral del avión. Un saltador de longitud despega más bien a unos <b>20°</b> por otro motivo: salir alto obliga a plantar el pie más rato, y eso cuesta velocidad de carrera.",
+  "quiz": [
+   {
+    "q": "Mientras vuela una bola lanzada en horizontal, su <b>rapidez horizontal</b> está:",
+    "opts": [
+     "Aumentando",
+     "Disminuyendo",
+     "Sin cambiar (sin resistencia del aire)"
+    ],
+    "right": 2
+   },
+   {
+    "q": "Sin resistencia del aire, ¿qué ángulo de lanzamiento llega más lejos?",
+    "opts": [
+     "30°",
+     "45°",
+     "60°"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Hacia dónde apunta la <b>aceleración</b> de una bola en vuelo?",
+    "opts": [
+     "Hacia donde vuela",
+     "Siempre hacia abajo",
+     "Arriba al principio, abajo después"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "throw-2": {
+  "course": "throw",
+  "sim": "projectile-data-lab",
+  "screens": null,
+  "title": "Dispáralo igual y cae en otro sitio",
+  "lead": "No cambies absolutamente nada, dispara cien veces y cada punto de caída es distinto. Y aun así esa dispersión lleva una regla dentro.",
+  "hook": "La lección 1 decía que en cuanto fijas el ángulo y la rapidez puedes <b>calcular dónde cae</b>. ¿Y qué pasa si de verdad disparas el mismo cañón con la misma preparación cien veces? ¿Pasan los cien por <b>un solo agujero</b>? Claro que no: la pólvora, el aire, diferencias mínimas entre proyectiles, todo varía un poco. Esta simulación coge esa <b>dispersión</b> de frente.",
+  "predict": {
+   "q": "No cambias absolutamente nada y disparas <b>100 veces</b>. ¿Qué aspecto tienen los puntos de caída?",
+   "opts": [
+    "Los 100 en el mismo sitio",
+    "Repartidos <b>alrededor</b> de un punto concreto",
+    "Esparcidos por cualquier parte de la pantalla",
+    "Alejándose más cuanto más disparas"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Variabilidad</b>. Arriba a la izquierda eliges <b>Orientación · Proyectil · Lanzador misterioso</b>. Los ajustes de lanzamiento están <b>ocultos y no se pueden cambiar</b>: de eso va esta pantalla.",
+   "Déjalo en <b>Solo uno</b>, abajo, y haz un disparo. Una barra del <b>Histograma</b> de arriba sube una muesca.",
+   "No cambies nada y dispara <b>cinco veces más</b>. ¿Caen en el mismo sitio?",
+   "Cambia a <b>Continuo</b> y dispara <b>decenas</b> de veces. Mira cómo se amontonan las barras. Esa es la respuesta a ②.",
+   "¿Qué forma están dibujando las barras? ¿Es una campana, <b>alta en el centro y baja en los dos bordes</b>?",
+   "Cambia el <b>Tamaño de Contenedores</b> a la izquierda. Los mismos datos, pero cambia <b>lo fino</b> que los picas para contarlos, y con ello las barras.",
+   "Activa <b>Trayectorias</b> a la derecha y cada vuelo deja su rastro. Mira cuánto se solapan.",
+   "Con el botón de la casa ve a la pantalla <b>Mediciones</b>. Ahora puedes activar <b>Media</b> y <b>Desviación Estándar</b>.",
+   "Activa <b>Media</b> y sigue disparando. Cuantos más disparos, más <b>se tambalea y luego se asienta</b> la línea de la media.",
+   "Activa <b>Desviación Estándar</b>. Enseña la dispersión como una anchura. Es la idea de la lección 14.",
+   "Cambia al <b>Lanzador Personalizado</b> y agranda y reduce la dispersión tú mismo."
+  ],
+  "record": "¿Qué forma dibujaron las barras después de decenas de disparos? ¿Y qué le pasó a la línea de la media conforme crecía el número de disparos?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>repartidos alrededor de un punto concreto</strong>. Ni esparcidos por cualquier parte, ni amontonados en un solo punto.</p><p>Las barras habrán dibujado una campana: <strong>alta en el centro, más baja hacia los dos bordes</strong>. Esta forma aparece sin parar en la naturaleza: la estatura de las personas, las notas de un examen, el error de una medida, el peso de lo que sale de una fábrica. Siempre que <strong>se acumulan varias causas pequeñas de variación</strong>, sale casi siempre esta forma.</p><p>Es decir: <strong>no puedes predecir uno, pero sí puedes predecir el conjunto.</strong> Dónde caerá el próximo disparo suelto se te escapa; más o menos dónde se agruparán cien, lo puedes decir con bastante acierto.</p><p>La lección 05 contaba lo mismo con la desintegración radiactiva. No puedes decir cuándo se desintegrará un átomo y sin embargo la curva de muchísimos átomos salía tan lisa como trazada con regla. <strong>Junta suficientes cosas que varían y sale una regla.</strong></p><p>Y eso significa que describir el resultado exige <strong>dos</strong> números.</p><ul><li><strong>Media</strong>: más o menos dónde se agrupan</li><li><strong>Desviación Estándar</strong>: cómo de repartidos están</li></ul><p>La lección 14 decía «con la media no basta», y aquí lo tienes en carne y hueso. Dos cañones con la misma media pero distinta <strong>dispersión</strong> son cañones completamente distintos. Un cañón que no falla nunca y un cañón que rocía por todas partes pueden compartir la media.</p><p>Acuérdate también de que cambiar el <strong>Tamaño de Contenedores</strong> cambiaba el aspecto de las barras. <strong>Los datos no cambiaron nunca; solo cómo los agrupaste para contarlos.</strong> Merece la pena tenerlo presente cada vez que leas una gráfica estadística.</p>"
+  },
+  "real": "Lo que separa a los arqueros no es su media sino su <b>dispersión</b>. Controlar el diámetro de los tornillos en una fábrica, ensayar una vacuna en decenas de miles de personas, un pronóstico que dice «60% de probabilidad de lluvia»: todos se apoyan en conocer el conjunto sin conocer el caso suelto.",
+  "quiz": [
+   {
+    "q": "Dispara repetidamente con la misma preparación y los puntos de caída:",
+    "opts": [
+     "Se juntan en un solo punto",
+     "Se reparten en campana alrededor de un punto",
+     "Son completamente aleatorios"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Si dos cañones tienen <b>el mismo alcance medio</b>:",
+    "opts": [
+     "Rinden igual",
+     "Su dispersión puede seguir siendo distinta",
+     "Los dos no fallan nunca"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Cambiar el <b>Tamaño de Contenedores</b>:",
+    "opts": [
+     "Cambia los datos",
+     "Deja los datos igual y solo cambia cómo se agrupan",
+     "Cambia la media"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "throw-3": {
+  "course": "throw",
+  "sim": "energy-skate-park",
+  "screens": null,
+  "title": "Nunca puedes subir más alto de donde saliste",
+  "lead": "Pierdes altura y ganas rapidez; pierdes rapidez y ganas altura. El total no se mueve.",
+  "hook": "En la lección 1 la bola que lanzaste <b>subió y volvió a bajar.</b> Frenaba al subir y se aceleraba al bajar, como si estuviera <b>cambiando altura por rapidez</b>. Esta simulación te enseña ese cambio en una pista de patinaje. Y el cambio tiene <b>una raya que no puede cruzar</b>.",
+  "predict": {
+   "q": "En una pista <b>sin nada de rozamiento</b>, pones al patinador a 5 m de altura y lo sueltas. ¿Hasta qué altura puede llegar por el otro lado?",
+   "opts": [
+    "Más de 5 m",
+    "Exactamente 5 m",
+    "Menos de 5 m",
+    "Depende de la forma de la pista"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Intro</b>. Arrastra al patinador a la pista y empieza a deslizarse.",
+   "La caja de <b>Energía</b> de arriba a la izquierda abre <b>plegada</b>. Pulsa <b>▸</b> para abrirla. Aparecen cuatro barras: <b>Cinética · Potencial · Térmica · Total</b>.",
+   "Pon la <b>Fricción</b> de la derecha en <b>Ninguna</b>. De momento quieres el cambio a solas.",
+   "Coloca al patinador en el <b>lado alto</b> de la pista y suéltalo. ¿Cómo van y vienen las barras?",
+   "En el punto más bajo, comprueba que <b>Cinética</b> está en su máximo y <b>Potencial</b> en su mínimo.",
+   "¿Y la barra <b>Total</b>? ¿Se queda a <b>la misma altura</b> esté donde esté el patinador?",
+   "Mira <b>hasta dónde sube</b> el patinador por el otro lado. ¿Pasa de la altura de la que salió? Esa es la respuesta a ②.",
+   "Activa la <b>Gráfica circular</b> de la derecha para ver lo mismo en forma de círculo.",
+   "Ahora sube un poco la <b>Fricción</b>. La barra <b>Térmica</b> empieza a crecer y el patinador sube cada vez menos.",
+   "Comprueba que la barra <b>Total</b> se mantiene firme incluso con rozamiento. No ha desaparecido nada: <b>se ha pasado a calor</b>.",
+   "Con el botón de la casa ve a la pantalla <b>Medidas</b> y mueve la <b>Altura de Referencia</b>. Todos los valores de energía potencial se desplazan con ella.",
+   "Cambia la <b>Gravedad</b> a <b>Luna</b> o <b>Júpiter</b>. La misma pista, un movimiento completamente distinto."
+  ],
+  "record": "Sin rozamiento, ¿cómo quedó el punto más alto que alcanzó el patinador por el otro lado frente a la altura de salida? ¿Y qué barra creció en cuanto activaste el rozamiento?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>exactamente 5 m</strong>. No puede pasar de ahí.</p><p>La razón es que <strong>la barra Total no cambia nunca</strong>. La energía que tiene el patinador está repartida en dos.</p><ul><li><strong>Energía potencial</strong>: mayor cuanto más alto estás</li><li><strong>Energía cinética</strong>: mayor cuanto más rápido vas</li></ul><p>Al bajar, la potencial cae y la cinética sube; al subir, al revés. Pero <strong>su suma es siempre la misma.</strong> Así que arriba del todo por el otro lado, en el instante en que la rapidez llega a 0, toda la energía vuelve a ser potencial y ese valor <strong>tiene que coincidir con el del principio</strong>. Misma energía potencial significa <strong>misma altura</strong>.</p><p>Esto es la <strong>conservación de la energía</strong>, que es otra forma de decir que no hay energía gratis. Es justo por lo que una montaña rusa jamás puede levantar una cuesta más alta que la primera.</p><p>Que la barra <strong>Térmica</strong> creciera al subir la <strong>Fricción</strong> importa igual de mucho. El patinador subía menos cada vez y aun así <strong>la Total se mantenía firme</strong>. La energía <strong>no desapareció; cambió de forma y se hizo calor</strong>, la misma razón por la que un tobogán te deja caliente.</p><p>Ahora bien, la energía que ya se ha hecho calor <strong>no se puede recuperar.</strong> Se ha desperdigado. Por eso una montaña rusa de verdad tiene cuestas cada vez más bajas y acaba parándose.</p><p>Y merece la pena fijarse en que mover la <strong>Altura de Referencia</strong> desplazaba todos los valores de energía potencial. La energía potencial es <strong>una magnitud que necesita una referencia</strong>: su valor depende de <strong>dónde decides poner el cero</strong>, igual que <strong>la distancia y el desplazamiento</strong> de la lección 14. Lo que importa nunca es el valor en sí, sino la <strong>diferencia</strong>.</p>"
+  },
+  "real": "El diseño de una montaña rusa se apoya en esta regla, y por eso la primera cuesta es la más alta. Una presa que retiene agua arriba para dejarla caer por una turbina, un péndulo que vuelve a la misma altura, un coche eléctrico que carga la batería al frenar: todos cambian entre altura, rapidez y calor.",
+  "quiz": [
+   {
+    "q": "Sin rozamiento, la energía <b>Total</b>:",
+    "opts": [
+     "Crece al bajar",
+     "Es la misma en todas partes",
+     "Crece al subir"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Activa el rozamiento, ¿qué barra crece?",
+    "opts": [
+     "Cinética",
+     "Potencial",
+     "Térmica"
+    ],
+    "right": 2
+   },
+   {
+    "q": "¿Por qué es la <b>primera cuesta</b> de una montaña rusa la más alta?",
+    "opts": [
+     "Para coger rapidez de salida",
+     "Porque nunca puede subir por encima de su altura de salida",
+     "Porque queda bonito"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "throw-4": {
+  "course": "throw",
+  "sim": "vector-addition",
+  "screens": null,
+  "title": "Cuando 3 más 4 no son 7",
+  "lead": "Las magnitudes con dirección no se pueden sumar sin más. Lo que en la lección 1 partiste a mano aquí se convierte en herramienta.",
+  "hook": "En la lección 1 partiste una velocidad en una <b>flecha horizontal y una flecha vertical</b>. Una magnitud que lleva <b>tamaño y dirección</b> a la vez es un vector. Velocidad, fuerza, desplazamiento: casi todas las magnitudes que importan en física son vectores. Pero sumar vectores no es como sumar números. <b>3 más 4</b> no tiene por qué dar 7.",
+  "predict": {
+   "q": "Sumas un vector de tamaño <b>3</b> con uno de tamaño <b>4</b>. ¿Cuánto mide la suma?",
+   "opts": [
+    "Siempre 7",
+    "Cualquier cosa <b>entre 1 y 7</b>, según las direcciones",
+    "Siempre 5",
+    "Siempre 12"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Explorar 1D</b>. Arrastra vectores desde el cajón de la derecha hasta la gráfica.",
+   "Coloca el vector <b>a</b> con longitud <b>3</b> y el vector <b>b</b> con longitud <b>4</b>, los dos apuntando a la <b>derecha</b>.",
+   "Marca <b>suma</b> a la derecha. Aparece el vector suma. ¿Cuánto mide?",
+   "Ahora dale la vuelta a <b>b</b> para que apunte a la <b>izquierda</b>. ¿Qué le pasa al tamaño de la suma?",
+   "Anota la suma en los dos casos, <b>misma dirección</b> y <b>direcciones contrarias</b>. Son los dos extremos del intervalo de ②.",
+   "Con el botón de la casa ve a la pantalla <b>Explorar 2D</b>. Ahora los vectores pueden apuntar <b>a donde quieras</b>.",
+   "Coloca otra vez vectores de tamaño <b>3</b> y <b>4</b> y <b>gira uno despacio</b>. El tamaño de la suma pasea <b>entre 1 y 7</b>.",
+   "Pon los dos vectores <b>en ángulo recto</b>. La suma da <b>exactamente 5</b>: el triángulo rectángulo de 3, 4 y 5.",
+   "En la caja <b>Componentes</b> de la derecha hay <b>cuatro botones con dibujos</b>. Elige el de <b>abajo a la derecha</b>, el dibujo con líneas de puntos bajadas hasta los ejes horizontal y vertical. El vector se parte <b>en horizontal y vertical</b>: lo que viste en la lección 1.",
+   "Marca <b>valores</b> y, debajo, la <b>casilla con el dibujo de θ</b> (mostrar ángulos) para tener el tamaño y el ángulo como números.",
+   "De los <b>dos botones con dibujos</b> de abajo a la derecha, elige el que está dibujado como un <b>abanico de marcas de ángulo</b> y la cuadrícula se convierte en una <b>escala de ángulos</b>."
+  ],
+  "record": "Anota el tamaño de la suma de vectores de 3 y 4 colocados en la misma dirección, en direcciones contrarias y en ángulo recto.",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>cualquier cosa entre 1 y 7, según las direcciones</strong>.</p><ul><li><strong>Misma dirección</strong>: 3 + 4 = <strong>7</strong>. Lo máximo que da.</li><li><strong>Direcciones contrarias</strong>: 4 − 3 = <strong>1</strong>. Lo mínimo.</li><li><strong>En ángulo recto</strong>: <strong>5</strong>. El triángulo rectángulo de 3, 4 y 5.</li><li>Con ángulos intermedios salen valores <strong>entre 1 y 7</strong>.</li></ul><p>¿Por qué? Sumar vectores significa <strong>ponerlos uno a continuación del otro</strong>. Anda 3 pasos y luego 4 más: si vas en la misma dirección acabas a 7 pasos del principio, pero si te das la vuelta estás a solo 1. Una suma de vectores no es <strong>cuánto has andado</strong> sino <strong>dónde has acabado</strong>.</p><p>Así que <strong>no se pueden sumar los tamaños sin más.</strong> Las direcciones tienen que venir también. El truco que lo hace fácil es <strong>partir en componentes</strong>.</p><p>Es lo que pasó cuando elegiste el botón del dibujo con las líneas de puntos bajadas hasta los ejes y el vector se partió en horizontal y vertical. Una vez partidos puedes sumar <strong>horizontales con horizontales y verticales con verticales</strong>, sin más. Las direcciones ya están resueltas, así que vuelve a ser una suma corriente.</p><p>Esto ya lo usaste en la lección 1. Partir la velocidad de la bola lanzada <strong>en horizontal y vertical</strong> dejaba a la vista de un vistazo que lo horizontal se mantenía y solo cambiaba lo vertical. Lo que allí hiciste a mano, aquí lo has convertido en <strong>herramienta</strong>.</p><p>Calcular una pendiente como <strong>subida ÷ avance</strong> en la lección 12 es la misma idea. Manejar algo inclinado <strong>partiéndolo en horizontal y vertical</strong> es el truco más útil que comparten las matemáticas y la física.</p>"
+  },
+  "real": "Un avión con viento cruzado tiene que apuntar el morro un poco contra el viento para llegar a su destino, porque la trayectoria real es la velocidad del avión más la del viento. Una barca cruzando un río, un tira y afloja tirado en diagonal, una grúa levantando con dos cables: todo son sumas de vectores.",
+  "quiz": [
+   {
+    "q": "La suma de dos vectores de tamaño <b>5</b> y <b>5</b> es <b>máxima</b> cuando están:",
+    "opts": [
+     "En ángulo recto",
+     "En la misma dirección",
+     "En direcciones contrarias"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Suma vectores de tamaño <b>6</b> y <b>8</b> en <b>ángulo recto</b>:",
+    "opts": [
+     "10",
+     "14",
+     "2"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿Qué tiene de bueno <b>partir un vector en componentes</b>?",
+    "opts": [
+     "Hace el tamaño más pequeño",
+     "Puedes sumar horizontales con horizontales y verticales con verticales",
+     "Puedes olvidarte de la dirección"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

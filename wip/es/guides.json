@@ -268,5 +268,339 @@
    "Si la bombilla apenas brilla, sube la intensidad o mueve el imán más deprisa. No está rota.",
    "El deslizador se llama <b>Área se la espira</b> en pantalla. Es una errata de la traducción de PhET por «Área de la espira»; búscalo tal cual está escrito."
   ]
+ },
+ "projectile-motion": {
+  "summary": "Dispara cosas con un cañón y mira <b>dónde caen y cuánto tardan</b>. Cambia el ángulo, la rapidez, el objeto y la resistencia del aire hasta que la regla se deje ver.",
+  "screens": [
+   {
+    "name": "Introducción",
+    "what": "Donde empieza esta lección. La pantalla más sencilla: solo el ángulo y la rapidez."
+   },
+   {
+    "name": "Vectores",
+    "what": "Enseña la velocidad y la aceleración como <b>flechas</b>. Partirlas en horizontal y vertical es el corazón de esta lección."
+   },
+   {
+    "name": "Arrastre",
+    "what": "La pantalla de la <b>resistencia del aire</b>. «Arrastre» aquí no es arrastrar algo con la mano: es la <b>resistencia del aire</b>."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Escribe tú los números: altura, ángulo, rapidez, masa, diámetro, incluso la gravedad."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Ángulo · Rapidez Inicial (abajo en la pantalla)",
+    "desc": "Fijan el ángulo de lanzamiento y la rapidez de salida. Puedes pulsar la casilla del número y escribir un valor.",
+    "tip": "Cambia <b>uno cada vez</b>. Si cambias el ángulo y la rapidez a la vez, nunca sabrás cuál movió el resultado."
+   },
+   {
+    "name": "Altura del cañón (arrastra el cañón arriba y abajo)",
+    "desc": "Arrastra el cañón hacia arriba y cambia la altura de lanzamiento. La escala de la izquierda marca la altura.",
+    "tip": "Para comparar soltar con lanzar hay que mantener <b>la misma altura</b>. Ajústala contra la escala."
+   },
+   {
+    "name": "Tiempo · Distancia horizontal · Altura (lecturas de arriba)",
+    "desc": "<b>Tiempo</b> es lo que duró el vuelo, <b>Distancia horizontal</b> lo lejos que llegó y <b>Altura</b> lo alto del arco.",
+    "tip": "El valor que más importa en esta lección es el <b>Tiempo</b>. Cambiar la rapidez sin que cambie el tiempo es de lo que va todo, así que anótalo en cada disparo."
+   },
+   {
+    "name": "Vectores Velocidad — Total · Componentes (derecha de la pantalla Vectores)",
+    "desc": "Elige si ver la velocidad como <b>una sola flecha</b> o <b>partida en horizontal y vertical</b>.",
+    "tip": "Activa <b>Componentes</b>, sin falta. Que la flecha horizontal conserve su longitud mientras solo crece la vertical es esta lección entera."
+   },
+   {
+    "name": "Vectores Aceleración (derecha de la pantalla Vectores)",
+    "desc": "Enseña la aceleración como una flecha.",
+    "tip": "Apunta <b>recto hacia abajo</b> durante todo el vuelo, también mientras la bola sube todavía. Esta es fácil de fallar."
+   },
+   {
+    "name": "Resistencia del aire (casilla de la derecha)",
+    "desc": "Márcala y el aire entra en el cálculo. El <b>Coeficiente de arrastre</b> de debajo es cuánto agarra el aire el objeto.",
+    "tip": "Déjala <b>apagada</b> al principio. Hazte primero con la regla pelada y luego enciéndela y mira qué se mueve."
+   },
+   {
+    "name": "Elección del proyectil (derecha)",
+    "desc": "Bala de cañon, pelota de golf, pelota de béisbol, balón de fútbol, calabaza, humano, piano, coche y más. La masa y el diámetro cambian con lo que elijas.",
+    "tip": "Con la resistencia del aire <b>apagada</b>, todos vuelan exactamente igual. Hace falta aire para que haya diferencia, lo cual ya es una buena comprobación."
+   },
+   {
+    "name": "Cinta métrica (abajo a la izquierda)",
+    "desc": "Sácala arrastrando para medir entre dos puntos.",
+    "tip": "La escala de la pantalla solo te da una estimación. Cuando necesites el valor de verdad, usa la cinta."
+   },
+   {
+    "name": "Botones de borrar · pausa · paso y el ajuste de velocidad (abajo)",
+    "desc": "Limpian los rastros, paran la acción, avanzan un fotograma y cambian la velocidad de reproducción. Todos son iconos, sin palabras.",
+    "tip": "Pon la velocidad en <b>Lento</b> y avanza fotograma a fotograma con el botón de paso: se ve exactamente cómo cambian las flechas."
+   }
+  ],
+  "steps": [
+   "Apaga la <b>Resistencia del aire</b>.",
+   "Pon el cañón en <b>Altura 10 m</b> y el <b>Ángulo</b> en <b>0°</b>.",
+   "Dispara con <b>Rapidez Inicial 0</b> y anota el <b>Tiempo</b>.",
+   "Dispara con <b>Rapidez Inicial 15</b> y luego <b>25</b>, y compara los tiempos.",
+   "En la pantalla <b>Vectores</b> activa <b>Vectores Velocidad → Componentes</b> y mira las flechas.",
+   "Recorre el ángulo de 15° a 75° anotando la <b>Distancia horizontal</b> y encuentra el mejor ángulo.",
+   "Activa la <b>Resistencia del aire</b> y mira si se mueve el mejor ángulo."
+  ],
+  "gotchas": [
+   "La pantalla que se llama <b>Arrastre</b> va de <b>resistencia del aire</b>, no de arrastrar cosas. El <b>Coeficiente de arrastre</b> de debajo es el coeficiente de resistencia del aire.",
+   "Con la resistencia del aire apagada, <b>todo vuela igual</b> dispares lo que dispares. No es un fallo: es la respuesta correcta.",
+   "La flecha de aceleración apunta <b>hacia abajo</b> incluso mientras la bola sube.",
+   "Hay cuatro pantallas. Empieza en <b>Introducción</b> y pasa a <b>Vectores</b>.",
+   "En la lista de proyectiles pone <b>Bala de cañon</b>, sin la tilde de «cañón». Es una errata de la traducción de PhET."
+  ]
+ },
+ "projectile-data-lab": {
+  "summary": "Se parece a la simulación anterior pero el propósito es otro. No <b>dónde cae un disparo</b> sino <b>cómo se dispersan muchos</b>. Por eso hay un histograma cruzando la parte de arriba.",
+  "screens": [
+   {
+    "name": "Variabilidad",
+    "what": "Donde empieza esta lección. Dispara repetidamente con una preparación y mira la dispersión."
+   },
+   {
+    "name": "Fuentes",
+    "what": "De dónde viene la dispersión — el lanzador o el proyectil — separado en dos."
+   },
+   {
+    "name": "Mediciones",
+    "what": "Aquí puedes activar <b>Media</b> y <b>Desviación Estándar</b>. La segunda mitad de esta lección ocurre en esta pantalla."
+   },
+   {
+    "name": "Muestreo",
+    "what": "Dispara por tandas y luego mira las medias de esas tandas. La pantalla más difícil."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Solo uno · Continuo (abajo en el centro)",
+    "desc": "<b>Solo uno</b> dispara de uno en uno; <b>Continuo</b> sigue disparando mientras lo mantengas.",
+    "tip": "Haz primero cinco o seis con <b>Solo uno</b> para ver que cada uno es distinto y luego reúne decenas con <b>Continuo</b>."
+   },
+   {
+    "name": "Ángulo de lanzamiento · Rapidez inicial (casillas, arriba a la derecha)",
+    "desc": "Márcalas y el ángulo y la rapidez de lanzamiento se <b>muestran</b> en pantalla. A diferencia de la simulación anterior no son mandos que fijen los valores: el lanzador de la pantalla Variabilidad es un <b>Lanzador misterioso</b> con los ajustes escondidos.",
+    "tip": "En esta lección, <b>no los toques</b>. Disparar con una preparación fija es de lo que va todo."
+   },
+   {
+    "name": "Histograma (arriba en la pantalla)",
+    "desc": "Cuenta las distancias de caída por intervalos y las apila como barras. El eje horizontal es <b>Distancia</b> y el vertical, <b>Contador</b>.",
+    "tip": "Apila decenas de disparos y sale una <b>campana, alta en el centro</b>. Con diez no se ve, así que dispara de sobra."
+   },
+   {
+    "name": "Tamaño de Contenedores · Total de Contenedores (a la izquierda del histograma)",
+    "desc": "Fijan <b>de qué anchura</b> es el intervalo que cuenta cada barra.",
+    "tip": "Los mismos datos con otra pinta. Pícalo <b>demasiado fino</b> y sale dentado; <b>demasiado grueso</b> y la forma se difumina."
+   },
+   {
+    "name": "Trayectorias (derecha)",
+    "desc": "Deja los rastros de los vuelos en la pantalla.",
+    "tip": "Déjalo activado y se ve de un vistazo <b>cuánto se solapan las trayectorias y cuánto se abren</b>."
+   },
+   {
+    "name": "Media · Desviación Estándar (derecha de la pantalla Mediciones)",
+    "desc": "<b>Media</b> enseña dónde se agrupan; <b>Desviación Estándar</b>, cómo de ancha es la dispersión.",
+    "tip": "Añade disparos y mira <b>cómo se asienta la línea de la media</b>. Con pocos se pasea; con muchos ocupa su sitio."
+   },
+   {
+    "name": "Lanzador misterioso · Lanzador Personalizado",
+    "desc": "El <b>misterioso</b> no te dice cuánta dispersión tiene. El <b>Personalizado</b> te deja fijarla a ti.",
+    "tip": "Dispara con el misterioso, adivina su dispersión y luego monta ese mismo valor en el personalizado y compara. Buen ejercicio."
+   },
+   {
+    "name": "Cinta de medir · Cronómetro · Herramienta de Intervalos (derecha)",
+    "desc": "Miden distancia y tiempo, y cuentan cuántos disparos cayeron dentro de un tramo dado.",
+    "tip": "Pon la <b>Herramienta de Intervalos</b> en un tramo estrecho alrededor de la media. Caen dentro más disparos de los que dirías."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Variabilidad</b>, no cambies nada y haz cinco o seis con <b>Solo uno</b>.",
+   "Reúne decenas con <b>Continuo</b> y mira la forma del histograma.",
+   "Cambia el <b>Tamaño de Contenedores</b> y verás los mismos datos con otra pinta.",
+   "Activa <b>Trayectorias</b> y mira cuánto se abren los rastros.",
+   "En la pantalla <b>Mediciones</b> activa <b>Media</b> y <b>Desviación Estándar</b>.",
+   "Añade disparos y mira cómo se asienta la línea de la media."
+  ],
+  "gotchas": [
+   "El sentido de esta simulación es <b>no cambiar los ajustes</b>. Toca el ángulo o la rapidez y no queda dispersión que mirar.",
+   "Con unos diez disparos no se ve la forma. Reúne <b>decenas</b>.",
+   "Cambiar el <b>Tamaño de Contenedores</b> deja los datos igual. Solo cambia la agrupación.",
+   "Las pantallas se van poniendo más difíciles. Con <b>Variabilidad → Mediciones</b> basta para esta lección."
+  ]
+ },
+ "energy-skate-park": {
+  "summary": "Pon a un patinador en una pista y mira, con barras, <b>cómo se mueve la energía</b>. Puedes dibujar tu propia pista y puedes cambiar la gravedad por la de la Luna o Júpiter.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Donde empieza esta lección. Pistas ya hechas y las barras de energía."
+   },
+   {
+    "name": "Medidas",
+    "what": "Añade una cinta, un cronómetro y una sonda de energía. Aquí también puedes mover la <b>Altura de Referencia</b>."
+   },
+   {
+    "name": "Gráficas",
+    "what": "Las energías dibujadas como gráfica frente al tiempo."
+   },
+   {
+    "name": "Patio de Juego",
+    "what": "<b>Dibuja tu propia</b> pista. Buen sitio para jugar cuando hayas terminado."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El patinador (arrástralo a la pista)",
+    "desc": "Suelta al patinador a cualquier altura de la pista y desliza desde ahí.",
+    "tip": "Prueba a soltarlo desde <b>la misma altura</b> varias veces. Pistas de formas distintas, misma altura, misma rapidez."
+   },
+   {
+    "name": "Barras de energía (caja plegable, arriba a la izquierda) — Cinética · Potencial · Térmica · Total",
+    "desc": "Abre <b>plegada</b>, enseñando solo el título. Pulsa <b>▸</b> para abrirla. <b>Cinética</b> es la energía de la rapidez, <b>Potencial</b> la de la altura, <b>Térmica</b> la parte que se pierde en rozamiento y <b>Total</b> la suma de las tres.",
+    "tip": "Esta es la lectura clave. <b>No le quites ojo a la barra Total.</b> Sin rozamiento tiene que estar a la misma altura esté donde esté el patinador."
+   },
+   {
+    "name": "Fricción (derecha) — de Ninguna a Grande",
+    "desc": "Fija el rozamiento de la pista.",
+    "tip": "Empieza en <b>Ninguna</b>. Con rozamiento, la conservación de la energía sale borrosa. Hazte primero con la regla y luego enciéndelo."
+   },
+   {
+    "name": "Elección de pista (derecha, cuatro botones con dibujos)",
+    "desc": "Cuatro pistas ya hechas. No llevan palabras: se distinguen por <b>la forma de la pista dibujada en cada uno</b>; por orden, una parábola, una rampa, un doble valle y un rizo.",
+    "tip": "El <b>doble valle</b> es el mejor para mirar el cambio de energía. El patinador va y viene de un lado a otro cambiando altura por rapidez."
+   },
+   {
+    "name": "Mantener en la pista (casilla de la derecha)",
+    "desc": "Activada, el patinador va pegado a la pista; desactivada, puede salir volando.",
+    "tip": "Desactívala en la pista del <b>rizo</b>. Sin rapidez suficiente el patinador se cae, y por eso un rizo de verdad hay que tomarlo rápido."
+   },
+   {
+    "name": "Gravedad (derecha) — Tierra · Luna · Júpiter · Personalizado",
+    "desc": "Cambia la intensidad de la gravedad.",
+    "tip": "Prueba la <b>Luna</b>. La misma pista, un movimiento mucho más lento. Lo que importa es que <b>la Total sigue manteniéndose</b>."
+   },
+   {
+    "name": "Masa (derecha)",
+    "desc": "Cambia lo que pesa el patinador.",
+    "tip": "Sin rozamiento, cambiar la masa <b>no cambia hasta dónde sube.</b> Solo cambia el tamaño de las barras: buena cosa que comprobar."
+   },
+   {
+    "name": "Gráfica circular (casilla de la derecha)",
+    "desc": "Enseña el reparto de la energía como un círculo. Va siguiendo al patinador.",
+    "tip": "Las barras te dan las cantidades exactas; el círculo, las <b>proporciones</b>. Tener los dos encendidos hace que encaje antes."
+   },
+   {
+    "name": "Altura de Referencia (pantalla Medidas) · Cuadrícula",
+    "desc": "Fija dónde llamas <b>cero</b> a la energía potencial.",
+    "tip": "Muévela y se desplazan todos los valores de energía potencial. Está ahí para enseñarte que <b>importa la diferencia, no el valor</b>."
+   },
+   {
+    "name": "Reiniciar patinador · el botón de limpiar el calor",
+    "desc": "Devuelven al patinador a donde salió, o limpian el calor acumulado. El botón de limpiar el calor está en la caja de energía como un icono, sin palabras.",
+    "tip": "Cuando hagas varios experimentos con rozamiento, <b>limpia el calor</b> antes de cada uno. Si no, sigue ahí el del anterior."
+   }
+  ],
+  "steps": [
+   "Pon la <b>Fricción</b> en <b>Ninguna</b> y pulsa <b>▸</b> en la caja de <b>Energía</b> de arriba a la izquierda para abrirla.",
+   "Coloca al patinador en el lado alto de la pista y mira cómo van y vienen las barras.",
+   "Comprueba que la barra <b>Total</b> es la misma en todas partes.",
+   "Compara el punto más alto del otro lado con la altura de la que saliste.",
+   "Sube la <b>Fricción</b> y mira crecer la barra <b>Térmica</b>.",
+   "Cambia la <b>Gravedad</b> a <b>Luna</b> y hazlo todo otra vez.",
+   "En la pantalla <b>Medidas</b>, mueve la <b>Altura de Referencia</b>."
+  ],
+  "gotchas": [
+   "Los botones de pista <b>no llevan palabras.</b> Se distinguen por la forma dibujada en cada uno: parábola, rampa, doble valle, rizo.",
+   "Con rozamiento la Total parece encogerse, pero <b>cuenta también la barra Térmica</b> y no ha cambiado.",
+   "Limpia el calor antes de repetir un experimento con rozamiento.",
+   "Cambiar la masa <b>no cambia hasta dónde sube</b>, mientras no haya rozamiento.",
+   "Mover la <b>Altura de Referencia</b> cambia los valores de energía potencial. No es un error: se ha movido la referencia."
+  ]
+ },
+ "vector-addition": {
+  "summary": "Arrastra flechas a una gráfica y <b>súmalas</b>. Mira con tus propios ojos cómo se combinan las magnitudes que llevan dirección. Solo <b>suma · valores · Componentes</b> están rotulados con palabras; el resto de los botones llevan <b>dibujos y ningún texto</b>.",
+  "screens": [
+   {
+    "name": "Explorar 1D",
+    "what": "Donde empieza esta lección. Los vectores están <b>sobre una sola recta</b>. Solo dos direcciones, así que es la más sencilla."
+   },
+   {
+    "name": "Explorar 2D",
+    "what": "Los vectores pueden apuntar a donde sea. El corazón de esta lección está aquí."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Saca varios vectores y manéjalos con libertad."
+   },
+   {
+    "name": "Ecuaciones",
+    "what": "Relaciones entre vectores escritas como ecuaciones. La pantalla más difícil."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Cajón de vectores (derecha) — a · b · c",
+    "desc": "Arrastra una flecha con letra hasta la gráfica. Una vez puesta, <b>arrastra su punta</b> para cambiar el tamaño y la dirección.",
+    "tip": "Arrastra el <b>cuerpo</b> de una flecha para moverla y la <b>punta</b> para redimensionarla y girarla. En la duda, agarra la punta."
+   },
+   {
+    "name": "suma (casilla de la derecha)",
+    "desc": "Enseña el <b>vector suma</b> de todo lo que hayas puesto.",
+    "tip": "La estrella de esta simulación. <b>Déjala activada</b> y gira un vector. Cómo cambia el tamaño de la suma es esta lección entera."
+   },
+   {
+    "name": "valores (casilla de la derecha)",
+    "desc": "Pone en pantalla el tamaño de cada vector como número.",
+    "tip": "A ojo no aciertas exactamente 3 y 4. <b>Actívala.</b>"
+   },
+   {
+    "name": "Mostrar ángulos (arriba a la derecha, la casilla con el dibujo de θ)",
+    "desc": "Marca el ángulo que forma cada vector con el eje x.",
+    "tip": "Cuando andes buscando dónde es máxima y mínima la suma, ver el ángulo deja la regla a la vista."
+   },
+   {
+    "name": "Componentes (arriba a la derecha, cuatro botones con dibujos)",
+    "desc": "Parte un vector en horizontal y vertical. Cuatro dibujos en un bloque de 2×2 sin palabras, empezando por arriba a la izquierda: apagado, triángulo rectángulo, paralelogramo y líneas de puntos bajadas hasta los ejes.",
+    "tip": "Elige el dibujo de <b>abajo a la derecha</b>, el de las líneas de puntos hasta los ejes. Es el mismo dibujo que partir la velocidad en horizontal y vertical en la lección 1 (movimiento de un proyectil)."
+   },
+   {
+    "name": "Cuadrícula (arriba a la derecha, la casilla con el dibujo de papel milimetrado)",
+    "desc": "Enciende y apaga la cuadrícula del fondo.",
+    "tip": "<b>Déjala encendida.</b> Sin la cuadrícula no puedes fijar los tamaños exactos."
+   },
+   {
+    "name": "Elección de coordenadas (abajo a la derecha, dos botones con dibujos)",
+    "desc": "En la pantalla 1D elige horizontal o vertical; en la 2D, coordenadas de cuadrícula o de ángulo. No hay palabras: el dibujo del triángulo rectángulo son las coordenadas de cuadrícula y el del abanico de ángulos, las de ángulo.",
+    "tip": "Cambia al del <b>abanico de ángulos</b> y tendrás una escala de ángulos, con la que acertar 30° o 45° exactos es fácil."
+   },
+   {
+    "name": "Borrar todos los vectores (abajo a la derecha, botón con dibujo)",
+    "desc": "Limpia todos los vectores que hayas puesto.",
+    "tip": "Cuando las flechas se solapan y te pierdes, sale más rápido limpiar y volver a empezar."
+   },
+   {
+    "name": "Valores del Vector (lectura de arriba)",
+    "desc": "Enseña el tamaño y el ángulo del vector que tengas seleccionado. Sin nada seleccionado pone <b>No se ha seleccionado un vector</b>.",
+    "tip": "Para ver los valores hay que <b>hacer clic una vez en una flecha para seleccionarla.</b>"
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Explorar 1D</b> activa <b>valores</b> y la cuadrícula (la casilla con el dibujo de papel milimetrado).",
+   "Pon el vector <b>a</b> con tamaño 3 y <b>b</b> con tamaño 4, los dos apuntando a la derecha.",
+   "Activa <b>suma</b> y mira el tamaño de la suma.",
+   "Dale la vuelta a <b>b</b> y mira qué hace la suma.",
+   "En la pantalla <b>Explorar 2D</b>, gira uno de los dos despacio.",
+   "Ponlos en <b>ángulo recto</b> y comprueba que la suma da 5.",
+   "Cambia los botones de <b>Componentes</b> al de <b>abajo a la derecha</b>, el de las líneas de puntos hasta los ejes."
+  ],
+  "gotchas": [
+   "<b>Casi todos los botones no llevan palabras.</b> Son dibujos, no texto en inglés que se te haya escapado: usa los nombres de arriba para saber qué dibujo es cuál.",
+   "Los tamaños de los vectores <b>no se pueden sumar sin más.</b> 3 y 4 dan 7 solo cuando apuntan en la misma dirección.",
+   "Arrastrar el <b>cuerpo</b> de una flecha la mueve; arrastrar su <b>punta</b> cambia el tamaño y la dirección.",
+   "Para ver los valores hay que <b>hacer clic en una flecha para seleccionarla</b>.",
+   "Esta simulación se hizo para secundaria. Esta lección solo usa <b>Explorar 1D</b> y <b>Explorar 2D</b>."
+  ]
  }
 }
