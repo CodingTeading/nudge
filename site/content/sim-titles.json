@@ -1,39 +1,189 @@
 {
-  "_note": "PhET 한국어 번역이 잘못된 시뮬레이션 제목을 바로잡습니다. repo → { 언어: 제목 }. 여기 없는 것은 sims.json 값을 그대로 씁니다.",
-  "number-play": {
-    "_why": "Number Play 를 '게임 횟수'로 옮겨 놓았습니다. 수를 세고 놀아 보는 실험입니다.",
-    "ko": "수 놀이"
+  "_note": "시뮬레이션 제목을 언어별로 덮어씁니다. repo → { 언어: 제목 }. ko 는 PhET 한국어 번역이 잘못 잡은 것을 바로잡는 자리이고(_why 참고), es 는 화면에 실제로 찍히는 스페인어 제목입니다 — sims.json 에는 스페인어 제목이 없어서 여기에 둡니다. 여기 없는 것은 영어 제목을 씁니다.",
+  "acid-base-solutions": {
+    "es": "Soluciones Ácido-Base"
+  },
+  "balancing-chemical-equations": {
+    "es": "Balanceo de Ecuaciones Químicas"
+  },
+  "balloons-and-static-electricity": {
+    "es": "Globos y electricidad estática"
+  },
+  "beers-law-lab": {
+    "es": "Lab de la ley de Beer"
+  },
+  "blackbody-spectrum": {
+    "es": "Espectro de radiación del Cuerpo Negro"
+  },
+  "build-a-fraction": {
+    "es": "Construye una fracción"
+  },
+  "build-a-nucleus": {
+    "es": "Construye un Núcleo"
+  },
+  "build-an-atom": {
+    "es": "Construye un Átomo"
+  },
+  "calculus-grapher": {
+    "es": "Graficador para Cálculo"
+  },
+  "center-and-variability": {
+    "es": "Centro y Variabilidad"
+  },
+  "charges-and-fields": {
+    "es": "Cargas y campos"
+  },
+  "coulombs-law": {
+    "es": "Ley de Coulomb"
+  },
+  "energy-skate-park": {
+    "es": "Energía en la pista de patinaje"
+  },
+  "equality-explorer": {
+    "es": "Explorador de Igualdades"
+  },
+  "faradays-electromagnetic-lab": {
+    "es": "Laboratorio Electromagnético de Faraday"
   },
   "fourier-making-waves": {
     "_why": "'기호' 로 되어 있습니다. 원제는 Fourier: Making Waves 입니다.",
-    "ko": "푸리에: 파동 만들기"
+    "ko": "푸리에: 파동 만들기",
+    "es": "Fourier: Creando Ondas"
   },
-  "ratio-and-proportion": {
-    "_why": "'비울과 비' — '비율'의 오타입니다.",
-    "ko": "비와 비율"
+  "fraction-matcher": {
+    "es": "Parejas de Fracciones"
   },
-  "unit-rates": {
-    "_why": "Unit Rates 가 그냥 '비율'로 되어 있어 같은 코스의 '비율 놀이터'·'비와 비율'과 구별되지 않습니다.",
-    "ko": "단위 비율"
+  "fractions-equality": {
+    "es": "Fracciones: Igualdades"
   },
-  "my-solar-system": {
-    "_why": "sims.json 에 '단위 안내' 로 들어 있습니다. 실험 안에서는 '우리의 태양계' 로 나옵니다.",
-    "ko": "우리의 태양계"
+  "fractions-intro": {
+    "es": "Fracciones: Intro"
   },
-  "keplers-laws": {
-    "_why": "sims.json 에 '오비탈 추가 데이터' 로 들어 있습니다. 실험 안에서는 '케플러의 법칙' 으로 나옵니다.",
-    "ko": "케플러의 법칙"
+  "fractions-mixed-numbers": {
+    "es": "Fracciones: números mixtos"
   },
-  "greenhouse-effect": {
-    "_why": "sims.json 에 '에너지' 로 들어 있습니다. 실험 안에서는 '온실 효과' 로 나옵니다.",
-    "ko": "온실 효과"
+  "function-builder": {
+    "es": "Generador de Funciones"
   },
   "gas-properties": {
     "_why": "sims.json 에 '불변 상태' 로 들어 있습니다 — 실험 안의 조작 이름입니다. 제목은 '기체의 성질' 입니다.",
-    "ko": "기체의 성질"
+    "ko": "기체의 성질",
+    "es": "Propiedades de los Gases"
+  },
+  "geometric-optics": {
+    "es": "Óptica Geométrica"
+  },
+  "graphing-lines": {
+    "es": "Graficando Rectas"
+  },
+  "graphing-quadratics": {
+    "es": "Graficando Cuadráticas"
+  },
+  "graphing-slope-intercept": {
+    "es": "Graficando Rectas Pendiente-Intersección"
+  },
+  "gravity-and-orbits": {
+    "es": "Gravedad y Órbitas"
+  },
+  "greenhouse-effect": {
+    "_why": "sims.json 에 '에너지' 로 들어 있습니다. 실험 안에서는 '온실 효과' 로 나옵니다.",
+    "ko": "온실 효과",
+    "es": "Efecto Invernadero"
+  },
+  "hookes-law": {
+    "es": "Ley de Hooke"
+  },
+  "keplers-laws": {
+    "_why": "sims.json 에 '오비탈 추가 데이터' 로 들어 있습니다. 실험 안에서는 '케플러의 법칙' 으로 나옵니다.",
+    "ko": "케플러의 법칙",
+    "es": "Leyes de Kepler"
+  },
+  "masses-and-springs": {
+    "es": "Masas y Resortes"
+  },
+  "mean-share-and-balance": {
+    "es": "Media: Distribuye y Equilibra"
+  },
+  "membrane-transport": {
+    "es": "Transporte de membrana"
+  },
+  "models-of-the-hydrogen-atom": {
+    "es": "Modelos del Átomo de Hidrógeno"
+  },
+  "molecule-polarity": {
+    "es": "Polaridad de la Molécula"
+  },
+  "molecule-shapes": {
+    "es": "Forma de la Molécula"
+  },
+  "my-solar-system": {
+    "_why": "sims.json 에 '단위 안내' 로 들어 있습니다. 실험 안에서는 '우리의 태양계' 로 나옵니다.",
+    "ko": "우리의 태양계",
+    "es": "Mi Sistema Solar"
+  },
+  "natural-selection": {
+    "es": "Selección Natural"
+  },
+  "number-compare": {
+    "es": "Comparar Números"
+  },
+  "number-line-distance": {
+    "es": "Recta Numérica: Distancia"
+  },
+  "number-pairs": {
+    "es": "Pares de Números"
+  },
+  "number-play": {
+    "_why": "Number Play 를 '게임 횟수'로 옮겨 놓았습니다. 수를 세고 놀아 보는 실험입니다.",
+    "ko": "수 놀이",
+    "es": "Juego de Números"
+  },
+  "ph-scale": {
+    "es": "Escala de pH"
+  },
+  "projectile-data-lab": {
+    "es": "Laboratorio de Datos de Proyectiles"
+  },
+  "projectile-motion": {
+    "es": "Movimiento de un Proyectil"
+  },
+  "proportion-playground": {
+    "es": "Pista de juego de proporciones"
+  },
+  "quadrilateral": {
+    "es": "Cuadrilátero"
+  },
+  "quantum-coin-toss": {
+    "es": "Lanzamiento de Moneda Cuántica"
   },
   "quantum-measurement": {
     "_why": "sims.json 에 '평균 분극 표현' 으로 들어 있습니다. 원제는 Quantum Measurement 입니다.",
-    "ko": "양자 측정"
+    "ko": "양자 측정",
+    "es": "Medición Cuántica"
+  },
+  "ratio-and-proportion": {
+    "_why": "'비울과 비' — '비율'의 오타입니다.",
+    "ko": "비와 비율",
+    "es": "Razón y Proporción"
+  },
+  "reactants-products-and-leftovers": {
+    "es": "Reactivos, productos y excedentes"
+  },
+  "rutherford-scattering": {
+    "es": "Dispersión de Rutherford"
+  },
+  "states-of-matter": {
+    "es": "Estados de la materia"
+  },
+  "unit-rates": {
+    "_why": "Unit Rates 가 그냥 '비율'로 되어 있어 같은 코스의 '비율 놀이터'·'비와 비율'과 구별되지 않습니다.",
+    "ko": "단위 비율",
+    "es": "Razón unitaria"
+  },
+  "vector-addition": {
+    "es": "Adición de Vectores"
+  },
+  "wave-on-a-string": {
+    "es": "Onda en una cuerda"
   }
 }

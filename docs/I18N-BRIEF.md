@@ -5,7 +5,8 @@ PhET 포크는 `C:/projects/phet` 입니다.
 
 - 작성일: 2026-08-21
 - 사이트: <https://nudge.codingteading.com>
-- 지금 상태: 한국어 원고 61편 완성 · 배포 중 · 영어/일본어/스페인어는 **껍데기만** 있음
+- 지금 상태: 한국어 · **영어** · **스페인어** 원고 61편 완성 · 배포 중 · 일본어는 **껍데기만** 있음
+- 마지막 갱신: 2026-08-22 (스페인어 완료)
 
 ---
 
@@ -46,14 +47,24 @@ site/content/ko/courses.json     코스 14개 · 약 6,300자      ✅
 site/content/ko/lessons.json     레슨 61편 · 약 138,000자    ✅
 site/content/ko/guides.json      사용법 61종 + 공통 · 약 102,000자  ✅
 
-site/content/en/courses.json     ✅ (코스 목록만 번역되어 있음)
-site/content/en/lessons.json     ❌ 없음
-site/content/en/guides.json      ❌ 없음
+site/content/en/courses.json     ✅
+site/content/en/lessons.json     ✅  레슨 61편
+site/content/en/guides.json      ✅  사용법 61종 + 공통
 
-site/content/ja/ · site/content/es/   ❌ 폴더 자체가 없음
+site/content/es/courses.json     ✅
+site/content/es/lessons.json     ✅  레슨 61편
+site/content/es/guides.json      ✅  사용법 61종 + 공통
+
+site/content/ja/                 ❌ 폴더 자체가 없음
 ```
 
-**총 분량: 약 246,000자 × 3언어.** 한 세션에 끝날 양이 아닙니다. §6에 쪼개는 방법을 적었습니다.
+**남은 것은 일본어 약 246,000자 하나입니다.** 한 세션에 끝날 양이 아닙니다 — §6에 쪼개는
+방법을 적었습니다. 영어·스페인어를 그 순서로 했으니 **일본어는 완성된 영어판을 참조로**
+쓰면 됩니다. 일본어에서 나올 일은 §5-3(서체)과 §4-1(18종이 영어로 열림)에 미리 적어
+두었습니다.
+
+> 작업하며 나온 것은 언어별로 따로 남겨 두었습니다 — `docs/KO-FINDINGS.md`,
+> `docs/ES-FINDINGS.md`. 일본어도 같은 자리에 `docs/JA-FINDINGS.md` 로 남겨 주세요.
 
 ### 1-3. 언어 중립 파일 (번역 대상 아님, 그러나 손봐야 할 곳이 있음)
 
@@ -298,8 +309,17 @@ JSON.stringify(window.D(1));   // 화면이 여럿이면 screens[0] 은 홈입�
 
 ### 4-4. PhET 제목 오역 — 언어마다 다시 봐야 합니다
 
-`site/content/sim-titles.json` 은 PhET 번역이 잘못 잡은 시뮬레이션 제목을 덮어씁니다.
-지금 9종이 있고 **`ko` 키만 채워져 있습니다.**
+`site/content/sim-titles.json` 이 시뮬레이션 제목을 언어별로 덮어씁니다. 쓰임이 둘입니다.
+
+- **`ko`** — PhET 한국어 번역이 잘못 잡은 제목 9종을 바로잡습니다 (`_why` 에 이유).
+- **`es`** — 스페인어 제목 56종. 오역 교정이 아니라 **원래 없어서 채운 것**입니다.
+  `sims.json` 에는 `title`(한국어)과 `titleEn` 밖에 없어, 그냥 두면 스페인어 페이지에
+  영어 제목이 뜹니다. 영어로 열리는 5종은 넣지 않았습니다 — 화면이 영어니까요.
+
+**일본어도 같은 방식으로 채우면 됩니다.** `wip/labels/ja/<repo>.json` 의
+`screen["<repo>.title"]` 을 앞뒤 공백(nbsp 포함)만 떼어 넣고, 영어로 열리는 18종은
+건너뜁니다. `applySimTitles`(i18n.js)와 `sim_title()`(bake-head.py)이 이미 언어별로
+읽으므로 **코드는 손댈 필요가 없습니다.**
 
 ```jsonc
 { "number-play": { "_why": "Number Play 를 '게임 횟수'로 옮겨 놓았습니다. …", "ko": "수 놀이" } }
@@ -330,15 +350,19 @@ site/content/<lang>/guides.json
 ### 5-2. 코스 카드 색
 
 `site/index.html` 의 `SUBJECT_COLOR` 에 그 언어의 과목명을 더합니다.
-지금 한국어와 영어만 있습니다.
+지금 한국어 · 영어 · 스페인어가 있습니다. **일본어만 남았습니다.**
 
 ```js
 const SUBJECT_COLOR = {
   수학: 'var(--s-math)', 물리: 'var(--s-phys)', …
   Math: 'var(--s-math)', Physics: 'var(--s-phys)', …
-  // ← 일본어 · 스페인어 과목명을 여기에
+  'Matemáticas': 'var(--s-math)', 'Física': 'var(--s-phys)', …
+  // ← 일본어 과목명을 여기에
 };
 ```
+
+넣지 않으면 코스 카드가 전부 회색으로 떨어집니다. `courses.json` 의 `subject` 값과
+**글자 하나까지 같아야** 합니다.
 
 ### 5-3. 공유 이미지 (OG) — 지금 76장이 전부 한국어입니다
 
@@ -475,6 +499,8 @@ npx wrangler pages deploy dist --project-name nudge
 | `README.md` | 저장소 구조 · 빌드 · 배포 |
 | `docs/REVIEW-BRIEF.md` | 한국어 원고 검수를 의뢰할 때 쓴 문서. 무엇을 어떻게 봐야 하는지 |
 | `docs/REVIEW-RESULT.md` | 그 회신(64건). §3 의 `a11y` 이야기가 특히 중요합니다 |
+| `docs/KO-FINDINGS.md` | 한국어 원고에서 아직 안 고친 것 28곳 + 오역 1건 |
+| `docs/ES-FINDINGS.md` | 스페인어 작업에서 나온 것 — PhET 오타 7 · 미번역 · 영어와 다른 라벨 |
 | `site/lib/i18n.js` | 언어 판정 · 폴백 · 경로 · 시뮬 언어 매칭 |
 | `site/lib/seo.js` | 머리말. `tools/bake-head.py` 와 **같은 모양을 내야 합니다** |
 | `tools/bake-head.py` | 정적 머리말 굽기 · 경로 규칙 |
