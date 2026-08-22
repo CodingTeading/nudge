@@ -5,8 +5,8 @@ PhET 포크는 `C:/projects/phet` 입니다.
 
 - 작성일: 2026-08-21
 - 사이트: <https://nudge.codingteading.com>
-- 지금 상태: 한국어 · **영어** · **스페인어** 원고 61편 완성 · 배포 중 · 일본어는 **껍데기만** 있음
-- 마지막 갱신: 2026-08-22 (스페인어 완료)
+- 지금 상태: **네 언어 원고 61편 완성** · 배포 중
+- 마지막 갱신: 2026-08-23 (일본어 완료)
 
 ---
 
@@ -55,16 +55,16 @@ site/content/es/courses.json     ✅
 site/content/es/lessons.json     ✅  레슨 61편
 site/content/es/guides.json      ✅  사용법 61종 + 공통
 
-site/content/ja/                 ❌ 폴더 자체가 없음
+site/content/ja/courses.json     ✅
+site/content/ja/lessons.json     ✅  레슨 61편
+site/content/ja/guides.json      ✅  사용법 61종 + 공통
 ```
 
-**남은 것은 일본어 약 246,000자 하나입니다.** 한 세션에 끝날 양이 아닙니다 — §6에 쪼개는
-방법을 적었습니다. 영어·스페인어를 그 순서로 했으니 **일본어는 완성된 영어판을 참조로**
-쓰면 됩니다. 일본어에서 나올 일은 §5-3(서체)과 §4-1(18종이 영어로 열림)에 미리 적어
-두었습니다.
+**학습 콘텐츠는 네 언어가 다 찼습니다.** 남은 것은 §5-3 의 **일본어 공유 이미지(OG)**
+하나입니다 — Pretendard 에 한자가 없어 지금 구우면 두부(□)가 찍힙니다.
 
 > 작업하며 나온 것은 언어별로 따로 남겨 두었습니다 — `docs/KO-FINDINGS.md`,
-> `docs/ES-FINDINGS.md`. 일본어도 같은 자리에 `docs/JA-FINDINGS.md` 로 남겨 주세요.
+> `docs/ES-FINDINGS.md`, `docs/JA-FINDINGS.md`.
 
 ### 1-3. 언어 중립 파일 (번역 대상 아님, 그러나 손봐야 할 곳이 있음)
 
@@ -222,6 +222,7 @@ export function simLocaleFor( table, repo, lang ) {
 
 **일본어는 18종이 영어로 열립니다.** 그 18편의 미션·사용법은 **영어 라벨을 인용해야 합니다.**
 스페인어는 5종, 영어는 0종입니다. 어느 것이 그런지는 아래 한 줄로 뽑으세요.
+(일본어 18종의 목록과 코스별 분포는 `docs/JA-FINDINGS.md` §2 에 있습니다.)
 
 ```bash
 python -c "import json,io;t=json.load(io.open('site/content/sim-locales.json',encoding='utf-8'));print([r for r,v in t.items() if isinstance(v,list) and 'ja' not in v])"
@@ -315,11 +316,11 @@ JSON.stringify(window.D(1));   // 화면이 여럿이면 screens[0] 은 홈입�
 - **`es`** — 스페인어 제목 56종. 오역 교정이 아니라 **원래 없어서 채운 것**입니다.
   `sims.json` 에는 `title`(한국어)과 `titleEn` 밖에 없어, 그냥 두면 스페인어 페이지에
   영어 제목이 뜹니다. 영어로 열리는 5종은 넣지 않았습니다 — 화면이 영어니까요.
+- **`ja`** — 일본어 제목 42종. 스페인어와 같은 이유입니다. 영어로 열리는 18종과
+  제목만 영어로 떨어지는 `number-compare` 는 넣지 않았습니다.
 
-**일본어도 같은 방식으로 채우면 됩니다.** `wip/labels/ja/<repo>.json` 의
-`screen["<repo>.title"]` 을 앞뒤 공백(nbsp 포함)만 떼어 넣고, 영어로 열리는 18종은
-건너뜁니다. `applySimTitles`(i18n.js)와 `sim_title()`(bake-head.py)이 이미 언어별로
-읽으므로 **코드는 손댈 필요가 없습니다.**
+`applySimTitles`(i18n.js)와 `sim_title()`(bake-head.py)이 이미 언어별로 읽으므로
+**코드는 손댈 필요가 없습니다.**
 
 ```jsonc
 { "number-play": { "_why": "Number Play 를 '게임 횟수'로 옮겨 놓았습니다. …", "ko": "수 놀이" } }
@@ -350,7 +351,7 @@ site/content/<lang>/guides.json
 ### 5-2. 코스 카드 색
 
 `site/index.html` 의 `SUBJECT_COLOR` 에 그 언어의 과목명을 더합니다.
-지금 한국어 · 영어 · 스페인어가 있습니다. **일본어만 남았습니다.**
+**네 언어가 다 들어 있습니다.** 언어를 더 늘릴 때 잊지 마세요.
 
 ```js
 const SUBJECT_COLOR = {
