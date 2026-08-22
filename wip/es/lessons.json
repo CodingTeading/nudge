@@ -460,5 +460,265 @@
     "right": 1
    }
   ]
+ },
+ "wave-1": {
+  "course": "wave",
+  "sim": "hookes-law",
+  "screens": null,
+  "title": "Estíralo el doble y la energía es cuatro veces mayor",
+  "lead": "La fuerza se dobla pero la energía se multiplica por cuatro. Ese desajuste explica un arco, un tirachinas y el parachoques de un coche.",
+  "hook": "Tira de un muelle y te responde <b>con más fuerza cuanto más tiras</b>. El doble de estiramiento pide el doble de fuerza. Hasta aquí, evidente. Pero ¿y <b>la energía que ha entrado</b>? El doble de fuerza haría pensar en el doble de energía, y no lo es. Sin ese desajuste no se explica el «solo he tirado un poco más, ¿por qué ha salido disparado con esa fuerza?».",
+  "predict": {
+   "q": "Estiras un muelle <b>el doble</b> de lejos. La <b>energía</b> almacenada es:",
+   "opts": [
+    "El doble",
+    "Cuatro veces mayor",
+    "La misma",
+    "La mitad"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Introducción</b>. En las casillas de la derecha activa <b>Fuerza aplicada · Fuerza restauradora · Desplazamiento · Posición de equilibrio · Valores</b>.",
+   "Mueve el mando de <b>Fuerza aplicada</b> de abajo y anota cada vez el <b>Desplazamiento</b> (cuánto se estiró).",
+   "Dobla la fuerza: ¿se dobla también el estiramiento? Compruébalo varias veces.",
+   "Dobla la <b>Constante elástica</b> y aplica la misma fuerza. ¿Es ahora el estiramiento la <b>mitad</b>?",
+   "Fíjate en las flechas de <b>Fuerza aplicada</b> y <b>Fuerza restauradora</b>. El mismo tamaño, <b>sentidos contrarios</b>.",
+   "Con el botón de la casa ve a la pantalla <b>Energía</b>. A la derecha aparecen un <b>Gráfico de barras</b> y un <b>Gráfico de energía</b>.",
+   "Pon el estiramiento en <b>0,1 m</b> y anota la energía. Luego estíralo a <b>0,2 m</b> y anótala otra vez. ¿Cuántas veces mayor? Esa es la respuesta a ②.",
+   "Prueba también <b>0,3 m</b>. ¿Cuántas veces el valor de 0,1 m?",
+   "Fíjate en la forma del <b>Gráfico de energía</b>. ¿Recta o curva?",
+   "En la pantalla <b>Sistemas</b>, pon dos resortes <b>uno al lado del otro</b> y luego <b>uno a continuación del otro</b>. ¿Qué le pasa a la constante elástica del conjunto?"
+  ],
+  "record": "Anota la energía con estiramientos de 0,1 m, 0,2 m y 0,3 m. ¿Y qué forma tenía el gráfico de energía?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>cuatro veces</strong>. Pasar de 0,1 m a 0,2 m dobla la fuerza pero lleva la energía a <strong>cuatro veces</strong>. A 0,3 m la fuerza es el triple y la energía <strong>nueve veces</strong>.</p><p>¿Por qué el desajuste? <strong>Porque la fuerza no es grande desde el principio.</strong> Al empezar a tirar es casi 0 y va creciendo conforme avanzas. La energía es <strong>esa fuerza acumulada a lo largo de la distancia</strong>, así que crece la distancia y también crece la fuerza por el camino: sale <strong>multiplicado dos veces</strong>.</p><p>Así que la fuerza es <strong>proporcional</strong> al estiramiento (una recta) mientras la energía es proporcional a su <strong>cuadrado</strong> (una parábola). La curva del gráfico de energía es la prueba. Es la <strong>y = ax²</strong> de la lección 12, que vuelve a aparecer.</p><p>El desajuste importa en el día a día.</p><ul><li>Tensa un <strong>arco</strong> un poco más y la flecha sale mucho más fuerte.</li><li>Dobla la <strong>velocidad de un coche</strong> y la distancia de frenado se va a cuatro veces, porque la energía cinética también va con el cuadrado de la velocidad.</li><li>Una <strong>cuerda de puenting</strong> estirada solo un poco más responde con una fuerza mucho mayor.</li></ul><p>Acuérdate también de que <strong>Fuerza aplicada</strong> y <strong>Fuerza restauradora</strong> eran del mismo tamaño y en sentidos contrarios. Un muelle <strong>te devuelve con la misma fuerza con la que tiras.</strong> Suéltalo y esa fuerza lanza el objeto, y ahí empieza la oscilación de la lección siguiente.</p>"
+  },
+  "real": "Una báscula de baño y una balanza de cocina son exactamente esto. El muelle se acorta en proporción a la fuerza que lo aprieta y la máquina lee ese acortamiento como un peso. Un bolígrafo de clic, la suspensión de un coche, un colchón, el resorte de un reloj: todos usan el «te devuelvo lo que me pones».",
+  "quiz": [
+   {
+    "q": "Estira el mismo muelle <b>el triple</b> de lejos. La fuerza necesaria es:",
+    "opts": [
+     "El triple",
+     "Nueve veces",
+     "La misma"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Estira el mismo muelle <b>el triple</b> de lejos. La energía almacenada es:",
+    "opts": [
+     "El triple",
+     "Nueve veces",
+     "Seis veces"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Cuanto mayor es la <b>constante elástica</b>:",
+    "opts": [
+     "Más fácil se estira",
+     "Más rígido es, así que menos se estira",
+     "Más largo es"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "wave-2": {
+  "course": "wave",
+  "sim": "masses-and-springs",
+  "screens": null,
+  "title": "Estíralo más y sigue tardando lo mismo",
+  "lead": "Oscilación grande u oscilación pequeña, una ida y vuelta dura exactamente igual. Es la razón de que se pudieran construir relojes.",
+  "hook": "La lección 1 decía que un muelle <b>te devuelve lo que le pones</b>. ¿Y qué pasa si cuelgas un peso y lo sueltas? Sale empujado hacia arriba, se pasa, vuelve a bajar: <b>oscila</b>. Y aquí está lo raro. Una oscilación más grande tiene <b>más camino que recorrer</b>, así que una ida y vuelta debería tardar <b>más</b>. No lo hace.",
+  "predict": {
+   "q": "El mismo muelle, el mismo peso. Uno lo bajas <b>solo un poco</b> y el otro <b>mucho</b>. El tiempo de una ida y vuelta es:",
+   "opts": [
+    "Mayor en el que has bajado más",
+    "Menor en el que has bajado más",
+    "El mismo en los dos",
+    "Depende de la constante elástica"
+   ]
+  },
+  "missions": [
+   "Esta es la pantalla <b>Introducción</b>. Arrastra una masa del soporte de la izquierda y cuélgala de un resorte.",
+   "Pon el <b>Amortiguamiento</b> de la derecha en <b>Nada</b>. Sin rozamiento sigue oscilando.",
+   "En las casillas de la derecha activa <b>Longitud Natural</b> y <b>Posición de Equilibrio</b>. Aparecen dos líneas de referencia.",
+   "Cuelga la masa de <b>100 g</b>, bájala un poco y suéltala. Empieza a oscilar.",
+   "Coge el cronómetro de arriba a la izquierda, mide <b>10 idas y vueltas</b> y divide por 10.",
+   "Ahora baja la masa <b>mucho más</b> y mídelo igual. ¿Es lo mismo? Esa es la respuesta a ②.",
+   "Cambia a la masa de <b>250 g</b> y haz la misma medida. ¿Más pesado significa más lento o más rápido?",
+   "Deja la masa quieta y lleva la <b>Constante del Resorte</b> hacia <b>Grande</b>. ¿Y ahora?",
+   "Cambia la <b>Gravedad</b> a <b>Luna</b>. La posición de equilibrio se mueve: ¿se mueve con ella el <b>tiempo de ida y vuelta</b>?",
+   "Con el botón de la casa ve a la pantalla <b>Energía</b>. Las barras de <b>EC · EP<sub>grav</sub> · EP<sub>elas</sub> · E<sub>total</sub></b> se van pasando la energía.",
+   "Sube el <b>Amortiguamiento</b>. La barra <b>E<sub>térmica</sub></b> crece y la oscilación se apaga. Es otra vez la historia del curso 02."
+  ],
+  "record": "Anota el tiempo de ida y vuelta con el tirón pequeño y con el grande. ¿Y qué pasó al usar la masa más pesada?",
+  "explain": {
+   "right": 2,
+   "body": "<p>La respuesta es <strong>el mismo en los dos</strong>. Oscilación grande u oscilación pequeña, una ida y vuelta dura <strong>exactamente igual.</strong></p><p>Parece un error, pero tiene razón de ser. Bajar más sí significa <strong>más camino que recorrer</strong>. Pero bajar más significa también que el muelle <strong>empuja de vuelta con más fuerza</strong>, así que se mueve <strong>más rápido</strong> en la misma medida. La distancia de más y la rapidez de más <strong>se anulan</strong> en el tiempo.</p><p>Esta propiedad se llama <strong>isocronismo</strong>: el periodo no depende del tamaño de la oscilación. Es <strong>por lo que se pudo construir un reloj.</strong> Se cuenta que Galileo lo descubrió cronometrando con su propio pulso una lámpara que oscilaba en una catedral. Eso sí: un <strong>péndulo</strong> como esa lámpara solo es isócrono mientras las oscilaciones sean pequeñas; una masa colgada de un muelle lo cumple exacto incluso en las grandes.</p><p>Entonces, ¿qué fija el periodo? Las dos cosas que comprobaste en pantalla.</p><ul><li><strong>Masa</strong>: más pesado, <strong>más lento</strong>. La fuerza recuperadora es la misma pero hay más que mover.</li><li><strong>Constante del resorte</strong>: más rígido, <strong>más rápido</strong>. Empuja de vuelta con más fuerza.</li></ul><p>Lo interesante es <strong>pasar la gravedad a la Luna</strong>. La posición de equilibrio sube pero <strong>el tiempo de ida y vuelta no cambia.</strong> La gravedad solo mueve el <strong>centro</strong> de la oscilación; la oscilación en sí la deciden el muelle y la masa.</p><p>Que la barra <strong>E<sub>térmica</sub></strong> creciera al subir el <strong>Amortiguamiento</strong> es exactamente lo que enseñaba la lección 3 del curso 02. La energía no se ha ido; se pasó a calor, y por eso la oscilación se apaga.</p>"
+  },
+  "real": "Un reloj de péndulo, una cuerda de guitarra, el rebote de un coche, el diseño antisísmico de un edificio: todos son la pregunta de qué fija el periodo. Es también por lo que importa <b>el momento</b> en que empujas un columpio: un columpio tiene su propio periodo y hay que empujar a ese ritmo para que suba. Los puentes que se agitan y los edificios que se bambolean en desastres de resonancia funcionan igual.",
+  "quiz": [
+   {
+    "q": "Dobla el <b>tamaño</b> de la oscilación y el periodo:",
+    "opts": [
+     "Se dobla",
+     "Se reduce a la mitad",
+     "Se queda igual"
+    ],
+    "right": 2
+   },
+   {
+    "q": "Usa una masa <b>más pesada</b> y el periodo:",
+    "opts": [
+     "Se alarga (más lento)",
+     "Se acorta (más rápido)",
+     "Se queda igual"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Pasa la gravedad a la Luna y el tiempo de ida y vuelta:",
+    "opts": [
+     "Se alarga",
+     "Se acorta",
+     "Se queda igual: solo se mueve la posición de equilibrio"
+    ],
+    "right": 2
+   }
+  ]
+ },
+ "wave-3": {
+  "course": "wave",
+  "sim": "wave-on-a-string",
+  "screens": null,
+  "title": "La onda viaja pero la cuerda no",
+  "lead": "En una ola de estadio nadie se levanta de su asiento. Lo que se mueve no son las personas, es la forma.",
+  "hook": "En la lección 2 una sola masa oscilaba <b>en el sitio</b>. ¿Y si hay otra masa al lado y están unidas? La oscilación de la primera <b>pasa a</b> la segunda, y de ahí a la tercera. Eso es una onda. Y plantea la pregunta más confusa que existe: cuando una onda corre a la derecha, <b>¿va la cuerda también a la derecha?</b>",
+  "predict": {
+   "q": "Agitas una cuerda y lanzas una onda hacia la derecha. ¿Cómo se mueve <b>un punto</b> de la cuerda?",
+   "opts": [
+    "Viaja a la derecha con la onda",
+    "Se mueve <b>solo arriba y abajo</b>, quedándose donde está",
+    "Da vueltas en círculo",
+    "No se mueve"
+   ]
+  },
+  "missions": [
+   "Arriba a la izquierda de la pantalla, elige <b>Pulso</b> entre <b>Manual · Oscilar · Pulso</b>.",
+   "Arriba a la derecha pon el extremo en <b>Extremo fijo</b> y baja la <b>amortiguación</b> de debajo a <b>0</b>.",
+   "Pulsa el botón de abajo a la izquierda para lanzar <b>un pulso</b>. Un bulto viaja hacia la derecha.",
+   "Activa <b>Líneas de referencia</b> a la derecha y colócala en cualquier punto de la cuerda.",
+   "Lanza otro pulso y clava la vista en <b>una sola cuenta verde de la línea de referencia</b>. ¿Hacia dónde se mueve esa cuenta? Esa es la respuesta a ②.",
+   "Baja la velocidad a <b>Movimiento lento</b> en la parte de abajo de la pantalla y avanza fotograma a fotograma con el botón de paso que está junto a la pausa: así se ve mucho más claro.",
+   "¿Qué pasa cuando el pulso llega al <b>Extremo fijo</b>? Mira si vuelve <b>del revés</b>.",
+   "Cambia el extremo a <b>Extremo libre</b> y lanza otro. ¿Se da la vuelta esta vez?",
+   "Cámbialo a <b>Sin extremo</b> y la onda se marcha sin volver.",
+   "Ahora pasa a <b>Oscilar</b> para tener una onda continua. Saca las <b>Reglas</b> y mide la <b>longitud de onda</b> (de una cresta a la siguiente).",
+   "Baja la <b>tensión</b>. La onda se vuelve <b>más lenta</b> y la longitud de onda se acorta.",
+   "Sube la <b>amortiguación</b>. La onda se hace <b>más pequeña</b> a medida que avanza."
+  ],
+  "record": "¿Hacia dónde se movió la cuenta de la línea de referencia? ¿Y qué aspecto tenía la onda reflejada en el extremo fijo y en el libre?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>solo arriba y abajo, quedándose donde está</strong>. La cuerda <strong>no viaja ni un paso</strong> hacia la derecha.</p><p>Entonces, ¿qué va hacia la derecha? <strong>La forma.</strong> Más exactamente, <strong>la energía</strong>. Cada punto tira de su vecino hacia arriba, ese vecino tira del siguiente, y se va <strong>pasando de mano en mano</strong>.</p><p>Imagina una ola de estadio. La ola recorre las gradas de punta a punta, pero <strong>nadie se mueve de lado.</strong> Se levantan y se sientan en su sitio.</p><p>Eso es una onda: <strong>el material se queda quieto y solo viaja la perturbación.</strong> El sonido es igual. Cuando alguien habla, el aire que sale de su boca no vuela hasta tu oído; solo se va pasando la <strong>vibración</strong>.</p><p>Lo que viste en las <strong>reflexiones</strong> también importa.</p><ul><li><strong>Extremo fijo</strong>: la onda de vuelta llega <strong>del revés.</strong> El extremo no puede moverse, así que la cuerda tira de la pared y la pared empuja lo mismo en sentido contrario.</li><li><strong>Extremo libre</strong>: <strong>no se da la vuelta.</strong> El extremo puede salir volando hacia arriba.</li></ul><p>La reflexión es por lo que una cuerda de guitarra da una nota y un instrumento de viento tiene un tono. Las ondas que vuelven de los dos extremos se solapan y construyen <strong>una onda que se queda quieta</strong>.</p><p>Acuérdate también de que bajar la <strong>tensión</strong> hacía la onda más lenta. La velocidad de una onda la <strong>fija el medio.</strong> No lo fuerte que la agites, sino lo tensa que esté la cuerda, y por eso tensar una cuerda de guitarra sube la nota.</p>"
+  },
+  "real": "Una onda sísmica cruza el planeta sin que el suelo se vaya a ninguna parte. El sonido y los terremotos son los dos «el material se queda, la perturbación viaja». La luz, la radio y el wifi <b>no necesitan ningún material que los lleve</b>, pero esa historia es del curso 04. Los sismógrafos que captan un terremoto al otro lado del mundo y la ecografía que mira dentro de un cuerpo viven de esta propiedad.",
+  "quiz": [
+   {
+    "q": "Al pasar una onda, el medio (cuerda, aire, agua):",
+    "opts": [
+     "Viaja con la onda",
+     "Vibra en su sitio",
+     "Desaparece"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Una onda reflejada en un <b>extremo fijo</b>:",
+    "opts": [
+     "Vuelve del mismo lado",
+     "Vuelve del revés",
+     "No vuelve"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Sube la <b>tensión</b> de la cuerda y la velocidad de la onda:",
+    "opts": [
+     "Sube",
+     "Baja",
+     "Se queda igual"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "wave-4": {
+  "course": "wave",
+  "sim": "fourier-making-waves",
+  "screens": "1",
+  "title": "Toda forma de onda es una suma de senos",
+  "lead": "Una onda cuadrada, un diente de sierra: todas se pueden construir sumando senos suaves.",
+  "hook": "Las ondas de la lección 3 eran <b>ondulaciones suaves</b>. El sonido real no es tan bonito. Un violín y un piano tocando <b>el mismo do</b> suenan distintos porque sus formas de onda son distintas. ¿De dónde salen entonces las formas de onda <b>angulosas</b>? Lo asombroso es que amontonar <b>solo senos suaves</b> las produce. Vas a construir una.",
+  "predict": {
+   "q": "¿Se puede construir una <b>onda cuadrada</b> solo con <b>senos</b> suaves?",
+   "opts": [
+    "No: los senos son redondos y una onda cuadrada tiene esquinas",
+    "Sí: <b>cuantos más</b> añadas, más se acerca a una onda cuadrada",
+    "Una onda triangular sí, una cuadrada no",
+    "Con dos senos basta"
+   ]
+  },
+  "missions": [
+   "Esta es la pantalla <b>Discreto</b>. La gráfica de arriba son los <b>senos por separado</b>; la de abajo, <b>todos sumados</b>.",
+   "Sube solo el primero (n=1) de los mandos de <b>Amplitud</b> de la izquierda. Abajo aparece un seno suave.",
+   "Ahora sube también el segundo (n=2). La forma de abajo <b>se deforma</b>: se han sumado dos ondas.",
+   "Sube y baja los mandos al azar y hazte una idea de cómo responde la forma de abajo.",
+   "Elige <b>cuadrado</b> en <b>Forma de Onda</b>, a la derecha. Los mandos se colocan <b>solos</b>.",
+   "¿Cómo de cuadrado sale el resultado? ¿Le queda todavía <b>ondulación</b>?",
+   "Sube el número de <b>Armónicos</b>, a la derecha. Se van sumando más senos.",
+   "Lleva Armónicos al <b>máximo</b>. Sale mucho más cuadrado. Esa es la respuesta a ②.",
+   "Activa <b>Armónicos Infinitos</b> abajo a la derecha y encima se dibuja la <b>onda cuadrada de verdad</b>. Compárala con la tuya.",
+   "Prueba también <b>diente de sierra</b> y <b>triángulo</b>. ¿Cuál de ellos se acerca con menos senos?",
+   "En <b>Herramientas de Medición</b>, activa <b>Longitud de Onda</b> y compara la longitud de onda del primer seno con la del segundo."
+  ],
+  "record": "Con la forma de onda cuadrada, ¿qué aspecto tenía con pocos armónicos y con muchos?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>sí: cuantos más añadas, más se acerca</strong>. Esto es <strong>lo que descubrió Fourier</strong>, y sostiene casi toda la tecnología de sonido e imagen de hoy.</p><p>¿Cómo suman cosas redondas algo anguloso? El truco es <strong>solapar senos de longitudes de onda distintas</strong>. Coge el fundamental (n=1), añade un tercio de la longitud de onda (n=3), un quinto (n=5) — <strong>solo los impares</strong>, cada uno con su tamaño — y en unos sitios se refuerzan hasta dar un tramo plano y en otros se cancelan hasta dar un giro seco. Así es como <strong>se fabrica una esquina</strong>. La prueba es que elegir <b>cuadrado</b> en Forma de Onda <strong>deja los mandos A2, A4 y A6 en 0</strong>.</p><p>Pero <strong>un número finito nunca da una onda cuadrada perfecta.</strong> Queda ondulación cerca de las esquinas. Añade más armónicos y la ondulación <strong>se aprieta hacia la esquina</strong>, sin llegar a irse nunca. Solo infinitos dan una onda cuadrada de verdad.</p><p>De hecho ya te has cruzado con esta idea.</p><ul><li>Curso 02, lección 4: partir <strong>un vector inclinado</strong> en componentes horizontal y vertical.</li><li>Aquí: partir <strong>una forma de onda complicada</strong> en componentes senoidales.</li></ul><p>Las dos son <strong>convertir algo complicado en una suma de cosas simples</strong>, porque las cosas simples son fáciles de manejar. Es el truco favorito tanto de la física como de las matemáticas.</p><p>Y enlaza también con el <strong>espectro</strong> del curso 05, lección 3. Allí la luz se partía por longitud de onda en unas pocas rayas; aquí una forma de onda se parte por longitud de onda en unas pocas barras. El mismo trabajo de <strong>descomponer una mezcla en sus componentes</strong>.</p><p>Es también por lo que los instrumentos suenan distintos. En la misma nota, <strong>qué armónicos se mezclan y en qué proporción</strong> cambia, y a esa mezcla la llamamos <strong>timbre</strong>.</p>"
+  },
+  "real": "El MP3 y el JPEG se apoyan en esto. Descomponen el sonido y la imagen en componentes y luego <b>tiran los componentes que la gente apenas nota</b> para encoger el archivo. El reconocimiento de voz, los auriculares con cancelación de ruido, la resonancia magnética, el análisis de terremotos, incluso una señal de wifi: todos manejan las formas de onda por sus componentes.",
+  "quiz": [
+   {
+    "q": "Cuando eliges <b>cuadrado</b> en Forma de Onda, los mandos <b>pares</b> (A2 · A4):",
+    "opts": [
+     "Bajan a 0",
+     "Se igualan a los impares",
+     "Se vuelven los mayores"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿Por qué suenan distintos los instrumentos en la misma nota?",
+    "opts": [
+     "El tono es distinto",
+     "La mezcla de armónicos que llevan es distinta",
+     "El volumen es distinto"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Para qué partir una forma de onda complicada en <b>una suma de senos</b>?",
+    "opts": [
+     "Queda más bonito",
+     "Las cosas simples son fáciles de manejar",
+     "Los senos son las ondas más grandes"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

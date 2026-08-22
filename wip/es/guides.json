@@ -602,5 +602,289 @@
    "Para ver los valores hay que <b>hacer clic en una flecha para seleccionarla</b>.",
    "Esta simulación se hizo para secundaria. Esta lección solo usa <b>Explorar 1D</b> y <b>Explorar 2D</b>."
   ]
+ },
+ "hookes-law": {
+  "summary": "Tira o aprieta un muelle y mira la relación entre fuerza y estiramiento. Aquí no se mueve nada, así que los mandos son sencillísimos: un solo tirador es casi todo.",
+  "screens": [
+   {
+    "name": "Introducción",
+    "what": "Donde empieza esta lección. Un resorte, fuerza contra estiramiento."
+   },
+   {
+    "name": "Sistemas",
+    "what": "Pon <b>dos</b> resortes uno al lado del otro o uno a continuación del otro."
+   },
+   {
+    "name": "Energía",
+    "what": "Enseña la energía almacenada como barras y como gráfico. El corazón de esta lección está aquí."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Fuerza aplicada (tirador de abajo)",
+    "desc": "Fija la fuerza con que aprietas el resorte. Llévalo a la derecha para estirar y a la izquierda para comprimir.",
+    "tip": "Lo principal que se hace aquí. Acierta <b>valores redondos</b> (0,1 m, 0,2 m) y anótalos, o la regla no se deja ver."
+   },
+   {
+    "name": "Constante elástica (tirador de abajo)",
+    "desc": "Fija lo rígido que es el resorte. Más grande significa que se estira menos.",
+    "tip": "Aplica la misma fuerza y dobla la constante. El estiramiento se va a la <b>mitad</b>: son inversamente proporcionales."
+   },
+   {
+    "name": "Fuerza aplicada · Fuerza restauradora (casillas de la derecha)",
+    "desc": "Dibujan las dos fuerzas como flechas.",
+    "tip": "Activa las dos. Son <b>del mismo tamaño y en sentidos contrarios</b>. Ese dibujo es lo que significa «un muelle devuelve lo que le pones»."
+   },
+   {
+    "name": "Desplazamiento · Posición de equilibrio · Valores (casillas de la derecha)",
+    "desc": "<b>Desplazamiento</b> es cuánto se estiró, <b>Posición de equilibrio</b> es dónde se queda con fuerza cero y <b>Valores</b> pone los números en pantalla.",
+    "tip": "Activa <b>Valores</b>, sin falta. A ojo no distingues el doble de cuatro veces."
+   },
+   {
+    "name": "Gráfico de barras y Gráfico de energía (derecha de la pantalla Energía)",
+    "desc": "Enseñan la energía elástica almacenada como barra y como curva.",
+    "tip": "Mira bien <b>la forma del gráfico</b>. La fuerza es una recta pero la energía es <b>curva</b>: la parábola de la lección 12."
+   },
+   {
+    "name": "Disposición de los resortes (pantalla Sistemas) — al lado · a continuación",
+    "desc": "Pone los dos resortes en paralelo o en serie.",
+    "tip": "Uno al lado del otro deja el conjunto <b>más rígido</b>; uno a continuación del otro hace que <b>se estire más fácilmente.</b> Merece la pena comprobarlo."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Introducción</b> activa <b>todas</b> las casillas de la derecha.",
+   "Sube la <b>Fuerza aplicada</b> y mira si el <b>Desplazamiento</b> le sigue el paso.",
+   "Dobla la <b>Constante elástica</b> y aplica la misma fuerza.",
+   "Pasa a la pantalla <b>Energía</b>.",
+   "Anota la energía con estiramientos de <b>0,1 · 0,2 · 0,3 m</b>.",
+   "Mira si el <b>Gráfico de energía</b> es una recta o una curva.",
+   "En la pantalla <b>Sistemas</b>, prueba los dos resortes al lado y a continuación."
+  ],
+  "gotchas": [
+   "La fuerza es <b>proporcional</b> al estiramiento pero la energía va con el <b>cuadrado</b>. El doble de estiramiento son cuatro veces la energía.",
+   "Sin la casilla <b>Valores</b> activada no aparece ningún número.",
+   "Aquí <b>Desplazamiento</b> significa «cuánto se estiró». No significa que el resorte se haya ido a otro sitio.",
+   "<b>En esta simulación no se mueve nada.</b> Los resortes que oscilan llegan en la lección siguiente (Masas y Resortes)."
+  ]
+ },
+ "masses-and-springs": {
+  "summary": "Cuelga una masa de un resorte y déjala <b>oscilar</b>. El objetivo es encontrar qué fija el tiempo de ida y vuelta, lo que convierte al <b>cronómetro</b> en la herramienta más importante de aquí.",
+  "screens": [
+   {
+    "name": "Introducción",
+    "what": "Donde empieza esta lección. Cuelga masas de dos resortes y compáralos."
+   },
+   {
+    "name": "Vectores",
+    "what": "Enseña la velocidad y la aceleración como flechas."
+   },
+   {
+    "name": "Energía",
+    "what": "Energía cinética, potencial gravitatoria, potencial elástica y térmica como barras."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Averigua la masa de un peso cuyo valor está oculto."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Masas (arrástralas del soporte de la izquierda)",
+    "desc": "Hay pesos de 50 g, 100 g y 250 g y un peso <b>?</b> de masa desconocida. Arrastra uno hasta un resorte.",
+    "tip": "Una vez colgado, <b>bájalo y suéltalo</b> para que empiece a oscilar. Solo colgarlo da un temblorcillo que se apaga en el equilibrio."
+   },
+   {
+    "name": "Amortiguamiento (tirador de la derecha)",
+    "desc": "Rozamiento, como la resistencia del aire. Súbelo y la oscilación se apaga.",
+    "tip": "Para cronometrar el periodo, <b>llévalo a Nada.</b> Con rozamiento se para antes de que puedas contar muchas idas y vueltas."
+   },
+   {
+    "name": "Longitud Natural · Posición de Equilibrio · Referencia Móvil (casillas de la derecha)",
+    "desc": "<b>Longitud Natural</b> es donde acaba el resorte sin nada colgado, <b>Posición de Equilibrio</b> es donde se queda con la masa y <b>Referencia Móvil</b> es una línea que puedes poner donde quieras.",
+    "tip": "Deja activada <b>Posición de Equilibrio</b>. Se ve que la oscilación corre <b>con esa línea en el centro</b>."
+   },
+   {
+    "name": "Constante del Resorte (tirador encima de cada resorte)",
+    "desc": "Fija la rigidez del resorte, de <b>Pequeña</b> a <b>Grande</b>.",
+    "tip": "Pon los dos resortes <b>distintos</b> y cuelga la misma masa de cada uno. Verlos oscilar lado a lado enseña la diferencia de golpe."
+   },
+   {
+    "name": "Gravedad (derecha) — Tierra · Luna · Júpiter · Planeta X · Personalizada",
+    "desc": "Cambia la intensidad de la gravedad.",
+    "tip": "Pasa a la Luna y la posición de equilibrio sube. Pero <b>el tiempo de ida y vuelta no cambia</b>: compruébalo, sin falta."
+   },
+   {
+    "name": "Cronómetro (arriba a la izquierda)",
+    "desc": "Sácalo arrastrando y luego arráncalo y páralo.",
+    "tip": "La <b>herramienta más importante</b> de esta lección. Cronometrar una sola ida y vuelta tiene demasiado error: <b>cronometra 10 y divide por 10.</b>"
+   },
+   {
+    "name": "Barras de energía (izquierda de la pantalla Energía)",
+    "desc": "Son cinco: <b>EC</b> · <b>EP<sub>grav</sub></b> · <b>EP<sub>elas</sub></b> · <b>E<sub>térmica</sub></b> · <b>E<sub>total</sub></b>.",
+    "tip": "La misma estructura que la pista de patinaje del curso 02, con una de más: la <b>energía elástica</b>. Aquí hay un resorte."
+   },
+   {
+    "name": "Ajuste de velocidad y botón de paso (abajo)",
+    "desc": "Reproducen despacio o avanzan fotograma a fotograma. Los dos son iconos, sin palabras.",
+    "tip": "Para pillar el instante en que la rapidez llega a 0 en <b>cada extremo</b> de la oscilación, ponlo lento."
+   }
+  ],
+  "steps": [
+   "Baja el <b>Amortiguamiento</b> a <b>Nada</b>.",
+   "Activa <b>Longitud Natural</b> y <b>Posición de Equilibrio</b>.",
+   "Cuelga la masa de <b>100 g</b>, bájala un poco y déjala oscilar.",
+   "Cronometra 10 idas y vueltas con el <b>cronómetro</b> y divide por 10.",
+   "Ahora bájala <b>mucho</b> y cronometra igual.",
+   "Cambia a la masa de <b>250 g</b> y vuelve a cronometrar.",
+   "Sube la <b>Constante del Resorte</b> y cronometra otra vez.",
+   "Cambia la <b>Gravedad</b> a <b>Luna</b> y comprueba el tiempo de ida y vuelta."
+  ],
+  "gotchas": [
+   "Con el <b>Amortiguamiento</b> por encima de Nada la oscilación se para pronto y cuesta cronometrar el periodo.",
+   "Cronometrar una sola ida y vuelta arrastra demasiado error. <b>Cronometra 10 y divide.</b>",
+   "El <b>tamaño</b> de la oscilación no cambia el periodo. Solo lo cambian la masa y la constante del resorte.",
+   "Colgar una masa sin más no la pone a oscilar. Hay que <b>bajarla y soltarla</b>."
+  ]
+ },
+ "wave-on-a-string": {
+  "summary": "Agita el extremo izquierdo de una cuerda larga y <b>manda una onda</b> por ella. Hay una sola pantalla y los mandos son sencillos, así que todo depende de <b>dónde claves la vista</b>.",
+  "screens": [
+   {
+    "name": "(una sola pantalla)",
+    "what": "Esta simulación tiene una única pantalla. La franja negra de abajo no lleva botón de casa ni nombres de pantalla."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Manual · Oscilar · Pulso (arriba a la izquierda)",
+    "desc": "<b>Manual</b> te deja agitar el mando a ti, <b>Oscilar</b> lo agita sin parar y <b>Pulso</b> manda un solo bulto.",
+    "tip": "Empieza con <b>Pulso</b>. Seguir un bulto con la vista es la mejor manera de ver qué hace de verdad una onda. Las ondas continuas vienen después."
+   },
+   {
+    "name": "Extremo fijo · Extremo libre · Sin extremo (arriba a la derecha)",
+    "desc": "Fija cómo está atado el extremo derecho de la cuerda.",
+    "tip": "<b>Extremo fijo</b> devuelve la onda <b>del revés</b>; <b>Extremo libre</b> la devuelve <b>del mismo lado.</b> Compáralos, sin falta. <b>Sin extremo</b> no da ninguna reflexión."
+   },
+   {
+    "name": "amortiguación (tirador de abajo)",
+    "desc": "Fija <b>cuánto se apaga la onda</b> mientras viaja.",
+    "tip": "Mientras vayas detrás de la regla, <b>llévala a 0.</b> Si no, la onda se desvanece antes de llegar al otro extremo a reflejarse."
+   },
+   {
+    "name": "tensión (tirador de abajo)",
+    "desc": "Fija lo tensa que está la cuerda.",
+    "tip": "Bájala y la onda se vuelve <b>más lenta.</b> Te enseña que la velocidad de una onda la <b>fija la cuerda</b>, no lo fuerte que la agites."
+   },
+   {
+    "name": "Líneas de referencia (casilla de abajo a la derecha)",
+    "desc": "Pone en pantalla una larga línea horizontal de referencia. Se puede arrastrar.",
+    "tip": "La <b>herramienta clave</b> de esta lección. Úsala para confirmar que un solo punto de la cuerda solo viaja <b>arriba y abajo</b> contra esa línea."
+   },
+   {
+    "name": "Reglas · Cronómetro (casillas de abajo a la derecha)",
+    "desc": "Sacan reglas horizontal y vertical y un cronómetro.",
+    "tip": "La <b>longitud de onda</b> es la distancia de una cresta a la siguiente. Tumba una regla a lo largo de la cuerda para medirla."
+   },
+   {
+    "name": "Reiniciar (abajo en el centro)",
+    "desc": "Endereza la cuerda y lo devuelve todo al principio.",
+    "tip": "Cuando las ondas se enredan, pulsa esto primero."
+   },
+   {
+    "name": "Ajuste de velocidad y botón de paso (abajo)",
+    "desc": "Reproducen despacio o avanzan fotograma a fotograma. Los dos son iconos, sin palabras.",
+    "tip": "Avanza fotograma a fotograma mirando un punto de la línea de referencia. Que solo se mueve arriba y abajo se vuelve incontestable."
+   }
+  ],
+  "steps": [
+   "Ponlo en <b>Pulso</b> y baja la <b>amortiguación</b> a 0.",
+   "Deja el extremo en <b>Extremo fijo</b> y manda un pulso.",
+   "Activa <b>Líneas de referencia</b> y clava la vista en un punto de la cuerda.",
+   "Usa <b>Movimiento lento</b> y el botón de paso para comprobar cómo se mueve ese punto.",
+   "Mira si el pulso vuelve <b>del revés</b> desde el extremo.",
+   "Cambia el extremo a <b>Extremo libre</b> y vuelve a mirar.",
+   "Pasa a <b>Oscilar</b> y mide la longitud de onda con las <b>Reglas</b>.",
+   "Baja la <b>tensión</b> y mira cómo se frena la onda."
+  ],
+  "gotchas": [
+   "La cuerda <b>no viaja de lado.</b> Lo único que se mueve es la forma (la energía).",
+   "La <b>amortiguación</b> es lo rápido que se desvanece la onda. Puesta alta, la onda no llega nunca al extremo a reflejarse, así que llévala a 0.",
+   "Solo <b>Extremo fijo</b> devuelve la onda del revés. Extremo libre la devuelve del mismo lado.",
+   "Agitar más fuerte no hace la onda <b>más rápida</b>. La <b>tensión</b> fija la velocidad.",
+   "Con una sola pantalla, la franja negra de abajo <b>no tiene botón de casa</b>. No es un fallo."
+  ]
+ },
+ "fourier-making-waves": {
+  "summary": "Construye una forma de onda <b>sumando senos</b>. La gráfica de arriba son los senos por separado y la de abajo, todos sumados.",
+  "screens": [
+   {
+    "name": "Discreto",
+    "what": "La pantalla que usa esta lección. «Discreto» quiere decir tomado de uno en uno: vas metiendo los senos uno a uno."
+   },
+   {
+    "name": "Juego de Ondas",
+    "what": "Un juego en el que igualas una forma de onda que te dan. Juégalo cuando termines la lección."
+   },
+   {
+    "name": "Paquete de Ondas",
+    "what": "Suma muchísimos senos para construir un pulso corto de onda. Bastante más difícil."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Mandos de Amplitud (la columna de la izquierda)",
+    "desc": "Fijan el <b>tamaño</b> de cada seno por separado. Van n = 1, 2, 3… desde arriba, y la longitud de onda se acorta según bajas.",
+    "tip": "Sube <b>solo uno</b> al principio. Luego dos, luego tres, cogiéndole el aire a cómo se deforma la de abajo."
+   },
+   {
+    "name": "Forma de Onda (derecha) — sinusoide · triángulo · cuadrado · diente de sierra · paquete de ondas · personalizado",
+    "desc": "Elige la forma que quieras y los mandos se colocan <b>solos</b>.",
+    "tip": "Elige <b>cuadrado</b> y sube y baja el número de Armónicos. El corazón de esta lección está en ese único gesto."
+   },
+   {
+    "name": "Armónicos (derecha)",
+    "desc": "Fija <b>cuántos</b> senos se van a sumar.",
+    "tip": "Pocos dejan mucha ondulación; más se acercan a la forma buscada. Llévalo al <b>máximo</b> y compara."
+   },
+   {
+    "name": "Armónicos Infinitos (casilla de abajo)",
+    "desc": "Dibuja <b>la forma de verdad</b> que saldría de sumar infinitos.",
+    "tip": "Déjala activada mientras subes los Armónicos. Se ve al momento <b>cuánto</b> se acerca la tuya a la real."
+   },
+   {
+    "name": "Gráfica de armónicos (arriba)",
+    "desc": "Enseña los senos que estás sumando, uno a uno.",
+    "tip": "Mira <b>alternando</b> entre arriba y abajo. Cómo se combinan abajo las ondas de arriba es toda la simulación."
+   },
+   {
+    "name": "Gráfica de la suma (abajo)",
+    "desc": "El resultado de sumar todos los senos.",
+    "tip": "Este es <b>el producto</b>. Compáralo con la forma de onda buscada."
+   },
+   {
+    "name": "Herramientas de Medición — Longitud de Onda · Período (abajo a la derecha)",
+    "desc": "Sacan una regla para la longitud de onda o el periodo de un seno concreto.",
+    "tip": "Mide la longitud de onda de n=1 y la de n=2. Es <b>exactamente la mitad</b>. Esa regla es como se eligen los senos."
+   },
+   {
+    "name": "Ecuación · Series (derecha)",
+    "desc": "Escriben como fórmula lo que has construido y te dejan elegir entre sin y cos.",
+    "tip": "Si la fórmula se te hace cuesta arriba, déjala en <b>Oculto</b>. Para esta lección bastan los dibujos."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Discreto</b>, sube solo el primer mando de <b>Amplitud</b>.",
+   "Sube también el segundo y mira cómo se deforma la de abajo.",
+   "Elige <b>cuadrado</b> en <b>Forma de Onda</b>.",
+   "Baja el número de <b>Armónicos</b> y mira la ondulación que queda.",
+   "Lleva Armónicos al <b>máximo</b> y mira cómo se cuadra.",
+   "Activa <b>Armónicos Infinitos</b> y compara con la tuya.",
+   "Prueba también <b>diente de sierra</b> y <b>triángulo</b>."
+  ],
+  "gotchas": [
+   "Un número finito de senos <b>no da nunca una onda cuadrada perfecta.</b> La ondulación cerca de las esquinas es normal.",
+   "Esta simulación se hizo para secundaria y universidad. Esta lección solo usa la pantalla <b>Discreto</b>.",
+   "Si la fórmula se te hace cuesta arriba, deja <b>Ecuación</b> en <b>Oculto</b>. Con los dibujos basta."
+  ]
  }
 }
