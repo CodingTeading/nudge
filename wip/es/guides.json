@@ -1782,5 +1782,232 @@
    "La onda ondula con el tiempo. Para mirar solo la forma, párala con el botón de pausa.",
    "Esta simulación se hizo a nivel universitario. Con entender <b>que hay escalones</b> y <b>que estrechar los separa</b> basta."
   ]
+ },
+ "gravity-and-orbits": {
+  "summary": "Monta parejas como una estrella y un planeta, o la Tierra y la Luna, y mira <b>cómo se sostiene una órbita</b>. Poder <b>encender y apagar la gravedad</b> es el recurso clave de esta simulación.",
+  "screens": [
+   {
+    "name": "Modelo",
+    "what": "La pantalla que usa esta lección. Dibujada con <b>tamaños exagerados</b> para que se vea."
+   },
+   {
+    "name": "A escala",
+    "what": "Dibujada en proporciones reales. Los cuerpos se encogen por debajo de un punto y <b>casi desaparecen</b>, lo cual es ya la lección."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de sistema (abajo)",
+    "desc": "Elige entre estrella y planeta, estrella con planeta y luna, la Tierra y la Luna, y la Tierra con un satélite. Los botones son dibujos de los cuerpos.",
+    "tip": "Empieza con la <b>estrella y el planeta</b>. Con solo dos, lo que ocurre se ve con la máxima claridad."
+   },
+   {
+    "name": "Gravedad — encender · apagar (arriba a la derecha)",
+    "desc": "Enciende y apaga la gravedad. Ponla en <b>apagar</b> y los cuerpos salen disparados rectos.",
+    "tip": "El <b>botón más importante</b> de esta simulación. Púlsalo mientras está en órbita: entiendes qué es una órbita de una sola vez."
+   },
+   {
+    "name": "Velocidad · Trayectoria · Cuadrícula (casillas de la derecha)",
+    "desc": "Activan las flechas de velocidad, el rastro y la cuadrícula del fondo.",
+    "tip": "Actívalas las tres. <b>Trayectoria</b> sobre todo: sin ella la forma de la órbita no deja rastro en el ojo."
+   },
+   {
+    "name": "La flecha de velocidad (la marca V sobre un cuerpo)",
+    "desc": "<b>Arrastra</b> la punta de la flecha para cambiar el tamaño y la dirección de la velocidad.",
+    "tip": "La acción principal de aquí. Súbela y bájala un poco y busca el punto <b>donde la órbita se rompe</b>."
+   },
+   {
+    "name": "Mandos de masa (abajo a la derecha)",
+    "desc": "Cambian por separado la <b>Masa de la Estrella · Masa del Planeta · Masa de la Luna · Masa del Satélite</b>.",
+    "tip": "Haz la estrella más pesada y tira más fuerte, así que la órbita se encoge. Compara qué pasa a la misma rapidez."
+   },
+   {
+    "name": "Regresar objeto · Limpiar (arriba a la izquierda y debajo)",
+    "desc": "Devuelven los cuerpos a donde salieron, o borran la trayectoria dibujada.",
+    "tip": "Cuando hagas varios experimentos, <b>Limpiar</b> el rastro antes de cada uno. Si no, las líneas se enredan."
+   },
+   {
+    "name": "Zoom (arriba a la izquierda)",
+    "desc": "Acerca y aleja la vista.",
+    "tip": "Si un cuerpo se marcha, aleja la vista y persíguelo. Ver hasta dónde llega ya entretiene por sí solo."
+   },
+   {
+    "name": "Rápido · Normal · Lento (abajo)",
+    "desc": "La velocidad de reproducción de la simulación.",
+    "tip": "Si una vuelta tarda mucho, usa <b>Rápido</b>. Para pillar el momento en que apagas la gravedad, usa <b>Lento</b>."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Modelo</b> elige la <b>estrella y el planeta</b>.",
+   "Activa <b>Velocidad · Trayectoria · Cuadrícula</b>.",
+   "Dale a reproducir y déjalo dar unas cuantas vueltas.",
+   "Pasa la <b>Gravedad</b> a <b>apagar</b> y mira qué pasa.",
+   "Pulsa <b>Regresar objeto</b> y luego encoge la flecha de velocidad.",
+   "Ahora haz la velocidad mucho mayor.",
+   "Cambia la <b>Masa de la Estrella</b> y mira cómo cambia la órbita.",
+   "Abre una vez la pantalla <b>A escala</b>."
+  ],
+  "gotchas": [
+   "Los tamaños y las distancias de la pantalla están <b>exagerados</b>. Para las proporciones reales, mira la pantalla <b>A escala</b>.",
+   "La flecha de velocidad apunta siempre <b>a lo largo de la tangente</b> de la órbita. No apunta al centro.",
+   "Las trayectorias se amontonan y confunden. Usa <b>Limpiar</b> a menudo.",
+   "Si un cuerpo se sale de la pantalla, aleja la vista o pulsa <b>Regresar objeto</b>."
+  ]
+ },
+ "my-solar-system": {
+  "summary": "Construye tu propio sistema solar <b>colocando tú los cuerpos</b>. La masa, la posición y la velocidad se pueden escribir como números, y puedes poner <b>varios</b> cuerpos a la vez.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Donde empieza esta lección. Lo básico, con dos cuerpos."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Pon <b>varios</b> cuerpos y experimenta con libertad. Aquí vive el problema de los tres cuerpos."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los cuerpos (arrástralos por la pantalla)",
+    "desc": "Arrastra un cuerpo para moverlo, y arrastra la <b>flecha V</b> que lleva pegada para fijar su velocidad.",
+    "tip": "Colocarlos a ojo con la mano vale. Cuando necesites valores exactos, escríbelos en <b>Más Datos</b>, abajo."
+   },
+   {
+    "name": "Más Datos (abajo a la izquierda)",
+    "desc": "Ábrelo y podrás escribir como números la <b>Masa</b>, la <b>Posición</b> (UA) y la <b>Velocidad</b> (km/s) de cada cuerpo.",
+    "tip": "Para reconstruir las mismas condiciones y comparar, escribe aquí los números. Arrastrar a mano sale un poco distinto cada vez."
+   },
+   {
+    "name": "Cuerpos (abajo en el centro)",
+    "desc": "Fija con cuántos cuerpos trabajas. En la pantalla Laboratorio puedes subirlo a varios.",
+    "tip": "Súbelo a <b>3</b> y dale a reproducir. Las órbitas no se asientan con facilidad: ese es el famoso problema de los tres cuerpos."
+   },
+   {
+    "name": "Centro de Masa (casilla de la derecha)",
+    "desc": "Marca el <b>centro compartido</b> alrededor del cual giran de verdad los dos cuerpos.",
+    "tip": "La lectura clave de esta lección. Comprueba que queda mucho más cerca del pesado, y que los dos cuerpos giran <b>alrededor de ese punto a la vez</b>."
+   },
+   {
+    "name": "Seguir Centro de Masa (abajo a la izquierda)",
+    "desc": "Engancha la vista al centro de masa.",
+    "tip": "Con esto activado, el tambaleo de la estrella se ve mucho mejor. La estrella traza un <b>círculo pequeño sobre el sitio</b>."
+   },
+   {
+    "name": "Fuerza de Gravedad · Velocidad · Trayectoria · Cuadrícula · Cinta de Medir (casillas de la derecha)",
+    "desc": "Activan las flechas de fuerza, las de velocidad, el rastro, la cuadrícula y una regla.",
+    "tip": "Activa <b>Fuerza de Gravedad</b> y podrás comparar las longitudes de las flechas de fuerza de los dos cuerpos. Así se resuelve el ② de esta lección."
+   },
+   {
+    "name": "Zoom (derecha)",
+    "desc": "Cambia la escala de la vista, en un rango muy amplio.",
+    "tip": "Aleja cuando un cuerpo se marche. Acerca para ver el tambaleo minúsculo de la estrella."
+   },
+   {
+    "name": "Regresar los Cuerpos y el botón de limpiar la trayectoria",
+    "desc": "Devuelven los cuerpos a donde salieron, o borran las trayectorias.",
+    "tip": "Si un cuerpo sale despedido y se pierde, pulsa primero Regresar los Cuerpos."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Intro</b> activa <b>Fuerza de Gravedad · Trayectoria · Cuadrícula</b>.",
+   "Compara <b>las longitudes de las dos flechas de fuerza de gravedad</b>.",
+   "Dale a reproducir y mira si la estrella también se mueve.",
+   "Reduce la <b>Masa</b> de la estrella y mira crecer el tambaleo.",
+   "Activa <b>Centro de Masa</b> y <b>Seguir Centro de Masa</b>.",
+   "Haz las dos masas casi iguales.",
+   "En la pantalla <b>Laboratorio</b> sube <b>Cuerpos</b> a 3 y dale a reproducir."
+  ],
+  "gotchas": [
+   "Las <b>flechas de fuerza de gravedad de los dos cuerpos miden lo mismo.</b> Si parecen distintas, es que una flecha se ha recortado por ser demasiado pequeña.",
+   "Con <b>tres o más</b> cuerpos las órbitas no se asientan con facilidad. No es un fallo: es así.",
+   "Arrastrar a mano da valores un poco distintos cada vez. Para repetir las mismas condiciones, escríbelos en <b>Más Datos</b>."
+  ]
+ },
+ "keplers-laws": {
+  "summary": "Mira <b>por qué una órbita es una elipse</b> y <b>cómo cambia la rapidez</b> a lo largo de ella. Los nombres de las pantallas son las tres leyes de Kepler, así que <b>recorrerlas en orden</b> es la lección.",
+  "screens": [
+   {
+    "name": "Primera Ley",
+    "what": "Una órbita es una <b>elipse</b> y la estrella está en un <b>foco</b>. Cambia lo achatada que es arrastrando el planeta."
+   },
+   {
+    "name": "Segunda Ley",
+    "what": "Barre <b>áreas iguales en tiempos iguales</b>. Mide las áreas de las porciones."
+   },
+   {
+    "name": "Tercera Ley",
+    "what": "<b>El cuadrado del periodo es proporcional al cubo del tamaño de la órbita.</b> Compruébalo en la gráfica."
+   },
+   {
+    "name": "Todas las Leyes",
+    "what": "Las tres juntas en una sola pantalla."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Excentricidad (casilla de la derecha)",
+    "desc": "<b>Enseña</b> lo achatada que es la órbita actual. No es un mando que fije el valor. Márcala y aparece a la izquierda una <b>escala de 0 a 1</b>. <b>0 es un círculo</b>; más grande es una elipse más larga y estrecha.",
+    "tip": "Lo principal con lo que trabajas aquí. Mantén el valor <b>alto</b> o no se verá la diferencia entre cerca y lejos."
+   },
+   {
+    "name": "Cambiar la forma de la órbita (arrastrando en pantalla)",
+    "desc": "Arrastra el planeta, o arrastra la <b>flecha de velocidad (v)</b> que lleva pegada, y la forma de la órbita cambia. <b>Mercurio · Tierra · Eris · Nereida · Halley</b>, escritos en la escala de excentricidad, son <b>marcas</b> solo para comparar; pulsarlas no hace nada.",
+    "tip": "<b>Tierra</b> es casi un círculo y <b>Halley</b> es larguísima y estrecha. Comparar las dos te dice de golpe qué es la excentricidad."
+   },
+   {
+    "name": "Ejes · Focos · Cadena · Semiejes (casillas de la derecha)",
+    "desc": "Dibujan el esqueleto de la elipse. Activa <b>Focos</b> y verás que la estrella está <b>en un foco, no en el centro</b>.",
+    "tip": "Prueba <b>Cadena</b>. Suma las distancias de los dos focos al planeta y sale <b>siempre la misma</b>: esa es la definición de elipse."
+   },
+   {
+    "name": "Velocidad · Rapidez (km/s) (casillas de la derecha)",
+    "desc": "Enseñan la flecha de velocidad y la rapidez como número.",
+    "tip": "La herramienta para resolver el ② de esta lección. <b>Anota los números</b> de cerca y de lejos y compara."
+   },
+   {
+    "name": "Divisiones por Período (izquierda de la pantalla Segunda Ley)",
+    "desc": "Fija <b>en cuántos trozos</b> se corta una vuelta. Se rellenan esas porciones.",
+    "tip": "Unas <b>6</b> queda mejor. Cortado demasiado fino, las áreas cuestan de comparar."
+   },
+   {
+    "name": "Valores de Área · Valores de Tiempo (izquierda de la pantalla Segunda Ley)",
+    "desc": "Enseñan como números el área de cada porción y el tiempo que tardó.",
+    "tip": "Activa <b>Valores de Área</b>. Las formas son todas distintas y <b>las áreas son todas iguales</b>: esa es la ley entera."
+   },
+   {
+    "name": "La gráfica de Período (T) frente a Semieje Mayor (a) (pantalla Tercera Ley)",
+    "desc": "Grafica la relación entre el periodo y el tamaño de la órbita. Los ejes se pueden cambiar entre <b>T · T² · T³</b> y <b>a · a² · a³</b>.",
+    "tip": "Ponlos en <b>T²</b> y <b>a³</b> y los puntos caen en una <b>recta</b>. Las otras combinaciones se curvan: pruébalas."
+   },
+   {
+    "name": "Órbita Objetivo (arriba a la derecha) — Mercurio · Venus · Tierra · Marte · Júpiter",
+    "desc": "<b>Dibuja encima la órbita de un planeta real.</b> Elegir una no lleva tu órbita ahí: es para comparar.",
+    "tip": "Úsala para comparar la órbita que has construido con una real. La diferencia de tamaño se ve de un vistazo."
+   },
+   {
+    "name": "Siempre Circular (casilla de la derecha)",
+    "desc": "Obliga a la órbita a mantenerse circular.",
+    "tip": "Va bien para ir <b>y venir</b> entre elipse y círculo comparando la rapidez. En un círculo la rapidez es constante."
+   },
+   {
+    "name": "Masa Estelar · Zoom · Cinta de Medir · Cronómetro",
+    "desc": "Cambian la masa de la estrella central y sacan la escala y las herramientas de medida.",
+    "tip": "Sube la <b>Masa Estelar</b> y el periodo se acorta para la misma órbita. Merece la pena mirarlo junto a la tercera ley."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Primera Ley</b> marca <b>Excentricidad</b> y luego arrastra el planeta para llevar la órbita cerca de 0 y después a una elipse larga y estrecha.",
+   "Compara tu órbita con las marcas de <b>Tierra</b> y <b>Halley</b> de la escala de excentricidad.",
+   "Activa <b>Velocidad</b> y <b>Rapidez (km/s)</b> y anota la rapidez de cerca y de lejos.",
+   "Activa <b>Focos</b> y confirma que la estrella está en un foco.",
+   "En la pantalla <b>Segunda Ley</b> pon <b>Divisiones por Período</b> en 6 y dale a reproducir.",
+   "Activa <b>Valores de Área</b> y compara las áreas de las porciones.",
+   "En la pantalla <b>Tercera Ley</b> pon los ejes en <b>T²</b> y <b>a³</b>."
+  ],
+  "gotchas": [
+   "La estrella está en un <b>foco de la elipse, no en su centro</b>. Eso es lo que crea un lado cercano y otro lejano.",
+   "Con una excentricidad <b>pequeña</b> la diferencia de rapidez apenas se ve. Mantenla alta mientras experimentas.",
+   "Esta simulación se hizo para secundaria. Con la <b>primera y la segunda ley</b> basta para esta lección."
+  ]
  }
 }

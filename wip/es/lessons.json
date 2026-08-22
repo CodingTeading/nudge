@@ -1555,5 +1555,200 @@
     "right": 0
    }
   ]
+ },
+ "space-1": {
+  "course": "space",
+  "sim": "gravity-and-orbits",
+  "screens": null,
+  "title": "La Luna está cayendo ahora mismo",
+  "lead": "Estar en órbita es en realidad cuestión de caer sin parar y fallar sin parar.",
+  "hook": "En el curso 02, <b>una bola lanzada de lado llegaba al suelo en el mismo momento que otra simplemente soltada</b>. ¿Y qué pasa si la lanzas muy, muy fuerte? Llega más lejos. Más fuerte todavía, más lejos todavía. Pero la Tierra es redonda. <b>¿Y si el suelo se curva por debajo justo a la misma velocidad a la que cae la bola?</b> La bola no llega nunca al suelo y da la vuelta a la Tierra. Eso es una órbita.",
+  "predict": {
+   "q": "Mientras la Luna gira alrededor de la Tierra, <b>la gravedad desaparece de golpe.</b> ¿Qué hace la Luna?",
+   "opts": [
+    "Se para donde está",
+    "Sale disparada <b>en línea recta</b>, en la dirección que llevaba en ese momento",
+    "Se aleja en espiral, cada vez más",
+    "Cae en vertical hasta la Tierra"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Modelo</b>. Abajo a la derecha puedes elegir combinaciones como una estrella con un planeta, o la Tierra con la Luna; los botones son dibujos de los cuerpos.",
+   "En las casillas de la derecha activa <b>Velocidad</b>, <b>Trayectoria</b> y <b>Cuadrícula</b>. Aparecen las flechas y el rastro.",
+   "Dale a reproducir y déjalo dar unas cuantas vueltas. La <b>Trayectoria</b> se dibuja sola.",
+   "Fíjate en la flecha de <b>Velocidad</b> del planeta. Apunta siempre <b>a lo largo de la tangente</b> de la órbita, nunca al centro.",
+   "Ahora pasa la <b>Gravedad</b> de la derecha a <b>apagar</b>. ¿Qué pasa? Esa es la respuesta a ②.",
+   "Vuelve a ponerla en <b>encender</b> y usa <b>Regresar objeto</b> para volver al principio.",
+   "<b>Arrastra la flecha de velocidad del planeta</b> para hacer la rapidez <b>más pequeña</b>. ¿Qué le pasa a la órbita?",
+   "Ahora hazla <b>mucho mayor</b>. El planeta deja la órbita y se marcha.",
+   "Busca la rapidez que hace la órbita <b>casi un círculo</b>. Ni demasiado lenta ni demasiado rápida sirven.",
+   "Sube la <b>Masa de la Estrella</b>. Con la misma rapidez, ¿cómo cambia la órbita?",
+   "Con el botón de la casa visita la pantalla <b>A escala</b>. Dibujada en proporciones reales, <b>apenas se ve nada.</b> Te dice lo vacío que está el espacio."
+  ],
+  "record": "¿Qué camino siguió el planeta cuando apagaste la gravedad? ¿Y qué le pasó a la órbita al hacer la rapidez más pequeña y más grande?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es que <strong>sale disparada en línea recta, en la dirección que llevaba</strong>. Con la gravedad apagada en pantalla, el planeta se habrá marchado en <strong>línea recta</strong>.</p><p>¿Por qué recta? Sin ninguna fuerza encima, un objeto <strong>sigue yendo en la dirección que llevaba.</strong> La Luna está intentando ir recta en este mismo momento, y la gravedad la va <strong>doblando hacia dentro</strong>.</p><p>Así que una órbita es este dibujo.</p><ul><li>La Luna se mueve rápido <strong>de lado</strong></li><li>La gravedad tira de ella sin parar <strong>hacia la Tierra</strong></li><li>La Luna cae sin parar, pero va de lado lo bastante rápido para <strong>fallar la Tierra</strong></li></ul><p>Así que <strong>la Luna está cayendo ahora mismo</strong>. Su rapidez lateral es justo la necesaria para seguir fallando eternamente. Los astronautas flotan en una estación espacial no porque no haya gravedad sino porque <strong>están cayendo junto con la estación.</strong></p><p>Merece la pena recoger lo que te enseñó cambiar la rapidez.</p><ul><li><strong>Demasiado lenta</strong>: no falla por suficiente y <strong>cae en espiral hacia dentro.</strong></li><li><strong>Demasiado rápida</strong>: la gravedad no puede sujetarla y <strong>se marcha.</strong></li><li><strong>La justa</strong>: una órbita estable.</li></ul><p>Por lo cual <strong>la rapidez importa más que la altura</strong> al lanzar un satélite. Súbelo alto y se vuelve a caer sin más. Hay que empujarlo <strong>lo bastante rápido de lado</strong> para llegar a órbita.</p><p>Acuérdate también de que en la pantalla <strong>A escala</strong> no se veía casi nada. Todos los diagramas de los libros están <strong>exagerados</strong>. El espacio está mucho más vacío que los dibujos.</p>"
+  },
+  "real": "Los satélites GPS, los de comunicaciones y la estación espacial están todos en el estado de caer sin parar y fallar sin parar. Un satélite geoestacionario parece colgado de un punto del cielo porque su periodo coincide con la rotación de la Tierra. Un cohete de SpaceX <b>se tumba de lado</b> después del lanzamiento por la misma razón: está comprando rapidez lateral, no altura.",
+  "quiz": [
+   {
+    "q": "¿Hacia dónde apunta la <b>flecha de velocidad</b> de un planeta en órbita?",
+    "opts": [
+     "Siempre hacia el centro (la estrella)",
+     "Siempre a lo largo de la <b>tangente</b> de la órbita",
+     "Siempre hacia afuera de la órbita"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Si un satélite va <b>demasiado rápido</b>:",
+    "opts": [
+     "Deja la órbita y se marcha",
+     "Cae en espiral hacia dentro",
+     "Sigue como estaba"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿Por qué flotan los astronautas en una estación espacial?",
+    "opts": [
+     "Porque ahí arriba no hay gravedad",
+     "Porque están cayendo junto con la estación",
+     "Porque no hay aire"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "space-2": {
+  "course": "space",
+  "sim": "my-solar-system",
+  "screens": null,
+  "title": "El Sol también se tambalea",
+  "lead": "El Sol tira del planeta y el planeta tira del Sol. Así que el Sol no puede quedarse quieto.",
+  "hook": "En la lección 1 la estrella se quedaba <b>quieta</b> y solo giraba el planeta. Pero ¿es así? El curso 01 decía que dos cargas se atraen <b>con fuerzas del mismo tamaño</b>. La gravedad es igual. El Sol tira de la Tierra, y <b>la Tierra tira del Sol</b> otro tanto. Así que el Sol también debería moverse. En esta simulación colocas tú los cuerpos y miras ese tambaleo.",
+  "predict": {
+   "q": "Compara la fuerza con que el Sol tira de la Tierra con <b>la fuerza con que la Tierra tira del Sol</b>:",
+   "opts": [
+    "El Sol tira mucho más fuerte",
+    "La Tierra tira mucho más fuerte",
+    "<b>Son del mismo tamaño</b>: solo cambian las direcciones",
+    "Se diferencian en la proporción de las masas"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Intro</b>. Hay colocados una estrella y un planeta.",
+   "En las casillas de la derecha activa <b>Fuerza de Gravedad</b>, <b>Trayectoria</b> y <b>Cuadrícula</b>. Aparecen las flechas de fuerza.",
+   "Compara la longitud de las flechas de <b>Fuerza de Gravedad</b> de los dos cuerpos. ¿Cuál es más larga? Esa es la respuesta a ②.",
+   "Dale a reproducir y déjalo correr. <b>¿Se mueve algo la estrella?</b> Si cuesta verlo, pasa a la misión siguiente.",
+   "Usa <b>Masa</b>, abajo a la izquierda, para <b>reducir</b> la masa de la estrella. Ahora se tambalea mucho más.",
+   "Activa <b>Centro de Masa</b> a la derecha. Se ve a los dos cuerpos girando <b>con ese punto en medio</b>.",
+   "Activa <b>Seguir Centro de Masa</b> y la vista se engancha a ese punto.",
+   "Haz las dos masas <b>casi iguales</b>. ¿Adónde se va el centro de masa?",
+   "Con el botón de la casa ve a la pantalla <b>Laboratorio</b>, donde puedes subir los <b>Cuerpos</b> a <b>tres o más</b>.",
+   "Pon <b>tres</b> cuerpos y dale a reproducir. ¿Se asienta la órbita? Pruébalo unas cuantas veces.",
+   "Usa el control de zoom para perseguir a un cuerpo que se haya marchado."
+  ],
+  "record": "¿Cómo se comparaban las longitudes de las dos flechas de fuerza de gravedad? ¿Y cómo cambió el movimiento de la estrella al reducir su masa?",
+  "explain": {
+   "right": 2,
+   "body": "<p>La respuesta es <strong>son del mismo tamaño</strong>. Las dos flechas de la pantalla habrán salido <strong>de la misma longitud, apuntando en sentidos contrarios</strong>.</p><p>Pasaba lo mismo con las dos cargas del curso 01, lección 3. Por grande que hicieras una carga, <strong>las dos figuras tiraban con la misma fuerza</strong>. La gravedad funciona igual. <strong>Las fuerzas vienen siempre por parejas, iguales en tamaño y contrarias en sentido.</strong></p><p>¿Por qué parece entonces que solo gira la Tierra? <strong>Porque las fuerzas son iguales pero las masas no.</strong> Bajo la misma fuerza, el más pesado <strong>se mueve menos.</strong> El Sol es 330.000 veces más pesado que la Tierra, así que se mueve 330.000 veces menos.</p><p>El Sol, por tanto, <strong>sí se mueve, solo que muy poco.</strong> Reducir la masa de la estrella en pantalla y ver crecer el tambaleo es la prueba.</p><p>El <strong>centro de masa</strong> es el corazón de esta historia. Los dos cuerpos no giran uno alrededor del otro; <strong>los dos giran alrededor de un punto compartido.</strong> Ese punto es el centro de masa, y está mucho más cerca del pesado. Para el Sol y la Tierra queda <strong>dentro del Sol</strong>, y por eso el Sol parece girar ligeramente sobre el sitio.</p><p>Haz las dos masas parecidas y el centro de masa se va <strong>hacia el medio</strong>, dándote una <strong>estrella binaria</strong> con las dos girando una alrededor de la otra. El espacio está lleno de ellas.</p><p>Con <strong>tres cuerpos</strong> la órbita no se habrá asentado con facilidad. Este es el famoso <strong>problema de los tres cuerpos</strong>. Con dos la respuesta sale limpia; con tres <strong>no hay solución general</strong>. Empújalo un poco y sale un resultado completamente distinto.</p>"
+  },
+  "real": "Una de las maneras de encontrar planetas alrededor de otras estrellas es exactamente esta: vigilar <b>un tambaleo minúsculo de la estrella</b>. Al planeta no se le ve nunca directamente; su existencia se deduce del tambaleo de la estrella. Buena parte de los miles de exoplanetas encontrados hasta hoy se encontraron así.",
+  "quiz": [
+   {
+    "q": "La fuerza con que la Tierra tira del Sol es:",
+    "opts": [
+     "La misma que la fuerza con que el Sol tira de la Tierra",
+     "Mucho menor",
+     "Inexistente"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Entonces, ¿por qué apenas se mueve el Sol?",
+    "opts": [
+     "No nota ninguna fuerza",
+     "Es mucho más pesado, así que se mueve menos bajo la misma fuerza",
+     "Está fijado en su sitio"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Alrededor de qué giran de verdad dos cuerpos?",
+    "opts": [
+     "Del centro del más pesado",
+     "Del centro de masa de los dos",
+     "Del centro del más ligero"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "space-3": {
+  "course": "space",
+  "sim": "keplers-laws",
+  "screens": null,
+  "title": "Va más rápido cuando está cerca",
+  "lead": "Una órbita no es un círculo perfecto sino una elipse achatada. Así que la rapidez cambia a lo largo del año.",
+  "hook": "Los dibujos del sistema solar de los libros ponen los planetas sobre <b>círculos perfectos</b>. En realidad son <b>elipses</b> ligeramente achatadas. Lo que significa que hay un punto <b>cercano</b> y un punto <b>lejano</b> respecto de la estrella. ¿Y qué pasa con la rapidez? La lección 1 decía <b>demasiado rápido y se marcha, demasiado lento y cae en espiral</b>. Esa regla también funciona dentro de una sola órbita.",
+  "predict": {
+   "q": "¿En qué punto de una órbita elíptica va un planeta <b>más rápido</b>?",
+   "opts": [
+    "En su punto <b>más lejano</b> a la estrella",
+    "En su punto <b>más cercano</b> a la estrella",
+    "Igual en todas partes",
+    "En algún punto intermedio"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Primera Ley</b>. Los mandos están todos a la <b>derecha</b>. <b>No hay ningún mando</b> para la forma de la órbita: la cambias arrastrando el planeta o la <b>flecha de velocidad (v)</b> que lleva pegada.",
+   "Marca <b>Excentricidad</b> a la derecha. Aparece a la izquierda una <b>escala de 0 a 1</b> con el valor actual señalado. Arrastra el planeta para llevar el valor <b>cerca de 0</b> y tener un <b>círculo</b>, o súbelo para una <b>elipse larga y estrecha</b>.",
+   "Esa escala lleva <b>marcados</b> <b>Mercurio · Tierra · Eris · Nereida · Halley</b>. Están para comparar, no para elegir: arrastra tu órbita hasta que quede al lado de Halley.",
+   "En las casillas de la derecha activa <b>Velocidad</b> y <b>Rapidez (km/s)</b>. Tendrás la flecha y el número.",
+   "Deja la excentricidad alta y dale a reproducir. Anota la lectura de rapidez <b>cerca</b> de la estrella y <b>lejos</b> de ella. Esa es la respuesta a ②.",
+   "Activa <b>Ejes</b> y <b>Focos</b> para ver el esqueleto de la elipse. La estrella está <b>en un foco, no en el centro</b>.",
+   "Con el botón de la casa ve a la pantalla <b>Segunda Ley</b>. Las <b>Divisiones por Período</b> fijan en cuántos trozos se corta la órbita.",
+   "Dale a reproducir y las <b>porciones</b> se van rellenando de una en una. Activa <b>Valores de Área</b> y compara las áreas de los trozos.",
+   "La porción de cerca de la estrella es <b>corta y ancha</b>; la de lejos es <b>larga y estrecha</b>. Pero ¿y las áreas?",
+   "Ve a la pantalla <b>Tercera Ley</b> para la gráfica de <b>Período (T)</b> frente a <b>Semieje Mayor (a)</b>.",
+   "Pon los ejes en <b>T²</b> y <b>a³</b>. ¿Caen los puntos en una <b>recta</b>? ¿Y con otras combinaciones?"
+  ],
+  "record": "Anota la rapidez de cerca y la de lejos. ¿Y cuáles eran las áreas de las porciones en la pantalla de la Segunda Ley?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>en su punto más cercano a la estrella</strong>. Más cerca, más rápido; más lejos, más lento.</p><p>Hay dos maneras de decir por qué.</p><p>Primera, <strong>ahí la gravedad es más intensa</strong>. Cuanto más cerca, más fuerte el tirón, así que va arrastrado más deprisa. Como con la fuerza de Coulomb del curso 01, <strong>la fuerza sube bruscamente al acortarse la distancia.</strong></p><p>Segunda, <strong>el cambio de energía</strong>. En la pista de patinaje del curso 02, <strong>perder altura te daba rapidez.</strong> Una órbita es igual. Acercarse a la estrella es «bajar» y gana rapidez; alejarse es «subir» y la pierde. El mismo dibujo que una montaña rusa.</p><p>La <strong>Segunda Ley</strong> es eso convertido en regla exacta. Las porciones habrán salido todas <strong>con la misma área</strong>. Cerca el radio es corto, así que tiene que <strong>barrer deprisa</strong> para hacer la misma área; lejos el radio es largo, así que con <strong>barrer despacio</strong> basta. «Barre áreas iguales en tiempos iguales»: esa es la segunda ley de Kepler.</p><p>Habrás comprobado también la <strong>Tercera Ley</strong>. Los puntos solo caen en una recta cuando los ejes son <strong>T²</strong> y <strong>a³</strong>. Así que <strong>el cuadrado del periodo es proporcional al cubo del tamaño de la órbita</strong>. Por eso un planeta más lejano tarda tantísimo más en dar la vuelta: Neptuno tarda 165 años.</p><p>Que <strong>la estrella esté en un foco de la elipse y no en su centro</strong> importa también. Esa es la primera ley, y es lo que crea un lado cercano y otro lejano. La Tierra está más cerca del Sol en enero: las estaciones las hace la <strong>inclinación</strong>, no la distancia.</p>"
+  },
+  "real": "Los cometas son un buen ejemplo. El cometa Halley tiene una excentricidad tan alta que pasa a toda velocidad cerca del Sol y se arrastra durante décadas allá en el extremo lejano. Diseñar órbitas de satélites, calcular cuándo debe salir una sonda a Marte y predecir cuándo se acerca un asteroide a la Tierra se calculan todos con estas tres leyes.",
+  "quiz": [
+   {
+    "q": "¿En qué punto de una órbita elíptica va un planeta <b>más lento</b>?",
+    "opts": [
+     "En su punto más cercano a la estrella",
+     "En su punto más lejano a la estrella",
+     "Igual en todas partes"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Qué dice la <b>segunda ley</b> de Kepler?",
+    "opts": [
+     "Barre áreas iguales en tiempos iguales",
+     "Recorre distancias iguales en tiempos iguales",
+     "Su rapidez es siempre constante"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Cuanto <b>mayor</b> la órbita, el tiempo de una vuelta:",
+    "opts": [
+     "Se acorta",
+     "Se alarga",
+     "Se queda igual"
+    ],
+    "right": 1
+   }
+  ]
  }
 }
