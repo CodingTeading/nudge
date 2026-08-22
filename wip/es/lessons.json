@@ -1750,5 +1750,265 @@
     "right": 1
    }
   ]
+ },
+ "matter-1": {
+  "course": "matter",
+  "sim": "states-of-matter",
+  "screens": null,
+  "title": "El hielo y el agua son los mismos granos",
+  "lead": "Sólido, líquido y gas no son sustancias distintas. Son los mismos granos, agitándose más o menos.",
+  "hook": "El hielo, el agua y el vapor no se parecen en nada. Duro, que fluye, invisible. Y sin embargo <b>cada grano es exactamente la misma molécula de agua</b>. ¿Qué es distinto entonces? Esta simulación amplía hasta los granos y te enseña la respuesta. Y por el camino sale <b>qué es de verdad la temperatura</b>.",
+  "predict": {
+   "q": "Calientas un sólido hasta que se hace líquido. ¿Qué ha cambiado en <b>un grano</b>?",
+   "opts": [
+    "El grano <b>se ha hecho más grande</b>",
+    "El grano <b>se agita más rápido</b>",
+    "El grano <b>se ha derretido</b>",
+    "El grano <b>se ha vuelto de otra clase</b>"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Estado</b>.",
+   "Elige <b>Neón</b> en <b>Átomos y Moléculas</b>, a la derecha. Los granos sencillos se miran mejor.",
+   "Pulsa el botón <b>Sólido</b> de la derecha. Los granos se alinean <b>en filas</b> y tiemblan en el sitio.",
+   "Lleva el mando de abajo hacia <b>Calor</b> y caliéntalo despacio. La <b>Temperatura</b> de arriba a la izquierda sube.",
+   "¿Cómo cambian los granos? <b>¿Se hacen más grandes o se agitan más rápido?</b> Esa es la respuesta a ②.",
+   "Sigue calentando y las filas se derrumban en un <b>Líquido</b>. ¿Se mantienen en contacto los granos mientras cambian de sitio?",
+   "Calienta más y se hace <b>Gas</b>. Ahora los granos están muy separados y vuelan al azar.",
+   "Ahora lleva el mando hacia <b>Frío</b> y enfríalo. ¿Vuelve atrás?",
+   "Cambia a <b>Agua</b> y haz lo mismo. ¿Ves a los granos colocándose <b>más sueltos</b> al congelarse?",
+   "Con el botón de la casa ve a la pantalla <b>Cambios de Fase</b>, donde también puedes aplicar <b>Presión</b>. Sube la presión para convertir el gas en líquido.",
+   "En la pantalla <b>Interacción</b>, cambia la <b>Distancia entre átomos</b>. De cerca es <b>Repulsiva</b>; de lejos, <b>Atractiva</b>."
+  ],
+  "record": "Al calentarlo de sólido a gas, ¿qué le pasó al tamaño de los granos y a su agitación?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>se agitan más rápido</strong>. Los granos en sí <strong>no cambian ni de tamaño ni de clase.</strong></p><p>Recogiendo lo que viste en pantalla:</p><ul><li><strong>Sólido</strong>: los granos se alinean <strong>en filas</strong> y solo tiemblan en el sitio. La fuerza que los sujeta le gana a la agitación.</li><li><strong>Líquido</strong>: siguen en contacto, pero <strong>cambian de sitio.</strong> Por eso fluye.</li><li><strong>Gas</strong>: <strong>separados</strong> unos de otros, volando al azar. La agitación le ha ganado a la sujeción.</li></ul><p>Así que los tres estados son cuestión de hacia qué lado se ha inclinado <strong>la pelea entre sujeción y agitación</strong>. Los granos son los mismos en todos.</p><p>Y aquí está <strong>qué es la temperatura</strong>. La temperatura no es un grado de calor sino <strong>lo rápido que se mueven los granos</strong>. Calentar algo es <strong>agitarle los granos más fuerte</strong>.</p><p>Congelar <strong>agua</strong> es lo interesante. Casi todas las sustancias se aprietan más al congelarse; el agua se coloca <strong>más suelta</strong>. Por eso <strong>el hielo flota.</strong> Gracias a esa propiedad rara, un lago se congela de la superficie hacia abajo y la vida que hay dentro pasa el invierno.</p><p>Lo que viste en la pantalla <strong>Interacción</strong> también importa. Los granos <strong>se atraen de lejos y se repelen de cerca.</strong> Así que se quedan a una distancia concreta. Es por lo que un sólido tiene volumen, y por lo que hay un límite a cuánto se puede apretar nada.</p>"
+  },
+  "real": "Toda la cocina es esta historia. El agua hirviendo y quedándose luego a 100 °C, una olla a presión cocinando a más temperatura, el hielo seco pasando directo a gas sin fase líquida: todo son peleas entre granos. Sin el hielo flotando, los lagos se congelarían desde el fondo cada invierno y los peces no sobrevivirían.",
+  "quiz": [
+   {
+    "q": "Calienta agua y una molécula de agua:",
+    "opts": [
+     "Se hace más grande",
+     "Se mueve más rápido",
+     "Se convierte en otra molécula"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Qué representa la <b>temperatura</b>?",
+    "opts": [
+     "El tamaño de los granos",
+     "Lo rápido que se mueven los granos",
+     "El número de granos"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Cuando los granos están <b>muy juntos</b>, la fuerza entre ellos es:",
+    "opts": [
+     "Atractiva",
+     "Repulsiva",
+     "No hay ninguna"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "matter-2": {
+  "course": "matter",
+  "sim": "gas-properties",
+  "screens": null,
+  "title": "La presión son granos golpeando la pared",
+  "lead": "Un globo se hincha no porque algo empuje desde dentro, sino porque hay granos tamborileando sobre la pared sin parar.",
+  "hook": "La lección 1 decía que los granos de un gas <b>vuelan al azar</b>. ¿Qué es entonces la <b>presión</b>? La gente lo despacha con «el aire empuja hacia fuera», pero al nivel de los granos es mucho más sencillo. Granos <b>golpeando la pared</b> es todo lo que es. Esta simulación tiene hasta un <b>Contador de Colisiones</b>, así que puedes contar el tamborileo tú mismo.",
+  "predict": {
+   "q": "Un gas en un recipiente cerrado. <b>Mantienes el volumen</b> y <b>doblas la temperatura</b>. La presión:",
+   "opts": [
+    "Se queda igual",
+    "<b>Sube</b>: los granos golpean más fuerte y más a menudo",
+    "Baja",
+    "Depende del número de granos"
+   ]
+  },
+  "missions": [
+   "Esta es la pantalla <b>Ideal</b>. Pulsa la bomba de la izquierda para meter gas en el recipiente.",
+   "Consulta el manómetro de <b>Presión</b> de arriba y la lectura de temperatura de la izquierda.",
+   "En <b>Mantener Constante</b>, a la derecha, elige <b>Volumen (V)</b>. El volumen queda fijo.",
+   "Lleva el mando de abajo hacia <b>Calor</b>. ¿Qué hace la <b>Presión</b> según sube la temperatura? Esa es la respuesta a ②.",
+   "Activa el <b>Contador de Colisiones</b> de la derecha. Informa de las <b>Colisiones con la Pared</b>. ¿Suben al calentar?",
+   "Ahora pasa <b>Mantener Constante</b> a <b>Temperatura (T)</b> y empuja la pared derecha del recipiente <b>hacia dentro</b> para reducir el volumen. ¿Y la presión?",
+   "Ponlo en <b>Nada</b> y calienta el recipiente: <b>la tapa sale empujada hacia arriba.</b> El volumen creció.",
+   "En <b>Partículas</b>, a la izquierda, mete <b>el mismo número</b> de <b>Pesado</b> y de <b>Ligero</b>.",
+   "¿Cuáles vuelan más rápido, los granos pesados o los ligeros?",
+   "Con el botón de la casa ve a la pantalla <b>Difusión</b> y pulsa <b>Eliminar Divisor</b>. Los dos gases <b>se mezclan solos.</b>",
+   "En la pantalla <b>Energía</b>, mira el reparto de velocidades de los granos. No están todos a una velocidad: están <b>por todas partes</b>."
+  ],
+  "record": "Con el volumen mantenido, ¿qué le pasó a la presión y a la cuenta de colisiones con la pared al calentar? ¿Y cómo se comparaban las velocidades de los granos pesados y los ligeros?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es que <strong>sube</strong>. Que el número del <b>Contador de Colisiones</b> suba al mismo tiempo es la prueba.</p><p>Empieza por qué es la presión. La presión son <strong>granos tamborileando sobre la pared</strong>. Así que la suben dos cosas.</p><ul><li>Que los granos golpeen <strong>más a menudo</strong>, o</li><li>que cada golpe caiga <strong>más fuerte</strong></li></ul><p>Sube la temperatura y los granos se aceleran, así que suben <strong>las dos</strong>. Por eso la presión trepa tan bruscamente.</p><p>La presión también subió al reducir el volumen. Esta vez los granos mantuvieron su rapidez pero <strong>las paredes se acercaron</strong>, así que golpean más a menudo.</p><p>Para recogerlo:</p><ul><li><strong>Temperatura ↑</strong> (volumen mantenido) → presión ↑, más fuerte y más a menudo</li><li><strong>Volumen ↓</strong> (temperatura mantenida) → presión ↑, paredes más cerca, más a menudo</li><li><strong>Número de granos ↑</strong> → presión ↑, más cosas golpeando</li></ul><p>Todas las leyes de los gases del libro de texto salen de este único dibujo. No hay ninguna fórmula aparte que memorizar.</p><p>Que <strong>los granos pesados fueran más lentos</strong> también importa. La misma temperatura significa <strong>la misma energía</strong>, y con la misma energía algo más pesado se mueve más despacio. Es por lo que un globo de helio baja antes que uno lleno de aire, y por lo que un perfume tarda en llenar una habitación.</p><p>Acuérdate también de que las velocidades de la pantalla <strong>Energía</strong> eran <strong>todas distintas</strong>. La temperatura es solo un <strong>promedio</strong>, y que se escapen de la superficie de un líquido los pocos que van inusualmente rápidos es lo que es la <strong>evaporación</strong>. Es por lo que la ropa se seca sin hervir.</p>"
+  },
+  "real": "Inflar un neumático y que se encienda el aviso de presión en invierno, una olla a presión llevando el agua más allá de 100 °C, por qué no se debe echar un aerosol al fuego, una bolsa de patatas hinchándose al despegar un avión: todo sale de este único dibujo.",
+  "quiz": [
+   {
+    "q": "La <b>presión</b> de un gas es:",
+    "opts": [
+     "Cuánto tamborilean los granos sobre la pared",
+     "El peso de los granos",
+     "El tamaño del recipiente"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Mantén la temperatura y <b>reduce el volumen</b>. La presión:",
+    "opts": [
+     "Sube",
+     "Baja",
+     "Se queda igual"
+    ],
+    "right": 0
+   },
+   {
+    "q": "A la misma temperatura, un grano <b>más pesado</b> es:",
+    "opts": [
+     "Más rápido",
+     "Más lento",
+     "Igual de rápido"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "matter-3": {
+  "course": "matter",
+  "sim": "molecule-shapes",
+  "screens": null,
+  "title": "¿Por qué está doblada el agua?",
+  "lead": "Dos enlaces deberían dar una línea recta y sin embargo el agua está doblada. Es por unos pares de electrones que no se ven.",
+  "hook": "El dióxido de carbono (CO₂) es <b>una línea recta</b> mientras que el agua (H₂O) está <b>doblada</b>. Los dos tienen un átomo central con dos brazos. ¿Por qué la diferencia? La respuesta está en <b>lo que no se ve</b>. Y esta diferencia de forma lleva directa a la lección siguiente: <b>por qué el agua es tan especial</b>.",
+  "predict": {
+   "q": "Un átomo central tiene <b>2 enlaces</b>. Pero tiene también <b>2 pares solitarios</b> que no participan en el enlace. La forma es:",
+   "opts": [
+    "Una línea recta",
+    "<b>Doblada</b>",
+    "Un triángulo",
+    "Solo cuentan los enlaces, así que los pares solitarios no cambian nada"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Modelo</b>. Hay colocado un átomo central y le enganchas brazos desde la derecha.",
+   "En <b>Enlace</b>, a la derecha, engancha <b>dos</b> enlaces sencillos. ¿Qué forma sale?",
+   "Activa <b>Nombre</b> abajo a la izquierda y pone <b>Lineal</b>. Una línea recta.",
+   "Ahora engancha <b>un</b> <b>Par Solitario</b>. ¿Cambia la forma?",
+   "Engancha <b>uno más</b>. Ahora tienes 2 enlaces y 2 pares solitarios. Esta es la estructura del agua, y la respuesta a ②.",
+   "Activa <b>Mostrar ángulos de enlace</b> a la derecha. El ángulo sale como número. ¿Cuántos grados?",
+   "Apaga y enciende <b>Mostrar Pares Solitarios</b>. Apagado, <b>no se ve por qué está doblada.</b>",
+   "Ahora sube los enlaces a <b>3</b> y a <b>4</b>. ¿Qué forma da cada uno?",
+   "Con 4 enlaces, comprueba que el ángulo <b>no es de 90°</b>. ¿Por qué no?",
+   "Con el botón de la casa ve a la pantalla <b>Moléculas reales</b>, donde puedes elegir moléculas de verdad como <b>H₂O · CO₂ · NH₃ · CH₄</b>.",
+   "Cambia entre <b>CO₂</b> y <b>H₂O</b> y compara <b>el número de pares solitarios</b>."
+  ],
+  "record": "Anota la forma y el ángulo con 2 enlaces solos, y con 2 enlaces más 2 pares solitarios.",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>doblada</strong>. Esa es exactamente la estructura del agua, y el ángulo es de unos <strong>104,5°</strong>.</p><p>La razón es sencilla. <strong>Los pares de electrones se repelen.</strong> Todos son negativos. Así que los pares se van adonde queden <strong>lo más lejos posible unos de otros</strong>.</p><p>Lo importante es que <strong>un par usado en un enlace y uno que no empujan exactamente igual.</strong> Así que para calcular la forma hay que <strong>contarlos los dos</strong>.</p><ul><li><strong>2 pares</strong> → uno enfrente del otro → <strong>lineal</strong> (180°)</li><li><strong>3 pares</strong> → triangular</li><li><strong>4 pares</strong> → tetraédrico (unos 109,5°)</li></ul><p>El agua tiene 2 enlaces más 2 pares solitarios = <strong>4 pares en total</strong>, así que se reparten tetraédricamente. Pero lo único que vemos son <strong>los dos enlaces</strong>, así que <strong>parece doblada</strong>.</p><p>Apagar <strong>Mostrar Pares Solitarios</strong> era una buena comprobación. Apagado no hay manera de saber por qué se dobla. <strong>Algo invisible está fijando la forma.</strong></p><p>El dióxido de carbono es recto por la misma razón. El carbono central <strong>no</strong> tiene pares solitarios, así que solo se repelen los dos enlaces, y eso da 180°.</p><p>Acuérdate también de que con 4 enlaces el ángulo era de <strong>109,5°, no de 90°</strong>. Dibujado en papel parece una cruz, así que 90° suena bien; pero en realidad es <strong>tridimensional</strong>, y repartirse en un tetraedro los deja lo más lejos posible. <strong>Las moléculas no son planas.</strong></p><p>De esta diferencia de forma arranca la lección siguiente, porque los mismos enlaces dan <strong>una molécula entera con propiedades distintas según la forma</strong>.</p>"
+  },
+  "real": "Cómo funciona un fármaco en el cuerpo depende de esta forma, porque una enzima y una molécula de fármaco tienen que encajar como una llave en su cerradura. Construidas con los mismos átomos, un <b>orden y un ángulo</b> distintos dan una sustancia completamente distinta. El desastre de la talidomida de los años sesenta suele ponerse de ejemplo, aunque la historia real es un paso más complicada: las dos imágenes especulares <b>se convierten la una en la otra dentro del cuerpo</b>, así que dar solo la segura no lo habría evitado.",
+  "quiz": [
+   {
+    "q": "¿Qué fija la forma de una molécula?",
+    "opts": [
+     "Solo el número de enlaces",
+     "La cuenta de enlaces y pares solitarios juntos",
+     "El peso de los átomos"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Por qué es el <b>CO₂</b> una línea recta?",
+    "opts": [
+     "Porque tiene dos enlaces",
+     "Porque el átomo central no tiene pares solitarios",
+     "Porque el carbono es ligero"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Con <b>4</b> pares de electrones, ¿por qué no es el ángulo de 90°?",
+    "opts": [
+     "El cálculo está mal",
+     "Repartirse en un tetraedro en tres dimensiones los deja lo más lejos posible",
+     "Las longitudes de enlace son distintas"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "matter-4": {
+  "course": "matter",
+  "sim": "molecule-polarity",
+  "screens": null,
+  "title": "La forma cambia las propiedades",
+  "lead": "Aunque todos los enlaces estén desequilibrados, una forma simétrica los anula. Es por lo que el agua es especial.",
+  "hook": "La lección 3 decía que <b>el agua está doblada y el dióxido de carbono es recto</b>. Y sin embargo el agua disuelve casi cualquier cosa y el dióxido de carbono apenas se disuelve en ella, pese a que los dos tienen enlaces en los que <b>el oxígeno tira fuerte de los electrones</b>. La diferencia está en la <b>forma</b>. Y esta historia usa la <b>suma de vectores</b> del curso 02 tal cual.",
+  "predict": {
+   "q": "<b>Dos enlaces</b> están cada uno desequilibrado hacia un lado. ¿Cuándo <b>no</b> está desequilibrada <b>la molécula entera</b>?",
+   "opts": [
+    "Si los enlaces están desequilibrados la molécula lo está siempre",
+    "Si los dos enlaces apuntan <b>exactamente en sentidos contrarios</b> se anulan",
+    "Dos enlaces se anulan siempre",
+    "Se anulan si los átomos son pesados"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Dos átomos</b>. Dos átomos unidos por un enlace.",
+   "Los mandos de <b>Electronegatividad</b> del <b>Átomo A</b> y el <b>Átomo B</b> de abajo son lo fuerte que tira cada uno de los electrones.",
+   "Ponlos <b>iguales</b>. Activa <b>Enlace Dipolo</b> a la derecha y la flecha <b>desaparece</b>: no hay desequilibrio.",
+   "Ahora sube solo el <b>Átomo B</b> al máximo. La flecha apunta <b>hacia B</b>. Los electrones se han desplazado hacia ese lado.",
+   "Activa <b>Carga Parcial</b> y aparecen <b>δ+ y δ−</b>: ligeramente positivo y ligeramente negativo.",
+   "Activa <b>Campo Eléctrico</b>. Una molécula desequilibrada <b>se gira</b> para encarar el campo.",
+   "Con el botón de la casa ve a la pantalla <b>Tres átomos</b>. Ahora son tres átomos y <b>puedes cambiar la forma.</b>",
+   "Activa <b>los dos</b> <b>Enlaces Dipolos</b> y el <b>Dipolo Molecular</b>. Aparecen dos flechas pequeñas y una grande.",
+   "Arrastra A y C para enderezar la molécula en <b>una línea</b>. Las flechas de enlace siguen ahí: <b>¿qué le pasa a la flecha molecular?</b> Esa es la respuesta a ②.",
+   "Ahora vuelve a doblarla. La flecha molecular reaparece.",
+   "En la pantalla <b>Moléculas Reales</b>, elige <b>H₂O</b> y <b>CO₂</b> y compara. La diferencia de forma de la lección 3 se convierte aquí en diferencia de propiedades."
+  ],
+  "record": "¿Qué hizo la flecha del dipolo molecular al enderezar los tres átomos en línea, y al doblarlos?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>si los dos enlaces apuntan exactamente en sentidos contrarios se anulan</strong>. En pantalla, enderezar la molécula dejaba <strong>las flechas de enlace exactamente como estaban mientras la flecha molecular desaparecía</strong>.</p><p>El curso 02, lección 4 decía que <strong>sumar vectores de tamaño 3 y 4 da cualquier cosa entre 1 y 7 según la dirección</strong>. Aquí pasa lo mismo. Un dipolo de enlace es <strong>una flecha con tamaño y dirección</strong>, y el desequilibrio de la molécula entera es <strong>esas flechas sumadas</strong>.</p><ul><li><strong>Recta (simétrica)</strong>: las dos flechas son exactamente contrarias → la suma es <strong>0</strong> → no polar</li><li><strong>Doblada</strong>: las dos flechas forman un ángulo → la suma <strong>no es 0</strong> → polar</li></ul><p>Así que <strong>una molécula puede no estar desequilibrada aunque sus enlaces lo estén</strong>, mientras la forma sea simétrica.</p><p>El dióxido de carbono es exactamente ese caso. Cada enlace C=O está muy desequilibrado, pero al ser <strong>recto</strong> se anulan. El agua está <strong>doblada</strong>, así que no se anula nada y el conjunto queda desequilibrado: una <strong>molécula polar</strong>.</p><p>Esa diferencia tiene consecuencias enormes.</p><ul><li><strong>El agua disuelve casi cualquier cosa.</strong> Los extremos desequilibrados se agarran unos a otros, así que puede desmontar una sustancia iónica como la sal.</li><li><strong>El agua se agarra fuerte a otras aguas.</strong> Su punto de ebullición está muy por encima del de moléculas de tamaño parecido. Que el agua sea líquida a temperatura ambiente se debe a esto.</li><li><strong>El aceite no se mezcla.</strong> Al no ser polar, no tiene manera de agarrarse al agua.</li></ul><p>La lección 1 decía que <strong>la fuerza con que se sujetan los granos</strong> decide el estado. Lo que decide la intensidad de esa sujeción es exactamente <strong>este desequilibrio</strong>. El curso se cierra sobre sí mismo aquí: <strong>la forma fija el desequilibrio, el desequilibrio fija la fuerza de sujeción, y esa fuerza fija el sólido, el líquido y el gas.</strong></p>"
+  },
+  "real": "«El aceite y el agua no se mezclan» es toda esta historia. El detergente levanta la grasa porque un extremo de la molécula es polar y el otro no, así que puede agarrar los dos. Un microondas calentando solo el agua, el jabón lavándote las manos, la impermeabilización de un abrigo, lo bien que se absorbe un fármaco: todo se reparte según la polaridad.",
+  "quiz": [
+   {
+    "q": "¿Por qué es el <b>CO₂</b> no polar?",
+    "opts": [
+     "Sus enlaces no están desequilibrados",
+     "Es recto, así que los dos desequilibrios se anulan",
+     "El carbono es ligero"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Por qué es el <b>H₂O</b> polar?",
+    "opts": [
+     "El oxígeno es pesado",
+     "Está doblado, así que no se anula nada",
+     "Hay dos hidrógenos"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Por qué no se mezcla el aceite con el agua?",
+    "opts": [
+     "El aceite es más ligero",
+     "No es polar, así que no tiene manera de agarrarse al agua",
+     "El aceite es líquido"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

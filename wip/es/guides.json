@@ -2009,5 +2009,295 @@
    "Con una excentricidad <b>pequeña</b> la diferencia de rapidez apenas se ve. Mantenla alta mientras experimentas.",
    "Esta simulación se hizo para secundaria. Con la <b>primera y la segunda ley</b> basta para esta lección."
   ]
+ },
+ "states-of-matter": {
+  "summary": "Calienta y enfría materia <b>ampliada hasta los granos</b>. Puedes ver con tus propios ojos cómo sólido, líquido y gas se reparten por el movimiento de los granos.",
+  "screens": [
+   {
+    "name": "Estado",
+    "what": "Donde empieza esta lección. Calienta y enfría para moverte entre los tres estados."
+   },
+   {
+    "name": "Cambios de Fase",
+    "what": "Puedes aplicar <b>Presión</b> además de temperatura, y convertir un gas en líquido solo con presión."
+   },
+   {
+    "name": "Interacción",
+    "what": "La fuerza <b>entre dos granos</b> a solas. La relación de repeler de cerca y atraer de lejos está dibujada como gráfica."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Átomos y Moléculas (arriba a la derecha) — Neón · Argón · Oxígeno · Agua",
+    "desc": "Elige la sustancia. Cambian tanto el aspecto de los granos como la fuerza que los sujeta.",
+    "tip": "Empieza con <b>Neón</b>. Un grano redondo enseña el movimiento con la máxima claridad. Deja el <b>Agua</b> para el final: tiene la propiedad rara de colocarse suelta al congelarse."
+   },
+   {
+    "name": "Sólido · Líquido · Gas (botones de la derecha)",
+    "desc": "Pulsa uno y pasa directo a ese estado.",
+    "tip": "Pulsa los tres <b>por turnos</b> para comparar las disposiciones, y luego usa <b>Calor / Frío</b> para cambiar despacio y mirar lo de en medio."
+   },
+   {
+    "name": "Calor · Frío (mando de abajo)",
+    "desc": "Calienta o enfría. La <b>Temperatura</b> de arriba a la izquierda le sigue.",
+    "tip": "La acción principal de aquí. Empújalo <b>con suavidad</b>. De un empujón el estado salta y te pierdes el cambio."
+   },
+   {
+    "name": "La lectura de temperatura (arriba a la izquierda)",
+    "desc": "Se muestra en <b>K</b> y en <b>°C</b>.",
+    "tip": "El lado en °C te da la sensación. El neón hierve alrededor de −249 °C: solo es líquido a temperaturas bajísimas."
+   },
+   {
+    "name": "Presión (pantalla Cambios de Fase)",
+    "desc": "Aplica presión al recipiente para apretar los granos.",
+    "tip": "Convierte un gas en líquido <b>solo con presión</b>, sin bajar la temperatura. Es por lo que el interior de un cartucho de butano es líquido."
+   },
+   {
+    "name": "Distancia entre átomos (pantalla Interacción)",
+    "desc": "Fija directamente la distancia entre dos granos. La curva de <b>Energía Potencial</b> de abajo se mueve con ella.",
+    "tip": "De cerca es <b>Repulsiva</b>, de lejos <b>Atractiva</b>. La curva está en su punto más bajo justo a la distancia adecuada, y ese es el sitio estable."
+   },
+   {
+    "name": "Fuerzas (derecha de la pantalla Interacción)",
+    "desc": "Elige entre <b>Ocultar fuerzas · Fuerza total · Atractiva</b> (Van der Waals) y <b>Repulsiva</b> (superposición de electrones).",
+    "tip": "Activa <b>Atractiva</b> y <b>Repulsiva</b> por separado y verás por qué la fuerza total tiene la forma que tiene. Es una pelea entre las dos."
+   },
+   {
+    "name": "Los controles de pausa, paso y velocidad lenta",
+    "desc": "Paran, avanzan un fotograma o reproducen despacio. Los botones de pausa y paso son iconos, sin palabras.",
+    "tip": "Para pillar <b>el momento</b> en que un sólido se hace líquido, ponlo lento."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Estado</b> elige <b>Neón</b> y pulsa el botón <b>Sólido</b>.",
+   "Mira a los granos temblar en sus filas.",
+   "Empuja con suavidad hacia <b>Calor</b>, mirando a la vez la temperatura y los granos.",
+   "Pilla el momento en que se hace líquido y luego gas.",
+   "Empuja hacia <b>Frío</b> y devuélvelo.",
+   "Cambia a <b>Agua</b> y mira la disposición al congelarse.",
+   "En la pantalla <b>Cambios de Fase</b>, convierte un gas en líquido solo con <b>Presión</b>.",
+   "En la pantalla <b>Interacción</b>, cambia la distancia y mira la atracción y la repulsión."
+  ],
+  "gotchas": [
+   "Los granos <b>no se hacen más grandes</b> al calentarlos. Solo se hacen más rápidos.",
+   "La temperatura a la que una sustancia se hace líquida <b>cambia enormemente</b>. El neón anda por −249 °C.",
+   "El <b>Agua</b> coloca sus granos sueltos al congelarse, y por eso el hielo flota: al revés que casi todas las sustancias.",
+   "De un empujón al mando de calor y frío el estado se pasa de largo. Empújalo con suavidad."
+  ]
+ },
+ "gas-properties": {
+  "summary": "Calienta, aprieta y redimensiona un recipiente de gas para ver <b>de dónde viene la presión</b>. Hay un <b>Contador de Colisiones</b>, así que puedes contar tú mismo el tamborileo de los granos sobre la pared.",
+  "screens": [
+   {
+    "name": "Ideal",
+    "what": "Donde empieza esta lección. Temperatura, volumen, presión y número de granos, todos libres de cambiar."
+   },
+   {
+    "name": "Explorar",
+    "what": "Mide las relaciones bajo condiciones fijadas."
+   },
+   {
+    "name": "Energía",
+    "what": "Enseña el <b>reparto de velocidades</b> de los granos. Aquí se ve que no están todos a una velocidad."
+   },
+   {
+    "name": "Difusión",
+    "what": "Abre el divisor y mira a dos gases <b>mezclarse solos.</b>"
+   }
+  ],
+  "controls": [
+   {
+    "name": "La bomba (abajo a la izquierda)",
+    "desc": "Púlsala para meter gas en el recipiente. En <b>Partículas</b>, encima, puedes elegir <b>Pesado</b> o <b>Ligero</b>.",
+    "tip": "Mete <b>el mismo número</b> de cada uno y compara sus velocidades. La misma temperatura, y los pesados son más lentos."
+   },
+   {
+    "name": "Mantener Constante (derecha) — Nada · Volumen (V) · Temperatura (T) · Presión",
+    "desc": "Fija <b>qué se queda quieto</b> mientras experimentas.",
+    "tip": "El interruptor clave de esta simulación. <b>Fija uno</b> y la relación entre los otros dos se deja ver. Sin fijar nada se mueven varias cosas a la vez y no llegas a ninguna conclusión."
+   },
+   {
+    "name": "Calor · Frío (mando de abajo)",
+    "desc": "Calienta o enfría el recipiente.",
+    "tip": "Mantén el <b>Volumen (V)</b> y luego calienta. La presión sube limpiamente ella sola."
+   },
+   {
+    "name": "La pared derecha del recipiente (arrástrala)",
+    "desc": "Empuja o tira de la pared para cambiar el <b>volumen</b>.",
+    "tip": "Mantén la <b>Temperatura (T)</b> y empuja la pared. Solo queda la relación entre volumen y presión."
+   },
+   {
+    "name": "El manómetro (encima del recipiente)",
+    "desc": "Se muestra en <b>atm</b> y en <b>kPa</b>.",
+    "tip": "Donde aparece la respuesta en esta simulación. <b>Anota el valor</b> antes de cambiar condiciones."
+   },
+   {
+    "name": "Contador de Colisiones (casilla de la derecha)",
+    "desc": "Cuenta las <b>Colisiones con la Pared</b> durante un tiempo fijado. El <b>Periodo de Muestra</b> también se puede cambiar.",
+    "tip": "La mejor herramienta de esta lección. Ver subir la cuenta de colisiones <b>a la vez</b> que la presión hace concreto el «presión = tamborileo»."
+   },
+   {
+    "name": "Ancho · Cronómetro (casillas de la derecha)",
+    "desc": "Sacan una regla para el ancho del recipiente y un cronómetro.",
+    "tip": "Activa <b>Ancho</b> cuando quieras reducir el volumen a la mitad exacta."
+   },
+   {
+    "name": "Devolver la Tapa (encima del recipiente)",
+    "desc": "Vuelve a poner la tapa después de que la presión la haya volado.",
+    "tip": "Caliéntalo lo suficiente y la tapa sale volando. No es un fallo: la presión pasó del límite."
+   }
+  ],
+  "steps": [
+   "Bombea gas dentro y anota la <b>Presión</b> y la temperatura.",
+   "Pon <b>Mantener Constante</b> en <b>Volumen (V)</b>.",
+   "Activa el <b>Contador de Colisiones</b>.",
+   "Caliéntalo y mira a la vez la presión y la cuenta de colisiones.",
+   "Pasa <b>Mantener Constante</b> a <b>Temperatura (T)</b> y empuja la pared hacia dentro para reducir el volumen.",
+   "Mete granos pesados y ligeros juntos y compara sus velocidades.",
+   "Mira el reparto de velocidades en la pantalla <b>Energía</b>.",
+   "Abre el divisor en la pantalla <b>Difusión</b>."
+  ],
+  "gotchas": [
+   "Con <b>Mantener Constante</b> en <b>Nada</b>, se mueven varios valores a la vez y no se ve la relación. <b>Fija uno</b> y luego experimenta.",
+   "Caliéntalo lo suficiente y <b>la tapa sale volando.</b> Vuelve a ponerla con <b>Devolver la Tapa</b>.",
+   "Las velocidades de los granos son <b>todas distintas</b>. La temperatura es solo un promedio."
+  ]
+ },
+ "molecule-shapes": {
+  "summary": "Engancha <b>enlaces</b> y <b>pares solitarios</b> a un átomo central y mira cómo se fija la forma de una molécula. Puedes <b>arrastrar para girar</b> la vista, así que puedes ver la forma tridimensional desde varios ángulos.",
+  "screens": [
+   {
+    "name": "Modelo",
+    "what": "Donde empieza esta lección. Engancha enlaces y pares solitarios a tu gusto."
+   },
+   {
+    "name": "Moléculas reales",
+    "what": "Elige moléculas de verdad como <b>H₂O · CO₂ · NH₃ · CH₄</b>."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Enlace (arriba a la derecha)",
+    "desc": "Engancha brazos al átomo central. Hay enlaces <b>sencillos, dobles y triples</b>.",
+    "tip": "Para esta lección bastan los <b>enlaces sencillos</b>. Cambia el número y mira cómo cambia la forma."
+   },
+   {
+    "name": "Par Solitario (derecha)",
+    "desc": "Engancha un par de electrones que <b>no</b> participa en el enlace. No lleva átomo enganchado, pero ocupa sitio.",
+    "tip": "El corazón de esta simulación. Haz 2 enlaces más 2 pares solitarios y tienes <b>la estructura del agua</b>."
+   },
+   {
+    "name": "Mostrar Pares Solitarios (casilla de la derecha)",
+    "desc": "Enseña u oculta los pares solitarios en pantalla.",
+    "tip": "Apágala <b>y enciéndela</b>. Apagada no hay manera de saber por qué se dobla: un recurso para enseñarte que algo invisible está fijando la forma."
+   },
+   {
+    "name": "Mostrar ángulos de enlace (casilla de la derecha)",
+    "desc": "Enseña como número el ángulo entre enlaces.",
+    "tip": "<b>Déjala activada.</b> A ojo no distingues 104,5° de 109,5°."
+   },
+   {
+    "name": "Geometría de la Molécula · Geometría del Electrón (abajo a la izquierda, bajo Nombre)",
+    "desc": "La <b>Geometría de la Molécula</b> es la forma de los átomos que se ven; la <b>Geometría del Electrón</b> es la forma contando también los pares solitarios.",
+    "tip": "Las dos <b>pueden diferir.</b> El agua es tetraédrica por geometría del electrón y doblada por geometría de la molécula. Esa diferencia es el sentido de esta lección."
+   },
+   {
+    "name": "Arrastrar para girar la vista",
+    "desc": "Arrastra una parte vacía de la pantalla y la molécula gira.",
+    "tip": "<b>Gírala, sin falta.</b> Vista solo desde una dirección parece plana y no reconocerás el tetraedro."
+   },
+   {
+    "name": "Remover Todo (derecha)",
+    "desc": "Quita todo lo que hayas enganchado.",
+    "tip": "Púlsalo antes de construir una estructura nueva. Limpiar y volver a empezar sale más rápido."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Modelo</b> activa <b>Geometría de la Molécula</b> y <b>Mostrar ángulos de enlace</b>.",
+   "Engancha <b>dos</b> enlaces y mírala volverse lineal.",
+   "Añade <b>Pares Solitarios</b> de uno en uno y mírala doblarse.",
+   "Lee el ángulo con 2 enlaces más 2 pares solitarios.",
+   "Apaga y enciende <b>Mostrar Pares Solitarios</b>.",
+   "Sube los enlaces a 3 y a 4 y mira las formas.",
+   "<b>Arrastra para girar</b> la vista y compruébalo en tres dimensiones.",
+   "Compara H₂O con CO₂ en la pantalla <b>Moléculas reales</b>."
+  ],
+  "gotchas": [
+   "<b>Los pares solitarios también ocupan sitio.</b> Que sean invisibles no significa que no influyan en la forma.",
+   "La <b>Geometría de la Molécula</b> (la forma que ves) y la <b>Geometría del Electrón</b> (contando los pares) pueden diferir.",
+   "El ángulo con 4 enlaces es de <b>109,5°, no de 90°</b>. Las moléculas no son planas.",
+   "Vista solo desde una dirección leerás mal la forma. <b>Arrastra para girar.</b>",
+   "Esta simulación se hizo para secundaria. Con la pantalla <b>Modelo</b> sola basta para esta lección."
+  ]
+ },
+ "molecule-polarity": {
+  "summary": "Enseña <b>hacia qué lado está desequilibrado un enlace</b> como una flecha, y <b>suma</b> esas flechas para dar el desequilibrio de la molécula entera. La suma de vectores del curso 02, usada tal cual.",
+  "screens": [
+   {
+    "name": "Dos átomos",
+    "what": "Donde empieza esta lección. El desequilibrio de <b>un</b> solo enlace."
+   },
+   {
+    "name": "Tres átomos",
+    "what": "<b>Dos</b> enlaces, y <b>puedes cambiar la forma.</b> El corazón de esta lección está aquí."
+   },
+   {
+    "name": "Moléculas Reales",
+    "what": "Elige moléculas de verdad como H₂O y CO₂."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los mandos de Electronegatividad (abajo) — Átomo A · B · C",
+    "desc": "Fijan lo fuerte que <b>tira de los electrones</b> cada átomo, de <b>menos</b> a <b>más</b>.",
+    "tip": "Pon dos de ellos <b>iguales</b> y el desequilibrio se esfuma. Sube uno solo y se inclina hacia ese lado: prueba primero los dos extremos."
+   },
+   {
+    "name": "Enlace Dipolo (casilla de la derecha)",
+    "desc": "Dibuja como una flecha pequeña el desequilibrio de <b>cada</b> enlace por separado.",
+    "tip": "Sin desequilibrio la flecha <b>desaparece.</b> Presente o ausente es todo lo que hace falta para juzgar."
+   },
+   {
+    "name": "Dipolo Molecular (casilla de la derecha de la pantalla Tres átomos)",
+    "desc": "Dibuja como flecha grande el desequilibrio de la molécula <b>entera</b>. Es la suma de las flechas de enlace.",
+    "tip": "La lectura clave de esta lección. Déjalo activado <b>junto con los enlaces dipolos</b> y cambia la forma. El momento en que las flechas pequeñas se quedan y solo se va la grande es la respuesta."
+   },
+   {
+    "name": "Arrastrar átomos para cambiar la forma (pantalla Tres átomos)",
+    "desc": "Arrastra los átomos exteriores A y C para cambiar el <b>ángulo de enlace</b>.",
+    "tip": "Ve entre <b>recta</b> y <b>doblada</b> mirando el dipolo molecular. Ese único gesto es toda la lección."
+   },
+   {
+    "name": "Carga Parcial (casilla de la derecha)",
+    "desc": "Marca <b>δ+</b> y <b>δ−</b>: ligeramente positivo y ligeramente negativo.",
+    "tip": "Puede que sea más intuitivo que las flechas. El lado hacia el que se han desplazado los electrones es el δ−."
+   },
+   {
+    "name": "Superficie (pantalla Dos átomos) — ninguno · Potencial Electroestático · Densidad del electrón",
+    "desc": "Colorea el exterior de la molécula para enseñar dónde se han juntado los electrones.",
+    "tip": "El <b>Potencial Electroestático</b> se lee bien. El rojo y el azul te ponen el desequilibrio delante de un vistazo."
+   },
+   {
+    "name": "Campo Eléctrico (casilla de la derecha)",
+    "desc": "Aplica un campo eléctrico a la molécula.",
+    "tip": "Una molécula desequilibrada <b>se gira</b> para encarar el campo; una no polar no se mueve. Otra manera de comprobar la polaridad."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Dos átomos</b> activa <b>Enlace Dipolo</b> y <b>Carga Parcial</b>.",
+   "Pon las dos electronegatividades <b>iguales</b> y mira desaparecer la flecha.",
+   "Sube una sola y mírala reaparecer.",
+   "Pasa a la pantalla <b>Tres átomos</b> y activa los <b>Enlaces Dipolos</b> y el <b>Dipolo Molecular</b>.",
+   "Endereza la molécula en <b>una línea</b> y mira qué hace la flecha grande.",
+   "Vuelve a doblarla.",
+   "Activa el <b>Campo Eléctrico</b> y mira si la molécula gira.",
+   "Compara H₂O con CO₂ en la pantalla <b>Moléculas Reales</b>."
+  ],
+  "gotchas": [
+   "Aun con enlaces desequilibrados, <b>una molécula puede no estarlo.</b> Una forma simétrica los anula.",
+   "<b>Enlace Dipolo</b> (las flechas pequeñas) y <b>Dipolo Molecular</b> (la grande) son cosas distintas. Hacen falta las dos activadas para ver la relación.",
+   "El <b>Dipolo Molecular</b> solo existe en la pantalla Tres átomos. Con dos átomos hay un enlace, así que los dos son lo mismo.",
+   "Esta simulación se hizo para secundaria. Mantén el orden <b>Dos átomos → Tres átomos</b> y podrás seguirla."
+  ]
  }
 }
