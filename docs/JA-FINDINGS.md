@@ -128,16 +128,24 @@
 의뢰서 §4-2 의 표에 있는 것들은 일본어에서도 **똑같이 화면에 안 나옵니다.**
 언어와 무관한 문제라 한국어판의 "글자 없이 그림으로 구별합니다" 서술을 그대로 옮겼습니다.
 
-이번 작업에서 **새로 찾은 것 세 곳**은 한국어판이 아직 글자로 인용하고 있습니다.
-일본어판만 그림으로 서술해 두었고, **한국어는 손대지 않았습니다.**
+작업 중 눈에 걸린 것을 계기로 **61종 전체를 기계로 훑었습니다.** 한국어 원고의
+`controls[].name` 과 `<b>…</b>` 인용에서 영어처럼 보이는 토막을 뽑아,
+`wip/labels/en/` 의 화면 글자에 실제로 있는지 대조하는 방식입니다.
+
+`docs/KO-FINDINGS.md` §1 에 이미 적혀 있던 것 말고 **17곳이 더 나왔습니다.**
+목록은 `KO-FINDINGS.md` §1-3 으로 옮겼습니다. 눈에 띄는 것만 추리면:
 
 | 시뮬레이션 | 한국어 원고가 인용한 글자 | 실제 |
 |---|---|---|
-| `quantum-coin-toss` | `Heads` · `Tails` | `a11y.coinsScreen.coinStates.*` 아래에만 있음 — 동전은 **그림**으로 구별 |
-| `unit-rates` | `Erase` | 문자열 자체가 없음 — **지우개 아이콘** 단추 |
-| `membrane-transport` | `Erase All Solutes` | `a11y.eraseSolutesButton.*` 아래에만 있음 — **지우개 아이콘** 단추 |
+| `number-pairs` | `Total Number` · `Swap Addends` · `Organize` 등 **5곳** | 조작 단추가 거의 다 아이콘이라 a11y 이름을 쓴 것으로 보입니다 |
+| `unit-rates` · `equality-explorer` · `function-builder` | `Erase` | scenery-phet 의 **지우개 아이콘** — 어느 실험에서나 글자가 없습니다 |
+| `membrane-transport` | `Erase All Solutes` | `a11y.eraseSolutesButton.*` |
+| `gravity-and-orbits` | `Zoom` | `a11y.zoom` — **돋보기 아이콘** |
+| `quantum-coin-toss` | `Coin Bias / State` | 화면은 `Coin Bias (State)` — 슬래시가 아니라 괄호 |
 
-세 곳 다 `docs/KO-FINDINGS.md` 에 옮겨 적어 두면 좋겠습니다.
+일본어판은 전부 그림이나 위치로 가리키게 썼고, **한국어는 손대지 않았습니다.**
+(`quantum-coin-toss` 의 `Heads` · `Tails` 는 `KO-FINDINGS.md` §1 에 이미
+적혀 있던 것이라 새로 세지 않았습니다.)
 
 ---
 

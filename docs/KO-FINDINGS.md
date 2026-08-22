@@ -1,13 +1,14 @@
 # 번역 중 발견한 한국어 원고 문제
 
-영어판을 옮기면서 한국어 원고에 남아 있는 것을 발견하면 여기 적습니다.
+영어판·일본어판을 옮기면서 한국어 원고에 남아 있는 것을 발견하면 여기 적습니다.
 고치지는 않았습니다 — 한국어 원고는 배포 중이고, 손대려면 따로 판단이 필요합니다.
+(딱 하나, **없는 화면을 설명하던 곳**만 세 언어에서 함께 뺐습니다 — §4 참고.)
 
 `docs/I18N-BRIEF.md` §10-5 가 요청한 목록입니다.
 
 ---
 
-## 1. 화면에 없는 이름(`a11y.*`)을 인용한 자리 — 28곳 (코스 13 까지)
+## 1. 화면에 없는 이름(`a11y.*`)을 인용한 자리 — 영어판 작업에서 (코스 13 까지)
 
 검수에서 미션 22곳을 고쳤지만, **사용법의 `tip` 과 `name`, 설명 본문, 그리고 미션
 몇 곳에는 아직 남아 있습니다.** 전부 아이콘만 있거나 이름표가 없는 조작의 접근성
@@ -56,6 +57,45 @@ PhET 한국어가 `Distribute` 를 **`분산`** 으로 옮겼습니다. 통계�
 a11y 인용과 달리 이건 **내용이 틀린 것**이라 한국어 사용자가 실제로 오해합니다.
 영어판에는 옮기지 않고 화면이 하는 일을 그대로 썼습니다.
 
+
+## 1-3. 화면에 없는 이름 — 일본어 작업에서 추가로 찾은 것 17곳
+
+61종 전체를 기계로 훑었습니다. 방법은 이렇습니다 — 한국어 원고의
+`controls[].name` 과 `<b>…</b>` 인용에서 **영어처럼 보이는 토막**을 뽑아,
+`wip/labels/en/<repo>.json` 의 `screen`·`common`(그리고 `_shared.json`)에
+그 글자가 실제로 있는지 대조했습니다. 화학식·수식 같은 우리 표기는 걸러 냈습니다.
+
+§1 의 표에 없던 것만 적습니다.
+
+| 시뮬레이션 | 인용한 이름 | 나오는 자리 | 실제 |
+|---|---|---|---|
+| `gravity-and-orbits` | `Zoom` | `controls[6].name` | `a11y.zoom` — 확대·축소는 **돋보기 아이콘** |
+| `states-of-matter` | `Step Forward` | `controls[7].name` | scenery-phet `a11y.stepForwardButton` |
+| `greenhouse-effect` | `Step Forward` | `controls[8].name` | 위와 같음 |
+| `quantum-bound-states` | `Restart` | `controls[7].name` | `a11y.restartButton.*` |
+| `mean-share-and-balance` | `Info` | `controls[7].name` | `a11y.info` — **i 아이콘** |
+| `membrane-transport` | `Erase All Solutes` | `controls[5].name` · `steps[2]` · `gotchas[5]` | `a11y.eraseSolutesButton.accessibleName` |
+| `unit-rates` | `Erase` | `controls[5].name` | scenery-phet `a11y.eraserButton` — **지우개 아이콘** |
+| `equality-explorer` | `Erase` | `controls[5].name` | 위와 같음 |
+| `function-builder` | `Erase` | `controls[3].name` | 위와 같음 |
+| `function-builder` | `Page 1 · 2 · 3` | `controls[1].name` | 문자열 자체가 없습니다 — 회전 목록의 **점 표시**입니다 |
+| `center-and-variability` | `Erase Current Data` | `controls[7].name` | `a11y.eraseButton.accessibleName` |
+| `number-pairs` | `Total Number` | `controls[0].name`, `lessons/num-3/missions[1]` | 화면에 찍히는 건 **`Total`** 뿐입니다 |
+| `number-pairs` | `Swap Addends` | `controls[3].name`, `lessons/num-3/missions[5]` | `a11y.controls.commutativeButton.accessibleName` |
+| `number-pairs` | `Hide Left / Right Counting Area` | `controls[4].name`, `lessons/num-3/missions[8]` | `a11y.controls.addendVisibleButton.accessibleNameOnPattern` |
+| `number-pairs` | `Organize` | `controls[5].name` | `a11y.controls.tenFrameButton.accessibleName` |
+| `number-pairs` | `No Voice Found` | `controls[8].tip` | `a11y.controls.speechSynthesis.noVoiceAccessibleName` |
+| `quantum-coin-toss` | `Coin Bias / State` | `controls[1].name` | 화면은 **`Coin Bias (State)`** — 슬래시가 아니라 괄호입니다 |
+
+`number-pairs` 는 **한 실험에서만 다섯 곳**입니다. 이 실험은 조작 단추가 거의 다
+아이콘이라, 이름을 붙이려면 `a11y` 를 볼 수밖에 없었던 것으로 보입니다.
+
+`Erase` 계열이 네 곳입니다(§1 의 `projectile-motion` 까지 하면 다섯). scenery-phet 의
+지우개 단추는 어느 실험에서나 **글자 없는 아이콘**이라, 한 번 정해 두면 다 같이
+고칠 수 있습니다.
+
+일본어판은 전부 그림이나 위치로 가리키게 썼습니다 — 예: "지우개 그림 단추".
+
 ## 2. 번역이 "있는" 시뮬레이션도 일부는 영어로 나옵니다
 
 `sim-locales.json` 은 파일이 있는지만 봅니다. 파일이 있어도 문자열 단위로 빠진 것은
@@ -70,7 +110,24 @@ a11y 인용과 달리 이건 **내용이 틀린 것**이라 한국어 사용자�
 한국어판에도 같은 틈이 있을 가능성이 높습니다. 확인하려면 `tools/labels.py` 의
 `LANGS` 에 `'ko'` 를 더해 돌리고 `fallback` 이 큰 시뮬레이션부터 보세요.
 
-## 3. 공유 이미지 서체 — 일본어
+## 3. 공유 이미지 서체 — 일본어 ✅ 해결
 
-`tools/font-check.py` 결과, Pretendard 에 한자가 없습니다(표본 757자 중 491자).
-일본어 OG 를 굽기 전에 CJK 서체를 얹어야 합니다. 영어·스페인어는 문제 없습니다.
+Pretendard 에 한자가 없어 일본어 카드가 두부(□)로 찍히던 문제입니다.
+Noto Sans JP(OFL)를 `tools/fonts/` 에 넣고 `make-og.py` 의 서체 사슬에 이었습니다.
+`python tools/font-check.py` 가 네 언어 모두 통과합니다.
+
+---
+
+## 4. 없는 화면을 설명하던 곳 — 2곳 (고쳤습니다)
+
+일본어 작업에서 발견한 것으로, 이것만은 **세 언어(ko · en · es)에서 함께 뺐습니다.**
+번역 문제가 아니라 사실이 틀린 것이라 그대로 둘 수 없었습니다.
+
+| 시뮬레이션 | 원고가 적어 둔 화면 | 실제 |
+|---|---|---|
+| `number-play` | 10 · 20 · 게임 · **실험** | Ten · Twenty · Game (셋) |
+| `number-compare` | 비교하기 · **실험** | Compare (하나) |
+
+61종 전수로 화면 수를 대조했고 나머지는 맞습니다. 반대로 **있는 화면을 원고가
+빼먹은 것**이 3종 있는데, 레슨에서 안 쓰는 화면이라 그대로 두었습니다 —
+`projectile-motion`(Stats) · `greenhouse-effect`(Micro) · `quantum-bound-states`(Superposition).
