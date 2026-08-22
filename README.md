@@ -66,6 +66,7 @@ python tools/build.py          # site/ + PhET 산출물 → dist/
 python tools/build.py          # dist/ 조립 (+ Cloudflare Pages 한계 검사)
 python tools/serve.py 8124     # dist/ 를 띄웁니다
 node   tools/lint.mjs          # 정합성 검사
+python tools/label-quality.py  # PhET 번역 자체의 이상 (보고서)
 python tools/make-og.py        # og/*.png 16장 (1200×630)
 python tools/make-sitemap.py   # sitemap.xml + robots.txt
 ```

@@ -7,13 +7,17 @@
 - 작성일: 2026-08-23
 - 근거: PhET 포크 `C:/projects/phet` 의 `babel/<repo>/<repo>-strings_<lang>.json`
 - 대조: 같은 키의 영어 원문 `<repo>/<repo>-strings_en.json`
-- 확인: 44건 전부 실제 babel 값과 대조했습니다 (키 · 현재 값 일치)
+- 확인: 전부 실제 babel 값과 대조했습니다 (키 · 현재 값 일치)
 
-| 언어 | 곳 |
-|---|---:|
-| 한국어 | 22 |
-| 일본어 | 15 |
-| 스페인어 | 7 |
+| 언어 | 낱말 뜻 오역 | 문자열 파손 | 계 |
+|---|---:|---:|---:|
+| 한국어 | 22 | 12 | 34 |
+| 일본어 | 15 | 0 | 15 |
+| 스페인어 | 7 | 4 | 11 |
+| | | | **60** |
+
+**낱말 뜻 오역**은 아래 첫 묶음, **문자열 파손**(줄 겹침 · 안 지워진 영어 ·
+붙여넣기 사고)은 "2차" 묶음입니다. 뒤엣것은 `python tools/label-quality.py` 가 찾습니다.
 
 ## 어디에 올리나
 
@@ -227,6 +231,88 @@ Coulomb's Law · Gravity Force Lab 에 함께 반영됩니다.
 
 `loopArea` 는 영어 원문이 `Loop Area:` 로 콜론까지 포함하는데, 한국어(`루프 영역`)도
 콜론 없이 되어 있습니다. 기존 방식을 따라 콜론 없이 제안합니다.
+
+---
+
+# 2차 — 줄 나뉜 문자열·붙여넣기 사고에서 나온 것 (2026-08-23)
+
+`python tools/label-quality.py` 로 61종 + 딸린 저장소를 훑어 나온 것입니다.
+앞의 목록이 **낱말 뜻**의 오역이라면, 이쪽은 **문자열이 물리적으로 망가진** 것들입니다.
+
+## 한국어 — 12곳 더
+
+### 줄마다 따로 옮기다 낱말이 겹친 것 — 2곳
+
+원문이 `Remove
+Wall` 처럼 **두 줄짜리 단추**인데, 줄마다 따로 옮기면서 첫 줄에
+전체 뜻을 넣고 둘째 줄에 또 옮겨 **같은 말이 두 번** 찍힙니다.
+
+| 시뮬레이션 | key | 지금 (화면에 보이는 것) | 붙여 넣을 글 |
+|---|---|---|---|
+| Balloons and Static Electricity | `removeWall` | `벽 제거` ⏎ `제거` → **"벽 제거 제거"** | `벽` ⏎ `제거` |
+| Balloons and Static Electricity | `addWall` | `벽 더하기` ⏎ `추가` → **"벽 더하기 추가"** | `벽` ⏎ `추가` |
+
+일본어(`壁を非表示にする` 한 줄)와 스페인어(`Eliminar` ⏎ `muro`)는 맞게 되어 있습니다.
+
+### 번역 도구의 화면 글자가 통째로 섞여 들어간 것 — 2곳
+
+한국어 값 안에 번역 도구의 **`다른 초안 보기`** 가 그대로 붙어 있고, 같은 문장이
+대여섯 번 되풀이됩니다. 원문 83자가 **471자**가 되었습니다.
+
+| 시뮬레이션 | key | 지금 | 붙여 넣을 글 |
+|---|---|---|---|
+| Center and Variability | `rangeDescription` | 같은 문장 ×6 + `다른 초안 보기` ×5 (471자) | `<strong>범위</strong>는 최소 데이터 포인트와 최대 데이터 포인트 사이의 거리입니다.` |
+| Center and Variability | `iqrDescription` | 같은 문장 ×5 + `다른 초안 보기` ×4 (371자) | `<strong>사분위수 범위(IQR)</strong>는 데이터의 중간 50%입니다.` |
+
+같은 실험의 `madDescription` 은 멀쩡합니다 — 그 한 줄을 본보기로 삼으면 됩니다.
+
+### 영어가 지워지지 않고 남은 것 — 5곳
+
+| 시뮬레이션 | key | 지금 | 붙여 넣을 글 |
+|---|---|---|---|
+| Gas Properties | `oopsTemperatureOpen` | 이런! ⏎ **T**그릇이 열려 있으면 ⏎ 온도를 일정하게 유지하지 못합니다. | `이런!<br><br>그릇이 열려 있으면<br>온도를 일정하게 유지할 수 없습니다.` |
+| Gas Properties | `oopsPressureLarge` | 이런! ⏎ 부피가 너무 크면 **constant.** ⏎ 압력을 … | `이런!<br><br>압력을 일정하게 유지할 수 없습니다.<br>부피가 너무 커집니다.` |
+| Gas Properties | `oopsPressureSmall` | 이런! ⏎ 부피가 너무 **적으면 constant.** ⏎ 압력을 … | `이런!<br><br>압력을 일정하게 유지할 수 없습니다.<br>부피가 너무 작아집니다.` |
+| Quantum Measurement | `propagationIntoPage` | 전파 ⏎ **(into page)** | `전파<br>(지면 안쪽으로)` |
+| Fourier: Making Waves | `sawtoothWithCosines` | **cosines**는 … 톱날파도를 … **sines**로 바꾸시오. | `톱날파는 비대칭이라 코사인만으로는 만들 수 없습니다.<br>사인으로 바꿉니다.` |
+
+`oopsPressureLarge` · `oopsPressureSmall` 은 영어가 남은 것에 더해 **인과가 뒤집혀**
+있습니다. 원문은 "압력을 일정하게 유지할 수 없다 — 부피가 너무 커지기 때문"인데
+한국어는 "부피가 너무 크면 압력을 유지 못한다"로 읽힙니다.
+`적으면`도 부피에는 `작으면`이 맞습니다.
+
+`sawtoothWithCosines` 의 `톱날파도`는 같은 실험의 파형 이름(`톱날파`)과도 어긋납니다.
+
+### 그 밖 — 3곳
+
+| 시뮬레이션 | key | 지금 | 붙여 넣을 글 |
+|---|---|---|---|
+| Gas Properties | `oopsPressureEmpty` | … 유지 못합니다**..** (마침표 둘) | `이런!<br><br>그릇이 비어 있으면<br>압력을 일정하게 유지할 수 없습니다.` |
+| Equality Explorer | `level1Description` | `<b>Level 1</b>  1단계 방정식 **equations**` | `<b>Level 1</b>  1단계 방정식` |
+| Equality Explorer | `level2Description` | `<b>Level 2</b>  음의 계수를 포함한 1단계 방정식 **coefficients**` | `<b>Level 2</b>  음의 계수를 포함한 1단계 방정식` |
+
+> `Level` 자체가 다섯 수준 모두 영어로 남아 있습니다(`레벨`이 아니라). 뜻은 통하므로
+> 위에서는 **남은 찌꺼기만** 지우는 최소 수정으로 적었습니다.
+
+## 스페인어 — 4곳 더
+
+| 시뮬레이션 | key | 지금 | 붙여 넣을 글 |
+|---|---|---|---|
+| Faraday's Electromagnetic Lab | `currentSource` | `Fuente <br>` — **Current 가 통째로 빠짐** | `Fuente de<br>corriente` |
+| Equality Explorer | `leftSideFull` | `!Oops!` … `esta lleno` | `¡Ups!<br><br>El lado izquierdo de la balanza está lleno.` |
+| Equality Explorer | `rightSideFull` | `!Oops!` … `esta lleno` | `¡Ups!<br><br>El lado derecho de la balanza está lleno.` |
+| Equality Explorer | `numberTooBig` | `!Oops!` + U+00A0 | `¡Ups!<br><br>Eso hará un número que es<br>muy grande para la simulación.<br><br>¡Intenta una operación diferente!` |
+
+`currentSource` 가 가장 급합니다 — 화면에 **`Fuente`(원)** 만 찍혀 무엇의 원인지
+알 수 없습니다. `!Oops!` 는 여는 부호가 `¡` 가 아니고, `esta` 는 `está` 의 악센트가
+빠졌습니다. 같은 PhET 스페인어가 `gas-properties` 에서는 `¡Ups!` 를 쓰고 있으니
+그쪽에 맞췄습니다.
+
+## 일본어 — 없음
+
+이 유형에서 일본어는 걸린 것이 없습니다. 두 줄짜리 단추를 한 줄로 합치는 쪽을
+택해(`壁を非表示にする`) 겹침이 생기지 않았습니다.
+
 
 ---
 

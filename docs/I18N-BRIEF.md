@@ -436,6 +436,7 @@ node   tools/lint.mjs                 # 태그 · 조판 — 반드시 오류 0 
 node   tools/parity.mjs               # 한국어와 뼈대 대조 — 반드시 오류 0
 python tools/labels.py                # 화면 글자 사전 (번역 시작 전 한 번)
 python tools/font-check.py            # 공유 이미지 서체가 그 언어를 덮는지
+python tools/label-quality.py         # PhET 번역 자체의 이상 (보고서 · 종료 코드 0)
 python tools/build.py                 # site/ + PhET 산출물 → dist/ (+ head 굽기)
 python tools/serve.py 8123 dist       # 확장자 없는 주소도 풀어 줍니다
 python tools/make-og.py               # 공유 이미지
