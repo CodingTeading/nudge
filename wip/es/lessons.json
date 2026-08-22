@@ -3174,5 +3174,201 @@
     "right": 1
    }
   ]
+ },
+ "life-1": {
+  "course": "life",
+  "sim": "natural-selection",
+  "screens": null,
+  "title": "El conejo no cambia; cambia la población",
+  "lead": "Un conejo blanco no se vuelve marrón sobre tierra marrón. Simplemente los marrones sobreviven más a menudo.",
+  "hook": "En terreno nevado hay más conejos blancos y en tierra pelada más marrones. La gente suele decir que los conejos <b>«cambiaron para adaptarse al ambiente»</b>, como si un conejo mirase alrededor y se cambiase el color. Pero <b>un conejo suelto no cambia de color en toda su vida.</b> ¿Qué cambió entonces? Esta simulación hace pasar una población de conejos por generaciones y te lo enseña.",
+  "predict": {
+   "q": "Tierra marrón con lobos rondando. Aparece una <b>mutación marrón</b> en una población de <b>conejos blancos</b>. Al cabo de muchas generaciones:",
+   "opts": [
+    "Todos los conejos <b>se vuelven</b> marrones",
+    "Sube la <b>proporción</b> de conejos marrones",
+    "Los conejos blancos se vuelven marrones al crecer",
+    "No cambia nada"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Intro</b>. Pulsa <b>Agregar un Compañero</b> en el centro para que los conejos se reproduzcan.",
+   "Mira un momento y los conejos se multiplican <b>exponencialmente</b>. La cuenta de generaciones sube.",
+   "En <b>Agregar Mutación</b>, a la derecha, elige <b>Pelaje</b> y añade <b>Pelaje Marrón</b> como <b>Dominante</b>.",
+   "Elige <b>Población</b> en la gráfica de la izquierda y activa las líneas de <b>Pelaje Blanco</b> y <b>Pelaje Marrón</b>. Las dos suben a la vez.",
+   "Todavía no hay lobos, así que ninguno tiene ventaja. Comprueba que la proporción se mantiene más o menos.",
+   "Ahora activa <b>Lobos</b> en <b>Factores Ambientales</b>, a la derecha. ¿Qué pasa? Esa es la respuesta a ②.",
+   "Cambia la gráfica a <b>Proporciones</b>. La <b>parte</b> que ocupan los conejos blancos y marrones se ve de un vistazo.",
+   "Fíjate en <b>si algún conejo concreto cambia de color</b>. ¿Se vuelve marrón un conejo blanco, o simplemente desaparece?",
+   "Ahora cambia el fondo a nieve (el ambiente se elige en la pantalla <b>Laboratorio</b>). ¿Cuál tiene ventaja ahora?",
+   "Activa <b>Limitar comida</b> y añade una mutación de <b>Dientes</b>. Bajo otra presión gana otro rasgo.",
+   "Activa la gráfica de <b>Genealogía</b> para ver cómo se extienden los descendientes de un conejo."
+  ],
+  "record": "¿Cómo se diferenciaban las proporciones de conejos blancos y marrones antes y después de activar los lobos? ¿Y llegaste a ver a algún conejo cambiar de color?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es que <strong>sube la proporción de conejos marrones</strong>. <strong>Ningún conejo concreto cambia de color.</strong> Nunca habrás visto en pantalla a un conejo blanco volverse marrón.</p><p>Lo que pasó de verdad es esto.</p><ul><li>Los conejos marrones son <strong>más difíciles de ver</strong> sobre tierra marrón, así que tienen más probabilidades de sobrevivir.</li><li>Los supervivientes tienen crías, así que <strong>el gen marrón se transmite más a menudo</strong>.</li><li>Generación a generación, <strong>el marrón ocupa una parte mayor</strong> de la población.</li></ul><p>Así que <strong>lo que cambia no es el individuo sino la composición de la población</strong>. Eso es la selección natural, y es donde más se separa de la creencia común. No «las jirafas estiraron el cuello» sino «las jirafas de cuello largo sobrevivieron mejor».</p><p>También importa que hacen falta <strong>las dos</strong> cosas.</p><ul><li><strong>Variación</strong>: tiene que haber ya diferencias en la población. La mutación las aporta.</li><li><strong>Presión selectiva</strong>: algo tiene que decidir cuál sale favorecido. Los lobos hacen ese papel.</li></ul><p>Antes de los lobos las proporciones apenas se movían. <strong>Variación sin presión no tiene dirección.</strong> Al revés, presión sin variación deja nada que seleccionar, y la población entera puede desaparecer.</p><p>Acuérdate también de que <strong>la ventaja se dio la vuelta</strong> al cambiar el fondo a nieve. El marrón no es el rasgo «mejor». <strong>El ambiente decide qué cuenta como mejor.</strong> Cambia el ambiente y cambia la respuesta.</p>"
+  },
+  "real": "La resistencia a los antibióticos es exactamente esta historia. Las bacterias que sobreviven al antibiótico se reproducen y sube la parte resistente: las bacterias no «desarrollaron resistencia»; sobrevivieron las resistentes que ya estaban ahí. Los insectos resistentes a los plaguicidas, la expansión de una variante de COVID y la mejora de cultivos funcionan igual.",
+  "quiz": [
+   {
+    "q": "En la selección natural, <b>¿qué cambia?</b>",
+    "opts": [
+     "Los rasgos de un individuo",
+     "Las proporciones de rasgos en la población",
+     "El ambiente"
+    ],
+    "right": 1
+   },
+   {
+    "q": "La selección natural necesita <b>las dos</b> cosas:",
+    "opts": [
+     "Variación y presión selectiva",
+     "Mutación y tiempo",
+     "Comida y depredadores"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Sobre nieve, el <b>pelaje blanco</b> tiene ventaja. Eso significa:",
+    "opts": [
+     "El pelaje blanco es el mejor rasgo",
+     "El ambiente decide qué sale favorecido",
+     "El pelaje marrón es inferior"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "life-2": {
+  "course": "life",
+  "sim": "membrane-transport",
+  "screens": null,
+  "title": "Una membrana celular no deja pasar a cualquiera",
+  "lead": "El oxígeno pasa de largo. El sodio necesita una puerta. Sin puerta no entra por mucho que haya.",
+  "hook": "La lección 1 miraba una <b>población</b> de conejos; esta vez la escala se estrecha hasta <b>una sola célula</b>. Una célula va envuelta en una membrana, y para seguir viva tiene que dejar entrar lo que necesita y sacar lo que no. Pero esta membrana no <b>cuela por tamaño</b> como un colador. Unas cosas pasan de largo y otras <b>solo pasan por una puerta</b>.",
+  "predict": {
+   "q": "Hay <b>mucho sodio (Na⁺) fuera de la célula y casi nada dentro.</b> ¿Entrará el sodio solo?",
+   "opts": [
+    "Sí: fluye de donde hay más a donde hay menos",
+    "<b>No</b>: no puede pasar la membrana y necesita un canal",
+    "Sí, pero muy despacio",
+    "Sale más en vez de entrar"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Difusión simple</b>. La línea horizontal del centro es la <b>membrana</b>: <b>Exterior</b> arriba, <b>Interior</b> abajo.",
+   "En el panel de <b>Concentraciones de solutos</b> de abajo, elige <b>O₂</b> y pon bastante <b>fuera de la célula</b> solamente.",
+   "Mira un momento. ¿Pasa el oxígeno <b>de largo</b> por la membrana?",
+   "Déjalo hasta que el oxígeno esté <b>más o menos igual</b> a los dos lados. Ese es el final de la difusión, o <b>equilibrio</b>.",
+   "Ahora pon bastante <b>Na⁺</b> <b>fuera de la célula</b> solamente. ¿Pasa lo mismo que con el oxígeno? Esa es la respuesta a ②.",
+   "Prueba con <b>Glucosa</b> igual. ¿Y una molécula grande y pesada?",
+   "Activa <b>Resaltados de cruce</b> a la derecha y el momento del cruce destella.",
+   "Con el botón de la casa ve a la pantalla <b>Difusión facilitada</b>, donde puedes arrastrar <b>proteínas de transporte</b> hasta las <b>ranuras vacías</b> de arriba.",
+   "Mete un canal de sodio y vuelve a añadir sodio. ¿Pasa esta vez?",
+   "Aun con canal, ¿<b>hacia dónde</b> fluye? ¿De más a menos?",
+   "Ve a la pantalla <b>Transporte activo</b> y coloca una <b>bomba</b>. Esta vez empuja <b>de menos a más</b>. Gasta energía para hacerlo."
+  ],
+  "record": "Anota si el oxígeno, el sodio y la glucosa pasaron de largo por la membrana. ¿Y hacia dónde fluyó el sodio una vez pusiste un canal?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>no</strong>. Por mucho que haya fuera, el sodio no puede pasar la membrana <strong>sin un canal</strong>.</p><p>Una membrana celular es una capa fina de material graso, así que lo que pasa lo deciden el <strong>tamaño y el carácter</strong>.</p><ul><li><strong>Pequeño y eléctricamente neutro</strong> (O₂, CO₂): <strong>pasa de largo.</strong></li><li><strong>Iones con carga</strong> (Na⁺, K⁺): no pueden atravesar la capa grasa. <strong>Necesitan un canal.</strong></li><li><strong>Moléculas grandes y pesadas</strong> (glucosa): <strong>también necesitan un canal.</strong></li></ul><p>Por eso a una membrana se la llama <strong>selectivamente permeable</strong>. No cuela solo por tamaño: <strong>elige qué deja entrar</strong>.</p><p>Que el sodio fluyera <strong>de más a menos</strong> una vez colocado el canal también importa. Un canal solo <strong>abre una puerta</strong>; la dirección la sigue fijando la concentración. Eso es la <strong>difusión facilitada</strong>: ayuda, pero no puede ir contra corriente.</p><p>El <strong>transporte activo</strong> sí es genuinamente distinto. Una bomba empuja <strong>de menos a más</strong>. El agua no sube sola cuesta arriba, y esto tampoco: <strong>no es gratis.</strong> La célula tiene que gastar energía.</p><p>¿Para qué molestarse? Porque una célula tiene que mantener las concentraciones de dentro y de fuera <strong>deliberadamente distintas</strong>. Esa diferencia hace las señales nerviosas y atrae los nutrientes. <strong>Si lo dejas en paz todo se iguala, así que estar vivo es cuestión de plantarle cara al equilibrio.</strong></p><p>La <strong>concentración</strong> del curso 09 se usa tal cual. La diferencia es que allí era un vaso y aquí son <strong>dos habitaciones separadas por una membrana</strong>.</p>"
+  },
+  "real": "Que un nervio mande una señal es cuestión de diferencias de concentración de sodio y potasio. Buena parte de la energía que gasta tu cuerpo se va en hacer funcionar esas bombas. Acertar exactamente la concentración de un suero, unos riñones filtrando solo los residuos, unas verduras encurtiéndose en salmuera: todo son historias de membranas y concentraciones.",
+  "quiz": [
+   {
+    "q": "¿Cuál de estos puede pasar <b>de largo</b> por una membrana celular?",
+    "opts": [
+     "Los iones Na⁺",
+     "El oxígeno (O₂)",
+     "La glucosa"
+    ],
+    "right": 1
+   },
+   {
+    "q": "En la <b>difusión facilitada</b>, ¿hacia dónde fluye una sustancia?",
+    "opts": [
+     "De más a menos",
+     "De menos a más",
+     "En cualquier dirección"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿En qué se diferencia el <b>transporte activo</b> de la difusión?",
+    "opts": [
+     "Es más rápido",
+     "Gasta energía para ir contra la concentración",
+     "No necesita canal"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "life-3": {
+  "course": "life",
+  "sim": "greenhouse-effect",
+  "screens": null,
+  "title": "Lo que entra tiene que salir para que la temperatura se mantenga",
+  "lead": "Sube los gases de efecto invernadero, ¿baja la energía que la Tierra manda al espacio? La respuesta es «un rato».",
+  "hook": "La lección 2 decía que una célula mantiene distintos el dentro y el fuera <b>plantándole cara al equilibrio</b>. La Tierra resuelve un problema parecido. Entra energía del Sol y sale al espacio, y <b>que salga tanta como entra</b> mantiene la temperatura firme. ¿Y qué pasa si subes los gases de efecto invernadero y tapas la salida? ¿Se calienta la Tierra sin parar? Esta simulación tiene un panel de <b>Balance de Energía</b> para que veas la respuesta tú mismo.",
+  "predict": {
+   "q": "<b>Subes bruscamente la concentración de gases de efecto invernadero.</b> ¿Qué le acaba pasando a la energía que la Tierra manda al espacio?",
+   "opts": [
+    "Se queda baja",
+    "Sube al momento",
+    "No cambia",
+    "<b>Baja un rato</b> y luego, según se calienta la Tierra, vuelve a igualar <b>lo que entra</b>"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Ondas</b>. Marca <b>Balance de Energía</b> <b>abajo a la derecha</b> de la vista y aparecen las barras <b>Dentro · Fuera · Neta</b> <b>arriba a la izquierda</b>.",
+   "Pulsa <b>Iniciar la Luz del Sol</b> en el centro para encender la luz solar.",
+   "Pon la <b>Concentración de Gases de Efecto Invernadero</b> de la derecha en <b>Nula</b> y espera. La Neta se va a <b>0</b> y la temperatura se asienta. Anota esa temperatura.",
+   "Ahora lleva la concentración bruscamente hacia <b>Alta</b>. ¿Qué le pasa a la barra <b>Fuera</b>?",
+   "Mira la barra <b>Neta</b>. Ya no está en 0 y la temperatura empieza a subir.",
+   "Déjalo corriendo <b>un buen rato</b>. La temperatura sube y luego se para. ¿Cuánto vale la <b>Neta</b> entonces? Esa es la respuesta a ②.",
+   "Anota la temperatura nueva y compárala con la primera.",
+   "Mira dónde se dan la vuelta las ondas <b>Infrarrojo</b> en la pantalla. Los gases de efecto invernadero <b>dejan pasar la luz solar y solo atrapan el infrarrojo</b>.",
+   "En <b>Energía</b>, a la derecha, cambia entre <b>Luz de Sol</b> e <b>Infrarrojo</b> y compara la longitud de las dos ondas.",
+   "Activa la <b>Nube</b>. Una nube devuelve la <b>luz solar</b>: la dirección contraria a la de un gas de efecto invernadero.",
+   "Bajo la caja de <b>Concentración de Gases de Efecto Invernadero</b>, a la derecha, hay <b>dos botones sin palabras</b>. Pulsa el de la derecha (el del dibujo de un calendario, para elegir por época) y recorre <b>Era de Hielo · 1750 · 1950 · 2020</b>, anotando la temperatura.",
+   "Con el botón de la casa ve a la pantalla <b>Fotones</b> para ver lo mismo <b>grano a grano</b>."
+  ],
+  "record": "Anota la temperatura de equilibrio sin gases de efecto invernadero y con mucha cantidad. ¿Y cuánto valía la barra Neta una vez asentada la temperatura?",
+  "explain": {
+   "right": 3,
+   "body": "<p>La respuesta es que <strong>baja un rato y luego vuelve a igualar lo que entra</strong>. En pantalla <strong>la barra Neta habrá vuelto a 0</strong>.</p><p>Síguelo paso a paso.</p><ul><li>Sube los gases de efecto invernadero y se atrapa más infrarrojo, así que <strong>Fuera baja.</strong></li><li>Dentro no cambia y Fuera ha bajado, así que <strong>la Neta se pone positiva</strong> y la energía se acumula en la Tierra.</li><li>Acumularse significa que <strong>la temperatura sube.</strong></li><li>Pero un objeto más caliente <strong>emite más infrarrojo</strong>. Así que Fuera vuelve a subir.</li><li>Al final Dentro = Fuera otra vez, <strong>a una temperatura mayor</strong>.</li></ul><p>Así que lo que hacen los gases de efecto invernadero no es <strong>calentar la Tierra para siempre</strong> sino <strong>subir la temperatura a la que se asienta el equilibrio</strong>. Échate encima un edredón más grueso y tu temperatura no sube sin límite: <strong>te asientas más caliente</strong>.</p><p>Lo que importa es que ese cambio de temperatura <strong>no es gratis</strong>. La energía se acumula por el camino hacia el nuevo equilibrio, y mientras lo hace se derrite el hielo y el mar se dilata.</p><p>Que <strong>los gases de efecto invernadero solo atrapen el infrarrojo</strong> también es central. Dejan pasar la luz solar y solo atrapan el infrarrojo que la Tierra devuelve. El curso 05, lección 3 decía que <strong>cada átomo absorbe ciertas longitudes de onda</strong>, y aquí lo tienes a escala planetaria. El curso 09, lección 5 decía que cada sustancia tiene <strong>un color que se come bien</strong>: la misma historia.</p><p>La <strong>nube</strong> funcionaba al revés. Devuelve la luz solar y reduce <strong>Dentro</strong>. Eso es parte de por qué el clima cuesta de predecir: el calentamiento y el enfriamiento van juntos.</p><p>Si anotaste las temperaturas por época, <strong>el cambio a partir de 1750</strong> habrá saltado a la vista. Esa es la revolución industrial.</p>"
+  },
+  "real": "Venus es la comparación útil. Es solo el segundo planeta y su superficie está a 460 °C, más caliente que Mercurio. Su atmósfera es 96% dióxido de carbono, así que el efecto invernadero es extremo. La Luna, sin nada de atmósfera, oscila entre 120 °C de día y −170 °C de noche. <b>El edredón de una atmósfera</b> es lo que hace habitable la Tierra.",
+  "quiz": [
+   {
+    "q": "¿Qué atrapan los gases de efecto invernadero?",
+    "opts": [
+     "La luz solar que entra",
+     "El infrarrojo que emite la Tierra",
+     "Las dos por igual"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Que la temperatura esté <b>asentada</b> significa:",
+    "opts": [
+     "Que la energía que entra es 0",
+     "Que lo que entra iguala a lo que sale",
+     "Que la energía que sale es 0"
+    ],
+    "right": 1
+   },
+   {
+    "q": "<b>En esta simulación</b>, ¿qué hace la nube?",
+    "opts": [
+     "Atrapa infrarrojo y calienta",
+     "Devuelve la luz solar y enfría",
+     "No tiene efecto"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

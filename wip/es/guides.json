@@ -3444,5 +3444,233 @@
    "Los botones de forma <b>no llevan palabras.</b> Distínguelos por el dibujo.",
    "Esta simulación se hizo para secundaria y universidad. Esta lección solo usa la pantalla <b>Derivada</b>."
   ]
+ },
+ "natural-selection": {
+  "summary": "Haz pasar una población de conejos por <b>muchas generaciones</b> y mira cómo cambian las proporciones de un rasgo. La <b>mutación</b> y los <b>factores ambientales</b> se activan por separado, así que puedes confirmar tú mismo que hacen falta los dos para que haya cambio.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Donde empieza esta lección. El fondo está fijo y solo están los mandos básicos."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Fija el ambiente y las condiciones con más libertad. Puedes cambiar entre nieve y tierra pelada."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Agregar un Compañero · Reproducir · Iniciar de nuevo (arriba en el centro)",
+    "desc": "<b>Le dan pareja al conejo solitario</b> y lo ponen a reproducirse. A partir de ahí las generaciones avanzan solas.",
+    "tip": "El experimento no empieza hasta que pulsas esto. Antes, un conejo se queda ahí sin hacer nada."
+   },
+   {
+    "name": "Agregar Mutación (arriba a la derecha)",
+    "desc": "Elige <b>Pelaje · Orejas · Dientes</b> y mete un rasgo nuevo en la población. Puedes hacerlo <b>Dominante</b> o <b>Recesivo</b>.",
+    "tip": "Métela como <b>Dominante</b> y el cambio se ve rápido. Una recesiva se esconde un rato antes de aparecer, lo cual es mucho más lento."
+   },
+   {
+    "name": "Factores Ambientales (derecha) — Lobos · Comida dura · Limitar comida",
+    "desc": "La <b>presión selectiva</b> que decide qué sale favorecido. Nada tiene dirección hasta que activas uno.",
+    "tip": "El interruptor clave de esta lección. Compara las proporciones <b>antes y después</b> de activar uno y la selección natural aparece de golpe. A rasgos distintos les van factores distintos: el pelaje va con los lobos y los dientes con la comida."
+   },
+   {
+    "name": "El selector de gráfica (abajo a la derecha) — Población · Proporciones · Genealogía · Ninguno",
+    "desc": "<b>Población</b> es la cuenta de cabezas, <b>Proporciones</b> es la parte que ocupa cada rasgo y <b>Genealogía</b> enseña los descendientes de un conejo.",
+    "tip": "<b>Proporciones</b> es la que mejor le va a esta lección. Suba o baje la cuenta de cabezas, <b>cómo cambian las partes</b> es lo que es la selección natural."
+   },
+   {
+    "name": "Activar las líneas de rasgo (la gráfica de la izquierda)",
+    "desc": "Elige qué mostrar entre <b>Pelaje Blanco · Pelaje Marrón · Orejas Paradas · Orejas Caídas · Dientes Cortos · Dientes Largos</b>.",
+    "tip": "Deja activados <b>solo los dos rasgos</b> con los que experimentas y la gráfica se lee mucho mejor."
+   },
+   {
+    "name": "Lector de datos (la sonda de la gráfica)",
+    "desc": "Arrástralo sobre la gráfica y lee los valores exactos de esa generación.",
+    "tip": "Úsalo cuando quieras saber «alrededor de qué generación se dio la vuelta»."
+   },
+   {
+    "name": "Alelos (abajo a la izquierda)",
+    "desc": "Enseña las proporciones de genes dominantes y recesivos como <b>P/p · O/o · D/d</b>.",
+    "tip": "Las proporciones de la apariencia (color del pelaje) y de los <b>genes</b> pueden diferir. Un gen recesivo se queda en la población sin mostrarse."
+   },
+   {
+    "name": "El botón de pausa y el botón redondo de reinicio",
+    "desc": "Paran, o vuelven a empezar desde el principio. Los dos son iconos sin palabras; el de reinicio es el círculo amarillo de abajo a la derecha.",
+    "tip": "Con demasiados conejos la pantalla se llena. Cuando quieras cambiar condiciones y volver a empezar, el círculo amarillo es lo más rápido."
+   }
+  ],
+  "steps": [
+   "Pulsa <b>Agregar un Compañero</b> para empezar la reproducción.",
+   "En <b>Agregar Mutación</b>, añade <b>Pelaje Marrón</b> como <b>Dominante</b>.",
+   "Pon la gráfica en <b>Proporciones</b> y activa las líneas de pelaje blanco y marrón.",
+   "Mira cómo las proporciones apenas se mueven mientras no hay factor ambiental.",
+   "Activa <b>Lobos</b> y mira cambiar las proporciones.",
+   "Fíjate en si algún conejo concreto <b>cambia</b> de color.",
+   "En la pantalla <b>Laboratorio</b>, cambia el fondo a nieve y mira darse la vuelta a la ventaja."
+  ],
+  "gotchas": [
+   "<b>Ningún conejo concreto cambia de color.</b> Lo que cambia son las proporciones de la población.",
+   "Añade <b>solo una mutación</b> sin activar un factor ambiental y casi no pasa nada. Hacen falta los dos.",
+   "Añadida como recesiva se queda fuera de la vista mucho rato. No es un fallo: funciona así.",
+   "Una presión selectiva demasiado fuerte puede acabar con <b>toda la población</b>. Eso también pasa en la realidad.",
+   "Con demasiados conejos va lento. Activar <b>Limitar comida</b> mantiene el número a raya."
+  ]
+ },
+ "membrane-transport": {
+  "summary": "La línea horizontal del centro es la <b>membrana celular</b>: fuera arriba, dentro abajo. Añade sustancias desde el panel de abajo y mira <b>qué pasa y qué no</b>. Las pantallas siguientes añaden más herramientas: <b>primero canales y luego bombas</b>.",
+  "screens": [
+   {
+    "name": "Difusión simple",
+    "what": "Donde empieza esta lección. Solo las cosas que <b>pueden pasar solas</b>, sin canales."
+   },
+   {
+    "name": "Difusión facilitada",
+    "what": "Coloca <b>proteínas de transporte</b> en la membrana. Con canal, hasta los iones pasan."
+   },
+   {
+    "name": "Transporte activo",
+    "what": "Coloca una <b>bomba</b>. Gasta energía para mover cosas <b>contra</b> la concentración."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Usa todas las herramientas con libertad."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Concentraciones de solutos (abajo) — O₂ · CO₂ · Na⁺ · K⁺ · Glucosa",
+    "desc": "Fija cuántos de cada sustancia poner <b>fuera</b> y <b>dentro</b> de la célula.",
+    "tip": "Empieza con <b>una sola sustancia</b>. Si metes varias a la vez no sabrás cuál es cuál."
+   },
+   {
+    "name": "La membrana (la línea horizontal del centro)",
+    "desc": "Una capa fina de material graso con <b>siete ranuras vacías</b> arriba para proteínas.",
+    "tip": "En la pantalla Difusión simple las ranuras están vacías. El oxígeno y el dióxido de carbono <b>pasan de largo igualmente.</b>"
+   },
+   {
+    "name": "La caja de herramientas de proteínas (arriba a la izquierda)",
+    "desc": "Guarda las <b>proteínas de transporte</b> y las <b>bombas</b> que van en la membrana. Arrastra una a una ranura.",
+    "tip": "Cada sustancia tiene su propio canal. Un canal de sodio es lo que deja pasar el sodio: <b>no vale cualquier canal</b>."
+   },
+   {
+    "name": "Resaltados de cruce (casilla, abajo a la derecha)",
+    "desc": "Destella en el momento en que una sustancia cruza la membrana.",
+    "tip": "<b>Déjalo activado.</b> Con muchos granos por ahí cuesta seguir qué cruzó."
+   },
+   {
+    "name": "Sonidos de cruce (casilla, abajo a la derecha)",
+    "desc": "Hace un sonido según cruzan las cosas.",
+    "tip": "Puedes saber si el flujo va vivo sin mirar. Según se acerca al equilibrio los sonidos se espacian."
+   },
+   {
+    "name": "Borrar todos los solutos (abajo)",
+    "desc": "Limpia todo lo que hayas metido.",
+    "tip": "<b>Límpialo</b> antes de pasar a la sustancia siguiente, o se mezcla con la anterior y te confunde."
+   },
+   {
+    "name": "Los controles de velocidad lenta y pausa (abajo)",
+    "desc": "Reproducen despacio o paran.",
+    "tip": "Para ver el momento en que algo pasa por un canal, ponlo <b>lento</b>."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Difusión simple</b> pon <b>O₂</b> solo fuera de la célula.",
+   "Mira si pasa de largo, hasta que esté más o menos igual a los dos lados.",
+   "Límpialo y pon <b>Na⁺</b> solo fuera.",
+   "Confirma que no pasa.",
+   "Prueba con <b>Glucosa</b> igual.",
+   "En la pantalla <b>Difusión facilitada</b> coloca un canal de sodio y vuelve a añadirlo.",
+   "Comprueba <b>hacia dónde</b> fluye con el canal puesto.",
+   "En la pantalla <b>Transporte activo</b>, coloca una bomba."
+  ],
+  "gotchas": [
+   "Cada sustancia tiene <b>su propio canal</b>. Coloca el equivocado y no pasa nada.",
+   "Un <b>canal</b> solo abre una puerta; no puede cambiar la dirección. Las cosas siguen fluyendo de más a menos.",
+   "Solo una <b>bomba</b> puede empujar contra la concentración, y gasta energía para hacerlo.",
+   "Un aviso del estilo de <b>¡Sodio en el exterior demasiado bajo!</b> arriba significa que tienes que añadir más sustancia.",
+   "Limpia las cosas antes de cambiar de sustancia."
+  ]
+ },
+ "greenhouse-effect": {
+  "summary": "Compara <b>en barras</b> la energía que la Tierra recibe del Sol con la que manda al espacio. El panel de <b>Balance de Energía</b> es el corazón de esta simulación, así que actívalo <b>abajo a la derecha</b> de la vista antes que nada.",
+  "screens": [
+   {
+    "name": "Ondas",
+    "what": "Donde empieza esta lección. Dibuja la luz solar y el infrarrojo como <b>ondas</b>."
+   },
+   {
+    "name": "Fotones",
+    "what": "Lo mismo <b>grano a grano</b>. Dónde se dan la vuelta se ve mejor."
+   },
+   {
+    "name": "Modelo de Capa",
+    "what": "Divide la atmósfera en capas y calcula. Bastante más difícil."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Balance de Energía (casilla, abajo a la derecha de la vista)",
+    "desc": "Actívala y aparecen las barras <b>Dentro · Fuera · Neta</b> <b>arriba a la izquierda</b> de la vista, medidas en la parte superior de la atmósfera.",
+    "tip": "La <b>lectura más importante</b> de esta simulación. Una vez asentada la temperatura, <b>la Neta se va a 0</b>: la respuesta de esta lección está justo ahí."
+   },
+   {
+    "name": "Concentración de Gases de Efecto Invernadero (derecha) — de Nula a Alta",
+    "desc": "Fija la cantidad de gas de efecto invernadero de la atmósfera.",
+    "tip": "Espera a que se asiente en <b>Nula</b> y anota la temperatura, y luego llévala a <b>Alta</b>. Comparar las dos temperaturas de equilibrio es la lección."
+   },
+   {
+    "name": "El termómetro de la superficie (abajo a la izquierda)",
+    "desc": "Enseña la temperatura de la superficie. Puedes elegir <b>K · °C · °F</b>.",
+    "tip": "El <b>°C</b> te da la sensación. Sin gases de efecto invernadero anda por −28 °C, y que la Tierra real esté a 15 °C es gracias al efecto invernadero."
+   },
+   {
+    "name": "Iniciar la Luz del Sol (centro)",
+    "desc": "Enciende la luz solar. No pasa absolutamente nada hasta que lo pulsas.",
+    "tip": "El experimento empieza aquí. Que no se mueva la temperatura antes de pulsarlo no debe desconcertarte."
+   },
+   {
+    "name": "Energía (derecha) — Luz de Sol · Infrarrojo",
+    "desc": "Encienden y apagan por separado los dos tipos de luz.",
+    "tip": "Prueba con el <b>Infrarrojo solo</b>. Enseña sin lugar a dudas que el infrarrojo es <b>todo</b> lo que atrapa el gas de efecto invernadero. La luz solar pasa de largo."
+   },
+   {
+    "name": "El selector de modo de concentración (bajo la caja de concentración, dos botones con dibujos)",
+    "desc": "Elige si fijar el gas de efecto invernadero <b>por cantidad</b> o <b>por época</b>. No hay palabras: el de la izquierda es por cantidad y el de la derecha, el del <b>dibujo de un calendario</b>, es por época.",
+    "tip": "Cambia al calendario y podrás elegir <b>Era de Hielo · 1750 · 1950 · 2020</b>. Merece la pena anotar la temperatura de cada época y comparar."
+   },
+   {
+    "name": "Nube (casilla, abajo a la derecha)",
+    "desc": "Pone una nube en el cielo.",
+    "tip": "Una nube funciona <b>al revés</b> que un gas de efecto invernadero. Devuelve la luz solar y reduce <b>Dentro</b>. Enciéndela y apágala y compara la temperatura."
+   },
+   {
+    "name": "El medidor de flujo (pantalla Fotones)",
+    "desc": "Fija una altura y mide la energía que pasa por ese nivel.",
+    "tip": "Súbelo y bájalo para ver <b>a qué altura cae el infrarrojo</b>, que te dice dónde está actuando el gas de efecto invernadero."
+   },
+   {
+    "name": "Los controles de velocidad lenta y paso (abajo)",
+    "desc": "Reproducen despacio o avanzan fotograma a fotograma.",
+    "tip": "Para pillar un grano dándose la vuelta en la pantalla <b>Fotones</b>, ponlo lento."
+   }
+  ],
+  "steps": [
+   "Marca <b>Balance de Energía</b> <b>abajo a la derecha</b> de la vista.",
+   "Pulsa <b>Iniciar la Luz del Sol</b> para encender la luz solar.",
+   "En <b>Nula</b>, espera a que la Neta llegue a 0 y anota la temperatura.",
+   "Lleva la concentración a <b>Alta</b> y mira caer la barra <b>Fuera</b>.",
+   "Déjalo un buen rato hasta que se asiente la temperatura.",
+   "Anota entonces la <b>Neta</b> y la <b>temperatura</b> y compara con la primera.",
+   "Enciende y apaga la <b>Nube</b> y compara la temperatura.",
+   "Cambia al botón del <b>calendario</b> de debajo de la caja de concentración y anota la temperatura de cada época."
+  ],
+  "gotchas": [
+   "No pasa absolutamente nada hasta que pulsas <b>Iniciar la Luz del Sol</b>.",
+   "La temperatura <b>tarda</b> en asentarse. No sigas trasteando porque no se mueva enseguida.",
+   "Que la <b>Neta</b> llegue a 0 significa que lo que entra y lo que sale se han igualado. No significa que la energía sea 0.",
+   "Los gases de efecto invernadero atrapan <b>el infrarrojo, no la luz solar</b>. Una nube hace lo contrario y devuelve la luz solar.",
+   "El selector de modo de concentración <b>no lleva palabras</b>: distingue los dos dibujos. Las unidades de temperatura son <b>K · °C · °F</b>.",
+   "La pantalla <b>Modelo de Capa</b> queda más allá de esta lección."
+  ]
  }
 }
