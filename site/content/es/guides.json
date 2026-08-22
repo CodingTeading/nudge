@@ -3672,5 +3672,536 @@
    "El selector de modo de concentración <b>no lleva palabras</b>: distingue los dos dibujos. Las unidades de temperatura son <b>K · °C · °F</b>.",
    "La pantalla <b>Modelo de Capa</b> queda más allá de esta lección."
   ]
+ },
+ "number-play": {
+  "summary": "Enseña un número como <b>cifra, palabra, objetos sueltos y marco de diez</b>, todo a la vez. Toca cualquier panel y los demás le siguen.",
+  "screens": [
+   {
+    "name": "Diez",
+    "what": "La pantalla que usa esta lección. Del 1 al 10, con <b>un</b> marco de diez."
+   },
+   {
+    "name": "Veinte",
+    "what": "Del 11 al 20. Con <b>dos</b> marcos de diez, el valor posicional empieza a asomar."
+   },
+   {
+    "name": "Juego",
+    "what": "Cuenta los objetos y di el número."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Una pantalla para colocar cosas con libertad y sin objetivo."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El número grande del centro",
+    "desc": "El número actual. Cámbialo con las flechas de arriba y abajo y <b>todos los demás paneles</b> le siguen.",
+    "tip": "Súbelo <b>despacio</b> y mira los otros paneles. Ver varias representaciones moverse a la vez es toda la simulación."
+   },
+   {
+    "name": "Palabra (panel de arriba a la izquierda)",
+    "desc": "Escribe el número con letras, como «siete».",
+    "tip": "El botón de arriba a la izquierda que muestra el idioma lo cambia a otro. Va bien para coger cómo se cuenta en un segundo idioma."
+   },
+   {
+    "name": "Marco de Diez (panel de arriba a la derecha)",
+    "desc": "Llena un marco de diez casillas hasta el número actual.",
+    "tip": "El <b>panel más importante</b> de aquí. Cuenta las casillas <b>vacías</b> en vez de las llenas. En cuanto ves que el 7 deja tres vacías, no vuelves a necesitar memorizar 7 + 3 = 10."
+   },
+   {
+    "name": "Unos (panel de abajo)",
+    "desc": "Arrastra objetos sueltos dentro y fuera y el número del centro le sigue.",
+    "tip": "Cambiar el número y mover los objetos son <b>la misma cosa</b>. Usa lo que te convenga."
+   },
+   {
+    "name": "El total (arriba en el centro)",
+    "desc": "El panel que enseña el número actual en grande, como cifra.",
+    "tip": "Tres paneles uno al lado de otro: la palabra, la cifra y el marco de diez. Son tres maneras de decir el mismo número."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Diez</b> pon el número del centro en <b>7</b>.",
+   "Cuenta cuántas casillas del <b>Marco de Diez</b> están vacías.",
+   "Mete y saca objetos a mano en el panel de <b>Unos</b>.",
+   "Sube el número a <b>10</b> y mira llenarse el marco.",
+   "Pasa a la pantalla <b>Veinte</b> y mira que ahora hay dos marcos.",
+   "Sube el número de <b>11 a 19</b> y confirma que el primer marco se queda como está."
+  ],
+  "gotchas": [
+   "En la pantalla <b>Diez</b> no puedes pasar de 10. Los números mayores son de la pantalla <b>Veinte</b>.",
+   "El botón de idioma afecta <b>solo al panel de la palabra</b>. No cambia el idioma de toda la simulación."
+  ]
+ },
+ "number-compare": {
+  "summary": "Compara dos números <b>levantándolos como columnas de objetos</b> una al lado de la otra. Ves no solo cuál es mayor sino <b>por cuánto</b>, como diferencia de longitud.",
+  "screens": [
+   {
+    "name": "Compara",
+    "what": "La pantalla que usa esta lección. Pon un número en cada lado y compara en el centro."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Una pantalla para colocar con libertad los signos de desigualdad y de operación."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Las bandejas de objetos (abajo en cada lado)",
+    "desc": "Arrastra objetos a cada lado. Arrástralos de vuelta a la bandeja para quitarlos.",
+    "tip": "Apílalos <b>alineados por abajo</b>. Hace mucho más fácil comparar las longitudes de las dos columnas."
+   },
+   {
+    "name": "El signo del centro (&lt; = &gt;)",
+    "desc": "Enseña la relación entre los dos números, actualizándose según metes y quitas objetos.",
+    "tip": "No intentes memorizar los signos de desigualdad. <b>El lado abierto mira al mayor.</b> Añade objetos de uno en uno y míralo darse la vuelta, y se queda."
+   },
+   {
+    "name": "La frase de encima del centro",
+    "desc": "Escribe el estado actual con palabras, del estilo de «… es mayor que …».",
+    "tip": "No te quedes en el signo: <b>lee también la frase.</b> Es un ejercicio de poner el signo en palabras."
+   },
+   {
+    "name": "Los totales (a la vista arriba)",
+    "desc": "Enseñan la cuenta de cada lado como número.",
+    "tip": "Déjalos <b>apagados</b> al principio y cuenta tú. Enciéndelos después como comprobación."
+   },
+   {
+    "name": "Los botones &lt; = &gt; (derecha)",
+    "desc": "Donde <b>eliges tú el signo</b> y lo colocas en el centro.",
+    "tip": "Van bien como manera de comprobar tu propia elección. Elige el signo antes de mirar la respuesta."
+   }
+  ],
+  "steps": [
+   "Pon <b>7</b> objetos a la izquierda y <b>3</b> a la derecha.",
+   "Comprueba el signo y la frase del centro.",
+   "Cuenta a cuántas casillas llega la <b>diferencia de longitud</b>.",
+   "Añade objetos a la derecha de uno en uno, contando hasta que salga <b>=</b>.",
+   "Haz mayor el lado derecho y mira el signo darse la vuelta.",
+   "Pon los dos lados iguales y mira las dos columnas salir de la misma longitud."
+  ],
+  "gotchas": [
+   "Apila los objetos de cualquier manera y no podrás comparar longitudes. Alinéalos <b>por abajo</b>.",
+   "Para los signos de desigualdad, <b>el lado abierto mira al mayor</b>. Memorizar la dirección a secas sigue confundiendo.",
+   "En esta simulación no hay ninguna casilla para escribir un número. El número se cambia solo <b>metiendo y quitando objetos</b>."
+  ]
+ },
+ "number-pairs": {
+  "summary": "Parte un número <b>en dos trozos</b>. El diagrama de <b>Vínculo Numérico</b> de arriba enseña el total y los dos trozos de un vistazo.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "La pantalla más sencilla."
+   },
+   {
+    "name": "Diez",
+    "what": "Hasta 10. Donde empieza esta lección."
+   },
+   {
+    "name": "Veinte",
+    "what": "Hasta 20. Se añaden el display de <b>Ecuación</b> y una recta numérica."
+   },
+   {
+    "name": "Suma",
+    "what": "El total se puede fijar con más libertad."
+   },
+   {
+    "name": "Game",
+    "what": "Un juego de comprobación. Su nombre se quedó sin traducir."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Total (derecha)",
+    "desc": "Fija el número total que vas a partir.",
+    "tip": "Ponlo en <b>10</b> para empezar. Va justo detrás del marco de diez de la lección 1."
+   },
+   {
+    "name": "Vínculo Numérico (arriba en el centro)",
+    "desc": "Une el total y los dos trozos con líneas. Parte los objetos de abajo y los números le siguen.",
+    "tip": "Este diagrama es el corazón de la simulación. Basta con que <b>arriba está el total y debajo los dos trozos</b>."
+   },
+   {
+    "name": "El área de conteo de abajo (arrastra los objetos)",
+    "desc": "Arrastra objetos a izquierda y derecha para partirlos en dos trozos.",
+    "tip": "Prueba a vaciar un lado <b>del todo</b>. Ves por ti mismo que el 0 cuenta como uno de los trozos."
+   },
+   {
+    "name": "El botón de intercambio (izquierda, un icono sin palabras)",
+    "desc": "Intercambia el trozo de la izquierda y el de la derecha.",
+    "tip": "Púlsalo y comprueba que <b>el total no cambia</b>. De ahí sale que se puede intercambiar el orden al sumar."
+   },
+   {
+    "name": "Los botones de tapar (izquierda, iconos sin palabras)",
+    "desc": "Cubren el área de conteo de la izquierda o de la derecha.",
+    "tip": "Tapar uno y <b>averiguar el resto</b> es restar. El mejor ejercicio de esta simulación."
+   },
+   {
+    "name": "El botón de ordenar (izquierda, un icono sin palabras)",
+    "desc": "Recoge los objetos desperdigados en filas ordenadas.",
+    "tip": "Púlsalo cuando haya demasiados para contarlos bien. La cuenta no cambia, solo <b>la disposición</b>."
+   },
+   {
+    "name": "El selector de forma de objeto (abajo en el centro — solo dibujos, sin palabras)",
+    "desc": "Elige entre manzanas, balones, mariposas, cartas, cuentas, gatitos y una recta numérica. Las opciones cambian un poco según la pantalla.",
+    "tip": "La forma afecta <b>solo al aspecto</b>. Eso sí, elegir la <b>recta numérica</b> cambia bastante la sensación: la partición aparece como un «salto»."
+   },
+   {
+    "name": "Ecuación · Sumandos (derecha de la pantalla Veinte)",
+    "desc": "Escriben la partición como <b>ecuación</b>, o ponen nombre a los trozos.",
+    "tip": "Deja <b>Ecuación</b> activada y el dibujo y la ecuación quedan uno al lado del otro. Es el puente del dibujo a la ecuación."
+   },
+   {
+    "name": "Escuchar Frase Automáticamente (arriba a la izquierda)",
+    "desc": "Lee en voz alta la frase de arriba.",
+    "tip": "Útil para oír además de leer cómo se dice la partición."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Diez</b> pon el <b>Total</b> en 10.",
+   "Arrastra los objetos para partirlos en <b>7 y 3</b>.",
+   "Comprueba la frase de arriba y el <b>Vínculo Numérico</b>.",
+   "Intercambia los dos trozos y mira que el total no cambia.",
+   "Deja un lado en <b>0</b>.",
+   "Tapa un lado con el botón de tapar y averigua el resto.",
+   "En la pantalla <b>Veinte</b> activa <b>Ecuación</b> y compruébalo como fórmula."
+  ],
+  "gotchas": [
+   "Los botones de intercambiar, tapar y ordenar de la izquierda llevan <b>solo dibujos, sin palabras</b>. Distínguelos por sus iconos.",
+   "<b>El 0 cuenta como uno de los trozos.</b> Vaciar un lado es una partición legítima.",
+   "Elegir la forma de <b>recta numérica</b> enseña la partición como un salto en vez de como objetos. Es la misma partición dibujada de otra manera."
+  ]
+ },
+ "number-line-distance": {
+  "summary": "Pon dos cosas en una recta numérica y mide <b>cuánto se separan</b>. El sentido está en elegir si leer la misma disposición como <b>distancia sin signo</b> o como <b>distancia directa</b>, y comparar.",
+  "screens": [
+   {
+    "name": "Explora",
+    "what": "La pantalla que usa esta lección. Tres situaciones: persona y casa, temperatura, y pez y ave."
+   },
+   {
+    "name": "Genérico",
+    "what": "Dos puntos pelados sin dibujos. También se puede cambiar el rango de la recta numérica."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de lectura sin signo / Distancia Directa (arriba a la izquierda)",
+    "desc": "Elige una de las dos. La lectura sin signo es siempre 0 o más; la directa lleva signo.",
+    "tip": "El <b>interruptor más importante</b> de esta simulación. Leer la misma disposición de las dos maneras es toda la lección."
+   },
+   {
+    "name": "Valor absoluto (display, arriba a la izquierda)",
+    "desc": "Enseña la expresión con el símbolo de valor absoluto: dos barras verticales.",
+    "tip": "Déjalo activado y expresiones como <b>|−5| = 5</b> se quedan junto al dibujo. Va bien para ver por qué hace falta el símbolo."
+   },
+   {
+    "name": "El selector de situación (abajo)",
+    "desc": "Elige entre <b>persona y casa · temperatura · pez y ave</b>: una distancia horizontal, una diferencia de temperatura y una diferencia de altura.",
+    "tip": "Haz las tres. La <b>temperatura</b> hace naturales los negativos por lo de bajo cero, y <b>pez y ave</b> se siente distinto porque la recta numérica se pone vertical."
+   },
+   {
+    "name": "Etiquetas de los puntos · Etiquetas de distancia · Etiquetas de descripción (derecha)",
+    "desc": "Activan las coordenadas de los puntos, el valor que hay entre ellos y una frase que describe la situación.",
+    "tip": "Activa <b>las tres</b> para empezar. Números y frase juntos hacen llegar el significado mucho antes."
+   },
+   {
+    "name": "Marcas (casilla de la derecha)",
+    "desc": "Señala las divisiones de la recta numérica.",
+    "tip": "Necesitas contar los pasos, así que va mejor dejarlas activadas."
+   },
+   {
+    "name": "El rango de la recta numérica (derecha de la pantalla Genérico)",
+    "desc": "Elige entre −10 a 10, −30 a 30 y −100 a 100.",
+    "tip": "Si un punto se sale de la pantalla te lo avisa. Amplía el rango cuando pase."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Explora</b> elige la situación de <b>persona y casa</b>.",
+   "Activa <b>Etiquetas de los puntos · Etiquetas de distancia · Etiquetas de descripción</b> a la derecha.",
+   "Pon la persona en <b>−3</b> y la casa en <b>+2</b>.",
+   "Cambia entre la lectura sin signo y la <b>Distancia Directa</b> y compara.",
+   "<b>Intercambia las posiciones</b> de las dos y mira qué hace cada una.",
+   "Pasa a la situación de <b>temperatura</b> y comprueba que se cumple también bajo cero."
+  ],
+  "gotchas": [
+   "Cuando los dos puntos están <b>a un lado y otro del 0</b>, la distancia es la <b>suma</b> de los dos valores. Restar sin más da la respuesta equivocada.",
+   "La <b>distancia</b> no cambia al intercambiar los puntos y el <b>desplazamiento</b> cambia de signo. Mézclalos y los números no cuadrarán."
+  ]
+ },
+ "equality-explorer": {
+  "summary": "La <b>balanza</b> del centro lo es todo. Pon y quita cosas de cada lado y mira con tus propios ojos <b>cuándo se mantiene el equilibrio</b>. De aquí salen las reglas para resolver ecuaciones.",
+  "screens": [
+   {
+    "name": "Básico",
+    "what": "Donde empieza esta lección. Solo poner y quitar objetos."
+   },
+   {
+    "name": "Números",
+    "what": "Trabaja con tarjetas de números. Aparecen los negativos."
+   },
+   {
+    "name": "Variables",
+    "what": "Llega la <b>x</b>. La segunda mitad de esta lección ocurre aquí."
+   },
+   {
+    "name": "Operaciones",
+    "what": "Aplica la misma operación a los dos lados a la vez."
+   },
+   {
+    "name": "¡Resuélvelo!",
+    "what": "Una pantalla de comprobación donde resuelves ecuaciones de verdad."
+   }
+  ],
+  "controls": [
+   {
+    "name": "La balanza (centro)",
+    "desc": "Se inclina o se queda nivelada según el peso de cada platillo.",
+    "tip": "En esta simulación <b>la balanza es la que te dice la respuesta</b>. Inclinada significa que todavía no está resuelto; nivelada, que lo tienes."
+   },
+   {
+    "name": "Las bandejas de objetos (abajo, en cada lado)",
+    "desc": "Arrastra objetos a un platillo o sácalos de vuelta.",
+    "tip": "Prueba a tocar <b>un solo lado</b> y luego <b>los dos por igual</b>. Esos dos contrastes son toda la lección."
+   },
+   {
+    "name": "Ecuación o desigualdad (lectura de arriba)",
+    "desc": "Escribe el estado de la balanza como ecuación con <b>=</b> o con un signo de desigualdad.",
+    "tip": "Mira cómo cambia esto cada vez que mueves un objeto. Ves <b>lo que hizo tu mano traducido a una ecuación</b>."
+   },
+   {
+    "name": "Variables (arriba a la derecha de la pantalla Variables)",
+    "desc": "Te deja fijar directamente el valor de la <b>x</b>.",
+    "tip": "Resuélvelo primero en la balanza y luego mete aquí tu respuesta y comprueba que la balanza <b>queda de verdad nivelada</b>. Eso es comprobar el resultado."
+   },
+   {
+    "name": "Foto instantánea (derecha)",
+    "desc": "Guarda el estado actual para recuperarlo después.",
+    "tip": "Guardar a mitad de la resolución hace fácil <b>volver atrás</b>. Guarda en cada paso y podrás encontrar dónde te equivocaste."
+   },
+   {
+    "name": "El botón de borrar (abajo en el centro)",
+    "desc": "Limpia todo lo que haya en los platillos.",
+    "tip": "Cuando se lía, <b>volver a empezar</b> sale más rápido. Una balanza enredada cuesta de desenredar a ojo."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Básico</b>, pon 3 objetos en cada lado para dejarla nivelada.",
+   "Pon 2 más solo en la izquierda y mírala inclinarse.",
+   "Pon 2 también en la derecha para volver a nivelarla.",
+   "Mira cómo cambia la lectura de <b>Ecuación o desigualdad</b> de arriba.",
+   "En la pantalla <b>Variables</b> monta <b>x + 3 = 8</b>.",
+   "Quita <b>3 de cada lado</b> para encontrar la x."
+  ],
+  "gotchas": [
+   "Toca <b>un solo lado</b> y el equilibrio se rompe. Ese es el error más común al resolver ecuaciones.",
+   "El <b>=</b> no significa «dame la respuesta» sino <b>«los dos lados son iguales»</b>.",
+   "Un objeto colocado fuera del platillo no cuenta. Ponlo <b>bien encima del platillo</b>.",
+   "Hay cinco pantallas. <b>Si ves la x</b>, estás en la de Variables."
+  ]
+ },
+ "function-builder": {
+  "summary": "Mete algo por la izquierda y pasa por la <b>caja</b> del centro y <b>sale cambiado</b> por la derecha. Qué regla colocas en la caja lo es todo, y puedes <b>juntar cajas</b>.",
+  "screens": [
+   {
+    "name": "Patrones",
+    "what": "Cógele el aire con tarjetas de dibujos. Sin números la regla se ve fácil."
+   },
+   {
+    "name": "Números",
+    "what": "Tarjetas de números. El corazón de esta lección está aquí."
+   },
+   {
+    "name": "Ecuación",
+    "what": "La regla que aplican las cajas sale escrita como <b>ecuación</b>."
+   },
+   {
+    "name": "Misterio",
+    "what": "El interior de la caja está <b>escondido</b>. Averigua la regla a partir de lo que entra y lo que sale."
+   }
+  ],
+  "controls": [
+   {
+    "name": "La caja (centro)",
+    "desc": "Donde va la regla. Arrastra una tarjeta de regla del cajón de abajo y colócala.",
+    "tip": "Puedes poner <b>varias cajas en fila</b>. Juntas, una tarjeta las atraviesa desde la izquierda, así que el orden importa."
+   },
+   {
+    "name": "El cajón de reglas (abajo) — páginas 1 · 2 · 3",
+    "desc": "Las reglas que puedes colocar, repartidas en páginas. Las flechas de al lado pasan de página.",
+    "tip": "Si no encuentras la regla que quieres es que está <b>en otra página</b>. Pulsa la flecha."
+   },
+   {
+    "name": "Las tarjetas de entrada (izquierda)",
+    "desc": "Las cosas que meter en la caja. Arrástralas hacia ella.",
+    "tip": "Empuja una tarjeta <b>despacio</b> y ves el momento en que cambia al pasar. Si la lanzas solo queda el resultado."
+   },
+   {
+    "name": "El botón de borrar (derecha)",
+    "desc": "Limpia las tarjetas que han salido.",
+    "tip": "Púlsalo cuando los resultados se amontonen y confundan. Las reglas de las cajas se quedan."
+   },
+   {
+    "name": "simplifica (pantalla Ecuación)",
+    "desc": "Enseña la ecuación <b>ordenada</b>.",
+    "tip": "Enciéndelo y apágalo y compara. Apagado enseña el desarrollo por las cajas; encendido, la ecuación final ordenada."
+   },
+   {
+    "name": "La caja escondida (pantalla Misterio)",
+    "desc": "Una caja cuya regla no se ve. Mete valores distintos y adivina la regla.",
+    "tip": "<b>Prueba primero con 0 y 1.</b> Meter 0 deja al descubierto lo que se suma, y meter 1 lo que se multiplica."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Patrones</b>, mete una tarjeta y mira qué hace la caja.",
+   "Pon <b>dos cajas en fila</b> y manda una tarjeta.",
+   "Pasa a la pantalla <b>Números</b> y coloca <b>+3</b> en la caja.",
+   "Añade una segunda caja con <b>×2</b> y mete <b>4</b>.",
+   "<b>Intercambia el orden</b> de las dos cajas y vuelve a mandar el 4 para comparar.",
+   "En la pantalla <b>Misterio</b>, averigua la regla escondida."
+  ],
+  "gotchas": [
+   "Las cajas en fila se atraviesan <b>desde la izquierda</b>. Cambia el orden y cambia el resultado.",
+   "El cajón de reglas tiene <b>varias páginas</b>. Si lo que quieres no está, pasa de página con la flecha."
+  ]
+ },
+ "quadrilateral": {
+  "summary": "<b>Arrastra las cuatro esquinas</b> y remodela el cuadrilátero a tu gusto. Cada vez que lo cambias te dice <b>el nombre de la figura que tienes ahora</b>, en directo. Con una sola pantalla, la franja negra de abajo no lleva nombres de pantalla.",
+  "screens": [
+   {
+    "name": "(una sola pantalla)",
+    "what": "Esta simulación tiene una única pantalla. Arrastra las esquinas y mira cambiar el nombre."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Las esquinas A · B · C · D (centro)",
+    "desc": "Arrastra los cuatro puntos para cambiar la forma del cuadrilátero.",
+    "tip": "La única acción clave de aquí. Mueve <b>un punto cada vez</b>, poco a poco, y busca cuándo cambia el nombre."
+   },
+   {
+    "name": "Nombre de la Forma Oculto (arriba)",
+    "desc": "Elige si <b>esconder o enseñar</b> el nombre de la figura actual.",
+    "tip": "Déjalo <b>escondido</b> primero, di tú el nombre y luego destápalo. Se queda mucho más así."
+   },
+   {
+    "name": "Restablecer Forma (arriba)",
+    "desc": "Devuelve el cuadrilátero a su forma de partida.",
+    "tip": "Cuando la figura se deforma tanto que cuesta trabajar con ella, empieza por aquí."
+   },
+   {
+    "name": "Cuadrícula (casilla de la derecha)",
+    "desc": "Tiende una cuadrícula sobre el fondo.",
+    "tip": "<b>Actívala, sin falta.</b> Sin cuadrícula, igualar longitudes de lado a ojo es casi imposible."
+   },
+   {
+    "name": "Etiquetas (casilla de la derecha)",
+    "desc": "Pone los nombres A · B · C · D en las esquinas.",
+    "tip": "Práctico para señalar una esquina concreta al leer o escribir sobre ella."
+   },
+   {
+    "name": "Diagonales (casilla de la derecha)",
+    "desc": "Dibuja las dos líneas que unen las esquinas opuestas.",
+    "tip": "Que las diagonales sean <b>perpendiculares</b> o <b>se corten por la mitad</b> cambia según la figura. Otra pista para distinguirlas."
+   },
+   {
+    "name": "Marcadores (casilla de la derecha)",
+    "desc": "Pone <b>marcas iguales</b> en los lados de la misma longitud y en los ángulos del mismo tamaño.",
+    "tip": "La pantalla te dice «qué coincide», lo cual va muy bien para comprobar las condiciones."
+   },
+   {
+    "name": "Pasos Pequeños (derecha)",
+    "desc": "Hace que las esquinas se muevan solo a saltitos muy pequeños.",
+    "tip": "Actívalo cuando necesites un 90° exacto o longitudes exactamente iguales. A mano el ajuste fino cuesta."
+   }
+  ],
+  "steps": [
+   "Activa <b>Cuadrícula</b> y <b>Etiquetas</b>.",
+   "Desactiva <b>Nombre de la Forma Oculto</b> para que se vea el nombre.",
+   "Haz primero un <b>cuadrado</b>.",
+   "Arrastra un poco una esquina para convertirlo en un <b>rectángulo</b>.",
+   "Rompe los ángulos para un <b>rombo</b>, y luego un <b>paralelogramo</b> y un <b>trapecio</b>.",
+   "Activa <b>Diagonales</b> y mira en qué se diferencian de una figura a otra."
+  ],
+  "gotchas": [
+   "<b>Nombre de la Forma Oculto</b> es un interruptor para esconder el nombre. Actívalo y el nombre se va: es fácil leerlo al revés.",
+   "Con la cuadrícula apagada cuesta muchísimo igualar longitudes. <b>Déjala activada.</b>",
+   "Si el nombre no cambia, las condiciones están <b>muy ligeramente</b> desviadas. Activa <b>Pasos Pequeños</b> y ajusta fino.",
+   "Con una sola pantalla, la franja negra de abajo <b>no tiene botón de casa ni nombres de pantalla</b>. No es un fallo."
+  ]
+ },
+ "center-and-variability": {
+  "summary": "Unos jugadores dan patadas a un balón y <b>las distancias se apilan como puntos.</b> Con esos datos manejas la media, la mediana y la dispersión. Las pantallas siguientes añaden más herramientas.",
+  "screens": [
+   {
+    "name": "Mediana",
+    "what": "Donde empieza esta lección. La mediana a solas."
+   },
+   {
+    "name": "Media y Mediana",
+    "what": "Enseña las dos <b>a la vez</b>. La mejor pantalla para ver la diferencia."
+   },
+   {
+    "name": "Variabilidad",
+    "what": "Tres herramientas para medir la dispersión. También puedes cambiar de jugador."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los botones de lanzamiento (abajo a la izquierda)",
+    "desc": "Un botón lanza una vez (pone <b>Lanzamiento 1</b>) y el otro lanza cinco de golpe (pone <b>5 Lanzamientos</b>).",
+    "tip": "Empieza lanzando <b>de uno en uno</b> y mirando cómo se mueven los marcadores. Todos de golpe y te pierdes el cambio."
+   },
+   {
+    "name": "Mediana · Media (casillas de la derecha)",
+    "desc": "Marcan la posición de la mediana o de la media sobre los datos.",
+    "tip": "En la pantalla <b>Media y Mediana</b> activa <b>las dos</b>. A cuál arrastra más añadir un lanzamiento larguísimo es el corazón de esta lección."
+   },
+   {
+    "name": "Ordentar Datos (arriba a la derecha)",
+    "desc": "Pone las tarjetas de datos en orden de tamaño.",
+    "tip": "Ordenadas, se ve que la mediana es <b>la tarjeta del centro</b>. Púlsalo cuando pierdas de vista qué es una mediana."
+   },
+   {
+    "name": "Predecir Mediana · Apuntador (derecha)",
+    "desc": "Marca <b>dónde crees que está</b> antes de ver la respuesta.",
+    "tip": "El mejor ejercicio de esta simulación. Márcalo y luego destapa, y <b>lo lejos que estabas</b> queda ahí mismo."
+   },
+   {
+    "name": "Rango · Rango Intercuartil (RIQ) · Desviación Media Absoluta (DMA) (izquierda de la pantalla Variabilidad)",
+    "desc": "Tres maneras de medir la dispersión. Cógelas de una en una.",
+    "tip": "Mira primero el <b>Rango</b>. Al ser la diferencia entre el mayor y el menor es el más fácil de captar. El RIQ y la DMA vienen después."
+   },
+   {
+    "name": "Elegir jugador (izquierda de la pantalla Variabilidad)",
+    "desc": "Cuatro jugadores de colores distintos, cada uno con su propia <b>manía</b> al lanzar.",
+    "tip": "Encuentra dos jugadores con <b>medias parecidas y dispersiones distintas</b>. Todo lo que esta lección quiere decir está en esa pareja."
+   },
+   {
+    "name": "Herramienta de Intervalos (derecha de la pantalla Variabilidad)",
+    "desc": "Dibuja un intervalo sobre los datos y enseña cuántos caen dentro.",
+    "tip": "Úsala para medir a ojo dónde se junta la mitad central."
+   },
+   {
+    "name": "El botón de borrar datos (abajo a la derecha)",
+    "desc": "Limpia todos los puntos acumulados.",
+    "tip": "Cuando cambies de jugador para comparar, <b>límpialo primero</b>, o los registros de los dos jugadores se mezclan."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Mediana</b>, lanza cinco veces de una en una.",
+   "Activa la casilla de <b>Mediana</b> y pulsa <b>Ordentar Datos</b>.",
+   "Adivina primero con <b>Predecir Mediana</b> y compara con la respuesta.",
+   "En la pantalla <b>Media y Mediana</b> activa las dos.",
+   "Consigue un lanzamiento larguísimo y mira <b>a cuál arrastra más</b>.",
+   "En la pantalla <b>Variabilidad</b> cambia de jugador y compara las dispersiones."
+  ],
+  "gotchas": [
+   "<b>Borra los datos</b> antes de cambiar de jugador, o los registros de dos personas se mezclan y no llegas a ninguna conclusión.",
+   "A la <b>media</b> la arrastra muy lejos un solo valor extremo y la <b>mediana</b> apenas se mueve. Esa es toda la lección.",
+   "Con <b>pocos</b> datos, ni la media ni la mediana significan gran cosa. Reúne al menos cinco.",
+   "Los nombres de las herramientas de la pantalla <b>Variabilidad</b> son difíciles, pero las tres miden <b>cómo de repartido está</b>.",
+   "El botón de ordenar pone <b>Ordentar Datos</b> en pantalla, con una t de más en «Ordenar». Es una errata de la traducción de PhET."
+  ]
  }
 }

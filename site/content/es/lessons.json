@@ -3370,5 +3370,522 @@
     "right": 1
    }
   ]
+ },
+ "num-1": {
+  "course": "number",
+  "sim": "number-play",
+  "screens": "1",
+  "mode": "solve",
+  "title": "Las muchas caras del siete",
+  "lead": "La cifra 7, siete objetos, la palabra «siete», siete casillas llenas en un marco de diez. Todo la misma cosa.",
+  "hook": "Escribe <b>7</b> y no es más que <b>una forma</b>. Lo que significa esa forma hay que aprenderlo aparte. Siete caramelos, el sonido «siete», siete casillas llenas en un marco de diez: darse cuenta de que cosas que no se parecen en nada apuntan todas a <b>una sola cosa</b> es el primer botón de las matemáticas. Y ese primer botón lleva a <b>cómo ves el 10</b>.",
+  "predict": {
+   "q": "Hay <b>dos</b> marcos de diez. El primero está lleno y el segundo tiene <b>tres</b> casillas llenas. ¿Cuántos hay en total?",
+   "opts": [
+    "13",
+    "23",
+    "103",
+    "5"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Diez</b>. Está dividida en tres paneles con el número actual en grande en el centro.",
+   "Pon el número grande del centro en <b>7</b> con las flechas de arriba y abajo.",
+   "Mira el panel de <b>Palabra</b> de la izquierda. Pone «siete» con letras. El botón de arriba a la izquierda que muestra el idioma cambia en qué idioma va la palabra.",
+   "Mira el panel de <b>Marco de Diez</b> de la derecha. Siete de las diez casillas están llenas. ¿Ves <b>las tres vacías</b>?",
+   "En el panel de <b>Unos</b> de abajo, arrastra objetos sueltos dentro y fuera. El número del centro lo sigue.",
+   "Sube el número a <b>10</b>. El marco se llena exacto.",
+   "Con el botón de la casa ve a la pantalla <b>Veinte</b>. Ahora hay <b>dos</b> marcos.",
+   "Pon el número en <b>13</b>. El primer marco se llena, ¿y cuántas casillas se llenan en el segundo? Esa es la respuesta a ②.",
+   "Sube el número despacio de <b>11 a 19</b> y mira cómo <b>el primer marco se queda lleno</b> mientras solo se llena el segundo."
+  ],
+  "record": "Con el número en 7, ¿cuántas casillas del marco de diez estaban vacías? ¿Y con 13, qué aspecto tenía cada uno de los dos marcos?",
+  "explain": {
+   "right": 0,
+   "body": "<p>La respuesta es <strong>13</strong>. Un marco lleno son <strong>10</strong>, más <strong>3</strong>.</p><p>Si elegiste <strong>23</strong>, quizá contaste «dos marcos» como 20. Pero el segundo marco solo tiene <strong>tres</strong> casillas llenas. Se cuentan <strong>las casillas llenas</strong>, no los marcos.</p><p>Si elegiste <strong>103</strong>, <strong>pegaste el 10 y el 3</strong>. Ese también es un error muy común. Antes de tener el valor posicional en los huesos, así es exactamente como se ve.</p><p>Cuando escribes 13, <strong>el 1 no significa «uno» sino «un paquete de diez»</strong>. Eso es el valor posicional. Que el marco tenga que <strong>llenarse antes de pasar al siguiente</strong> es esa regla hecha visible.</p><p>Si te fijaste en las <strong>tres casillas vacías</strong> del 7, muy bien. En el momento en que las ves ya no necesitas memorizar <strong>7 + 3 = 10</strong>. La lección siguiente usa esa sensación.</p>"
+  },
+  "real": "Que las hueveras vayan de 10 o de 30, y que tengamos diez dedos, no son casualidades: son por lo que la gente cogió la costumbre de contar de diez en diez. Contar existencias de cinco en cinco en una tienda, y que el tiempo pase de vuelta a los 60, son todos acuerdos sobre «cuántos se juntan antes de pasar al sitio siguiente».",
+  "quiz": [
+   {
+    "q": "Hay <b>seis</b> casillas llenas en un marco de diez. ¿Cuántas están vacías?",
+    "opts": [
+     "3",
+     "4",
+     "6"
+    ],
+    "right": 1
+   },
+   {
+    "q": "En el <b>17</b>, ¿qué significa el <b>1</b>?",
+    "opts": [
+     "Uno",
+     "Un paquete de diez",
+     "Siete"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Dos marcos de diez, el primero lleno y el segundo con 8 casillas llenas:",
+    "opts": [
+     "18",
+     "28",
+     "108"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "num-2": {
+  "course": "number",
+  "sim": "number-compare",
+  "screens": "1",
+  "mode": "solve",
+  "title": "Cuánto mayor",
+  "lead": "Ejercicio para pasar de «7 es mayor» a «mayor por 4».",
+  "hook": "«¿Cuál es mayor, 7 o 3?» Eso es fácil. Pero pregunta «¿<b>cuánto</b> mayor?» y te paras un momento. La primera pregunta es <b>elegir entre dos cosas</b>; la segunda es <b>fabricar un número nuevo</b>. Y la manera de fabricar ese número nuevo es la <b>resta</b>.",
+  "predict": {
+   "q": "Pones <b>7</b> objetos a la izquierda y <b>3</b> a la derecha, uno al lado del otro. ¿Cuál es la <b>diferencia de longitud</b> de las dos columnas?",
+   "opts": [
+    "4",
+    "3",
+    "7",
+    "10"
+   ]
+  },
+  "missions": [
+   "Esta es la pantalla <b>Compara</b>. Pon un número en cada lado y compáralos en el centro.",
+   "Arrastra objetos de las bandejas de abajo de cada lado. Pon <b>7</b> a la izquierda y <b>3</b> a la derecha.",
+   "Mira el signo del centro. ¿Cuál de <b>&lt; = &gt;</b> aparece?",
+   "Lee la frase de encima del centro. Te dice qué lado es mayor.",
+   "Alinea las dos columnas <b>por abajo</b> y mira. ¿Cuántas casillas sobresalen? Esa es la respuesta a ②.",
+   "Añade objetos a la derecha <b>de uno en uno</b>. ¿Cuántos hacen falta para que el signo pase a <b>=</b>?",
+   "Ahora haz que el lado derecho sea <b>el mayor</b> y mira el signo darse la vuelta.",
+   "Deja los totales a la vista arriba y las cuentas salen como números, así que no tienes que contar.",
+   "Pon los dos lados en <b>el mismo número</b>. Las dos columnas salen de la misma longitud."
+  ],
+  "record": "¿Cuántas casillas sobresalían con 7 frente a 3? ¿Y cuántas tuviste que añadir para que saliera =?",
+  "explain": {
+   "right": 0,
+   "body": "<p>La respuesta es <strong>4</strong>. 7 − 3 = 4. Pero lo que importa no es la cuenta: es <strong>qué era ese 4 en la pantalla</strong>.</p><p>Con las dos columnas una al lado de la otra, la <strong>parte que sobresale</strong> es ese 4. Lo que significa que la resta no es solo <strong>quitar</strong> sino también <strong>medir una diferencia</strong>. En vez de quitarle 3 a 7, comparaste 7 con 3 y mediste <strong>lo que sobraba</strong>.</p><p>Conocer los dos significados ayuda después. «Tenía 7 caramelos y me comí 3» es una resta, y «mi hermano tiene 7 años y mi hermana 3, ¿cuántos años se llevan?» también. En la segunda no desaparece nada y sigue siendo una resta.</p><p>Si añadiste <strong>4</strong> a la derecha para que saliera <strong>=</strong>, es la misma historia. <strong>Rellena la diferencia y son iguales.</strong> 3 + 4 = 7. La suma y la resta van espalda con espalda, y aquí se ve.</p><p>No te fuerces a memorizar hacia dónde apunta el signo. <strong>El lado abierto mira al mayor.</strong> Añade y quita unos cuantos objetos y míralo darse la vuelta, y se queda.</p>"
+  },
+  "real": "Diferencias de temperatura, de altura, de puntuación, la batería que queda: casi todas las restas del día a día son comparar y no quitar. Decir «este cuesta 2 más» ya es hacer la cuenta, y «tres puntos por detrás» en la retransmisión de un partido también.",
+  "quiz": [
+   {
+    "q": "La diferencia entre 9 y 4 es:",
+    "opts": [
+     "5",
+     "13",
+     "4"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Con 6 a la izquierda y 6 a la derecha, el signo del centro es:",
+    "opts": [
+     "&lt;",
+     "=",
+     "&gt;"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Un hermano tiene 12 años y el otro 8. ¿Qué cuenta es esta?",
+    "opts": [
+     "Una suma: estás juntando edades",
+     "Una resta: estás midiendo la diferencia",
+     "Una multiplicación"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "num-3": {
+  "course": "number",
+  "sim": "number-pairs",
+  "screens": null,
+  "mode": "solve",
+  "title": "Un número en dos trozos",
+  "lead": "10 es 1 y 9, 2 y 8, 3 y 7… hay varias maneras de partirlo. De aquí salen la suma y la resta.",
+  "hook": "La lección 1 te enseñó que <b>el 7 deja tres casillas vacías en un marco de diez</b>. Dicho al revés, eso dice que <b>el 10 se parte en 7 y 3</b>. Practicar <b>partir un número en dos trozos</b> así es la raíz de la suma y la resta. Y una vez lo has partido, empiezas a preguntarte si <b>el orden de los trozos importa</b> al volver a juntarlos.",
+  "predict": {
+   "q": "Repartes <b>10</b> manzanas entre dos platos. ¿Vale <b>0</b> en un plato? Si vale, ¿de cuántas maneras se parte el 10 en dos trozos? (Cuenta 0 y 10 como una manera.)",
+   "opts": [
+    "5",
+    "9",
+    "11",
+    "10"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Diez</b>. Hay un diagrama de <b>Vínculo Numérico</b> arriba en el centro y el área de conteo debajo.",
+   "Pon el <b>Total</b> de arriba a la derecha en <b>10</b>.",
+   "En el área de abajo, arrastra los objetos <b>a izquierda y derecha</b> para partirlos. Los números del vínculo numérico los siguen.",
+   "Déjalo en <b>7</b> a la izquierda y <b>3</b> a la derecha: la pareja de la lección 1.",
+   "Lee la <b>Frase</b> de arriba. Dice «… se puede descomponer en … y …».",
+   "Pulsa el botón de intercambio de la izquierda (un icono sin palabras) y el 7 y el 3 cambian de sitio. <b>¿Cambia el total?</b>",
+   "Prueba a dejar un lado en <b>0</b>. ¿Vale? Eso lleva a la respuesta de ②.",
+   "Recorre desde <b>0 y 10</b> hasta <b>10 y 0</b> y cuenta <b>cuántas maneras</b> hay.",
+   "Usa el botón de tapar de la izquierda para cubrir un lado. Con el total y un trozo a la vista, se convierte en un ejercicio de <b>averiguar el resto</b>.",
+   "Con el botón de la casa ve a la pantalla <b>Veinte</b> y marca la casilla de <b>Ecuación</b>. Lo que has partido se escribe como una <b>ecuación</b>."
+  ],
+  "record": "Anota todas las maneras de partir el 10 en dos trozos que se te ocurran. ¿Y qué le pasó al total al intercambiar los dos trozos?",
+  "explain": {
+   "right": 2,
+   "body": "<p>La respuesta es <strong>11</strong>. 0 y 10, 1 y 9, 2 y 8, 3 y 7, 4 y 6, 5 y 5, 6 y 4, 7 y 3, 8 y 2, 9 y 1, 10 y 0: cuéntalas y son once.</p><p>Si elegiste <strong>10</strong>, seguramente <strong>dejaste fuera el 0</strong>. Da la sensación de que «nada en un plato no es un reparto de verdad». Pero en matemáticas <strong>el 0 es un número como cualquier otro</strong>, y que el total se quede en 10 con un lado vacío en pantalla es la prueba.</p><p>Si elegiste <strong>5</strong>, contaste <strong>7 y 3</strong> como lo mismo que <strong>3 y 7</strong>. Eso también está bien en algunas situaciones, si los platos no se distinguen. Esta simulación distingue izquierda de derecha, así que aquí cuentan como distintas.</p><p>Lo que enseñó el <strong>intercambio</strong> importa. Convierte 7 y 3 en 3 y 7 y <strong>el total sigue siendo 10</strong>. Así que <strong>7 + 3 = 3 + 7</strong>. El orden no importa al sumar. Te lo encontrarás después con el nombre de «propiedad conmutativa»; por ahora basta con el dibujo de la pantalla.</p><p>Tapar un lado es en realidad una resta. Pedir el resto sabiendo el total 10 y un trozo 7 es pedir 10 − 7. Que la suma y la resta sean <strong>el derecho y el revés del mismo dibujo</strong> es el sentido de esta pantalla.</p>"
+  },
+  "real": "El cambio de una compra es esta cuenta. Dar un billete de diez por algo de 6,50 y recibir 3,50 es partir diez en dos trozos. La barra de vida de un videojuego, los datos que te quedan en el móvil, averiguar cuántas acertaste a partir de cuántas fallaste: todo el mismo dibujo.",
+  "quiz": [
+   {
+    "q": "¿Cuál de estas <b>no</b> es una manera de partir el 8 en dos trozos?",
+    "opts": [
+     "5 y 3",
+     "0 y 8",
+     "6 y 3",
+     "4 y 4"
+    ],
+    "right": 2
+   },
+   {
+    "q": "Si el total es <b>10</b> y un trozo es <b>4</b>, el resto es:",
+    "opts": [
+     "6",
+     "14",
+     "4"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Intercambia los dos trozos y el total:",
+    "opts": [
+     "Se hace mayor",
+     "Se queda igual",
+     "Se hace menor"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "num-4": {
+  "course": "number",
+  "sim": "number-line-distance",
+  "screens": "1",
+  "mode": "solve",
+  "title": "La distancia no tiene dirección",
+  "lead": "«A tres de distancia» y «se movió −3» son afirmaciones distintas. Esa diferencia es el valor absoluto.",
+  "hook": "La lección 2 te hizo medir la <b>diferencia</b> entre dos números. La diferencia entre 7 y 3 es 4, ¿y entre <b>3 y 7</b>? También 4. ¿Qué es entonces 3 − 7 = <b>−4</b>? Aquí es donde se separan la <b>distancia</b> y el <b>desplazamiento</b>. Dices que de casa al colegio hay 500 m, no <b>−500 m</b>. Y sin embargo en algunas situaciones el signo es imprescindible.",
+  "predict": {
+   "q": "En una recta numérica la persona está en <b>−3</b> y la casa en <b>+2</b>. ¿Cuál es la <b>distancia</b> entre ellas?",
+   "opts": [
+    "5",
+    "−5",
+    "1",
+    "−1"
+   ]
+  },
+  "missions": [
+   "Esta es la pantalla <b>Explora</b>. Abajo puedes elegir entre tres situaciones: persona y casa, temperatura, y pez y ave.",
+   "En <b>persona y casa</b>, arrastra los dos dibujos por la recta numérica. La frase de arriba los sigue.",
+   "En las casillas de la derecha activa <b>Etiquetas de los puntos · Etiquetas de distancia · Etiquetas de descripción</b>. Aparecen a la vez números y una frase.",
+   "Pon la persona en <b>−3</b> y la casa en <b>+2</b>. ¿Qué pone la etiqueta de distancia? Esa es la respuesta a ②.",
+   "Arriba a la izquierda, cambia entre la lectura sin signo y la <b>Distancia Directa</b>. La misma disposición, <b>otro valor</b>.",
+   "Con la lectura directa, <b>intercambia las posiciones</b> de la persona y la casa. El signo se da la vuelta.",
+   "Haz lo mismo con la lectura sin signo. Esta vez el valor no cambia.",
+   "Activa el display de <b>Valor absoluto</b> de arriba a la izquierda. Aparece el símbolo de las dos barras verticales.",
+   "Pasa a la situación de <b>temperatura</b> y lleva A y B por debajo de cero. Lee la manera de decirlo cuando los signos importan."
+  ],
+  "record": "Con la persona en −3 y la casa en +2, ¿cuáles eran la distancia sin signo y la distancia directa? ¿Y qué pasó al intercambiarlas?",
+  "explain": {
+   "right": 0,
+   "body": "<p>La respuesta es <strong>5</strong>. Ir de −3 a +2 lleva <strong>cinco pasos</strong>. Cuéntalos en la recta numérica: −3 → −2 → −1 → 0 → 1 → 2, cinco pasos.</p><p>Si elegiste <strong>1</strong>, seguramente restaste 3 de 2 sin más. Eso es lo que sale de ignorar los signos. Cuando dos puntos están <strong>a un lado y otro del 0</strong>, hay que <strong>sumar</strong> las dos distancias: 3 pasos + 2 pasos = 5 pasos.</p><p>Ahora la diferencia entre <strong>distancia</strong> y <strong>desplazamiento</strong>.</p><ul><li>La <strong>distancia</strong> es <strong>cuánto se separan</strong>. Es siempre <strong>0 o más</strong>, e intercambiar los dos puntos la deja <strong>igual</strong>.</li><li>El <strong>desplazamiento</strong> es <strong>cuánto y hacia dónde</strong>. Lleva signo, e intercambiar los puntos <strong>se lo da la vuelta</strong>.</li></ul><p>Que uno se quedara igual y el otro se diera la vuelta al intercambiarlos es exactamente esa diferencia.</p><p><strong>Valor absoluto</strong> significa «quítale el signo y mira solo el tamaño». |−5| = 5 y |5| = 5. Así que <strong>distancia = valor absoluto del desplazamiento</strong>. Eso es lo que dice el símbolo de las dos barras verticales.</p><p>¿Para qué hacen falta los dos? En un ascensor, «se movió tres pisos» es una distancia y «<strong>bajó</strong> tres pisos» es un desplazamiento. La dirección importa en unas situaciones y en otras no, así que el lenguaje también se partió en dos.</p>"
+  },
+  "real": "El cuentakilómetros de un coche sube incluso marcha atrás: mide <b>distancia</b>. Un navegador que va descontando «distancia al destino», en cambio, sí se preocupa por la dirección. Las coordenadas de un personaje de videojuego, el dinero que entra y sale de una cuenta, la temperatura subiendo y bajando: dónde hace falta el signo y dónde no siempre se separa.",
+  "quiz": [
+   {
+    "q": "La <b>distancia</b> entre −4 y +1 es:",
+    "opts": [
+     "3",
+     "5",
+     "−5"
+    ],
+    "right": 1
+   },
+   {
+    "q": "El valor de |−7| es:",
+    "opts": [
+     "−7",
+     "7",
+     "0"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Cuál <b>cambia de signo</b> al intercambiar los dos puntos?",
+    "opts": [
+     "La distancia",
+     "El desplazamiento",
+     "Las dos"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "num-5": {
+  "course": "number",
+  "sim": "equality-explorer",
+  "screens": null,
+  "mode": "solve",
+  "title": "Una balanza es una ecuación",
+  "lead": "El = no significa «aquí sale el resultado». Significa «los dos lados son iguales». Compruébalo en una balanza.",
+  "hook": "Al mirar <b>3 + 4 = 7</b>, casi todo el mundo lee el <b>=</b> como «y por tanto el resultado es». Así se comporta la tecla = de una calculadora. Pero esa lectura se atasca en el momento en que te encuentras algo como <b>x + 3 = 8</b>. El <b>=</b> significa <b>una balanza en equilibrio</b>. Con ese único dibujo no tendrás que memorizar nunca las reglas para resolver ecuaciones.",
+  "predict": {
+   "q": "Una balanza está nivelada. Pones 2 pesas más <b>solo en la izquierda</b>. ¿Qué pasa?",
+   "opts": [
+    "Se queda nivelada",
+    "Se inclina a la izquierda",
+    "Se inclina a la derecha",
+    "La balanza se rompe"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Básico</b>. Hay una <b>balanza</b> en el centro y arrastras objetos hasta ella desde las bandejas de abajo.",
+   "Pon <b>3</b> objetos en el platillo izquierdo y <b>3</b> en el derecho para dejarla <b>nivelada</b>.",
+   "Pon <b>2</b> más solo en la izquierda. ¿Qué hace la balanza? Esa es la respuesta a ②.",
+   "Pon <b>2</b> también en la derecha para volver a nivelarla. <b>Hazle lo mismo a los dos lados</b> y la balanza se mantiene.",
+   "Mira la lectura de <b>Ecuación o desigualdad</b> de arriba. El estado de la balanza sale escrito como <b>=</b> o como un signo de desigualdad.",
+   "Guarda el estado actual con <b>Foto instantánea</b>, a la derecha, y compáralo con otra disposición.",
+   "Con el botón de la casa ve a la pantalla <b>Variables</b>. Ahora aparecen objetos marcados con <b>x</b>.",
+   "Pon <b>una x y 3 objetos</b> en la izquierda y <b>8 objetos</b> en la derecha. Eso es <b>x + 3 = 8</b>.",
+   "Quita <b>3 objetos de cada lado</b>. La balanza se mantiene y a la izquierda solo queda la <b>x</b>. ¿Cuántos quedan a la derecha?",
+   "Cambia el valor de la x en la caja de <b>Variables</b> de arriba a la derecha y mira cuándo se nivela la balanza."
+  ],
+  "record": "¿Cuánto valía la x una vez quitaste 3 de cada lado? Y escribe en una frase qué hay que hacer para mantener el equilibrio.",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>se inclina a la izquierda</strong>. Evidente, claro. Y esa cosa evidente es <strong>todo lo que hay en resolver ecuaciones</strong>.</p><p>Hay exactamente una regla. <strong>Hazle algo a un lado y el equilibrio se rompe. Hazle lo mismo a los dos y se mantiene.</strong> Sumar, restar, doblar, partir por la mitad: da igual.</p><p>Al resolver <strong>x + 3 = 8</strong> te enseñan que «el 3 pasa al otro lado cambiando de signo». Pero lo que hiciste de verdad en pantalla fue <strong>quitar 3 de cada lado</strong>. La izquierda se vuelve x + 3 − 3 = x y la derecha 8 − 3 = 5. Así que <strong>x = 5</strong>.</p><p>«Pasar al otro lado cambiando de signo» es solo una abreviatura de ese proceso. Piénsalo como <strong>escribir lo que viste en la balanza</strong> en vez de memorizar una regla y deja de confundir.</p><p>Lee el <strong>=</strong> como «aquí sale el resultado» y x + 3 = 8 te para en seco, porque la izquierda no puede producir un resultado. Léelo como <strong>«los dos lados son iguales»</strong> y se convierte en la pregunta natural: ¿cuánto tendría que valer la x para que cuadren?</p>"
+  },
+  "real": "Doblar una receta significa doblar <b>todos</b> los ingredientes para mantener el sabor: el mismo principio. El cambio de divisa, ajustar una ecuación química, el debe y el haber de una contabilidad: todo con la única regla de mantener los dos lados iguales.",
+  "quiz": [
+   {
+    "q": "Quita 4 de <b>cada lado</b> de una balanza nivelada y:",
+    "opts": [
+     "Se inclina a la izquierda",
+     "Se queda nivelada",
+     "Se inclina a la derecha"
+    ],
+    "right": 1
+   },
+   {
+    "q": "En <b>x + 6 = 10</b>, la x vale:",
+    "opts": [
+     "16",
+     "4",
+     "6"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Qué significa el signo <b>=</b>?",
+    "opts": [
+     "Dame el resultado ya",
+     "Los dos lados son iguales",
+     "La cuenta ha terminado"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "num-6": {
+  "course": "number",
+  "sim": "function-builder",
+  "screens": null,
+  "mode": "solve",
+  "title": "Una caja que cambia lo que metes",
+  "lead": "Una caja que se traga cualquier cosa y la devuelve cambiada por la misma regla. Eso es una función.",
+  "hook": "Mete <b>una moneda</b> en una máquina expendedora y sale una bebida. El mismo dinero da siempre <b>la misma cosa</b>. Un aparato en el que <b>lo que entra</b> y <b>lo que sale</b> están unidos por una regla fija es lo que las matemáticas llaman <b>función</b>. Esta simulación hace visible esa caja. Y pasa algo interesante cuando <b>juntas dos cajas</b>.",
+  "predict": {
+   "q": "Juntas una caja de <b>+3</b> y una de <b>×2</b>. Metes <b>4</b>, ¿qué sale? (Pasa primero por la caja de la izquierda.)",
+   "opts": [
+    "14",
+    "11",
+    "10",
+    "24"
+   ]
+  },
+  "missions": [
+   "Cógele el aire primero en la pantalla <b>Patrones</b>. Arrastra una tarjeta de la izquierda <b>hasta la caja</b> y sale cambiada por la derecha.",
+   "Coloca <b>otra regla</b> en la caja del centro. La misma tarjeta da ahora otro resultado.",
+   "Pon <b>dos cajas en fila</b> y manda una tarjeta. Lo que sale de la primera entra en la segunda.",
+   "Con el botón de la casa ve a la pantalla <b>Números</b>. Las tarjetas llevan ahora <b>números</b>.",
+   "Coloca <b>+3</b> en la caja y manda varios números. <b>Siempre se suma 3.</b>",
+   "Añade una segunda caja y coloca <b>×2</b>. Mete <b>4</b>: ¿qué sale? Esa es la respuesta a ②.",
+   "Ahora <b>intercambia el orden</b> de las dos cajas a ×2 → +3 y vuelve a mandar el 4. ¿Es el mismo resultado?",
+   "En la pantalla <b>Ecuación</b> la regla que aplican las cajas sale escrita como <b>ecuación</b>. Mira en qué se convierte la ecuación con dos cajas juntas.",
+   "En la pantalla <b>Misterio</b> el interior de la caja está <b>escondido</b>. Averigua la regla a partir de lo que entra y lo que sale."
+  ],
+  "record": "Anota el resultado de pasar el 4 por +3 → ×2 y por ×2 → +3.",
+  "explain": {
+   "right": 0,
+   "body": "<p>La respuesta es <strong>14</strong>. Suma 3 a 4 y sale <strong>7</strong>, y luego dobla el 7 y sale <strong>14</strong>.</p><p>Si elegiste <strong>11</strong>, cogiste el orden al revés. Dobla 4 y sale 8, y luego suma 3 y salen 11. Esa es la prueba de que <strong>cambiar el orden cambia el resultado</strong>.</p><p>La lección 3 decía que <strong>al sumar se puede intercambiar el orden</strong>. Aquí el orden cambia el resultado. ¿Por qué la diferencia? La lección 3 intercambiaba cosas <strong>del mismo tipo</strong> (suma con suma); aquí intercambiaste <strong>tipos distintos</strong> (suma con multiplicación).</p><p>Por eso hay una regla de <strong>orden de las operaciones</strong>. Escribe solo 4 + 3 × 2 y dos personas dan respuestas distintas. Así que se acordó <strong>la multiplicación primero</strong>, y si quieres romper ese acuerdo usas <strong>paréntesis</strong>: (4 + 3) × 2 = 14.</p><p>La pantalla <strong>Misterio</strong> es un ejercicio especialmente bueno. Averiguar qué hay en la caja a partir de lo que entra y lo que sale es exactamente lo que hacen la ciencia y las matemáticas de verdad: meter algo en una caja cuyo interior no ves y encontrar la regla por lo que sale.</p>"
+  },
+  "real": "Un filtro de fotos del móvil es precisamente una función. Metes el original y sale una imagen cambiada por una regla fija. Encadena dos filtros y el orden también cambia el resultado. El cambio de divisa, aplicar un descuento, convertir unidades de temperatura: todo son «cajas que cambian lo que metes por una regla fija».",
+  "quiz": [
+   {
+    "q": "Mete <b>5</b> en una caja de <b>×3</b> y sale:",
+    "opts": [
+     "8",
+     "15",
+     "53"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Pasa <b>3</b> por <b>−1</b> → <b>×4</b> en ese orden y sale:",
+    "opts": [
+     "8",
+     "11",
+     "12"
+    ],
+    "right": 0
+   },
+   {
+    "q": "<b>Intercambia el orden</b> de dos cajas y:",
+    "opts": [
+     "El resultado es siempre el mismo",
+     "El resultado puede cambiar",
+     "Las cajas dejan de funcionar"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "num-7": {
+  "course": "number",
+  "sim": "quadrilateral",
+  "screens": null,
+  "mode": "solve",
+  "title": "¿Un cuadrado es un rectángulo?",
+  "lead": "El nombre de una figura lo fijan las condiciones, no cómo se ve. Cumple las condiciones y el nombre le vale.",
+  "hook": "Pregunta «¿un cuadrado es un rectángulo?» y casi todo el mundo dice «no, son cosas distintas». En matemáticas la respuesta es <b>sí</b>. El nombre de una figura lo fijan las <b>condiciones</b>, no <b>la sensación de su forma</b>. Esta simulación te deja arrastrar las cuatro esquinas con libertad y te dice <b>el nombre de la figura que tienes ahora</b>, en directo. Mira cuándo cambia el nombre y la respuesta aparece.",
+  "predict": {
+   "q": "Haces un cuadrilátero con los cuatro ángulos de <b>90°</b> y los cuatro lados de <b>la misma longitud</b>. Eligiendo <b>todos</b> los nombres que le valen:",
+   "opts": [
+    "Solo cuadrado",
+    "Cuadrado · rectángulo · rombo · paralelogramo, todos",
+    "Solo cuadrado y rombo",
+    "Solo cuadrado y rectángulo"
+   ]
+  },
+  "missions": [
+   "En el centro de la pantalla hay un cuadrilátero con las esquinas <b>A · B · C · D</b>. <b>Arrastra</b> una esquina para cambiar la forma.",
+   "Activa <b>Etiquetas</b> y <b>Cuadrícula</b> a la derecha. Los nombres de las esquinas y una cuadrícula facilitan alinear las cosas.",
+   "Deja <b>Nombre de la Forma Oculto</b> <b>desactivado</b> para que se vea el nombre. Sigue todos los cambios que hagas.",
+   "Haz primero un <b>cuadrado</b>. En cuanto los cuatro lados cuadren y los cuatro ángulos sean de 90°, aparece el nombre.",
+   "Arrastra una esquina <b>solo un poco</b> para que dos lados se alarguen. El nombre cambia a <b>Rectángulo</b>.",
+   "Ahora rompe los ángulos para hacer un <b>Rombo</b>: cuatro lados iguales pero sin 90°.",
+   "Deja solo los lados opuestos paralelos y haz un <b>Paralelogramo</b>.",
+   "Deja solo un par paralelo y sale un <b>Trapecio</b>.",
+   "Activa <b>Diagonales</b> a la derecha. Cómo se cortan las diagonales cambia de una figura a otra.",
+   "Activa <b>Pasos Pequeños</b> y las esquinas se mueven a saltitos, con lo que acertar una figura exacta es mucho más fácil."
+  ],
+  "record": "Anota el nombre que apareció al hacer un cuadrado. ¿Y qué condición rompiste para conseguir cada nombre nuevo?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>todos</strong>. Un cuadrado es un rectángulo y un rombo y un paralelogramo.</p><p>La razón es que <strong>cada nombre tiene sus condiciones, y un cuadrado las cumple todas</strong>.</p><ul><li><strong>Paralelogramo</strong>: los dos pares de lados opuestos son paralelos</li><li><strong>Rectángulo</strong>: un paralelogramo con cuatro ángulos de 90°</li><li><strong>Rombo</strong>: un paralelogramo con cuatro lados iguales</li><li><strong>Cuadrado</strong>: un rectángulo y un rombo</li></ul><p>Un cuadrado cumple la última línea, así que cumple automáticamente todas las de arriba. <strong>Le valen todos los nombres.</strong></p><p>Confunde porque los nombres del día a día se usan para <strong>no solaparse</strong>: «esto es una manzana, eso es una pera». Los nombres de las figuras están <strong>anidados</strong>. «Todo cuadrado es un rectángulo» es cierto y al revés es falso, la misma estructura que «toda persona es un animal».</p><p>Por eso también arrastrar un poco una esquina de un cuadrado te daba <strong>Rectángulo</strong>. Solo se rompió la condición de «cuatro lados iguales» y el resto sobrevivió, así que salió <strong>el nombre que cuadra con las condiciones que quedaban</strong>.</p>"
+  },
+  "real": "Las relaciones anidadas así están por todas partes. Un smartphone es un teléfono y un coche eléctrico es un coche. Al escribir software organizas el código con relaciones del tipo «un gato es un animal». Acostumbrarse a esta manera de pensar con figuras se paga mucho más adelante.",
+  "quiz": [
+   {
+    "q": "«Todo <b>rectángulo</b> es un <b>cuadrado</b>» es:",
+    "opts": [
+     "Verdadero",
+     "Falso: lo cierto es al revés",
+     "Depende"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Un cuadrilátero con cuatro lados iguales pero sin ángulos de 90° es un:",
+    "opts": [
+     "Rectángulo",
+     "Rombo",
+     "Trapecio"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Un cuadrilátero con <b>un solo par</b> de lados opuestos paralelos es un:",
+    "opts": [
+     "Paralelogramo",
+     "Trapecio",
+     "Rombo"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "num-8": {
+  "course": "number",
+  "sim": "center-and-variability",
+  "screens": null,
+  "mode": "solve",
+  "title": "Con la media sola no basta",
+  "lead": "Dos clases con la misma media pueden ser clases completamente distintas. Hay que mirar también la dispersión.",
+  "hook": "Cuando hay demasiados números para mirarlos uno a uno, eliges <b>un número que los represente</b>, normalmente la <b>media</b>. Pero fíate solo de la media y te llevarás un buen engaño. ¿Es seguro un río porque su <b>profundidad media es 1 m</b>? Puede tener partes de 10 cm y partes de 3 m. Esta simulación enseña la trampa con registros de lanzamientos de un balón.",
+  "predict": {
+   "q": "Cinco puntuaciones son <b>1, 2, 3, 4, 90</b>. ¿Qué número representa mejor estos datos?",
+   "opts": [
+    "La media, 20: refleja todos",
+    "La mediana, 3: no la arrastra el valor extremo",
+    "El máximo, 90",
+    "No se pueden representar"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Mediana</b>. Los jugadores dan patadas a un balón y las distancias se apilan como puntos.",
+   "Pulsa el botón de lanzamiento de abajo a la izquierda (pone <b>Lanzamiento 1</b>) <b>cinco veces</b>. Aparecen cinco puntos.",
+   "Activa la casilla de <b>Mediana</b> a la derecha. El valor central queda marcado.",
+   "Pulsa <b>Ordentar Datos</b> arriba a la derecha para poner las tarjetas en orden. Se ve que la mediana es <b>la tarjeta del centro</b>.",
+   "Arrastra el mando de <b>Predecir Mediana</b> para adivinarla tú y luego compara con la respuesta.",
+   "Con el botón de la casa ve a la pantalla <b>Media y Mediana</b>. Salen las dos <b>a la vez</b>.",
+   "Lanza varias veces y consigue <b>uno que llegue muy lejos</b>. ¿A cuál arrastra más, a la <b>media</b> o a la <b>mediana</b>? Esa es la respuesta a ②.",
+   "Ve a la pantalla <b>Variabilidad</b> y lanza con jugadores distintos. Cada jugador tiene una <b>dispersión</b> distinta.",
+   "Recorre <b>Rango · Rango Intercuartil (RIQ) · Desviación Media Absoluta (DMA)</b> a la izquierda. Tres maneras de medir la dispersión.",
+   "Encuentra dos jugadores con medias <b>parecidas</b> y dispersiones <b>completamente distintas</b>. Ese es el corazón de esta lección."
+  ],
+  "record": "¿Qué hicieron la media y la mediana al meter un lanzamiento larguísimo? ¿Y cuál se movió menos?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>la mediana, 3</strong>. La media es (1+2+3+4+90) ÷ 5 = <strong>20</strong>, y <strong>cuatro de los cinco están muy por debajo de 20.</strong> Un valor representativo que no representa a nadie.</p><p>¿Por qué pasa eso? <strong>Porque la media suma todos los valores</strong>, la arrastra en bloque uno muy grande. La <strong>mediana los pone en orden y coge el del centro</strong>, así que por grande que sea el del extremo <strong>solo ocupa un sitio</strong>.</p><p>Eso es lo que viste cuando un lanzamiento fue larguísimo: el marcador de la media se fue muy lejos y la mediana apenas se movió.</p><p>¿Es entonces mala la media? No. Con <strong>datos bien repartidos</strong> la media lleva más información. El problema es <strong>echar mano de la media por costumbre sin decidir cuál usar</strong>.</p><p>Por eso un solo valor representativo nunca basta. Hay que mirar al lado la <strong>dispersión</strong>, y para eso están las tres herramientas de la pantalla Variabilidad.</p><ul><li><strong>Rango</strong>: la diferencia entre el mayor y el menor. Sencillo, pero flojo ante un solo valor extremo.</li><li><strong>RIQ</strong>: cuánto se reparte la mitad central. Robusto ante valores extremos.</li><li><strong>DMA</strong>: la distancia media de cada valor a la media. Aquí se usa el <strong>valor absoluto</strong> de la lección 4.</li></ul><p>Si encontraste dos jugadores con la misma media y distinta dispersión, esa es la prueba de <strong>«con la media sola no basta»</strong>.</p>"
+  },
+  "real": "«El salario medio de nuestra empresa es de 80.000» es la trampa clásica. Una sola persona muy bien pagada levanta la media por bajo que esté el resto, y por eso las estadísticas oficiales publican los salarios como <b>mediana</b>. Los precios de la vivienda, los tiempos de entrega, los tiempos de emparejamiento en un videojuego: los datos con valores extremos usan casi siempre la mediana.",
+  "quiz": [
+   {
+    "q": "La mediana de <b>2, 3, 5, 7, 100</b> es:",
+    "opts": [
+     "5",
+     "23,4",
+     "100"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Con un valor muy grande mezclado, ¿cuál se mueve <b>menos</b>?",
+    "opts": [
+     "La media",
+     "La mediana",
+     "Se mueven igual"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Si dos clases tienen la misma nota media:",
+    "opts": [
+     "Son la misma clase",
+     "Sus dispersiones pueden ser completamente distintas",
+     "Sus medianas también tienen que coincidir"
+    ],
+    "right": 1
+   }
+  ]
  }
 }
