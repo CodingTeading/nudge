@@ -2299,5 +2299,328 @@
    "El <b>Dipolo Molecular</b> solo existe en la pantalla Tres átomos. Con dos átomos hay un enlace, así que los dos son lo mismo.",
    "Esta simulación se hizo para secundaria. Mantén el orden <b>Dos átomos → Tres átomos</b> y podrás seguirla."
   ]
+ },
+ "ph-scale": {
+  "summary": "Vierte <b>líquidos conocidos</b> en un vaso de precipitados y mide el pH. Añade agua o vacíalo y mira moverse el pH. La escala de la izquierda enseña en color el ácido, el neutro y el básico.",
+  "screens": [
+   {
+    "name": "Macro",
+    "what": "La pantalla que usa esta lección. Vierte un líquido real y mídelo con el medidor de pH."
+   },
+   {
+    "name": "Micro",
+    "what": "Enseña las <b>partículas de H₃O⁺ y de OH⁻</b> del mismo líquido. Confirma grano a grano por qué el pH es el que es."
+   },
+   {
+    "name": "Mi solución",
+    "what": "Fija tú el pH y mira qué hacen las partículas con ese valor."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de líquido (el cuentagotas de encima del vaso)",
+    "desc": "Elige entre <b>líquidos conocidos</b>: ácido de batería, sangre, café, leche, jugo de naranja, saliva, jabón de manos, limpiador de desagües y más. Pulsa el cuentagotas para verter en el vaso.",
+    "tip": "Compara primero <b>un ácido con una base</b>. Ir midiendo la lista te da rápido la sensación de la escala."
+   },
+   {
+    "name": "El medidor de pH (izquierda)",
+    "desc": "Arrástralo dentro del líquido y aparece un valor de pH. Fuera del líquido no hay lectura.",
+    "tip": "La punta de la sonda tiene que estar <b>dentro del líquido</b>. Una lectura de <b>—</b> significa que todavía no la has metido."
+   },
+   {
+    "name": "El grifo de agua (arriba a la derecha)",
+    "desc": "Echa más agua en el vaso, diluyendo el líquido.",
+    "tip": "La acción clave de esta lección. Echa agua y mira el pH <b>acercarse a 7 sin pasarlo</b>."
+   },
+   {
+    "name": "El desagüe (bajo el vaso)",
+    "desc": "Vacía el líquido. Úsalo para empezar de nuevo.",
+    "tip": "<b>Vacíalo</b> antes de cambiar de líquido. Mezclados, no hay manera de saber qué dejó el pH como está."
+   },
+   {
+    "name": "La escala Ácido · Neutral · Básico (izquierda)",
+    "desc": "Una escala de 0 a 14 en color, con el valor actual señalado.",
+    "tip": "En esta escala <b>un paso son diez veces</b>. Léela como una regla corriente y juzgarás muy mal la diferencia."
+   },
+   {
+    "name": "La lectura de volumen (½ L · 1 L)",
+    "desc": "Enseña cuánto líquido hay en el vaso.",
+    "tip": "Sube el <b>volumen diez veces</b> con agua y el pH se mueve 1. Mirar el volumen mientras echas deja la regla a la vista."
+   }
+  ],
+  "steps": [
+   "Elige <b>Jugo de Naranja</b> y viértelo en el vaso.",
+   "Mete el <b>medidor de pH</b> y anota el valor.",
+   "Echa <b>agua</b> y mira hacia dónde va el pH.",
+   "Llena el vaso y comprueba si <b>pasa de 7</b>.",
+   "Vacíalo con el desagüe y haz lo mismo con el <b>limpiador de desagües</b>.",
+   "Compara las cuentas de partículas en la pantalla <b>Micro</b>."
+  ],
+  "gotchas": [
+   "En la escala de pH <b>un paso son diez veces</b>. El pH 4 y el pH 6 se llevan 100 veces.",
+   "Ninguna cantidad de agua convierte un ácido <b>en una base.</b> Solo se acerca a 7.",
+   "La <b>punta del medidor tiene que estar bajo el líquido</b> para que haya lectura.",
+   "<b>Vacíalo con el desagüe</b> antes de cambiar de líquido. Mezclado, el resultado no se puede leer.",
+   "Esta simulación tiene tres pantallas. La lección abre solo la de <b>Macro</b>."
+  ]
+ },
+ "acid-base-solutions": {
+  "summary": "Pon <b>ácido fuerte, ácido débil, base fuerte y base débil</b> uno al lado de otro y compáralos <b>grano a grano</b>. La fuerza de esta simulación es que enseña no solo el pH sino <b>qué hay en el vaso y cuánto</b>.",
+  "screens": [
+   {
+    "name": "Introducción",
+    "what": "Donde empieza esta lección. Elige entre cinco disoluciones ya hechas y compáralas."
+   },
+   {
+    "name": "Mi solución",
+    "what": "Fija la <b>concentración</b> y la <b>intensidad</b> por separado. La mejor pantalla para separar las dos ideas."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de solución (arriba a la derecha)",
+    "desc": "Elige entre <b>Agua · Ácido Fuerte · Ácido Débil · Base Fuerte · Base Débil</b>. La fórmula va entre paréntesis.",
+    "tip": "Cambia entre <b>Ácido Fuerte y Ácido Débil</b> y compara los vasos. Ese único contraste es toda la lección."
+   },
+   {
+    "name": "Vistas — Partículas · Gráfica · Ocultar vistas (abajo a la derecha)",
+    "desc": "Elige si mirar dentro del vaso como <b>granos</b>, como <b>gráfica de barras</b>, o no mirar.",
+    "tip": "Mira primero <b>Partículas</b> y confirma con <b>Gráfica</b>. Los granos te dan la sensación; la gráfica, la cantidad exacta."
+   },
+   {
+    "name": "La gráfica de concentración en equilibrio (izquierda)",
+    "desc": "Barras de H₃O⁺, de OH⁻ y de las moléculas sin partir. El eje vertical es logarítmico, en <b>potencias de diez</b>.",
+    "tip": "<b>Un paso de barra son diez veces.</b> Una diferencia que parece pequeña es en realidad grande. El <b>despreciable</b> de abajo significa «tan poco que no cuenta»."
+   },
+   {
+    "name": "Clave de colores de pH (arriba a la izquierda)",
+    "desc": "Arrástrala dentro del líquido y cambia de color. Lee el pH a ojo por el color.",
+    "tip": "Lo mismo que el papel tornasol de un laboratorio real. Aprenderlo <b>por color</b> antes que por números construye el instinto."
+   },
+   {
+    "name": "El comprobador de conductividad (izquierda)",
+    "desc": "Mete los dos electrodos en el líquido y <b>la bombilla se enciende.</b> Cuantos más iones, más brilla.",
+    "tip": "La herramienta más entretenida de aquí. Convierte un <b>grado de ionización</b> invisible en brillo. Compara el ácido fuerte con el débil, sin falta."
+   },
+   {
+    "name": "Concentración Inicial · Intensidad (derecha de la pantalla Mi solución)",
+    "desc": "La <b>Concentración Inicial</b> es cuánto echas; la <b>Intensidad</b>, lo fácil que se parte. Dos mandos separados.",
+    "tip": "Mueve <b>uno cada vez</b>. Cómo cambia el vaso al subir solo la concentración frente a subir solo la intensidad es el corazón de esta lección."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Introducción</b> pon <b>Vistas</b> en <b>Partículas</b>.",
+   "Elige <b>Ácido Fuerte</b> y mira dentro del vaso.",
+   "Cambia a <b>Ácido Débil</b> y mira los trozos de HA que quedan.",
+   "Pasa a <b>Gráfica</b> y compara la altura de las barras de H₃O⁺.",
+   "Mete el comprobador de conductividad y compara el brillo.",
+   "En la pantalla <b>Mi solución</b>, mueve la concentración y la intensidad de una en una."
+  ],
+  "gotchas": [
+   "<b>Intensidad</b> (fuerte/débil) y <b>concentración</b> (concentrado/diluido) son palabras distintas. Esta simulación existe para separarlas.",
+   "El eje vertical de la gráfica es <b>logarítmico</b>. Un paso son diez veces.",
+   "Si la bombilla no se enciende, comprueba que <b>los dos electrodos</b> están bajo el líquido.",
+   "Un aviso de cortocircuito en el comprobador significa que hay muchísimos iones. No es un fallo."
+  ]
+ },
+ "balancing-chemical-equations": {
+  "summary": "Pon números en las <b>casillas de delante de cada sustancia</b> para que las cuentas de átomos cuadren en los dos lados. <b>Los números pequeños de dentro de una fórmula no se pueden tocar</b>, que es la regla que esta simulación existe para enseñar.",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Donde empieza esta lección. Tres ecuaciones fáciles."
+   },
+   {
+    "name": "Ecuaciones",
+    "what": "Ecuaciones mucho más difíciles, elegibles por tipo de reacción."
+   },
+   {
+    "name": "Modo juego",
+    "what": "Un juego de comprobación al nivel que elijas."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Las casillas (delante de cada sustancia de la ecuación)",
+    "desc": "El número que va aquí es el <b>coeficiente</b>. Cámbialo con las flechas de arriba y abajo. <b>El único sitio de esta simulación que puedes cambiar.</b>",
+    "tip": "Intenta cambiar el número pequeño de dentro de una fórmula y <b>no puedes.</b> Está bloqueado, no roto, y ese es el sentido de esta lección."
+   },
+   {
+    "name": "El selector de ecuación (abajo en la pantalla, tres botones)",
+    "desc": "En la pantalla Intro, elige entre <b>Producción de Amoníaco · Disociación de Agua · Combustión de Metano</b>.",
+    "tip": "Empieza con <b>Disociación de Agua</b>. Solo dos elementos, así que es la más sencilla."
+   },
+   {
+    "name": "Vista (arriba a la derecha)",
+    "desc": "Elige entre el <b>dibujo de las partículas</b>, el <b>dibujo de la balanza</b>, el <b>dibujo de barras</b> y <b>Ninguna</b>. Los tres primeros llevan solo dibujos, sin palabras; únicamente el último es una palabra.",
+    "tip": "El dibujo de la <b>balanza</b> es el más intuitivo: nivelada por los dos lados significa que lo tienes. El de las partículas te enseña por qué."
+   },
+   {
+    "name": "La balanza del centro y las marcas = / ≠",
+    "desc": "Aparece un <b>=</b> cuando las cuentas de átomos cuadran en los dos lados y un <b>≠</b> cuando no. Cada elemento se marca por separado.",
+    "tip": "Con varios elementos, arréglalos <b>de uno en uno</b>. Arreglar uno y romper otro es normal; ve y ven un par de veces y la respuesta aparece."
+   },
+   {
+    "name": "Balanceada (arriba a la izquierda)",
+    "desc": "Aparece cuando la ecuación está completamente bien.",
+    "tip": "No has terminado hasta que esto sale. Acertar un elemento no basta."
+   },
+   {
+    "name": "El selector de tipo de reacción (abajo en la pantalla Ecuaciones)",
+    "desc": "Elige entre <b>Síntesis · Descomposición · Combustión</b>.",
+    "tip": "Cada tipo de reacción tiene ecuaciones de una forma distinta. Recorre los tres y el patrón aparece."
+   },
+   {
+    "name": "Simplificada / No simplificada (arriba en la pantalla Ecuaciones)",
+    "desc": "Te dice si los coeficientes se pueden reducir más.",
+    "tip": "Aunque las cuentas cuadren, algo como <b>2 : 4 : 2</b> que se divide entre 2 todavía no está arreglado."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Intro</b> elige <b>Disociación de Agua</b>.",
+   "Pon <b>Vista</b> en el dibujo de la balanza.",
+   "Cambia los números de las casillas hasta que la balanza esté nivelada.",
+   "Comprueba que aparece <b>Balanceada</b>.",
+   "Cambia la <b>Vista</b> al dibujo de las partículas y compruébalo otra vez.",
+   "Pasa a <b>Combustión de Metano</b> para una ecuación con tres elementos."
+  ],
+  "gotchas": [
+   "<b>Los números pequeños de dentro de una fórmula no se pueden cambiar.</b> Están bloqueados porque cambiar uno te da otra sustancia.",
+   "Con varios elementos, arreglar uno rompe otro. <b>Es normal</b>: ve y ven.",
+   "Que las cuentas cuadren no es la respuesta si todavía <b>se pueden reducir</b>. Mira la marca de Simplificada.",
+   "Un coeficiente de <b>1</b> se suele omitir al escribir, pero aquí hay que poner el 1 en la casilla."
+  ]
+ },
+ "reactants-products-and-leftovers": {
+  "summary": "Mete ingredientes y mira <b>cuánto se hace y cuánto sobra</b>. Lo bueno de esta simulación es que lo explica con <b>sándwiches</b> antes de acercarse a la química.",
+  "screens": [
+   {
+    "name": "Sandwiches",
+    "what": "Donde empieza esta lección. Haz sándwiches con pan y queso y aprende la regla sin nada de vocabulario químico."
+   },
+   {
+    "name": "Moléculas",
+    "what": "La misma regla con <b>reacciones químicas de verdad</b>: hacer agua, hacer amoníaco, quemar metano."
+   },
+   {
+    "name": "Juego",
+    "what": "Un juego de comprobación en el que rellenas los huecos."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de reacción (arriba a la derecha)",
+    "desc": "En la pantalla Sandwiches, <b>Queso · Carne y queso · Personalizado</b>; en la pantalla Moléculas, <b>Hacer agua · Hacer amoníaco · Quemar metano</b>.",
+    "tip": "<b>Personalizado</b> es donde fijas tú la regla."
+   },
+   {
+    "name": "Antes de la reacción (la caja grande, centro izquierda)",
+    "desc": "Fija cuántos meter de cada ingrediente. Se cambia con las flechas de arriba y abajo.",
+    "tip": "Sube <b>un solo ingrediente</b>. Unos suben el resultado y otros no: ese es el reactivo limitante."
+   },
+   {
+    "name": "Después de la reacción (la caja grande, centro derecha)",
+    "desc": "Enseña lo que se hizo (<b>Productos</b>) y lo que queda (<b>Excedentes</b>).",
+    "tip": "Mira la caja de <b>Excedentes</b>, sin falta. Lo que queda te dice qué ingrediente se quedó corto."
+   },
+   {
+    "name": "La regla que aparece arriba",
+    "desc": "Enseña como ecuación cuántos usa esta reacción de cada ingrediente. Para los sándwiches se lee como 2 pan + 1 queso.",
+    "tip": "Esa <b>proporción</b> lo es todo. Ponla frente a la proporción de lo que tienes y verás cuál se acabará primero sin hacer ninguna cuenta."
+   },
+   {
+    "name": "La marca No reacción",
+    "desc": "Aparece cuando no hay ingredientes suficientes para hacer nada.",
+    "tip": "No es un fallo. Si un ingrediente está a <b>0</b>, el resultado es 0 por mucho que haya del resto."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Sandwiches</b> elige <b>Queso</b>.",
+   "Comprueba la regla de arriba (2 pan + 1 queso).",
+   "Pon el pan en <b>10</b> y el queso en <b>3</b>.",
+   "Comprueba los <b>Productos</b> y los <b>Excedentes</b>.",
+   "Sube el queso de uno en uno y mira cómo cambia el resultado.",
+   "Haz lo mismo con <b>Hacer agua</b> en la pantalla <b>Moléculas</b>."
+  ],
+  "gotchas": [
+   "El ingrediente más abundante no decide el resultado. Lo decide <b>el que se acaba primero</b>.",
+   "Si un ingrediente está a 0 el resultado es 0. Por eso aparece <b>No reacción</b>.",
+   "La pantalla Sandwiches y la pantalla Moléculas son <b>la misma regla</b>. Cógela bien con los sándwiches antes de pasar adelante.",
+   "Las comillas de <b>Antes de la reacción · Después de la reacción</b> están para marcar que un sándwich no es una reacción química de verdad."
+  ]
+ },
+ "beers-law-lab": {
+  "summary": "Mide la <b>concentración por la intensidad del color</b>. Prepara una disolución en la primera pantalla y luego <b>hazle pasar luz</b> en la segunda para medir cuánta se come. La misma disposición que un espectrofotómetro de laboratorio real.",
+  "screens": [
+   {
+    "name": "Concentración",
+    "what": "Donde empieza esta lección. Añade soluto y echa agua para <b>preparar una disolución.</b>"
+   },
+   {
+    "name": "Ley de Beer",
+    "what": "<b>Hazle pasar luz</b> a la disolución que has preparado y mide la absorbancia. La concentración, la anchura de la cubeta y la longitud de onda se pueden cambiar todas."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de soluto (derecha de la pantalla Concentración)",
+    "desc": "Elige entre sustancias de color como el Permanganato de Potasio, el Dicromato de Potasio y el Sulfato de Cobre.",
+    "tip": "Coge algo <b>de color intenso</b>. El permanganato de potasio (morado) enseña mejor el cambio."
+   },
+   {
+    "name": "Sólido (salero) · Solución (cuentagotas)",
+    "desc": "<b>Agita</b> el sólido o <b>gotea</b> una disolución ya hecha. El método se elige a la derecha.",
+    "tip": "Agitar el sólido sube la concentración más rápido. El cuentagotas es más fácil para ajustar fino."
+   },
+   {
+    "name": "El grifo de agua y el desagüe",
+    "desc": "Echan más agua o vacían el líquido.",
+    "tip": "Echa agua y <b>el color se aclara y la concentración baja.</b> La cantidad de soluto no ha cambiado y la concentración sí: merece la pena verlo."
+   },
+   {
+    "name": "La sonda de concentración (pantalla Concentración)",
+    "desc": "Arrástrala dentro del líquido y la concentración sale como número.",
+    "tip": "La punta tiene que estar <b>dentro del líquido</b>. Mirar el color y el número a la vez construye el instinto."
+   },
+   {
+    "name": "La marca ¡Saturado!",
+    "desc": "Aparece cuando ya no se disuelve más, con granos sin disolver acumulándose en el fondo.",
+    "tip": "No es un fallo. Significa que el agua ha llegado a su <b>límite</b>, y echar más no subirá la concentración."
+   },
+   {
+    "name": "El mando de Concentración (abajo en la pantalla Ley de Beer)",
+    "desc": "Fija directamente la concentración de la disolución.",
+    "tip": "<b>Dóblala</b> y mira cuántas veces crece la absorbancia. Exactamente el doble."
+   },
+   {
+    "name": "El mando de anchura de la cubeta (la cubeta de líquido del centro)",
+    "desc": "Cambia <b>la longitud del camino</b> que hace la luz.",
+    "tip": "La disolución no se toca y la absorbancia cambia. La parte más sorprendente de esta lección: pruébala."
+   },
+   {
+    "name": "Absorbancia / Transmitancia (el detector de la derecha)",
+    "desc": "La <b>Absorbancia</b> es cuánta luz se <b>comió</b>; la <b>Transmitancia</b>, cuánta <b>pasó</b>.",
+    "tip": "Las dos se mueven en sentidos contrarios. El mismo hecho visto desde lo que se comió o desde lo que queda."
+   },
+   {
+    "name": "Longitud de onda — Fijo · Variable (izquierda)",
+    "desc": "<b>Fijo</b> la pone automáticamente en la longitud de onda que esa sustancia se come mejor. <b>Variable</b> te deja elegir.",
+    "tip": "Mueve mucho la longitud de onda en <b>Variable</b>. La misma disolución, una absorbancia disparatadamente distinta: cada sustancia tiene su propio color que se come."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Concentración</b>, elige <b>Permanganato de Potasio</b> y échalo.",
+   "Mete la sonda de concentración y mira el valor.",
+   "Echa agua y mira bajar juntos el color y la concentración.",
+   "Pasa a la pantalla <b>Ley de Beer</b> y pon el detector en <b>Absorbancia</b>.",
+   "Dobla la <b>Concentración</b> y compara la absorbancia.",
+   "Deja quieta la concentración y dobla <b>la anchura de la cubeta</b>.",
+   "Cambia la <b>Longitud de onda</b> y mira cambiar la absorbancia."
+  ],
+  "gotchas": [
+   "La absorbancia es proporcional <b>tanto a la concentración como a la anchura de la cubeta</b>. Para medir una concentración hay que fijar la anchura.",
+   "Una vez sale <b>¡Saturado!</b>, echar más no subirá la concentración.",
+   "Un soluto incoloro apenas se come luz, así que la absorbancia casi no marca. Coge algo <b>de color intenso</b>."
+  ]
  }
 }

@@ -2010,5 +2010,325 @@
     "right": 1
    }
   ]
+ },
+ "mix-1": {
+  "course": "react",
+  "sim": "ph-scale",
+  "screens": "1",
+  "title": "Un paso de pH son diez veces",
+  "lead": "El pH 2 y el pH 3 parecen estar a un paso. Están a diez veces.",
+  "hook": "El zumo de limón anda por pH 2 y el café por pH 5. Tres de diferencia en números, así que es fácil pensar que es <b>unas tres veces</b> más ácido. En realidad son <b>mil veces</b>. La escala de pH no es como una regla corriente: <b>un paso es multiplicar por 10</b>. Hay una razón para una escala así, y saberla despeja además la creencia común de que «echando agua se vuelve neutro».",
+  "predict": {
+   "q": "Coges un ácido a pH <b>2</b> y le añades agua hasta que el volumen total sea <b>10 veces</b> mayor. El pH es:",
+   "opts": [
+    "3",
+    "7: has echado agua, así que es neutro",
+    "20",
+    "0,2"
+   ]
+  },
+  "missions": [
+   "Esta es la pantalla <b>Macro</b>. El cuentagotas de encima del vaso de precipitados del centro te deja verter un líquido.",
+   "Elige <b>Jugo de Naranja</b> en la lista de la derecha y pulsa el cuentagotas para verterlo en el vaso.",
+   "Arrastra el medidor de pH de la izquierda dentro del líquido. Aparece un valor de pH. Anótalo.",
+   "Abre el grifo de <b>agua</b> de arriba a la derecha y echa agua. ¿Hacia dónde se mueve el pH?",
+   "Sigue echando hasta que el vaso esté <b>lleno</b>. ¿Pasa el pH <b>de 7</b>? Ese es el meollo de ②.",
+   "Abre el desagüe de abajo para vaciarlo y haz lo mismo con el <b>limpiador de desagües</b> (una base).",
+   "Comprueba dónde caen <b>Ácido · Neutral · Básico</b> en la escala de la izquierda.",
+   "Elige varios líquidos y anota su pH: <b>ácido de batería · café · leche · saliva · jabón de manos</b>.",
+   "Con el botón de la casa ve a la pantalla <b>Micro</b>, donde puedes ver el <b>número de partículas de H₃O⁺ y de OH⁻</b> en el mismo líquido. Cuanto más bajo el pH, ¿cuál de las dos abunda más?"
+  ],
+  "record": "¿Hasta dónde llegó el pH según ibas echando agua en el zumo de naranja? ¿Y pasó de 7?",
+  "explain": {
+   "right": 0,
+   "body": "<p>La respuesta es <strong>3</strong>. Dilúyelo diez veces con agua y el pH sube <strong>exactamente 1</strong>.</p><p>¿Por qué 1? El pH informa de <strong>cuántos iones de hidrógeno (H₃O⁺) hay</strong>, y escribe esa cuenta como <strong>una potencia de diez</strong>. pH 2 significa que hay «10⁻²»; pH 3 significa «10⁻³». Diluye diez veces y la cuenta pasa a ser <strong>una décima</strong>, así que el exponente se mueve uno y el pH sube 1.</p><p>Así que <strong>un paso de pH = diez veces</strong>. El zumo de limón (pH 2) y el café (pH 5) se llevan 3, que son 10 × 10 × 10 = <strong>mil veces</strong>. Una escala logarítmica es lo que se monta para que una diferencia así de grande quepa en una línea. Es el mismo recurso que la escala de semivida del curso 05, donde <strong>un paso eran mil veces</strong>.</p><p>Si elegiste «se vuelve 7», es una creencia muy común. Echar agua <strong>acerca el pH a 7 pero no lo pasa nunca.</strong> Ninguna cantidad de agua convierte un ácido en una base. Llenar el vaso en pantalla sin pasar nunca de 7 es la prueba.</p><p>Diluir y neutralizar son <strong>cosas distintas</strong>. Diluir es echar agua para dejarlo <strong>más flojo</strong>; neutralizar es echar lo contrario (una base) para <strong>quitarle la propiedad</strong>.</p><p>Recoge también lo que enseñaba la pantalla Micro. <strong>Ácido significa mucho H₃O⁺; básico significa mucho OH⁻.</strong> El pH es al final solo esas dos cuentas apretadas en un único número.</p>"
+  },
+  "real": "El ácido del estómago está a pH 1-2, lo bastante fuerte para disolver metal. El revestimiento del estómago sobrevive porque el moco lo mantiene apartado. El «pH ligeramente ácido» de un bote de champú, mantener una piscina al pH adecuado, por qué la lluvia ácida es un problema, las hortensias cambiando de color según el pH del suelo: todo se apoya en esta escala.",
+  "quiz": [
+   {
+    "q": "¿Cuántas veces más iones de hidrógeno hay a pH <b>4</b> que a pH <b>6</b>?",
+    "opts": [
+     "2 veces",
+     "20 veces",
+     "100 veces"
+    ],
+    "right": 2
+   },
+   {
+    "q": "Echa muchísima agua en un ácido y el pH:",
+    "opts": [
+     "Pasa de 7 y se vuelve básico",
+     "Se acerca a 7 sin pasarlo",
+     "No cambia"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Cuanto <b>más bajo</b> el pH, más hay de:",
+    "opts": [
+     "H₃O⁺",
+     "OH⁻",
+     "Moléculas de agua"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "mix-2": {
+  "course": "react",
+  "sim": "acid-base-solutions",
+  "screens": null,
+  "title": "Los ácidos fuertes y los débiles no se diferencian por la concentración",
+  "lead": "«Fuerte» y «concentrado» son palabras distintas. Si las mezclas, toda la química se vuelve confusa.",
+  "hook": "La lección 1 decía que el pH es <b>cuántos iones de hidrógeno hay</b>. Entonces, para hacer un ácido más fuerte, ¿basta con echar más? Aquí es donde <b>un ácido fuerte</b> y <b>un ácido concentrado</b> se separan. Significan cosas completamente distintas, y el habla de todos los días llama «ácido fuerte» a los dos. Vas a ver, grano a grano, por qué la misma cantidad da un resultado distinto.",
+  "predict": {
+   "q": "Preparas un ácido fuerte y uno débil <b>a la misma concentración</b>. El fuerte tiene un pH más bajo porque:",
+   "opts": [
+    "Has echado más del fuerte",
+    "El ácido fuerte se parte en iones <b>casi por completo</b> y el débil se parte <b>solo en parte</b>",
+    "Las moléculas del ácido fuerte son más pesadas",
+    "En realidad no hay diferencia"
+   ]
+  },
+  "missions": [
+   "Esta es la pantalla <b>Introducción</b>. En <b>Solución</b>, a la derecha, elige entre <b>Agua · Ácido Fuerte · Ácido Débil · Base Fuerte · Base Débil</b>.",
+   "Pon <b>Vistas</b>, abajo a la derecha, en <b>Partículas</b>. Aparecen los granos de dentro del vaso.",
+   "Elige <b>Ácido Fuerte</b>. ¿Qué aspecto tienen los granos? <b>¿Queda algo de HA?</b>",
+   "Cambia a <b>Ácido Débil</b>. La misma concentración, y quedan <b>montones de trozos de HA</b>. Esa es la respuesta a ②.",
+   "Cambia <b>Vistas</b> a <b>Gráfica</b>. El eje vertical es logarítmico, en <b>potencias de diez</b>. Compara la altura de la barra de H₃O⁺ del ácido fuerte con la del débil.",
+   "Arrastra la <b>Clave de colores de pH</b> de arriba a la izquierda dentro del líquido y mira el color. El ácido fuerte y el débil se diferencian.",
+   "Mete el comprobador de conductividad de la izquierda en el líquido. Cuantos más iones hay, <b>más brilla la bombilla.</b>",
+   "Compara el brillo del ácido fuerte y del débil. La misma concentración, ¿por qué la diferencia?",
+   "Con el botón de la casa ve a la pantalla <b>Mi solución</b>, donde la <b>Concentración Inicial</b> y la <b>Intensidad</b> se fijan por separado.",
+   "Deja quieta la <b>intensidad</b> y sube la <b>concentración</b>. Luego deja quieta la <b>concentración</b> y sube la <b>intensidad</b>. Los dos mandos hacen trabajos distintos."
+  ],
+  "record": "¿Qué aspecto tenían los granos del vaso para el ácido fuerte y el débil a la misma concentración? ¿Y el brillo de la bombilla?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es que <strong>el fuerte se parte casi por completo y el débil solo en parte</strong>.</p><p>Un ácido metido en agua se parte como <strong>HA → H⁺ + A⁻</strong>. Eso es la ionización, y la diferencia está en <strong>cuánto se parte</strong>.</p><ul><li><strong>Ácido fuerte</strong>: se parte <strong>casi todo</strong> lo que echas. En el vaso casi no quedan trozos de HA.</li><li><strong>Ácido débil</strong>: se parte <strong>solo una parte</strong>. Como viste en pantalla, quedan montones de trozos de HA.</li></ul><p>Así que <strong>el mismo número entrando</strong> da un número distinto de H₃O⁺ saliendo, y un pH distinto.</p><p>Aquí merece la pena clavar dos palabras.</p><ul><li><strong>Intensidad</strong> (fuerte/débil): <strong>lo fácil que se parte.</strong> Una propiedad de la sustancia; no la puedes cambiar.</li><li><strong>Concentración</strong> (concentrado/diluido): <strong>cuánto echas.</strong> La fijas tú.</li></ul><p>Así que existe un <strong>ácido fuerte diluido</strong> y un <strong>ácido débil concentrado</strong>. El vinagre es un ácido débil que puedes tener concentrado; el ácido clorhídrico de un laboratorio es un ácido fuerte que puedes diluir con mucha agua. Esto es lo que enseñaba la lección 1 cuando el agua no convertía nunca un ácido en base: <strong>la concentración cambia y la intensidad no.</strong></p><p>La <strong>bombilla</strong> era una buena comprobación. La electricidad la llevan los <strong>iones</strong>. El ácido fuerte tiene muchos y brilla; el débil tiene pocos y apenas brilla. Convierte un grado de ionización invisible en <strong>brillo</strong>.</p>"
+  },
+  "real": "El ácido del estómago (clorhídrico) es fuerte pero está muy diluido. El vinagre (ácido acético) es débil pero bastante concentrado. Por eso puedes beber vinagre y el ácido clorhídrico diluido es peligroso. El «pH neutro» de un detergente, por qué el ácido de una batería es peligroso, usar zumo de limón para matar el olor a pescado: separa intensidad de concentración y todo cuadra.",
+  "quiz": [
+   {
+    "q": "¿Qué significa <b>ácido fuerte</b>?",
+    "opts": [
+     "Muy concentrado",
+     "Que se parte en iones casi por completo",
+     "Que es peligroso"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Qué queda en cantidad en una disolución de ácido débil?",
+    "opts": [
+     "Trozos de HA sin partir",
+     "Iones H₃O⁺",
+     "Iones OH⁻"
+    ],
+    "right": 0
+   },
+   {
+    "q": "A la misma concentración, ¿cuál hace brillar <b>más</b> la bombilla?",
+    "opts": [
+     "El ácido fuerte",
+     "El ácido débil",
+     "Igual"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "mix-3": {
+  "course": "react",
+  "sim": "balancing-chemical-equations",
+  "screens": null,
+  "title": "Solo puedes tocar el número de delante",
+  "lead": "Al ajustar una ecuación no puedes convertir H₂O en H₂O₂. Eso es otra sustancia completamente distinta.",
+  "hook": "En una reacción química <b>no se destruye ni se crea ningún átomo.</b> Solo <b>cambian de pareja</b>. Así que la izquierda y la derecha de una ecuación tienen que tener <b>el mismo número de átomos</b>. Es la misma historia del curso 05, donde sumar los números de arriba y de abajo de una ecuación nuclear cuadraba por los dos lados. Pero al ponerte a igualar las cuentas, la mano se te va sola <b>al sitio que no hay que tocar</b>.",
+  "predict": {
+   "q": "Estás ajustando <b>H₂ + O₂ → H₂O</b>. Cambiar el lado derecho a <b>H₂O₂</b> haría cuadrar la cuenta del oxígeno. Este planteamiento es:",
+   "opts": [
+    "Válido: las cuentas de átomos cuadran, así que no hay problema",
+    "No vale: el H₂O₂ no es agua sino <b>peróxido de hidrógeno</b>, otra sustancia",
+    "No vale: complica la aritmética",
+    "Vale en algunos casos"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Intro</b>. Elige abajo entre <b>Producción de Amoníaco · Disociación de Agua · Combustión de Metano</b>.",
+   "Elige <b>Disociación de Agua</b>. Las <b>casillas de delante de cada sustancia</b> son lo que puedes cambiar.",
+   "Pulsa <b>Vista</b> arriba a la derecha y elige el <b>dibujo de las partículas</b> (el de arriba). Se dibujan partículas en los dos lados.",
+   "Sube y baja los números de las casillas mirando <b>la balanza del centro</b>. Cuando las cuentas de átomos cuadran en los dos lados, aparece un <b>=</b>.",
+   "Mira las <b>cuentas por elemento</b> de debajo de la ecuación. Cuentan cuántos H y O hay en cada lado.",
+   "Confirma que <b>el número pequeño de dentro de una fórmula</b> (el 2 de H₂O) <b>no se puede cambiar</b>. Esa es la respuesta a ②.",
+   "Cuando esté bien, arriba a la izquierda aparece <b>Balanceada</b>.",
+   "Cambia la <b>Vista</b> al dibujo de la balanza y al de las barras para ver lo mismo de tres maneras.",
+   "Con el botón de la casa ve a la pantalla <b>Ecuaciones</b> para otras mucho más difíciles. Abajo puedes elegir <b>Síntesis · Descomposición · Combustión</b>.",
+   "Prueba la pantalla <b>Modo juego</b> al nivel que quieras."
+  ],
+  "record": "Anota los números que pusiste en cada casilla para ajustar la ecuación del agua. ¿Y qué sitios pudiste cambiar y cuáles no?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>no vale: el H₂O₂ es otra sustancia</strong>. Es el error más común en las ecuaciones, y por eso la simulación <strong>no te deja tocar los números pequeños siquiera.</strong></p><p>Los dos números de una fórmula hacen trabajos completamente distintos.</p><ul><li><strong>El número grande de delante</strong> (el coeficiente): <strong>cuántos.</strong> 2 H₂O son <strong>dos</strong> moléculas de agua. Lo puedes cambiar.</li><li><strong>El número pequeño de después</strong> (el subíndice): <strong>qué sustancia.</strong> H₂O es agua, H₂O₂ es peróxido de hidrógeno. Cámbialo y tienes <strong>otra sustancia</strong>.</li></ul><p>Piensa en <strong>tres bicicletas</strong> frente a <strong>un triciclo</strong>. De las dos maneras puede haber seis ruedas, pero cambiar el número de delante es «cuántas traigo» mientras que cambiar el objeto es «traer algo completamente distinto». Ajustar una ecuación solo te deja decidir <strong>cuántos usar</strong>.</p><p>La respuesta para la disociación del agua es <strong>2 H₂O → 2 H₂ + 1 O₂</strong>. Izquierda: 4 H y 2 O. Derecha: 4 H y 2 O.</p><p>Acuérdate del curso 05, donde sumar los números de arriba y de abajo de la ecuación del decaimiento alfa daba <strong>211 = 207 + 4</strong> y <strong>84 = 82 + 2</strong>. Allí se conservaban <strong>protones y neutrones</strong>; aquí se conservan <strong>átomos</strong>. Distinta escala, la misma regla de que <strong>no se pierde ni se crea nada</strong>.</p>"
+  },
+  "real": "Esta regla es la que deja a una fábrica calcular cuánto poner de cada ingrediente. Cuántas toneladas de nitrógeno y de hidrógeno hacen falta para producir una tonelada de amoníaco sale directo de la ecuación. La proporción de mezcla del combustible de un cohete, la relación aire-combustible del motor de un coche, la química de dentro de un extintor: todo descansa en igualar estas cuentas.",
+  "quiz": [
+   {
+    "q": "En <b>2 H₂O</b>, ¿qué significa el <b>2</b> de delante?",
+    "opts": [
+     "2 oxígenos",
+     "2 moléculas de agua",
+     "2 hidrógenos"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Qué puedes cambiar al ajustar una ecuación?",
+    "opts": [
+     "El número pequeño de dentro de una fórmula",
+     "El coeficiente de delante de una sustancia",
+     "Los dos"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Para ajustar <b>CH₄ + O₂ → CO₂ + H₂O</b>, ¿qué va delante del O₂?",
+    "opts": [
+     "1",
+     "2",
+     "3"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "mix-4": {
+  "course": "react",
+  "sim": "reactants-products-and-leftovers",
+  "screens": null,
+  "title": "Manda lo primero que se acaba",
+  "lead": "Por mucho pan que tengas, tres lonchas de queso son tres sándwiches. La química es exactamente igual.",
+  "hook": "La lección 3 te puso a igualar las cuentas de una ecuación. Pero al mezclar ingredientes de verdad casi nunca los tienes <b>exactos</b>. Sobra de un lado. ¿Qué lado decide entonces el resultado? Esta simulación cuenta primero la historia química con <b>sándwiches</b>. Una vez sabes la respuesta parece evidente, y sin embargo escrito como fórmula química este mismo asunto se vuelve confuso de golpe.",
+  "predict": {
+   "q": "Hacen falta <b>2</b> rebanadas de pan y <b>1</b> loncha de queso para un sándwich. Con <b>10</b> de pan y <b>3</b> de queso, ¿cuántos sándwiches?",
+   "opts": [
+    "5",
+    "3",
+    "10",
+    "13"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Sandwiches</b>. Arriba elige entre <b>Queso · Carne y queso · Personalizado</b>.",
+   "Elige <b>Queso</b>. Arriba aparece la regla: <b>2 pan + 1 queso → 1 sándwich</b>.",
+   "En el lado <b>Antes de la reacción</b>, abajo, pon el pan en <b>10</b> y el queso en <b>3</b>.",
+   "Mira el lado <b>Después de la reacción</b>. ¿Cuántos sándwiches salieron? Esa es la respuesta a ②.",
+   "Mira la caja de <b>Excedentes</b>. ¿Qué queda y cuánto?",
+   "Sube el queso <b>de uno en uno</b>. ¿Hasta dónde trepan los sándwiches antes de pararse?",
+   "Ahora sube el pan de uno en uno. Sin tocar el queso, ¿suben los sándwiches?",
+   "Con el botón de la casa ve a la pantalla <b>Moléculas</b>, donde los sándwiches se convierten en <b>reacciones químicas de verdad</b>.",
+   "Elige <b>Hacer agua</b> y mete cantidades distintas de H₂ y O₂. Es la ecuación que ajustaste en la lección 3.",
+   "Prueba también <b>Hacer amoníaco</b> y <b>Quemar metano</b>, y mira qué ingrediente se acaba primero."
+  ],
+  "record": "Con 10 de pan y 3 de queso, ¿cuántos sándwiches y qué sobró? ¿Y cuándo dejó de salir más agua al añadir más H₂ en Hacer agua?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>3</strong>. Hay 10 rebanadas de pan pero solo <strong>3 de queso</strong>, así que 3 sándwiches es el tope. <strong>Sobran 4 rebanadas de pan</strong>, ya que se usaron 6.</p><p>De ahí sale la regla de que <strong>el resultado no lo decide el ingrediente más abundante sino el que se acaba primero</strong>. La química lo llama <strong>reactivo limitante</strong>. Nombre difícil, significado de sándwich.</p><p>Cuál se acaba primero <strong>no se puede saber solo por las cuentas.</strong> Había más pan, 10 rebanadas, y el queso se acabó igualmente. Hay que comparar <strong>la proporción que pide la regla</strong> con <strong>la proporción que tienes</strong>. El pan y el queso hacen falta <strong>2 : 1</strong>, y tienes 10 : 3; para todo ese pan harían falta 5 lonchas de queso y solo tienes 3.</p><p>Las <strong>proporciones</strong> de la lección 11 valen aquí exactamente. Para doblar una receta hay que doblarlo <strong>todo</strong>. Sube un solo lado y ese lado simplemente sobra.</p><p>La pantalla <strong>Moléculas</strong> es lo mismo. Hacer agua es <strong>2 H₂ + O₂ → 2 H₂O</strong>, y si falta O₂, ninguna cantidad de H₂ produce más agua. El H₂ sobrante se queda como <strong>excedente</strong>.</p><p>Las reacciones reales funcionan así. Por mucho que eches, <strong>sin pareja no reacciona nada.</strong> Por eso una fábrica pone un poco de más del ingrediente barato para que no sobre nada del caro.</p>"
+  },
+  "real": "Cocinar es el ejemplo más cercano. Diez huevos y una taza de harina siguen dando los panqueques que dan. El motor de un coche mezclando combustible y aire en una proporción fija, un cohete llevando combustible y oxidante a la vez, una pila agotándose: todas son historias de qué lado se acaba primero.",
+  "quiz": [
+   {
+    "q": "Con la regla de 2 pan + 1 queso, con <b>9</b> de pan y <b>5</b> de queso, ¿cuántos sándwiches?",
+    "opts": [
+     "4",
+     "5",
+     "9"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿Qué sobra en ese caso?",
+    "opts": [
+     "1 pan",
+     "1 queso",
+     "1 pan y 1 queso"
+    ],
+    "right": 2
+   },
+   {
+    "q": "¿Qué es un <b>reactivo limitante</b>?",
+    "opts": [
+     "El ingrediente del que echas más",
+     "El ingrediente que se acaba primero y pone el tope al resultado",
+     "El ingrediente que sobra después de la reacción"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "mix-5": {
+  "course": "react",
+  "sim": "beers-law-lab",
+  "screens": null,
+  "title": "Medir la concentración por el color",
+  "lead": "Cuanto más concentrado, más luz se come. La regla es lo bastante exacta como para que el color solo te diga la concentración.",
+  "hook": "La lección 2 decía que la <b>concentración</b> es «cuánto echas». Pero una vez está todo disuelto, ¿cómo se mide? La respuesta es el <b>color</b>. Más concentrado se come más luz, así que medir la luz que pasa te da la concentración al revés. Pero la concentración no es lo único que fija <b>cuánta se come</b>. Hay una cosa más.",
+  "predict": {
+   "q": "Sin tocar la concentración, <b>doblas la anchura</b> de la cubeta por la que pasa la luz. La absorbancia (cuánta luz se come) es:",
+   "opts": [
+    "La misma: no has tocado la disolución",
+    "El doble",
+    "La mitad",
+    "Cuatro veces"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Concentración</b>. Elige una sustancia en <b>Soluto</b>, a la derecha.",
+   "Coge algo de color intenso como el <b>Permanganato de Potasio</b> y agita el salero para echarlo.",
+   "Mete la sonda de concentración de la izquierda en el líquido. Cuanto más intenso el color, mayor el número.",
+   "Echa más agua. El color <b>se aclara</b> y el número de concentración <b>baja.</b>",
+   "Sigue echando soluto hasta que aparezca <b>¡Saturado!</b>. Ese es el punto en el que ya no se disuelve más.",
+   "Con el botón de la casa ve a la pantalla <b>Ley de Beer</b>. La luz está a la izquierda, la cubeta de líquido en el centro y el detector a la derecha.",
+   "Pon el detector de la derecha en <b>Absorbancia</b>. Informa de cuánta luz se comió.",
+   "Dobla el mando de <b>Concentración</b> de abajo. ¿Cuántas veces mayor sale la absorbancia?",
+   "Ahora deja quieta la concentración y dobla la <b>anchura de la cubeta</b> (el mando del centro). Esa es la respuesta a ②.",
+   "Cambia a <b>Transmitancia</b>. Se mueve <b>al revés</b>: cuanta más se come, menos luz pasa.",
+   "Cambia la <b>Longitud de onda</b>. La misma disolución absorbe de forma muy distinta a longitudes de onda distintas."
+  ],
+  "record": "¿Qué le pasó a la absorbancia al doblar la concentración y al doblar la anchura de la cubeta?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>el doble</strong>. La disolución no se ha tocado y la absorbancia sube igualmente.</p><p>La razón es sencilla. <strong>El camino que hace la luz es el doble de largo</strong>, así que se encuentra el doble de granos por el camino. Cada grano se come un poco de luz, así que encontrarse el doble significa que se come el doble.</p><p>Así que <strong>dos cosas</strong> fijan la absorbancia.</p><ul><li><strong>Concentración</strong>: <strong>lo apretados</strong> que están los granos a lo largo de una longitud dada</li><li><strong>Anchura de la cubeta</strong>: <strong>cómo de largo</strong> es el camino que hace la luz</li></ul><p>Las dos se reducen a cambiar <strong>el número de granos que se encuentra la luz por el camino</strong>, así que tienen el mismo efecto. Escrito, eso es la <strong>ley de Beer</strong>, que da nombre a la simulación.</p><p>En la práctica lo importante es que <strong>hay que mantener fija una de las dos.</strong> Para medir una concentración hay que mantener <strong>la misma anchura de cubeta cada vez</strong>. Por eso las cubetas de laboratorio están hechas a una anchura normalizada de exactamente 1 cm.</p><p>Que la absorbancia cambiara mucho al cambiar la <strong>longitud de onda</strong> también importa. Cada sustancia tiene <strong>un color que se come bien</strong>. El permanganato de potasio, morado, se come la luz verde: se ve morado <em>porque</em> se come el verde. Lo que decía el curso 05 sobre los átomos absorbiendo <strong>solo ciertas longitudes de onda</strong> se vuelve práctico aquí.</p><p>La <strong>transmitancia</strong> es la otra cara de la absorbancia. Cómete más y pasa menos. El mismo hecho visto desde <strong>lo que se comió</strong> o desde <strong>lo que queda</strong>.</p>"
+  },
+  "real": "Un análisis de sangre de hospital es exactamente este principio. Un reactivo produce un color y la intensidad de ese color da la cantidad de un componente. Los análisis de calidad del agua, el contenido de colorante de un alimento, lo oscura que sale la raya de un test de embarazo, el cambio de color de un test de COVID: los aparatos que «miden una cantidad por la intensidad del color» nos rodean.",
+  "quiz": [
+   {
+    "q": "Haz la concentración <b>tres veces</b> mayor y la absorbancia es:",
+    "opts": [
+     "La misma",
+     "Tres veces",
+     "Nueve veces"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Según sube la absorbancia, la <b>transmitancia</b>:",
+    "opts": [
+     "Sube",
+     "Baja",
+     "No cambia"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Por qué están las cubetas de laboratorio <b>normalizadas a 1 cm</b> de ancho?",
+    "opts": [
+     "Son más fáciles de fabricar",
+     "La anchura tiene que estar fija para que la absorbancia dé una concentración",
+     "La luz solo viaja 1 cm"
+    ],
+    "right": 1
+   }
+  ]
  }
 }
