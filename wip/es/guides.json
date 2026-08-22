@@ -2916,5 +2916,272 @@
    "A partir del segundo intento una respuesta correcta vale <b>1 punto</b>. Redúcela en la cabeza antes de subir las cartas con prisa.",
    "Dejar el cronómetro encendido te vuelve precipitado. Mejor apagado al principio."
   ]
+ },
+ "ratio-and-proportion": {
+  "summary": "Arrastra arriba y abajo las <b>dos manos</b> de la pantalla para acertar una proporción. No hace falta mirar ningún número: cuando la proporción está bien <b>el fondo se oscurece y el sonido cambia.</b> Apréndelo primero con la vista y el oído y enciende los números después.",
+  "screens": [
+   {
+    "name": "Descubrir",
+    "what": "Donde empieza esta lección. Acierta las proporciones fijadas (Desafío 1, 2, 3)."
+   },
+   {
+    "name": "Crear",
+    "what": "<b>Fija tú una proporción</b> y aciértala. También puedes bloquear las dos manos para que se muevan juntas."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Las dos manos (centro de la pantalla)",
+    "desc": "Arrastra cada una arriba y abajo. La proporción de las dos alturas es la proporción actual.",
+    "tip": "La única acción clave de aquí. Rompe la proporción moviendo <b>una sola mano</b> y luego sube <b>las dos a la vez</b> y confirma que la proporción se mantiene."
+   },
+   {
+    "name": "El color del fondo y el sonido",
+    "desc": "Cuanto más cerca de la proporción, <b>más oscuro el fondo</b> y más firme el sonido. Fuera de la proporción, se aclara.",
+    "tip": "Este es el marcador de verdad de esta simulación. Acierta la proporción <b>por color y sonido</b> antes de mirar números: está hecha para enseñar la proporción como una sensación."
+   },
+   {
+    "name": "Desafío 1 · 2 · 3 (derecha de la pantalla Descubrir)",
+    "desc": "Elige la proporción que hay que acertar. <b>No te dice</b> cuál es la proporción.",
+    "tip": "Aciértala por color y sonido sin saber los números y luego activa las marcas para ver <b>cuál era</b>. Ese orden es la intención del diseño."
+   },
+   {
+    "name": "El selector de marcas (arriba a la derecha, tres botones)",
+    "desc": "Tres botones con <b>solo dibujos</b> y sin palabras. Desde la izquierda: <b>sin marcas</b> (un ojo tachado), <b>marcas</b> (líneas horizontales) y <b>marcas numeradas</b> (líneas con números).",
+    "tip": "Empieza en <b>sin marcas</b>. Con los números a la vista lo resolverás por aritmética en vez de por sensación."
+   },
+   {
+    "name": "Rango (derecha de la pantalla Crear)",
+    "desc": "Elige hasta dónde pueden moverse las manos: <b>0 a 10 · 0 a 20 · 0 a 30</b>.",
+    "tip": "La misma proporción se puede acertar con números mayores en un rango más ancho. Va bien para confirmar que <b>2 : 3 y 20 : 30 son lo mismo</b>."
+   },
+   {
+    "name": "Mi Desafío (derecha de la pantalla Crear)",
+    "desc": "Fija tú los valores de la izquierda y la derecha para hacer <b>tu propio problema</b>.",
+    "tip": "Monta uno para ponérselo a alguien. Convertirse en quien pone la proporción profundiza mucho la comprensión."
+   },
+   {
+    "name": "Bloquear Razón (abajo a la derecha de la pantalla Crear)",
+    "desc": "Activado, las dos manos se mueven <b>juntas, manteniendo la proporción</b>.",
+    "tip": "<b>Actívalo, sin falta.</b> Notas con la mano que la proporción se mantiene mientras solo cambia el tamaño. Eso es lo que significa «una proporción es una relación, no un tamaño»."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Descubrir</b> elige <b>Desafío 1</b>.",
+   "Con las marcas apagadas, acierta la proporción <b>solo por color y sonido</b>.",
+   "Cuando la tengas, pulsa el <b>tercer</b> botón de marcas (numeradas) para ver cuál era.",
+   "Pon la mano izquierda en 2 y la derecha en 3, y luego sube <b>solo la izquierda a 4</b>.",
+   "Encuentra cuánto tiene que valer la derecha para volver a cuadrar.",
+   "En la pantalla <b>Crear</b> activa <b>Bloquear Razón</b> y sube las dos manos a la vez."
+  ],
+  "gotchas": [
+   "Los botones de marcas <b>no llevan palabras.</b> Distínguelos por el dibujo: desde la izquierda, sin marcas, marcas, marcas numeradas.",
+   "Una proporción <b>no se mantiene sumando.</b> Sumar 2 a un lado no significa sumar 2 al otro: hay que multiplicar los dos por <b>el mismo factor</b>.",
+   "Si no oyes nada, comprueba el volumen de tu dispositivo o el <b>botón de sonido de arriba a la derecha de la simulación</b>. La mitad de esta simulación es sonido."
+  ]
+ },
+ "proportion-playground": {
+  "summary": "Enseña cómo funciona <b>la misma proporción</b> en cuatro sitios completamente distintos. Los <b>botones con dibujos</b> de abajo en el centro cambian entre ellos; <b>no llevan palabras</b>, así que eliges por el dibujo.",
+  "screens": [
+   {
+    "name": "Explorar",
+    "what": "Donde empieza esta lección. Cambia los valores y el resultado sale al instante."
+   },
+   {
+    "name": "Predecir",
+    "what": "El resultado está <b>escondido</b> para que adivines antes de destaparlo. Ven aquí después de Explorar."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de sitio (abajo en el centro, cuatro botones con dibujos)",
+    "desc": "Elige entre <b>collar · mesa de billar · pintura · manzanas</b>. Solo dibujos, sin palabras.",
+    "tip": "<b>Haz los cuatro.</b> Esa única regla aparece como color, como patrón, como ángulo y como precio: eso es toda la simulación."
+   },
+   {
+    "name": "Los dos mandos de valor",
+    "desc": "Cada sitio tiene dos valores: cuentas de collar, longitud y anchura, cantidades de pintura, número de manzanas y precio.",
+    "tip": "Cambia <b>uno solo</b> y mira cambiar el resultado, y luego multiplica <b>los dos por el mismo factor</b> y míralo quedarse. Esos dos contrastes son el sentido."
+   },
+   {
+    "name": "El sitio de la pintura",
+    "desc": "Fija las cantidades de los dos colores y abajo aparece el color mezclado.",
+    "tip": "Compara <b>1 : 2</b> con <b>3 : 6</b>. El mismo color. Luego cambia a <b>2 : 6</b> y se desplaza bruscamente."
+   },
+   {
+    "name": "El sitio de la mesa de billar — Longitud · Anchura",
+    "desc": "Fija la longitud y la anchura de la mesa y se dibuja el recorrido que rebota la bola.",
+    "tip": "Prueba a <b>doblar las dos</b>. La mesa crece y la forma del recorrido no. Así se ve lo «semejante»."
+   },
+   {
+    "name": "El sitio del collar",
+    "desc": "La proporción de los dos tipos de cuenta fija el <b>patrón que se repite</b>.",
+    "tip": "Añade cuentas para alargar el collar y el patrón no cambia. Otro ejemplo de una proporción fijando <b>una forma</b>."
+   },
+   {
+    "name": "El sitio de las manzanas — Costo total · Coste por manzana",
+    "desc": "Fija el número de manzanas y el coste total y te da el <b>coste por manzana</b>.",
+    "tip": "Un adelanto de la lección siguiente (razones unitarias). Acostúmbrate aquí a <b>cuánto cuesta una</b> y la lección 3 será mucho más fácil."
+   },
+   {
+    "name": "El botón de tapar (pantalla Predecir)",
+    "desc": "Esconde el resultado y luego lo destapa.",
+    "tip": "<b>Di primero tu respuesta</b> y luego destápalo. Destaparlo de entrada no es ningún ejercicio."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Explorar</b> elige el sitio de la <b>pintura</b>.",
+   "Pon <b>1 : 2</b> y fíjate en el color.",
+   "Cambia a <b>3 : 6</b> y mira si el color es el mismo.",
+   "Cambia a <b>2 : 6</b> y mira cómo esta vez sí cambia.",
+   "En el sitio de la <b>mesa de billar</b>, dobla <b>a la vez</b> la longitud y la anchura.",
+   "En el sitio de las <b>manzanas</b>, mira cómo sale el coste por manzana."
+  ],
+  "gotchas": [
+   "El selector de sitio <b>no lleva palabras.</b> Cambia de sitio con los botones con dibujos de abajo en el centro.",
+   "Aumentar la cantidad y cambiar la proporción son <b>cosas distintas</b>. Dobla la pintura y tienes más cantidad, no un color más intenso.",
+   "Alarga <b>un solo lado</b> de la mesa de billar y el recorrido cambia. Para seguir siendo semejante, los dos necesitan el mismo factor.",
+   "Ve a la pantalla <b>Predecir</b> solo después de bastante Explorar. Al revés es adivinar y ya."
+  ]
+ },
+ "unit-rates": {
+  "summary": "Convierte precios en <b>cuánto cuesta una</b> y compara. La <b>Doble línea numérica</b> de arriba es el centro de esta simulación, así que el ejercicio es <b>leer en la línea</b> en vez de calcular.",
+  "screens": [
+   {
+    "name": "De compras",
+    "what": "Donde empieza esta lección. Compra y vende fruta, verdura y dulces y trabaja con razones unitarias."
+   },
+   {
+    "name": "Laboratorio de compras",
+    "what": "<b>Fija tú los precios y las cantidades</b> para montar tus propios problemas."
+   },
+   {
+    "name": "Laboratorio de carreras",
+    "what": "<b>Tiempo y distancia</b> en vez de dinero. La razón unitaria pasa a ser la velocidad."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de artículo (izquierda)",
+    "desc": "Manzanas, Limones, Naranjas, Peras, Zanahorias, Pepinos, Patatas, Tomates, caramelos y más. Los precios cambian según el tipo.",
+    "tip": "<b>Anota la razón unitaria de dos artículos</b> y compáralas. La mejor manera de usar esta simulación."
+   },
+   {
+    "name": "La Doble línea numérica (arriba en el centro)",
+    "desc": "Dos rectas numéricas dibujadas una junto a otra. La de arriba son <b>dólares</b> y la de abajo, <b>la cantidad</b>.",
+    "tip": "La herramienta clave de aquí. Que las dos líneas crezcan <b>a la par</b> es lo que significa la misma proporción, y por eso saber un lado te deja <b>leer el otro sin calcular</b>."
+   },
+   {
+    "name": "Razón unitaria? (en la caja de Preguntas)",
+    "desc": "Te dice <b>cuánto cuesta una</b>.",
+    "tip": "El número que esta simulación existe para enseñar. Te saltes lo que te saltes, mira este."
+   },
+   {
+    "name": "Preguntas (caja plegable de la derecha)",
+    "desc": "Problemas del tipo «Costo de 10 Manzanas?». Escribe una respuesta y te dice si está bien.",
+    "tip": "Responde <b>de cabeza</b> primero y luego <b>léelo</b> en la doble línea numérica para comprobarlo. Los dos métodos tienen que coincidir."
+   },
+   {
+    "name": "La balanza y la etiqueta de precio (centro)",
+    "desc": "Pon artículos en la balanza o cambia la cantidad y el precio le sigue.",
+    "tip": "Algunos artículos se venden por peso (<b>libras</b>). Solo cambia la base de cantidad a peso; la regla es la misma."
+   },
+   {
+    "name": "Borrar (derecha)",
+    "desc": "Limpia las marcas que hayas hecho en la doble línea numérica.",
+    "tip": "Púlsalo cuando las marcas se amontonen y confundan. El artículo y los precios se quedan."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>De compras</b> elige un artículo.",
+   "Comprueba la <b>Razón unitaria?</b> y anótala.",
+   "Sube la cantidad <b>1 → 2 → 3</b> y mira crecer las dos líneas a la par.",
+   "Abre la caja de <b>Preguntas</b>, responde primero y luego comprueba en la doble línea numérica.",
+   "Cambia de artículo y compara las razones unitarias.",
+   "Haz lo mismo con tiempo y distancia en el <b>Laboratorio de carreras</b>."
+  ],
+  "gotchas": [
+   "Un total más barato no es la mejor compra. Hay que mirar <b>el coste de una</b> para comparar.",
+   "Los artículos vendidos en <b>libras</b> van por peso, no por cantidad. Por eso salen decimales.",
+   "El propósito de esta simulación es <b>leer en la doble línea numérica</b> más que acertar las preguntas."
+  ]
+ },
+ "mean-share-and-balance": {
+  "summary": "Construye una media <b>como dibujo en vez de como fórmula</b>. Conecta recipientes con tuberías y deja que el agua se nivele, reparte manzanas entre personas o encuentra el punto de equilibrio de un balancín. Los tres son al final la misma media.",
+  "screens": [
+   {
+    "name": "Nivelar",
+    "what": "Donde empieza esta lección. Conecta recipientes con tuberías y iguala los niveles de agua."
+   },
+   {
+    "name": "Distribuir",
+    "what": "Reparte barras de chocolate entre personas y mira la media por persona."
+   },
+   {
+    "name": "Partes Iguales",
+    "what": "<b>Manzanas</b> en vez de agua, repartidas entre personas. Cuando no salen exactas, aparecen trozos."
+   },
+   {
+    "name": "Punto de Equilibrio",
+    "what": "Enseña la media como <b>el fulcro donde se equilibra un balancín</b>."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Número de Contenedores · Número de Personas (abajo)",
+    "desc": "Fija con cuántos recipientes o personas trabajas, hasta 7.",
+    "tip": "Empieza con <b>3</b>. Con muchos cuesta seguir lo que pasa."
+   },
+   {
+    "name": "Los mandos de los recipientes (bajo cada uno)",
+    "desc": "Fijan por separado el nivel de agua de cada recipiente.",
+    "tip": "Llénalos a propósito <b>de forma desigual</b>. Si los llenas iguales, abrir las tuberías no hace absolutamente nada."
+   },
+   {
+    "name": "Las tuberías (entre los recipientes)",
+    "desc": "Ábrelas y el agua se mueve entre recipientes hasta que <b>todos los niveles son iguales.</b>",
+    "tip": "La acción clave de esta simulación. Predice el resultado <b>antes</b> de abrirlas. Esa predicción es el cálculo de la media."
+   },
+   {
+    "name": "Predecir la Media · Graduaciones (derecha)",
+    "desc": "Marca <b>el nivel que crees que va a salir</b> antes de ver la respuesta.",
+    "tip": "Marca primero, abre luego las tuberías y <b>lo lejos que estabas</b> queda ahí mismo. El mejor ejercicio de esta simulación."
+   },
+   {
+    "name": "Sincronizar · Recolectar · Compartir (centro de la pantalla Partes Iguales)",
+    "desc": "Botones para <b>juntar</b> las manzanas (Recolectar) y <b>repartirlas a partes iguales</b> (Compartir).",
+    "tip": "Pulsa <b>Recolectar y luego Compartir</b>. Esas dos acciones — juntarlo todo y dividirlo a partes iguales — son las dos mitades de la fórmula de la media."
+   },
+   {
+    "name": "Total (arriba a la derecha)",
+    "desc": "Enseña la cantidad total de aquello con lo que estés trabajando.",
+    "tip": "Comprueba que <b>el total no cambia</b> al abrir las tuberías. Tomar una media deja el conjunto intacto."
+   },
+   {
+    "name": "Media (caja plegable, arriba a la izquierda)",
+    "desc": "Enseña la media y cómo se calculó.",
+    "tip": "Ábrela <b>después</b> de haber entendido el dibujo. Si la abres primero mirarás la fórmula y pasarás de largo."
+   },
+   {
+    "name": "El botón de información (centro)",
+    "desc": "Te dice de qué va la pantalla actual.",
+    "tip": "Cada pantalla trata algo distinto, así que púlsalo cuando te pierdas."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Nivelar</b> pon <b>Número de Contenedores</b> en 3.",
+   "Llena los niveles de agua de forma desigual en <b>2 · 4 · 6</b>.",
+   "Marca primero tu respuesta con <b>Predecir la Media</b>.",
+   "Abre las <b>tuberías</b> y compara con el nivel real.",
+   "Sube los recipientes a 7 y haz lo mismo.",
+   "En la pantalla <b>Partes Iguales</b> pulsa <b>Recolectar y luego Compartir</b>.",
+   "En la pantalla <b>Punto de Equilibrio</b> mira aparecer la media como el fulcro."
+  ],
+  "gotchas": [
+   "Llena los recipientes <b>iguales</b> y abrir las tuberías no cambia nada. Llénalos desiguales a propósito.",
+   "El agua ni crece ni mengua. <b>Lo que había se repartió simplemente a partes iguales</b>: eso es lo que significa una media.",
+   "Cuando las manzanas no salen exactas aparecen <b>trozos</b>. No es un error: el resultado de una división puede ser una fracción.",
+   "Hay cuatro pantallas y se van poniendo más difíciles. <b>Nivelar → Partes Iguales → Punto de Equilibrio</b> es el orden que hay que llevar."
+  ]
  }
 }

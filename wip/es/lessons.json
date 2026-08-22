@@ -2651,5 +2651,265 @@
     "right": 0
    }
   ]
+ },
+ "ratio-1": {
+  "course": "ratio",
+  "sim": "ratio-and-proportion",
+  "screens": null,
+  "mode": "solve",
+  "title": "Sumar no mantiene una proporción",
+  "lead": "Suma 2 a cada uno de 2 y 3 y salen 4 y 5. Eso ya no es la misma proporción.",
+  "hook": "Dos paquetes de fideos llevan <b>3 vasos</b> de agua. ¿Cuánta agua para <b>cuatro paquetes</b>? Aquí la mano se va por dos caminos. «Dos paquetes más, así que dos vasos más: <b>5 vasos</b>» es uno; «el doble de fideos, así que el doble de agua: <b>6 vasos</b>» es el otro. Uno está bien y el otro mal, y el equivocado se siente más natural. Esta simulación te enseña la diferencia <b>con los ojos y con los oídos</b>, a través de la altura de dos manos.",
+  "predict": {
+   "q": "Con la mano izquierda en <b>2</b> y la derecha en <b>3</b> (2 : 3), subes la izquierda a <b>4</b>. Para mantener la misma proporción, la derecha va a:",
+   "opts": [
+    "5: la izquierda subió 2, así que la derecha también",
+    "6",
+    "4: lo mismo que la izquierda",
+    "9"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Descubrir</b>. Hay <b>dos manos</b> en pantalla; arrástralas arriba y abajo para cambiar su altura.",
+   "Elige <b>Desafío 1</b> a la derecha. Eso fija la proporción que tienes que acertar.",
+   "Arrastra las dos manos. Cuando la proporción está bien <b>el fondo se oscurece y el sonido cambia.</b> Lo notas sin mirar ningún número.",
+   "Manteniendo la proporción bien, sube <b>las dos manos a la vez</b>. Las alturas cambian y <b>la proporción sigue acertada</b>.",
+   "De los <b>tres botones de marcas</b> de arriba a la derecha, elige el <b>tercero</b> (el dibujo con números junto a las marcas). Ahora puedes leer las alturas de las manos como números.",
+   "Pon la mano izquierda en <b>2</b> y la derecha en <b>3</b>. ¿Se oscurece el fondo?",
+   "Sube solo la mano izquierda a <b>4</b>. El fondo se aclara. ¿Cuánto tiene que valer la derecha para que se vuelva a oscurecer? Esa es la respuesta a ②.",
+   "Pasa a <b>Desafío 2</b> y <b>Desafío 3</b> y acierta esas proporciones igual.",
+   "Con el botón de la casa ve a la pantalla <b>Crear</b> y <b>fija tú una proporción</b> que acertar.",
+   "En la pantalla Crear activa <b>Bloquear Razón</b> y las dos manos se mueven <b>juntas</b>. La proporción queda bloqueada y solo cambia el tamaño."
+  ],
+  "record": "Desde izquierda 2 y derecha 3, al subir solo la izquierda a 4, ¿cuánto tenía que valer la derecha para que el fondo se volviera a oscurecer?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>6</strong>. La mano izquierda <strong>se dobló</strong> de 2 a 4, así que la derecha tiene que <strong>doblarse</strong> de 3 a 6.</p><p>Si elegiste <strong>5</strong>, estabas <strong>intentando cuadrarlo sumando</strong>: la izquierda subió 2, así que la derecha sube 2. Una idea muy natural y, por tanto, un error muy común. Pero 4 : 5 es una proporción distinta de 2 : 3.</p><p>¿Por qué falla sumar? Una proporción dice <strong>cuántas veces es una la otra</strong>. 2 : 3 significa «la derecha es 1,5 veces la izquierda». 4 : 6 también es 1,5 veces. Pero 4 : 5 es 1,25: <strong>la relación ha cambiado.</strong></p><p>Es exactamente la historia del curso 10 (fracciones), donde <strong>multiplicar arriba y abajo por el mismo número mantiene el valor y sumar no</strong>. Es lo mismo que 2/3 y 4/6 sean iguales y 4/5 no. <strong>Una proporción y una fracción son en realidad el mismo objeto.</strong></p><p>Que la proporción se mantuviera al subir <strong>las dos manos a la vez</strong> también importa. 2 : 3, 4 : 6 y 6 : 9 son todas <strong>la misma proporción</strong>, y el tamaño real puede ser cualquiera. Una proporción es <strong>una relación, no un tamaño</strong>.</p>"
+  },
+  "real": "Las recetas son el ejemplo más común. Pasar de dos raciones a cuatro significa doblar <b>todos</b> los ingredientes; echar «un poco más» de todo estropea el sabor. Ampliar una foto sin deformarla multiplicando los dos lados por el mismo número, la escala de un mapa, una pantalla 16:9: todo con la misma regla.",
+  "quiz": [
+   {
+    "q": "¿Cuál es la misma proporción que <b>3 : 4</b>?",
+    "opts": [
+     "4 : 5",
+     "6 : 8",
+     "5 : 6",
+     "3 : 8"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Dos paquetes de fideos llevan 3 vasos de agua. <b>Seis paquetes</b> llevan:",
+    "opts": [
+     "7 vasos",
+     "9 vasos",
+     "12 vasos"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Para mantener una proporción, ¿qué le haces a los dos números?",
+    "opts": [
+     "Sumarles el mismo número",
+     "Multiplicarlos por el mismo número",
+     "Sumárselo solo al mayor"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "ratio-2": {
+  "course": "ratio",
+  "sim": "proportion-playground",
+  "screens": null,
+  "mode": "solve",
+  "title": "Misma proporción, mismo resultado",
+  "lead": "El color de una pintura, el patrón de un collar, el ángulo con que rebota una bola de billar. Cosas que no se parecen en nada funcionan con una sola regla.",
+  "hook": "La lección 1 te hizo confirmar con las manos que <b>2 : 3 y 4 : 6 son la misma proporción</b>. ¿Y para qué sirve eso? Esta simulación enseña la misma proporción funcionando igual en <b>cuatro sitios completamente distintos</b>. Mezclar pintura, ensartar cuentas, una bola rebotando en una mesa de billar, poner precio a unas manzanas: <b>misma proporción, mismo resultado</b>.",
+  "predict": {
+   "q": "Mezclaste <b>1</b> de rojo con <b>2</b> de azul para hacer un morado. Ahora mezclas <b>3</b> de rojo con <b>6</b> de azul:",
+   "opts": [
+    "Exactamente el mismo morado, solo que tres veces más cantidad",
+    "Un morado tres veces más intenso",
+    "Sale más azul",
+    "Sale más rojo"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Explorar</b>. Abajo en el centro hay <b>cuatro botones con dibujos</b>: collar, mesa de billar, pintura y manzanas. No llevan palabras, así que elige por el dibujo.",
+   "Elige la <b>pintura</b>. Cambia las cantidades de los dos recipientes y el color de abajo la sigue.",
+   "Pon la izquierda en <b>1</b> y la derecha en <b>2</b> y fíjate en el color.",
+   "Ahora pon la izquierda en <b>3</b> y la derecha en <b>6</b>. ¿Ha cambiado el color? Esa es la respuesta a ②.",
+   "Ahora cambia solo la izquierda a <b>2</b> (2 : 6). Esta vez el color cambia <b>del todo</b>.",
+   "Pasa al <b>collar</b>. Cambia la proporción de los dos tipos de cuenta y cambia <b>la longitud que tarda el patrón en repetirse</b>.",
+   "Pasa a la <b>mesa de billar</b>. Cambia la proporción entre <b>Longitud</b> y <b>Anchura</b> y cambia <b>la forma del recorrido</b>. Con la misma proporción el recorrido es <b>semejante</b> sea cual sea el tamaño.",
+   "Dobla <b>a la vez</b> la longitud y la anchura de la mesa. ¿Sigue igual el recorrido?",
+   "Pasa a las <b>manzanas</b>. Fija el número de manzanas y el <b>Costo total</b> y te da el <b>Coste por manzana</b>. Esta pantalla lleva a la lección 3.",
+   "Con el botón de la casa ve a la pantalla <b>Predecir</b>, donde <b>adivinas primero el resultado</b> y luego lo destapas."
+  ],
+  "record": "¿Cómo se comparaban los colores de 1 : 2 y de 3 : 6? ¿Y qué le pasó al recorrido al doblar la longitud y la anchura de la mesa?",
+  "explain": {
+   "right": 0,
+   "body": "<p>La respuesta es <strong>exactamente el mismo morado</strong>. Hay tres veces más cantidad, pero <strong>la relación entre el rojo y el azul no ha cambiado</strong>. 1 : 2 y 3 : 6 dicen los dos «el doble de azul que de rojo».</p><p>Si elegiste «tres veces más intenso», mezclaste <strong>cantidad</strong> con <strong>proporción</strong>. Echar el triple de pintura hace <strong>más cantidad</strong>, no <strong>una versión más intensa</strong>. Para cambiar el tono hay que cambiar <strong>la proporción misma</strong>, y por eso 2 : 6 se veía tan distinto.</p><p>Ese es el mensaje de toda la simulación. <strong>Una proporción decide el resultado sin que importe el tamaño.</strong></p><ul><li><strong>Pintura</strong>: la proporción fija el color. La cantidad solo fija cuánto haces.</li><li><strong>Collar</strong>: la proporción de cuentas fija el patrón. Un collar más largo tiene el mismo patrón.</li><li><strong>Mesa de billar</strong>: la proporción entre longitud y anchura fija la forma del recorrido. Amplíala y el recorrido es semejante.</li><li><strong>Manzanas</strong>: la proporción entre cantidad y coste fija el <strong>coste por manzana</strong>.</li></ul><p>Que el recorrido se mantuviera al doblar <strong>los dos</strong> lados de la mesa de billar es una comprobación especialmente buena. Es la historia del curso 10, lección 2, donde doblar la resolución de una pantalla no cambiaba la forma de la imagen. <strong>Multiplica los dos por el mismo número y la relación se mantiene.</strong></p><p>Esa última pantalla de las <strong>manzanas</strong> es donde empieza la lección siguiente. Diez manzanas por cinco dólares, ¿cuánto es una manzana? Eso es una <strong>razón unitaria</strong>.</p>"
+  },
+  "real": "Una tienda de pinturas mezclando un color usa exactamente esto. Un litro o veinte, <b>la misma proporción</b> da el mismo color. El café molido y el agua, una mezcla de cemento, los ajustes de exposición de una cámara: todo «no la cantidad, la proporción».",
+  "quiz": [
+   {
+    "q": "¿Cuál da <b>el mismo color</b> que 2 de rojo : 3 de azul?",
+    "opts": [
+     "3 de rojo : 4 de azul",
+     "4 de rojo : 6 de azul",
+     "4 de rojo : 5 de azul"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Dobla solo la longitud de la mesa de billar y el recorrido:",
+    "opts": [
+     "Se queda igual",
+     "Cambia de forma",
+     "La bola se para"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Dobla todas las cantidades de pintura y:",
+    "opts": [
+     "El color se intensifica",
+     "El color es el mismo, solo que hay más",
+     "El color se aclara"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "ratio-3": {
+  "course": "ratio",
+  "sim": "unit-rates",
+  "screens": null,
+  "mode": "solve",
+  "title": "Cuál sale más barato de verdad",
+  "lead": "Seis por $3 y diez por $4.50. Para comparar dos cosas que se diferencian en las dos, hay que llevarlas a una sola medida.",
+  "hook": "La misma fruta se vende de dos maneras en el supermercado. <b>Seis por $3</b> y <b>diez por $4.50</b>. ¿Cuál conviene más? A primera vista <b>$3 es más barato</b>, y por cantidad <b>diez es más</b>. Las dos cosas son ciertas y ninguna te da una respuesta. Para comparar cosas que no se comparan hay que <b>ponerlas en una sola medida</b>. Esa medida es <b>cuánto cuesta una</b>.",
+  "predict": {
+   "q": "Las manzanas van <b>6 por $3</b> en una bolsa y <b>10 por $4.50</b> en otra. ¿Cuál sale más barata por manzana?",
+   "opts": [
+    "La de 6 por $3",
+    "La de 10 por $4.50",
+    "Igual",
+    "No se pueden comparar con cantidades distintas"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>De compras</b>. Elige un artículo a la izquierda: Manzanas, Limones, Zanahorias, caramelos y demás.",
+   "Pon cosas en la balanza del centro, o fija el <b>Costo</b>, y arriba se dibujan dos líneas paralelas en la <b>Doble línea numérica</b>. La de arriba son <b>dólares</b> y la de abajo, <b>la cantidad</b>.",
+   "Mira la línea de <b>Razón unitaria?</b> en la caja de <b>Preguntas</b> de la derecha. Te dice <b>cuánto cuesta una</b>. El número clave de esta simulación.",
+   "Sube la cantidad <b>1 → 2 → 3</b>. Las dos líneas crecen <b>a la par</b>. Así se ve la misma proporción.",
+   "Abre el resto de la caja de <b>Preguntas</b>. Salen problemas del tipo «Costo de 10 Manzanas?».",
+   "Responde uno y luego compruébalo <b>con la doble línea numérica</b>. Puedes <b>leer</b> la respuesta en la línea en vez de calcularla.",
+   "Cambia de artículo y anota la <b>razón unitaria</b> de cada uno, y luego compara cuál sale más barato. Así se resuelve ②.",
+   "Con el botón de la casa ve al <b>Laboratorio de compras</b>, donde <b>fijas tú los precios</b> y te montas tus propios problemas.",
+   "En el <b>Laboratorio de carreras</b> las magnitudes son <b>tiempo y distancia</b> en vez de dinero. La razón unitaria pasa a ser la <b>velocidad</b>."
+  ],
+  "record": "Anota la razón unitaria (coste por unidad) de dos de los artículos que elegiste. ¿Y cuál convenía más?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>la de 10 por $4.50</strong>.</p><ul><li>6 por $3 → 3 ÷ 6 = <strong>$0,50 cada una</strong></li><li>10 por $4.50 → 4,50 ÷ 10 = <strong>$0,45 cada una</strong></li></ul><p>Mira solo el total y $3 parece más barato; mira solo la cantidad y diez parece mejor. Las dos miran <strong>un solo lado</strong>. En el momento en que conviertes a <strong>coste por unidad</strong> puedes medir las dos bolsas con la misma regla.</p><p>Una proporción con <strong>la base puesta en 1</strong> así es una <strong>razón unitaria</strong>. ¿Por qué 1? <strong>Porque desde 1 solo hay que multiplicar.</strong> Sabiendo que una manzana son 45 céntimos, siete manzanas son 45 × 7 y veintitrés son 45 × 23, directo.</p><p>La <strong>doble línea numérica</strong> de la pantalla dibuja eso. La línea de arriba es el coste y la de abajo la cantidad, y las dos crecen <strong>a la par</strong>. A la par es exactamente lo que significa la misma proporción, y por eso saber un lado te deja <strong>leer el otro sin calcular</strong>.</p><p>El <strong>Laboratorio de carreras</strong> es el mismo objeto. Distancia ÷ tiempo es <strong>cuánto se avanza en un segundo</strong>, que es la velocidad. 100 km/h, 15 km por litro, calorías por 100 g: una enorme cantidad de cifras del día a día son <strong>razones unitarias</strong>.</p>"
+  },
+  "real": "El <b>precio por 100 g</b> pequeñito de la etiqueta de un supermercado es exactamente esto. Los tamaños de envase varían tanto que no hay otra manera de comparar, y por eso la ley obliga a poner el precio unitario al lado. El precio por GB de una tarifa de móvil, el consumo de un coche, un salario por hora: todo son cifras con la base puesta en 1.",
+  "quiz": [
+   {
+    "q": "Algo va <b>4 por $2</b>. Una cuesta:",
+    "opts": [
+     "$0,40",
+     "$0,50",
+     "$0,80"
+    ],
+    "right": 1
+   },
+   {
+    "q": "A 45 céntimos cada una, <b>siete</b> cuestan:",
+    "opts": [
+     "$3,15",
+     "$3,50",
+     "$0,45"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿Por qué se pone la base de una razón unitaria en <b>1</b>?",
+    "opts": [
+     "Porque 1 es el número más pequeño",
+     "Porque así se llega a cualquier cantidad multiplicando",
+     "Porque 1 no necesita cálculo"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "ratio-4": {
+  "course": "ratio",
+  "sim": "mean-share-and-balance",
+  "screens": null,
+  "mode": "solve",
+  "title": "La media es lo que sale al repartir a partes iguales",
+  "lead": "No la fórmula de la media sino qué es una media. Deja correr el agua y aparece sola.",
+  "hook": "La media se enseña como «súmalos todos y divide entre cuántos son». Te aprendiste la fórmula, pero <b>lo que significa</b> se queda borroso. Esta simulación <b>conecta recipientes con tuberías</b>. El agua corre sola hasta que <b>todos los recipientes están al mismo nivel</b>, y ese nivel es la media. Has hecho una media sin usar la fórmula.",
+  "predict": {
+   "q": "Tres recipientes tienen <b>2 · 4 · 6</b> de agua. Abre las tuberías y déjala repartirse. El nivel de cada recipiente es:",
+   "opts": [
+    "3",
+    "4",
+    "6",
+    "12"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Nivelar</b>. Pon <b>Número de Contenedores</b>, abajo, en <b>3</b>.",
+   "Arrastra el mando de debajo de cada recipiente para poner los niveles de agua en <b>2 · 4 · 6</b>.",
+   "Abre las <b>tuberías</b> del centro. El agua corre hasta que <b>todos los recipientes están al mismo nivel.</b> ¿Qué nivel? Esa es la respuesta a ②.",
+   "Cierra las tuberías y sube un recipiente del todo. Vuelve a abrirlas: ¿cuál es el nivel nuevo?",
+   "Activa <b>Predecir la Media</b> a la derecha y marca tu propia suposición <b>antes</b> de abrir las tuberías.",
+   "Activa <b>Graduaciones</b> y tu suposición deja una marca contra la que comparar la respuesta.",
+   "Sube los recipientes a <b>7</b>, llénalos de forma desigual y abre las tuberías. Más recipientes, lo mismo.",
+   "Con el botón de la casa ve a la pantalla <b>Partes Iguales</b>. Esta vez son <b>manzanas</b> repartidas entre personas, no agua.",
+   "Pulsa <b>Compartir</b> y las manzanas se reparten a partes iguales. Cuando no salen exactas se parten en <b>trozos</b>: las fracciones del curso 10 apareciendo aquí.",
+   "En la pantalla <b>Punto de Equilibrio</b> la media aparece como <b>el sitio donde se equilibra un balancín</b>. Otra cara de la misma media."
+  ],
+  "record": "¿A qué nivel llegaron 2 · 4 · 6 al abrir las tuberías? ¿Y qué pasó cuando las manzanas no salían exactas?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>4</strong>. (2 + 4 + 6) ÷ 3 = 4. Pero lo que importa no es la cuenta: es <strong>lo que pasó de verdad en la pantalla</strong>.</p><p>No llegó agua ni desapareció ninguna. <strong>El agua que había se repartió simplemente a partes iguales.</strong> Así que el significado de una media es este: <strong>«júntalo todo y repártelo a partes iguales; ¿cuánto es una parte?»</strong></p><p>De ahí sale también la forma de la fórmula. <strong>Sumarlos todos</strong> es echar el agua a un solo depósito; <strong>dividir entre cuántos son</strong> es devolverla a partes iguales a los recipientes. La fórmula solo escribe esas dos acciones.</p><p>Si elegiste <strong>3</strong>, cogiste el valor del medio. Con 2 · 4 · 6 la mediana resulta ser 4 también, así que no te habría pillado, pero con <strong>2 · 3 · 10</strong> la mediana es 3 y la media es 5. Esa es la diferencia que trata el curso 14.</p><p>Que las manzanas se partieran en <strong>trozos</strong> en la pantalla <strong>Partes Iguales</strong> también importa. Siete manzanas entre tres personas son 2 y 1/3 para cada uno. El «la raya de una fracción es un signo de división» del curso 10 está trabajando otra vez. <strong>Una media es una división, y una división puede salir en fracción.</strong></p><p>La pantalla <strong>Punto de Equilibrio</strong> enseña la misma media de una manera completamente distinta. Pon los valores en un balancín y la media es <strong>el fulcro donde se equilibra</strong>. Así que un valor muy grande en un extremo arrastra el fulcro hacia él: la razón entera de que una media sea vulnerable a los valores extremos está en ese dibujo.</p>"
+  },
+  "real": "«Temperatura media de este mes», «media de la clase», «renta por habitante»: todas son «júntalo todo y repártelo a partes iguales». Que la renta por habitante sea alta y nadie lo note es porque el agua no se repartió de verdad; se repartió <b>solo en la aritmética</b>. Por eso una media hay que leerla siempre junto a «cómo de repartido está».",
+  "quiz": [
+   {
+    "q": "La media de <b>3 · 5 · 7 · 9</b> es:",
+    "opts": [
+     "5",
+     "6",
+     "24"
+    ],
+    "right": 1
+   },
+   {
+    "q": "<b>Siete</b> manzanas repartidas a partes iguales entre <b>dos</b> personas. Una parte es:",
+    "opts": [
+     "3 manzanas",
+     "3 manzanas y media",
+     "4 manzanas"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Después de que las tuberías repartan el agua a partes iguales, <b>la cantidad total de agua</b>:",
+    "opts": [
+     "Ha bajado",
+     "Sigue igual",
+     "Ha subido"
+    ],
+    "right": 1
+   }
+  ]
  }
 }
