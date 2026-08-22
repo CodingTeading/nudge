@@ -2911,5 +2911,268 @@
     "right": 1
    }
   ]
+ },
+ "graph-1": {
+  "course": "graph",
+  "sim": "graphing-lines",
+  "screens": null,
+  "mode": "solve",
+  "title": "Ponerle un número a lo empinado",
+  "lead": "Cómo convertir «esa cuesta es empinada» en un solo número. Ese número es la pendiente.",
+  "hook": "Los mapas marcan las rutas a pie con cifras como <b>un desnivel del 12%</b>. Los tejados tienen una, las señales de tráfico tienen una, la normativa de las rampas para sillas de ruedas tiene una. Convierte la sensación de «empinado» en <b>un solo número</b>. Mira cómo se hace ese número y es una división. Y muchísima gente se aprende <b>cuál se divide entre cuál</b> al revés.",
+  "predict": {
+   "q": "¿Cuál es la pendiente de la recta que pasa por <b>(1, 2)</b> y <b>(3, 8)</b>?",
+   "opts": [
+    "3",
+    "1/3",
+    "6",
+    "2"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Pendiente</b>. La gráfica está a la izquierda y la ecuación de la pendiente arriba a la derecha.",
+   "<b>Arrastra los dos puntos</b> de la gráfica. Los números de la ecuación los siguen.",
+   "Comprueba que la ecuación es <b>la diferencia vertical dividida entre la horizontal</b>. La vertical arriba, la horizontal abajo.",
+   "Pon los puntos en <b>(1, 2)</b> y <b>(3, 8)</b>. El valor que sale es la respuesta a ②.",
+   "Ahora mueve los puntos para que la recta vaya <b>hacia abajo a la derecha</b>. La pendiente sale <b>negativa</b>.",
+   "Deja la recta completamente <b>horizontal</b>. La pendiente es 0. Ahora ponla <b>vertical</b>: ¿qué pone?",
+   "Guarda una recta que te guste con <b>Guardar Recta</b>, y luego construye una recta de otra pendiente y compáralas <b>lado a lado</b>.",
+   "Con el botón de la casa visita la pantalla <b>Punto-Pendiente</b>. Un punto y una pendiente fijan una recta <b>de forma única</b>.",
+   "(La pantalla <b>Pendiente-Intersección con y</b> es la lección 2. De momento puedes saltártela.)"
+  ],
+  "record": "¿Qué valor tomó la pendiente al llevar la recta hacia abajo a la derecha? ¿Y qué ponía al poner la recta vertical?",
+  "explain": {
+   "right": 0,
+   "body": "<p>La respuesta es <strong>3</strong>. Sube <strong>6</strong> en vertical (de 2 a 8) mientras avanza <strong>2</strong> en horizontal (de 1 a 3), así que 6 ÷ 2 = 3.</p><p>Si elegiste <strong>1/3</strong> lo tenías del revés. Muy común. Solo hay una manera de recordarlo: <strong>la pendiente es «cuánto sube» dividido entre «cuánto avanza»</strong>. Piensa en una cuesta y no se te escapará. Anda poco y sube mucho y está empinada, y empinada tiene que ser <strong>un número grande</strong>.</p><p>Recogiendo lo que confirmaste en pantalla:</p><ul><li>Una recta que va <strong>hacia arriba</strong> a la derecha → pendiente <strong>positiva</strong></li><li>Una recta que va <strong>hacia abajo</strong> a la derecha → pendiente <strong>negativa</strong></li><li>Una recta <strong>horizontal</strong> → pendiente <strong>0</strong> (anda lo que quieras y no subes nunca)</li><li>Una recta <strong>vertical</strong> → pendiente <strong>indefinida</strong> (avanzaste 0 en horizontal, así que dividirías entre 0)</li></ul><p>Que la pantalla responda «indefinida» para una recta vertical importa. No es que la pendiente sea infinita o muy grande: <strong>dividir entre 0 significa que no hay valor ninguno.</strong></p><p>Acuérdate también de lo que enseñaba la pantalla <strong>Punto-Pendiente</strong>. Un punto y una pendiente fijan una recta de forma única. Dicho al revés, <strong>hacen falta exactamente dos datos para fijar una recta</strong>. La y = mx + b de la lección 2 son justo esos dos datos.</p>"
+  },
+  "real": "Un desnivel del 12% es una pendiente de 0,12: subes 12 m por cada 100 m recorridos. Una rampa para sillas de ruedas está obligada por ley a ser de <b>1/12 o menos</b>, y los tejados se hacen más empinados donde nieva mucho. «La pendiente ha cambiado» en un gráfico de bolsa, el perfil de altitud de una aplicación de ciclismo: todo la misma única división.",
+  "quiz": [
+   {
+    "q": "La pendiente de la recta que pasa por <b>(0, 5)</b> y <b>(4, 1)</b> es:",
+    "opts": [
+     "1",
+     "−1",
+     "4",
+     "−4"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Una recta de pendiente <b>0</b> es:",
+    "opts": [
+     "Una recta vertical",
+     "Una recta horizontal",
+     "Una recta que pasa por el origen"
+    ],
+    "right": 1
+   },
+   {
+    "q": "La pendiente de una recta <b>vertical</b> es:",
+    "opts": [
+     "0",
+     "Infinita",
+     "Indefinida: significaría dividir entre 0"
+    ],
+    "right": 2
+   }
+  ]
+ },
+ "graph-2": {
+  "course": "graph",
+  "sim": "graphing-slope-intercept",
+  "screens": null,
+  "mode": "solve",
+  "title": "Dos números fijan una recta",
+  "lead": "y = mx + b. Las dos letras hacen trabajos distintos. Si las mezclas fallarás siempre.",
+  "hook": "La lección 1 decía que <b>hacen falta dos datos para fijar una recta</b>. Ponerles nombre a esos dos datos da <b>y = mx + b</b>. La <b>m</b> es la pendiente y la <b>b</b> es la altura a la que corta el eje y. Eso se puede memorizar. El problema es <b>qué hace la recta cuando cambias solo uno de los dos</b>. Ahí es donde se separa.",
+  "predict": {
+   "q": "En <b>y = 2x + 3</b>, cambias el <b>3 por un 5</b>. La recta:",
+   "opts": [
+    "Se empina",
+    "Mantiene su forma y <b>sube 2</b>",
+    "Se mueve 2 a la derecha",
+    "Pasa a tener pendiente 5"
+   ]
+  },
+  "missions": [
+   "En la pantalla <b>Pendiente-Intersección con y</b>, comprueba que la ecuación de arriba a la derecha tiene la forma <b>y = m x + b</b>.",
+   "Pon la ecuación en <b>y = 2x + 3</b> y fíjate en la recta actual.",
+   "Sube <b>solo la b</b> de 3 a 5. ¿Cambia lo empinado o se mueve todo? Esa es la respuesta a ②.",
+   "Ahora deja <b>la b quieta</b> y sube la <b>m</b> de 2 a 4. ¿Qué cambia esta vez?",
+   "Guarda la recta actual con <b>Guardar Recta</b> y cambia la m a <b>−2</b>. Compárala con la recta guardada.",
+   "Pon <b>la b en 0</b> y la recta pasa por el origen. Ahí ves que la b es <b>la altura a la que corta el eje y</b>.",
+   "<b>Arrastra la recta</b> directamente en la gráfica. Los números de la ecuación la siguen. Funciona en los dos sentidos.",
+   "Con el botón de la casa ve al <b>Juego de Rectas</b> y empieza por el <b>Nivel 1</b>. Nombras la ecuación a partir del dibujo, o dibujas la recta a partir de la ecuación.",
+   "Sube al <b>Nivel 3</b> o más. Empieza a darte dos puntos y a pedirte la ecuación."
+  ],
+  "record": "Escribe una línea sobre qué hizo la recta al cambiar solo la b y otra sobre qué hizo al cambiar solo la m.",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>mantiene su forma y sube 2</strong>. <strong>La b no toca lo empinado.</strong> Solo desliza la recta entera arriba o abajo.</p><p>¿Por qué? Cambia el 3 de y = 2x + 3 por un 5 y <strong>el valor de y sube 2 en cada x</strong>. Sea x 0 o 100, sube 2, así que todos los puntos de la recta se levantan 2 en paralelo. Subir en paralelo deja la pendiente sin cambiar.</p><p>La m es otra cosa. Cambia la m de 2 a 4 y un paso de 1 en x sube la y <strong>4 en vez de 2</strong>. Cuánto sube depende ahora de x, así que la recta <strong>gira alrededor de un punto</strong>. Ese punto es <strong>donde corta el eje y</strong>: ahí la x es 0, así que mx es 0 por mucho que cambies la m.</p><p>Para recogerlo:</p><ul><li>Cambia la <strong>b</strong> → la recta <strong>se desliza arriba y abajo</strong> (pendiente sin cambiar)</li><li>Cambia la <strong>m</strong> → la recta <strong>gira alrededor del corte con el eje y</strong> (altura sin cambiar)</li></ul><p>Que las dos <strong>no se estorben entre sí</strong> es la razón de que y = mx + b sea la forma que usamos. Puedes fijar cada una por separado.</p><p>Hay una razón para que el Juego de Rectas te dé dos puntos a partir del nivel 3. Como confirmó la lección 1, <strong>dos puntos te dan la pendiente</strong>, y una pendiente con un punto te da la b. Los dos datos quedan rellenos.</p>"
+  },
+  "real": "La tarifa de un taxi tiene exactamente esta forma. La bajada de bandera es la <b>b</b> y el precio por kilómetro es la <b>m</b>. Una tarifa de móvil, la matrícula de un gimnasio más la cuota mensual, los gastos de envío más la comida: todo igual. Comparar dos tarifas preguntando «cuánto uso hasta que la otra salga más barata» es encontrar <b>dónde se cruzan dos rectas</b>.",
+  "quiz": [
+   {
+    "q": "La pendiente y la ordenada en el origen de <b>y = −3x + 1</b> son:",
+    "opts": [
+     "Pendiente −3, ordenada 1",
+     "Pendiente 1, ordenada −3",
+     "Pendiente 3, ordenada 1"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Cambia <b>y = x + 4</b> por <b>y = x − 2</b> y la recta:",
+    "opts": [
+     "Se hace menos empinada",
+     "Baja 6",
+     "Se mueve 6 a la derecha"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Qué punto <b>no se mueve</b> al cambiar la m?",
+    "opts": [
+     "El origen",
+     "Donde corta el eje y",
+     "Donde corta el eje x"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "graph-3": {
+  "course": "graph",
+  "sim": "graphing-quadratics",
+  "screens": null,
+  "mode": "solve",
+  "title": "Un signo menos que la mueve a la derecha",
+  "lead": "Deja atrás las rectas y sale una parábola. Y lleva dentro una trampa en la que el signo parece al revés.",
+  "hook": "Las rectas de las lecciones 1 y 2 eran todas <b>rectas</b>, porque lo único pegado a la x era <b>una sola x</b>. Mete <b>x²</b> y la línea se curva en una <b>parábola</b>: el camino de una pelota lanzada, el chorro de una fuente, la sección de una antena parabólica. Pero la fórmula para mover una parábola lleva una trampa que pilla a casi todo el mundo una vez. <b>Un signo menos la mueve a la derecha.</b>",
+  "predict": {
+   "q": "¿Dónde está el vértice de <b>y = (x − 3)²</b>?",
+   "opts": [
+    "(3, 0)",
+    "(−3, 0)",
+    "(0, 3)",
+    "(0, −3)"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Explorar</b>. Arriba a la derecha están <b>y = a x² + b x + c</b> y tres deslizadores.",
+   "Mueve solo la <b>a</b>. ¿Qué le pasa a la anchura de 1 a 3? ¿Y abajo en 0,2?",
+   "Pon la <b>a en negativo</b>. La parábola <b>se da la vuelta.</b>",
+   "Pon la <b>a en 0</b>. La x² desaparece y sale <b>una recta</b>: de vuelta a las lecciones 1 y 2.",
+   "Activa las casillas de <b>Términos Cuadráticos</b> y <b>Ecuaciones</b> de abajo a la derecha. Se ve qué parte de la fórmula hace qué parte de la gráfica.",
+   "Con el botón de la casa ve a la pantalla <b>Forma Vértice</b>. La fórmula pasa a ser <b>y = a(x − h)² + k</b>.",
+   "Activa la casilla de <b>Vertice</b>. Un punto marca el vértice.",
+   "Pon <b>h en 3</b> con a en 1 y k en 0, dando <b>y = (x − 3)²</b>. ¿Adónde fue el vértice? Esa es la respuesta a ②.",
+   "Pon <b>h en −3</b> y comprueba que el vértice se va al otro lado.",
+   "Mueve la <b>k</b>. Esta sube y baja con el signo tal como está escrito.",
+   "Activa la casilla de <b>Eje de Simetria</b>. Aparece una recta vertical por el vértice."
+  ],
+  "record": "¿Qué le pasó a la anchura al subir y bajar la a? ¿Y cuál era la coordenada x del vértice al poner h en 3?",
+  "explain": {
+   "right": 0,
+   "body": "<p>La respuesta es <strong>(3, 0)</strong>. <strong>Restas y se va a la derecha.</strong> El signo parece al revés.</p><p>La razón es sencilla. El vértice está <strong>donde el paréntesis se hace 0</strong>. (x − 3)² es lo más pequeño cuando el cuadrado es 0, y x − 3 = 0 pide <strong>x = 3</strong>. Así que el vértice tiene coordenada x igual a 3.</p><p>Recuérdalo así y no te confundirá: <strong>busca la x que hace 0 el paréntesis.</strong> Para (x + 5)² es x = −5; para (x − 7)² es x = 7.</p><p>La <strong>k</strong>, en cambio, se mueve <strong>con su signo</strong>. y = (x − 3)² + 2 tiene el vértice en (3, 2). Solo la h va al revés, y la k es honesta, <strong>porque la h está pegada al lado de la x y la k se suma en el lado de la y</strong>. La k está haciendo justo lo que hacía la b de la lección 2 cuando subirla levantaba la recta.</p><p>Recojamos lo que enseñaba la <strong>a</strong>.</p><ul><li><strong>|a| grande</strong> → <strong>más estrecha</strong> (la y salta más lejos en la misma x, así que es más empinada)</li><li><strong>|a| pequeña</strong> → <strong>más ancha</strong></li><li><strong>a negativa</strong> → <strong>del revés</strong></li><li><strong>a = 0</strong> → no una parábola sino <strong>una recta</strong></li></ul><p>Que subir la a la haga <strong>más estrecha</strong> confunde especialmente, porque «más grande debería ser más grande» dice lo contrario. Lo que se hace más grande es la <strong>altura</strong>, y visto de lado eso la hace parecer <strong>más delgada</strong>.</p>"
+  },
+  "real": "Las antenas parabólicas y los faros de un coche tienen sección de parábola por la manera en que <b>se junta todo en un punto (el foco)</b>. El arco de un tiro a canasta, el chorro de una fuente y los cables de un puente también se acercan a parábolas. Retocar la curva de un salto al hacer un videojuego se reduce a ajustar la a y la k.",
+  "quiz": [
+   {
+    "q": "La coordenada x del vértice de <b>y = (x + 4)²</b> es:",
+    "opts": [
+     "4",
+     "−4",
+     "0",
+     "16"
+    ],
+    "right": 1
+   },
+   {
+    "q": "El vértice de <b>y = 2(x − 1)² + 5</b> es:",
+    "opts": [
+     "(1, 5)",
+     "(−1, 5)",
+     "(1, −5)",
+     "(2, 5)"
+    ],
+    "right": 0
+   },
+   {
+    "q": "Sube la a de 1 a 5 y la parábola:",
+    "opts": [
+     "Se hace más ancha",
+     "Se hace más estrecha",
+     "Sube",
+     "Se da la vuelta"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "graph-4": {
+  "course": "graph",
+  "sim": "calculus-grapher",
+  "screens": "1",
+  "mode": "solve",
+  "title": "La pendiente también puede ser una gráfica",
+  "lead": "Una curva tiene una pendiente distinta en cada sitio. Junta esas pendientes, dibújalas y sale una gráfica nueva.",
+  "hook": "La recta de la lección 1 tenía <b>la misma pendiente la midieras donde la midieras</b>, así que su pendiente era un número y ya está. La parábola de la lección 3 es otra cosa. El flanco izquierdo baja y el derecho sube, así que <b>la pendiente cambia de un sitio a otro</b>. Lo cual sugiere algo: mide la pendiente en cada sitio y <b>dibuja esos valores como una gráfica propia</b>. Esta simulación lo hace en directo.",
+  "predict": {
+   "q": "Dibuja como gráfica la «pendiente en cada sitio» de la recta <b>y = 2x</b>. ¿Qué sale?",
+   "opts": [
+    "La misma recta, y = 2x",
+    "Una <b>recta horizontal a la altura 2</b>",
+    "Una recta más empinada por el origen",
+    "Una parábola"
+   ]
+  },
+  "missions": [
+   "La pantalla está partida en <b>dos paneles</b>. El de arriba es la curva original <b>f(x)</b> y el de abajo es la <b>gráfica de la pendiente</b>.",
+   "De los <b>botones de forma</b> de la derecha (colina, pedestal, inclinación, desplazamiento), elige el de <b>inclinación</b> y arrastra en el panel de arriba para hacer <b>una cuesta recta</b>.",
+   "Con una cuesta recta, comprueba que <b>el panel de abajo es una recta horizontal</b>. Esa es la respuesta a ②.",
+   "Arrastra la cuesta <b>más empinada</b>. La <b>altura</b> de la recta horizontal de abajo sube con ella.",
+   "Inclina la cuesta <b>al otro lado</b>. La recta de abajo baja <b>por debajo de 0</b>.",
+   "Ahora elige la forma de <b>colina</b> y dibuja una colina en el panel de arriba. ¿Qué forma toma la gráfica de abajo?",
+   "Activa la casilla de <b>Tangente</b> a la derecha. Aparece una <b>recta tangente</b> en el panel de arriba y el indicador vertical del borde izquierdo da la pendiente en ese sitio.",
+   "Arrastra la tangente hasta <b>lo alto de la colina</b>. La pendiente se hace <b>0</b>, y la gráfica de abajo pasa por 0 en ese sitio.",
+   "Comprueba que la gráfica de abajo está por encima de 0 en la <b>subida</b> y por debajo de 0 en la <b>bajada</b>.",
+   "Activa la <b>Línea de Referencia</b> de la derecha y arrástrala a izquierda y derecha para comparar las dos gráficas <b>en la misma x</b>."
+  ],
+  "record": "¿Qué forma tenía la gráfica de abajo al dibujar una cuesta recta? ¿Y cuánto valía en lo alto de la colina?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>una recta horizontal a la altura 2</strong>.</p><p>La recta y = 2x tiene <strong>pendiente 2 la midas donde la midas</strong>. En x = −5, en 0, en 100: siempre 2. Así que dibujar «la pendiente en cada sitio» como gráfica te da una gráfica cuyo <strong>valor es 2 en todas partes</strong>, que es una recta horizontal a la altura 2.</p><p>Si elegiste «la misma recta», estabas superponiendo <strong>la gráfica original</strong> y <strong>la gráfica de la pendiente</strong>. Dibujan cosas completamente distintas. El eje vertical de la gráfica de arriba es la <strong>altura</strong>; el de la de abajo es la <strong>pendiente</strong>.</p><p>Lo que enseñaba la colina es el corazón de esta lección.</p><ul><li><strong>Subida</strong> (creciendo) → pendiente <strong>positiva</strong> → la gráfica de abajo está <strong>por encima de 0</strong></li><li><strong>La cima</strong> (plana por un instante) → pendiente <strong>0</strong> → la gráfica de abajo <strong>pasa por 0</strong></li><li><strong>Bajada</strong> → pendiente <strong>negativa</strong> → la gráfica de abajo está <strong>por debajo de 0</strong></li></ul><p>Así que encontrar <strong>dónde cruza el 0 la gráfica de abajo</strong> es encontrar <strong>una cima o un valle</strong> en la gráfica de arriba. Puedes encontrar el punto más alto sin mirar la gráfica siquiera. Esa es la razón más común por la que se usa el cálculo.</p><p>En clase a la gráfica de abajo se la llama <strong>derivada</strong> y se escribe f′(x). Todavía no te hace falta el nombre. Basta con quedarte el dibujo de <strong>una gráfica hecha juntando las pendientes</strong>.</p>"
+  },
+  "real": "El salpicadero de un coche es exactamente esta relación. Si el cuentakilómetros es la gráfica de arriba, <b>el velocímetro es la de abajo</b>: la velocidad es «lo rápido que crece la distancia», la pendiente de la gráfica de la distancia. Un electrocardiograma, la tasa de cambio del precio de una acción y el «la subida se está frenando» de una curva epidémica significan todos que la gráfica de abajo ha empezado a bajar.",
+  "quiz": [
+   {
+    "q": "La gráfica de la pendiente de la recta horizontal <b>y = 5</b> es:",
+    "opts": [
+     "Una recta horizontal a la altura 5",
+     "Una recta horizontal a la altura 0 (el eje x)",
+     "Una recta de pendiente 5"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Donde la gráfica de la pendiente de abajo <b>cruza el 0</b>, la de arriba está:",
+    "opts": [
+     "Cruzando el 0",
+     "En una cima o un valle",
+     "En su punto más empinado"
+    ],
+    "right": 1
+   },
+   {
+    "q": "En un tramo en el que la gráfica de arriba <b>va bajando</b>, la de abajo está:",
+    "opts": [
+     "Por encima de 0",
+     "Por debajo de 0",
+     "En 0"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

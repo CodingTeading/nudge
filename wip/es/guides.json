@@ -3183,5 +3183,266 @@
    "Cuando las manzanas no salen exactas aparecen <b>trozos</b>. No es un error: el resultado de una división puede ser una fracción.",
    "Hay cuatro pantallas y se van poniendo más difíciles. <b>Nivelar → Partes Iguales → Punto de Equilibrio</b> es el orden que hay que llevar."
   ]
+ },
+ "graphing-lines": {
+  "summary": "<b>La gráfica a la izquierda, la ecuación a la derecha.</b> Están unidas, así que arrastrar un punto de la gráfica cambia la ecuación y cambiar un número de la ecuación mueve la recta. Trabaja desde el lado que quieras.",
+  "screens": [
+   {
+    "name": "Pendiente",
+    "what": "Donde empieza esta lección. Mira cómo dos puntos fijan una pendiente."
+   },
+   {
+    "name": "Pendiente-Intersección con y",
+    "what": "Trabaja en la forma y = mx + b. <b>La lección 2 la usa a fondo</b>: aquí puedes saltártela."
+   },
+   {
+    "name": "Punto-Pendiente",
+    "what": "Fija una recta a partir de un punto y una pendiente. Una visita breve al final de la lección 1."
+   },
+   {
+    "name": "Juego de Rectas",
+    "what": "Un juego de comprobación de seis niveles. Dibuja la recta a partir de la ecuación, o monta la ecuación a partir de la recta."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los puntos de la gráfica (izquierda)",
+    "desc": "Arrastra un punto redondo y la recta le sigue y la ecuación de la derecha cambia al instante.",
+    "tip": "La acción principal de aquí. Colócalos <b>justo en la cuadrícula</b> y los valores salen enteros, lo cual facilita la aritmética."
+   },
+   {
+    "name": "Los números de la ecuación (arriba a la derecha)",
+    "desc": "Cada número de la ecuación tiene flechas de arriba y abajo. Púlsalas y <b>la gráfica sigue.</b>",
+    "tip": "Arrastrar la gráfica y cambiar la ecuación son <b>la misma cosa</b>. Usa la ecuación cuando necesites un valor exacto y la gráfica cuando quieras la sensación."
+   },
+   {
+    "name": "El valor de la pendiente (arriba a la derecha de la gráfica)",
+    "desc": "Enseña la pendiente actual como fracción, escrita como <b>la diferencia vertical entre la horizontal</b>.",
+    "tip": "Mira aquí cuál de las dos es la vertical. Evita que te aprendas la pendiente del revés."
+   },
+   {
+    "name": "Guardar Recta · Borra Rectas (derecha)",
+    "desc": "<b>Guardar Recta</b> deja la recta actual en pantalla en un color apagado. <b>Borra Rectas</b> limpia todo lo que hayas dejado.",
+    "tip": "El botón más útil de esta simulación. <b>Guarda antes de cambiar</b> y podrás ver el antes y el después lado a lado. No te fíes de la memoria."
+   },
+   {
+    "name": "Juego de Rectas — elegir nivel",
+    "desc": "Seis niveles. Cuanto más subes, menos información te dan.",
+    "tip": "A partir del <b>nivel 3</b> te da dos puntos y te pide la ecuación. Con la lección 1 sola basta para resolverlo."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Pendiente</b>, arrastra los dos puntos.",
+   "Pon los puntos en <b>(1, 2)</b> y <b>(3, 8)</b> y lee la pendiente.",
+   "Lleva la recta <b>hacia abajo a la derecha</b> y mira la pendiente ponerse negativa.",
+   "Deja la recta <b>horizontal</b> y luego <b>vertical</b> y mira qué da cada una.",
+   "Guarda una con <b>Guardar Recta</b> y compárala con una recta de otra pendiente.",
+   "En la pantalla <b>Punto-Pendiente</b>, mira cómo un punto y una pendiente fijan una recta."
+  ],
+  "gotchas": [
+   "La pendiente es <b>la diferencia vertical entre la horizontal</b>. Dale la vuelta y tu respuesta es la inversa.",
+   "Una recta vertical marca <b>pendiente indefinida</b>. No infinita: <b>ningún valor</b>, porque significaría dividir entre 0.",
+   "Las rectas guardadas se quedan apagadas en pantalla. Cuando confundan, ordena con <b>Borra Rectas</b>.",
+   "Esta simulación tiene cuatro pantallas. La de <b>Pendiente-Intersección con y</b> es de la lección 2."
+  ]
+ },
+ "graphing-slope-intercept": {
+  "summary": "<b>Solo la pantalla Pendiente-Intersección con y</b>, sacada de la simulación anterior (Graficando Rectas). Los mandos son idénticos, así que no hay nada nuevo que aprender, pero el <b>Juego de Rectas</b> de aquí está montado alrededor de y = mx + b.",
+  "screens": [
+   {
+    "name": "Pendiente-Intersección con y",
+    "what": "La pantalla que usa esta lección. La ecuación está fijada en la forma <b>y = m x + b</b>."
+   },
+   {
+    "name": "Juego de Rectas",
+    "what": "Un juego de seis niveles. La segunda mitad de esta lección ocurre aquí."
+   }
+  ],
+  "controls": [
+   {
+    "name": "m (pendiente) · b (ordenada en el origen) — la ecuación de arriba a la derecha",
+    "desc": "Cambia los dos números de la ecuación con las flechas de arriba y abajo. La m se puede poner como fracción.",
+    "tip": "<b>Cambia uno cada vez, siempre.</b> Mueve los dos y no sabrás cuál hizo qué. Esa distinción es toda la lección."
+   },
+   {
+    "name": "Los mandos de la gráfica (izquierda)",
+    "desc": "Hay dos puntos en la recta. Arrastra el del eje y y cambia la <b>b</b>; arrastra el otro y cambia la <b>m</b>.",
+    "tip": "Arrastrar el punto del eje y es como notas con la mano que <b>la b es la altura a la que corta el eje y</b>."
+   },
+   {
+    "name": "Guardar Recta · Borra Rectas (derecha)",
+    "desc": "Dejan la recta actual apagada en pantalla, o limpian lo que hayas dejado.",
+    "tip": "Guarda la recta con <b>la b cambiada sola</b> y la de <b>la m cambiada sola</b> y ponlas las tres en una pantalla. La diferencia se ve de un vistazo."
+   },
+   {
+    "name": "Juego de Rectas — elegir nivel",
+    "desc": "Seis niveles. Tres tipos de problema: <b>dibujar la recta, montar la ecuación, poner los puntos en la recta</b>.",
+    "tip": "Está bien fallar. El juego superpone <b>la recta correcta</b>, y la dirección en que la tuya se desvía te dice al momento si tenías mal la m o la b."
+   }
+  ],
+  "steps": [
+   "Pon la ecuación en <b>y = 2x + 3</b>.",
+   "Sube <b>solo la b</b> a 5 y mira cómo se mueve la recta.",
+   "Sube <b>solo la m</b> a 4 y mira qué cambia esta vez.",
+   "Guarda una con <b>Guardar Recta</b> y compara con una m negativa.",
+   "Pon <b>la b en 0</b> y mira la recta pasar por el origen.",
+   "Juega los niveles 1 a 3 del <b>Juego de Rectas</b>."
+  ],
+  "gotchas": [
+   "<b>La b no cambia la pendiente.</b> Solo desliza la recta entera arriba y abajo.",
+   "<b>Cambia la m y la recta gira alrededor del corte con el eje y.</b> Ese punto se queda quieto.",
+   "Los dos puntos de la gráfica hacen trabajos distintos. <b>El del eje y es el lado de la b.</b>",
+   "La pantalla es casi idéntica a la de la simulación anterior. <b>Si solo hay dos pantallas</b>, estás en esta."
+  ]
+ },
+ "graphing-quadratics": {
+  "summary": "<b>Maneja una parábola desde su ecuación.</b> <b>Cada pantalla usa una forma distinta de la ecuación</b> — la misma parábola escrita de maneras distintas — así que importa comprobar en qué pantalla estás.",
+  "screens": [
+   {
+    "name": "Explorar",
+    "what": "<b>y = a x² + b x + c</b>, movida con deslizadores. Empieza aquí."
+   },
+   {
+    "name": "Forma Estándar",
+    "what": "La misma ecuación con valores enteros, enseñando <b>Raíces · Vertice · Eje de Simetria</b> a la vez."
+   },
+   {
+    "name": "Forma Vértice",
+    "what": "<b>y = a(x − h)² + k</b>. La mejor pantalla para ver adónde va el vértice. La segunda mitad de esta lección ocurre aquí."
+   },
+   {
+    "name": "Foco y Directriz",
+    "what": "El foco de una parábola. Más allá de esta lección: visítala después si tienes curiosidad."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los deslizadores a · b · c (Explorar, arriba a la derecha)",
+    "desc": "Mueven los tres valores de <b>y = a x² + b x + c</b>.",
+    "tip": "Empieza por la <b>a</b>. Es la a la que fija la anchura y la dirección. El efecto de la b confunde, así que déjala en 0 al principio."
+   },
+   {
+    "name": "Los deslizadores a · h · k (Forma Vértice, arriba a la derecha)",
+    "desc": "Los tres valores de <b>y = a(x − h)² + k</b>. La <b>h</b> lleva izquierda y derecha y la <b>k</b>, arriba y abajo.",
+    "tip": "Una h positiva mueve la parábola a la <b>derecha</b>. Está escrita como una resta en la fórmula y se mueve a la derecha, y ese es el sentido de esta pantalla."
+   },
+   {
+    "name": "Términos Cuadráticos (casilla de Explorar)",
+    "desc": "Dibuja sola la parte de x², superpuesta a la parábola entera.",
+    "tip": "Merece la pena tenerla activada mientras miras cómo la a fija la anchura. Separa <b>qué parte hace la curva</b>."
+   },
+   {
+    "name": "Vertice (casilla)",
+    "desc": "Marca el vértice con un punto y enseña sus coordenadas.",
+    "tip": "<b>Actívala, sin falta.</b> Apagada no hay nada que comprobar mientras mueves la h y la k en la pantalla Forma Vértice."
+   },
+   {
+    "name": "Eje de Simetria (casilla)",
+    "desc": "Dibuja una recta vertical por el vértice.",
+    "tip": "Enseña que la parábola <b>se pliega como un espejo</b> respecto de esa recta. El valor x del eje es el valor x del vértice."
+   },
+   {
+    "name": "Raíces (casilla de Forma Estándar)",
+    "desc": "Marca dónde corta la parábola al eje x. Si no lo corta, pone <b>NO TIENE RAÍCES REALES</b>.",
+    "tip": "Levanta la parábola por encima del eje x. Aparece <b>NO TIENE RAÍCES REALES</b>: un dibujo de lo que significa «sin raíces»."
+   },
+   {
+    "name": "Ecuaciones · Coordenadas (casillas)",
+    "desc": "Ponen la ecuación al lado de la gráfica, o coordenadas en cada punto.",
+    "tip": "Deja <b>Coordenadas</b> activada y podrás leer a ojo los valores del vértice y compararlos con tu cuenta."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Explorar</b>, sube y baja solo la <b>a</b> y mira la anchura.",
+   "Pon la <b>a en negativo</b> y mira la parábola darse la vuelta.",
+   "Pon la <b>a en 0</b> y confirma que sale una recta.",
+   "Pasa a la pantalla <b>Forma Vértice</b> y activa la casilla de <b>Vertice</b>.",
+   "Pon <b>h en 3</b> y mira hacia dónde va el vértice.",
+   "Mueve la <b>k</b> y confirma que esta va con su signo."
+  ],
+  "gotchas": [
+   "<b>Sube la a y la parábola se hace más estrecha.</b> Al revés de la sensación de «más grande, más ancha».",
+   "El vértice de <b>y = (x − 3)² está en x = 3</b>. Una resta que la mueve a la derecha. Busca <b>la x que hace 0 el paréntesis</b> y no te confundirá.",
+   "<b>La k va con su signo.</b> Solo la h va al revés.",
+   "Cada pantalla usa una forma distinta. <b>a, b, c</b> significa Explorar o Forma Estándar; <b>a, h, k</b> significa Forma Vértice.",
+   "Esta simulación se hizo para secundaria. Esta lección no usa la pantalla <b>Foco y Directriz</b>.",
+   "En pantalla pone <b>Vertice</b> y <b>Eje de Simetria</b>, sin las tildes de «Vértice» y «Simetría». Son erratas de la traducción de PhET; búscalos tal cual están escritos."
+  ]
+ },
+ "calculus-grapher": {
+  "summary": "La pantalla va en <b>dos paneles</b>. <b>Dibuja a mano una curva en el panel de arriba</b> y la <b>gráfica de la pendiente</b> de esa curva se dibuja en directo en el de abajo.",
+  "screens": [
+   {
+    "name": "Derivada",
+    "what": "La pantalla que usa esta lección. El panel de abajo es la gráfica de la pendiente."
+   },
+   {
+    "name": "Integral",
+    "what": "La dirección contraria. El panel de abajo dibuja <b>el área bajo la curva</b>. No se usa en esta lección."
+   },
+   {
+    "name": "Avanzado",
+    "what": "Llega hasta la pendiente de la pendiente. Bastante más difícil."
+   },
+   {
+    "name": "Laboratorio",
+    "what": "Una pantalla para dibujar libremente sin objetivo."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Los botones de forma (derecha, cuatro iconos)",
+    "desc": "Eligen la forma que dibujar en el panel de arriba: <b>colina · pedestal · inclinación · desplazamiento</b>. Solo dibujos, sin palabras.",
+    "tip": "Elige <b>inclinación</b> (el dibujo en diagonal) para hacer una cuesta recta y <b>colina</b> (el dibujo con una cima) para hacer una colina. Esta lección solo usa esas dos."
+   },
+   {
+    "name": "La curva del panel de arriba (arrástrala directamente)",
+    "desc": "Arrastra en el panel de arriba y la curva cambia en el sitio, según el botón de forma que hayas elegido.",
+    "tip": "<b>Arrastra despacio y mira el panel de abajo.</b> Cómo sigue el de abajo mientras trabajas en el de arriba es toda la simulación. Si miras solo al terminar, te lo pierdes."
+   },
+   {
+    "name": "Tangente (casilla de la derecha)",
+    "desc": "Pone una <b>recta tangente</b> en el panel de arriba. Arrástrala a izquierda y derecha y mide la pendiente en ese sitio.",
+    "tip": "Actívala y arrastra desde la subida de una colina hasta la cima y baja por el otro lado. Por qué cambia el signo de la gráfica de abajo se vuelve evidente."
+   },
+   {
+    "name": "Pendiente de la Tangente (el indicador vertical del borde izquierdo)",
+    "desc": "Enseña como barra la pendiente donde está la tangente. Hacia arriba es +, hacia abajo es −.",
+    "tip": "La altura de esta barra y la altura de la gráfica de abajo son <b>siempre la misma</b>: un valor enseñado de dos maneras."
+   },
+   {
+    "name": "Línea de Referencia (casilla de la derecha)",
+    "desc": "Pone una recta vertical que cruza los dos paneles. Se puede arrastrar a izquierda y derecha.",
+    "tip": "La herramienta para comparar la gráfica de arriba y la de abajo <b>en la misma x</b>. Actívala cuando cueste alinearlas a ojo."
+   },
+   {
+    "name": "Los botones de deshacer y reiniciar (derecha)",
+    "desc": "Deshacen lo último que dibujaste, o devuelven la curva al principio.",
+    "tip": "Cuando la curva se lía, <b>reinicia</b> primero. Volver a dibujar desde cero sale más rápido que arreglarla."
+   },
+   {
+    "name": "Predice (conmutador de arriba)",
+    "desc": "Cambia a un modo en el que <b>dibujas tú la gráfica de abajo</b> y la comparas con la respuesta.",
+    "tip": "Bueno para ponerte a prueba al terminar la lección: dibuja primero la gráfica de abajo y luego destapa la respuesta."
+   },
+   {
+    "name": "Muestra (arriba)",
+    "desc": "Enseña u oculta la curva original f(x).",
+    "tip": "Se usa en el modo Predice para esconder la respuesta un momento."
+   }
+  ],
+  "steps": [
+   "Elige la forma de <b>inclinación</b> y haz una cuesta recta en el panel de arriba.",
+   "Comprueba que el panel de abajo es una <b>recta horizontal</b>, y que su altura sube al hacer la cuesta más empinada.",
+   "Inclina la cuesta al otro lado y comprueba que la recta de abajo va <b>por debajo de 0</b>.",
+   "Elige la forma de <b>colina</b> y dibuja una colina.",
+   "Activa <b>Tangente</b> y arrástrala subida → cima → bajada.",
+   "Activa la <b>Línea de Referencia</b> y compara las dos gráficas en la misma x."
+  ],
+  "gotchas": [
+   "Los paneles de arriba y de abajo tienen <b>significados distintos en el eje vertical.</b> El de arriba es altura y el de abajo, pendiente. No hay que leerlos como superpuestos.",
+   "Los botones de forma <b>no llevan palabras.</b> Distínguelos por el dibujo.",
+   "Esta simulación se hizo para secundaria y universidad. Esta lección solo usa la pantalla <b>Derivada</b>."
+  ]
  }
 }
