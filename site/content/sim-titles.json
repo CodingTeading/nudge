@@ -1,189 +1,231 @@
 {
-  "_note": "시뮬레이션 제목을 언어별로 덮어씁니다. repo → { 언어: 제목 }. ko 는 PhET 한국어 번역이 잘못 잡은 것을 바로잡는 자리이고(_why 참고), es 는 화면에 실제로 찍히는 스페인어 제목입니다 — sims.json 에는 스페인어 제목이 없어서 여기에 둡니다. 여기 없는 것은 영어 제목을 씁니다.",
-  "acid-base-solutions": {
-    "es": "Soluciones Ácido-Base"
-  },
-  "balancing-chemical-equations": {
-    "es": "Balanceo de Ecuaciones Químicas"
-  },
-  "balloons-and-static-electricity": {
-    "es": "Globos y electricidad estática"
-  },
-  "beers-law-lab": {
-    "es": "Lab de la ley de Beer"
-  },
-  "blackbody-spectrum": {
-    "es": "Espectro de radiación del Cuerpo Negro"
-  },
-  "build-a-fraction": {
-    "es": "Construye una fracción"
-  },
-  "build-a-nucleus": {
-    "es": "Construye un Núcleo"
-  },
-  "build-an-atom": {
-    "es": "Construye un Átomo"
-  },
-  "calculus-grapher": {
-    "es": "Graficador para Cálculo"
-  },
-  "center-and-variability": {
-    "es": "Centro y Variabilidad"
-  },
-  "charges-and-fields": {
-    "es": "Cargas y campos"
-  },
-  "coulombs-law": {
-    "es": "Ley de Coulomb"
-  },
-  "energy-skate-park": {
-    "es": "Energía en la pista de patinaje"
-  },
-  "equality-explorer": {
-    "es": "Explorador de Igualdades"
-  },
-  "faradays-electromagnetic-lab": {
-    "es": "Laboratorio Electromagnético de Faraday"
-  },
-  "fourier-making-waves": {
-    "_why": "'기호' 로 되어 있습니다. 원제는 Fourier: Making Waves 입니다.",
-    "ko": "푸리에: 파동 만들기",
-    "es": "Fourier: Creando Ondas"
-  },
-  "fraction-matcher": {
-    "es": "Parejas de Fracciones"
-  },
-  "fractions-equality": {
-    "es": "Fracciones: Igualdades"
-  },
-  "fractions-intro": {
-    "es": "Fracciones: Intro"
-  },
-  "fractions-mixed-numbers": {
-    "es": "Fracciones: números mixtos"
-  },
-  "function-builder": {
-    "es": "Generador de Funciones"
-  },
-  "gas-properties": {
-    "_why": "sims.json 에 '불변 상태' 로 들어 있습니다 — 실험 안의 조작 이름입니다. 제목은 '기체의 성질' 입니다.",
-    "ko": "기체의 성질",
-    "es": "Propiedades de los Gases"
-  },
-  "geometric-optics": {
-    "es": "Óptica Geométrica"
-  },
-  "graphing-lines": {
-    "es": "Graficando Rectas"
-  },
-  "graphing-quadratics": {
-    "es": "Graficando Cuadráticas"
-  },
-  "graphing-slope-intercept": {
-    "es": "Graficando Rectas Pendiente-Intersección"
-  },
-  "gravity-and-orbits": {
-    "es": "Gravedad y Órbitas"
-  },
-  "greenhouse-effect": {
-    "_why": "sims.json 에 '에너지' 로 들어 있습니다. 실험 안에서는 '온실 효과' 로 나옵니다.",
-    "ko": "온실 효과",
-    "es": "Efecto Invernadero"
-  },
-  "hookes-law": {
-    "es": "Ley de Hooke"
-  },
-  "keplers-laws": {
-    "_why": "sims.json 에 '오비탈 추가 데이터' 로 들어 있습니다. 실험 안에서는 '케플러의 법칙' 으로 나옵니다.",
-    "ko": "케플러의 법칙",
-    "es": "Leyes de Kepler"
-  },
-  "masses-and-springs": {
-    "es": "Masas y Resortes"
-  },
-  "mean-share-and-balance": {
-    "es": "Media: Distribuye y Equilibra"
-  },
-  "membrane-transport": {
-    "es": "Transporte de membrana"
-  },
-  "models-of-the-hydrogen-atom": {
-    "es": "Modelos del Átomo de Hidrógeno"
-  },
-  "molecule-polarity": {
-    "es": "Polaridad de la Molécula"
-  },
-  "molecule-shapes": {
-    "es": "Forma de la Molécula"
-  },
-  "my-solar-system": {
-    "_why": "sims.json 에 '단위 안내' 로 들어 있습니다. 실험 안에서는 '우리의 태양계' 로 나옵니다.",
-    "ko": "우리의 태양계",
-    "es": "Mi Sistema Solar"
-  },
-  "natural-selection": {
-    "es": "Selección Natural"
-  },
-  "number-compare": {
-    "es": "Comparar Números"
-  },
-  "number-line-distance": {
-    "es": "Recta Numérica: Distancia"
-  },
-  "number-pairs": {
-    "es": "Pares de Números"
-  },
-  "number-play": {
-    "_why": "Number Play 를 '게임 횟수'로 옮겨 놓았습니다. 수를 세고 놀아 보는 실험입니다.",
-    "ko": "수 놀이",
-    "es": "Juego de Números"
-  },
-  "ph-scale": {
-    "es": "Escala de pH"
-  },
-  "projectile-data-lab": {
-    "es": "Laboratorio de Datos de Proyectiles"
-  },
-  "projectile-motion": {
-    "es": "Movimiento de un Proyectil"
-  },
-  "proportion-playground": {
-    "es": "Pista de juego de proporciones"
-  },
-  "quadrilateral": {
-    "es": "Cuadrilátero"
-  },
-  "quantum-coin-toss": {
-    "es": "Lanzamiento de Moneda Cuántica"
-  },
-  "quantum-measurement": {
-    "_why": "sims.json 에 '평균 분극 표현' 으로 들어 있습니다. 원제는 Quantum Measurement 입니다.",
-    "ko": "양자 측정",
-    "es": "Medición Cuántica"
-  },
-  "ratio-and-proportion": {
-    "_why": "'비울과 비' — '비율'의 오타입니다.",
-    "ko": "비와 비율",
-    "es": "Razón y Proporción"
-  },
-  "reactants-products-and-leftovers": {
-    "es": "Reactivos, productos y excedentes"
-  },
-  "rutherford-scattering": {
-    "es": "Dispersión de Rutherford"
-  },
-  "states-of-matter": {
-    "es": "Estados de la materia"
-  },
-  "unit-rates": {
-    "_why": "Unit Rates 가 그냥 '비율'로 되어 있어 같은 코스의 '비율 놀이터'·'비와 비율'과 구별되지 않습니다.",
-    "ko": "단위 비율",
-    "es": "Razón unitaria"
-  },
-  "vector-addition": {
-    "es": "Adición de Vectores"
-  },
-  "wave-on-a-string": {
-    "es": "Onda en una cuerda"
-  }
+ "_note": "시뮬레이션 제목을 언어별로 덮어씁니다. repo → { 언어: 제목 }. ko 는 PhET 한국어 번역이 잘못 잡은 것을 바로잡는 자리이고(_why 참고), es 는 화면에 실제로 찍히는 스페인어 제목입니다 — sims.json 에는 스페인어 제목이 없어서 여기에 둡니다. 여기 없는 것은 영어 제목을 씁니다. ja 는 실제로 화면에 찍히는 일본어 제목입니다 — sims.json 에 일본어 제목이 없어 여기에 둡니다. 영어로 열리는 18종은 넣지 않았습니다(화면이 영어라 영어 제목이 맞습니다).",
+ "acid-base-solutions": {
+  "ja": "酸・塩基の水溶液と電離",
+  "es": "Soluciones Ácido-Base"
+ },
+ "balancing-chemical-equations": {
+  "ja": "化学反応式",
+  "es": "Balanceo de Ecuaciones Químicas"
+ },
+ "balloons-and-static-electricity": {
+  "ja": "風船と静電気",
+  "es": "Globos y electricidad estática"
+ },
+ "beers-law-lab": {
+  "ja": "ベールの法則実験室",
+  "es": "Lab de la ley de Beer"
+ },
+ "blackbody-spectrum": {
+  "ja": "黒体スペクトル",
+  "es": "Espectro de radiación del Cuerpo Negro"
+ },
+ "build-a-fraction": {
+  "ja": "分数の計算",
+  "es": "Construye una fracción"
+ },
+ "build-a-nucleus": {
+  "ja": "原子核を作ろう",
+  "es": "Construye un Núcleo"
+ },
+ "build-an-atom": {
+  "ja": "原子の生成",
+  "es": "Construye un Átomo"
+ },
+ "calculus-grapher": {
+  "es": "Graficador para Cálculo"
+ },
+ "center-and-variability": {
+  "ja": "代表値と散らばり",
+  "es": "Centro y Variabilidad"
+ },
+ "charges-and-fields": {
+  "ja": "電荷と電場",
+  "es": "Cargas y campos"
+ },
+ "coulombs-law": {
+  "ja": "クーロンの法則",
+  "es": "Ley de Coulomb"
+ },
+ "energy-skate-park": {
+  "ja": "エネルギースケートパーク",
+  "es": "Energía en la pista de patinaje"
+ },
+ "equality-explorer": {
+  "ja": "つり合いを作ろう",
+  "es": "Explorador de Igualdades"
+ },
+ "faradays-electromagnetic-lab": {
+  "es": "Laboratorio Electromagnético de Faraday"
+ },
+ "fourier-making-waves": {
+  "_why": "'기호' 로 되어 있습니다. 원제는 Fourier: Making Waves 입니다.",
+  "ko": "푸리에: 파동 만들기",
+  "es": "Fourier: Creando Ondas"
+ },
+ "fraction-matcher": {
+  "ja": "分数を作ろう",
+  "es": "Parejas de Fracciones"
+ },
+ "fractions-equality": {
+  "ja": "分数：等式",
+  "es": "Fracciones: Igualdades"
+ },
+ "fractions-intro": {
+  "ja": "分数：入門",
+  "es": "Fracciones: Intro"
+ },
+ "fractions-mixed-numbers": {
+  "ja": "分数：帯分数",
+  "es": "Fracciones: números mixtos"
+ },
+ "function-builder": {
+  "ja": "マジックスコープ",
+  "es": "Generador de Funciones"
+ },
+ "gas-properties": {
+  "_why": "sims.json 에 '불변 상태' 로 들어 있습니다 — 실험 안의 조작 이름입니다. 제목은 '기체의 성질' 입니다.",
+  "ko": "기체의 성질",
+  "ja": "気体の性質",
+  "es": "Propiedades de los Gases"
+ },
+ "geometric-optics": {
+  "ja": "幾何光学",
+  "es": "Óptica Geométrica"
+ },
+ "graphing-lines": {
+  "ja": "一次関数のグラフ",
+  "es": "Graficando Rectas"
+ },
+ "graphing-quadratics": {
+  "ja": "二次方程式のグラフ",
+  "es": "Graficando Cuadráticas"
+ },
+ "graphing-slope-intercept": {
+  "ja": "一次関数の傾きと切片",
+  "es": "Graficando Rectas Pendiente-Intersección"
+ },
+ "gravity-and-orbits": {
+  "ja": "重力と軌道",
+  "es": "Gravedad y Órbitas"
+ },
+ "greenhouse-effect": {
+  "_why": "sims.json 에 '에너지' 로 들어 있습니다. 실험 안에서는 '온실 효과' 로 나옵니다.",
+  "ko": "온실 효과",
+  "ja": "温室効果",
+  "es": "Efecto Invernadero"
+ },
+ "hookes-law": {
+  "ja": "フックの法則",
+  "es": "Ley de Hooke"
+ },
+ "keplers-laws": {
+  "_why": "sims.json 에 '오비탈 추가 데이터' 로 들어 있습니다. 실험 안에서는 '케플러의 법칙' 으로 나옵니다.",
+  "ko": "케플러의 법칙",
+  "es": "Leyes de Kepler"
+ },
+ "masses-and-springs": {
+  "ja": "おもりとばね",
+  "es": "Masas y Resortes"
+ },
+ "mean-share-and-balance": {
+  "es": "Media: Distribuye y Equilibra"
+ },
+ "membrane-transport": {
+  "es": "Transporte de membrana"
+ },
+ "models-of-the-hydrogen-atom": {
+  "es": "Modelos del Átomo de Hidrógeno"
+ },
+ "molecule-polarity": {
+  "ja": "分子の分極",
+  "es": "Polaridad de la Molécula"
+ },
+ "molecule-shapes": {
+  "ja": "分子の形",
+  "es": "Forma de la Molécula"
+ },
+ "my-solar-system": {
+  "_why": "sims.json 에 '단위 안내' 로 들어 있습니다. 실험 안에서는 '우리의 태양계' 로 나옵니다.",
+  "ko": "우리의 태양계",
+  "es": "Mi Sistema Solar"
+ },
+ "natural-selection": {
+  "ja": "自然選択",
+  "es": "Selección Natural"
+ },
+ "number-compare": {
+  "es": "Comparar Números"
+ },
+ "number-line-distance": {
+  "ja": "数直線：距離",
+  "es": "Recta Numérica: Distancia"
+ },
+ "number-pairs": {
+  "es": "Pares de Números"
+ },
+ "number-play": {
+  "_why": "Number Play 를 '게임 횟수'로 옮겨 놓았습니다. 수를 세고 놀아 보는 실험입니다.",
+  "ko": "수 놀이",
+  "ja": "かずあそび",
+  "es": "Juego de Números"
+ },
+ "ph-scale": {
+  "ja": "pHの測定",
+  "es": "Escala de pH"
+ },
+ "projectile-data-lab": {
+  "es": "Laboratorio de Datos de Proyectiles"
+ },
+ "projectile-motion": {
+  "ja": "放物運動",
+  "es": "Movimiento de un Proyectil"
+ },
+ "proportion-playground": {
+  "ja": "数と割合",
+  "es": "Pista de juego de proporciones"
+ },
+ "quadrilateral": {
+  "es": "Cuadrilátero"
+ },
+ "quantum-coin-toss": {
+  "es": "Lanzamiento de Moneda Cuántica"
+ },
+ "quantum-measurement": {
+  "_why": "sims.json 에 '평균 분극 표현' 으로 들어 있습니다. 원제는 Quantum Measurement 입니다.",
+  "ko": "양자 측정",
+  "es": "Medición Cuántica"
+ },
+ "ratio-and-proportion": {
+  "_why": "'비울과 비' — '비율'의 오타입니다.",
+  "ko": "비와 비율",
+  "ja": "比と割合",
+  "es": "Razón y Proporción"
+ },
+ "reactants-products-and-leftovers": {
+  "ja": "化学反応",
+  "es": "Reactivos, productos y excedentes"
+ },
+ "rutherford-scattering": {
+  "ja": "ラザフォード散乱",
+  "es": "Dispersión de Rutherford"
+ },
+ "states-of-matter": {
+  "ja": "物質の三態",
+  "es": "Estados de la materia"
+ },
+ "unit-rates": {
+  "_why": "Unit Rates 가 그냥 '비율'로 되어 있어 같은 코스의 '비율 놀이터'·'비와 비율'과 구별되지 않습니다.",
+  "ko": "단위 비율",
+  "ja": "単位当たりの割合",
+  "es": "Razón unitaria"
+ },
+ "vector-addition": {
+  "ja": "ベクトル加算",
+  "es": "Adición de Vectores"
+ },
+ "wave-on-a-string": {
+  "ja": "弦を伝わる波",
+  "es": "Onda en una cuerda"
+ }
 }
