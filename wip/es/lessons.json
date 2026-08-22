@@ -720,5 +720,266 @@
     "right": 1
    }
   ]
+ },
+ "light-1": {
+  "course": "light",
+  "sim": "geometric-optics",
+  "screens": null,
+  "title": "Tapa media lente, ¿se va media imagen?",
+  "lead": "Una imagen no se forma en un punto de la lente sino con la lente entera a la vez. Tapa la mitad y la imagen sigue completa.",
+  "hook": "¿Has proyectado alguna vez con una lupa lo que se ve por una ventana sobre una pared? Se forma una imagen del revés. ¿Y qué pasa si ahora <b>tapas con la mano la mitad de abajo de la lente</b>? Da la sensación de que debería recortarse la parte de abajo de la imagen. No es así. Acierta esta respuesta y tendrás entero <b>cómo se forma una imagen</b>.",
+  "predict": {
+   "q": "Formas una imagen con una lente convexa y luego <b>tapas media lente</b>. La imagen:",
+   "opts": [
+    "Pierde la mitad de sí misma",
+    "Solo <b>se oscurece</b> por completo, conservando su forma",
+    "Se encoge a la mitad de su tamaño",
+    "Desaparece"
+   ]
+  },
+  "missions": [
+   "Empieza en la pantalla <b>Lente</b>. El objeto está a la izquierda, la lente en el centro y la imagen a la derecha.",
+   "En las casillas de la derecha activa <b>Puntos Focales</b> y <b>Etiquetas</b>. Aparecen los puntos focales a un lado y otro de la lente.",
+   "Pon <b>Rayos</b>, abajo a la izquierda, en <b>Principales</b>. Se dibujan los <b>tres rayos representativos</b> que salen del objeto.",
+   "Mira cómo los tres rayos atraviesan la lente y <b>se juntan en un punto</b>. Ese punto es la imagen.",
+   "Ahora cambia <b>Rayos</b> a <b>Varios</b>. Hay muchísimos más rayos. Se ve la luz saliendo <b>en todas direcciones</b> desde un solo punto del objeto.",
+   "¿Se juntan todos esos rayos <b>exactamente en el mismo punto</b>? Eso lleva directo a la respuesta de ②.",
+   "Arrastra el objeto <b>muy a la izquierda</b>. ¿Adónde va la imagen y qué le pasa a su tamaño?",
+   "Ahora mete el objeto <b>dentro del punto focal (F)</b>. La imagen se va y aparece una <b>Imagen Virtual</b>. Marca la casilla para verla.",
+   "Cambia el mando de <b>Distancia Focal</b>. Cuanto más gruesa la lente, más cerca el punto focal.",
+   "Cambia el objeto a <b>Luz</b> y arrastra la <b>Pantalla</b> hasta donde se forma la imagen.",
+   "Con el botón de la casa visita la pantalla <b>Espejo</b> y mira si un espejo cóncavo hace lo mismo."
+  ],
+  "record": "Cuando pasaste Rayos a «Varios», ¿dónde se juntaron los rayos? ¿Y qué pasó al meter el objeto dentro del punto focal?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es que <strong>solo se oscurece por completo, conservando su forma</strong>.</p><p>Lo que viste en <strong>Varios</strong> es la respuesta. La luz de un solo punto del objeto <strong>se abre en todas direcciones</strong> y atraviesa <strong>todas las partes</strong> de la lente. Y la lente <strong>la devuelve toda al mismo punto único</strong>.</p><p>Así que tapa media lente y la imagen se sigue formando en ese mismo punto, <strong>con la luz que pasa por la otra mitad</strong>. Llega la mitad de luz, así que sale <strong>más oscura</strong>: eso es todo.</p><p>A uno le enseñan a encontrar la imagen dibujando los tres rayos <strong>Principales</strong>. Eso es <strong>un truco para que el dibujo sea fácil</strong>, no la afirmación de que solo existan tres rayos. Malinterpretarlo es lo que hace pensar que tapar una lente recorta la imagen.</p><p>Merece la pena recoger también qué le hace a la imagen la posición del objeto.</p><ul><li><strong>Más allá del punto focal</strong>: se forma al otro lado una <strong>imagen real, del revés</strong>. Se puede proyectar sobre una pantalla.</li><li><strong>Dentro del punto focal</strong>: los rayos no se juntan nunca; se abren. Prolongados hacia atrás parece que se encuentran, y eso es la <strong>imagen virtual</strong>. Es lo que estás mirando cuando una lupa agranda un texto.</li></ul><p>Una imagen virtual <strong>no se puede proyectar sobre una pantalla.</strong> Ahí no se junta luz de verdad; solo <strong>parece</strong> que sí.</p><p>Todo esto ha tratado la luz como <strong>líneas que van rectas</strong>. Las lentes, las gafas y las cámaras se explican con ese dibujo. Pero algunas cosas no, y las tres lecciones que quedan van de esas.</p>"
+  },
+  "real": "Las cámaras, los ojos y las gafas funcionan así. Que tu cristalino engorde para mirar de cerca es una manera de acortar la distancia focal, y las gafas de miopía son cóncavas para echar el foco hacia atrás. Es también por lo que los telescopios se construyen con <b>lentes grandes</b> para ver estrellas débiles: más grande recoge más luz, así que la imagen sale más brillante.",
+  "quiz": [
+   {
+    "q": "¿Por qué dibujamos solo <b>tres rayos representativos</b> para encontrar una imagen?",
+    "opts": [
+     "Porque solo tres rayos atraviesan de verdad la lente",
+     "Porque es un <b>truco</b> para que el dibujo sea fácil",
+     "Porque una lente tiene tres partes"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Pon el objeto <b>dentro del punto focal</b> y:",
+    "opts": [
+     "Se forma una imagen real del revés",
+     "Se ve una imagen virtual derecha",
+     "No se ve nada"
+    ],
+    "right": 1
+   },
+   {
+    "q": "¿Se puede proyectar una <b>imagen virtual</b> sobre una pantalla?",
+    "opts": [
+     "Sí",
+     "No: ahí no se junta luz de verdad",
+     "Depende de la lente"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "light-2": {
+  "course": "light",
+  "sim": "blackbody-spectrum",
+  "screens": null,
+  "title": "Lo caliente cambia de color",
+  "lead": "Calienta hierro y se pone rojo, y luego blanco. Así leemos la temperatura de una estrella a partir de su color.",
+  "hook": "La lección 1 trató la luz solo como <b>líneas que van rectas</b>. Esta vez miras <b>de dónde sale la luz</b>. Todo lo que tiene temperatura emite luz — las personas, las piedras, todo — aunque casi siempre como infrarrojo que no puedes ver. Ponlo bastante caliente y <b>empieza a verse</b>; ponlo más caliente y <b>cambia el color.</b> ¿Cuál está más caliente, el rojo o el azul?",
+  "predict": {
+   "q": "Pon un objeto <b>más caliente</b> y la longitud de onda que más emite:",
+   "opts": [
+    "Se alarga, hacia el rojo",
+    "Se acorta, hacia el azul",
+    "No se mueve; solo sube el brillo",
+    "No tiene nada que ver con la temperatura"
+   ]
+  },
+  "missions": [
+   "El mando de <b>Temperatura del Cuerpo Negro</b> de la derecha es el único control importante de esta simulación.",
+   "Pon la temperatura baja, alrededor de <b>3000 K</b>. El pico de la curva queda allá en el <b>Infrarrojo</b>.",
+   "Sube la temperatura y mira <b>hacia dónde se mueve el pico</b>. Esa es la respuesta a ②.",
+   "Encuentra la temperatura a la que el pico entra en la banda <b>Visible</b>.",
+   "Activa <b>Intensidad</b> a la derecha para tener la intensidad total como número. <b>Dobla</b> la temperatura: ¿cuántas veces mayor sale la intensidad?",
+   "El área bajo la curva es la intensidad. Sube la temperatura solo un poco y mira el <b>salto</b> del área.",
+   "Pulsa por turnos los botones de <b>Tierra · Bombilla · Sol · Sirio A</b> de la derecha. Anota la temperatura y el color de cada uno.",
+   "¿Dónde está el pico de la <b>Tierra</b>? ¿Llega a entrar en la banda visible?",
+   "¿Dónde está el pico del <b>Sol</b>? Compáralo con el intervalo que ven tus ojos.",
+   "Fíjate en el pequeño <b>cuadrado de color</b> de arriba a la derecha de la pantalla. Te dice <b>de qué color</b> se ve un objeto a esa temperatura.",
+   "Activa <b>valores del gràfico</b> y <b>Etiquetas</b> y lee exactamente la longitud de onda del pico."
+  ],
+  "record": "Anota la longitud de onda del pico y el color del objeto a 3000 K, 5800 K y 10000 K.",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es que <strong>se acorta, hacia el azul</strong>. Cuanto más caliente, más se mueve el pico hacia las <strong>longitudes de onda cortas</strong>.</p><p>Así que el color va en este orden.</p><ul><li><strong>Temperatura baja</strong>: el pico está en el infrarrojo y <strong>no lo ves.</strong> Los cuerpos humanos y la Tierra están aquí.</li><li><strong>Más caliente</strong>: el pico entra en el visible y brilla <strong>rojo</strong>.</li><li><strong>Todavía más caliente</strong>: <strong>naranja → amarillo → blanco</strong>. El Sol (5800 K) anda por aquí.</li><li><strong>Muy caliente</strong>: se vuelve <strong>azul</strong>. Estrellas como Sirio A.</li></ul><p>Así que <strong>una estrella azul está mucho más caliente que una roja.</strong> Al revés que en la vida diaria, donde el rojo del grifo significa caliente.</p><p>Lo que viste en <strong>Intensidad</strong> también sorprende. Doblar la temperatura no dobla la intensidad: la hace <strong>dieciséis veces</strong> mayor, porque va con la cuarta potencia. Un poco más de calor da muchísima más luz.</p><p>Aquí importa una cosa más. <strong>El pico se mueve pero la curva es siempre continua.</strong> Fija la temperatura y cuánto sale en cada longitud de onda queda <strong>completamente decidido</strong>. Es justo lo contrario del espectro del hidrógeno del curso 05, lección 3, que era <strong>un puñado de rayas</strong>.</p><p>La diferencia importa. <strong>Un átomo suelto</strong> emite solo en longitudes de onda fijas, mientras que <strong>un pedazo de materia caliente</strong> emite en todas las longitudes de onda de forma continua. Por eso la luz de una estrella muestra <strong>rayas oscuras sobre un arcoíris continuo</strong>: la luz continua de la superficie de la estrella, con los átomos de fuera comiéndose ciertas longitudes de onda.</p><p>Y el intento de explicar esta curva lisa <strong>tiró abajo la física de hace un siglo.</strong> La teoría de entonces decía que la intensidad debía dispararse al <strong>infinito</strong> en las longitudes de onda cortas. Para salir del apuro, Planck metió a la fuerza la suposición de que <strong>«la energía solo se mueve a trozos»</strong>, y ese fue el arranque de lo cuántico. La lección siguiente es esa historia.</p>"
+  },
+  "real": "Leer la temperatura de una estrella por su color es astronomía básica. Las cámaras de infrarrojos que encuentran personas a oscuras, la termografía que enseña lo bien aislado que está un edificio, un herrero juzgando el calor por el color del hierro, el «temperatura de color 2700 K» de la caja de una bombilla: todo se apoya en esta curva.",
+  "quiz": [
+   {
+    "q": "¿Cuál está más caliente, una <b>estrella azul</b> o una <b>estrella roja</b>?",
+    "opts": [
+     "La azul",
+     "La roja",
+     "Igual"
+    ],
+    "right": 0
+   },
+   {
+    "q": "<b>Dobla</b> la temperatura y la intensidad total se va a:",
+    "opts": [
+     "El doble",
+     "Cuatro veces",
+     "Dieciséis veces"
+    ],
+    "right": 2
+   },
+   {
+    "q": "¿Por qué no puedes ver la luz que emite un cuerpo humano?",
+    "opts": [
+     "No emite ninguna",
+     "Su pico está en el infrarrojo",
+     "Es demasiado débil"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "light-3": {
+  "course": "light",
+  "sim": "photoelectric-effect",
+  "screens": null,
+  "title": "Hay cosas que el brillo no compra",
+  "lead": "Ilumina con luz roja todo lo fuerte que quieras y no sale ni un electrón. Una luz violeta flojísima y sale uno enseguida.",
+  "hook": "Al final de la lección 2, Planck metió a la fuerza la suposición de que <b>«la energía solo se mueve a trozos»</b>. Era un apaño. Y cinco años después apareció <b>la prueba de que el apaño era cierto</b>. Ilumina un metal y salen electrones disparados, pero de una manera que <b>no hay forma de explicar si la luz es una onda</b>.",
+  "predict": {
+   "q": "Iluminas un metal con <b>luz roja</b> y no sale ningún electrón. Subes la <b>intensidad 100 veces</b> y:",
+   "opts": [
+    "Empiezan a salir electrones",
+    "Sigue sin salir <b>ni uno</b>",
+    "Ninguno al principio, y algunos al rato",
+    "El metal se funde"
+   ]
+  },
+  "missions": [
+   "<b>Esta simulación abre en inglés</b>, así que los nombres de abajo son los que verás en pantalla. Es la pantalla <b>Intro</b>. El selector de material está a la izquierda — un menú desplegable sin rótulo encima, con el nombre del metal — y los mandos de <b>Intensity</b> (intensidad) y <b>Wavelength</b> (longitud de onda) están arriba.",
+   "Pon el metal en <b>Sodium</b> (sodio) y lleva <b>Wavelength</b> a una longitud de onda larga, hacia <b>IR</b>.",
+   "Sube <b>Intensity</b> al <b>máximo</b>. ¿Se mueve algo el valor de <b>Current</b> (corriente) de la derecha? Esa es la respuesta a ②.",
+   "Dejando la intensidad al máximo, baja despacio <b>Wavelength</b> hacia <b>UV</b>. ¿En qué punto empiezan <b>de golpe</b> a salir electrones?",
+   "Anota la longitud de onda de ese punto. Es el <b>umbral</b> de este metal.",
+   "Justo pasado el umbral, baja <b>Intensity</b>. Aunque sea muy débil, ¿siguen saliendo electrones <b>igualmente</b>?",
+   "Activa <b>Show Electrons</b> (mostrar electrones) y míralos salir disparados.",
+   "Cambia el metal a <b>Copper</b> (cobre) o <b>Platinum</b> (platino). ¿Se mueve la longitud de onda umbral?",
+   "Con el botón de la casa ve a la pantalla <b>Energy</b>, donde puedes ver <b>con cuánta energía</b> salen los electrones.",
+   "¿Una longitud de onda más corta da más energía a los electrones? ¿Y subir la <b>Intensity</b>?",
+   "En la pantalla <b>Experiment</b>, mide el umbral de un metal <b>Mystery</b> (misterioso) y averigua cuál es."
+  ],
+  "record": "Anota la longitud de onda a la que empezaron a salir electrones del sodio. Y qué cambió al subir la intensidad frente a qué cambió al acortar la longitud de onda.",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es que <strong>sigue sin salir ni uno</strong>. El brillo no cambia absolutamente nada.</p><p>Si tratas la luz como <strong>onda</strong>, esto no tiene sentido. Una onda entrega más energía cuanto más fuerte golpea, así que incluso una luz débil debería permitir a un electrón <strong>ahorrar energía suficiente con el tiempo</strong> y escapar. En realidad, <strong>por brillante que sea y por mucho rato que la dejes</strong>, no sale nada.</p><p>En vez de eso va así.</p><ul><li><strong>Longitud de onda mayor que el umbral</strong>: <strong>no sale ni uno</strong>, sea cual sea la intensidad.</li><li><strong>Longitud de onda menor que el umbral</strong>: salen <strong>al momento</strong>, incluso con luz muy débil.</li><li><strong>Sube la intensidad</strong>: sube el <strong>número</strong> de electrones. Su energía no.</li><li><strong>Acorta más la longitud de onda</strong>: sube la <strong>energía</strong> de cada electrón.</li></ul><p>La explicación de Einstein: <strong>la luz es una granizada de granos (fotones)</strong>, y la energía que lleva un grano la <strong>fija la longitud de onda.</strong> Para arrancar un electrón, <strong>un solo grano</strong> tiene que llevar energía suficiente. Los granos flojos no sirven por muchos que lances.</p><p>Piensa en lanzar pelotas. Para tirar un ladrillo, una <strong>pelota de ping pong</strong> no vale. Ni cien, ni mil. <strong>Una pelota de béisbol</strong> lo tira al primer intento. La intensidad es <strong>el número de pelotas</strong>; la longitud de onda, <strong>el peso de cada pelota</strong>.</p><p>Habrás visto que <strong>cada metal tiene su propio umbral</strong>, porque cada uno agarra sus electrones con distinta fuerza. El sodio los sujeta lo bastante flojos para la luz visible; el platino agarra tan fuerte que hace falta ultravioleta.</p><p>Este experimento le dio a Einstein el Nobel: <strong>este</strong>, no la relatividad. Es el momento en que el apaño de la lección 2 resultó ser <strong>real</strong>.</p>"
+  },
+  "real": "La energía solar es exactamente este efecto, y por eso las longitudes de onda que puede aprovechar un panel deciden su rendimiento. Los sensores de puertas automáticas, el sensor de imagen de una cámara digital, las gafas de visión nocturna y la razón de que el ultravioleta dañe la piel y el infrarrojo no: todo sale de «la energía de un grano».",
+  "quiz": [
+   {
+    "q": "Subir la <b>intensidad</b> de la luz cambia:",
+    "opts": [
+     "La energía de cada electrón",
+     "El número de electrones que salen",
+     "La longitud de onda umbral"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Acortar la <b>longitud de onda</b> de la luz:",
+    "opts": [
+     "Sube la energía de cada electrón",
+     "Solo sube el número de electrones",
+     "No cambia nada"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿Por qué no se puede explicar esto con la luz como <b>onda</b> solamente?",
+    "opts": [
+     "Porque una onda debería funcionar si la dejas el rato suficiente, por débil que sea",
+     "Porque una onda no puede atravesar el metal",
+     "Porque una onda no tiene energía"
+    ],
+    "right": 0
+   }
+  ]
+ },
+ "light-4": {
+  "course": "light",
+  "sim": "quantum-wave-interference",
+  "screens": null,
+  "title": "Mándalos de uno en uno y el patrón aparece igual",
+  "lead": "Lanzas granos uno a uno y se acumula un patrón de ondas. Un grano pasó por las dos rendijas a la vez.",
+  "hook": "La lección 3 te dio la prueba de que la luz es un <b>grano</b>. Pero hace mucho que hay también pruebas de que la luz es una <b>onda</b>: la luz a través de dos rendijas se solapa y hace <b>franjas</b>. Bastante natural, para una onda. ¿Y qué pasa si lanzas los granos <b>de uno en uno</b>? Un grano solo puede pasar por una rendija, así que no debería salir patrón. Esta simulación te enseña la respuesta.",
+  "predict": {
+   "q": "Disparas luz <b>un fotón cada vez</b>, muy despacio, a través de dos rendijas. Al cabo de mucho rato, la pantalla de detrás muestra:",
+   "opts": [
+    "Solo <b>dos bandas</b>, en la posición de las dos rendijas",
+    "Una salpicadura uniforme",
+    "<b>Franjas</b>: el mismo patrón que da una onda",
+    "Nada en absoluto"
+   ]
+  },
+  "missions": [
+   "<b>Esta simulación también abre en inglés</b>, así que los nombres de abajo son los de pantalla. Es la pantalla <b>Experiment</b>. La fuente está a la izquierda, una <b>barrera con rendijas</b> en el centro y una <b>pantalla</b> a la derecha.",
+   "Comprueba que el selector de partícula de abajo a la izquierda está en <b>Photons</b> (fotones) — los botones no llevan rótulo propio — y pon <b>Source Intensity</b> (intensidad de la fuente) a la izquierda en <b>Max</b>.",
+   "Deja <b>Slit Configuration</b> (configuración de rendijas) en <b>Both Open</b> (las dos abiertas). Aparecen <b>franjas</b> en la pantalla.",
+   "Ahora pasa a <b>Cover Left</b> (tapar la izquierda). Las franjas se van y queda un solo <b>borrón ancho</b>.",
+   "Prueba también <b>Cover Right</b>: otro borrón único. ¿Dan las franjas los dos borrones <b>simplemente sumados</b>?",
+   "Vuelve a <b>Both Open</b> y baja <b>Source Intensity</b> <b>muchísimo</b>. Ahora los fotones van de uno en uno.",
+   "Cambia el modo de detección a <b>Hits</b> (impactos). Se marca <b>un solo punto</b> allí donde cae un grano.",
+   "Los primeros caen <b>en cualquier sitio</b>. Déjalo corriendo <b>mucho rato</b>. ¿Qué aparece según se acumulan los puntos? Esa es la respuesta a ②.",
+   "Cambia la <b>Slit Separation</b> (separación de las rendijas). ¿Qué le pasa al espaciado del patrón?",
+   "Cambia la <b>Wavelength</b> (longitud de onda). ¿Aprietan más las franjas las longitudes de onda cortas?",
+   "Cambia el selector de partícula de abajo a la izquierda a <b>Electrons</b> (electrones) o <b>Helium Atoms</b> (átomos de helio). La materia hace el mismo patrón.",
+   "Activa <b>Detector Left</b>. <b>Si compruebas por qué rendija pasó</b>, ¿qué le ocurre al patrón?"
+  ],
+  "record": "¿Qué apareció según se acumulaban los puntos cuando mandaste fotones de uno en uno? ¿Y qué pasó cuando miraste por qué rendija pasaban?",
+  "explain": {
+   "right": 2,
+   "body": "<p>La respuesta es que <strong>se acumulan franjas</strong>. Mandados de uno en uno, sale <strong>exactamente el patrón</strong> que da una onda.</p><p>Dejemos claro por qué eso es extraño.</p><ul><li>Cada punto cae <strong>en un solo sitio</strong>. Es un grano, de acuerdo.</li><li>Pero <strong>dónde</strong> cae depende de si <strong>las dos rendijas están abiertas</strong>.</li><li>Tapa una y el patrón se va, así que por lo visto el grano <strong>sabe que la otra rendija está abierta</strong>.</li></ul><p>No hay manera de decirlo salvo que un grano pasó <strong>por las dos rendijas a la vez</strong>. Y aun así llega a <strong>un único punto</strong>.</p><p>Acuérdate de que <strong>sumar sin más</strong> los dos borrones de rendija tapada no daba las franjas. Así que no es «la mitad por aquí, la mitad por allá». Algo se está <strong>solapando, cancelando y reforzando</strong>.</p><p>Si probaste el <strong>Detector</strong>, es más extraño todavía. <strong>En el momento en que compruebas por qué rendija pasó, el patrón se esfuma.</strong> Lo único que hiciste fue añadir un aparato, y el resultado cambió. No mires y va por las dos; mira y va por una.</p><p>Que los <strong>electrones</strong> y los <strong>átomos de helio</strong> den el mismo patrón también importa. No es solo la luz la que es rara: <strong>la materia es igual</strong>. Los átomos pueden comportarse como ondas.</p><p>Así que la pregunta con la que abrió este curso — ¿la luz es grano u onda? — tiene una respuesta que no es <strong>«las dos cosas»</strong> ni <strong>«una de las dos»</strong>. Es <strong>algo que no son ni los granos ni las ondas que conocemos</strong>, y que parece grano u onda según cómo lo midas.</p><p>Por eso este cuenta como el experimento más famoso de la física. No te da una respuesta: te enseña que <strong>el mundo no tiene la forma que dice nuestra intuición</strong>. El curso 06 coge la historia desde aquí.</p>"
+  },
+  "real": "Los microscopios electrónicos usan la naturaleza ondulatoria de los electrones: la longitud de onda es mucho más corta que la de la luz, así que ven cosas mucho más pequeñas. Los dispositivos semiconductores, la criptografía cuántica y los ordenadores cuánticos se apoyan en esta propiedad. Los semiconductores que usamos a diario no se podrían diseñar sin esta física «rara».",
+  "quiz": [
+   {
+    "q": "Manda fotones <b>de uno en uno</b> y la pantalla muestra:",
+    "opts": [
+     "Un punto cada vez, y franjas una vez acumulados",
+     "El patrón de franjas entero desde el principio",
+     "Nada en absoluto"
+    ],
+    "right": 0
+   },
+   {
+    "q": "<b>Tapa una rendija</b> y el patrón:",
+    "opts": [
+     "Se queda igual",
+     "Se va y queda un borrón",
+     "Se hace el doble de fuerte"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Haz el mismo experimento con <b>electrones</b> y:",
+    "opts": [
+     "No se forma ningún patrón",
+     "Aparecen las mismas franjas que con la luz",
+     "Los electrones rebotan"
+    ],
+    "right": 1
+   }
+  ]
  }
 }

@@ -886,5 +886,288 @@
    "Esta simulación se hizo para secundaria y universidad. Esta lección solo usa la pantalla <b>Discreto</b>.",
    "Si la fórmula se te hace cuesta arriba, deja <b>Ecuación</b> en <b>Oculto</b>. Con los dibujos basta."
   ]
+ },
+ "geometric-optics": {
+  "summary": "Mira <b>cómo se forma una imagen</b> con lentes y espejos. Arrastra el objeto o la lente y los rayos y la imagen la siguen al instante.",
+  "screens": [
+   {
+    "name": "Lente",
+    "what": "Donde empieza esta lección. Lentes convexas y cóncavas."
+   },
+   {
+    "name": "Espejo",
+    "what": "Espejos cóncavos, convexos y planos. Casi las mismas reglas que las lentes."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El objeto (izquierda, arrástralo)",
+    "desc": "Elige entre un lápiz, un pingüino, una estrella, una flecha y una luz, y arrástralo para cambiar su distancia a la lente.",
+    "tip": "Lo principal que se hace aquí. Arrástralo despacio <b>de fuera del punto focal (F) a dentro</b>. Dónde la imagen real deja paso a la virtual es el corazón de esta lección."
+   },
+   {
+    "name": "Rayos (abajo a la izquierda) — Marginales · Principales · Varios · Ninguno",
+    "desc": "Elige qué rayos dibujar. <b>Principales</b> son los tres rayos representativos que se usan para dibujar; <b>Varios</b> es la luz real abriéndose en todas direcciones.",
+    "tip": "El interruptor más importante de esta lección. Ve de <b>Principales a Varios</b>. En cuanto sabes que no hay solo tres rayos, la idea de que «tapar una lente recorta la imagen» se cae sola."
+   },
+   {
+    "name": "Distancia Focal · Radio de Curvatura · Índice de Refracción · Diámetro (abajo)",
+    "desc": "Fijan las propiedades de la lente. El <b>Diámetro</b> es lo grande que es la lente.",
+    "tip": "Prueba a encoger el <b>Diámetro</b>. La imagen se queda igual pero <b>se oscurece</b>, lo que significa que una lente más grande recoge más luz."
+   },
+   {
+    "name": "Puntos Focales · Puntos 2F (casillas de la derecha)",
+    "desc": "Marcan los puntos focales a un lado y otro de la lente y los puntos al doble de esa distancia.",
+    "tip": "<b>Déjalos activados.</b> Dónde pones el objeto solo significa algo respecto del punto focal, así que con el foco escondido no puedes juzgar nada."
+   },
+   {
+    "name": "Imagen Virtual (casilla de la derecha)",
+    "desc": "Dibuja la imagen donde <b>parece</b> que se junta la luz sin que sea así.",
+    "tip": "Mete el objeto dentro del punto focal y márcala entonces. Esto es lo que estás mirando cuando una lupa agranda un texto."
+   },
+   {
+    "name": "Etiquetas · Segundo Punto · Guías (casillas de la derecha)",
+    "desc": "Añaden rótulos con los nombres, ponen un segundo punto en el objeto y dibujan líneas guía para la lente.",
+    "tip": "Merece la pena dejar <b>Etiquetas</b>. Evita que confundas la imagen real con la virtual."
+   },
+   {
+    "name": "Pantalla (cuando el objeto está puesto en Luz)",
+    "desc": "Arrástrala hasta donde se forma la imagen y la imagen se proyecta sobre ella.",
+    "tip": "Una imagen real <b>se ve</b> en la pantalla y una virtual <b>no.</b> Es la mejor manera de notar la diferencia con tus propias manos."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Lente</b> activa <b>Puntos Focales</b> y <b>Etiquetas</b>.",
+   "Pon <b>Rayos</b> en <b>Principales</b> y mira los tres rayos juntarse en un punto.",
+   "Cambia <b>Rayos</b> a <b>Varios</b> y mira la luz abrirse en todas direcciones.",
+   "Arrastra el objeto más cerca y más lejos y mira la posición y el tamaño de la imagen.",
+   "Mete el objeto <b>dentro del punto focal</b> y activa <b>Imagen Virtual</b>.",
+   "Encoge el <b>Diámetro</b> y mira cómo se oscurece la imagen.",
+   "En la pantalla <b>Espejo</b>, haz lo mismo con un espejo cóncavo."
+  ],
+  "gotchas": [
+   "Los tres rayos <b>Principales</b> son un truco para que el dibujo sea fácil. La luz real se parece más a lo que enseña <b>Varios</b>.",
+   "Una <b>imagen virtual</b> no se ve en una pantalla, porque ahí no se junta luz de verdad.",
+   "Tapa <b>parte</b> de la lente y la forma de la imagen no cambia. Solo se oscurece."
+  ]
+ },
+ "blackbody-spectrum": {
+  "summary": "Una simulación donde <b>un solo mando</b> es casi todo. Cambia la temperatura de un objeto y una curva dibuja <b>cuánta luz sale en cada longitud de onda</b>. Con una sola pantalla, la franja negra de abajo no lleva nombres de pantalla.",
+  "screens": [
+   {
+    "name": "(una sola pantalla)",
+    "what": "Esta simulación tiene una única pantalla. Cambia la temperatura y mira cómo se mueve la curva."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Temperatura del Cuerpo Negro (el mando vertical de la derecha)",
+    "desc": "Fija la temperatura del objeto. El único control importante de aquí.",
+    "tip": "Súbela <b>despacio</b> y mira hacia dónde se mueve el pico de la curva. Si la subes de golpe te pierdes el cambio."
+   },
+   {
+    "name": "La escala de longitudes de onda (eje horizontal)",
+    "desc": "Desde la izquierda va dividida por color en <b>Rayos X · Ultravioleta · Visible · Infrarrojo</b>.",
+    "tip": "Fíjate en <b>lo estrecha</b> que es la banda visible. Enseña de un vistazo que lo que ven nuestros ojos es una rebanada minúscula del total."
+   },
+   {
+    "name": "Botones de objetos reales (derecha) — Tierra · Bombilla · Sol · Sirio A",
+    "desc": "Cargan la temperatura de un objeto real.",
+    "tip": "Pulsa los cuatro por turnos y anota <b>la temperatura y dónde está el pico</b>. La Tierra tiene el pico en el infrarrojo, así que no la ves."
+   },
+   {
+    "name": "valores del gràfico · Etiquetas (casillas de la derecha)",
+    "desc": "Ponen valores sobre la curva y nombres en las bandas.",
+    "tip": "Actívalas cuando quieras leer <b>exactamente</b> la longitud de onda del pico."
+   },
+   {
+    "name": "Intensidad (casilla de la derecha)",
+    "desc": "Enseña la intensidad total como número. Es el área bajo la curva.",
+    "tip": "<b>Dobla</b> la temperatura y compara los valores. No el doble: <b>dieciséis veces</b>."
+   },
+   {
+    "name": "El cuadrado de color (arriba a la derecha)",
+    "desc": "Te dice <b>de qué color</b> se ve un objeto a esa temperatura.",
+    "tip": "La curva sola no te da la sensación. Mira este cuadradito a la vez y el «rojo → blanco → azul» entra al momento."
+   },
+   {
+    "name": "Las lecturas R · G · B (bajo la banda visible)",
+    "desc": "Enseñan cuánto sale de cada uno de los tres colores.",
+    "tip": "Cuando los tres salen <b>más o menos iguales</b>, el objeto se ve blanco. El Sol anda por ahí."
+   }
+  ],
+  "steps": [
+   "Baja la temperatura hasta unos <b>3000 K</b> y mira dónde está el pico.",
+   "Súbela despacio y mira hacia dónde va el pico.",
+   "Encuentra la temperatura que mete el pico en la banda <b>Visible</b>.",
+   "Activa <b>Intensidad</b>, dobla la temperatura y compara los valores.",
+   "Pulsa <b>Tierra · Bombilla · Sol · Sirio A</b> por turnos.",
+   "Comprueba el color de cada temperatura con el <b>cuadrado de color</b> de arriba a la derecha."
+  ],
+  "gotchas": [
+   "<b>El azul está más caliente que el rojo.</b> Al revés que el rojo y el azul de un grifo.",
+   "Dobla la temperatura y la intensidad se va a <b>dieciséis veces</b>. Va con la cuarta potencia.",
+   "A temperaturas bajas la curva parece <b>plana contra el suelo</b>. La escala vertical se reajusta sola; el valor no es 0.",
+   "La curva es <b>continua, sin cortes</b>, a diferencia del espectro del hidrógeno del curso 05, que eran unas pocas rayas sueltas.",
+   "Con una sola pantalla, la franja negra de abajo <b>no tiene botón de casa</b>.",
+   "La casilla se llama <b>valores del gràfico</b> en pantalla, con la tilde al revés en «gráfico». Es una errata de la traducción de PhET."
+  ]
+ },
+ "photoelectric-effect": {
+  "summary": "Esta simulación <b>solo aparece en inglés</b>, así que abajo están los nombres ingleses tal cual, con su significado al lado. Ilumina un metal y mira <b>si salen electrones</b>. Solo hay dos mandos: <b>Intensity</b> (intensidad) y <b>Wavelength</b> (longitud de onda).",
+  "screens": [
+   {
+    "name": "Intro",
+    "what": "Donde empieza esta lección. Elige un metal, ilumínalo y mira la corriente."
+   },
+   {
+    "name": "Experiment",
+    "what": "Mide el umbral de un metal <b>Mystery</b> (misterioso) desconocido y averigua cuál es."
+   },
+   {
+    "name": "Energy",
+    "what": "Enseña <b>con cuánta energía</b> salen los electrones."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Intensity (intensidad) — mando de arriba",
+    "desc": "Fija la <b>intensidad</b> de la luz. Se corresponde con el <b>número</b> de fotones.",
+    "tip": "Este es el mando que resuelve ② en esta lección. Comprueba con tus ojos que en una longitud de onda larga la corriente se queda en 0 incluso a intensidad <b>máxima</b>."
+   },
+   {
+    "name": "Wavelength (longitud de onda) — mando de arriba",
+    "desc": "Fija la <b>longitud de onda</b> de la luz. <b>UV</b> a la izquierda e <b>IR</b> a la derecha. Decide <b>la energía de un fotón</b>.",
+    "tip": "Fija la intensidad y baja <b>solo este</b>, despacio. El punto en que la corriente empieza <b>de golpe</b> a circular es el umbral de ese metal."
+   },
+   {
+    "name": "El selector de metal (izquierda) — un desplegable sin rótulo encima",
+    "desc": "Elige entre <b>Sodium</b> (sodio), <b>Copper</b> (cobre), <b>Calcium</b> (calcio), <b>Platinum</b> (platino), <b>Zinc</b> (cinc) y <b>Mystery</b> (misterioso). La caja no lleva encabezado propio; muestra el nombre del metal que hayas elegido.",
+    "tip": "Empieza con <b>Sodium</b>. Tiene el umbral más bajo, así que basta la luz visible para sacar electrones. El platino pide ultravioleta."
+   },
+   {
+    "name": "Current (corriente) — el medidor de la derecha",
+    "desc": "La corriente que hacen los electrones que salen disparados, en μA.",
+    "tip": "<b>Donde aparece la respuesta</b> en esta simulación. Una lectura de 0 significa que no salió ni un electrón."
+   },
+   {
+    "name": "Show Electrons (mostrar electrones) — casilla de abajo",
+    "desc": "Hace visibles los electrones que escapan.",
+    "tip": "<b>Déjala activada.</b> Ver los granos salir volando se queda contigo mucho mejor que un número de corriente."
+   },
+   {
+    "name": "Highest Energy Only (solo la energía más alta)",
+    "desc": "Selecciona para mostrar únicamente los electrones más rápidos.",
+    "tip": "Actívalo cuando ya sepas que los electrones salen a distintas velocidades. Lo lejos que estés pasado el umbral fija la energía máxima."
+   },
+   {
+    "name": "Selector de representación (dos dibujos, sin palabras — puesta a tierra / circuito)",
+    "desc": "Elige si el montaje se dibuja con toma de tierra o como esquema de circuito. Los dos botones llevan solo dibujos.",
+    "tip": "El resultado es el mismo de las dos maneras. Si los circuitos te resultan familiares, el dibujo de circuito se sigue mejor."
+   },
+   {
+    "name": "Botones de pausa y paso (abajo)",
+    "desc": "Paran la acción o avanzan fotograma a fotograma. Los dos son iconos, sin palabras.",
+    "tip": "Úsalos cuando quieras pillar <b>el instante</b> en que sale disparado un electrón."
+   }
+  ],
+  "steps": [
+   "Pon el metal en <b>Sodium</b> y la longitud de onda larga, hacia <b>IR</b>.",
+   "Sube <b>Intensity</b> al máximo y confirma que <b>Current</b> marca 0.",
+   "Sin tocar la intensidad, baja <b>Wavelength</b> despacio hacia <b>UV</b>.",
+   "Anota la <b>longitud de onda umbral</b> a la que empieza a circular la corriente.",
+   "Justo pasado el umbral, baja la intensidad y mira si siguen saliendo electrones.",
+   "Cambia el metal a <b>Copper</b> y <b>Platinum</b> y compara los umbrales.",
+   "En la pantalla <b>Energy</b>, mira qué cambia la longitud de onda y qué cambia la intensidad."
+  ],
+  "gotchas": [
+   "<b>La pantalla solo sale en inglés.</b> Busca el significado en los nombres de arriba.",
+   "En una longitud de onda <b>mayor que el umbral</b>, ninguna intensidad saca <b>ni un</b> electrón. No es un fallo.",
+   "La <b>Intensity</b> fija el <b>número</b> de electrones; la <b>Wavelength</b>, la <b>energía</b> de cada uno. Si mezclas las dos no llegas a ninguna conclusión.",
+   "El umbral es <b>distinto en cada metal.</b> El sodio lo tiene bajo y el platino, alto.",
+   "Esta simulación tiene tres pantallas. Empieza en <b>Intro</b>."
+  ]
+ },
+ "quantum-wave-interference": {
+  "summary": "<b>Esta simulación también sale en inglés.</b> Dispara luz o partículas contra una barrera con dos rendijas y mira <b>qué patrón se acumula</b> en la pantalla de detrás. Bajar muchísimo la intensidad para que vayan <b>de uno en uno</b> es el gesto clave de esta lección.",
+  "screens": [
+   {
+    "name": "Experiment",
+    "what": "La pantalla que usa esta lección. Los ajustes de rendija y la intensidad se pueden cambiar libremente."
+   },
+   {
+    "name": "High Intensity",
+    "what": "Dispara la luz fuerte y ve el patrón entero de una vez."
+   },
+   {
+    "name": "Single Particles",
+    "what": "Una pantalla montada alrededor de mandar las partículas de una en una."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Source Intensity (intensidad de la fuente) — izquierda",
+    "desc": "Fija cuánto disparas. <b>Max</b> es el tope.",
+    "tip": "El <b>mando más importante</b> de esta lección. Mira el patrón al máximo y luego bájalo <b>muchísimo</b> para mandarlas de una en una. Ese contraste es todo."
+   },
+   {
+    "name": "Slit Configuration (configuración de rendijas) — centro",
+    "desc": "<b>Both Open</b> (las dos abiertas) · <b>Cover Left</b> (tapar la izquierda) · <b>Cover Right</b> (tapar la derecha), junto con los ajustes del detector.",
+    "tip": "Recorre <b>Both Open → Cover Left → Cover Right</b>. Tapa una y <b>las franjas se esfuman</b>, dejando un único borrón."
+   },
+   {
+    "name": "Detector Left · Right · Both (mirar por qué rendija)",
+    "desc": "Enciende el aparato que comprueba <b>por qué rendija</b> pasó la partícula.",
+    "tip": "La parte más extraña de esta simulación. <b>Enciéndelo y las franjas se esfuman.</b> El acto de mirar cambia el resultado."
+   },
+   {
+    "name": "Modo de detección — Intensity · Hits",
+    "desc": "Elige si la pantalla enseña <b>brillo</b> o <b>un punto donde cayó cada una</b>. La pareja de botones no lleva encabezado propio.",
+    "tip": "Cuando las mandes de una en una, usa <b>Hits</b>. Así ves llegar los puntos uno a uno y el patrón <b>construirse</b>."
+   },
+   {
+    "name": "Selector de partícula (abajo a la izquierda)",
+    "desc": "Elige entre <b>Photons</b> (fotones), <b>Electrons</b> (electrones), <b>Neutrons</b> (neutrones) y <b>Helium Atoms</b> (átomos de helio). El grupo no lleva encabezado; cada botón muestra su propio nombre.",
+    "tip": "Pasa a <b>Electrons</b>. Es la <b>materia</b>, no la luz, la que hace el mismo patrón, y eso deja la conclusión de esta lección mucho más firme."
+   },
+   {
+    "name": "Wavelength (longitud de onda) — izquierda",
+    "desc": "Fija la longitud de onda de la luz que disparas.",
+    "tip": "Acórtala y las franjas se aprietan <b>más juntas</b>. Prueba de comportamiento ondulatorio."
+   },
+   {
+    "name": "Slit Separation · Barrier-Screen Distance (separación de rendijas · distancia a la pantalla)",
+    "desc": "Fijan la distancia entre las dos rendijas y la distancia hasta la pantalla.",
+    "tip": "<b>Estrecha</b> la separación y el patrón se abre más. Comportamiento ondulatorio básico."
+   },
+   {
+    "name": "Los botones de limpiar y de captura (junto a la pantalla)",
+    "desc": "Borran los puntos acumulados o guardan el estado actual. Los dos son iconos, sin palabras.",
+    "tip": "Cuando cambies condiciones para comparar, borra la pantalla primero. Si no, se mezclan los puntos de la tanda anterior."
+   },
+   {
+    "name": "Particle Speed (velocidad de las partículas) — abajo",
+    "desc": "Fija lo rápido que va la tanda.",
+    "tip": "Mandarlas de una en una tarda un rato en construir un patrón. Ponlo rápido y espera."
+   }
+  ],
+  "steps": [
+   "Comprueba que el selector de partícula de abajo a la izquierda está en <b>Photons</b> y pon la intensidad en <b>Max</b>.",
+   "Con <b>Both Open</b>, mira aparecer las franjas.",
+   "Pasa a <b>Cover Left</b> y <b>Cover Right</b> y mira cómo queda un solo borrón.",
+   "Vuelve a <b>Both Open</b> y baja la intensidad <b>muchísimo</b>.",
+   "Cambia el modo de detección a <b>Hits</b>, ponlo rápido y déjalo mucho rato.",
+   "Mira aparecer las franjas según se acumulan los puntos.",
+   "Cambia el selector de partícula a <b>Electrons</b> y hazlo otra vez.",
+   "Activa <b>Detector Left</b> y mira qué le pasa al patrón."
+  ],
+  "gotchas": [
+   "<b>La pantalla solo sale en inglés.</b> Busca el significado en los nombres de arriba.",
+   "Mandadas de una en una, las primeras caen <b>en cualquier sitio</b>. No lo dejes porque no salga patrón: <b>déjalo corriendo.</b>",
+   "<b>Sumar</b> los dos borrones de rendija tapada no da las franjas. Eso es justo lo extraño del asunto.",
+   "Enciende un <b>Detector</b> y el patrón se va. No es un fallo: es justo el resultado que esta simulación viene a enseñar.",
+   "Borra la pantalla antes de cambiar condiciones.",
+   "Esta simulación se hizo a nivel universitario. Con la pantalla <b>Experiment</b> sola basta para esta lección."
+  ]
  }
 }
