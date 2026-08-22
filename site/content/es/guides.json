@@ -3687,10 +3687,6 @@
    {
     "name": "Juego",
     "what": "Cuenta los objetos y di el número."
-   },
-   {
-    "name": "Laboratorio",
-    "what": "Una pantalla para colocar cosas con libertad y sin objetivo."
    }
   ],
   "controls": [
@@ -3739,10 +3735,6 @@
    {
     "name": "Compara",
     "what": "La pantalla que usa esta lección. Pon un número en cada lado y compara en el centro."
-   },
-   {
-    "name": "Laboratorio",
-    "what": "Una pantalla para colocar con libertad los signos de desigualdad y de operación."
    }
   ],
   "controls": [

@@ -3677,10 +3677,6 @@
    {
     "name": "Game",
     "what": "Count the objects and name the number."
-   },
-   {
-    "name": "Lab",
-    "what": "A screen for laying things out freely with no target."
    }
   ],
   "controls": [
@@ -3729,10 +3725,6 @@
    {
     "name": "Compare",
     "what": "The screen this lesson uses. Put a number on each side and compare in the middle."
-   },
-   {
-    "name": "Lab",
-    "what": "A screen for placing the inequality and operation signs freely."
    }
   ],
   "controls": [
