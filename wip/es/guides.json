@@ -1568,5 +1568,219 @@
    "La disposición es la misma que la del decaimiento alfa y es fácil confundirse. Si el átomo de partida es <b>³H</b> estás aquí; si es <b>²¹¹Po</b>, en la de alfa.",
    "Puede que en la leyenda siga apareciendo <b>Alpha Particle</b>. Las dos simulaciones comparten componentes; del decaimiento beta no sale ninguna partícula alfa."
   ]
+ },
+ "quantum-coin-toss": {
+  "summary": "La pantalla está partida por la mitad: <b>una moneda corriente a la izquierda y una moneda cuántica a la derecha</b>. Hacer lo mismo en los dos lados y <b>comparar los resultados</b> es toda la simulación.",
+  "screens": [
+   {
+    "name": "Monedas",
+    "what": "Esta simulación tiene una sola pantalla, partida a izquierda y derecha para manejar los dos tipos de moneda lado a lado."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Moneda para Preparar (arriba a la izquierda)",
+    "desc": "Los ajustes de la moneda corriente. La <b>Orientación Inicial</b> elige la cara de salida; los dos botones enseñan las caras como dibujos, sin palabras.",
+    "tip": "Una moneda corriente tiene un estado <b>antes de lanzarla</b>. Lo que fijas aquí es ese estado."
+   },
+   {
+    "name": "Sesgo de la Moneda (Estado) — mando de la izquierda",
+    "desc": "Fija la <b>probabilidad</b> de la primera cara. 0,5 es mitad y mitad.",
+    "tip": "Pon <b>la misma probabilidad</b> en los dos lados antes de comparar. Con probabilidades distintas no hay nada que comparar."
+   },
+   {
+    "name": "Estado a Preparar (arriba a la derecha)",
+    "desc": "El lado de la moneda cuántica. El estado se escribe con dos valores, <b>α</b> y <b>β</b>. Eleva cada uno al cuadrado para tener una probabilidad.",
+    "tip": "Pon α = β = <b>0,707</b> para una probabilidad mitad y mitad (0,707² ≈ 0,5). Empieza por esos valores."
+   },
+   {
+    "name": "Ocultar · Girar · Girar y Revelar (lado de la moneda corriente)",
+    "desc": "<b>Ocultar</b> la moneda, <b>girarla</b>, o <b>girarla y revelarla</b>.",
+    "tip": "El estado <b>Ocultar</b> es el dibujo clave de esta lección: ya decidido y no puedo verlo."
+   },
+   {
+    "name": "Observar · Volver a Preparar · Volver a Preparar y Observar (lado de la moneda cuántica)",
+    "desc": "<b>Observar</b> decide el estado en un valor; <b>Volver a Preparar</b> lo devuelve a la superposición.",
+    "tip": "Pulsa <b>Volver a Preparar y Observar</b> varias veces seguidas. Se ve cómo se decide <b>de nuevo</b> cada vez."
+   },
+   {
+    "name": "Medición con Múltiples Monedas (abajo)",
+    "desc": "Mide <b>N</b> monedas de golpe, hasta 100.",
+    "tip": "El experimento decisivo de esta lección. Mide 100 en cada lado y mira si <b>los resultados por sí solos te dejan distinguirlas</b>: no lo hacen."
+   },
+   {
+    "name": "Nueva Moneda (abajo a la izquierda)",
+    "desc": "Lo devuelve todo al principio.",
+    "tip": "Cuando los ajustes se enredan, pulsa esto primero."
+   }
+  ],
+  "steps": [
+   "En el lado de la <b>Moneda Clásica</b>, haz <b>Girar</b> y <b>Revelar</b> varias veces.",
+   "Pon el <b>Sesgo de la Moneda (Estado)</b> en <b>0,5</b>.",
+   "En el lado de la <b>\"Moneda\" Cuántica</b>, pon α y β en <b>0,707</b> cada uno.",
+   "Pulsa <b>Observar</b> varias veces y mira los resultados.",
+   "En <b>Medición con Múltiples Monedas</b> pon <b>N = 100</b> y mide los dos lados.",
+   "Compara los dos resultados y mira si sabes distinguirlos.",
+   "Repite <b>Volver a Preparar y Observar</b> y mira cómo se decide de nuevo cada vez."
+  ],
+  "gotchas": [
+   "<b>Los resultados por sí solos no distinguen las dos monedas.</b> No es un fracaso: es la conclusión de esta simulación.",
+   "α y β no son probabilidades sino <b>valores que se vuelven probabilidades al elevarlos al cuadrado</b>. 0,707² ≈ 0,5.",
+   "Una vez que <b>Observas</b> la moneda cuántica queda fijada en ese valor. Pulsa <b>Volver a Preparar</b> para devolverla a la superposición.",
+   "Esta simulación se hizo a nivel universitario. Puedes seguirla solo con <b>las dos probabilidades</b>, sin el álgebra de α y β."
+  ]
+ },
+ "quantum-measurement": {
+  "summary": "Enseña la medición cuántica de <b>cuatro maneras distintas</b>. Abre con la misma historia de monedas de la lección anterior y luego pasa a los fotones y al espín.",
+  "screens": [
+   {
+    "name": "Monedas",
+    "what": "<b>El mismo material de la lección anterior</b> (Lanzamiento de Moneda Cuántica). Merece otra mirada si algo no te acabó de entrar."
+   },
+   {
+    "name": "Fotones",
+    "what": "La pantalla clave de esta lección. La medición tratada a través de la <b>polarización</b> de la luz."
+   },
+   {
+    "name": "Espín",
+    "what": "La misma historia contada con el espín de un electrón. Los aparatos de medida se pueden poner <b>en fila</b>."
+   },
+   {
+    "name": "Esfera de Bloch",
+    "what": "Dibuja un estado cuántico como un punto sobre una bola. La pantalla más difícil."
+   }
+  ],
+  "controls": [
+   {
+    "name": "Un Fotón · Muchos Fotones (arriba de la pantalla Fotones)",
+    "desc": "Elige si mandar los fotones <b>de uno en uno</b> o <b>a montones</b>.",
+    "tip": "Empieza con <b>Un Fotón</b>. Esta lección solo funciona una vez has visto un grano irse entero por un lado. Las proporciones vienen después."
+   },
+   {
+    "name": "Ángulo de Polarización del Fotón (abajo a la izquierda)",
+    "desc": "Elige entre <b>Vertical (V)</b>, <b>Horizontal (H)</b>, <b>45°</b>, <b>Sin polarizar</b> y <b>Personalizado</b>.",
+    "tip": "El control principal de aquí. Ve de <b>Vertical a 45°</b>. En vertical el resultado está decidido; a 45° no se puede predecir."
+   },
+   {
+    "name": "Comportamiento — Clásico · Cuántico (centro)",
+    "desc": "Elige si la luz se trata <b>como onda</b> o <b>como granos</b>.",
+    "tip": "El mejor contraste de esta lección. <b>Clásico</b> divide la intensidad y la manda por los dos lados; <b>Cuántico</b> la manda entera, por un lado."
+   },
+   {
+    "name": "Divisor de Haz Polarizante (centro)",
+    "desc": "Parte la luz que llega en una <b>componente vertical</b> y una <b>componente horizontal</b> y las manda a detectores distintos.",
+    "tip": "Este es el «aparato de medida». En el momento en que un fotón lo pasa, su polarización queda <b>decidida en una de las dos.</b>"
+   },
+   {
+    "name": "Los detectores de polarización (centro — vertical arriba, horizontal abajo)",
+    "desc": "Cuentan los fotones que llegan. Sus rótulos ponen <b>Polarización Vertical Detector</b> y <b>Polarización Horizontal Detector</b>. La diferencia entre las dos cuentas da la <b>Polarización Promedio</b>.",
+    "tip": "A 45° las dos cuentas salen <b>parecidas</b>. Cada una es indomable y el conjunto sale parejo."
+   },
+   {
+    "name": "Representación Vectorial · Valor Esperado · Valores Decimales (derecha)",
+    "desc": "Enseñan el resultado como flecha, como valor esperado y como números.",
+    "tip": "Si el álgebra se te hace cuesta arriba, deja solo <b>Valores Decimales</b>. Para esta lección bastan las proporciones."
+   },
+   {
+    "name": "Encadenar aparatos de medida (pantalla Espín)",
+    "desc": "Pon <b>varios aparatos de medida en fila</b>, cada uno con su ángulo.",
+    "tip": "Prueba <b>vertical → horizontal → vertical</b>. Que el primer resultado vertical quede <b>borrado</b> es lo más sorprendente de esta simulación."
+   },
+   {
+    "name": "Ajuste de velocidad y botón de paso (abajo)",
+    "desc": "Reproducen despacio o avanzan fotograma a fotograma. Los dos son iconos, sin palabras.",
+    "tip": "Para ver a un fotón pasar el divisor, ponlo lento."
+   }
+  ],
+  "steps": [
+   "En la pantalla <b>Monedas</b>, repasa el material de la lección anterior.",
+   "Pasa a la pantalla <b>Fotones</b> y pon el ángulo en <b>Vertical (V)</b>.",
+   "Mándalos de uno en uno con <b>Un Fotón</b> y mira si va siempre por el mismo lado.",
+   "Cambia el ángulo a <b>45°</b> y mira cómo se vuelve impredecible.",
+   "Pasa a <b>Muchos Fotones</b> y comprueba que el reparto es parejo.",
+   "Cambia el <b>Comportamiento</b> entre <b>Clásico</b> y <b>Cuántico</b> y compara.",
+   "En la pantalla <b>Espín</b> pon aparatos en fila con ángulos distintos."
+  ],
+  "gotchas": [
+   "Un solo fotón <b>no se divide por la mitad.</b> Va entero por un lado: compruébalo con el comportamiento <b>Cuántico</b>.",
+   "Hay cuatro pantallas y se van poniendo más difíciles. Con <b>Monedas → Fotones</b> basta para esta lección.",
+   "La pantalla <b>Esfera de Bloch</b> es de nivel universitario. Date una vuelta por ella si tienes curiosidad."
+  ]
+ },
+ "quantum-bound-states": {
+  "summary": "<b>Esta simulación solo aparece en inglés</b>, así que abajo están los nombres ingleses tal cual, con su significado al lado. <b>Encierra un electrón en una caja</b> y mira qué energías puede tener. La gráfica de arriba es la <b>escalera de energía</b> y la de abajo, la <b>forma de la onda</b>, así que el truco es mirar las dos a la vez.",
+  "screens": [
+   {
+    "name": "One Well",
+    "what": "La pantalla que usa esta lección. Puedes cambiar de varias maneras la forma que encierra."
+   },
+   {
+    "name": "Two Wells",
+    "what": "Dos pozos, con el electrón moviéndose entre ellos. Bastante más difícil."
+   },
+   {
+    "name": "Many Wells",
+    "what": "Pozos en fila. Más cerca de la situación de un electrón en un sólido."
+   }
+  ],
+  "controls": [
+   {
+    "name": "El selector de forma de confinamiento (arriba a la derecha — un desplegable sin encabezado, que muestra la forma actual)",
+    "desc": "Elige entre <b>Infinite Square</b> (cuadrado infinito), <b>Finite Square</b> (cuadrado finito), <b>Harmonic Oscillator</b> (oscilador armónico), <b>Coulomb</b> y otras.",
+    "tip": "Empieza en <b>Infinite Square</b>, la caja más sencilla. <b>Coulomb</b> es la situación del átomo de hidrógeno del curso 05."
+   },
+   {
+    "name": "La escalera de energía (las líneas horizontales de la gráfica de arriba)",
+    "desc": "Las energías que puede tener el electrón. <b>Pulsa</b> una línea para seleccionar ese estado.",
+    "tip": "La respuesta de esta lección está aquí. <b>Los huecos entre las líneas están vacíos</b>: esas energías son imposibles."
+   },
+   {
+    "name": "Los mandos de anchura y profundidad (mandos pequeños sobre la gráfica)",
+    "desc": "Arrastra para cambiar la <b>anchura</b> y la <b>profundidad</b> de la caja. La lectura de al lado pone width = … nm o depth = … eV.",
+    "tip": "La acción clave de esta lección. <b>Estrecha</b> la anchura y los escalones se separan; <b>ensánchala</b> y se aprietan. De aquí sale por qué lo cuántico es invisible en el día a día."
+   },
+   {
+    "name": "Quantum State Graph (gráfica del estado cuántico, derecha) — Probability Density · Wave Function",
+    "desc": "Elige si la gráfica de abajo enseña la <b>densidad de probabilidad</b> o la <b>función de onda</b>.",
+    "tip": "<b>Probability Density</b> es la más fácil de leer. Te enseña <b>dónde es probable encontrar el electrón</b>."
+   },
+   {
+    "name": "Energy Level (nivel de energía, derecha)",
+    "desc": "Elige entre <b>E₁ · E₂ · E₃</b> y demás. Pulsar una línea de la gráfica de arriba hace lo mismo.",
+    "tip": "Sube desde E₁ y mira el <b>número de jorobas</b> subir de una en una. Las mismas formas que los armónicos de la cuerda de guitarra del curso 03."
+   },
+   {
+    "name": "Mass (masa, derecha)",
+    "desc": "Cambia la masa de la partícula encerrada, en unidades de la masa del electrón.",
+    "tip": "Más pesada aprieta los escalones <b>más juntos.</b> Un efecto muy parecido a ensanchar la caja: las cosas pesadas no enseñan efectos cuánticos."
+   },
+   {
+    "name": "Values · Magnifier · Reference Line (valores · lupa · línea de referencia, abajo a la izquierda)",
+    "desc": "Ponen valores en pantalla como números y sacan una lupa y una línea de referencia.",
+    "tip": "Activa <b>Values</b> y podrás leer como número la energía de cada escalón. Va bien para medir cuánto se abren los huecos."
+   },
+   {
+    "name": "Botones de ocultar curva, reiniciar y pausa",
+    "desc": "Ocultan una gráfica, o rebobinan el tiempo y lo paran. Todos son iconos, sin palabras.",
+    "tip": "Si la onda ondulando con el tiempo te distrae, párala con el botón de pausa y mira solo la forma."
+   }
+  ],
+  "steps": [
+   "Comprueba que la forma de confinamiento es <b>Infinite Square</b>.",
+   "Mira las <b>líneas horizontales</b> de la gráfica de arriba y el espacio vacío entre ellas.",
+   "Selecciona <b>E₁ · E₂ · E₃</b> por turnos y cuenta las jorobas de la onda.",
+   "Pasa a <b>Probability Density</b> y mira dónde es probable encontrarlo.",
+   "Arrastra el mando de <b>anchura</b> para estrechar la caja y mira la separación de los escalones.",
+   "Ensancha la caja y mira cómo se aprietan los escalones.",
+   "Cambia la forma a <b>Coulomb</b> para la situación del átomo de hidrógeno."
+  ],
+  "gotchas": [
+   "<b>La pantalla solo sale en inglés.</b> Busca el significado en los nombres de arriba.",
+   "Las energías <b>de entre los escalones</b> no se pueden tener. El espacio vacío es la respuesta de esta lección.",
+   "Cuanto <b>más estrecha</b> la caja, más ancha la separación de los escalones. Puede parecer al revés.",
+   "En <b>E₂</b> el electrón <b>no se encuentra jamás</b> en el centro de la caja. No es un error.",
+   "La onda ondula con el tiempo. Para mirar solo la forma, párala con el botón de pausa.",
+   "Esta simulación se hizo a nivel universitario. Con entender <b>que hay escalones</b> y <b>que estrechar los separa</b> basta."
+  ]
  }
 }

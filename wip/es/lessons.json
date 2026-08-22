@@ -1360,5 +1360,200 @@
     "right": 0
    }
   ]
+ },
+ "quantum-1": {
+  "course": "quantum",
+  "sim": "quantum-coin-toss",
+  "screens": null,
+  "title": "Una moneda tapada y una moneda cuántica no son lo mismo",
+  "lead": "Una moneda bajo la palma ya ha caído. Una moneda cuántica, no. En qué se diferencian esas dos cosas es todo el asunto.",
+  "hook": "Lanzas una moneda y la tapas con la palma. ¿Cara o cruz? <b>No lo sabes.</b> Pero hay dos clases de «no lo sé»: <b>ya está decidido y no puedo verlo</b> y <b>todavía no está decidido</b>. En la vida diaria no hace falta distinguirlas: levantas la mano y ya. En el mundo cuántico las dos <b>se comportan de verdad de forma distinta.</b>",
+  "predict": {
+   "q": "Preparas una <b>moneda cuántica</b> con probabilidad mitad y mitad. <b>Antes</b> de observarla, su estado es:",
+   "opts": [
+    "Ya es cara o cruz; simplemente no sé cuál",
+    "<b>Ni</b> cara ni cruz, y se decide por una en el momento de observarla",
+    "Va cambiando entre cara y cruz muy deprisa",
+    "La moneda no existe"
+   ]
+  },
+  "missions": [
+   "La <b>mitad izquierda</b> de la pantalla es la <b>Moneda Clásica</b> y la <b>mitad derecha</b> es la <b>\"Moneda\" Cuántica</b>. Toda la distribución está montada para compararlas lado a lado.",
+   "Mira primero el lado de la <b>Moneda Clásica</b>. Pon la <b>Orientación Inicial</b> en la cara.",
+   "Pulsa <b>Girar</b> y luego <b>Revelar</b> para ver el resultado. Repítelo varias veces.",
+   "Pon el <b>Sesgo de la Moneda (Estado)</b> en <b>0,5</b> para mitad y mitad, o en <b>0,8</b> para sacar cara más a menudo.",
+   "Ahora el lado de la <b>\"Moneda\" Cuántica</b>. Fija α y β en <b>Estado a Preparar</b>.",
+   "Haz α y β <b>iguales</b> (0,707 cada uno). Las probabilidades de abajo pasan a <b>0,5 / 0,5</b>.",
+   "Pulsa <b>Observar</b> para tener un resultado. Repítelo varias veces y comprueba que cara y cruz salen a partes iguales.",
+   "Hasta aquí <b>es indistinguible de una moneda corriente.</b> Juzgadas solo por los resultados, son la misma cosa.",
+   "Ahora pon <b>N = 100</b> en <b>Medición con Múltiples Monedas</b> y pulsa <b>Iniciar</b>.",
+   "Haz 100 mediciones en cada lado. ¿Son iguales las proporciones? Ese es el meollo de ②: <b>los resultados por sí solos no las distinguen.</b>",
+   "Pulsa <b>Volver a Preparar y Observar</b> varias veces. Se decide de nuevo cada vez."
+  ],
+  "record": "Anota el resultado de 100 mediciones en la moneda corriente y en la cuántica. Mirando los dos resultados, ¿sabrías decir cuál es cuál?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>ni cara ni cruz, y se decide por una en el momento de observarla</strong>.</p><p>Y sin embargo, como te ha enseñado la pantalla, <strong>los resultados por sí solos no las distinguen.</strong> Cien mediciones o diez mil, las dos salen parejas. ¿Con qué base decimos entonces que se diferencian?</p><p>La diferencia está en <strong>lo que puedes hacer antes de medir</strong>. Acuérdate del experimento de las dos rendijas del curso 04, lección 4.</p><ul><li><strong>Si ya estuviera decidido</strong>: el grano pasó por la rendija izquierda o por la derecha, y deberías obtener <strong>la suma de los dos borrones</strong>.</li><li><strong>Si no está decidido</strong>: las dos posibilidades <strong>se solapan</strong>, se cancelan y se refuerzan, y hacen <strong>franjas</strong>.</li></ul><p>Lo que salió de verdad fueron <strong>franjas</strong>. Así que no es «estaba decidido y simplemente no lo sabíamos».</p><p>A este estado se le llama <strong>superposición</strong>. Se suele describir como «las dos cosas a la vez», lo cual no es del todo correcto. Es un <strong>tercer estado que no es ni cara ni cruz</strong>, y le estiramos encima palabras corrientes porque no hay ninguna palabra de todos los días para él.</p><p><strong>α y β</strong> en pantalla son cómo se escribe ese estado. Elévalos al cuadrado y tienes cada probabilidad. Lo importante es que <strong>α y β llevan más información que las probabilidades</strong>. Dos estados con la misma probabilidad pueden tener α y β distintos, y esa diferencia es la que asoma en el experimento de las dos rendijas.</p><p>Si elegiste «va cambiando muy deprisa», es una idea muy natural. Pero también significa <strong>decidido por una en cada instante</strong>, así que al final es lo mismo que la primera opción.</p>"
+  },
+  "real": "Los ordenadores cuánticos usan esta propiedad. Un bit de un ordenador corriente es 0 o 1, mientras que un bit cuántico se puede dejar en superposición, así que para ciertos problemas llega a la respuesta en muchísimos menos pasos. La criptografía cuántica detecta las escuchas de la misma manera, usando el «medirlo cambia el estado».",
+  "quiz": [
+   {
+    "q": "El estado de una moneda <b>corriente</b> que has tapado:",
+    "opts": [
+     "Ya está decidido; simplemente no lo sé",
+     "No está decidido",
+     "Ninguna de las dos"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿Puedes distinguir una moneda cuántica de una corriente <b>solo por los resultados de las mediciones</b>?",
+    "opts": [
+     "Sí",
+     "No: hace falta otro experimento",
+     "Sí, si haces mediciones suficientes"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Entonces, ¿de dónde sale <b>la prueba de que se diferencian</b>?",
+    "opts": [
+     "Haz mediciones suficientes y las proporciones se separan",
+     "El solapamiento <b>anterior</b> a la medición asoma como <b>franjas</b> en el experimento de las dos rendijas",
+     "Una moneda cuántica cae siempre de la misma cara"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "quantum-2": {
+  "course": "quantum",
+  "sim": "quantum-measurement",
+  "screens": null,
+  "title": "Medirlo lo cambia",
+  "lead": "Mete un termómetro en la sopa y la sopa se enfría un poco. En mecánica cuántica es peor: antes de medir no hay ningún valor.",
+  "hook": "La lección 1 decía que una moneda cuántica <b>se decide cuando la observas</b>. ¿Qué está haciendo entonces la observación? Esta simulación cuenta la misma historia con <b>la polarización de la luz</b> en vez de una moneda. La polarización es algo que se puede tocar de verdad, así que resulta mucho más concreto. Y aquí aparece algo genuinamente extraño: <b>cambia el orden en que mides y cambia el resultado.</b>",
+  "predict": {
+   "q": "La luz ha pasado un filtro que solo deja pasar la polarización <b>vertical</b>. Ahora pones delante un filtro <b>horizontal</b>:",
+   "opts": [
+    "Pasa de largo",
+    "<b>No</b> pasa nada de luz",
+    "Pasa la mitad",
+    "Se vuelve más brillante"
+   ]
+  },
+  "missions": [
+   "La pantalla <b>Monedas</b> repite lo que cubrió la lección 1. Merece otra mirada si algo no te acabó de entrar.",
+   "Con el botón de la casa ve a la pantalla <b>Fotones</b>. La fuente está a la izquierda, el <b>Divisor de Haz Polarizante</b> en el centro y los detectores de polarización a la derecha (sus rótulos ponen <b>Polarización Vertical Detector</b> y <b>Polarización Horizontal Detector</b>).",
+   "Pon el <b>Ángulo de Polarización del Fotón</b> de abajo a la izquierda en <b>Vertical (V)</b>.",
+   "Déjalo en <b>Un Fotón</b> y manda fotones de uno en uno. ¿Qué detector responde? ¿Es siempre el mismo?",
+   "Ahora cambia el ángulo a <b>45°</b>. Por dónde va es ahora <b>impredecible.</b>",
+   "Pasa a <b>Muchos Fotones</b> y manda un montón. Comprueba que a 45° el reparto es <b>parejo</b>.",
+   "En <b>Comportamiento</b>, cambia entre <b>Clásico</b> y <b>Cuántico</b>. El modelo clásico <b>parte</b> la luz y la manda por los dos lados; el cuántico la manda <b>entera</b>, por un lado.",
+   "Esa diferencia importa. Un solo fotón <b>no se parte por la mitad.</b> Va por un lado, entero.",
+   "Cambia la luz a <b>Sin polarizar</b>. ¿Qué hace en el divisor una luz sin dirección fija?",
+   "Con el botón de la casa ve a la pantalla <b>Espín</b> para la misma historia contada con el espín de un electrón.",
+   "En la pantalla Espín, pon <b>varios aparatos de medida en fila</b> con ángulos distintos. Lo que mediste antes queda <b>borrado</b> por lo que mides después."
+  ],
+  "record": "Con un ángulo de polarización de 45°, ¿por dónde fue cada fotón suelto? ¿Y qué proporción salió al mandar muchos?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es que <strong>no pasa nada de luz</strong>. Coge luz puramente vertical, pon delante un filtro horizontal y queda bloqueada del todo.</p><p>Hasta aquí lo explica un dibujo de ondas. Pero lo que te ha enseñado esta simulación es mucho más extraño.</p><p>Acuérdate de mandar un solo fotón polarizado a <strong>45°</strong> a un divisor vertical/horizontal. Ese fotón no es ni vertical ni horizontal. Y aun así llegó a <strong>un detector, entero.</strong> <strong>No se partió por la mitad.</strong></p><p>Pasar el <strong>Comportamiento</strong> a <strong>Clásico</strong> deja el contraste bien hecho. El modelo clásico trata la luz como onda, así que <strong>divide la intensidad</strong> y la manda por los dos lados. La realidad (cuántica) no. <strong>Un grano no se divide, y por dónde va lo decide solo la probabilidad.</strong></p><p>Y una vez ha pasado, ese fotón ya no está a 45°. <strong>Se ha convertido en la dirección que mediste.</strong> La información de que estaba a 45° <strong>ha desaparecido.</strong></p><p>Eso es lo que significa «la medida cambia el estado». No es como un termómetro que enfría un poco la sopa. Eso mueve <strong>un valor que ya estaba ahí</strong>; aquí <strong>no había tal valor antes de la medida</strong> y la medida lo crea.</p><p>Si encadenaste aparatos en la pantalla <strong>Espín</strong> es más claro todavía. Mide en vertical, luego en horizontal y luego otra vez en vertical, y <strong>el primer resultado vertical ha quedado borrado.</strong> El acto de medir en horizontal destruyó la información vertical. <strong>El orden en que mides cambia el resultado.</strong></p><p>Esta es exactamente la historia que hay detrás del curso 04, lección 4, donde <strong>el patrón se esfumaba en cuanto comprobabas la rendija</strong>. Entonces parecía descabellado; una vez sabes que la medida cambia el estado, es el resultado evidente.</p>"
+  },
+  "real": "Las gafas de sol y los filtros de cámara usan la polarización. Una pantalla LCD es cristal líquido entre dos polarizadores, abriendo y cerrando el paso a la luz. La criptografía cuántica pilla a los espías con este principio: en el momento en que un espía mide la señal, el estado cambia y deja rastro. Seguridad garantizada por una ley de la física.",
+  "quiz": [
+   {
+    "q": "<b>Un</b> fotón polarizado a 45° se encuentra un divisor vertical/horizontal:",
+    "opts": [
+     "Se divide por la mitad y va por los dos lados",
+     "Va entero por un lado, y por cuál es cosa de probabilidad",
+     "Se para"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Después de la medida, la polarización de ese fotón está:",
+    "opts": [
+     "Todavía a 45°, como antes",
+     "Cambiada a la dirección que mediste",
+     "Desaparecida"
+    ],
+    "right": 1
+   },
+   {
+    "q": "Mide vertical → horizontal → vertical y:",
+    "opts": [
+     "El primer resultado vertical vuelve sin cambios",
+     "Medir en horizontal borró la información vertical",
+     "No sale ningún resultado"
+    ],
+    "right": 1
+   }
+  ]
+ },
+ "quantum-3": {
+  "course": "quantum",
+  "sim": "quantum-bound-states",
+  "screens": null,
+  "title": "Enciérralo y la energía se vuelve una escalera",
+  "lead": "Una partícula libre puede tener cualquier energía. Enciérrala y solo quedan valores fijos.",
+  "hook": "El curso 05 decía que <b>un electrón solo puede sentarse en escalones fijos</b>. ¿Por qué escalones, precisamente? Entonces lo dejamos en «por lo visto es así»; ahora se puede responder. La respuesta está en las <b>ondas</b> del curso 04. En el curso 03 viste una cuerda de guitarra negarse a dar cualquier nota y dar solo <b>notas fijas</b>. <b>Una onda encerrada no puede tomar cualquier forma.</b> Eso es todo.",
+  "predict": {
+   "q": "<b>Encierra</b> un electrón en una caja estrecha y las energías que puede tener son:",
+   "opts": [
+    "Cualquier valor",
+    "Solo <b>unos pocos</b> valores fijos",
+    "Solo 0",
+    "Encerrarlo destruye la energía"
+   ]
+  },
+  "missions": [
+   "<b>Esta simulación abre en inglés</b>, así que los nombres de abajo son los de pantalla. Es la pantalla <b>One Well</b> (un pozo). La gráfica de arriba es el <b>Energy Diagram</b> (diagrama de energía) y la de abajo, la <b>Wave Function</b> (función de onda).",
+   "Comprueba que la forma del pozo, a la derecha, es <b>Infinite Square</b> (cuadrado infinito): una caja con paredes altísimas.",
+   "La gráfica de arriba enseña <b>varias líneas horizontales</b>. Esas son las energías que puede tener el electrón. <b>¿Hay algo entre ellas?</b> Esa es la respuesta a ②.",
+   "Pulsa una línea para seleccionar <b>E₁</b>. Debajo se dibuja la onda de ese estado.",
+   "Sube por <b>E₂ · E₃</b> y mira cómo crece el <b>número de jorobas</b>.",
+   "Acuérdate de la cuerda de guitarra del curso 03. ¿No son estas las mismas formas que puede hacer una <b>cuerda sujeta por los dos extremos</b>?",
+   "Elige <b>Probability Density</b> (densidad de probabilidad) abajo a la derecha. Te enseña <b>dónde es probable encontrar el electrón</b>.",
+   "En <b>E₁</b> el centro es lo más alto; en <b>E₂</b> el centro es <b>0</b>. Hay un sitio donde el electrón no se encuentra jamás.",
+   "Arrastra el mando de <b>anchura</b> para hacer la caja <b>más estrecha</b>. ¿Qué le pasa a la separación de los escalones?",
+   "¿Y <b>más ancha</b>? Los escalones se aprietan. Ensánchala mucho y parecen casi continuos.",
+   "Cambia la forma del pozo a <b>Coulomb</b>. Esta es la situación del <b>átomo de hidrógeno</b> del curso 05."
+  ],
+  "record": "Anota la forma de la onda y el número de jorobas de E₁, E₂ y E₃. ¿Y qué le pasó a la separación de los escalones al estrechar la caja y al ensancharla?",
+  "explain": {
+   "right": 1,
+   "body": "<p>La respuesta es <strong>solo unos pocos valores fijos</strong>. Las líneas horizontales de la gráfica de arriba son esos valores, y <strong>las energías de entre las líneas no se pueden tener.</strong></p><p>¿Por qué? La respuesta está en <strong>una onda encerrada</strong>.</p><p>Piensa en la cuerda de guitarra del curso 03. Los dos extremos están sujetos, así que no vale cualquier longitud de onda. Solo sobreviven las <strong>longitudes de onda que salen justas en los dos extremos</strong>; el resto se cancelan solas. Por eso una cuerda de guitarra da <strong>notas fijas</strong>.</p><p>Un electrón es igual. El curso 04 te enseñó que <strong>los electrones se comportan como ondas</strong>. Encierra esa onda en una caja y solo sobreviven <strong>las formas que salen justas en los dos extremos</strong>. Cada forma tiene su propia energía, así que <strong>las energías también quedan fijadas en unos pocos valores.</strong></p><p>Eso es exactamente lo que viste en pantalla. E₁ tiene una joroba, E₂ dos, E₃ tres: <strong>las mismas formas que los armónicos de una cuerda de guitarra</strong>.</p><p>Cambiar la <strong>anchura</strong> de la caja es el momento culminante de esta lección.</p><ul><li><strong>Más estrecha</strong>: los escalones se <strong>separan más.</strong> Cuanto más apretado el encierro, más saltan los valores.</li><li><strong>Más ancha</strong>: los escalones <strong>se aprietan.</strong> Ensánchala mucho y parecen casi continuos.</li></ul><p>Por lo cual <strong>nunca ves efectos cuánticos en el día a día.</strong> Las cosas que manejamos son tan grandes que los escalones son infinitamente finos, y eso es indistinguible de «cualquier valor». <strong>Lo cuántico solo se deja ver cuando las cosas son pequeñas.</strong></p><p>Pasar a <strong>Coulomb</strong> te da el átomo de hidrógeno del curso 05, lección 3. Lo que allí se afirmaba — «un electrón solo se sienta en escalones fijos» — tiene ahora su <strong>por qué</strong>: el núcleo está encerrando al electrón, y una onda encerrada tiene pocas formas posibles.</p><p>Acuérdate también de lo que enseñaba <strong>Probability Density</strong>. En E₂ el electrón no se encuentra jamás <strong>en el centro</strong> de la caja. Y sin embargo se encuentra a los dos lados. <strong>¿Cómo cruzó sin pasar por el centro?</strong> No hay buena respuesta a esa pregunta, porque un electrón no es, para empezar, <strong>un grano que viaje</strong>.</p>"
+  },
+  "real": "Los semiconductores funcionan con este principio. El color de un LED lo fija la altura del escalón por el que baja un electrón, y los láseres también usan transiciones entre niveles fijos. Una pantalla de puntos cuánticos (QLED) cambia el <b>tamaño</b> de sus granos para ajustar la separación de los escalones y fabricar así sus colores: exactamente lo que hiciste al cambiar la anchura de la caja en esta lección.",
+  "quiz": [
+   {
+    "q": "¿Por qué tiene un electrón encerrado solo energías fijas?",
+    "opts": [
+     "Porque el electrón es pequeño",
+     "Porque una onda encerrada tiene pocas formas posibles",
+     "Porque no hay energía suficiente"
+    ],
+    "right": 1
+   },
+   {
+    "q": "<b>Estrecha</b> la caja y los escalones de energía:",
+    "opts": [
+     "Se separan más",
+     "Se aprietan más",
+     "Se quedan como estaban"
+    ],
+    "right": 0
+   },
+   {
+    "q": "¿Por qué no se ven los efectos cuánticos en la vida diaria?",
+    "opts": [
+     "Porque las cosas son grandes y los escalones salen finísimos",
+     "Porque las leyes cuánticas no valen para los objetos grandes",
+     "Porque nuestros ojos no dan para tanto"
+    ],
+    "right": 0
+   }
+  ]
  }
 }
