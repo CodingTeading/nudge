@@ -599,7 +599,7 @@ h1, h2, h3 {
   background: color-mix( in oklab, var(--s-earth) 11%, var(--bg-deep) );
   border-left: 2px solid var(--s-earth);
 }
-.ctl .t::before { content: '요령 · '; color: var(--s-earth); font-weight: 700; }
+.ctl .t-label { color: var(--s-earth); font-weight: 700; }
 
 /* 화면 구성 */
 .scr {

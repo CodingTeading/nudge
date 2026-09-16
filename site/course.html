@@ -153,7 +153,7 @@ lessons.forEach( ( l, i ) => {
 
   const side = el( 'div', { className: 'side' } );
   if ( !l.ready ) { side.appendChild( el( 'span', { className: 'pill', textContent: t( 'course.draft' ) } ) ); }
-  side.appendChild( el( 'span', { textContent: l.min + ( lang === 'ko' ? '분' : ' min' ) } ) );
+  side.appendChild( el( 'span', { textContent: t( 'course.lessonMinutes', { n: l.min } ) } ) );
   const d = el( 'span', { className: 'diff' } );
   for ( let k = 1; k <= 3; k++ ) { d.appendChild( el( 'i', { className: k <= l.diff ? 'on' : '' } ) ); }
   side.appendChild( d );

@@ -466,7 +466,11 @@ else {
       const d = el( 'div', { className: 'ctl' } );
       d.appendChild( el( 'p', { className: 'n', innerHTML: c.name } ) );
       d.appendChild( el( 'p', { className: 'd', innerHTML: c.desc } ) );
-      if ( c.tip ) { d.appendChild( el( 'p', { className: 't', innerHTML: c.tip } ) ); }
+      if ( c.tip ) {
+        const tip = el( 'p', { className: 't', innerHTML: c.tip } );
+        tip.prepend( el( 'b', { className: 't-label', textContent: t( 'guide.tip' ) + ' · ' } ) );
+        d.appendChild( tip );
+      }
       guide.appendChild( d );
     } );
   }
