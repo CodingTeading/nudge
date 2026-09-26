@@ -41,6 +41,15 @@ LANGS = [('ko', 'ko'), ('en', 'en'), ('ja', 'ja'), ('es', 'es')]
 BASE = 'ko'
 OG_LOCALE = {'ko': 'ko_KR', 'en': 'en_US', 'ja': 'ja_JP', 'es': 'es_ES'}
 
+# 네이버 서치어드바이저 사이트 소유 확인.
+#
+# 이 호스트 전용 값입니다 — 다른 사이트에는 다른 값이 갑니다.
+# 네이버는 등록한 주소를 그냥 받아서 그 응답의 <head> 안에서 이 태그를 찾습니다.
+# 우리 루트(/)는 셸이 아니라 여기서 구워 내는 파일이라, 셸(site/index.html)에
+# 적어 두면 bake() 가 머리말을 갈아 끼우면서 지워 버립니다. 그래서 여기 둡니다.
+# 네 언어판에 모두 실리므로 나중에 등록 주소를 /en/ 등으로 바꿔도 통과합니다.
+NAVER_VERIFY = '855a44c1fb7816e98756f0971583d0be3ae858ab'
+
 
 def read(p):
     return io.open(p, encoding='utf-8').read()
@@ -162,6 +171,7 @@ def head(lang, kind, ident, title, desc, image, jsonld):
         '<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">',
         '<meta name="theme-color" content="#080b18">',
         '<meta name="robots" content="index, follow, max-image-preview:large">',
+        f'<meta name="naver-site-verification" content="{NAVER_VERIFY}">',
     ]
     if jsonld:
         out.append('<script type="application/ld+json">'
