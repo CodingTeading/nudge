@@ -1,6 +1,7 @@
 """sitemap.xml + robots.txt 생성.
 
-  python tools/make-sitemap.py
+  python tools/build.py        # 빌드가 부릅니다 (보통은 이쪽)
+  python tools/make-sitemap.py # 따로 돌리고 싶을 때
 
 언어판을 xhtml:link 로 서로 묶어 줍니다. 이게 없으면 네 언어판이 서로 중복 문서로
 취급될 수 있습니다.
@@ -39,8 +40,16 @@ lastmod 는 "내용이 바뀐 날"입니다 — 빌드한 날이 아닙니다
   한국에서, 한국어를 원본으로 만듭니다. 블로그 쪽은 반대로 UTC 를 쓰는데, 어느
   쪽이든 하루 차이라 재크롤 신호에는 영향이 없습니다.
 
-이 도구는 돌릴 때마다 지도를 덮어씁니다. 그러니 작업 중인 변경이 섞이지 않게
-깨끗한 트리에서 돌리세요 — 고쳤다가 되돌린 것도 '바뀐 것'으로 한 번 잡힙니다.
+지도는 빌드 산출물이면서 커밋되는 파일입니다
+  tools/build.py 가 이것을 부릅니다. 손으로 돌리는 것을 규칙으로 두면 언젠가
+  빠뜨리고, 그러면 레슨을 고쳐 배포해도 lastmod 가 그대로여서 재크롤 신호가
+  나가지 않습니다. 그래서 빌드에 붙여 두었습니다 — ailearn.space 와 같습니다.
+
+  돌릴 때마다 지도를 덮어쓰지만, 움직이는 것은 지문이 실제로 바뀐 URL 뿐입니다.
+  고쳤다가 되돌린 것도 '바뀐 것'으로 한 번 잡히므로 두 가지만 지키면 됩니다.
+
+    · 실험하고 되돌릴 때는 지도도 같이 되돌립니다 (git checkout 에 이 파일까지)
+    · 콘텐츠를 고쳐 커밋할 때는 갱신된 지도를 같은 커밋에 넣습니다
 
 지도가 비어 있으면 첫 실행에서 77개가 전부 오늘이 됩니다. 그건 사실이 아니므로
 tools/seed-sitemap-dates.py 로 한 번 씨앗을 놓으세요 (한 번만 쓰는 도구입니다).
@@ -54,8 +63,14 @@ try:
 except Exception:
     pass
 
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(HERE)   # site/ · data/ 를 저장소 기준으로 읽습니다 (build.py 가 불러 쓰므로)
+
 ROOT = 'site'
 DATES = 'data/sitemap-dates.json'
+# 실험 목록은 PhET 포크에서 옵니다 — build.py 와 같은 규칙으로 찾습니다.
+PHET = os.environ.get('NUDGE_PHET', os.path.join(HERE, '..', 'phet'))
+SIMS = os.path.join(PHET, 'deploy', 'sims.json')
 ORIGIN = 'https://nudge.codingteading.com'
 LANGS = [ 'ko', 'en', 'ja', 'es' ]
 BASE = 'ko'
@@ -108,7 +123,7 @@ def collect():
     L = {l: load(f'{ROOT}/content/{l}/lessons.json') for l in LANGS}
     G = {l: load(f'{ROOT}/content/{l}/guides.json') for l in LANGS}
     titles = load(f'{ROOT}/content/sim-titles.json')
-    sims = load('../phet/deploy/sims.json')
+    sims = load(SIMS)
 
     rows = []
 

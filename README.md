@@ -63,13 +63,18 @@ python tools/build.py          # site/ + PhET 산출물 → dist/
 ## 개발
 
 ```bash
-python tools/build.py          # dist/ 조립 (+ Cloudflare Pages 한계 검사)
+python tools/build.py          # dist/ 조립 (sitemap + 머리말 굽기 + Cloudflare 한계 검사)
 python tools/serve.py 8124     # dist/ 를 띄웁니다
 node   tools/lint.mjs          # 정합성 검사
 python tools/label-quality.py  # PhET 번역 자체의 이상 (보고서)
 python tools/make-og.py        # og/*.png 16장 (1200×630)
-python tools/make-sitemap.py   # sitemap.xml + robots.txt
+python tools/make-sitemap.py   # sitemap.xml + robots.txt (빌드가 이미 부릅니다)
 ```
+
+사이트맵의 `lastmod` 는 "내용이 바뀐 날"입니다. URL 마다 본문 지문을
+`data/sitemap-dates.json` 에 남기고, 지문이 그대로면 저장된 날짜를 그대로 씁니다.
+그래서 **콘텐츠를 고쳐 커밋할 때 이 지도도 같은 커밋에 넣으세요.** 실험하다 되돌릴
+때는 지도도 함께 되돌리면 됩니다.
 
 `tools/serve.py` 가 따로 있는 이유: Windows 의 파이썬은 `.js` 의 MIME 을 레지스트리에서
 읽는데 많은 기계에서 `text/plain` 으로 잡혀 ES 모듈 로딩이 막힙니다. 확장자 표를 고정합니다.

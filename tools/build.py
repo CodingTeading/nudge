@@ -54,6 +54,14 @@ def main():
 
     rows = []
 
+    # 0) sitemap.xml + robots.txt 를 먼저 새로 씁니다 — site/ 를 복사하기 전에.
+    #    여기 붙여 두지 않으면 레슨을 고치고 배포만 했을 때 lastmod 가 그대로라
+    #    재크롤 신호가 나가지 않습니다. 손으로 돌리는 규칙은 언젠가 빠뜨립니다.
+    #    날짜 지도(data/sitemap-dates.json)도 이때 갱신되니, 콘텐츠를 고쳐
+    #    커밋할 때 같은 커밋에 넣으세요.
+    runpy.run_path(os.path.join(HERE, 'tools', 'make-sitemap.py'), run_name='__main__')
+    print()
+
     # 1) 포털 (이 저장소)
     #    site/ 아래는 통째로 실립니다. 번역 중인 원고는 저장소 루트 wip/ 에 두세요.
     #    (혹시 site/ 안에 _wip 이 생기더라도 배포본에는 넣지 않습니다)
