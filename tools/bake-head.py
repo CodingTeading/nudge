@@ -136,7 +136,9 @@ def head(lang, kind, ident, title, desc, image, jsonld):
     url = ORIGIN + path_of(kind, ident, lang)
     # 공유 이미지는 언어별로 굽습니다 (tools/make-og.py). 경로 규칙이 셋에 흩어져
     # 있으니 — 여기 · lib/seo.js · make-og.py — 하나를 고치면 셋 다 고쳐야 합니다.
-    img = f'{ORIGIN}/og/{lang}/{image}'
+    # image 는 확장자 없는 이름입니다 (default · all · c-<코스> · l-<레슨>).
+    # 판(v2)은 카카오·페이스북이 주소 단위로 붙들고 있는 옛 카드를 놓게 하려는 것입니다.
+    img = f'{ORIGIN}/og/v2/{lang}/{image}.jpg'
     out = [
         f'<title>{esc(title)}</title>',
         f'<meta name="description" content="{esc(d)}">',
@@ -285,14 +287,14 @@ def main():
         write(file_of('home', None, lang), bake(
             shells['index'], lang, 'home', None,
             t(lang, 'seo.home.title'), t(lang, 'seo.home.desc'),
-            'default.png', site_jsonld(lang)))
+            'default', site_jsonld(lang)))
         n_home += 1
 
         # 전체 실험
         write(file_of('all', None, lang), bake(
             shells['all'], lang, 'all', None,
             t(lang, 'seo.all.title', n=n_sims), t(lang, 'all.lead'),
-            'default.png', None))
+            'all', None))
         n_all += 1
 
         for c in courses:
@@ -303,7 +305,7 @@ def main():
                   n=len(c['sims'])),
                 t(lang, 'seo.course.desc', hook=c['hook'], lead=c['lead'],
                   n=len(c['sims']), min=c['minutes']),
-                f'c-{c["id"]}.png', course_jsonld(c, rows, lang)))
+                f'c-{c["id"]}', course_jsonld(c, rows, lang)))
             n_course += 1
 
             for row in rows:
@@ -315,7 +317,7 @@ def main():
                     t(lang, 'seo.lesson.title', lesson=body['title'], course=c['title']),
                     t(lang, 'seo.lesson.desc', hook=body['lead'],
                       min=row['min'], sim=sim_title(body['sim'], lang)),
-                    f'l-{row["id"]}.png', lesson_jsonld(row, body, c, lang)))
+                    f'l-{row["id"]}', lesson_jsonld(row, body, c, lang)))
                 n_lesson += 1
 
     # 셸은 남기되 색인에서는 뺍니다 — 구운 쪽이 정본입니다.

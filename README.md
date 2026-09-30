@@ -67,7 +67,7 @@ python tools/build.py          # dist/ 조립 (sitemap + 머리말 굽기 + Clou
 python tools/serve.py 8124     # dist/ 를 띄웁니다
 node   tools/lint.mjs          # 정합성 검사
 python tools/label-quality.py  # PhET 번역 자체의 이상 (보고서)
-python tools/make-og.py        # og/*.png 16장 (1200×630)
+python tools/make-og.py        # og/v2/<lang>/*.jpg 308장 (1200×630) — 커밋합니다
 python tools/make-sitemap.py   # sitemap.xml + robots.txt (빌드가 이미 부릅니다)
 ```
 

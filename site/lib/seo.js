@@ -52,7 +52,7 @@ function clamp( s, lang ) {
  * @param {object} o
  *   lang, title, desc, path   — 완성된 경로 ('/l/static-2')
  *   alt                       — 언어 코드를 받아 그 언어판 경로를 돌려주는 함수
- *   image                     — og/<lang>/*.png 의 파일명 (언어 폴더는 여기서 붙입니다)
+ *   image                     — og/v2/<lang>/<이름>.jpg 의 이름 — 확장자 없이 (언어 폴더와 판은 여기서 붙입니다)
  *   jsonld                    — 구조화 데이터 객체(또는 배열)
  */
 export function applySeo( o ) {
@@ -66,7 +66,7 @@ export function applySeo( o ) {
   const url = ORIGIN + path;
   // 공유 이미지는 언어별로 굽습니다 (tools/make-og.py). 경로 규칙이 셋에 흩어져
   // 있으니 — 여기 · bake-head.py · make-og.py — 하나를 고치면 셋 다 고쳐야 합니다.
-  const img = ORIGIN + '/og/' + lang + '/' + ( image || 'default.png' );
+  const img = ORIGIN + '/og/v2/' + lang + '/' + ( image || 'default' ) + '.jpg';
 
   link( 'canonical', url );
 

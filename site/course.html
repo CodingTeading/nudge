@@ -12,14 +12,15 @@
 <meta property="og:title" content="보이지 않는 힘 — 물리 실험 4종 | Nudge">
 <meta property="og:description" content="풍선을 머리에 문지르면 왜 머리카락이 따라 올라올까? 만질 수도 볼 수도 없는데 분명히 있는 힘. 전기의 정체를 손으로 확인합니다. 실험 4종을 순서대로 하며 약 52분에 끝냅니다. 설치도 회원가입도 필요 없습니다.">
 <meta property="og:url" content="https://nudge.codingteading.com/c/force-unseen">
-<meta property="og:image" content="https://nudge.codingteading.com/og/ko/c-force-unseen.png">
+<meta property="og:image" content="https://nudge.codingteading.com/og/v2/ko/c-force-unseen.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="보이지 않는 힘 — 물리 실험 4종 | Nudge">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="보이지 않는 힘 — 물리 실험 4종 | Nudge">
 <meta name="twitter:description" content="풍선을 머리에 문지르면 왜 머리카락이 따라 올라올까? 만질 수도 볼 수도 없는데 분명히 있는 힘. 전기의 정체를 손으로 확인합니다. 실험 4종을 순서대로 하며 약 52분에 끝냅니다. 설치도 회원가입도 필요 없습니다.">
-<meta name="twitter:image" content="https://nudge.codingteading.com/og/ko/c-force-unseen.png">
+<meta name="twitter:image" content="https://nudge.codingteading.com/og/v2/ko/c-force-unseen.jpg">
 <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#080b18">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -126,7 +127,7 @@ applySeo( {
   lang, path: coursePath( c.id, lang ), alt: l => coursePath( c.id, l ),
   title: t( 'seo.course.title', { course: c.title, subject: c.subject, n: c.sims.length } ),
   desc: t( 'seo.course.desc', { hook: c.hook, lead: c.lead, n: c.sims.length, min: c.minutes } ),
-  keywords: t( 'seo.keywords' ), image: 'c-' + c.id + '.png',
+  keywords: t( 'seo.keywords' ), image: 'c-' + c.id,
   jsonld: courseJsonLd( c, lessons, lang )
 } );
 

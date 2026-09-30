@@ -97,6 +97,13 @@ def main():
     total_n, total_sz = count_of(DIST), size_of(DIST)
     print('  %-26s %5d files  %10s' % ('total', total_n, human(total_sz)))
 
+    # 4) 공유 카드가 제대로 걸려 있는지 단언합니다.
+    #    카드를 새로 굽고 옛 카드가 조용히 돌아오거나, 레슨을 넣고 카드를 안 구워
+    #    404 카드가 나가는 일을 막습니다. 태그가 아니라 파일을 열어 봅니다.
+    print()
+    sys.argv = [ sys.argv[0], DIST ]
+    runpy.run_path(os.path.join(HERE, 'tools', 'check-og.py'), run_name='__main__')
+
     # Cloudflare Pages 한계 — 넘으면 업로드가 통째로 실패합니다
     big = [(os.path.relpath(os.path.join(r, f), DIST), os.path.getsize(os.path.join(r, f)))
            for r, _, fs in os.walk(DIST) for f in fs
